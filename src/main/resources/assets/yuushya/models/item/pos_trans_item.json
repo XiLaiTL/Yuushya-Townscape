@@ -1,0 +1,16 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "yuushya:item/ft_xp"
+  },
+      "overrides": [
+        { "predicate": { "direction": 0 }, "model": "yuushya:item/ft_xp" },
+        { "predicate": { "direction": 1 }, "model": "yuushya:item/ft_xm" },
+        { "predicate": { "direction": 2 }, "model": "yuushya:item/ft_yp" },
+        { "predicate": { "direction": 3 }, "model": "yuushya:item/ft_ym" },
+        { "predicate": { "direction": 4 }, "model": "yuushya:item/ft_zp" },
+        { "predicate": { "direction": 5 }, "model": "yuushya:item/ft_zm" },
+        { "predicate": { "direction": 6 }, "model": "yuushya:item/ft_rotateh" },
+        { "predicate": { "direction": 7 }, "model": "yuushya:item/ft_rotatey" }
+	]
+}

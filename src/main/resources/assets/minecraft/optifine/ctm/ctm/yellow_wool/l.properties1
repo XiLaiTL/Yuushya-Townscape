@@ -1,0 +1,4 @@
+matchTiles=yellow_wool
+connect=block
+method=ctm_compact
+tiles=0-4

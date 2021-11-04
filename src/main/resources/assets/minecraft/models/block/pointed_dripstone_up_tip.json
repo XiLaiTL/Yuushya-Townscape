@@ -1,0 +1,46 @@
+{
+	"parent": "minecraft:block/pointed_dripstone",
+	"textures": {
+		"1": "block/dripstone_m",
+		"cross": "block/dripstone",
+		"particle": "block/dripstone_m"
+	},
+	"elements": [
+		{
+			"from": [4, 0, 4],
+			"to": [12, 8, 12],
+			"faces": {
+				"north": {"uv": [4, 8, 12, 16], "texture": "#cross"},
+				"east": {"uv": [4, 8, 12, 16], "texture": "#cross"},
+				"south": {"uv": [4, 8, 12, 16], "texture": "#cross"},
+				"west": {"uv": [4, 8, 12, 16], "texture": "#cross"},
+				"up": {"uv": [4, 4, 12, 12], "texture": "#1"},
+				"down": {"uv": [4, 4, 12, 12], "texture": "#cross"}
+			}
+		},
+		{
+			"from": [5, 8, 5],
+			"to": [11, 14, 11],
+			"faces": {
+				"north": {"uv": [5, 2, 11, 8], "texture": "#cross"},
+				"east": {"uv": [5, 2, 11, 8], "texture": "#cross"},
+				"south": {"uv": [5, 2, 11, 8], "texture": "#cross"},
+				"west": {"uv": [5, 2, 11, 8], "texture": "#cross"},
+				"up": {"uv": [5, 5, 11, 11], "texture": "#1"},
+				"down": {"uv": [5, 5, 11, 11], "texture": "#cross"}
+			}
+		},
+		{
+			"from": [6, 14, 6],
+			"to": [10, 16, 10],
+			"faces": {
+				"north": {"uv": [6, 0, 10, 2], "texture": "#cross"},
+				"east": {"uv": [6, 0, 10, 2], "texture": "#cross"},
+				"south": {"uv": [6, 0, 10, 2], "texture": "#cross"},
+				"west": {"uv": [6, 0, 10, 2], "texture": "#cross"},
+				"up": {"uv": [6, 6, 10, 10], "texture": "#1"},
+				"down": {"uv": [6, 6, 10, 10], "texture": "#cross"}
+			}
+		}
+	]
+}

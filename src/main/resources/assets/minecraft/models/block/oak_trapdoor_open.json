@@ -1,0 +1,20 @@
+{
+	"textures": {
+		"particle": "block/oak_trapdoor",
+		"texture": "block/oak_trapdoor"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 13],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "rotation": 180, "texture": "#texture"},
+				"east": {"uv": [0, 16, 3, 0], "rotation": 180, "texture": "#texture"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#texture"},
+				"west": {"uv": [0, 16, 3, 0], "texture": "#texture"},
+				"up": {"uv": [0, 12, 16, 9], "texture": "#texture"},
+				"down": {"uv": [16, 12, 0, 9], "rotation": 180, "texture": "#texture"}
+			}
+		}
+	]
+}

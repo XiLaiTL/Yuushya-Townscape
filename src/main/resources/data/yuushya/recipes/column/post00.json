@@ -1,0 +1,6 @@
+{
+      "type": "minecraft:stonecutting", 
+      "ingredient": { "item": "yuushya:column_blueprint" }, 
+      "result": "yuushya:post00",
+      "count": 4
+}

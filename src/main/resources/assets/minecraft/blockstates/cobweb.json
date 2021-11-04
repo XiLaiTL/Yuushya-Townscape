@@ -1,0 +1,15 @@
+{
+    "variants": {
+        "": [ 		
+		{ "model": "block/cobweb", "weight": 4 },
+		{ "model": "block/cobweb", "y": 90, "weight": 4 },
+		{ "model": "block/cobweb", "y": 180, "weight": 4 },
+		{ "model": "block/cobweb", "y": 270, "weight": 4 },
+		{ "model": "block/cobweb1", "weight": 4 },
+		{ "model": "block/cobweb1", "y": 90, "weight": 4 },
+		{ "model": "block/cobweb1", "y": 180, "weight": 4 },
+		{ "model": "block/cobweb1", "y": 270, "weight": 4 }
+		]
+    }
+}
+

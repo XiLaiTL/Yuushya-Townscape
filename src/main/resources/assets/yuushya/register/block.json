@@ -1,0 +1,7 @@
+{
+  "block":
+  [
+	{"classtype": "SemiBlock", "name": "null_1_2", "itemgroup": "yuushya_extrablocks"},
+	{"classtype": "SemiBlock", "name": "testout", "itemgroup": "yuushya_extrablocks"}
+  ]
+}

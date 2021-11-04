@@ -1,0 +1,22 @@
+{
+	"credit": "Yuushya",
+	"parent": "minecraft:block/carpet",
+	"textures": {
+		"wool": "block/moss_block"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 3, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 0]},
+			"faces": {
+				"north": {"uv": [0, 13, 16, 16], "texture": "#wool"},
+				"east": {"uv": [0, 13, 16, 16], "texture": "#wool"},
+				"south": {"uv": [0, 13, 16, 16], "texture": "#wool"},
+				"west": {"uv": [0, 13, 16, 16], "texture": "#wool"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#wool"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#wool"}
+			}
+		}
+	]
+}

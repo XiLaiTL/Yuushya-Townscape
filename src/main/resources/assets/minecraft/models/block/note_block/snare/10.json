@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_note_block",
+  "textures": {
+    "top": "minecraft:block/noteblock",
+    "side": "minecraft:block/note_block/snare/10"
+  }
+}

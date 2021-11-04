@@ -1,0 +1,6 @@
+{
+      "type": "minecraft:stonecutting", 
+      "ingredient": { "item": "yuushya:deco_blueprint" }, 
+      "result": "yuushya:547",
+      "count": 1
+}

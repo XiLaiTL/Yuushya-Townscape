@@ -1,0 +1,22 @@
+{
+	"textures": {
+		"1": "block/acacia_fence_",
+		"particle": "block/acacia_fence",
+		"texture": "block/acacia_fence"
+	},
+	"elements": [
+		{
+			"name": "Center post",
+			"from": [6.5, 0, 6.5],
+			"to": [9.5, 16, 9.5],
+			"faces": {
+				"north": {"uv": [9, 0, 12, 16], "texture": "#texture"},
+				"east": {"uv": [9, 0, 12, 16], "texture": "#texture"},
+				"south": {"uv": [9, 0, 12, 16], "texture": "#texture"},
+				"west": {"uv": [9, 0, 12, 16], "texture": "#texture"},
+				"up": {"uv": [0, 0, 3, 3], "texture": "#1"},
+				"down": {"uv": [0, 0, 3, 3], "texture": "#1"}
+			}
+		}
+	]
+}

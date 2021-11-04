@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "minecraft:block/polished_basalt"
+    },
+    "axis=y": {
+      "model": "minecraft:block/polished_basalt"
+    },
+    "axis=z": {
+      "model": "minecraft:block/polished_basalt"
+    }
+  }
+}

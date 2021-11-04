@@ -1,0 +1,24 @@
+{
+	"credit": "Yuushya",
+	"parent": "block/block",
+	"textures": {
+		"1": "block/spruce_leaves_tint",
+		"2": "block/spruce_leaves_",
+		"particle": "block/spruce_leaves",
+		"all": "block/spruce_leaves"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#all", "cullface": "north"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#all", "cullface": "east"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#all", "cullface": "south"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#all", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#1", "cullface": "up"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#2", "cullface": "down"}
+			}
+		}
+	]
+}

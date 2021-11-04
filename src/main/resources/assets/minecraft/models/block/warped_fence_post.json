@@ -1,0 +1,22 @@
+{
+	"credit": "Yuushya",
+	"textures": {
+		"particle": "block/warped_door_top",
+		"texture": "block/warped_door_top"
+	},
+	"elements": [
+		{
+			"name": "Center post",
+			"from": [6, 0, 6],
+			"to": [10, 16, 10],
+			"faces": {
+				"north": {"uv": [6, 0, 2, 16], "texture": "#texture"},
+				"east": {"uv": [6, 0, 10, 16], "texture": "#texture"},
+				"south": {"uv": [2, 0, 6, 16], "texture": "#texture"},
+				"west": {"uv": [2, 0, 6, 16], "texture": "#texture"},
+				"up": {"uv": [0, 0, 4, 4], "texture": "#texture"},
+				"down": {"uv": [12, 0, 16, 4], "texture": "#texture"}
+			}
+		}
+	]
+}

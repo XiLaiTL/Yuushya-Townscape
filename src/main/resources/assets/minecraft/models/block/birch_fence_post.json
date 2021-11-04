@@ -1,0 +1,22 @@
+{
+	"credit": "Yuushya",
+	"textures": {
+		"particle": "block/birch_planks___",
+		"texture": "block/birch_planks___"
+	},
+	"elements": [
+		{
+			"name": "Center post",
+			"from": [6.5, 0, 6.5],
+			"to": [9.5, 16, 9.5],
+			"faces": {
+				"north": {"uv": [13, 0, 16, 16], "texture": "#texture"},
+				"east": {"uv": [13, 0, 16, 16], "texture": "#texture"},
+				"south": {"uv": [13, 0, 16, 16], "texture": "#texture"},
+				"west": {"uv": [13, 0, 16, 16], "texture": "#texture"},
+				"up": {"uv": [13, 2, 16, 5], "texture": "#texture"},
+				"down": {"uv": [13, 2, 16, 5], "texture": "#texture"}
+			}
+		}
+	]
+}

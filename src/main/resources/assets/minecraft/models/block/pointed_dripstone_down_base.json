@@ -1,0 +1,23 @@
+{
+	"parent": "minecraft:block/pointed_dripstone",
+	"textures": {
+		"1": "block/dripstone_m",
+		"particle": "block/dripstone_m",
+		"cross": "block/dripstone_"
+	},
+	"elements": [
+		{
+			"from": [2, 0, 2],
+			"to": [14, 16, 14],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [14, 0, 2, 16], "rotation": 180, "texture": "#cross"},
+				"east": {"uv": [14, 0, 2, 16], "rotation": 180, "texture": "#cross"},
+				"south": {"uv": [14, 0, 2, 16], "rotation": 180, "texture": "#cross"},
+				"west": {"uv": [14, 0, 2, 16], "rotation": 180, "texture": "#cross"},
+				"up": {"uv": [2, 2, 14, 14], "rotation": 180, "texture": "#1"},
+				"down": {"uv": [2, 2, 14, 14], "rotation": 180, "texture": "#1"}
+			}
+		}
+	]
+}

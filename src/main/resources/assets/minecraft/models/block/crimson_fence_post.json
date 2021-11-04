@@ -1,0 +1,23 @@
+{
+	"credit": "Yuushya",
+	"textures": {
+		"1": "block/crimson_stem_top",
+		"particle": "block/crimson_door_bottom",
+		"texture": "block/crimson_door_bottom"
+	},
+	"elements": [
+		{
+			"name": "Center post",
+			"from": [6, 0, 6],
+			"to": [10, 16, 10],
+			"faces": {
+				"north": {"uv": [10, 0, 14, 16], "texture": "#texture"},
+				"east": {"uv": [10, 0, 14, 16], "texture": "#texture"},
+				"south": {"uv": [10, 0, 14, 16], "texture": "#texture"},
+				"west": {"uv": [10, 0, 14, 16], "texture": "#texture"},
+				"up": {"uv": [6, 6, 10, 10], "texture": "#1"},
+				"down": {"uv": [12, 0, 16, 4], "texture": "#texture"}
+			}
+		}
+	]
+}

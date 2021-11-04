@@ -1,0 +1,6 @@
+{
+    "parent": "item/template_ctm_block",
+	"textures": {
+        "2": "block/cyan_terracotta"
+    }
+}

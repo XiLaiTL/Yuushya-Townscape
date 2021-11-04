@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable_machine",
+  "textures": {
+    "top": "minecraft:block/dropper_face_v",
+    "front": "minecraft:block/dropper_front",
+    "side": "minecraft:block/dropper_face",
+    "back": "minecraft:block/furnace_top"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "block":
+  [
+
+    {"classtype": "Vanilla_DoorBlock", "name": "a634", "itemgroup": "yuushya_extrablocks","properties": {"addform":true}},
+    {"classtype": "DecoBlock", "name": "280", "itemgroup": "yuushya_furniture"},
+    {"classtype": "CableBlock", "name": "cab1", "itemgroup": "yuushya_furniture"},
+    {"classtype": "CablePostBlock", "name": "cab2", "itemgroup": "yuushya_furniture"}
+  ]
+}

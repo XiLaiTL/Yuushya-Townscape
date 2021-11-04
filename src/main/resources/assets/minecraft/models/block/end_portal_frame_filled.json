@@ -1,0 +1,122 @@
+{
+	"textures": {
+		"4": "block/end_portal_frame_side_",
+		"bottom": "block/end_stone",
+		"top": "block/end_portal_frame_top",
+		"particle": "block/end_portal_frame_side",
+		"side": "block/end_portal_frame_side",
+		"eye": "block/end_portal_frame_eye"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 13, 16],
+			"faces": {
+				"north": {"uv": [0, 3, 16, 16], "texture": "#side", "cullface": "north"},
+				"east": {"uv": [0, 3, 16, 16], "texture": "#side", "cullface": "east"},
+				"south": {"uv": [0, 3, 16, 16], "texture": "#4", "cullface": "south"},
+				"west": {"uv": [0, 3, 16, 16], "texture": "#side", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#top"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#bottom", "cullface": "down"}
+			}
+		},
+		{
+			"name": "end_portal_frame_eye+_0",
+			"from": [7, 13, 3],
+			"to": [9, 14, 13],
+			"faces": {
+				"north": {"uv": [9, 3, 7, 4], "texture": "#eye"},
+				"east": {"uv": [8, 3, 9, 13], "rotation": 90, "texture": "#eye"},
+				"south": {"uv": [7, 12, 9, 13], "texture": "#eye"},
+				"west": {"uv": [7, 3, 8, 13], "rotation": 270, "texture": "#eye"},
+				"up": {"uv": [7, 3, 9, 13], "texture": "#eye"},
+				"down": {"uv": [7, 13, 9, 3], "texture": "#eye"}
+			}
+		},
+		{
+			"name": "end_portal_frame_eye+_1",
+			"from": [5, 13, 4],
+			"to": [7, 14, 12],
+			"faces": {
+				"north": {"uv": [7, 4, 5, 5], "texture": "#eye"},
+				"east": {"uv": [6, 4, 7, 12], "rotation": 90, "texture": "#eye"},
+				"south": {"uv": [5, 11, 7, 12], "texture": "#eye"},
+				"west": {"uv": [5, 4, 6, 12], "rotation": 270, "texture": "#eye"},
+				"up": {"uv": [5, 4, 7, 12], "texture": "#eye"},
+				"down": {"uv": [5, 12, 7, 4], "texture": "#eye"}
+			}
+		},
+		{
+			"name": "end_portal_frame_eye+_2",
+			"from": [9, 13, 4],
+			"to": [11, 14, 12],
+			"faces": {
+				"north": {"uv": [11, 4, 9, 5], "texture": "#eye"},
+				"east": {"uv": [10, 4, 11, 12], "rotation": 90, "texture": "#eye"},
+				"south": {"uv": [9, 11, 11, 12], "texture": "#eye"},
+				"west": {"uv": [9, 4, 10, 12], "rotation": 270, "texture": "#eye"},
+				"up": {"uv": [9, 4, 11, 12], "texture": "#eye"},
+				"down": {"uv": [9, 12, 11, 4], "texture": "#eye"}
+			}
+		},
+		{
+			"name": "end_portal_frame_eye+_3",
+			"from": [4, 13, 5],
+			"to": [5, 14, 11],
+			"faces": {
+				"north": {"uv": [5, 5, 4, 6], "texture": "#eye"},
+				"east": {"uv": [4, 5, 5, 11], "rotation": 90, "texture": "#eye"},
+				"south": {"uv": [4, 10, 5, 11], "texture": "#eye"},
+				"west": {"uv": [4, 5, 5, 11], "rotation": 270, "texture": "#eye"},
+				"up": {"uv": [4, 5, 5, 11], "texture": "#eye"},
+				"down": {"uv": [4, 11, 5, 5], "texture": "#eye"}
+			}
+		},
+		{
+			"name": "end_portal_frame_eye+_4",
+			"from": [11, 13, 5],
+			"to": [12, 14, 11],
+			"faces": {
+				"north": {"uv": [12, 5, 11, 6], "texture": "#eye"},
+				"east": {"uv": [11, 5, 12, 11], "rotation": 90, "texture": "#eye"},
+				"south": {"uv": [11, 10, 12, 11], "texture": "#eye"},
+				"west": {"uv": [11, 5, 12, 11], "rotation": 270, "texture": "#eye"},
+				"up": {"uv": [11, 5, 12, 11], "texture": "#eye"},
+				"down": {"uv": [11, 11, 12, 5], "texture": "#eye"}
+			}
+		},
+		{
+			"name": "end_portal_frame_eye+_5",
+			"from": [3, 13, 7],
+			"to": [4, 14, 9],
+			"faces": {
+				"north": {"uv": [4, 7, 3, 8], "texture": "#eye"},
+				"east": {"uv": [3, 7, 4, 9], "rotation": 90, "texture": "#eye"},
+				"south": {"uv": [3, 8, 4, 9], "texture": "#eye"},
+				"west": {"uv": [3, 7, 4, 9], "rotation": 270, "texture": "#eye"},
+				"up": {"uv": [3, 7, 4, 9], "texture": "#eye"},
+				"down": {"uv": [3, 9, 4, 7], "texture": "#eye"}
+			}
+		},
+		{
+			"name": "end_portal_frame_eye+_6",
+			"from": [12, 13, 7],
+			"to": [13, 14, 9],
+			"faces": {
+				"north": {"uv": [13, 7, 12, 8], "texture": "#eye"},
+				"east": {"uv": [12, 7, 13, 9], "rotation": 90, "texture": "#eye"},
+				"south": {"uv": [12, 8, 13, 9], "texture": "#eye"},
+				"west": {"uv": [12, 7, 13, 9], "rotation": 270, "texture": "#eye"},
+				"up": {"uv": [12, 7, 13, 9], "texture": "#eye"},
+				"down": {"uv": [12, 9, 13, 7], "texture": "#eye"}
+			}
+		}
+	],
+	"groups": [0,
+		{
+			"name": "end_portal_frame_eye+",
+			"origin": [8, 8, 8],
+			"children": [1, 2, 3, 4, 5, 6, 7]
+		}
+	]
+}

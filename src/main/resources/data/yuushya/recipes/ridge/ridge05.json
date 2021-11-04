@@ -1,0 +1,6 @@
+{
+      "type": "minecraft:stonecutting", 
+      "ingredient": { "item": "yuushya:ridge_blueprint" }, 
+      "result": "yuushya:ridge05",
+      "count": 4
+}

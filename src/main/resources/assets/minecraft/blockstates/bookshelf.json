@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [ 		
+		{ "model": "block/bookshelf", "weight": 4 },
+		{ "model": "block/bookshelf", "y": 90, "weight": 4 },
+		{ "model": "block/bookshelf", "y": 180, "weight": 4 },
+		{ "model": "block/bookshelf", "y": 270, "weight": 4 }
+		]
+    }
+}

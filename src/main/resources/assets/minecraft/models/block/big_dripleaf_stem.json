@@ -1,0 +1,38 @@
+{
+	"credit": "Yuushya",
+	"parent": "block/block",
+	"textures": {
+		"particle": "block/big_dripleaf_stem",
+		"stem": "block/big_dripleaf_stem"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 8],
+			"to": [16, 16, 8],
+			"shade": false,
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#stem"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#stem"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#stem"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#stem"},
+				"up": {"uv": [0, 0, 0, 0], "texture": "#stem"},
+				"down": {"uv": [0, 0, 0, 0], "texture": "#stem"}
+			}
+		},
+		{
+			"from": [8, 0, 0],
+			"to": [8, 16, 16],
+			"shade": false,
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 0], "texture": "#stem"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#stem"},
+				"south": {"uv": [0, 0, 0, 0], "texture": "#stem"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#stem"},
+				"up": {"uv": [0, 0, 0, 0], "rotation": 90, "texture": "#stem"},
+				"down": {"uv": [0, 0, 0, 0], "rotation": 270, "texture": "#stem"}
+			}
+		}
+	]
+}

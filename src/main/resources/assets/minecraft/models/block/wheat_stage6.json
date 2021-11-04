@@ -1,0 +1,6 @@
+{
+    "parent": "block/crop1",
+    "textures": {
+        "crop1": "block/wheat_stage6"
+    }
+}

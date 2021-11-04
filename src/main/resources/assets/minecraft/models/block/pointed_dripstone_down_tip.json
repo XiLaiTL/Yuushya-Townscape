@@ -1,0 +1,49 @@
+{
+	"parent": "minecraft:block/pointed_dripstone",
+	"textures": {
+		"1": "block/dripstone_m",
+		"particle": "block/dripstone_m",
+		"cross": "block/dripstone"
+	},
+	"elements": [
+		{
+			"from": [4, 8, 4],
+			"to": [12, 16, 12],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [4, 8, 12, 16], "rotation": 180, "texture": "#cross"},
+				"east": {"uv": [4, 8, 12, 16], "rotation": 180, "texture": "#cross"},
+				"south": {"uv": [4, 8, 12, 16], "rotation": 180, "texture": "#cross"},
+				"west": {"uv": [4, 8, 12, 16], "rotation": 180, "texture": "#cross"},
+				"up": {"uv": [4, 4, 12, 12], "rotation": 180, "texture": "#cross"},
+				"down": {"uv": [4, 4, 12, 12], "rotation": 180, "texture": "#1"}
+			}
+		},
+		{
+			"from": [5, 2, 5],
+			"to": [11, 8, 11],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [5, 2, 11, 8], "rotation": 180, "texture": "#cross"},
+				"east": {"uv": [5, 2, 11, 8], "rotation": 180, "texture": "#cross"},
+				"south": {"uv": [5, 2, 11, 8], "rotation": 180, "texture": "#cross"},
+				"west": {"uv": [5, 2, 11, 8], "rotation": 180, "texture": "#cross"},
+				"up": {"uv": [5, 5, 11, 11], "rotation": 180, "texture": "#cross"},
+				"down": {"uv": [5, 5, 11, 11], "rotation": 180, "texture": "#1"}
+			}
+		},
+		{
+			"from": [6, 0, 6],
+			"to": [10, 2, 10],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [6, 0, 10, 2], "rotation": 180, "texture": "#cross"},
+				"east": {"uv": [6, 0, 10, 2], "rotation": 180, "texture": "#cross"},
+				"south": {"uv": [6, 0, 10, 2], "rotation": 180, "texture": "#cross"},
+				"west": {"uv": [6, 0, 10, 2], "rotation": 180, "texture": "#cross"},
+				"up": {"uv": [6, 6, 10, 10], "rotation": 180, "texture": "#cross"},
+				"down": {"uv": [6, 6, 10, 10], "rotation": 180, "texture": "#1"}
+			}
+		}
+	]
+}

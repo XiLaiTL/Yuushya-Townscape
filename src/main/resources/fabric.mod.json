@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "yuushya",
+  "version": "Beta 0.9.0",
+
+  "name": "Yuushya",
+  "description": "Adore the life in a busy city? ",
+  "authors": [
+    "Cocofish or Geometry", "Xiao2 or XiLaiTL"
+  ],
+  "contact": {
+    "homepage": "https://yuushya.gitee.io/page/index.html",
+    "sources": "https://gitee.com/yuushya/yuushya-release/releases/Release"
+  },
+
+  "license": "GNU 3.0",
+  "icon": "pack.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.cocofish.yuushya.Yuushya"
+    ],
+    "client": [
+      {
+        "value": "net.cocofish.yuushya.YuushyaClient"
+      }
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

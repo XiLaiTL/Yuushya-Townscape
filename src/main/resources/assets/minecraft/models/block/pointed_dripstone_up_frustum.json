@@ -1,0 +1,22 @@
+{
+	"parent": "minecraft:block/pointed_dripstone",
+	"textures": {
+		"1": "block/dripstone_m",
+		"particle": "block/dripstone_m",
+		"cross": "block/dripstone"
+	},
+	"elements": [
+		{
+			"from": [3, 0, 3],
+			"to": [12, 16, 13],
+			"faces": {
+				"north": {"uv": [4, 0, 13, 16], "texture": "#cross"},
+				"east": {"uv": [3, 0, 13, 16], "texture": "#cross"},
+				"south": {"uv": [3, 0, 12, 16], "texture": "#cross"},
+				"west": {"uv": [3, 0, 13, 16], "texture": "#cross"},
+				"up": {"uv": [3, 3, 12, 13], "texture": "#1"},
+				"down": {"uv": [3, 3, 12, 13], "texture": "#1"}
+			}
+		}
+	]
+}

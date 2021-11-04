@@ -1,0 +1,28 @@
+{
+  "item": [
+    {"classtype": "", "name": "block_blueprint", "itemgroup": "yuushya_item","properties": {"maxcount": 64,"rarity": "common"}},
+    {"classtype": "", "name": "deco_blueprint", "itemgroup": "yuushya_item","properties": {"maxcount": 64,"rarity": "common"}},
+    {"classtype": "", "name": "dailylife_stuff_blueprint", "itemgroup": "yuushya_item","properties": {"maxcount": 64,"rarity": "common"}},
+    {"classtype": "", "name": "sign_blueprint", "itemgroup": "yuushya_item","properties": {"maxcount": 64,"rarity": "common"}},
+    {"classtype": "", "name": "furniture_blueprint", "itemgroup": "yuushya_item","properties": {"maxcount": 64,"rarity": "common"}},
+    {"classtype": "", "name": "facility_blueprint", "itemgroup": "yuushya_item","properties": {"maxcount": 64,"rarity": "common"}},
+	{"classtype": "", "name": "extra_shapes_blueprint", "itemgroup": "yuushya_item","properties": {"maxcount": 64,"rarity": "common"}},
+	{"classtype": "", "name": "side_slab_blueprint", "itemgroup": "yuushya_item","properties": {"maxcount": 64,"rarity": "common"}},
+	{"classtype": "", "name": "slab_blueprint", "itemgroup": "yuushya_item","properties": {"maxcount": 64,"rarity": "common"}},
+	{"classtype": "", "name": "stairs_blueprint", "itemgroup": "yuushya_item","properties": {"maxcount": 64,"rarity": "common"}},
+	{"classtype": "", "name": "ridge_blueprint", "itemgroup": "yuushya_item","properties": {"maxcount": 64,"rarity": "common"}},
+	{"classtype": "", "name": "layer_blueprint", "itemgroup": "yuushya_item","properties": {"maxcount": 64,"rarity": "common"}},
+	{"classtype": "", "name": "column_blueprint", "itemgroup": "yuushya_item","properties": {"maxcount": 64,"rarity": "common"}},
+	{"classtype": "", "name": "crossbeam_blueprint", "itemgroup": "yuushya_item","properties": {"maxcount": 64,"rarity": "common"}},
+	{"classtype": "", "name": "frame_stuff_blueprint", "itemgroup": "yuushya_item","properties": {"maxcount": 64,"rarity": "common"}},
+	  {"classtype": "StructureCreatorItem", "name": "sakura_tree", "itemgroup": "yuushya_structure","properties": {"createnbt": "yuushya:tree_sakura"}},
+	  {"classtype": "StructureCreatorItem", "name": "maple_tree", "itemgroup": "yuushya_structure","properties": {"createnbt": "yuushya:tree_maple"}},
+	  {"classtype": "StructureCreatorItem", "name": "normal_tree", "itemgroup": "yuushya_structure","properties": {"createnbt": "yuushya:tree_normal"}},
+	  {"classtype": "StructureCreatorItem", "name": "pink_flower_tree", "itemgroup": "yuushya_structure","properties": {"createnbt": "yuushya:tree_pinkflower"}},
+	  {"classtype": "StructureCreatorItem", "name": "white_flower_tree", "itemgroup": "yuushya_structure","properties": {"createnbt": "yuushya:tree_whiteflower"}},
+	  {"classtype": "StructureCreatorItem", "name": "yellow_flower_tree", "itemgroup": "yuushya_structure","properties": {"createnbt": "yuushya:tree_yellowflower"}},
+	  {"classtype": "StructureCreatorItem", "name": "tutorial", "itemgroup": "yuushya_structure","properties": {"createnbt": "yuushya:tutorial"}}
+
+
+  ]
+}

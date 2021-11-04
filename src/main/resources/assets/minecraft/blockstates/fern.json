@@ -1,0 +1,14 @@
+{
+    "variants": {
+        "": [
+		{ "model": "block/fern" },
+		{ "model": "block/fern", "y": 90 },
+		{ "model": "block/fern", "y": 180 },
+		{ "model": "block/fern", "y": 270 },
+		{ "model": "block/fern_" },
+		{ "model": "block/fern_", "y": 90 },
+		{ "model": "block/fern_", "y": 180 },
+		{ "model": "block/fern_", "y": 270 }
+		]
+    }
+}

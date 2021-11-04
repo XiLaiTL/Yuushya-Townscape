@@ -1,0 +1,20 @@
+{
+    "overrides": [
+        { "predicate": { "time": 0.0000 }, "model": "item/clock_sa" },
+        { "predicate": { "time": 0.0625 }, "model": "item/clock_1" },
+        { "predicate": { "time": 0.125 }, "model": "item/clock_2" },
+        { "predicate": { "time": 0.1875 }, "model": "item/clock_3" },
+        { "predicate": { "time": 0.25 }, "model": "item/clock_4" },
+        { "predicate": { "time": 0.3125 }, "model": "item/clock_6" },
+        { "predicate": { "time": 0.375 }, "model": "item/clock_7" },
+        { "predicate": { "time": 0.4375 }, "model": "item/clock_8" },
+        { "predicate": { "time": 0.5 }, "model": "item/clock_9" },
+        { "predicate": { "time": 0.5625 }, "model": "item/clock_10" },
+        { "predicate": { "time": 0.625 }, "model": "item/clock_11" },
+        { "predicate": { "time": 0.6875 }, "model": "item/clock_12" },
+        { "predicate": { "time": 0.75 }, "model": "item/clock_13" },
+        { "predicate": { "time": 0.8125 }, "model": "item/clock_14" },
+        { "predicate": { "time": 0.875 }, "model": "item/clock_15" },
+        { "predicate": { "time": 0.9375 }, "model": "item/clock_16" }
+    ]
+}

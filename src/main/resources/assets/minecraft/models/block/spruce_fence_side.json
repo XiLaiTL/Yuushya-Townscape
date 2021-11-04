@@ -1,0 +1,41 @@
+{
+	"credit": "Yuushya",
+	"textures": {
+		"0": "block/spruce_planks"
+	},
+	"elements": [
+		{
+			"from": [7, 12, 0],
+			"to": [9, 15, 9],
+			"faces": {
+				"north": {"uv": [7, 13, 9, 16], "texture": "#0"},
+				"east": {"uv": [7, 1, 16, 4], "texture": "#0"},
+				"west": {"uv": [0, 1, 9, 4], "texture": "#0"},
+				"up": {"uv": [7, 0, 9, 9], "texture": "#0"},
+				"down": {"uv": [7, 7, 9, 16], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7, 2, 0],
+			"to": [9, 4, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9, 8]},
+			"faces": {
+				"north": {"uv": [7, 13, 9, 15], "texture": "#0"},
+				"east": {"uv": [7, 13, 16, 15], "texture": "#0"},
+				"west": {"uv": [0, 13, 9, 15], "texture": "#0"},
+				"up": {"uv": [7, 0, 9, 9], "texture": "#0"},
+				"down": {"uv": [7, 7, 9, 16], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7.5, 3, 2],
+			"to": [8.5, 12, 4],
+			"faces": {
+				"north": {"uv": [3, 4, 4, 13], "texture": "#0"},
+				"east": {"uv": [12, 13, 14, 4], "texture": "#0"},
+				"south": {"uv": [13, 4, 14, 13], "texture": "#0"},
+				"west": {"uv": [2, 13, 4, 4], "texture": "#0"}
+			}
+		}
+	]
+}

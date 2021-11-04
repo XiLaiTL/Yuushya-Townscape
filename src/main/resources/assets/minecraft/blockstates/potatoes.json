@@ -1,0 +1,84 @@
+{
+    "variants": {
+        "age=0": [ 
+		{ "model": "block/potato/potatoes_stage01" },
+		{ "model": "block/potato/potatoes_stage01", "y": 90 },
+		{ "model": "block/potato/potatoes_stage01", "y": 180 },
+		{ "model": "block/potato/potatoes_stage01", "y": 270 },
+		{ "model": "block/potato/potatoes_stage02" },
+		{ "model": "block/potato/potatoes_stage02", "y": 90 },
+		{ "model": "block/potato/potatoes_stage02", "y": 180 },
+		{ "model": "block/potato/potatoes_stage02", "y": 270 }
+		],
+        "age=1": [ 
+		{ "model": "block/potato/potatoes_stage01" },
+		{ "model": "block/potato/potatoes_stage01", "y": 90 },
+		{ "model": "block/potato/potatoes_stage01", "y": 180 },
+		{ "model": "block/potato/potatoes_stage01", "y": 270 },
+		{ "model": "block/potato/potatoes_stage02" },
+		{ "model": "block/potato/potatoes_stage02", "y": 90 },
+		{ "model": "block/potato/potatoes_stage02", "y": 180 },
+		{ "model": "block/potato/potatoes_stage02", "y": 270 }
+		],
+        "age=2": [ 
+		{ "model": "block/potato/potatoes_stage11" },
+		{ "model": "block/potato/potatoes_stage11", "y": 90 },
+		{ "model": "block/potato/potatoes_stage11", "y": 180 },
+		{ "model": "block/potato/potatoes_stage11", "y": 270 },
+		{ "model": "block/potato/potatoes_stage12" },
+		{ "model": "block/potato/potatoes_stage12", "y": 90 },
+		{ "model": "block/potato/potatoes_stage12", "y": 180 },
+		{ "model": "block/potato/potatoes_stage12", "y": 270 }
+		],
+        "age=3": [ 
+		{ "model": "block/potato/potatoes_stage11" },
+		{ "model": "block/potato/potatoes_stage11", "y": 90 },
+		{ "model": "block/potato/potatoes_stage11", "y": 180 },
+		{ "model": "block/potato/potatoes_stage11", "y": 270 },
+		{ "model": "block/potato/potatoes_stage12" },
+		{ "model": "block/potato/potatoes_stage12", "y": 90 },
+		{ "model": "block/potato/potatoes_stage12", "y": 180 },
+		{ "model": "block/potato/potatoes_stage12", "y": 270 }
+		],
+        "age=4": [ 
+		{ "model": "block/potato/potatoes_stage21" },
+		{ "model": "block/potato/potatoes_stage21", "y": 90 },
+		{ "model": "block/potato/potatoes_stage21", "y": 180 },
+		{ "model": "block/potato/potatoes_stage21", "y": 270 },
+		{ "model": "block/potato/potatoes_stage22" },
+		{ "model": "block/potato/potatoes_stage22", "y": 90 },
+		{ "model": "block/potato/potatoes_stage22", "y": 180 },
+		{ "model": "block/potato/potatoes_stage22", "y": 270 }
+		],
+        "age=5": [ 
+		{ "model": "block/potato/potatoes_stage21" },
+		{ "model": "block/potato/potatoes_stage21", "y": 90 },
+		{ "model": "block/potato/potatoes_stage21", "y": 180 },
+		{ "model": "block/potato/potatoes_stage21", "y": 270 },
+		{ "model": "block/potato/potatoes_stage22" },
+		{ "model": "block/potato/potatoes_stage22", "y": 90 },
+		{ "model": "block/potato/potatoes_stage22", "y": 180 },
+		{ "model": "block/potato/potatoes_stage22", "y": 270 }
+		],
+        "age=6": [ 
+		{ "model": "block/potato/potatoes_stage21" },
+		{ "model": "block/potato/potatoes_stage21", "y": 90 },
+		{ "model": "block/potato/potatoes_stage21", "y": 180 },
+		{ "model": "block/potato/potatoes_stage21", "y": 270 },
+		{ "model": "block/potato/potatoes_stage22" },
+		{ "model": "block/potato/potatoes_stage22", "y": 90 },
+		{ "model": "block/potato/potatoes_stage22", "y": 180 },
+		{ "model": "block/potato/potatoes_stage22", "y": 270 }
+		],
+        "age=7": [ 
+		{ "model": "block/potato/potatoes_stage31" },
+		{ "model": "block/potato/potatoes_stage31", "y": 90 },
+		{ "model": "block/potato/potatoes_stage31", "y": 180 },
+		{ "model": "block/potato/potatoes_stage31", "y": 270 },
+		{ "model": "block/potato/potatoes_stage32" },
+		{ "model": "block/potato/potatoes_stage32", "y": 90 },
+		{ "model": "block/potato/potatoes_stage32", "y": 180 },
+		{ "model": "block/potato/potatoes_stage32", "y": 270 }
+		]
+    }
+}

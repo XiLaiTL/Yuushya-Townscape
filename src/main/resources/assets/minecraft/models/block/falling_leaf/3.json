@@ -1,0 +1,23 @@
+{
+	"credit": "Yuushya",
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "falling_leaf/leaf1",
+		"texture": "falling_leaf/leaf1"
+	},
+	"elements": [
+		{
+			"from": [8, -16, -16],
+			"to": [8, 28, 32],
+			"rotation": {"angle": 45, "axis": "y", "origin": [6, 8, 6]},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 16], "texture": "#texture"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#texture"},
+				"south": {"uv": [0, 0, 0, 16], "texture": "#texture"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#texture"},
+				"up": {"uv": [0, 0, 16, 0], "rotation": 270, "texture": "#texture"},
+				"down": {"uv": [0, 0, 16, 0], "rotation": 90, "texture": "#texture"}
+			}
+		}
+	]
+}

@@ -1,0 +1,6 @@
+{
+      "type": "minecraft:stonecutting", 
+      "ingredient": { "item": "yuushya:layer_blueprint" }, 
+      "result": "yuushya:layer20",
+      "count": 4
+}

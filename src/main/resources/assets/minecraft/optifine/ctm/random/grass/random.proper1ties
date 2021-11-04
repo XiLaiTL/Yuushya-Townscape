@@ -1,0 +1,4 @@
+method=random
+matchTiles=grass_block_top
+tiles=1-5
+weights=1 40 5 3 1 

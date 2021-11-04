@@ -1,0 +1,10 @@
+matchTiles=purple_concrete
+connect=block
+method=ctm_compact
+tiles=0-8
+faces=sides
+
+ctm.37=6
+ctm.38=5
+ctm.39=7
+ctm.36=8

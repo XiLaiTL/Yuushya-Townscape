@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      {"model": "minecraft:block/dirt1", "weight": 1 },
+      {"model": "minecraft:block/dirt2", "weight": 3 },
+      {"model": "minecraft:block/dirt3", "weight": 10 },
+      {"model": "minecraft:block/dirt4", "weight": 6 }
+	  ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+    "parent": "item/crossbow_pulling_0",
+    "textures": {
+        "layer0": "item/crossbow_standby"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "pulling": 0
+            },
+            "model": "item/crossbow_standby"
+        },
+        {
+            "predicate": {
+                "pulling": 1,
+                "pull": 0.2
+            },
+            "model": "item/crossbow_pulling_1"
+        },
+        {
+            "predicate": {
+                "pulling": 1,
+                "pull": 0.4
+            },
+            "model": "item/crossbow_pulling_3"
+        },
+        {
+            "predicate": {
+                "pulling": 1,
+                "pull": 0.6
+            },
+            "model": "item/crossbow_pulling_3"
+        },         
+		{
+            "predicate": {
+                "pulling": 1,
+                "pull": 0.8
+            },
+            "model": "item/crossbow_pulling_5"
+        },        
+		{
+            "predicate": {
+                "charged": 0.95
+            },
+            "model": "item/crossbow_pulling_5"
+        },		
+		{
+            "predicate": {
+                "charged": 1
+            },
+            "model": "item/crossbow_pulling_5"
+        },
+        {
+            "predicate": {
+                "charged": 1,
+                "firework": 1
+            },
+            "model": "item/crossbow_firework"
+        }
+    ]
+}

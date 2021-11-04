@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+		{ "model": "block/gray_concrete" },
+		{ "model": "block/gray_concrete", "y":90 },
+		{ "model": "block/gray_concrete", "y":180 },
+		{ "model": "block/gray_concrete", "y":270 }
+		]
+    }
+}

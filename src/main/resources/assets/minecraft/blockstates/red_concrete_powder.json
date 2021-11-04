@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "minecraft:block/red_concrete_powder"
+      },
+      {
+        "model": "minecraft:block/red_concrete_powder",
+        "y": 0
+      },
+      {
+        "model": "minecraft:block/red_concrete_powder",
+        "y": 0
+      },
+      {
+        "model": "minecraft:block/red_concrete_powder",
+        "y": 0
+      }
+    ]
+  }
+}
