@@ -1,0 +1,6 @@
+{
+      "type": "minecraft:stonecutting", 
+      "ingredient": { "item": "yuushya:stairs_blueprint" }, 
+      "result": "yuushya:778",
+      "count": 4
+}

@@ -1,0 +1,6 @@
+{
+      "type": "minecraft:stonecutting", 
+      "ingredient": { "item": "yuushya:frame_stuff_blueprint" }, 
+      "result": "yuushya:topframe13",
+      "count": 4
+}

@@ -1,0 +1,6 @@
+{
+      "type": "minecraft:stonecutting", 
+      "ingredient": { "item": "yuushya:crossbeam_blueprint" }, 
+      "result": "yuushya:horizontalpost21",
+      "count": 4
+}

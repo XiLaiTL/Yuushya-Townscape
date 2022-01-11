@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "yuushya",
+  "version": "${mod_version}",
+  "name": "${mod_name}",
+  "description": "${mod_description}",
+  "authors": [
+    "${mod_authors}"
+  ],
+  "contact": {
+    "homepage": "${mod_url}",
+    "sources": "https://gitee.com/yuushya/yuushya-release/releases/Release"
+  },
+
+  "license": "${mod_licence}",
+  "icon": "pack.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.cocofish.yuushya.Yuushya"
+    ],
+    "client": [
+      {
+        "value": "net.cocofish.yuushya.YuushyaClient"
+      }
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

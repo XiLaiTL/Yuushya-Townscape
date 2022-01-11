@@ -1,0 +1,6 @@
+{
+      "type": "minecraft:stonecutting", 
+      "ingredient": { "item": "yuushya:sign_blueprint" }, 
+      "result": "yuushya:384",
+      "count": 1
+}
