@@ -1,0 +1,6 @@
+{
+      "type": "minecraft:stonecutting", 
+      "ingredient": { "item": "yuushya:furniture_blueprint" }, 
+      "result": "yuushya:b80",
+      "count": 1
+}

@@ -18,6 +18,7 @@ import net.fabricmc.fabric.api.client.rendereregistry.v1.BlockEntityRendererRegi
 import net.fabricmc.fabric.api.client.rendereregistry.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.client.model.FabricModelPredicateProviderRegistry;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
+import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.entity.EntityType;
 import net.minecraft.resource.ResourceType;
@@ -50,12 +51,13 @@ public class YuushyaClient implements ClientModInitializer {
         BlockEntityRendererRegistry.INSTANCE.register(showblockentity, ShowBlockEntityRender::new);
         BlockEntityRendererRegistry.INSTANCE.register(mixedblockentity, MixedBlockEntityRender::new);
 
-//        FabricModelPredicateProviderRegistry.register(new Identifier("direction"), (itemStack, clientWorld, livingEntity,i) -> {
-//            return itemStack.hasNbt() ? itemStack.getNbt().getInt("TransDirection") : 0;//I don't know i
-//        });
-        FabricModelPredicateProviderRegistry.register(Yuushya.yuushyaElements.itemsregister.get("form_trans_item"),new Identifier("direction"), (itemStack, clientWorld, livingEntity,i) -> {return itemStack.hasNbt() ? itemStack.getNbt().getInt("TransDirection") : 0;});
-        FabricModelPredicateProviderRegistry.register(Yuushya.yuushyaElements.itemsregister.get("pos_trans_item"),new Identifier("direction"), (itemStack, clientWorld, livingEntity,i) -> {return itemStack.hasNbt() ? itemStack.getNbt().getInt("TransDirection") : 0;});
+        FabricModelPredicateProviderRegistry.register(new Identifier("direction"), (itemStack, clientWorld, livingEntity,i) -> {
+            return itemStack.hasNbt() ? itemStack.getNbt().getFloat("TransDirection")*0.1F : 0;//I don't know i
+        });
 
+//        FabricModelPredicateProviderRegistry.register(Yuushya.yuushyaElements.itemsregister.get("form_trans_item"),new Identifier("direction"), (itemStack, clientWorld, livingEntity,i) -> {return itemStack.hasNbt() ? itemStack.getNbt().getFloat("TransDirection")*0.1F : 0;});
+//        FabricModelPredicateProviderRegistry.register(Yuushya.yuushyaElements.itemsregister.get("pos_trans_item"),new Identifier("direction"), (itemStack, clientWorld, livingEntity,i) -> { return itemStack.hasNbt() ? itemStack.getNbt().getFloat("TransDirection")*0.1F : 0;});
+//        FabricModelPredicateProviderRegistry.register(Yuushya.yuushyaElements.itemsregister.get("micro_pos_trans_item"),new Identifier("direction"), (itemStack, clientWorld, livingEntity,i) -> { return itemStack.hasNbt() ? itemStack.getNbt().getFloat("TransDirection")*0.1F : 0;});
 
     }
 }

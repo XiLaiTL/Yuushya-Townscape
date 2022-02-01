@@ -15,6 +15,14 @@
 	{"classtype": "", "name": "column_blueprint", "itemgroup": "yuushya_item","properties": {"maxcount": 64,"rarity": "common"}},
 	{"classtype": "", "name": "crossbeam_blueprint", "itemgroup": "yuushya_item","properties": {"maxcount": 64,"rarity": "common"}},
 	{"classtype": "", "name": "frame_stuff_blueprint", "itemgroup": "yuushya_item","properties": {"maxcount": 64,"rarity": "common"}},
+	
+	{"classtype": "", "name": "the_encyclopedia", "itemgroup": "yuushya_item","properties": {"maxcount": 16,"rarity": "common"}},
+	{"classtype": "", "name": "shimmering_pearl", "itemgroup": "yuushya_item","properties": {"maxcount": 16,"rarity": "common"}},
+	{"classtype": "", "name": "everlasting_wood", "itemgroup": "yuushya_item","properties": {"maxcount": 16,"rarity": "common"}},
+	{"classtype": "", "name": "sprouting_dirt", "itemgroup": "yuushya_item","properties": {"maxcount": 16,"rarity": "common"}},
+	{"classtype": "", "name": "floating_bloom", "itemgroup": "yuushya_item","properties": {"maxcount": 16,"rarity": "common"}},
+	{"classtype": "", "name": "sparking_flame", "itemgroup": "yuushya_item","properties": {"maxcount": 16,"rarity": "common"}},
+	
 	  {"classtype": "StructureCreatorItem", "name": "sakura_tree", "itemgroup": "yuushya_structure","properties": {"createnbt": "yuushya:tree_sakura"}},
 	  {"classtype": "StructureCreatorItem", "name": "maple_tree", "itemgroup": "yuushya_structure","properties": {"createnbt": "yuushya:tree_maple"}},
 	  {"classtype": "StructureCreatorItem", "name": "normal_tree", "itemgroup": "yuushya_structure","properties": {"createnbt": "yuushya:tree_normal"}},
@@ -26,6 +34,7 @@
 	  {"classtype": "StructureCreatorItem", "name": "model_building_0", "itemgroup": "yuushya_structure","properties": {"createnbt": "yuushya:model_building_0"}},	
 	  {"classtype": "StructureCreatorItem", "name": "model_building_1", "itemgroup": "yuushya_structure","properties": {"createnbt": "yuushya:model_building_1"}},	  
 	  {"classtype": "StructureCreatorItem", "name": "grand_building", "itemgroup": "yuushya_structure","properties": {"createnbt": "yuushya:grand_building"}},	  
+	  {"classtype": "StructureCreatorItem", "name": "department", "itemgroup": "yuushya_structure","properties": {"createnbt": "yuushya:department2"}},	  
 	  {"classtype": "StructureCreatorItem", "name": "shop_sign_examples", "itemgroup": "yuushya_structure","properties": {"createnbt": "yuushya:shop_sign_examples"}}	  
   ]
 }

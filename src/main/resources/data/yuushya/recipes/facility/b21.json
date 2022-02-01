@@ -1,0 +1,6 @@
+{
+      "type": "minecraft:stonecutting", 
+      "ingredient": { "item": "yuushya:facility_blueprint" }, 
+      "result": "yuushya:b21",
+      "count": 4
+}

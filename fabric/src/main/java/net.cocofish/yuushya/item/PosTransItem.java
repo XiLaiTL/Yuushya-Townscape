@@ -17,6 +17,9 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.Util;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import org.apache.commons.logging.Log;
+
+import java.io.Console;
 
 public class PosTransItem extends AbstractYuushyaItem{
     public PosTransItem(Settings settings, int linecount) {

@@ -46,6 +46,7 @@
     {"classtype": "PlainBlock", "name": "a06", "itemgroup": "yuushya_extrablocks","rendertype": "solid", "issoild": true},
     {"classtype": "PlainBlock", "name": "a07", "itemgroup": "yuushya_extrablocks","rendertype": "solid", "issoild": true},
     {"classtype": "PlainBlock", "name": "a08", "itemgroup": "yuushya_extrablocks","rendertype": "solid", "issoild": true},
+    {"classtype": "IntactBlock", "name": "b90", "itemgroup": "yuushya_extrablocks","rendertype": "solid", "issoild": true},	
     {"classtype": "PlainBlock", "name": "a09", "itemgroup": "yuushya_extrablocks","rendertype": "solid", "issoild": true},
     {"classtype": "PlainBlock", "name": "a10", "itemgroup": "yuushya_extrablocks","rendertype": "solid", "issoild": true},
     {"classtype": "PlainBlock", "name": "a11", "itemgroup": "yuushya_extrablocks","rendertype": "solid", "issoild": true},	
@@ -200,6 +201,7 @@
     {"classtype": "IntactBlock", "name": "a05", "itemgroup": "yuushya_extrablocks","rendertype": "solid", "issoild": true},
     {"classtype": "IntactBlock", "name": "b50", "itemgroup": "yuushya_extrablocks","rendertype": "solid", "issoild": true},	
     {"classtype": "IntactBlock", "name": "b58", "itemgroup": "yuushya_extrablocks","rendertype": "solid", "issoild": true},	
+    {"classtype": "IntactBlock", "name": "b59", "itemgroup": "yuushya_extrablocks","rendertype": "solid", "issoild": true},	
 	{"classtype": "IntactBlock", "name": "47", "itemgroup": "yuushya_extrablocks","rendertype": "solid", "issoild": true},
     {"classtype": "IntactBlock", "name": "48", "itemgroup": "yuushya_extrablocks","rendertype": "solid", "issoild": true},
     {"classtype": "IntactBlock", "name": "49", "itemgroup": "yuushya_extrablocks","rendertype": "solid", "issoild": true},
@@ -802,6 +804,10 @@
     {"classtype": "NormalBlock", "name": "285", "itemgroup": "yuushya_extrashapes"},
     {"classtype": "NormalBlock", "name": "286", "itemgroup": "yuushya_extrashapes"},
 
+    {"classtype": "SemiWallBlock", "name": "ladder0", "itemgroup": "yuushya_extrashapes", "properties": {"havecollision": false}},
+    {"classtype": "SemiWallBlock", "name": "ladder1", "itemgroup": "yuushya_extrashapes", "properties": {"havecollision": false}},
+    {"classtype": "SemiWallBlock", "name": "ladder2", "itemgroup": "yuushya_extrashapes", "properties": {"havecollision": false}},	
+    {"classtype": "SemiWallBlock", "name": "ladder3", "itemgroup": "yuushya_extrashapes", "properties": {"havecollision": false}},	
  
 	{"classtype": "BoardBlock", "name": "050", "itemgroup": "yuushya_infrastructure"},
     {"classtype": "BoardBlock", "name": "051", "itemgroup": "yuushya_infrastructure"},
@@ -932,6 +938,9 @@
     {"classtype": "DecoBlock", "name": "121", "itemgroup": "yuushya_furniture"},
     {"classtype": "DecoBlock", "name": "122", "itemgroup": "yuushya_furniture"},
 	{"classtype": "ChairBlock", "name": "b80", "itemgroup": "yuushya_furniture"},	
+    {"classtype": "ChairBlock", "name": "b81", "itemgroup": "yuushya_furniture"},
+    {"classtype": "ChairBlock", "name": "b82", "itemgroup": "yuushya_furniture"},
+    {"classtype": "ChairBlock", "name": "b83", "itemgroup": "yuushya_furniture"},	
     {"classtype": "DecoBlock", "name": "123", "itemgroup": "yuushya_furniture"},
     {"classtype": "DecoBlock", "name": "124", "itemgroup": "yuushya_furniture"},
     {"classtype": "NormalBlock", "name": "125", "itemgroup": "yuushya_furniture"},
@@ -954,11 +963,14 @@
     {"classtype": "TableBlock", "name": "148", "itemgroup": "yuushya_furniture"},
     {"classtype": "ChairBlock", "name": "149", "itemgroup": "yuushya_furniture"},
 	{"classtype": "NormalBlock", "name": "134", "itemgroup": "yuushya_furniture"},
+
+	
 	{"classtype": "NormalBlock", "name": "b77", "itemgroup": "yuushya_furniture"},
 		
 	{"classtype": "NormalBlock", "name": "559", "itemgroup": "yuushya_furniture"},
 	{"classtype": "NormalBlock", "name": "565", "itemgroup": "yuushya_furniture"},
 	{"classtype": "NormalBlock", "name": "133", "itemgroup": "yuushya_furniture"},
+	{"classtype": "NormalBlock", "name": "b91", "itemgroup": "yuushya_furniture"},	
     {"classtype": "NormalBlock", "name": "135", "itemgroup": "yuushya_furniture"},
     {"classtype": "NormalBlock", "name": "136", "itemgroup": "yuushya_furniture"},
     {"classtype": "NormalBlock", "name": "137", "itemgroup": "yuushya_furniture"},
@@ -984,6 +996,7 @@
 	{"classtype": "IntactBlock", "name": "503", "itemgroup": "yuushya_furniture"},
     {"classtype": "IntactBlock", "name": "500", "itemgroup": "yuushya_furniture"},	
     {"classtype": "IntactBlock", "name": "509", "itemgroup": "yuushya_furniture"},
+    {"classtype": "NormalBlock", "name": "b93", "itemgroup": "yuushya_furniture"},	
 	
 	{"classtype": "SemiWallBlock", "name": "154", "itemgroup": "yuushya_furniture"},
     {"classtype": "DecoBlock", "name": "132", "itemgroup": "yuushya_furniture"},
@@ -1003,6 +1016,7 @@
     {"classtype": "NormalBlock", "name": "513", "itemgroup": "yuushya_furniture"},
     {"classtype": "NormalBlock", "name": "514", "itemgroup": "yuushya_furniture"},
     {"classtype": "NormalBlock", "name": "515", "itemgroup": "yuushya_furniture"},
+    {"classtype": "NormalBlock", "name": "b92", "itemgroup": "yuushya_furniture"},	
     {"classtype": "TallFurnitureBlock", "name": "516", "itemgroup": "yuushya_furniture"},
     {"classtype": "TallFurnitureBlock", "name": "517", "itemgroup": "yuushya_furniture"},
     {"classtype": "DecoBlock", "name": "532", "itemgroup": "yuushya_furniture"},
@@ -1056,7 +1070,40 @@
     {"classtype": "DecoBlock", "name": "a78", "itemgroup": "yuushya_furniture"},
     {"classtype": "DecoBlock", "name": "a79", "itemgroup": "yuushya_furniture"},
     {"classtype": "DecoBlock", "name": "a80", "itemgroup": "yuushya_furniture"},
+	
+	{"classtype": "IntactBlock", "name": "bed0", "itemgroup": "yuushya_furniture"},
+	{"classtype": "IntactBlock", "name": "bed1", "itemgroup": "yuushya_furniture"},
+	{"classtype": "IntactBlock", "name": "bed2", "itemgroup": "yuushya_furniture"},
+	{"classtype": "IntactBlock", "name": "bed3", "itemgroup": "yuushya_furniture"},
+	{"classtype": "IntactBlock", "name": "bed4", "itemgroup": "yuushya_furniture"},
+	{"classtype": "IntactBlock", "name": "bed5", "itemgroup": "yuushya_furniture"},
+	{"classtype": "IntactBlock", "name": "bed6", "itemgroup": "yuushya_furniture"},
+	{"classtype": "IntactBlock", "name": "bed7", "itemgroup": "yuushya_furniture"},	
+	{"classtype": "IntactBlock", "name": "bed8", "itemgroup": "yuushya_furniture"},	
+	{"classtype": "IntactBlock", "name": "bed9", "itemgroup": "yuushya_furniture"},	
+	{"classtype": "IntactBlock", "name": "bed10", "itemgroup": "yuushya_furniture"},
+	{"classtype": "IntactBlock", "name": "bed11", "itemgroup": "yuushya_furniture"},
+	{"classtype": "IntactBlock", "name": "bed12", "itemgroup": "yuushya_furniture"},
+	{"classtype": "IntactBlock", "name": "bed13", "itemgroup": "yuushya_furniture"},
+	{"classtype": "IntactBlock", "name": "bed14", "itemgroup": "yuushya_furniture"},
+	{"classtype": "IntactBlock", "name": "bed15", "itemgroup": "yuushya_furniture"},
+	{"classtype": "IntactBlock", "name": "bed16", "itemgroup": "yuushya_furniture"},
+	{"classtype": "IntactBlock", "name": "bed17", "itemgroup": "yuushya_furniture"},	
+	{"classtype": "IntactBlock", "name": "bed18", "itemgroup": "yuushya_furniture"},	
+	{"classtype": "IntactBlock", "name": "bed19", "itemgroup": "yuushya_furniture"},	
+	{"classtype": "IntactBlock", "name": "bed20", "itemgroup": "yuushya_furniture"},		
+	{"classtype": "IntactBlock", "name": "bedframe0", "itemgroup": "yuushya_furniture"},		
+	{"classtype": "IntactBlock", "name": "bedframe1", "itemgroup": "yuushya_furniture"},		
+	{"classtype": "IntactBlock", "name": "bedframe2", "itemgroup": "yuushya_furniture"},		
+	{"classtype": "IntactBlock", "name": "bedframe3", "itemgroup": "yuushya_furniture"},
+	
 
+	
+
+
+
+
+    {"classtype": "NormalBlock", "name": "b94", "itemgroup": "yuushya_furniture"},
 	
 	{"classtype": "NormalBlock", "name": "667", "itemgroup": "yuushya_signs"},
     {"classtype": "NormalBlock", "name": "340", "itemgroup": "yuushya_signs"},
@@ -1126,10 +1173,6 @@
 	{"classtype": "NormalBlock", "name": "b78", "itemgroup": "yuushya_signs"},
 	{"classtype": "NormalBlock", "name": "b79", "itemgroup": "yuushya_signs"},	
 
-	{"classtype": "SemiWallBlock", "name": "344", "itemgroup": "yuushya_signs", "properties": {"havecollision": false}},
-    {"classtype": "SemiWallBlock", "name": "345", "itemgroup": "yuushya_signs", "properties": {"havecollision": false}},
-    {"classtype": "SemiWallBlock", "name": "346", "itemgroup": "yuushya_signs", "properties": {"havecollision": false}},
-    {"classtype": "SemiWallBlock", "name": "347", "itemgroup": "yuushya_signs", "properties": {"havecollision": false}},
 	
     {"classtype": "SemiWallBlock", "name": "348", "itemgroup": "yuushya_signs", "properties": {"havecollision": false}},
 	
@@ -1314,6 +1357,13 @@
 
 	{"classtype": "ChairBlock", "name": "flowerpot26", "itemgroup": "yuushya_decoration"},
 	{"classtype": "ChairBlock", "name": "flowerpot27", "itemgroup": "yuushya_decoration"},
+	
+    {"classtype": "NormalBlock", "name": "b84", "itemgroup": "yuushya_decoration"},
+    {"classtype": "NormalBlock", "name": "b85", "itemgroup": "yuushya_decoration"},
+    {"classtype": "NormalBlock", "name": "b86", "itemgroup": "yuushya_decoration"},
+    {"classtype": "NormalBlock", "name": "b87", "itemgroup": "yuushya_decoration"},
+    {"classtype": "NormalBlock", "name": "b88", "itemgroup": "yuushya_decoration"},
+    {"classtype": "NormalBlock", "name": "b89", "itemgroup": "yuushya_decoration"},	
 	
 	{"classtype": "PlantBlock", "name": "plant00", "itemgroup": "yuushya_decoration","properties":{"sound":"plant","havecollision":false}},
 	{"classtype": "PlantBlock", "name": "plant01", "itemgroup": "yuushya_decoration","properties":{"sound":"plant","havecollision":false}},

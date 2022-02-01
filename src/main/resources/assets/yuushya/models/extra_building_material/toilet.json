@@ -3,7 +3,7 @@
 	"ambientocclusion": false,
 	"textures": {
 		"2": "yuushya:0extra_building_material/preview/toilet",
-		"3": "block/water_still",
+		"3": "yuushya:block/bamboo_pot",
 		"4": "yuushya:0extra_building_material/preview/wire",
 		"particle": "yuushya:0extra_building_material/preview/toilet"
 	},
@@ -317,7 +317,7 @@
 				"east": {"uv": [0, 0, 4, 0], "texture": "#3"},
 				"south": {"uv": [0, 0, 4, 0], "texture": "#3"},
 				"west": {"uv": [0, 0, 4, 0], "texture": "#3"},
-				"up": {"uv": [0, 0, 4, 4], "texture": "#3"},
+				"up": {"uv": [4, 4, 8, 8], "texture": "#3"},
 				"down": {"uv": [0, 0, 4, 4], "texture": "#3"}
 			}
 		},
