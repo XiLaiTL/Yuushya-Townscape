@@ -1,3 +1,5 @@
+Project now is in [Yuushya Minecraft](https://gitee.com/yuushya/yuushya-townscape)
+
 # Yuushya Townscape
 
 <<<<<<< HEAD
