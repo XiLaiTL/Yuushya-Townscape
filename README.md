@@ -1,4 +1,4 @@
-Project now is in [Yuushya Minecraft](https://gitee.com/yuushya/yuushya-townscape)
+Project now is in [Yuushya Minecraft](https://gitee.com/yuushyatownscape/yuushya-townscape)
 
 # Yuushya Townscape
 
