@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "net.cocofish.yuushya.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "client": [
+    "MixinTitleScreen"
+  ],
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
