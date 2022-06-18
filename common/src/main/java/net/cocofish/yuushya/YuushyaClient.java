@@ -11,9 +11,8 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 
 public class YuushyaClient {
     public static void onInitializeClient(){
-//        RenderTypeRegistry.register(RenderType.cutout(), YuushyaRegistries.SHOW_BLOCK.get());
+        RenderTypeRegistry.register(RenderType.cutout(), YuushyaRegistries.SHOW_BLOCK.get());
 //        BlockEntityRendererRegistry.register((BlockEntityType<ShowBlockEntity>) YuushyaRegistries.SHOW_BLOCK_ENTITY.get(), ShowBlockEntityRender::new);
-
         //ItemPropertiesRegistry.register()
     }
 }

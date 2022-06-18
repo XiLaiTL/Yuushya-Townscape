@@ -91,20 +91,7 @@ public class ShowBlockModel implements IForgeBakedModel, BakedModel {
             BlockRenderDispatcher blockRenderDispatcher =Minecraft.getInstance().getBlockRenderer();
             List<BakedQuad> finalQuads = new ArrayList<>();
             if (side != null) {
-                BlockState shell = blockEntity.getTransformData(0).blockState;
-                BakedModel shellModel = blockRenderDispatcher.getBlockModel(shell);
-
-                List<BakedQuad> shellModelQuads = shellModel.getQuads(shell, side, rand);
-                for (BakedQuad shellModelQuad : shellModelQuads) {
-                    if (shellModelQuad.getTintIndex() > -1) {
-                        finalQuads.add(new BakedQuad(shellModelQuad.getVertices().clone(),
-                                YuushyaClientForge.encodeTintWithState(shellModelQuad.getTintIndex(), shell),
-                                shellModelQuad.getDirection(), shellModelQuad.getSprite(), shellModelQuad.isShade()));
-                    } else {
-                        finalQuads.add(shellModelQuad);
-                    }
-                }
-                return finalQuads;
+                return Collections.emptyList();
             } else {
 
                 ArrayList<Direction> directions = new ArrayList<>(Arrays.asList(Direction.values()));
