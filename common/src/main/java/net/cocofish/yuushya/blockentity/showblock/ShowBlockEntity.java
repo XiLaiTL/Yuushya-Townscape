@@ -15,6 +15,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public class ShowBlockEntity extends BlockEntity implements iTransformDataInventory {
@@ -25,8 +26,9 @@ public class ShowBlockEntity extends BlockEntity implements iTransformDataInvent
     public NonNullList<TransformData> getTransformDatas() {return transformDatas;}
 
     public ShowBlockEntity(BlockPos blockPos, BlockState blockState) {
-        super(YuushyaRegistries.BLOCK_ENTITIES.get("showblockentity").get(), blockPos, blockState);
-        transformDatas = NonNullList.withSize(16,new TransformData());
+        super(YuushyaRegistries.SHOW_BLOCK_ENTITY.get(), blockPos, blockState);
+        transformDatas = NonNullList.createWithCapacity(16);
+        for(int i=0;i<16;i++)transformDatas.add(new TransformData());
         slot=0;
     }
     @Override
@@ -34,12 +36,14 @@ public class ShowBlockEntity extends BlockEntity implements iTransformDataInvent
     public void load(CompoundTag compoundTag){
         super.load(compoundTag);
         iTransformDataInventory.load(compoundTag,transformDatas);
+        slot= (int) compoundTag.getByte("ControlSlot");
     }
     @Override
     //writeNbt
     protected void saveAdditional(CompoundTag compoundTag) {
         super.saveAdditional(compoundTag);
         iTransformDataInventory.saveAdditional(compoundTag,transformDatas);
+        compoundTag.putByte("ControlSlot",slot.byteValue());
     }
 
     @Override
@@ -48,6 +52,18 @@ public class ShowBlockEntity extends BlockEntity implements iTransformDataInvent
         CompoundTag compoundTag =  super.getUpdateTag();
         saveAdditional(compoundTag);
         return compoundTag;
+    }
+
+    public void saveChanged() {
+        this.setChanged();
+        if (this.getLevel()!=null){
+            this.getLevel().setBlocksDirty(this.getBlockPos(), this.getLevel().getBlockState(this.getBlockPos()), Blocks.AIR.defaultBlockState());
+        }
+    }
+
+    @NotNull
+    public TransformData getTransFormDataNow(){
+        return getTransformData(slot);
     }
 
 }

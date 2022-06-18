@@ -34,16 +34,23 @@ public class YuushyaRegistries {
 
     public static void registerAll(){
         ITEMS.register("example_item",()->new Item(new Item.Properties().tab(Yuushya.EXAMPLE_TAB)));
-        ITEMS.register("get_blockstate_item",()->new GetBlockStateItem(new Item.Properties(),1));
-//        Registrar<Block> items = REGISTRIES.get().get(Registry.BLOCK_REGISTRY);
-//        RegistrySupplier<Block> show_block = items.register(new ResourceLocation(MOD_ID, "showblock"), () -> new Block(BlockBehaviour.Properties.of(Material.METAL)));
-        BLOCKS.register("showblock",()->new ShowBlock(BlockBehaviour.Properties.of(Material.METAL).noCollission().noOcclusion().strength(4.0f),1));
+        ITEMS.register("get_blockstate_item",()->new GetBlockStateItem(new Item.Properties().tab(Yuushya.EXAMPLE_TAB),1));
+        ITEMS.register("pos_trans_item",()->new PosTransItem(new Item.Properties().tab(Yuushya.EXAMPLE_TAB),4));
+        ITEMS.register("micro_pos_trans_item",()->new MicroPosTransItem(new Item.Properties().tab(Yuushya.EXAMPLE_TAB),4));
+        ITEMS.register("rot_trans_item",()->new RotTransItem(new Item.Properties().tab(Yuushya.EXAMPLE_TAB),4));
+        ITEMS.register("scale_trans_item",()->new ScaleTransItem(new Item.Properties().tab(Yuushya.EXAMPLE_TAB),4));
+        ITEMS.register("slot_trans_item",()->new SlotTransItem(new Item.Properties().tab(Yuushya.EXAMPLE_TAB),4));
+        ITEMS.register("get_showblock_item",()->new GetShowBlockEntityItem(new Item.Properties().tab(Yuushya.EXAMPLE_TAB),4));
+        ITEMS.register("move_transformdata_item",()->new MoveTransformDataItem(new Item.Properties().tab(Yuushya.EXAMPLE_TAB),4));
+
+
+        SHOW_BLOCK= BLOCKS.register("showblock",()->new ShowBlock(BlockBehaviour.Properties.of(Material.METAL).noCollission().noOcclusion().strength(4.0f),1));
         ITEMS.register("showblock",()->new BlockItem(BLOCKS.get("showblock").get(),new Item.Properties().tab(Yuushya.EXAMPLE_TAB)));
-        BLOCK_ENTITIES.register("showblockentity",()->BlockEntityType.Builder.of(ShowBlockEntity::new,BLOCKS.get("showblock").get()).build(Util.fetchChoiceType(References.BLOCK_ENTITY,"yuushya:showblockentity")));
+        SHOW_BLOCK_ENTITY= BLOCK_ENTITIES.register("showblockentity",()->BlockEntityType.Builder.of(ShowBlockEntity::new,BLOCKS.get("showblock").get()).build(null));//Util.fetchChoiceType(References.BLOCK_ENTITY,"yuushya:showblockentity")
     }
 
-    public static ShowBlock SHOW_BLOCK = null;
-    public static BlockEntityType<ShowBlockEntity> SHOW_BLOCK_ENTITY = null;
+    public static RegistrySupplier<Block> SHOW_BLOCK = null;
+    public static RegistrySupplier<BlockEntityType<?>> SHOW_BLOCK_ENTITY = null;
 
 
 }

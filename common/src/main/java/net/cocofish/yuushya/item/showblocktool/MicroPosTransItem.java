@@ -1,10 +1,6 @@
 package net.cocofish.yuushya.item.showblocktool;
 
 import com.mojang.math.Vector3d;
-import net.cocofish.yuushya.blockentity.TransformData;
-import net.cocofish.yuushya.blockentity.showblock.ShowBlock;
-import net.cocofish.yuushya.blockentity.showblock.ShowBlockEntity;
-import net.cocofish.yuushya.item.AbstractMultiPurposeToolItem;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.InteractionResult;
@@ -13,24 +9,21 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.state.BlockState;
 
-import java.util.function.Consumer;
-
-public class PosTransItem extends AbstractMultiPurposeToolItem {
-    private static final int MAX_POS_1 =17;
-    public PosTransItem(Properties properties, Integer tipLines) {
+public class MicroPosTransItem extends PosTransItem{
+    public MicroPosTransItem(Properties properties, Integer tipLines) {
         super(properties, tipLines);
-        MAX_FORMS=3;//x:0,y:1,z:2
+        MAX_FORMS=4;//x:0,y:1,z:2,floor:3;
     }
-
     @Override
     public InteractionResult inMainHandRightClickOnBlock(Player player, BlockState blockState, LevelAccessor level, BlockPos blockPos, ItemStack handItemStack){
         //右手右键 向后位移
         return translateData(player,blockState,level,blockPos,handItemStack,(transformData)->{
             Vector3d pos = transformData.pos;
             switch (getForm()){
-                case 0-> pos.x=(pos.x-1)% MAX_POS_1;
-                case 1-> pos.y=(pos.y-1)% MAX_POS_1;
-                case 2-> pos.z=(pos.z-1)% MAX_POS_1;
+                case 0-> pos.x-=0.001;
+                case 1-> pos.y-=0.001;
+                case 2-> pos.z-=0.001;
+                case 3-> pos.set(Math.round(pos.x)%17,Math.round(pos.y)%17,Math.round(pos.z)%17);
             }
             player.displayClientMessage(new TranslatableComponent(this.getDescriptionId()+".switch",pos.x,pos.y,pos.z),true);
         });
@@ -41,23 +34,12 @@ public class PosTransItem extends AbstractMultiPurposeToolItem {
         return translateData(player,blockState,level,blockPos,handItemStack,(transformData)->{
             Vector3d pos = transformData.pos;
             switch (getForm()){
-                case 0-> pos.x=(pos.x+1)% MAX_POS_1;
-                case 1-> pos.y=(pos.y+1)% MAX_POS_1;
-                case 2-> pos.z=(pos.z+1)% MAX_POS_1;
+                case 0-> pos.x+=0.001;
+                case 1-> pos.y+=0.001;
+                case 2-> pos.z+=0.001;
             }
             player.displayClientMessage(new TranslatableComponent(this.getDescriptionId()+".switch",pos.x,pos.y,pos.z),true);
         });
-    }
-
-    protected InteractionResult translateData(Player player, BlockState blockState, LevelAccessor level, BlockPos blockPos, ItemStack handItemStack, Consumer<TransformData> consumer){
-        if(blockState.getBlock() instanceof ShowBlock) {
-            ShowBlockEntity showBlockEntity = (ShowBlockEntity) level.getBlockEntity(blockPos);
-            TransformData transformData=showBlockEntity.getTransFormDataNow();
-            consumer.accept(transformData);
-            showBlockEntity.saveChanged();
-            return InteractionResult.SUCCESS;
-        }
-        return InteractionResult.PASS;
     }
 
 }

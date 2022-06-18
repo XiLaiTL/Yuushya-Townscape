@@ -22,20 +22,38 @@ public class TransformData{
         this.isShown=false;
     }
     public TransformData(Vector3d pos, Vector3f rot, Vector3f scales, BlockState blockState,boolean isShown){
-        this.pos=pos;
-        this.rot=rot;
-        this.scales=scales;
+        this();
+        this.pos.set(pos);
+        this.rot.set(rot.x(),rot.y(),rot.z());
+        this.scales.set(scales.x(),scales.y(),scales.z());
         this.blockState= blockState;
         this.isShown=isShown;
+    }
+    public void set(Vector3d pos, Vector3f rot, Vector3f scales, BlockState blockState,boolean isShown){
+        this.pos.set(pos);
+        this.rot.set(rot.x(),rot.y(),rot.z());
+        this.scales.set(scales.x(),scales.y(),scales.z());
+        this.blockState= blockState;
+        this.isShown=isShown;
+    }
+    public void set(TransformData old){
+        set(old.pos,old.rot,old.scales,old.blockState,old.isShown);
+    }
+    public void set(){
+        this.pos.set(0,0,0);
+        this.rot.set(0,0,0);
+        this.scales.set(1,1,1);
+        this.blockState=Blocks.AIR.defaultBlockState();
+        this.isShown=false;
     }
     //readNbt from compoundTag
     public void load(CompoundTag compoundTag) {
         ListTag listTagPos = compoundTag.getList("ShowPos",6);//6 means Double
         ListTag listTagRot = compoundTag.getList("ShowRotation",5);//5 means Float
         ListTag listTagScales = compoundTag.getList("ShowScales",5);//5 means Float
-        this.pos = new Vector3d(listTagPos.getDouble(0), listTagPos.getDouble(1), listTagPos.getDouble(2));
-        this.rot = new Vector3f(listTagRot.getFloat(0), listTagRot.getFloat(1), listTagRot.getFloat(2));
-        this.scales = new Vector3f(listTagScales.getFloat(0), listTagScales.getFloat(1), listTagScales.getFloat(2));
+        this.pos.set(listTagPos.getDouble(0), listTagPos.getDouble(1), listTagPos.getDouble(2));
+        this.rot.set(listTagRot.getFloat(0), listTagRot.getFloat(1), listTagRot.getFloat(2));
+        this.scales.set(listTagScales.getFloat(0), listTagScales.getFloat(1), listTagScales.getFloat(2));
         this.isShown = compoundTag.getBoolean("isShown");
         this.blockState = NbtUtils.readBlockState(compoundTag.getCompound("BlockState"));
     }

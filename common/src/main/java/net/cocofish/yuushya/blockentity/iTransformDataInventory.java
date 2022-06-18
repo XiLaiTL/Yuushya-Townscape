@@ -9,6 +9,7 @@ import net.minecraft.nbt.NbtUtils;
 import net.minecraft.world.level.block.AirBlock;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
+import org.jetbrains.annotations.NotNull;
 
 public interface iTransformDataInventory {
     //作为lambda类型的唯一抽象方法 the unique abstract function of interface and provide the lambda type.
@@ -26,14 +27,11 @@ public interface iTransformDataInventory {
         }
         return true;
     }
+    @NotNull
     default TransformData getTransformData(int slot){return getTransformDatas().get(slot);}
-    default TransformData removeTransformData(int slot){
-        getTransformData(slot).isShown=false;
-        return slot>=0&&slot<size()
-                ? getTransformDatas().set(slot,new TransformData())
-                :new TransformData();
-    }
-    default void setTransformData(int slot,TransformData transformData){getTransformDatas().set(slot,transformData);}
+    default void removeTransformData(int slot){getTransformData(slot).set();}
+    //都是预先填充的列表的对象进行更改
+    default void setTransformData(int slot,TransformData transformData){getTransformData(slot).set(transformData);}
     default void setSlotBlockState(int slot,BlockState blockState){getTransformData(slot).blockState=blockState;}
     default void setSlotShown(int slot,boolean isShown){getTransformData(slot).isShown=isShown;}
     default void clear(){getTransformDatas().clear();}
