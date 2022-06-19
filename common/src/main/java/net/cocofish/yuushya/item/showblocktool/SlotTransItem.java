@@ -31,14 +31,14 @@ public class SlotTransItem extends AbstractToolItem {
         //右手右键 向后位移切换操作层
         return translateSlot(player,blockState,level,blockPos,handItemStack,(showBlockEntity)->{
             if (--showBlockEntity.slot<0)
-                showBlockEntity.slot=showBlockEntity.size();
+                showBlockEntity.slot=showBlockEntity.size()-1;
         });
     }
     @Override
     public InteractionResult inMainHandLeftClickOnBlock(Player player, BlockState blockState, LevelAccessor level, BlockPos blockPos, ItemStack handItemStack){
         //右手左键 向前位移切换操作层
         return translateSlot(player,blockState,level,blockPos,handItemStack,(showBlockEntity)->{
-            if (++showBlockEntity.slot>showBlockEntity.size())
+            if (++showBlockEntity.slot>showBlockEntity.size()-1)
                 showBlockEntity.slot=0;
         });
     }

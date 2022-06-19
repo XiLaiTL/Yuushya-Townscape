@@ -17,7 +17,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 
 public class MoveTransformDataItem extends AbstractToolItem {
-    private TransformData transformData=new TransformData();
+    private final TransformData transformData=new TransformData();
     public MoveTransformDataItem(Properties properties, Integer tipLines) {
         super(properties, tipLines);
     }

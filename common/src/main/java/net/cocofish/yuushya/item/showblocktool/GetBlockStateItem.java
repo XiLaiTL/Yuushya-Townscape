@@ -30,7 +30,7 @@ public class GetBlockStateItem extends AbstractToolItem {
             BlockState blockStateShowBlock =showBlockEntity.getTransFormDataNow().blockState;
             if (!(blockStateShowBlock.getBlock() instanceof AirBlock)){
                 blockStateTarget=blockStateShowBlock;
-                showBlockEntity.removeTransformData(showBlockEntity.slot);
+                showBlockEntity.removeSlotBlockState(showBlockEntity.slot);
                 showBlockEntity.saveChanged();
             }
             else {

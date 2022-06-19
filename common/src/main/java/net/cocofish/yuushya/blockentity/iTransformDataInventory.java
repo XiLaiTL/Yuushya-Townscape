@@ -30,6 +30,7 @@ public interface iTransformDataInventory {
     @NotNull
     default TransformData getTransformData(int slot){return getTransformDatas().get(slot);}
     default void removeTransformData(int slot){getTransformData(slot).set();}
+    default void removeSlotBlockState(int slot){getTransformData(slot).blockState=Blocks.AIR.defaultBlockState();}
     //都是预先填充的列表的对象进行更改
     default void setTransformData(int slot,TransformData transformData){getTransformData(slot).set(transformData);}
     default void setSlotBlockState(int slot,BlockState blockState){getTransformData(slot).blockState=blockState;}
