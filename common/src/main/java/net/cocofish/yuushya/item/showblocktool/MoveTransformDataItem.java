@@ -30,7 +30,7 @@ public class MoveTransformDataItem extends AbstractToolItem {
             BlockState blockStateShowBlock =showBlockEntity.getTransFormDataNow().blockState;
             if (!(blockStateShowBlock.getBlock() instanceof AirBlock)){
                 transformData.set(showBlockEntity.getTransFormDataNow());
-                showBlockEntity.removeTransformData(showBlockEntity.slot);
+                showBlockEntity.removeTransFormDataNow();
                 showBlockEntity.saveChanged();
             }
             else {

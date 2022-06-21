@@ -1,8 +1,16 @@
 package net.cocofish.yuushya.item.showblocktool;
 
+import com.mojang.blaze3d.vertex.PoseStack;
+import dev.architectury.injectables.annotations.PlatformOnly;
+import dev.architectury.platform.Platform;
 import net.cocofish.yuushya.blockentity.showblock.ShowBlock;
 import net.cocofish.yuushya.blockentity.showblock.ShowBlockEntity;
 import net.cocofish.yuushya.item.AbstractToolItem;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.renderer.block.BlockRenderDispatcher;
+import net.minecraft.client.renderer.block.model.ItemTransforms;
+import net.minecraft.client.renderer.entity.ItemRenderer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.NbtUtils;
@@ -30,7 +38,7 @@ public class GetBlockStateItem extends AbstractToolItem {
             BlockState blockStateShowBlock =showBlockEntity.getTransFormDataNow().blockState;
             if (!(blockStateShowBlock.getBlock() instanceof AirBlock)){
                 blockStateTarget=blockStateShowBlock;
-                showBlockEntity.removeSlotBlockState(showBlockEntity.slot);
+                showBlockEntity.removeTransFormDataNow();
                 showBlockEntity.saveChanged();
             }
             else {
@@ -53,8 +61,8 @@ public class GetBlockStateItem extends AbstractToolItem {
         }
         if(blockStateTarget.getBlock() instanceof ShowBlock){
             ShowBlockEntity showBlockEntity = (ShowBlockEntity) level.getBlockEntity(blockPos);
-            showBlockEntity.setSlotBlockState(showBlockEntity.slot,blockState);
-            showBlockEntity.setSlotShown(showBlockEntity.slot,true);
+            showBlockEntity.setSlotBlockStateNow(blockState);
+            showBlockEntity.setSlotShown(showBlockEntity.getSlot(),true);
             showBlockEntity.saveChanged();
             player.displayClientMessage(new TranslatableComponent(this.getDescriptionId()+".offhand.success"), true);
             return InteractionResult.SUCCESS;
@@ -70,6 +78,13 @@ public class GetBlockStateItem extends AbstractToolItem {
         CompoundTag compoundTag = itemStack.getOrCreateTag();
         compoundTag.put("BlockState",NbtUtils.writeBlockState(blockState));
         itemStack.setTag(compoundTag);
+    }
+
+    public static void renderByItem(ItemStack stack, ItemTransforms.TransformType mode, PoseStack matrices, MultiBufferSource vertexConsumers, int light, int overlay) {
+        ItemRenderer itemRenderer= Minecraft.getInstance().getItemRenderer();
+        BlockState blockState = NbtUtils.readBlockState(stack.getOrCreateTag().getCompound("BlockState"));
+        BlockRenderDispatcher blockRenderDispatcher=Minecraft.getInstance().getBlockRenderer();
+        itemRenderer.render(stack,mode,false,matrices,vertexConsumers,light,overlay,blockRenderDispatcher.getBlockModel(blockState));
     }
 
 }

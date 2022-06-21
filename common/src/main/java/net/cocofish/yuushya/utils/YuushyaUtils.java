@@ -35,4 +35,9 @@ public class YuushyaUtils {
         }
     }
 
+    public static int encodeTintWithState(int tint, BlockState state) {
+        // 最高位依然可以保留负数信息，但tint的有效位数很低了，原版够用，mod一般也不会用这个东西
+        return Block.getId(state) << 8 | tint;
+    }
+
 }

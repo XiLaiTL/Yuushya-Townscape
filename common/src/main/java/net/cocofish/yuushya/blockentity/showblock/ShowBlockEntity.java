@@ -11,6 +11,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -18,17 +19,35 @@ import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ShowBlockEntity extends BlockEntity implements iTransformDataInventory {
 
-    private final NonNullList<TransformData> transformDatas;
-    public Integer slot;
+    private final List<TransformData> transformDatas;
     @Override
-    public NonNullList<TransformData> getTransformDatas() {return transformDatas;}
+    public List<TransformData> getTransformDatas() {return transformDatas;}
+    @NotNull
+    public TransformData getTransFormDataNow(){return getTransformData(slot);}
+    public void removeTransFormDataNow(){removeTransformData(slot);}
+    public void setTransformDataNow(TransformData transformData){setTransformData(slot,transformData);}
+    public void setSlotBlockStateNow(BlockState blockState){setSlotBlockState(slot,blockState);}
+
+
+    private Integer slot;
+    public int getSlot(){return slot;}
+    public void setSlot(int slot){
+        if (slot>=transformDatas.size()){
+            for (int i=slot-transformDatas.size()+1;i>0;i--)
+                transformDatas.add(new TransformData());
+        }
+        this.slot=slot;
+    }
 
     public ShowBlockEntity(BlockPos blockPos, BlockState blockState) {
         super(YuushyaRegistries.SHOW_BLOCK_ENTITY.get(), blockPos, blockState);
-        transformDatas = NonNullList.createWithCapacity(16);
-        for(int i=0;i<16;i++)transformDatas.add(new TransformData());
+        transformDatas = new ArrayList<>();
+        transformDatas.add(new TransformData());
         slot=0;
     }
     @Override
@@ -61,10 +80,6 @@ public class ShowBlockEntity extends BlockEntity implements iTransformDataInvent
         }
     }
 
-    @NotNull
-    public TransformData getTransFormDataNow(){
-        return getTransformData(slot);
-    }
 
 }
 

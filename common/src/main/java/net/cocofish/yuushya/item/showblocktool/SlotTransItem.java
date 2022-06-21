@@ -11,6 +11,7 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.block.AirBlock;
 import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.function.Consumer;
@@ -30,16 +31,25 @@ public class SlotTransItem extends AbstractToolItem {
     public InteractionResult inMainHandRightClickOnBlock(Player player, BlockState blockState, LevelAccessor level, BlockPos blockPos, ItemStack handItemStack){
         //右手右键 向后位移切换操作层
         return translateSlot(player,blockState,level,blockPos,handItemStack,(showBlockEntity)->{
-            if (--showBlockEntity.slot<0)
-                showBlockEntity.slot=showBlockEntity.size()-1;
+            int slot=showBlockEntity.getSlot();
+            if (slot==0){
+                player.displayClientMessage(new TranslatableComponent(this.getDescriptionId()+".slot.fail.min"),true);
+            } else {
+                showBlockEntity.setSlot(slot-1);
+                player.displayClientMessage(new TranslatableComponent(this.getDescriptionId()+".slot",showBlockEntity.getSlot(),showBlockEntity.getTransFormDataNow(),showBlockEntity.getTransFormDataNow().isShown),true);
+            }
         });
     }
     @Override
     public InteractionResult inMainHandLeftClickOnBlock(Player player, BlockState blockState, LevelAccessor level, BlockPos blockPos, ItemStack handItemStack){
         //右手左键 向前位移切换操作层
         return translateSlot(player,blockState,level,blockPos,handItemStack,(showBlockEntity)->{
-            if (++showBlockEntity.slot>showBlockEntity.size()-1)
-                showBlockEntity.slot=0;
+            if (showBlockEntity.getTransFormDataNow().blockState.getBlock() instanceof AirBlock){
+                player.displayClientMessage(new TranslatableComponent(this.getDescriptionId()+".slot.fail.max"),true);
+            }else{
+                showBlockEntity.setSlot(showBlockEntity.getSlot()+1);
+                player.displayClientMessage(new TranslatableComponent(this.getDescriptionId()+".slot",showBlockEntity.getSlot(),showBlockEntity.getTransFormDataNow(),showBlockEntity.getTransFormDataNow().isShown),true);
+            }
         });
     }
 
@@ -48,7 +58,6 @@ public class SlotTransItem extends AbstractToolItem {
             ShowBlockEntity showBlockEntity = (ShowBlockEntity) level.getBlockEntity(blockPos);
             consumer.accept(showBlockEntity);
             showBlockEntity.saveChanged();
-            player.displayClientMessage(new TranslatableComponent(this.getDescriptionId()+".slot",showBlockEntity.slot,showBlockEntity.getTransFormDataNow(),showBlockEntity.getTransFormDataNow().isShown),true);
             return InteractionResult.SUCCESS;
         }
         return InteractionResult.PASS;

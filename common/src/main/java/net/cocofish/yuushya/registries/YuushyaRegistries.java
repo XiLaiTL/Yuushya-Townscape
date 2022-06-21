@@ -1,6 +1,7 @@
 package net.cocofish.yuushya.registries;
 
 import com.google.common.base.Suppliers;
+import dev.architectury.injectables.annotations.PlatformOnly;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.Registrar;
 import dev.architectury.registry.registries.Registries;
@@ -34,7 +35,7 @@ public class YuushyaRegistries {
 
     public static void registerAll(){
         ITEMS.register("example_item",()->new Item(new Item.Properties().tab(Yuushya.EXAMPLE_TAB)));
-        ITEMS.register("get_blockstate_item",()->new GetBlockStateItem(new Item.Properties().tab(Yuushya.EXAMPLE_TAB),1));
+//        ITEMS.register("get_blockstate_item", () -> new GetBlockStateItem(new Item.Properties().tab(Yuushya.EXAMPLE_TAB), 1));
         ITEMS.register("pos_trans_item",()->new PosTransItem(new Item.Properties().tab(Yuushya.EXAMPLE_TAB),4));
         ITEMS.register("micro_pos_trans_item",()->new MicroPosTransItem(new Item.Properties().tab(Yuushya.EXAMPLE_TAB),4));
         ITEMS.register("rot_trans_item",()->new RotTransItem(new Item.Properties().tab(Yuushya.EXAMPLE_TAB),4));

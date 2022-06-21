@@ -11,13 +11,13 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.List;
+
 public interface iTransformDataInventory {
     //作为lambda类型的唯一抽象方法 the unique abstract function of interface and provide the lambda type.
-    NonNullList<TransformData> getTransformDatas();
+    List<TransformData> getTransformDatas();
     //利用函数式构造参数类型的包装器，保证返回的实例与原来相同 Creates an inventory from the block list.Must return the same instance every time it's called.
-    static iTransformDataInventory of(NonNullList<TransformData> transformDatas){return ()->transformDatas;}//interface ::=functional
-    //创建同类型新的容器 Creates a new inventory with the size.
-    static iTransformDataInventory withSize(int size){return of(NonNullList.withSize(size,new TransformData()));}//没什么用，不能给方块实体扩容。
+    static iTransformDataInventory of(List<TransformData> transformDatas){return ()->transformDatas;}//interface ::=functional
 
     //default function for control the inventory
     default int size(){return getTransformDatas().size();}
@@ -28,10 +28,21 @@ public interface iTransformDataInventory {
         return true;
     }
     @NotNull
-    default TransformData getTransformData(int slot){return getTransformDatas().get(slot);}
+    default TransformData getTransformData(int slot){
+        if (slot<size())
+            return getTransformDatas().get(slot);
+        else
+            return getTransformDatas().get(Math.min(size() - 1, 0));
+    }
+    default void addTransformData(int slot,TransformData transformData){
+        if (slot<size())
+            getTransformDatas().add(slot,transformData);
+        else
+            getTransformDatas().add(transformData);
+    }
+    default void addTransformData(TransformData transformData){getTransformDatas().add(transformData);}
     default void removeTransformData(int slot){getTransformData(slot).set();}
     default void removeSlotBlockState(int slot){getTransformData(slot).blockState=Blocks.AIR.defaultBlockState();}
-    //都是预先填充的列表的对象进行更改
     default void setTransformData(int slot,TransformData transformData){getTransformData(slot).set(transformData);}
     default void setSlotBlockState(int slot,BlockState blockState){getTransformData(slot).blockState=blockState;}
     default void setSlotShown(int slot,boolean isShown){getTransformData(slot).isShown=isShown;}
@@ -41,7 +52,7 @@ public interface iTransformDataInventory {
 
 
     //readNbt from compoundTag
-    static void load(CompoundTag compoundTag, NonNullList<TransformData> transformDatas) {
+    static void load(CompoundTag compoundTag, List<TransformData> transformDatas) {
         ListTag listTag = compoundTag.getList("Blocks", 10);int index=0;//10 means Compound
         for(TransformData transformData:transformDatas){
             CompoundTag compoundTagTemp = listTag.getCompound(index);
@@ -53,7 +64,7 @@ public interface iTransformDataInventory {
     }
 
     //writeNbt to compoundTag
-    static void saveAdditional(CompoundTag compoundTag, NonNullList<TransformData> transformDatas) {
+    static void saveAdditional(CompoundTag compoundTag, List<TransformData> transformDatas) {
         ListTag listTag=new ListTag(); int index=0;
         for(TransformData transformData:transformDatas){
             if(!(transformData.blockState.getBlock() instanceof AirBlock)){

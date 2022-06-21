@@ -32,7 +32,7 @@ public class GetShowBlockEntityItem extends AbstractMultiPurposeToolItem {
                 ShowBlockEntity showBlockEntity = (ShowBlockEntity) level.getBlockEntity(blockPos);
                 showBlockEntity.setSlotBlockState(0,blockState);
                 showBlockEntity.getTransformData(0).isShown=true;
-                showBlockEntity.slot=getForm();
+                showBlockEntity.setSlot(getForm());
                 showBlockEntity.saveChanged();
                 return InteractionResult.SUCCESS;
             }
