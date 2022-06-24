@@ -7,6 +7,7 @@ import dev.architectury.registry.registries.Registrar;
 import dev.architectury.registry.registries.Registries;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.cocofish.yuushya.Yuushya;
+import net.cocofish.yuushya.block.BlockStateTest;
 import net.cocofish.yuushya.blockentity.showblock.ShowBlock;
 import net.cocofish.yuushya.blockentity.showblock.ShowBlockEntity;
 import net.cocofish.yuushya.item.showblocktool.*;
@@ -44,7 +45,8 @@ public class YuushyaRegistries {
         ITEMS.register("get_showblock_item",()->new GetShowBlockEntityItem(new Item.Properties().tab(Yuushya.EXAMPLE_TAB),4));
         ITEMS.register("move_transformdata_item",()->new MoveTransformDataItem(new Item.Properties().tab(Yuushya.EXAMPLE_TAB),4));
 
-
+        BLOCKS.register("test",()->new BlockStateTest(BlockBehaviour.Properties.of(Material.METAL),1).create());
+        ITEMS.register("test",()->new BlockItem(BLOCKS.get("test").get(),new Item.Properties().tab(Yuushya.EXAMPLE_TAB)));
         SHOW_BLOCK= BLOCKS.register("showblock",()->new ShowBlock(BlockBehaviour.Properties.of(Material.METAL).noCollission().noOcclusion().strength(4.0f),1));
         ITEMS.register("showblock",()->new BlockItem(BLOCKS.get("showblock").get(),new Item.Properties().tab(Yuushya.EXAMPLE_TAB)));
         SHOW_BLOCK_ENTITY= BLOCK_ENTITIES.register("showblockentity",()->BlockEntityType.Builder.of(ShowBlockEntity::new,BLOCKS.get("showblock").get()).build(null));//Util.fetchChoiceType(References.BLOCK_ENTITY,"yuushya:showblockentity")
