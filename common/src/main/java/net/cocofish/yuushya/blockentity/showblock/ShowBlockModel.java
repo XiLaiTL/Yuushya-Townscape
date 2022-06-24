@@ -27,7 +27,6 @@ import java.util.function.Function;
 import static net.cocofish.yuushya.utils.YuushyaUtils.*;
 
 public class ShowBlockModel implements BakedModel, UnbakedModel {
-    public int vertexSize = DefaultVertexFormat.BLOCK.getVertexSize() / 4;// 一个顶点用多少位int表示，原版和开了光影的OptiFine不同所以得在这算出来
     public List<BakedQuad> getQuads(@Nullable BlockState state, @Nullable Direction side, @NotNull Random rand, @NotNull ShowBlockEntity blockEntity) {
         BlockRenderDispatcher blockRenderDispatcher =Minecraft.getInstance().getBlockRenderer();
         List<BakedQuad> finalQuads = new ArrayList<>();
