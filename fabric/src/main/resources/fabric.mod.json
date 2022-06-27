@@ -17,10 +17,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.cocofish.yuushya.fabric.YuushyaFabric"
+      "com.yuushya.fabric.YuushyaFabric"
     ],
     "client": [
-      "net.cocofish.yuushya.fabric.YuushyaClientFabric"
+      "com.yuushya.fabric.YuushyaClientFabric"
     ]
   },
   "depends": {

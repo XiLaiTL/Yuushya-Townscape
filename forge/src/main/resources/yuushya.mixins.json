@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "net.cocofish.yuushya.mixin.forge",
+  "package": "com.yuushya.mixin.forge",
   "compatibilityLevel": "JAVA_16",
   "client": [
   ],

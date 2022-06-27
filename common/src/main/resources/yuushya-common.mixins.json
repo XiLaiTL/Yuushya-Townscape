@@ -1,11 +1,12 @@
 {
   "required": true,
-  "package": "net.cocofish.yuushya.mixin",
+  "package": "com.yuushya.mixin",
   "compatibilityLevel": "JAVA_16",
   "client": [
     "MixinTitleScreen"
   ],
   "mixins": [
+    "MixinFallBackResourceManager"
   ],
   "injectors": {
     "defaultRequire": 1
