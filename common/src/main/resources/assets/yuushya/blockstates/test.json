@@ -1,7 +1,0 @@
-{
-    "variants": {
-      "age=0": [
-      { "model": "yuushya:extra_building_material/blank" }
-      ]
-    }
-}

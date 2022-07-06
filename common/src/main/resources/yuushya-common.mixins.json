@@ -6,6 +6,7 @@
     "MixinTitleScreen"
   ],
   "mixins": [
+    "MixinLootTables",
     "MixinFallBackResourceManager"
   ],
   "injectors": {

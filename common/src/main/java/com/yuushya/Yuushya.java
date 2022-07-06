@@ -1,12 +1,15 @@
 package com.yuushya;
 
 import com.google.common.base.Suppliers;
-import com.yuushya.datagen.VariantBuilderImpl;
+import com.yuushya.datagen.LootTableData;
+import com.yuushya.registries.YuushyaRegistries;
 import dev.architectury.registry.CreativeTabRegistry;
 import dev.architectury.registry.registries.Registries;
-import com.yuushya.registries.YuushyaRegistries;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.*;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Blocks;
 
 import java.util.function.Supplier;
 
@@ -19,9 +22,7 @@ public class Yuushya {
             new ItemStack(Items.GLOW_ITEM_FRAME));
 
     public static void init() {
-
         YuushyaRegistries.registerAll();
-        new VariantBuilderImpl().setIdentifier(new ResourceLocation(MOD_ID,"test")).setVariants("").register();
         System.out.println(YuushyaExpectPlatform.getConfigDirectory().toAbsolutePath().normalize().toString());
     }
 }

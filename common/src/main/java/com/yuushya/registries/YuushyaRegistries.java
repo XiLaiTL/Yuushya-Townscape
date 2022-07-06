@@ -1,12 +1,11 @@
 package com.yuushya.registries;
 
 import com.yuushya.Yuushya;
-import com.yuushya.item.showblocktool.*;
-import dev.architectury.registry.registries.RegistrySupplier;
 import com.yuushya.block.BlockStateTest;
 import com.yuushya.blockentity.showblock.ShowBlock;
 import com.yuushya.blockentity.showblock.ShowBlockEntity;
 import com.yuushya.item.showblocktool.*;
+import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.Registry;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
