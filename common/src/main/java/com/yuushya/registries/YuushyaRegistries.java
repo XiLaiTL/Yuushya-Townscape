@@ -19,6 +19,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import static com.yuushya.registries.YuushyaRegistryConfig.*;
@@ -48,9 +49,34 @@ public class YuushyaRegistries {
                 }
             }
         }
+        for (Map.Entry<String,YuushyaRegistryData.Block> blockEntry:BlockOnly.entrySet()){
+            YuushyaRegistryData.Block block=blockEntry.getValue();
+            BLOCKS.register(block.name,()->new Block(BlockBehaviour.Properties.of(Material.METAL)));
+            ITEMS.register(block.name,()->new BlockItem(BLOCKS.get(block.name).get(),new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_EXTRA_BLOCKS)));
+            YuushyaDataProvider dataProvider= YuushyaDataProvider.of(block.name);
+            dataProvider.type(YuushyaDataProvider.DataType.BlockState).json(()->BlockStateData.genSimpleBlock(BLOCKS.get(block.name).get(),new ResourceLocation(Yuushya.MOD_ID,"block/"+block.name))).save();
+            dataProvider.type(YuushyaDataProvider.DataType.BlockModel).json(()->ModelData.genSimpleCubeBlockModel(new ResourceLocation(block.texture))).save();
+            dataProvider.type(YuushyaDataProvider.DataType.LootTable).add(block).save();
+        }
+        for (Map.Entry<String,YuushyaRegistryData.Block> blockTemplateEntry:BlockTemplate.entrySet()){
+            YuushyaRegistryData.Block templateBlock=blockTemplateEntry.getValue();
+            List<String> templateModels=BlockStateData.getModelListFromData(templateBlock.blockstate.models);
+            templateModels.forEach(ModelData::setModelTemplate);
+            for (Map.Entry<String,YuushyaRegistryData.Block> blockEntry:BlockOnly.entrySet()){
+                YuushyaRegistryData.Block block=blockEntry.getValue();
+                BLOCKS.register(templateBlock.name+"_"+block.name, ()->YuushyaBlockFactory.create(templateBlock));
 
-        for (Map.Entry<String,YuushyaRegistryData.Block> blockEntry:BlockTemplate.entrySet()){
+                block.blockstate.models=templateBlock.blockstate.models.stream().map((s)->s+"_"+block.name).toList();
 
+                YuushyaDataProvider dataProvider= YuushyaDataProvider.of(block.name);
+                dataProvider.type(YuushyaDataProvider.DataType.BlockState).add(block).save();
+                dataProvider.type(YuushyaDataProvider.DataType.LootTable).add(block).save();
+
+                YuushyaDataProvider modelDataProvoder= YuushyaDataProvider.of(YuushyaDataProvider.DataType.BlockModel);
+                templateModels.forEach((s)->{
+                    modelDataProvoder.id(new ResourceLocation(s+"_"+block.name)).json(()->ModelData.genTemplateModel(s,new ResourceLocation(block.texture))).save();
+                });
+            }
         }
     }
     public static void registerAll(){
@@ -67,8 +93,8 @@ public class YuushyaRegistries {
         BLOCKS.register("test",()->new Block(BlockBehaviour.Properties.of(Material.METAL)));
         ITEMS.register("test",()->new BlockItem(BLOCKS.get("test").get(),new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_ITEM)));
         YuushyaDataProvider yuushyaDataProvider= YuushyaDataProvider.of(new ResourceLocation(Yuushya.MOD_ID,"test"));
-        yuushyaDataProvider.type(YuushyaDataProvider.DataType.BlockState).json(BlockStateData.genSimpleBlock(BLOCKS.get("test").get(),new ResourceLocation(Yuushya.MOD_ID,"block/test"))).save();
-        yuushyaDataProvider.type(YuushyaDataProvider.DataType.BlockModel).json(ModelData.genSimpleCubeBlockModel(new ResourceLocation(Yuushya.MOD_ID,"block/test"))).save();
+        yuushyaDataProvider.type(YuushyaDataProvider.DataType.BlockState).json(()->BlockStateData.genSimpleBlock(BLOCKS.get("test").get(),new ResourceLocation(Yuushya.MOD_ID,"block/test"))).save();
+        yuushyaDataProvider.type(YuushyaDataProvider.DataType.BlockModel).json(()->ModelData.genSimpleCubeBlockModel(new ResourceLocation(Yuushya.MOD_ID,"block/test"))).save();
         SHOW_BLOCK= BLOCKS.register("showblock",()->new ShowBlock(BlockBehaviour.Properties.of(Material.METAL).noCollission().noOcclusion().strength(4.0f),1));
         ITEMS.register("showblock",()->new BlockItem(BLOCKS.get("showblock").get(),new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_ITEM)));
         SHOW_BLOCK_ENTITY= BLOCK_ENTITIES.register("showblockentity",()->BlockEntityType.Builder.of(ShowBlockEntity::new,BLOCKS.get("showblock").get()).build(null));//Util.fetchChoiceType(References.BLOCK_ENTITY,"yuushya:showblockentity")

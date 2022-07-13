@@ -64,8 +64,9 @@ public class BlockStateData {
             entry.setValue(newArray);
         }
     }
+    private static final Splitter STATE_SPLITTER = Splitter.on('#');
     public static JsonElement genBlockState(Block block,List<String> names){
-        Splitter STATE_SPLITTER = Splitter.on('#');
+
         JsonObject rawJson=createBlockState(block).get().getAsJsonObject();
         JsonObject variants= rawJson.get("variants").getAsJsonObject();
 
@@ -91,6 +92,16 @@ public class BlockStateData {
             }
         }
         return rawJson;
+    }
+    public static List<String> getModelListFromData(List<String> names){
+        return names.stream().map((name)->{
+            if(name.contains("#")){
+                Iterator<String> iterator= STATE_SPLITTER.split(name).iterator();
+                iterator.next();
+                return iterator.next();}
+            else{
+                return name;}
+        }).toList();
     }
 
     public static JsonElement genSimpleBlock(Block block, ResourceLocation resourceLocation){

@@ -12,6 +12,7 @@ import org.lwjgl.system.CallbackI;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.BiConsumer;
+import java.util.function.Supplier;
 
 import static com.yuushya.registries.YuushyaRegistries.BLOCKS;
 
@@ -25,14 +26,14 @@ public class YuushyaDataProvider {
         }
     }
 
-    private static final Map<ResourceLocation, JsonElement> YuushyaBlockStateMap = new HashMap<>();
-    private static final Map<ResourceLocation, JsonElement> YuushyaBlockModelMap = new HashMap<>();
-    private static final Map<ResourceLocation, JsonElement> YuushyaItemModelMap = new HashMap<>();
-    private static final Map<ResourceLocation, JsonElement> YuushyaLootTableMap = new HashMap<>();
+    private static final Map<ResourceLocation, Supplier<JsonElement>> YuushyaBlockStateMap = new HashMap<>();
+    private static final Map<ResourceLocation, Supplier<JsonElement>> YuushyaBlockModelMap = new HashMap<>();
+    private static final Map<ResourceLocation, Supplier<JsonElement>> YuushyaItemModelMap = new HashMap<>();
+    private static final Map<ResourceLocation, Supplier<JsonElement>> YuushyaLootTableMap = new HashMap<>();
 
     private DataType dataType;
     private ResourceLocation resourceLocation;
-    private JsonElement jsonElement;
+    private Supplier<JsonElement> jsonElementSupplier;
 
     public YuushyaDataProvider id(String name){
         this.resourceLocation=new ResourceLocation(Yuushya.MOD_ID,name);
@@ -55,9 +56,9 @@ public class YuushyaDataProvider {
     public static YuushyaDataProvider of(DataType dataType){
         return new YuushyaDataProvider().type(dataType);
     }
-    public YuushyaDataProvider json(JsonElement jsonElement){
+    public YuushyaDataProvider json(Supplier<JsonElement>  jsonElementSupplier){
         switch (this.dataType){
-            case BlockState,BlockModel,ItemModel,LootTable->this.jsonElement=jsonElement;
+            case BlockState,BlockModel,ItemModel,LootTable->this.jsonElementSupplier=jsonElementSupplier;
         }
         return this;
     }
@@ -70,27 +71,27 @@ public class YuushyaDataProvider {
     public void save(){
         ResourceLocation resourceLocationNew = getNewId();
         switch (this.dataType){
-            case BlockState -> YuushyaBlockStateMap.put(resourceLocationNew,this.jsonElement);
-            case BlockModel -> YuushyaBlockModelMap.put(resourceLocationNew,this.jsonElement);
-            case ItemModel -> YuushyaItemModelMap.put(resourceLocationNew,this.jsonElement);
-            case LootTable -> YuushyaLootTableMap.put(resourceLocationNew,this.jsonElement);
+            case BlockState -> YuushyaBlockStateMap.put(resourceLocationNew,this.jsonElementSupplier);
+            case BlockModel -> YuushyaBlockModelMap.put(resourceLocationNew,this.jsonElementSupplier);
+            case ItemModel -> YuushyaItemModelMap.put(resourceLocationNew,this.jsonElementSupplier);
+            case LootTable -> YuushyaLootTableMap.put(resourceLocationNew,this.jsonElementSupplier);
         }
     }
     public JsonElement get(ResourceLocation resourceLocation){
         return switch (this.dataType){
-            case BlockState -> YuushyaBlockStateMap.get(resourceLocation);
-            case BlockModel -> YuushyaBlockModelMap.get(resourceLocation);
-            case ItemModel -> YuushyaItemModelMap.get(resourceLocation);
-            case LootTable -> YuushyaLootTableMap.get(resourceLocation);
+            case BlockState -> YuushyaBlockStateMap.get(resourceLocation).get();
+            case BlockModel -> YuushyaBlockModelMap.get(resourceLocation).get();
+            case ItemModel -> YuushyaItemModelMap.get(resourceLocation).get();
+            case LootTable -> YuushyaLootTableMap.get(resourceLocation).get();
         };
     }
     public JsonElement get(){
         ResourceLocation resourceLocationNew = getNewId();
         return switch (this.dataType){
-            case BlockState -> YuushyaBlockStateMap.get(resourceLocationNew);
-            case BlockModel -> YuushyaBlockModelMap.get(resourceLocationNew);
-            case ItemModel -> YuushyaItemModelMap.get(resourceLocationNew);
-            case LootTable -> YuushyaLootTableMap.get(resourceLocationNew);
+            case BlockState -> YuushyaBlockStateMap.get(resourceLocationNew).get();
+            case BlockModel -> YuushyaBlockModelMap.get(resourceLocationNew).get();
+            case ItemModel -> YuushyaItemModelMap.get(resourceLocationNew).get();
+            case LootTable -> YuushyaLootTableMap.get(resourceLocationNew).get();
         };
     }
     public Boolean contain(ResourceLocation resourceLocation){
@@ -110,7 +111,7 @@ public class YuushyaDataProvider {
             case LootTable -> YuushyaLootTableMap.containsKey(resourceLocationNew);
         };
     }
-    public void forEach(BiConsumer<? super ResourceLocation, ? super JsonElement> action){
+    public void forEach(BiConsumer<? super ResourceLocation, ? super Supplier<JsonElement>> action){
         switch (this.dataType){
             case BlockState -> YuushyaBlockStateMap.forEach(action);
             case BlockModel -> YuushyaBlockModelMap.forEach(action);
@@ -129,9 +130,9 @@ public class YuushyaDataProvider {
     public YuushyaDataProvider add(YuushyaRegistryData.Block block){
         this.id(block.name);
         switch (this.dataType){
-            case BlockState -> this.json(BlockStateData.genBlockState(BLOCKS.get(block.name).get(),block.blockstate.models)).save();
-            case BlockModel -> this.json(ModelData.genSimpleCubeBlockModel(ResourceLocation.tryParse(block.texture))).save();
-            case LootTable -> this.json(LootTableData.genSingleItemTable(BLOCKS.get(block.name).get())).save();
+            case BlockState -> this.json(()->BlockStateData.genBlockState(BLOCKS.get(block.name).get(),block.blockstate.models)).save();
+            case BlockModel -> this.json(()->ModelData.genSimpleCubeBlockModel(ResourceLocation.tryParse(block.texture))).save();
+            case LootTable -> this.json(()->LootTableData.genSingleItemTable(BLOCKS.get(block.name).get())).save();
         };
         return this;
     }
