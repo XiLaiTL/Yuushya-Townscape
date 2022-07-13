@@ -2,25 +2,32 @@ package com.yuushya.block;
 
 import com.yuushya.block.blockstate.YuushyaBlockStates;
 import com.yuushya.registries.YuushyaRegistryData;
+import com.yuushya.utils.YuushyaUtils;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.AirBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.AttachFace;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import org.jetbrains.annotations.Nullable;
 
-import java.util.ArrayList;
+import java.io.Reader;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static com.yuushya.utils.YuushyaUtils.getBlockMaterial;
-import static com.yuushya.utils.YuushyaUtils.getSound;
+import static com.yuushya.utils.YuushyaUtils.toBlockMaterial;
+import static com.yuushya.utils.YuushyaUtils.toSound;
 import static com.yuushya.utils.YuushyaVoxelShape.getVoxelShape;
 
 public class YuushyaBlockFactory{
@@ -56,9 +63,9 @@ public class YuushyaBlockFactory{
 
     private static BlockBehaviour.Properties getBlockProperties(YuushyaRegistryData.Block.Properties yuushyaBlockProperties){
         BlockBehaviour.Properties blockProperties = BlockBehaviour.Properties
-                .of(getBlockMaterial(yuushyaBlockProperties.material))
+                .of(toBlockMaterial(yuushyaBlockProperties.material))
                 .strength(yuushyaBlockProperties.hardness,yuushyaBlockProperties.resistance);
-        if ( yuushyaBlockProperties.sound!=null&&!yuushyaBlockProperties.sound.isEmpty()) blockProperties=blockProperties.sound(getSound(yuushyaBlockProperties.sound));
+        if ( yuushyaBlockProperties.sound!=null&&!yuushyaBlockProperties.sound.isEmpty()) blockProperties=blockProperties.sound(toSound(yuushyaBlockProperties.sound));
         if (yuushyaBlockProperties.lightLevel!=0) blockProperties=blockProperties.lightLevel((state)->yuushyaBlockProperties.lightLevel);
         if (!yuushyaBlockProperties.hasCollision) blockProperties=blockProperties.noCollission();
         if (yuushyaBlockProperties.isDelicate) blockProperties=blockProperties.instabreak();
@@ -70,10 +77,60 @@ public class YuushyaBlockFactory{
     }
 
     public static Block create(YuushyaRegistryData.Block yuushyaBlock){
+        List<? extends Property<?>> blockStateProperties=getBlockStateProperties(yuushyaBlock.blockstate);
+        if (yuushyaBlock.blockstate.suit!=null&&!yuushyaBlock.blockstate.suit.isEmpty()){
+            switch (yuushyaBlock.blockstate.suit){
+                case "normal" -> {
+                    return new NormalBlock(getBlockProperties(yuushyaBlock.properties),yuushyaBlock.properties.lines, yuushyaBlock.classType);}
+                case "line" -> {
+                    return new LineBlock(getBlockProperties(yuushyaBlock.properties),yuushyaBlock.properties.lines, yuushyaBlock.classType);}
+                case "face" -> {
+                    return new FaceBlock(getBlockProperties(yuushyaBlock.properties),yuushyaBlock.properties.lines, yuushyaBlock.classType);}
+                case "pole" -> {
+                    return new PoleBlock(getBlockProperties(yuushyaBlock.properties),yuushyaBlock.properties.lines, yuushyaBlock.classType);}
+            }
+        }
+        if (yuushyaBlock.classType.equals("")){
+            return new Block(getBlockProperties(yuushyaBlock.properties));
+        }
         return new BlockWithClassType(getBlockProperties(yuushyaBlock.properties),yuushyaBlock.properties.lines, yuushyaBlock.classType){
+            {
+                this.registerDefaultState(YuushyaBlockStates.getDefaultBlockState(this.stateDefinition.any()));
+            }
             @Override
             protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> stateBuilder) {
-                stateBuilder.add(getBlockStateProperties(yuushyaBlock.blockstate).toArray(Property[]::new));
+                stateBuilder.add(blockStateProperties.toArray(Property[]::new));
+            }
+
+            @Override
+            @Nullable
+            public BlockState getStateForPlacement(BlockPlaceContext blockPlaceContext) {
+
+                BlockState res=this.defaultBlockState();
+                //from FaceAttachedHorizontalDirectionalBlock
+                if (blockStateProperties.contains(BlockStateProperties.ATTACH_FACE)&&blockStateProperties.contains(BlockStateProperties.HORIZONTAL_FACING)){
+                    Direction direction = blockPlaceContext.getNearestLookingDirection();
+                    res= direction.getAxis() == Direction.Axis.Y
+                            ? res
+                            .setValue(BlockStateProperties.ATTACH_FACE, direction == Direction.UP ? AttachFace.CEILING : AttachFace.FLOOR)
+                            .setValue(BlockStateProperties.HORIZONTAL_FACING, blockPlaceContext.getHorizontalDirection())
+                            : res
+                            .setValue(BlockStateProperties.ATTACH_FACE, AttachFace.WALL)
+                            .setValue(BlockStateProperties.HORIZONTAL_FACING, direction.getOpposite());
+                }
+
+                return res;
+            }
+
+            @Override
+            public BlockState updateShape(BlockState blockState, Direction direction, BlockState blockState2, LevelAccessor levelAccessor, BlockPos blockPos, BlockPos blockPos2) {
+
+                return blockState;
+            }
+
+            @Override
+            public OffsetType getOffsetType() {
+                return YuushyaUtils.toOffsetType(yuushyaBlock.properties.offset);
             }
         };
     }

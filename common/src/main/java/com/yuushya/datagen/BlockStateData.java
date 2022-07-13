@@ -6,6 +6,8 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonPrimitive;
+import com.yuushya.block.blockstate.PositionDirectionState;
+import com.yuushya.block.blockstate.PositionHorizonState;
 import com.yuushya.block.blockstate.YuushyaBlockStates;
 import com.yuushya.registries.YuushyaRegistryData;
 import com.yuushya.utils.YuushyaLogger;
@@ -107,6 +109,32 @@ public class BlockStateData {
     public static JsonElement genSimpleBlock(Block block, ResourceLocation resourceLocation){
         return MultiVariantGenerator.multiVariant(block, Variant.variant().with(VariantProperties.MODEL, resourceLocation)).get();
     }
+
+    public static JsonElement genFromSuit(Block block,String suit,List<String> names){
+        names.add(names.get(0));names.add(names.get(0));names.add(names.get(0));names.add(names.get(0));
+        MultiVariantGenerator multiVariantGenerator=
+                switch (suit){
+                    case "normal"->{//
+                        yield  MultiVariantGenerator.multiVariant(block).with(createFacingAndFaceDispatch())
+                                .with(PropertyDispatch.property(BlockStateProperties.POWERED)
+                                        .select((Boolean)false, Variant.variant().with(VariantProperties.MODEL, new ResourceLocation(names.get(0))))
+                                        .select((Boolean)true, Variant.variant().with(VariantProperties.MODEL, new ResourceLocation(names.get(1)))));
+                    }
+                    case "line"->{
+                        yield MultiVariantGenerator.multiVariant(block).with(createFacingAndFaceDispatch())
+                                .with(createPosHorizonDispatch(new ResourceLocation(names.get(0)),new ResourceLocation(names.get(1)),new ResourceLocation(names.get(2)),new ResourceLocation(names.get(3))));
+                    }
+                    case "face"->{
+                        yield MultiVariantGenerator.multiVariant(block)
+                                .with(createXZposDispatch(new ResourceLocation(names.get(0)),new ResourceLocation(names.get(1)),new ResourceLocation(names.get(2)),new ResourceLocation(names.get(3))));
+                    }
+                    case "pole"->{
+                        yield MultiVariantGenerator.multiVariant(block);
+                    }
+                    default -> {yield MultiVariantGenerator.multiVariant(block);}
+                };
+        return multiVariantGenerator.get();
+    }
 //    public static JsonElement genButton(Block block, ResourceLocation resourceLocation){
 //        return MultiVariantGenerator.multiVariant(block)
 //                .with(PropertyDispatch.property(BlockStateProperties.POWERED)
@@ -194,5 +222,48 @@ public class BlockStateData {
                 .select(AttachFace.CEILING, Direction.NORTH,
                         Variant.variant().with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180));
     }
+    private static PropertyDispatch createPosHorizonDispatch(ResourceLocation none, ResourceLocation left,ResourceLocation middle,ResourceLocation right){
+        return PropertyDispatch.property(YuushyaBlockStates.POS_HORIZON)
+                .select(PositionHorizonState.NONE,Variant.variant().with(VariantProperties.MODEL,none))
+                .select(PositionHorizonState.LEFT,Variant.variant().with(VariantProperties.MODEL,left))
+                .select(PositionHorizonState.MIDDLE,Variant.variant().with(VariantProperties.MODEL,middle))
+                .select(PositionHorizonState.RIGHT,Variant.variant().with(VariantProperties.MODEL,right));
+    }
+    private static PropertyDispatch createXZposDispatch(ResourceLocation none,ResourceLocation singleLine,ResourceLocation middle, ResourceLocation bothLine){
+        return PropertyDispatch.properties(YuushyaBlockStates.XPOS,YuushyaBlockStates.ZPOS)
+                .select(PositionDirectionState.NONE,PositionDirectionState.NONE,
+                        Variant.variant().with(VariantProperties.UV_LOCK,true).with(VariantProperties.MODEL,none))
+                .select(PositionDirectionState.NONE,PositionDirectionState.SOUTH,
+                        Variant.variant().with(VariantProperties.UV_LOCK,true).with(VariantProperties.MODEL,singleLine))
+                .select(PositionDirectionState.NONE,PositionDirectionState.NORTH,
+                        Variant.variant().with(VariantProperties.UV_LOCK,true).with(VariantProperties.Y_ROT,VariantProperties.Rotation.R180).with(VariantProperties.MODEL,singleLine))
+                .select(PositionDirectionState.WEST,PositionDirectionState.NONE,
+                        Variant.variant().with(VariantProperties.UV_LOCK,true).with(VariantProperties.Y_ROT,VariantProperties.Rotation.R90).with(VariantProperties.MODEL,singleLine))
+                .select(PositionDirectionState.EAST,PositionDirectionState.NONE,
+                        Variant.variant().with(VariantProperties.UV_LOCK,true).with(VariantProperties.Y_ROT,VariantProperties.Rotation.R270).with(VariantProperties.MODEL,singleLine))
+                .select(PositionDirectionState.MIDDLE,PositionDirectionState.MIDDLE,
+                        Variant.variant().with(VariantProperties.UV_LOCK,true).with(VariantProperties.MODEL,middle))
+                .select(PositionDirectionState.MIDDLE,PositionDirectionState.NONE,
+                        Variant.variant().with(VariantProperties.UV_LOCK,true).with(VariantProperties.MODEL,middle))
+                .select(PositionDirectionState.NONE,PositionDirectionState.MIDDLE,
+                        Variant.variant().with(VariantProperties.UV_LOCK,true).with(VariantProperties.MODEL,middle))
+                .select(PositionDirectionState.MIDDLE,PositionDirectionState.NORTH,
+                        Variant.variant().with(VariantProperties.UV_LOCK,true).with(VariantProperties.MODEL,middle))
+                .select(PositionDirectionState.MIDDLE,PositionDirectionState.SOUTH,
+                        Variant.variant().with(VariantProperties.UV_LOCK,true).with(VariantProperties.MODEL,middle))
+                .select(PositionDirectionState.MIDDLE,PositionDirectionState.WEST,
+                        Variant.variant().with(VariantProperties.UV_LOCK,true).with(VariantProperties.MODEL,middle))
+                .select(PositionDirectionState.MIDDLE,PositionDirectionState.EAST,
+                        Variant.variant().with(VariantProperties.UV_LOCK,true).with(VariantProperties.MODEL,middle))
+                .select(PositionDirectionState.WEST,PositionDirectionState.SOUTH,
+                        Variant.variant().with(VariantProperties.UV_LOCK,true).with(VariantProperties.MODEL,bothLine))
+                .select(PositionDirectionState.WEST,PositionDirectionState.NORTH,
+                        Variant.variant().with(VariantProperties.UV_LOCK,true).with(VariantProperties.Y_ROT,VariantProperties.Rotation.R90).with(VariantProperties.MODEL,bothLine))
+                .select(PositionDirectionState.EAST,PositionDirectionState.SOUTH,
+                        Variant.variant().with(VariantProperties.UV_LOCK,true).with(VariantProperties.Y_ROT,VariantProperties.Rotation.R180).with(VariantProperties.MODEL,bothLine))
+                .select(PositionDirectionState.EAST,PositionDirectionState.NORTH,
+                        Variant.variant().with(VariantProperties.UV_LOCK,true).with(VariantProperties.Y_ROT,VariantProperties.Rotation.R270).with(VariantProperties.MODEL,bothLine))
+                ;
 
+    }
 }

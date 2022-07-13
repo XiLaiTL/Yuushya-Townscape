@@ -1,20 +1,14 @@
 package com.yuushya;
 
 import com.google.common.base.Suppliers;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 import com.yuushya.datagen.BlockStateData;
 import com.yuushya.registries.YuushyaRegistries;
 import com.yuushya.registries.YuushyaRegistryConfig;
-import com.yuushya.registries.YuushyaRegistryData;
 import com.yuushya.registries.YuushyaResourceReloadListener;
-import com.yuushya.utils.GsonTools;
 import com.yuushya.utils.YuushyaLogger;
-import com.yuushya.utils.YuushyaModelUtils;
 import dev.architectury.registry.CreativeTabRegistry;
 import dev.architectury.registry.ReloadListenerRegistry;
 import dev.architectury.registry.registries.Registries;
-import net.minecraft.client.resources.model.ModelBakery;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.PackType;
 import net.minecraft.world.item.CreativeModeTab;
@@ -35,6 +29,8 @@ public class Yuushya {
 
     public static void init() {
         ReloadListenerRegistry.register(PackType.CLIENT_RESOURCES,new YuushyaResourceReloadListener());
+        YuushyaRegistryConfig.readRegistryConfig();
+        YuushyaRegistries.registerRegistries();
         YuushyaRegistries.registerAll();
         YuushyaLogger.info("Yuushya has been loaded successfully!");
         YuushyaLogger.info(

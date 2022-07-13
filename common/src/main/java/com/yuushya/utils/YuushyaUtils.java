@@ -12,6 +12,7 @@ import net.minecraft.client.resources.model.ModelBakery;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.Property;
@@ -57,7 +58,7 @@ public class YuushyaUtils {
         return Block.getId(state) << 8 | tint;
     }
 
-    public static Material getBlockMaterial(String material){
+    public static Material toBlockMaterial(String material){
         return switch (material){
             case "air"->Material.AIR;
             case "structure_void"->Material.STRUCTURAL_AIR;
@@ -109,7 +110,7 @@ public class YuushyaUtils {
             default->Material.METAL;
         };
     }
-    public static SoundType getSound(String sound){
+    public static SoundType toSound(String sound){
         return switch (sound){
             case "wood"-> SoundType.WOOD;
             case "gravel"-> SoundType.GRAVEL;
@@ -189,13 +190,21 @@ public class YuushyaUtils {
             default->SoundType.METAL;
         };
     }
-    public Rarity toRarity(String rarity) {
+    public static Rarity toRarity(String rarity) {
         return switch (rarity) {
             case "common" -> Rarity.COMMON;
             case "uncommon" -> Rarity.UNCOMMON;
             case "rare" -> Rarity.RARE;
             case "epic" -> Rarity.EPIC;
             default -> Rarity.COMMON;
+        };
+    }
+
+    public static BlockBehaviour.OffsetType toOffsetType(String offset){
+        return switch (offset){
+            case "xz"-> BlockBehaviour.OffsetType.XZ;
+            case "xyz"-> BlockBehaviour.OffsetType.XYZ;
+            default -> BlockBehaviour.OffsetType.NONE;
         };
     }
 

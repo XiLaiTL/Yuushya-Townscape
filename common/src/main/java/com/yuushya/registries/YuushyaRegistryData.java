@@ -24,6 +24,7 @@ public class YuushyaRegistryData{
             public boolean lootTable;
         }
         public static class BlockState{
+            public String suit;
             public List<String> states;
             public List<String> models;
         }
@@ -38,6 +39,7 @@ public class YuushyaRegistryData{
             public boolean hasCollision;
             public boolean isDelicate;
             public boolean isHub;
+            public String offset;
             public int lines;
         }
         public static class ColorTint{
