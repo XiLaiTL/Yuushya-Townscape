@@ -1,14 +1,19 @@
 package com.yuushya.datagen;
 
 import com.google.gson.JsonElement;
+import com.yuushya.Yuushya;
+import com.yuushya.registries.YuushyaRegistryData;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import org.lwjgl.system.CallbackI;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.BiConsumer;
+
+import static com.yuushya.registries.YuushyaRegistries.BLOCKS;
 
 public class YuushyaDataProvider {
     public enum DataType{
@@ -24,12 +29,15 @@ public class YuushyaDataProvider {
     private static final Map<ResourceLocation, JsonElement> YuushyaBlockModelMap = new HashMap<>();
     private static final Map<ResourceLocation, JsonElement> YuushyaItemModelMap = new HashMap<>();
     private static final Map<ResourceLocation, JsonElement> YuushyaLootTableMap = new HashMap<>();
-    private static final Map<ResourceLocation, VoxelShape> YuushyaVoxelShapeMap = new HashMap<>();
 
     private DataType dataType;
     private ResourceLocation resourceLocation;
     private JsonElement jsonElement;
 
+    public YuushyaDataProvider id(String name){
+        this.resourceLocation=new ResourceLocation(Yuushya.MOD_ID,name);
+        return this;
+    }
     public YuushyaDataProvider id(ResourceLocation resourceLocation){
         this.resourceLocation=resourceLocation;
         return this;
@@ -40,6 +48,9 @@ public class YuushyaDataProvider {
     }
     public static YuushyaDataProvider of(ResourceLocation resourceLocation){
         return new YuushyaDataProvider().id(resourceLocation);
+    }
+    public static YuushyaDataProvider of(String name){
+        return new YuushyaDataProvider().id(name);
     }
     public static YuushyaDataProvider of(DataType dataType){
         return new YuushyaDataProvider().type(dataType);
@@ -52,8 +63,7 @@ public class YuushyaDataProvider {
     }
     public ResourceLocation getNewId(){
         return switch (this.dataType){
-            case BlockState,BlockModel,ItemModel->new ResourceLocation(this.resourceLocation.getNamespace(),this.dataType.prefix+this.resourceLocation.getNamespace()+DataType.suffix);
-            case LootTable -> new ResourceLocation(this.resourceLocation.getNamespace(),this.dataType.prefix+this.resourceLocation.getPath());
+            case BlockState,BlockModel,ItemModel,LootTable->new ResourceLocation(this.resourceLocation.getNamespace(),this.dataType.prefix+this.resourceLocation.getPath()+DataType.suffix);
             default -> this.resourceLocation;
         };
     }
@@ -113,5 +123,16 @@ public class YuushyaDataProvider {
         return new ResourceLocation(
                 resourceLocation.getNamespace(),
                 resourceLocation.getPath().replace("loot_tables/","").replace(".json",""));
+    }
+
+
+    public YuushyaDataProvider add(YuushyaRegistryData.Block block){
+        this.id(block.name);
+        switch (this.dataType){
+            case BlockState -> this.json(BlockStateData.genBlockState(BLOCKS.get(block.name).get(),block.blockstate.models)).save();
+            case BlockModel -> this.json(ModelData.genSimpleCubeBlockModel(ResourceLocation.tryParse(block.texture))).save();
+            case LootTable -> this.json(LootTableData.genSingleItemTable(BLOCKS.get(block.name).get())).save();
+        };
+        return this;
     }
 }

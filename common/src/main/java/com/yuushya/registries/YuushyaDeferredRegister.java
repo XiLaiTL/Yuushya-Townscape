@@ -35,6 +35,8 @@ public class YuushyaDeferredRegister <T>{
 
     //get
     @Nullable
+    public T getValue(String name){return OBJECT_MAP.get(name).get();}
+    @Nullable
     public RegistrySupplier<T> get(String name){return OBJECT_MAP.get(name);}
     @NotNull
     public T getInstanceOrDefault(String name,T defaultObject){

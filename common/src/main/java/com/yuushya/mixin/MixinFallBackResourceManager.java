@@ -1,6 +1,8 @@
 package com.yuushya.mixin;
 
+import com.yuushya.Yuushya;
 import com.yuushya.datagen.YuushyaDataProvider;
+import com.yuushya.utils.YuushyaLogger;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.FallbackResourceManager;
 import net.minecraft.server.packs.resources.Resource;
@@ -35,7 +37,9 @@ public class MixinFallBackResourceManager {
     )
     public void getResources(ResourceLocation id, CallbackInfoReturnable<List<Resource>> cir){
         YuushyaDataProvider blockstateProvider = YuushyaDataProvider.of(YuushyaDataProvider.DataType.BlockState);
-        if (!id.toString().contains("blockstates") || !blockstateProvider.contain(id)) return;
+        if (!id.toString().contains("blockstates")||!id.toString().contains(Yuushya.MOD_ID) ) return;
+        YuushyaLogger.info(id.toString());
+        blockstateProvider.forEach((i,j)->{YuushyaLogger.info(i.toString()+j.toString());});
         cir.setReturnValue(List.of(
                 new SimpleResource(id.getNamespace(), id, new ByteArrayInputStream(blockstateProvider.get(id).toString().getBytes(StandardCharsets.UTF_8)), null))
         );
@@ -56,6 +60,7 @@ public class MixinFallBackResourceManager {
     public void getResource(@NotNull ResourceLocation id, CallbackInfoReturnable<Resource> cir){
         YuushyaDataProvider yuushyaDataProvider=YuushyaDataProvider.of(id);
         if (id.toString().contains("blockstates")) return;
+        //YuushyaLogger.info(id.toString());
         if (yuushyaDataProvider.type(YuushyaDataProvider.DataType.LootTable).contain(id)){
             cir.cancel();return;
         }

@@ -19,17 +19,14 @@ import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 public class LootTableData {
     private static final Gson GSON = Deserializers.createLootTableSerializer().create();
 
-    private static LootTable.Builder createSingleItemTable(ItemLike itemLike) {
-        return LootTable.lootTable().withPool(
+    public static JsonElement genSingleItemTable(ItemLike itemLike) {
+        LootTable.Builder builder=LootTable.lootTable().withPool(
                 LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(itemLike))
                         .when(ExplosionCondition.survivesExplosion())
         );
-    }
-
-    public static JsonElement genSingleItemTable(ItemLike itemLike) {
-        return GSON.toJsonTree(createSingleItemTable(itemLike).build());
+        return GSON.toJsonTree(builder.build());
     }
 
 }
