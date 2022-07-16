@@ -26,4 +26,6 @@ public class AbstractYuushyaBlock extends Block {
         for(int i=1;i<=tipLines;i++)
             tooltips.add(new TranslatableComponent(this.getDescriptionId()+".line"+i));
     }
+
+
 }

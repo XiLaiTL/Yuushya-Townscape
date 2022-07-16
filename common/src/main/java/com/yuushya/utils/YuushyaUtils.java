@@ -8,8 +8,12 @@ import com.mojang.blaze3d.vertex.DefaultVertexFormat;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Vector3d;
 import com.mojang.math.Vector3f;
+import com.yuushya.blockentity.showblock.ShowBlock;
+import com.yuushya.blockentity.showblock.ShowBlockEntity;
 import net.minecraft.client.resources.model.ModelBakery;
+import net.minecraft.core.BlockPos;
 import net.minecraft.world.item.Rarity;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -206,6 +210,13 @@ public class YuushyaUtils {
             case "xyz"-> BlockBehaviour.OffsetType.XYZ;
             default -> BlockBehaviour.OffsetType.NONE;
         };
+    }
+
+    public static BlockState getBlockState(BlockState blockState, LevelAccessor world, BlockPos blockPos){
+        if(blockState.getBlock() instanceof ShowBlock){
+            return ((ShowBlockEntity)world.getBlockEntity(blockPos)).getTransformData(0).blockState;
+        }
+        else return blockState;
     }
 
 }

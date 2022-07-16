@@ -25,6 +25,7 @@ public class YuushyaRegistryData{
         }
         public static class BlockState{
             public String suit;
+            public List<List<String>> forms;
             public List<String> states;
             public List<String> models;
         }

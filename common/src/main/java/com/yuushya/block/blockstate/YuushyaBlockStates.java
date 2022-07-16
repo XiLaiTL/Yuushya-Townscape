@@ -1,9 +1,12 @@
 package com.yuushya.block.blockstate;
 
+import net.minecraft.Util;
 import net.minecraft.core.Direction;
+import net.minecraft.world.item.DebugStickItem;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.*;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
@@ -13,8 +16,9 @@ public class YuushyaBlockStates {
     public static final EnumProperty<PositionDirectionState> ZPOS = EnumProperty.create("zpos",PositionDirectionState.class);
     public static final EnumProperty<PositionHorizonState> POS_HORIZON=EnumProperty.create("pos",PositionHorizonState.class);
     public static final EnumProperty<PositionVerticalState> POS_VERTICAL=EnumProperty.create("pos",PositionVerticalState.class);
-    public static final IntegerProperty FORM = IntegerProperty.create("form",0,15);
-    
+    public static final IntegerProperty FORM = IntegerProperty.create("form",0,7);
+    public static final IntegerProperty LIT = IntegerProperty.create("lit",0,15);
+
     public static Property<?> toBlockStateProperty(String name){
         return switch (name){
             case "xpos"->(YuushyaBlockStates.XPOS);
@@ -38,5 +42,14 @@ public class YuushyaBlockStates {
         if (properties.contains(BlockStateProperties.ATTACH_FACE)) defaultState=defaultState.setValue(BlockStateProperties.ATTACH_FACE,AttachFace.FLOOR);
         if (properties.contains(BlockStateProperties.HORIZONTAL_FACING)) defaultState=defaultState.setValue(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH);
         return defaultState;
+    }
+
+
+    public static <T extends Comparable<T>> BlockState cycleState(BlockState blockState, Property<T> property, boolean doGetPre) {
+        return blockState.setValue(property, getRelative(property.getPossibleValues(), blockState.getValue(property), doGetPre));
+    }
+
+    public static <T> T getRelative(Iterable<T> iterable, @Nullable T object, boolean doGetPre) {
+        return doGetPre ? Util.findPreviousInIterable(iterable, object) : Util.findNextInIterable(iterable, object);
     }
 }

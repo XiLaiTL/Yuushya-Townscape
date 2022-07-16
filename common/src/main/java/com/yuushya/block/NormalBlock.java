@@ -6,9 +6,11 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.AttachFace;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraft.world.level.block.state.properties.Property;
 import org.jetbrains.annotations.Nullable;
+
+import static com.yuushya.block.blockstate.YuushyaBlockStates.FORM;
+import static net.minecraft.world.level.block.state.properties.BlockStateProperties.ATTACH_FACE;
+import static net.minecraft.world.level.block.state.properties.BlockStateProperties.HORIZONTAL_FACING;
 
 public class NormalBlock extends YuushyaBlockFactory.BlockWithClassType {
     public NormalBlock(Properties properties, Integer tipLines, String classType) {
@@ -16,21 +18,19 @@ public class NormalBlock extends YuushyaBlockFactory.BlockWithClassType {
     }
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> stateBuilder) {
-        stateBuilder.add(BlockStateProperties.HORIZONTAL_FACING,BlockStateProperties.ATTACH_FACE,BlockStateProperties.POWERED);
+        stateBuilder.add(HORIZONTAL_FACING,ATTACH_FACE, FORM);
     }
     @Override
     @Nullable
     public BlockState getStateForPlacement(BlockPlaceContext blockPlaceContext) {
-        BlockState res=this.defaultBlockState();
         //from FaceAttachedHorizontalDirectionalBlock
         Direction direction = blockPlaceContext.getNearestLookingDirection();
-        res= direction.getAxis() == Direction.Axis.Y
-                ? res
-                .setValue(BlockStateProperties.ATTACH_FACE, direction == Direction.UP ? AttachFace.CEILING : AttachFace.FLOOR)
-                .setValue(BlockStateProperties.HORIZONTAL_FACING, blockPlaceContext.getHorizontalDirection())
-                : res
-                .setValue(BlockStateProperties.ATTACH_FACE, AttachFace.WALL)
-                .setValue(BlockStateProperties.HORIZONTAL_FACING, direction.getOpposite());
-        return res;
+        return direction.getAxis() == Direction.Axis.Y
+                ? this.defaultBlockState()
+                .setValue(ATTACH_FACE, direction == Direction.UP ? AttachFace.CEILING : AttachFace.FLOOR)
+                .setValue(HORIZONTAL_FACING, blockPlaceContext.getHorizontalDirection())
+                : this.defaultBlockState()
+                .setValue(ATTACH_FACE, AttachFace.WALL)
+                .setValue(HORIZONTAL_FACING, direction.getOpposite());
     }
 }

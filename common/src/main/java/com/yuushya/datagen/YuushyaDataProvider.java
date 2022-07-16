@@ -130,7 +130,12 @@ public class YuushyaDataProvider {
     public YuushyaDataProvider add(YuushyaRegistryData.Block block){
         this.id(block.name);
         switch (this.dataType){
-            case BlockState -> this.json(()->BlockStateData.genBlockState(BLOCKS.get(block.name).get(),block.blockstate.models)).save();
+            case BlockState ->{
+                if (block.blockstate.suit!=null&&!block.blockstate.suit.isEmpty())
+                    this.json(()->BlockStateData.genFromSuit(BLOCKS.get(block.name).get(),block.blockstate.suit,block.blockstate.forms)).save();
+                else
+                    this.json(()->BlockStateData.genBlockState(BLOCKS.get(block.name).get(),block.blockstate.models)).save();
+            }
             case BlockModel -> this.json(()->ModelData.genSimpleCubeBlockModel(ResourceLocation.tryParse(block.texture))).save();
             case LootTable -> this.json(()->LootTableData.genSingleItemTable(BLOCKS.get(block.name).get())).save();
         };

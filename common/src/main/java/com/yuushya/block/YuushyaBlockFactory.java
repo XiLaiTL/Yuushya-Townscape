@@ -29,6 +29,7 @@ import java.util.Map;
 import static com.yuushya.utils.YuushyaUtils.toBlockMaterial;
 import static com.yuushya.utils.YuushyaUtils.toSound;
 import static com.yuushya.utils.YuushyaVoxelShape.getVoxelShape;
+import static net.minecraft.world.level.block.state.properties.BlockStateProperties.HORIZONTAL_FACING;
 
 public class YuushyaBlockFactory{
 
@@ -78,6 +79,7 @@ public class YuushyaBlockFactory{
 
     public static Block create(YuushyaRegistryData.Block yuushyaBlock){
         List<? extends Property<?>> blockStateProperties=getBlockStateProperties(yuushyaBlock.blockstate);
+        //套装，依然可以用在自定义的classType里
         if (yuushyaBlock.blockstate.suit!=null&&!yuushyaBlock.blockstate.suit.isEmpty()){
             switch (yuushyaBlock.blockstate.suit){
                 case "normal" -> {
@@ -90,6 +92,7 @@ public class YuushyaBlockFactory{
                     return new PoleBlock(getBlockProperties(yuushyaBlock.properties),yuushyaBlock.properties.lines, yuushyaBlock.classType);}
             }
         }
+        //classType 用于一些内定的方块
         if (yuushyaBlock.classType.equals("")){
             return new Block(getBlockProperties(yuushyaBlock.properties));
         }
@@ -134,4 +137,6 @@ public class YuushyaBlockFactory{
             }
         };
     }
+    public static boolean isTheSameBlock(BlockState state1, BlockState state2) {return state2.getBlock()==state1.getBlock(); }
+    public static boolean isTheSameFacing(BlockState blockState1,BlockState blockState2){return blockState1.getValue(HORIZONTAL_FACING)==blockState2.getValue(HORIZONTAL_FACING);}
 }
