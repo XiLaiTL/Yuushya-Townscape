@@ -1,3 +1,6 @@
 {
-  "item.examplemod.example_item": "Example Item"
+  "item.yuushya.debug_stick_item": "Debug Stick",
+  "item.yuushya.debug_stick_item.empty": "%s has no properties",
+  "item.yuushya.debug_stick_item.select": "Selected “%s”（%s）",
+  "item.yuushya.debug_stick_item.update": "\"%s\" to %s"
 }

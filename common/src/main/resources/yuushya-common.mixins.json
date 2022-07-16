@@ -6,8 +6,8 @@
     "MixinTitleScreen"
   ],
   "mixins": [
-    "MixinLootTables",
-    "MixinFallBackResourceManager"
+    "MixinFallBackResourceManager",
+    "MixinLootTables"
   ],
   "injectors": {
     "defaultRequire": 1

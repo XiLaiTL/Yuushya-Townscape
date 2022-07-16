@@ -4,7 +4,10 @@ import com.yuushya.Yuushya;
 import com.yuushya.registries.YuushyaRegistries;
 import com.yuushya.YuushyaClient;
 import com.yuushya.forge.client.ShowBlockModel;
+import net.minecraft.client.color.block.BlockColor;
 import net.minecraft.client.renderer.block.BlockModelShaper;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.nbt.NbtUtils;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.api.distmarker.Dist;
@@ -22,7 +25,8 @@ public class YuushyaClientForge {
     }
     @SubscribeEvent
     public static void onModelBaked(ModelBakeEvent event){
-        event.getModelRegistry().put(BlockModelShaper.stateToModelLocation(YuushyaRegistries.BLOCKS.get("showblock").get().defaultBlockState()),new ShowBlockModel());
+        for(BlockState blockState:YuushyaRegistries.BLOCKS.get("showblock").get().getStateDefinition().getPossibleStates())
+            event.getModelRegistry().put(BlockModelShaper.stateToModelLocation(blockState),new ShowBlockModel());
     }
 
 
@@ -51,6 +55,18 @@ public class YuushyaClientForge {
                 YuushyaRegistries.SHOW_BLOCK.get()
         );
     }
+    @SubscribeEvent
+    public static void handleItemColor(ColorHandlerEvent.Item event) {
+        event.getItemColors().register(
+                (itemStack, i) -> {
+                    CompoundTag compoundTag = itemStack.getOrCreateTag();
+                    BlockState blockState = NbtUtils.readBlockState(compoundTag.getCompound("BlockState"));
+                    return event.getBlockColors().getColor(blockState, null, null, i);
+                },YuushyaRegistries.ITEMS.get("get_blockstate_item").get()
+        );
+    }
+
+
 
 
 

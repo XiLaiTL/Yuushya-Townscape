@@ -1,6 +1,7 @@
 package com.yuushya;
 
 import com.google.common.base.Suppliers;
+import com.google.gson.JsonElement;
 import com.yuushya.datagen.BlockStateData;
 import com.yuushya.registries.YuushyaRegistries;
 import com.yuushya.registries.YuushyaRegistryConfig;
@@ -21,22 +22,14 @@ import java.util.function.Supplier;
 
 public class Yuushya {
     public static final String MOD_ID = "yuushya";
-    // We can use this if we don't want to use DeferredRegister
-    public static final Supplier<Registries> REGISTRIES = Suppliers.memoize(() -> Registries.get(MOD_ID));
-    // Registering a new creative tab
-    public static final CreativeModeTab EXAMPLE_TAB = CreativeTabRegistry.create(new ResourceLocation(MOD_ID, "example_tab"), () ->
-            new ItemStack(Items.GLOW_ITEM_FRAME));
 
     public static void init() {
-        ReloadListenerRegistry.register(PackType.CLIENT_RESOURCES,new YuushyaResourceReloadListener());
-        YuushyaRegistryConfig.readRegistryConfig();
-        YuushyaRegistries.registerRegistries();
+
+//        ReloadListenerRegistry.register(PackType.CLIENT_RESOURCES,new YuushyaResourceReloadListener());
+//        YuushyaRegistryConfig.readRegistryConfig();
+//        YuushyaRegistries.registerRegistries();
         YuushyaRegistries.registerAll();
         YuushyaLogger.info("Yuushya has been loaded successfully!");
-        YuushyaLogger.info(
-                BlockStateData.genBlockState(Blocks.ACACIA_BUTTON, List.of("powered=true#yuushya:a","powered=true,facing=west#yuushya:b")).toString()
-        );
-
         System.out.println(YuushyaExpectPlatform.getConfigDirectory().toAbsolutePath().normalize().toString());
     }
 }

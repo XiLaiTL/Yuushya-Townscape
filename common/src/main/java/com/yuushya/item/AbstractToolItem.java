@@ -46,23 +46,23 @@ public class AbstractToolItem extends AbstractYuushyaItem{
     }
 
     //对方块主手右键
-    public InteractionResult inMainHandRightClickOnBlock(Player player, BlockState blockState, LevelAccessor level, BlockPos blockPos, ItemStack handItemStack){
+    public InteractionResult inMainHandRightClickOnBlock(Player player, BlockState blockState, Level level, BlockPos blockPos, ItemStack handItemStack){
         return InteractionResult.PASS;
     }
     //对方块主手左键
-    public InteractionResult inMainHandLeftClickOnBlock(Player player, BlockState blockState, LevelAccessor level, BlockPos blockPos, ItemStack handItemStack){
+    public InteractionResult inMainHandLeftClickOnBlock(Player player, BlockState blockState, Level level, BlockPos blockPos, ItemStack handItemStack){
         return InteractionResult.PASS;
     }
     //对方块副手右键
-    public InteractionResult inOffHandRightClickOnBlock(Player player, BlockState blockState, LevelAccessor level, BlockPos blockPos, ItemStack handItemStack){
+    public InteractionResult inOffHandRightClickOnBlock(Player player, BlockState blockState, Level level, BlockPos blockPos, ItemStack handItemStack){
         return InteractionResult.PASS;
     }
     //对空气主手右键
-    public InteractionResult inMainHandRightClickInAir(Player player, BlockState blockState, LevelAccessor level, BlockPos blockPos, ItemStack handItemStack){
+    public InteractionResult inMainHandRightClickInAir(Player player, BlockState blockState, Level level, BlockPos blockPos, ItemStack handItemStack){
         return InteractionResult.PASS;
     }
     //对空气副手右键
-    public InteractionResult inOffHandRightClickInAir(Player player, BlockState blockState, LevelAccessor level, BlockPos blockPos, ItemStack handItemStack){
+    public InteractionResult inOffHandRightClickInAir(Player player, BlockState blockState, Level level, BlockPos blockPos, ItemStack handItemStack){
         return InteractionResult.PASS;
     }
 

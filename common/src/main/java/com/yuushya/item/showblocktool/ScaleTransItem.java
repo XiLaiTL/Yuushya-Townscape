@@ -6,6 +6,7 @@ import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.state.BlockState;
 
@@ -15,7 +16,7 @@ public class ScaleTransItem extends PosTransItem{
         MAX_FORMS=1;
     }
     @Override
-    public InteractionResult inMainHandRightClickOnBlock(Player player, BlockState blockState, LevelAccessor level, BlockPos blockPos, ItemStack handItemStack){
+    public InteractionResult inMainHandRightClickOnBlock(Player player, BlockState blockState, Level level, BlockPos blockPos, ItemStack handItemStack){
         //右手右键 向后位移
         return translateData(player,blockState,level,blockPos,handItemStack,(transformData)->{
             Vector3f scales = transformData.scales;
@@ -26,7 +27,7 @@ public class ScaleTransItem extends PosTransItem{
         });
     }
     @Override
-    public InteractionResult inMainHandLeftClickOnBlock(Player player, BlockState blockState, LevelAccessor level, BlockPos blockPos, ItemStack handItemStack){
+    public InteractionResult inMainHandLeftClickOnBlock(Player player, BlockState blockState, Level level, BlockPos blockPos, ItemStack handItemStack){
         //右手左键 向前位移
         return translateData(player,blockState,level,blockPos,handItemStack,(transformData)->{
             Vector3f scales = transformData.scales;

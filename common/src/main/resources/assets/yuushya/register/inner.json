@@ -1,7 +1,28 @@
 {
   "block": [
     {
-      "name": "fly"
+      "class_type": "class",
+      "name": "IntactBlock",
+      "render_type": "cutout",
+      "auto_generated": {
+        "blockstate": true,
+        "loot_table": true
+      },
+      "blockstate": {
+        "suit": "normal"
+      },
+      "properties": {
+        "hardness":2.0,
+        "resistance":2.0,
+        "material":"iron",
+        "is_solid":false,
+        "has_collision":true,
+        "is_delicate":false,
+        "lines":1
+      }
+    },
+    {
+
     }
   ]
 }

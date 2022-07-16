@@ -21,7 +21,7 @@ public class MixinLootTables {
     public void apply(Map<ResourceLocation, JsonElement> map, ResourceManager resourceManager, ProfilerFiller profiler, CallbackInfo ci){
 
         YuushyaDataProvider.of(YuushyaDataProvider.DataType.LootTable).forEach((key,value)->{
-            map.put(YuushyaDataProvider.toLootTableResourceLocation(key),value);
+            map.put(YuushyaDataProvider.toLootTableResourceLocation(key),value.get());
         });
 
     }

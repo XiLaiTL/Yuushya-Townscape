@@ -6,6 +6,7 @@ import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.state.BlockState;
 
@@ -35,7 +36,7 @@ public class AbstractMultiPurposeToolItem extends AbstractToolItem{
 
 
     @Override
-    public InteractionResult inOffHandRightClickInAir(Player player, BlockState blockStateTarget, LevelAccessor level, BlockPos blockPos, ItemStack handItemStack){
+    public InteractionResult inOffHandRightClickInAir(Player player, BlockState blockStateTarget, Level level, BlockPos blockPos, ItemStack handItemStack){
         //左手右键用于切换工具状态
         getTag(handItemStack);
         changeForm();

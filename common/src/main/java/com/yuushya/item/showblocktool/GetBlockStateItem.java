@@ -16,6 +16,7 @@ import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.AirBlock;
 import net.minecraft.world.level.block.Blocks;
@@ -29,7 +30,7 @@ public class GetBlockStateItem extends AbstractToolItem {
     }
 
     @Override
-    public InteractionResult inMainHandRightClickOnBlock(Player player, BlockState blockStateTarget, LevelAccessor level, BlockPos blockPos, ItemStack handItemStack){
+    public InteractionResult inMainHandRightClickOnBlock(Player player, BlockState blockStateTarget, Level level, BlockPos blockPos, ItemStack handItemStack){
         //右手右键复制状态，以及清空展示方块内的东西//with main hand right-click can read
         if(blockStateTarget.getBlock() instanceof ShowBlock){
             ShowBlockEntity showBlockEntity = (ShowBlockEntity) level.getBlockEntity(blockPos);
@@ -50,7 +51,7 @@ public class GetBlockStateItem extends AbstractToolItem {
         return InteractionResult.SUCCESS;
     }
     @Override
-    public InteractionResult inOffHandRightClickOnBlock(Player player, BlockState blockStateTarget, LevelAccessor level, BlockPos blockPos, ItemStack handItemStack){
+    public InteractionResult inOffHandRightClickOnBlock(Player player, BlockState blockStateTarget, Level level, BlockPos blockPos, ItemStack handItemStack){
         //左手右键放置状态到展示方块里//with off hand right-click can put blockstate to showblock
         getTag(handItemStack);
         if(blockState.getBlock() instanceof AirBlock){
@@ -79,6 +80,7 @@ public class GetBlockStateItem extends AbstractToolItem {
     }
 
     public static void renderByItem(ItemStack stack, ItemTransforms.TransformType mode, PoseStack matrices, MultiBufferSource vertexConsumers, int light, int overlay) {
+
         ItemRenderer itemRenderer= Minecraft.getInstance().getItemRenderer();
         BlockState blockState = NbtUtils.readBlockState(stack.getOrCreateTag().getCompound("BlockState"));
         BlockRenderDispatcher blockRenderDispatcher=Minecraft.getInstance().getBlockRenderer();

@@ -9,8 +9,14 @@ import com.yuushya.datagen.BlockStateData;
 import com.yuushya.datagen.ModelData;
 import com.yuushya.datagen.YuushyaDataProvider;
 import com.yuushya.item.TemplateBlockItem;
+import com.yuushya.item.YuushyaDebugStickItem;
 import com.yuushya.item.showblocktool.*;
+import com.yuushya.utils.YuushyaUtils;
+import dev.architectury.registry.client.rendering.ColorHandlerRegistry;
+import dev.architectury.registry.client.rendering.RenderTypeRegistry;
 import dev.architectury.registry.registries.RegistrySupplier;
+import net.fabricmc.api.Environment;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
@@ -63,15 +69,26 @@ public class YuushyaRegistries {
         }
         for (Map.Entry<String,YuushyaRegistryData.Block> blockTemplateEntry:BlockTemplate.entrySet()){
             YuushyaRegistryData.Block templateBlock=blockTemplateEntry.getValue();
-            List<String> templateModels=BlockStateData.getModelListFromData(templateBlock.blockstate.models);
             ITEMS.register(templateBlock.name,()->new TemplateBlockItem(new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_EXTRA_BLOCKS),1,templateBlock.name));
+            List<String> templateModels=BlockStateData.getModelListFromData(templateBlock.blockstate.models);
+            templateBlock.blockstate.forms.forEach((form)->{templateModels.addAll(BlockStateData.getModelListFromData(form));});
             templateModels.forEach(ModelData::setModelTemplate);
+
             for (Map.Entry<String,YuushyaRegistryData.Block> blockEntry:BlockOnly.entrySet()){
-                YuushyaRegistryData.Block block=blockEntry.getValue();
-                String name=templateBlock.name+"_"+block.name;
-                BLOCKS.register(name, ()->YuushyaBlockFactory.create(templateBlock));
-                ITEMS.register(name,()->new BlockItem(BLOCKS.get(name).get(),new Item.Properties()));
+                YuushyaRegistryData.Block block=templateBlock.clone();
+//                block.classType=templateBlock.name;
+//                block.renderType=templateBlock.renderType;
+//                block.properties=templateBlock.properties;
+                block.name=templateBlock.name+"_"+blockEntry.getValue().name;
+                block.blockstate=new YuushyaRegistryData.Block.BlockState();
+                block.blockstate.suit=templateBlock.blockstate.suit;
+                block.blockstate.states=templateBlock.blockstate.states;
                 block.blockstate.models=templateBlock.blockstate.models.stream().map((s)->s+"_"+block.name).toList();
+                block.blockstate.forms=templateBlock.blockstate.forms.stream().map((list)->list.stream().map((s)->s+"_"+block.name).toList()).toList();
+                block.colorTint=templateBlock.colorTint;
+
+                BLOCKS.register(block.name, ()->YuushyaBlockFactory.create(block));
+                ITEMS.register(block.name,()->new BlockItem(BLOCKS.get(block.name).get(),new Item.Properties()));
 
                 YuushyaDataProvider dataProvider= YuushyaDataProvider.of(block.name);
                 dataProvider.type(YuushyaDataProvider.DataType.BlockState).add(block).save();
@@ -81,11 +98,11 @@ public class YuushyaRegistries {
                 templateModels.forEach((s)->{
                     modelDataProvoder.id(new ResourceLocation(s+"_"+block.name)).json(()->ModelData.genTemplateModel(s,new ResourceLocation(block.texture))).save();
                 });
+                YuushyaData.block.add(block);
             }
         }
     }
     public static void registerAll(){
-        ITEMS.register("example_item",()->new Item(new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_ITEM)));
 //        ITEMS.register("get_blockstate_item", () -> new GetBlockStateItem(new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_ITEM), 1));
         ITEMS.register("pos_trans_item",()->new PosTransItem(new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_ITEM),4));
         ITEMS.register("micro_pos_trans_item",()->new MicroPosTransItem(new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_ITEM),4));
@@ -94,7 +111,7 @@ public class YuushyaRegistries {
         ITEMS.register("slot_trans_item",()->new SlotTransItem(new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_ITEM),4));
         ITEMS.register("get_showblock_item",()->new GetShowBlockEntityItem(new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_ITEM),4));
         ITEMS.register("move_transformdata_item",()->new MoveTransformDataItem(new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_ITEM),4));
-        ITEMS.register("debug_stick_item",()->new DebugStickItem(new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_ITEM)));
+        ITEMS.register("debug_stick_item",()->new YuushyaDebugStickItem(new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_ITEM),4));
         ITEMS.register("get_lit_item",()->new GetLitItem(new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_ITEM),2));
         ITEMS.register("form_trans_item",()->new GetLitItem(new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_ITEM),2));
 
@@ -109,6 +126,18 @@ public class YuushyaRegistries {
         SHOW_BLOCK_ENTITY= BLOCK_ENTITIES.register("showblockentity",()->BlockEntityType.Builder.of(ShowBlockEntity::new,BLOCKS.get("showblock").get()).build(null));//Util.fetchChoiceType(References.BLOCK_ENTITY,"yuushya:showblockentity")
     }
 
+
+    public static void registerClient(){
+        BlockOnly.entrySet().forEach((entry)->{
+            RenderTypeRegistry.register(RenderType.cutout(),BLOCKS.get(entry.getKey()).get());
+        });
+        YuushyaData.block.forEach((block)->{
+            RenderTypeRegistry.register(YuushyaUtils.toRenderType(block.renderType),BLOCKS.get(block.name).get());
+            if (block.colorTint!=null&&block.colorTint.colorType!=null&&!block.colorTint.colorType.isEmpty()&& !block.colorTint.colorType.equals("null")){
+                ColorHandlerRegistry.registerBlockColors(YuushyaUtils.toBlockColor(block.colorTint.colorType,block.colorTint.colorString),BLOCKS.get(block.name));
+            }
+        });
+    }
 
 
     public static RegistrySupplier<Block> SHOW_BLOCK = null;

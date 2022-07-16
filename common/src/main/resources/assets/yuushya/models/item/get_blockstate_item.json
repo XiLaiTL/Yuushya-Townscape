@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:builtin/entity",
-  "textures": {
-    "layer0": "yuushya:item/copy"
-  }
-}

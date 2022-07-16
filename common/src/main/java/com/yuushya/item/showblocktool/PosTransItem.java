@@ -10,6 +10,7 @@ import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.state.BlockState;
 
@@ -23,7 +24,7 @@ public class PosTransItem extends AbstractMultiPurposeToolItem {
     }
 
     @Override
-    public InteractionResult inMainHandRightClickOnBlock(Player player, BlockState blockState, LevelAccessor level, BlockPos blockPos, ItemStack handItemStack){
+    public InteractionResult inMainHandRightClickOnBlock(Player player, BlockState blockState, Level level, BlockPos blockPos, ItemStack handItemStack){
         //右手右键 向后位移
         return translateData(player,blockState,level,blockPos,handItemStack,(transformData)->{
             Vector3d pos = transformData.pos;
@@ -36,7 +37,7 @@ public class PosTransItem extends AbstractMultiPurposeToolItem {
         });
     }
     @Override
-    public InteractionResult inMainHandLeftClickOnBlock(Player player, BlockState blockState, LevelAccessor level, BlockPos blockPos, ItemStack handItemStack){
+    public InteractionResult inMainHandLeftClickOnBlock(Player player, BlockState blockState, Level level, BlockPos blockPos, ItemStack handItemStack){
         //右手左键 向前位移
         return translateData(player,blockState,level,blockPos,handItemStack,(transformData)->{
             Vector3d pos = transformData.pos;
@@ -49,7 +50,7 @@ public class PosTransItem extends AbstractMultiPurposeToolItem {
         });
     }
 
-    protected InteractionResult translateData(Player player, BlockState blockState, LevelAccessor level, BlockPos blockPos, ItemStack handItemStack, Consumer<TransformData> consumer){
+    protected InteractionResult translateData(Player player, BlockState blockState, Level level, BlockPos blockPos, ItemStack handItemStack, Consumer<TransformData> consumer){
         if(blockState.getBlock() instanceof ShowBlock) {
             ShowBlockEntity showBlockEntity = (ShowBlockEntity) level.getBlockEntity(blockPos);
             TransformData transformData=showBlockEntity.getTransFormDataNow();

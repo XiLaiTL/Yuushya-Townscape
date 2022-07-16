@@ -8,6 +8,7 @@ import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.AirBlock;
 import net.minecraft.world.level.block.state.BlockState;
@@ -20,13 +21,13 @@ public class SlotTransItem extends AbstractToolItem {
     }
 
     @Override
-    public InteractionResult inOffHandRightClickOnBlock(Player player, BlockState blockState, LevelAccessor level, BlockPos blockPos, ItemStack handItemStack){
+    public InteractionResult inOffHandRightClickOnBlock(Player player, BlockState blockState, Level level, BlockPos blockPos, ItemStack handItemStack){
         //左手右键 切换可见性
         return translateSlot(player,blockState,level,blockPos,handItemStack,(showBlockEntity)-> showBlockEntity.getTransFormDataNow().isShown=!showBlockEntity.getTransFormDataNow().isShown);
     }
 
     @Override
-    public InteractionResult inMainHandRightClickOnBlock(Player player, BlockState blockState, LevelAccessor level, BlockPos blockPos, ItemStack handItemStack){
+    public InteractionResult inMainHandRightClickOnBlock(Player player, BlockState blockState, Level level, BlockPos blockPos, ItemStack handItemStack){
         //右手右键 向后位移切换操作层
         return translateSlot(player,blockState,level,blockPos,handItemStack,(showBlockEntity)->{
             int slot=showBlockEntity.getSlot();
@@ -39,7 +40,7 @@ public class SlotTransItem extends AbstractToolItem {
         });
     }
     @Override
-    public InteractionResult inMainHandLeftClickOnBlock(Player player, BlockState blockState, LevelAccessor level, BlockPos blockPos, ItemStack handItemStack){
+    public InteractionResult inMainHandLeftClickOnBlock(Player player, BlockState blockState, Level level, BlockPos blockPos, ItemStack handItemStack){
         //右手左键 向前位移切换操作层
         return translateSlot(player,blockState,level,blockPos,handItemStack,(showBlockEntity)->{
             if (showBlockEntity.getTransFormDataNow().blockState.getBlock() instanceof AirBlock){
@@ -51,7 +52,7 @@ public class SlotTransItem extends AbstractToolItem {
         });
     }
 
-    protected InteractionResult translateSlot(Player player, BlockState blockState, LevelAccessor level, BlockPos blockPos, ItemStack handItemStack, Consumer<ShowBlockEntity> consumer){
+    protected InteractionResult translateSlot(Player player, BlockState blockState, Level level, BlockPos blockPos, ItemStack handItemStack, Consumer<ShowBlockEntity> consumer){
         if(blockState.getBlock() instanceof ShowBlock) {
             ShowBlockEntity showBlockEntity = (ShowBlockEntity) level.getBlockEntity(blockPos);
             consumer.accept(showBlockEntity);

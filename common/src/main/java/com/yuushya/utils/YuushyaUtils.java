@@ -10,18 +10,24 @@ import com.mojang.math.Vector3d;
 import com.mojang.math.Vector3f;
 import com.yuushya.blockentity.showblock.ShowBlock;
 import com.yuushya.blockentity.showblock.ShowBlockEntity;
+import net.minecraft.client.color.block.BlockColor;
+import net.minecraft.client.renderer.BiomeColors;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.resources.model.ModelBakery;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.item.Rarity;
+import net.minecraft.world.level.FoliageColor;
+import net.minecraft.world.level.GrassColor;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.material.Material;
 
+import java.awt.*;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -201,6 +207,43 @@ public class YuushyaUtils {
             case "rare" -> Rarity.RARE;
             case "epic" -> Rarity.EPIC;
             default -> Rarity.COMMON;
+        };
+    }
+
+    public static RenderType toRenderType(String renderType){
+        return switch (renderType){
+            case "cutout"->RenderType.cutout();
+            case "cutoutmipped"->RenderType.cutoutMipped();
+            case "translucent"->RenderType.translucent();
+            case "solid"->RenderType.solid();
+            default -> RenderType.cutout();
+        };
+    }
+    public static BlockColor toBlockColor(String type, String value){
+        return switch (type) {
+            case "null" -> (blockState, blockAndTintGetter, blockPos, i) -> 0;
+            case "singlecolor" -> (state, world, pos, tintIndex) -> Color.getColor(value).getRGB();
+            case "vanilla" -> switch (value) {
+                case "tall_plant" -> (blockState, blockAndTintGetter, blockPos, i) -> blockAndTintGetter == null || blockPos == null ? -1 : BiomeColors.getAverageGrassColor(blockAndTintGetter, blockState.getValue(DoublePlantBlock.HALF) == DoubleBlockHalf.UPPER ? blockPos.below() : blockPos);
+                case "grass" -> (blockState, blockAndTintGetter, blockPos, i) -> blockAndTintGetter == null || blockPos == null ? GrassColor.get(0.5, 1.0) : BiomeColors.getAverageGrassColor(blockAndTintGetter, blockPos);
+                case "spruce" -> (blockState, blockAndTintGetter, blockPos, i) -> FoliageColor.getEvergreenColor();
+                case "birch" -> (blockState, blockAndTintGetter, blockPos, i) -> FoliageColor.getBirchColor();
+                case "leaves" -> (blockState, blockAndTintGetter, blockPos, i) -> blockAndTintGetter == null || blockPos == null ? FoliageColor.getDefaultColor() : BiomeColors.getAverageFoliageColor(blockAndTintGetter, blockPos);
+                case "water" -> (blockState, blockAndTintGetter, blockPos, i) -> blockAndTintGetter == null || blockPos == null ? -1 : BiomeColors.getAverageWaterColor(blockAndTintGetter, blockPos);
+                case "redstone" -> (blockState, blockAndTintGetter, blockPos, i) -> RedStoneWireBlock.getColorForPower(blockState.getValue(RedStoneWireBlock.POWER));
+                case "sugar_cane" -> (blockState, blockAndTintGetter, blockPos, i) -> blockAndTintGetter == null || blockPos == null ? -1 : BiomeColors.getAverageGrassColor(blockAndTintGetter, blockPos);
+                case "attached_stem" -> (blockState, blockAndTintGetter, blockPos, i) -> 14731036;
+                case "stem_with_age" -> (blockState, blockAndTintGetter, blockPos, i) -> {
+                    int j = blockState.getValue(StemBlock.AGE);
+                    int k = j * 32;
+                    int l = 255 - j * 8;
+                    int m = j * 4;
+                    return k << 16 | l << 8 | m;
+                };
+                case "lily_pad" -> (blockState, blockAndTintGetter, blockPos, i) -> blockAndTintGetter == null || blockPos == null ? 7455580 : 2129968;
+                default -> (blockState, blockAndTintGetter, blockPos, i) -> 0;
+            };
+            default -> (blockState, blockAndTintGetter, blockPos, i) -> 0;
         };
     }
 
