@@ -14,7 +14,7 @@ public class YuushyaItemFactory {
     public static Item.Properties getItemProperties(YuushyaRegistryData.Item item){
         Item.Properties properties=new Item.Properties()
                 .tab(YuushyaCreativeModeTab.toGroup(item.itemGroup))
-                .stacksTo(item.properties.maxCout);
+                .stacksTo(item.properties.maxCount);
         if (item.properties.rarity!=null&&!item.properties.rarity.isEmpty()) properties=properties.rarity(YuushyaUtils.toRarity(item.properties.rarity));
         if (item.properties.maxDamage!=0) properties=properties.durability(item.properties.maxDamage);
         if (item.properties.fireProof) properties=properties.fireResistant();

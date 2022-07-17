@@ -2,6 +2,7 @@ package com.yuushya.datagen;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+import com.google.gson.JsonPrimitive;
 import com.yuushya.Yuushya;
 import com.yuushya.utils.YuushyaLogger;
 import net.minecraft.data.models.model.*;
@@ -21,7 +22,10 @@ public class ModelData {
         tempJsons.add(supplier.get());
     };
 
-
+    public static JsonElement genChildItemModel(ResourceLocation parent){
+        JsonObject json =new JsonObject();json.addProperty("parent",parent.toString());
+        return json;
+    }
     public static JsonElement genSimpleFlatItemModel( ResourceLocation texture){
         ModelTemplates.FLAT_ITEM.create(texture, TextureMapping.layer0(texture), getJsonElementToList);
         return tempJsons.get(0);

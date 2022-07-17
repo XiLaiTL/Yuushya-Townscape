@@ -2,6 +2,7 @@ package com.yuushya.utils;
 
 import com.google.common.collect.Maps;
 import com.google.gson.FieldNamingPolicy;
+import com.google.gson.FieldNamingStrategy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.mojang.blaze3d.vertex.DefaultVertexFormat;
@@ -35,7 +36,7 @@ import java.util.Objects;
 import java.util.function.Predicate;
 
 public class YuushyaUtils {
-    public static final Gson NormalGSON =new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_DASHES).setPrettyPrinting().create();
+    public static final Gson NormalGSON =new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES).setPrettyPrinting().create();
     public static int vertexSize = DefaultVertexFormat.BLOCK.getVertexSize() / 4;// 一个顶点用多少位int表示，原版和开了光影的OptiFine不同所以得在这算出来
 
     public static void scale(PoseStack arg, Vector3f scales){

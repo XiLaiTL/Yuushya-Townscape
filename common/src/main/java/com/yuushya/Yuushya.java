@@ -25,9 +25,9 @@ public class Yuushya {
 
     public static void init() {
 
-//        ReloadListenerRegistry.register(PackType.CLIENT_RESOURCES,new YuushyaResourceReloadListener());
-//        YuushyaRegistryConfig.readRegistryConfig();
-//        YuushyaRegistries.registerRegistries();
+        ReloadListenerRegistry.register(PackType.CLIENT_RESOURCES,new YuushyaResourceReloadListener());
+        YuushyaRegistryConfig.readRegistryConfig();
+        YuushyaRegistries.registerRegistries();
         YuushyaRegistries.registerAll();
         YuushyaLogger.info("Yuushya has been loaded successfully!");
         System.out.println(YuushyaExpectPlatform.getConfigDirectory().toAbsolutePath().normalize().toString());

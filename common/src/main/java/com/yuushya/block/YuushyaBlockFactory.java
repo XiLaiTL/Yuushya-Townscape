@@ -78,7 +78,6 @@ public class YuushyaBlockFactory{
     }
 
     public static Block create(YuushyaRegistryData.Block yuushyaBlock){
-        List<? extends Property<?>> blockStateProperties=getBlockStateProperties(yuushyaBlock.blockstate);
         //套装，依然可以用在自定义的classType里
         if (yuushyaBlock.blockstate.suit!=null&&!yuushyaBlock.blockstate.suit.isEmpty()){
             switch (yuushyaBlock.blockstate.suit){
@@ -92,6 +91,7 @@ public class YuushyaBlockFactory{
                     return new PoleBlock(getBlockProperties(yuushyaBlock.properties),yuushyaBlock.properties.lines, yuushyaBlock.classType);}
             }
         }
+        List<? extends Property<?>> blockStateProperties=getBlockStateProperties(yuushyaBlock.blockstate);
         //classType 用于一些内定的方块
         if (yuushyaBlock.classType.equals("")){
             return new Block(getBlockProperties(yuushyaBlock.properties));

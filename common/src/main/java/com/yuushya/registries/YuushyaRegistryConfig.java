@@ -3,6 +3,7 @@ package com.yuushya.registries;
 import com.google.gson.*;
 import com.yuushya.Yuushya;
 import com.yuushya.utils.GsonTools;
+import com.yuushya.utils.YuushyaLogger;
 import com.yuushya.utils.YuushyaUtils;
 import dev.architectury.platform.Platform;
 import net.minecraft.util.GsonHelper;
@@ -25,9 +26,9 @@ public class YuushyaRegistryConfig {
             CONFIG_FILE.getParentFile().mkdirs();
             CONFIG_FILE.createNewFile();
             YuushyaRegistryData yuushyaRegistryData=YuushyaResourceReloadListener.getYuushyaRegistryData();
-            JsonElement json= YuushyaUtils.NormalGSON.toJsonTree(yuushyaRegistryData);
+            String json= YuushyaUtils.NormalGSON.toJson(yuushyaRegistryData);
             try(BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(new FileOutputStream(CONFIG_FILE), StandardCharsets.UTF_8))){
-                writer.write(json.toString());
+                writer.write(json);
             }catch (IOException e){e.printStackTrace();}
         }catch (IOException e){e.printStackTrace();}
     }
@@ -55,9 +56,9 @@ public class YuushyaRegistryConfig {
                 YuushyaData.block.forEach((e)->YuushyaRawBlockMap.put(e.name,e));
                 YuushyaData.item.forEach((e)->YuushyaRawItemMap.put(e.name,e));
                 YuushyaData.particle.forEach((e)->YuushyaRawParticleMap.put(e.name,e));
-                YuushyaData.block= (List<YuushyaRegistryData.Block>) YuushyaRawBlockMap.values();
-                YuushyaData.item= (List<YuushyaRegistryData.Item>) YuushyaRawItemMap.values();
-                YuushyaData.particle= (List<YuushyaRegistryData.Particle>) YuushyaRawParticleMap.values();
+                YuushyaData.block=  YuushyaRawBlockMap.values().stream().toList();
+                YuushyaData.item=  YuushyaRawItemMap.values().stream().toList();
+                YuushyaData.particle= YuushyaRawParticleMap.values().stream().toList();
             }
 
         }catch (IOException e){e.printStackTrace();}

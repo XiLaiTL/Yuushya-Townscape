@@ -6,7 +6,8 @@
       "render_type": "cutout",
       "auto_generated": {
         "blockstate": true,
-        "loot_table": true
+        "loot_table": true,
+        "item_model": true
       },
       "blockstate": {
         "suit": "normal"
@@ -15,14 +16,42 @@
         "hardness":2.0,
         "resistance":2.0,
         "material":"iron",
-        "is_solid":false,
+        "is_solid":true,
         "has_collision":true,
         "is_delicate":false,
         "lines":1
       }
     },
     {
-
+      "class_type": "block",
+      "name": "stripped_oak_log",
+      "texture": "minecraft:block/stripped_oak_log"
+    },
+    {
+      "class_type": "template",
+      "name": "table",
+      "render_type": "cutout",
+      "blockstate": {
+        "suit": "normal",
+        "forms": [["yuushya:template/template_table"]]
+      },
+      "properties": {
+        "hardness":2.0,
+        "resistance":2.0,
+        "material":"wood",
+        "is_solid":true,
+        "has_collision":true,
+        "is_delicate":false,
+        "lines":1
+      }
+    },
+    {
+      "class_type": "IntactBlock",
+      "name": "platform_metal",
+      "item_group": "yuushya_extrablocks",
+      "blockstate": {
+        "forms": [["yuushya:extra_building_material/platform_metal"]]
+      }
     }
   ]
 }

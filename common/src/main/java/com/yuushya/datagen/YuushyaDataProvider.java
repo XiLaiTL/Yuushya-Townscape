@@ -136,6 +136,20 @@ public class YuushyaDataProvider {
                 else
                     this.json(()->BlockStateData.genBlockState(BLOCKS.get(block.name).get(),block.blockstate.models)).save();
             }
+            case ItemModel -> {
+                ResourceLocation modelUse;
+                if (block.itemModel!=null&&!block.itemModel.isEmpty())
+                    modelUse=ResourceLocation.tryParse(block.itemModel);
+                else if (block.blockstate==null)
+                    modelUse=new ResourceLocation(Yuushya.MOD_ID,"block/"+block.name);
+                else if (block.blockstate.suit!=null&&!block.blockstate.suit.isEmpty())
+                    modelUse=ResourceLocation.tryParse(block.blockstate.forms.get(0).get(0));
+                else if (block.blockstate.states!=null&&!block.blockstate.states.isEmpty())
+                    modelUse=ResourceLocation.tryParse(block.blockstate.models.get(0));
+                else
+                    modelUse=null;
+                this.json(()->ModelData.genChildItemModel(modelUse)).save();
+            }
             case BlockModel -> this.json(()->ModelData.genSimpleCubeBlockModel(ResourceLocation.tryParse(block.texture))).save();
             case LootTable -> this.json(()->LootTableData.genSingleItemTable(BLOCKS.get(block.name).get())).save();
         };
