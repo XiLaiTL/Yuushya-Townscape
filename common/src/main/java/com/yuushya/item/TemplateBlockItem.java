@@ -40,8 +40,6 @@ public class TemplateBlockItem extends AbstractYuushyaItem {
                             String name=block.classType.replace("block:","");
                             BlockItem replaceBlockItem = (BlockItem)YuushyaRegistries.ITEMS.get(templateType+"_"+name).get();
                             return replaceBlockItem.useOn(useOnContext);
-
-
                         }
             }
 

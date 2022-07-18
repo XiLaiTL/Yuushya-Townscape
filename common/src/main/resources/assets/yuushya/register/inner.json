@@ -31,9 +31,12 @@
       "class_type": "template",
       "name": "table",
       "render_type": "cutout",
+      "auto_generated": {
+        "item_model": true
+      },
       "blockstate": {
         "suit": "normal",
-        "forms": [["yuushya:template/template_table"]]
+        "forms": [["yuushya:template/table"]]
       },
       "properties": {
         "hardness":2.0,

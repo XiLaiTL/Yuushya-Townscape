@@ -127,8 +127,7 @@ public class BlockStateData {
                 variants.entrySet().forEach((entry) -> addModeltoJsonObject(entry, name));
             }
         }
-        clearEmptyVariant(rawJson);
-        return rawJson;
+        return clearEmptyVariant(rawJson);
     }
 
     public static List<String> getModelListFromData(List<String> names) {
@@ -152,21 +151,25 @@ public class BlockStateData {
         MultiVariantGenerator multiVariantGenerator =
                 switch (suit) {
                     case "normal" -> {
-                        yield MultiVariantGenerator.multiVariant(block).with(createFacingAndFaceDispatch())
+                        yield MultiVariantGenerator.multiVariant(block,
+                                        Variant.variant().with(VariantProperties.MODEL,new ResourceLocation(forms.get(0).get(0))))
+                                .with(createFacingAndFaceDispatch())
                                 .with(PropertyDispatch.property(FORM).generate(i -> {
                                     return i < formsNum ? Variant.variant().with(VariantProperties.MODEL, new ResourceLocation(forms.get(i).get(0)))
                                             : Variant.variant();
                                 }));
                     }
                     case "line" -> {
-                        yield MultiVariantGenerator.multiVariant(block).with(createHorizonFacingDispatch())
+                        yield MultiVariantGenerator.multiVariant(block,
+                                        Variant.variant().with(VariantProperties.MODEL,new ResourceLocation(forms.get(0).get(0))))
+                                .with(createHorizonFacingDispatch())
                                 .with(PropertyDispatch.properties(FORM, POS_HORIZON).generate((i, pos) -> {
                                     return i < formsNum ? Variant.variant().with(VariantProperties.MODEL, new ResourceLocation(forms.get(i).get(pos.ordinal())))
                                             : Variant.variant();
                                 }));
                     }
                     case "face" -> {
-                        yield MultiVariantGenerator.multiVariant(block).with(PropertyDispatch.properties(FORM, XPOS, ZPOS).generate((i, xpos, zpos) -> {
+                        yield MultiVariantGenerator.multiVariant(block, Variant.variant().with(VariantProperties.MODEL,new ResourceLocation(forms.get(0).get(0)))).with(PropertyDispatch.properties(FORM, XPOS, ZPOS).generate((i, xpos, zpos) -> {
                             ResourceLocation none = new ResourceLocation(forms.get(i).get(0));
                             ResourceLocation singleLine = new ResourceLocation(forms.get(i).get(1));
                             ResourceLocation middle = new ResourceLocation(forms.get(i).get(2));
@@ -207,7 +210,9 @@ public class BlockStateData {
                         }));
                     }
                     case "pole" -> {
-                        yield MultiVariantGenerator.multiVariant(block).with(createHorizonFacingDispatch())
+                        yield MultiVariantGenerator.multiVariant(block,
+                                        Variant.variant().with(VariantProperties.MODEL,new ResourceLocation(forms.get(0).get(0))))
+                                .with(createHorizonFacingDispatch())
                                 .with(PropertyDispatch.properties(FORM, POS_VERTICAL).generate((i, pos) -> {
                                     return i < formsNum ? Variant.variant().with(VariantProperties.MODEL, new ResourceLocation(forms.get(i).get(pos.ordinal())))
                                             : Variant.variant();
@@ -218,8 +223,7 @@ public class BlockStateData {
                     }
                 };
         JsonElement rawJson = multiVariantGenerator.get();
-        clearEmptyVariant(rawJson);
-        return rawJson;
+        return clearEmptyVariant(rawJson);
     }
 //    public static JsonElement genFromSuit(Block block,String suit,List<String> names){
 //        names.add(names.get(0));names.add(names.get(0));names.add(names.get(0));names.add(names.get(0));

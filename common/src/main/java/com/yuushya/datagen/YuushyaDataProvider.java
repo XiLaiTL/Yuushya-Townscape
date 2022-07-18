@@ -3,11 +3,7 @@ package com.yuushya.datagen;
 import com.google.gson.JsonElement;
 import com.yuushya.Yuushya;
 import com.yuushya.registries.YuushyaRegistryData;
-import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.phys.shapes.VoxelShape;
-import org.lwjgl.system.CallbackI;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -34,6 +30,7 @@ public class YuushyaDataProvider {
     private DataType dataType;
     private ResourceLocation resourceLocation;
     private Supplier<JsonElement> jsonElementSupplier;
+    private String selfPrefix;
 
     public YuushyaDataProvider id(String name){
         this.resourceLocation=new ResourceLocation(Yuushya.MOD_ID,name);
@@ -62,11 +59,15 @@ public class YuushyaDataProvider {
         }
         return this;
     }
+    public YuushyaDataProvider setPrefix(String s){
+        this.selfPrefix=s;
+        return this;
+    }
     public ResourceLocation getNewId(){
-        return switch (this.dataType){
+        return selfPrefix==null||selfPrefix.isEmpty()? switch (this.dataType){
             case BlockState,BlockModel,ItemModel,LootTable->new ResourceLocation(this.resourceLocation.getNamespace(),this.dataType.prefix+this.resourceLocation.getPath()+DataType.suffix);
             default -> this.resourceLocation;
-        };
+        }: new ResourceLocation(this.resourceLocation.getNamespace(),this.selfPrefix+this.resourceLocation.getPath()+DataType.suffix);
     }
     public void save(){
         ResourceLocation resourceLocationNew = getNewId();
