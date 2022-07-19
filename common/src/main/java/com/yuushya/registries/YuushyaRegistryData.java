@@ -37,7 +37,7 @@ public class YuushyaRegistryData{
             public boolean itemModel;
         }
         public static class BlockState{
-            public String suit;
+            public String kit;
             public List<List<String>> forms;
             public List<String> states;
             public List<String> models;

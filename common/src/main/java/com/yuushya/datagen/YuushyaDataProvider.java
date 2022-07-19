@@ -132,8 +132,8 @@ public class YuushyaDataProvider {
         this.id(block.name);
         switch (this.dataType){
             case BlockState ->{
-                if (block.blockstate.suit!=null&&!block.blockstate.suit.isEmpty())
-                    this.json(()->BlockStateData.genFromSuit(BLOCKS.get(block.name).get(),block.blockstate.suit,block.blockstate.forms)).save();
+                if (block.blockstate.kit !=null&&!block.blockstate.kit.isEmpty())
+                    this.json(()->BlockStateData.genFromSuit(BLOCKS.get(block.name).get(),block.blockstate.kit,block.blockstate.forms)).save();
                 else
                     this.json(()->BlockStateData.genBlockState(BLOCKS.get(block.name).get(),block.blockstate.models)).save();
             }
@@ -143,7 +143,7 @@ public class YuushyaDataProvider {
                     modelUse=ResourceLocation.tryParse(block.itemModel);
                 else if (block.blockstate==null)
                     modelUse=new ResourceLocation(Yuushya.MOD_ID,"block/"+block.name);
-                else if (block.blockstate.suit!=null&&!block.blockstate.suit.isEmpty())
+                else if (block.blockstate.kit !=null&&!block.blockstate.kit.isEmpty())
                     modelUse=ResourceLocation.tryParse(block.blockstate.forms.get(0).get(0));
                 else if (block.blockstate.states!=null&&!block.blockstate.states.isEmpty())
                     modelUse=ResourceLocation.tryParse(block.blockstate.models.get(0));

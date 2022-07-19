@@ -21,7 +21,6 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
-import java.io.Reader;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -62,7 +61,7 @@ public class YuushyaBlockFactory{
         }
     }
 
-    private static BlockBehaviour.Properties getBlockProperties(YuushyaRegistryData.Block.Properties yuushyaBlockProperties){
+    public static BlockBehaviour.Properties getBlockProperties(YuushyaRegistryData.Block.Properties yuushyaBlockProperties){
         BlockBehaviour.Properties blockProperties = BlockBehaviour.Properties
                 .of(toBlockMaterial(yuushyaBlockProperties.material))
                 .strength(yuushyaBlockProperties.hardness,yuushyaBlockProperties.resistance);
@@ -78,25 +77,28 @@ public class YuushyaBlockFactory{
     }
 
     public static Block create(YuushyaRegistryData.Block yuushyaBlock){
+        return create(getBlockProperties(yuushyaBlock.properties),yuushyaBlock);
+    }
+    public static Block create(BlockBehaviour.Properties properties,YuushyaRegistryData.Block yuushyaBlock){
         //套装，依然可以用在自定义的classType里
-        if (yuushyaBlock.blockstate.suit!=null&&!yuushyaBlock.blockstate.suit.isEmpty()){
-            switch (yuushyaBlock.blockstate.suit){
+        if (yuushyaBlock.blockstate.kit !=null&&!yuushyaBlock.blockstate.kit.isEmpty()){
+            switch (yuushyaBlock.blockstate.kit){
                 case "normal" -> {
-                    return new NormalBlock(getBlockProperties(yuushyaBlock.properties),yuushyaBlock.properties.lines, yuushyaBlock.classType);}
+                    return new NormalBlock(properties,yuushyaBlock.properties.lines, yuushyaBlock.classType);}
                 case "line" -> {
-                    return new LineBlock(getBlockProperties(yuushyaBlock.properties),yuushyaBlock.properties.lines, yuushyaBlock.classType);}
+                    return new LineBlock(properties,yuushyaBlock.properties.lines, yuushyaBlock.classType);}
                 case "face" -> {
-                    return new FaceBlock(getBlockProperties(yuushyaBlock.properties),yuushyaBlock.properties.lines, yuushyaBlock.classType);}
+                    return new FaceBlock(properties,yuushyaBlock.properties.lines, yuushyaBlock.classType);}
                 case "pole" -> {
-                    return new PoleBlock(getBlockProperties(yuushyaBlock.properties),yuushyaBlock.properties.lines, yuushyaBlock.classType);}
+                    return new PoleBlock(properties,yuushyaBlock.properties.lines, yuushyaBlock.classType);}
             }
         }
         List<? extends Property<?>> blockStateProperties=getBlockStateProperties(yuushyaBlock.blockstate);
         //classType 用于一些内定的方块
         if (yuushyaBlock.classType.equals("")){
-            return new Block(getBlockProperties(yuushyaBlock.properties));
+            return new Block(properties);
         }
-        return new BlockWithClassType(getBlockProperties(yuushyaBlock.properties),yuushyaBlock.properties.lines, yuushyaBlock.classType){
+        return new BlockWithClassType(properties,yuushyaBlock.properties.lines, yuushyaBlock.classType){
             {
                 this.registerDefaultState(YuushyaBlockStates.getDefaultBlockState(this.stateDefinition.any()));
             }

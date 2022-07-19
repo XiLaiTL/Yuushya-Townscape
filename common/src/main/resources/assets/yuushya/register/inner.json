@@ -10,7 +10,7 @@
         "item_model": true
       },
       "blockstate": {
-        "suit": "normal"
+        "kit": "normal"
       },
       "properties": {
         "hardness":2.0,
@@ -28,6 +28,10 @@
       "texture": "minecraft:block/stripped_oak_log"
     },
     {
+      "class_type": "remain",
+      "name": "minecraft:stone"
+    },
+    {
       "class_type": "template",
       "name": "table",
       "render_type": "cutout",
@@ -35,7 +39,7 @@
         "item_model": true
       },
       "blockstate": {
-        "suit": "normal",
+        "kit": "normal",
         "forms": [["yuushya:template/table"]]
       },
       "properties": {

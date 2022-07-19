@@ -1,5 +1,6 @@
 package com.yuushya.registries;
 
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.yuushya.Yuushya;
 import com.yuushya.block.YuushyaBlockFactory;
@@ -46,11 +47,13 @@ public class YuushyaRegistries {
     public static final Map<String,YuushyaRegistryData.Block> BlockALL=new HashMap<>();
     public static final Map<String,YuushyaRegistryData.Block> BlockTemplate=new HashMap<>();
     public static final Map<String,YuushyaRegistryData.Block> BlockOnly=new HashMap<>();
+    public static final Map<String,YuushyaRegistryData.Block> BlockRemain=new HashMap<>();
 
     public static void registerRegistries(){
         for (YuushyaRegistryData.Block block:YuushyaData.block){
             switch (block.classType){
                 case "class"->{}
+                case "remain"->{BlockRemain.put(block.name, block);}
                 case "template"->{BlockTemplate.put(block.name, block);}
                 case "block"->{BlockOnly.put(block.name,block);}
                 default -> {
@@ -68,7 +71,7 @@ public class YuushyaRegistries {
             }
         }
         for (YuushyaRegistryData.Block block:BlockOnly.values()){
-            BLOCKS.register(block.name,()->new YuushyaBlockFactory.BlockWithClassType(BlockBehaviour.Properties.of(Material.METAL),1,"block:"+block.name));
+            BLOCKS.register(block.name,()->new YuushyaBlockFactory.BlockWithClassType(BlockBehaviour.Properties.of(Material.METAL),1,"block"));
             ITEMS.register(block.name,()->new BlockItem(BLOCKS.get(block.name).get(),new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_EXTRA_BLOCKS)));
             YuushyaDataProvider dataProvider= YuushyaDataProvider.of(block.name);
             dataProvider.type(YuushyaDataProvider.DataType.BlockState).json(()->BlockStateData.genSimpleBlock(BLOCKS.get(block.name).get(),new ResourceLocation(Yuushya.MOD_ID,"block/"+block.name))).save();
@@ -88,30 +91,45 @@ public class YuushyaRegistries {
             JsonObject templateBlockJson=YuushyaUtils.NormalGSON.toJsonTree(templateBlock,YuushyaRegistryData.Block.class).getAsJsonObject();
             for (YuushyaRegistryData.Block blockOnly:BlockOnly.values()){
                 JsonObject blockOnlyJson=YuushyaUtils.NormalGSON.toJsonTree(blockOnly,YuushyaRegistryData.Block.class).getAsJsonObject();
-                try {
-                    GsonTools.extendJsonObject(blockOnlyJson, GsonTools.ConflictStrategy.PREFER_FIRST_OBJ, templateBlockJson);
-                } catch (GsonTools.JsonObjectExtensionConflictException e) {e.printStackTrace();}
-                YuushyaRegistryData.Block block=YuushyaUtils.NormalGSON.fromJson(blockOnlyJson,YuushyaRegistryData.Block.class);
-                block.name=templateBlock.name+"_"+blockOnly.name;
-                if(templateBlock.blockstate.models!=null)  block.blockstate.models=templateBlock.blockstate.models.stream().map((s)->s+"_"+blockOnly.name).toList();
-                if(templateBlock.blockstate.forms!=null) block.blockstate.forms=templateBlock.blockstate.forms.stream().map((list)->list.stream().map((s)->s+"_"+blockOnly.name).toList()).toList();
-
-                BLOCKS.register(block.name, ()->YuushyaBlockFactory.create(block));
-                ITEMS.register(block.name,()->new BlockItem(BLOCKS.get(block.name).get(),new Item.Properties()));
-
-                YuushyaDataProvider dataProvider= YuushyaDataProvider.of(block.name);
-                YuushyaDataProvider modelDataProvoder= YuushyaDataProvider.of(YuushyaDataProvider.DataType.BlockModel);
-                templateModels.forEach((s)->{
-                    modelDataProvoder.id(new ResourceLocation(s+"_"+blockOnly.name)).setPrefix("models/").json(()->ModelData.genTemplateModel(s,new ResourceLocation(block.texture))).save();
-                });
-                dataProvider.type(YuushyaDataProvider.DataType.BlockState).add(block).save();
-                dataProvider.type(YuushyaDataProvider.DataType.LootTable).add(block).save();
-                dataProvider.type(YuushyaDataProvider.DataType.ItemModel).add(block).save();
-
-                BlockALL.put(block.name,block);
+                YuushyaRegistryData.Block block=combineYuushyaDataBlockJson(blockOnlyJson,templateBlockJson);
+                registerTemplateProduct(blockOnly.name,templateBlock,templateModels,block,YuushyaBlockFactory.getBlockProperties(block.properties));
+            }
+            for (YuushyaRegistryData.Block blockRemain:BlockRemain.values()){
+                ResourceLocation blockResourceLocation =new ResourceLocation(blockRemain.name);
+                if(blockRemain.texture==null||blockRemain.texture.isEmpty()) blockRemain.texture=new ResourceLocation(blockResourceLocation.getNamespace(),"block/"+blockResourceLocation.getPath()).toString();
+                JsonObject blockRemainJson=YuushyaUtils.NormalGSON.toJsonTree(blockRemain,YuushyaRegistryData.Block.class).getAsJsonObject();
+                YuushyaRegistryData.Block block=combineYuushyaDataBlockJson(blockRemainJson,templateBlockJson);
+                BlockBehaviour.Properties properties = BlockBehaviour.Properties.copy(Registry.BLOCK.get(blockResourceLocation));
+                registerTemplateProduct(blockResourceLocation.getPath(),templateBlock,templateModels,block,properties);
             }
         }
     }
+    private static YuushyaRegistryData.Block combineYuushyaDataBlockJson(JsonObject blockJson,JsonObject templateBlockJson){
+        try {
+            GsonTools.extendJsonObject(blockJson, GsonTools.ConflictStrategy.PREFER_FIRST_OBJ, templateBlockJson);
+        } catch (GsonTools.JsonObjectExtensionConflictException e) {e.printStackTrace();}
+        return YuushyaUtils.NormalGSON.fromJson(blockJson,YuushyaRegistryData.Block.class);
+    }
+    private static void registerTemplateProduct(String name, YuushyaRegistryData.Block templateBlock, List<String> templateModels, YuushyaRegistryData.Block block, BlockBehaviour.Properties properties){
+        if(templateBlock.blockstate.models!=null)  block.blockstate.models=templateBlock.blockstate.models.stream().map((s)->s+"_"+name).toList();
+        if(templateBlock.blockstate.forms!=null) block.blockstate.forms=templateBlock.blockstate.forms.stream().map((list)->list.stream().map((s)->s+"_"+name).toList()).toList();
+
+        block.name=templateBlock.name+"_"+name;
+        BLOCKS.register(block.name, ()->YuushyaBlockFactory.create(block));
+        ITEMS.register(block.name,()->new BlockItem(BLOCKS.get(block.name).get(),new Item.Properties()));
+
+        YuushyaDataProvider dataProvider= YuushyaDataProvider.of(block.name);
+        YuushyaDataProvider modelDataProvoder= YuushyaDataProvider.of(YuushyaDataProvider.DataType.BlockModel);
+        templateModels.forEach((s)->{
+            modelDataProvoder.id(new ResourceLocation(s+"_"+name)).setPrefix("models/").json(()->ModelData.genTemplateModel(s,new ResourceLocation(block.texture))).save();
+        });
+        dataProvider.type(YuushyaDataProvider.DataType.BlockState).add(block).save();
+        dataProvider.type(YuushyaDataProvider.DataType.LootTable).add(block).save();
+        dataProvider.type(YuushyaDataProvider.DataType.ItemModel).add(block).save();
+
+        BlockALL.put(block.name,block);
+    }
+
     public static void registerAll(){
 //        ITEMS.register("get_blockstate_item", () -> new GetBlockStateItem(new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_ITEM), 1));
         ITEMS.register("pos_trans_item",()->new PosTransItem(new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_ITEM),4));

@@ -4,6 +4,7 @@ package com.yuushya.item;
 import com.yuushya.Yuushya;
 import com.yuushya.block.YuushyaBlockFactory;
 import com.yuushya.registries.YuushyaRegistries;
+import com.yuushya.utils.YuushyaLogger;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
@@ -34,13 +35,20 @@ public class TemplateBlockItem extends AbstractYuushyaItem {
             ItemStack itemStackOffHand=player.getItemInHand(InteractionHand.OFF_HAND);
             if (!itemStackOffHand.isEmpty()){
                 if (itemStackOffHand.getItem() instanceof BlockItem blockItem)
-                    if (blockItem.getBlock() instanceof YuushyaBlockFactory.BlockWithClassType block)
-                        if (block.classType.contains("block:")){
-                            //String name = Registry.BLOCK.getKey(block).getPath();
-                            String name=block.classType.replace("block:","");
+                    if (blockItem.getBlock() instanceof YuushyaBlockFactory.BlockWithClassType block){
+                        if (block.classType.contains("block")){
+                            String name = Registry.BLOCK.getKey(block).getPath();
                             BlockItem replaceBlockItem = (BlockItem)YuushyaRegistries.ITEMS.get(templateType+"_"+name).get();
                             return replaceBlockItem.useOn(useOnContext);
                         }
+                    }
+                    else {
+                        ResourceLocation resourceLocation=Registry.BLOCK.getKey(blockItem.getBlock());
+                        if(YuushyaRegistries.BlockRemain.containsKey(resourceLocation.toString())){
+                            BlockItem replaceBlockItem = (BlockItem)YuushyaRegistries.ITEMS.get(templateType+"_"+resourceLocation.getPath()).get();
+                            return replaceBlockItem.useOn(useOnContext);
+                        }
+                    }
             }
 
         }
