@@ -52,7 +52,7 @@ public class YuushyaRegistries {
     public static void registerRegistries(){
         for (YuushyaRegistryData.Block block:YuushyaData.block){
             switch (block.classType){
-                case "class"->{}
+                case "_comment","class"->{}
                 case "remain"->{BlockRemain.put(block.name, block);}
                 case "template"->{BlockTemplate.put(block.name, block);}
                 case "block"->{BlockOnly.put(block.name,block);}
