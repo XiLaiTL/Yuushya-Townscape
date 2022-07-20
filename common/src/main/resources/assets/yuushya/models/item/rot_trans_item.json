@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "yuushya:item/ft_rotatex"
+  },
+      "overrides": [
+        { "predicate": { "direction": 0 }, "model": "yuushya:item/ft_rotatex" },
+		{ "predicate": { "direction": 0.1 }, "model": "yuushya:item/ft_rotatey" },
+        { "predicate": { "direction": 0.2 }, "model": "yuushya:item/ft_rotatez" }
+	]
+}
