@@ -1,6 +1,7 @@
 {
-	"credit": "Yuushya",
+	"credit": "Coco",
 	"textures": {
+		"all": "yuushya:block_/template",
 		"particle": "#all"
 	},
 	"elements": [
