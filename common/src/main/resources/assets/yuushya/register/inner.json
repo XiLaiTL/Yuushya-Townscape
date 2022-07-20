@@ -12,7 +12,7 @@
 		{ "class_type": "block", "name":"raw_crimson_wood", "texture": "yuushya:block/raw_crimson_wood" },
 		{ "class_type": "block", "name":"raw_warped_wood", "texture": "yuushya:block/raw_warped_wood" },
 	
-	{"name": "Vanilla_Imported_Texture_Library_原版引用纹理库", "class_type": "_comment" },
+	{"name": "Vanilla-Imported_Texture_Library_原版引用纹理库", "class_type": "_comment" },
 	
 		{ "class_type": "remain", "name": "minecraft:stone" },
 		
@@ -67,21 +67,9 @@
 			"name": "IntactBlock",
 			"blockstate": { "kit": "normal" },
 			"render_type": "cutout",
-			"auto_generated": {
-				"blockstate": true,
-				"loot_table": true,
-				"item_model": true
-			},
+			"auto_generated": { "blockstate": true, "loot_table": true, "item_model": true },
 			"class_type": "class",
-			"properties": {
-				"hardness":2.0,
-				"resistance":2.0,
-				"material":"iron",
-				"is_solid":true,
-				"has_collision":true,
-				"is_delicate":false,
-				"lines":1
-			}
+			"properties": { "hardness": 2.0, "resistance": 2.0, "material":"iron", "is_solid": true, "has_collision": true, "is_delicate": false, "lines": 1 }
 		},
 	
 
@@ -95,6 +83,6 @@
 		  "blockstate": { "forms": [["yuushya:extra_building_material/platform_metal"]]}
 		},
 	
-	{"name": "防呆", "class_type": "_comment" }
+	{"name": "Json防呆", "class_type": "_comment" }
   ]
 }
