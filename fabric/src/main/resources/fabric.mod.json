@@ -29,7 +29,6 @@
     "architectury": ">=4.4.59"
   },
   "mixins": [
-    "yuushya.mixins.json",
     "yuushya-common.mixins.json"
   ]
 }

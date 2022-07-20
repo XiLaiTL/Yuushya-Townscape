@@ -48,6 +48,7 @@ def replaceProperties = [
         mod_licence:mod_licence,
         group: maven_group
 ]
+version=replaceProperties.mod_version
 processResources {
 //    inputs.property "group", rootProject.maven_group
 //    inputs.property "version", project.version
