@@ -13,6 +13,7 @@ loom {
     forge {
         convertAccessWideners = true
         extraAccessWideners.add loom.accessWidenerPath.get().asFile.name
+        mixinConfig "yuushya-common.mixins.json"
     }
 }
 
@@ -42,6 +43,7 @@ def replaceProperties = [
         mod_authors: mod_authors,
         mod_description: mod_description,
         mod_licence:mod_licence]
+version=replaceProperties.mod_version
 processResources {
 //    inputs.property "version", project.version
 //
