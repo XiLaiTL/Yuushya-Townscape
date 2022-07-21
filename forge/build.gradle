@@ -13,7 +13,7 @@ loom {
     forge {
         convertAccessWideners = true
         extraAccessWideners.add loom.accessWidenerPath.get().asFile.name
-        mixinConfig "yuushya-common.mixins.json"
+        mixinConfigs("yuushya-common.mixins.json" ,"yuushya.mixins.json")
     }
 }
 
