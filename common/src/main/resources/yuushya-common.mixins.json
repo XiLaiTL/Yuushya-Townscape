@@ -1,15 +1,18 @@
 {
   "required": true,
   "package": "com.yuushya.mixin",
-  "compatibilityLevel": "JAVA_16",
+  "compatibilityLevel": "JAVA_17",
   "client": [
     "MixinTitleScreen"
   ],
   "mixins": [
-    "MixinFallBackResourceManager",
     "MixinLootTables"
+  ],
+  "server": [
+    "MixinFallBackResourceManager"
   ],
   "injectors": {
     "defaultRequire": 1
-  }
+  },
+  "minVersion": "0.8.5"
 }

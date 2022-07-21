@@ -7,7 +7,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.FallbackResourceManager;
 import net.minecraft.server.packs.resources.Resource;
 import net.minecraft.server.packs.resources.SimpleResource;
-import org.jetbrains.annotations.NotNull;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -26,28 +25,6 @@ import java.util.List;
 public class MixinFallBackResourceManager {
     @Inject(
             method = "getResources",
-            at=@At(
-                    value ="INVOKE",
-                    target = "Lnet/minecraft/server/packs/resources/FallbackResourceManager;" +
-                            "validateLocation(Lnet/minecraft/resources/ResourceLocation;)" +
-                            "V",
-                    shift = At.Shift.AFTER
-            ),
-            cancellable = true
-    )
-    public void getResources(ResourceLocation id, CallbackInfoReturnable<List<Resource>> cir){
-        YuushyaDataProvider blockstateProvider = YuushyaDataProvider.of(YuushyaDataProvider.DataType.BlockState);
-        if (!id.toString().contains("blockstates")||!id.toString().contains(Yuushya.MOD_ID) ) return;
-        YuushyaLogger.info(id.toString());
-        blockstateProvider.forEach((i,j)->{YuushyaLogger.info(i.toString()+j.toString());});
-        cir.setReturnValue(List.of(
-                new SimpleResource(id.getNamespace(), id, new ByteArrayInputStream(blockstateProvider.get(id).toString().getBytes(StandardCharsets.UTF_8)), null))
-        );
-        cir.cancel();
-    }
-
-    @Inject(
-            method = "getResource",
             at = @At(
                     value = "INVOKE",
                     target = "Lnet/minecraft/server/packs/resources/FallbackResourceManager;" +
@@ -57,18 +34,17 @@ public class MixinFallBackResourceManager {
             ),
             cancellable = true
     )
-    public void getResource(@NotNull ResourceLocation id, CallbackInfoReturnable<Resource> cir){
-        YuushyaDataProvider yuushyaDataProvider=YuushyaDataProvider.of(id);
-        if (id.toString().contains("blockstates")) return;
-        if(id.toString().contains(Yuushya.MOD_ID)) YuushyaLogger.info(id.toString());
-        if (yuushyaDataProvider.type(YuushyaDataProvider.DataType.LootTable).contain(id)){
-            cir.cancel();return;
-        }
-        if (yuushyaDataProvider.type(YuushyaDataProvider.DataType.ItemModel).contain(id)
-                ||yuushyaDataProvider.type(YuushyaDataProvider.DataType.BlockModel).contain(id)){
-            Resource resource = new SimpleResource(id.getNamespace(), id, new ByteArrayInputStream(yuushyaDataProvider.get(id).toString().getBytes(StandardCharsets.UTF_8)), null);
-            cir.setReturnValue(resource);
-            cir.cancel();return;
-        }
+    public void getResources(ResourceLocation id, CallbackInfoReturnable<List<Resource>> cir) {
+        YuushyaDataProvider blockstateProvider = YuushyaDataProvider.of(YuushyaDataProvider.DataType.BlockState);
+        if (!id.toString().contains("blockstates") || !id.toString().contains(Yuushya.MOD_ID)) return;
+        YuushyaLogger.info(id.toString());
+        blockstateProvider.forEach((i, j) -> {
+            YuushyaLogger.info(i.toString() + j.toString());
+        });
+        cir.setReturnValue(List.of(
+                new SimpleResource(id.getNamespace(), id, new ByteArrayInputStream(blockstateProvider.get(id).toString().getBytes(StandardCharsets.UTF_8)), null))
+        );
+        cir.cancel();
     }
+
 }
