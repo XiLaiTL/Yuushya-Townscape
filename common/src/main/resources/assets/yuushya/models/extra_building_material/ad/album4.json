@@ -1,5 +1,5 @@
 {
-	"credit": "Yuushya",
+	"credit": "Coco",
 	"textures": {
 		"2": "yuushya:0extra_building_material/preview/note1/album1",
 		"3": "yuushya:0extra_building_block/no_strip/acacia",
@@ -117,7 +117,8 @@
 		},
 		"gui": {
 			"rotation": [30, 225, 0],
-			"translation": [-0.5, 3.75, 0]
+			"translation": [1, 2, 0],
+			"scale": [0.8, 0.8, 0.8]
 		},
 		"fixed": {
 			"scale": [0.5, 0.5, 0.5]
