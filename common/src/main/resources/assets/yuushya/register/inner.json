@@ -204,7 +204,7 @@
 			
 		{
 			"name": "ChairBlock",
-			"blockstate": { "kit": "normal" },
+			"blockstate": { "kit": "line" },
 			"render_type": "cutout",
 			"auto_generated": { "blockstate": true, "loot_table": true, "item_model": true },
 			"class_type": "class",
@@ -985,7 +985,506 @@
 		  "item_group": "yuushya_decoration",
 		  "blockstate": { "forms": [["yuushya:extra_building_material/painting/p11"]]}
 		},	
+		
+	{"name": "Life_生活", "class_type": "_comment" },		
 				
+		{
+		  "class_type": "DecoBlock",
+		  "name": "bottle",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/wine_single"]]}
+		},	
+				
+		{
+		  "class_type": "DecoBlock",
+		  "name": "bottles",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/wine"]]}
+		},	
+				
+		{
+		  "class_type": "DecoBlock",
+		  "name": "sorted_bottle",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/wine_s"]]}
+		},	
+				
+		{
+		  "class_type": "DecoBlock",
+		  "name": "microwaver",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/microwaver"]]}
+		},	
+				
+		{
+		  "class_type": "DecoBlock",
+		  "name": "knife_rest",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/knife_rest"]]}
+		},	
+				
+		{
+		  "class_type": "DecoBlock",
+		  "name": "pressure_cooker",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/pressure_cooker"]]}
+		},	
+				
+		{
+		  "class_type": "DecoBlock",
+		  "name": "peking_roast_duck",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/food/peking_roast_duck"]]}
+		},	
+				
+		{
+		  "class_type": "DecoBlock",
+		  "name": "beef",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/food/beef"]]}
+		},	
+				
+		{
+		  "class_type": "DecoBlock",
+		  "name": "melon",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/food/melon"]]}
+		},	
+				
+		{
+		  "class_type": "DecoBlock",
+		  "name": "jam_0",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/jam1"]]}
+		},	
+				
+		{
+		  "class_type": "DecoBlock",
+		  "name": "jam_1",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/jam2"]]}
+		},	
+				
+		{
+		  "class_type": "DecoBlock",
+		  "name": "mug",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/mug"]]}
+		},	
+				
+		{
+		  "class_type": "DecoBlock",
+		  "name": "sorted_mug",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/mug_"]]}
+		},	
+				
+		{
+		  "class_type": "DecoBlock",
+		  "name": "shampoo",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/shampoo"]]}
+		},	
+				
+		{
+		  "class_type": "DecoBlock",
+		  "name": "potato_chips",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/potato_chips"]]}
+		},	
+				
+		{
+		  "class_type": "DecoBlock",
+		  "name": "soda",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/cola"]]}
+		},	
+				
+		{
+		  "class_type": "DecoBlock",
+		  "name": "soda_",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/cola_s"]]}
+		},	
+				
+		{
+		  "class_type": "DecoBlock",
+		  "name": "plate",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/plate"]]}
+		},	
+				
+		{
+		  "class_type": "DecoBlock",
+		  "name": "piled_plate",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/plate_"]]}
+		},	
+				
+		{
+		  "class_type": "DecoBlock",
+		  "name": "small_chopping_board",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/choping_board"]]}
+		},	
+				
+		{
+		  "class_type": "DecoBlock",
+		  "name": "chopping_board",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/choping_board_"]]}
+		},	
+				
+		{
+		  "class_type": "DecoBlock",
+		  "name": "milk",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/milk"]]}
+		},	
+				
+		{
+		  "class_type": "DecoBlock",
+		  "name": "sorted_milk",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/milk_"]]}
+		},	
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "snack",
+		  "item_group": "yuushya_life",
+		  "properties": {"lines": 1},
+		  "blockstate": { "forms": [["yuushya:extra_building_material/snack"],["yuushya:extra_building_material/snack_"]]}
+		},	
+				
+		{
+		  "class_type": "DecoBlock",
+		  "name": "gas_tank",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/gas_tank"]]}
+		},	
+						
+		{
+		  "class_type": "ChairBlock",
+		  "name": "hood",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/hood_none"],["yuushya:extra_building_material/hood_left"],["yuushya:extra_building_material/hood_middle"],["yuushya:extra_building_material/hood_right"]]}
+		},	
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "glasses",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/glass"]]}
+		},			
+				
+		{
+		  "class_type": "DecoBlock",
+		  "name": "call_bell",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/bell"]]}
+		},			
+						
+		{
+		  "class_type": "DecoBlock",
+		  "name": "ashtray",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/ashtray"]]}
+		},			
+								
+		{
+		  "class_type": "DecoBlock",
+		  "name": "ashtray",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/ashtray"]]}
+		},			
+								
+		{
+		  "class_type": "DecoBlock",
+		  "name": "rusty_bucket",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/bucket"]]}
+		},			
+								
+		{
+		  "class_type": "DecoBlock",
+		  "name": "mirror",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/mirror_table"]]}
+		},			
+								
+		{
+		  "class_type": "DecoBlock",
+		  "name": "mounted_mirror",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/mirror_wall"]]}
+		},		
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "hanger_rod",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/hangerm"]]}
+		},		
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "hanged_cloth",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/hangerm_cloth"]]}
+		},	
+				
+		{
+		  "class_type": "DecoBlock",
+		  "name": "hanged_clothes",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/hangerm_clothes"]]}
+		},	
+						
+		{
+		  "class_type": "DecoBlock",
+		  "name": "hanged_things",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/hangerm_both"]]}
+		},		
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "hanged_things_",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/hangerm_both_"]]}
+		},	
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "hanger_rod_anchor",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/hanger_pin"]]}
+		},			
+				
+		{
+		  "class_type": "DecoBlock",
+		  "name": "ceiling_hanger_rod_anchor",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/hanger_pin_vertical"]]}
+		},			
+						
+		{
+		  "class_type": "DecoBlock",
+		  "name": "mounted_clothes_0",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_0"]]}
+		},			
+									
+		{
+		  "class_type": "DecoBlock",
+		  "name": "mounted_clothes_1",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_1"]]}
+		},			
+											
+		{
+		  "class_type": "DecoBlock",
+		  "name": "mounted_clothes_2",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_2"]]}
+		},			
+											
+		{
+		  "class_type": "DecoBlock",
+		  "name": "mounted_clothes_3",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_3"]]}
+		},			
+											
+		{
+		  "class_type": "DecoBlock",
+		  "name": "mounted_clothes_4",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_4"]]}
+		},			
+											
+		{
+		  "class_type": "DecoBlock",
+		  "name": "mounted_clothes_5",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_5"]]}
+		},			
+											
+		{
+		  "class_type": "DecoBlock",
+		  "name": "mounted_clothes_6",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_6"]]}
+		},			
+											
+		{
+		  "class_type": "DecoBlock",
+		  "name": "mounted_clothes_7",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_7"]]}
+		},			
+											
+		{
+		  "class_type": "DecoBlock",
+		  "name": "mounted_clothes_8",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_8"]]}
+		},			
+											
+		{
+		  "class_type": "DecoBlock",
+		  "name": "mounted_clothes_9",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_9"]]}
+		},			
+											
+		{
+		  "class_type": "DecoBlock",
+		  "name": "mounted_clothes_10",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_10"]]}
+		},			
+											
+		{
+		  "class_type": "DecoBlock",
+		  "name": "mounted_clothes_11",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_11"]]}
+		},			
+											
+		{
+		  "class_type": "DecoBlock",
+		  "name": "mounted_clothes_12",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_12"]]}
+		},			
+											
+		{
+		  "class_type": "DecoBlock",
+		  "name": "mounted_clothes_13",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_13"]]}
+		},			
+											
+		{
+		  "class_type": "DecoBlock",
+		  "name": "mounted_clothes_14",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_14"]]}
+		},			
+											
+		{
+		  "class_type": "DecoBlock",
+		  "name": "mounted_clothes_15",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_15"]]}
+		},			
+											
+		{
+		  "class_type": "DecoBlock",
+		  "name": "mounted_clothes_16",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_16"]]}
+		},			
+											
+		{
+		  "class_type": "DecoBlock",
+		  "name": "mounted_clothes_17",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_17"]]}
+		},			
+						
+		{
+		  "class_type": "DecoBlock",
+		  "name": "mounted_cloth_0",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/cloth_0"]]}
+		},			
+										
+		{
+		  "class_type": "DecoBlock",
+		  "name": "mounted_cloth_1",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/cloth_1"]]}
+		},			
+										
+		{
+		  "class_type": "DecoBlock",
+		  "name": "mounted_cloth_2",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/cloth_2"]]}
+		},			
+										
+		{
+		  "class_type": "DecoBlock",
+		  "name": "mounted_cloth_3",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/cloth_3"]]}
+		},			
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "british_shorthair",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/british_shorthair"]]}
+		},			
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "orange_cat",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/orange_cat"]]}
+		},			
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "white_cat",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/white_cat"]]}
+		},	
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "black_cat",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/black_cat"]]}
+		},		
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "ragdoll",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/ragdoll"]]}
+		},			
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "calico",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/calico"]]}
+		},			
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "jellie",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/jellie"]]}
+		},			
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "siamese",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/siamese"]]}
+		},			
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "tabby",
+		  "item_group": "yuushya_life",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/tabby"]]}
+		},			
 
 	{"name": "Json防呆", "class_type": "_comment" }
   ]
