@@ -10,6 +10,7 @@ import java.util.Map;
 import java.util.function.BiConsumer;
 import java.util.function.Supplier;
 
+import static com.yuushya.datagen.BlockStateData.getModelListFromData;
 import static com.yuushya.registries.YuushyaRegistries.BLOCKS;
 
 public class YuushyaDataProvider {
@@ -132,10 +133,7 @@ public class YuushyaDataProvider {
         this.id(block.name);
         switch (this.dataType){
             case BlockState ->{
-                if (block.blockstate.kit !=null&&!block.blockstate.kit.isEmpty())
-                    this.json(()->BlockStateData.genFromSuit(BLOCKS.get(block.name).get(),block.blockstate.kit,block.blockstate.forms)).save();
-                else
-                    this.json(()->BlockStateData.genBlockState(BLOCKS.get(block.name).get(),block.blockstate.models)).save();
+                this.json(()->BlockStateData.genBlockState(block.blockstate)).save();
             }
             case ItemModel -> {
                 ResourceLocation modelUse;
@@ -146,12 +144,12 @@ public class YuushyaDataProvider {
                 else if (block.blockstate.kit !=null&&!block.blockstate.kit.isEmpty())
                     modelUse=ResourceLocation.tryParse(block.blockstate.forms.get(0).get(0));
                 else if (block.blockstate.states!=null&&!block.blockstate.states.isEmpty())
-                    modelUse=ResourceLocation.tryParse(block.blockstate.models.get(0));
+                    modelUse=ResourceLocation.tryParse(getModelListFromData(block.blockstate.models).get(0));
                 else
                     modelUse=null;
                 this.json(()->ModelData.genChildItemModel(modelUse)).save();
             }
-            case BlockModel -> this.json(()->ModelData.genSimpleCubeBlockModel(ResourceLocation.tryParse(block.texture))).save();
+            case BlockModel -> {this.json(()->ModelData.genSimpleCubeBlockModel(ResourceLocation.tryParse(block.texture.value))).save();}
             case LootTable -> this.json(()->LootTableData.genSingleItemTable(BLOCKS.get(block.name).get())).save();
         };
         return this;

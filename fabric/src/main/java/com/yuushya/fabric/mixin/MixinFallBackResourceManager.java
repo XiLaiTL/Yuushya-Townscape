@@ -31,7 +31,6 @@ public class MixinFallBackResourceManager {
     public void getResource(ResourceLocation id, CallbackInfoReturnable<Resource> cir){
         YuushyaDataProvider yuushyaDataProvider=YuushyaDataProvider.of(id);
         if (id.toString().contains("blockstates")) return;
-        if(id.toString().contains(Yuushya.MOD_ID)) YuushyaLogger.info(id.toString());
         if (yuushyaDataProvider.type(YuushyaDataProvider.DataType.LootTable).contain(id)){
             cir.cancel();return;
         }
