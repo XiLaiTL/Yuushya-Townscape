@@ -12,6 +12,7 @@ import net.minecraft.server.packs.resources.SimpleJsonResourceReloadListener;
 import net.minecraft.util.profiling.ProfilerFiller;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -32,9 +33,9 @@ public class YuushyaResourceReloadListener extends SimpleJsonResourceReloadListe
 
     }
 
-    public static final Map<String,YuushyaRegistryData.Block> YuushyaRawBlockMap=new HashMap<>();
-    public static final Map<String,YuushyaRegistryData.Item> YuushyaRawItemMap = new HashMap<>();
-    public static final Map<String,YuushyaRegistryData.Particle> YuushyaRawParticleMap =new HashMap<>();
+    public static final Map<String,YuushyaRegistryData.Block> YuushyaRawBlockMap=new LinkedHashMap<>();
+    public static final Map<String,YuushyaRegistryData.Item> YuushyaRawItemMap = new LinkedHashMap<>();
+    public static final Map<String,YuushyaRegistryData.Particle> YuushyaRawParticleMap =new LinkedHashMap<>();
     public static YuushyaRegistryData getYuushyaRegistryData(){
         YuushyaRegistryData yuushyaRegistryData=new YuushyaRegistryData();
         yuushyaRegistryData.block=  YuushyaResourceReloadListener.YuushyaRawBlockMap.values().stream().toList();

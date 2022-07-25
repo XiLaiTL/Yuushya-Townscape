@@ -4,6 +4,7 @@ package com.yuushya.item;
 import com.yuushya.Yuushya;
 import com.yuushya.block.YuushyaBlockFactory;
 import com.yuushya.registries.YuushyaRegistries;
+import com.yuushya.registries.YuushyaRegistryData;
 import com.yuushya.utils.YuushyaLogger;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Registry;
@@ -18,11 +19,17 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 
+import java.util.List;
+
 public class TemplateBlockItem extends AbstractYuushyaItem {
     public String templateType;
+    private final YuushyaRegistryData.Block block;
+    private final List<YuushyaRegistryData.Block> usageList;
     public TemplateBlockItem(Properties properties, Integer tipLines, String templateType) {
         super(properties, tipLines);
-        this.templateType=templateType;
+        this.templateType=templateType;//Registry.ITEM.getKey(this) 可以删掉的
+        block = YuushyaRegistries.BlockTemplate.get(templateType);
+        usageList=YuushyaRegistries.getTemplateUsageList(block);
     }
     @Override
     public InteractionResult useOn(UseOnContext useOnContext) {
@@ -34,21 +41,23 @@ public class TemplateBlockItem extends AbstractYuushyaItem {
         if (hand == InteractionHand.MAIN_HAND){
             ItemStack itemStackOffHand=player.getItemInHand(InteractionHand.OFF_HAND);
             if (!itemStackOffHand.isEmpty()){
-                if (itemStackOffHand.getItem() instanceof BlockItem blockItem)
-                    if (blockItem.getBlock() instanceof YuushyaBlockFactory.BlockWithClassType block){
-                        if (block.classType.contains("block")){
-                            String name = Registry.BLOCK.getKey(block).getPath();
-                            BlockItem replaceBlockItem = (BlockItem)YuushyaRegistries.ITEMS.get(templateType+"_"+name).get();
-                            return replaceBlockItem.useOn(useOnContext);
-                        }
-                    }
-                    else {
-                        ResourceLocation resourceLocation=Registry.BLOCK.getKey(blockItem.getBlock());
-                        if(YuushyaRegistries.BlockRemain.containsKey(resourceLocation.toString())){
+                if (itemStackOffHand.getItem() instanceof BlockItem blockItem){
+                    ResourceLocation resourceLocation = Registry.BLOCK.getKey(blockItem.getBlock());
+                    if (resourceLocation.getNamespace().equals(Yuushya.MOD_ID)){
+                        YuushyaRegistryData.Block blockFind=YuushyaRegistries.BlockALL.get(resourceLocation.getPath());
+                        if (blockFind!=null&& usageList.contains(blockFind)){
                             BlockItem replaceBlockItem = (BlockItem)YuushyaRegistries.ITEMS.get(templateType+"_"+resourceLocation.getPath()).get();
                             return replaceBlockItem.useOn(useOnContext);
                         }
                     }
+                    else {
+                        YuushyaRegistryData.Block blockFind=YuushyaRegistries.BlockRemain.get(resourceLocation.toString());
+                        if (blockFind!=null&& usageList.contains(blockFind)){
+                            BlockItem replaceBlockItem = (BlockItem)YuushyaRegistries.ITEMS.get(templateType+"_"+resourceLocation.getPath()).get();
+                            return replaceBlockItem.useOn(useOnContext);
+                        }
+                    }
+                }
             }
 
         }

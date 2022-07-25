@@ -38,9 +38,7 @@ public class MixinFallBackResourceManager {
         YuushyaDataProvider blockstateProvider = YuushyaDataProvider.of(YuushyaDataProvider.DataType.BlockState);
         if (!id.toString().contains("blockstates") || !id.toString().contains(Yuushya.MOD_ID)) return;
         YuushyaLogger.info(id.toString());
-        blockstateProvider.forEach((i, j) -> {
-            YuushyaLogger.info(i.toString() + j.toString());
-        });
+        YuushyaLogger.info(blockstateProvider.get(id).toString());
         cir.setReturnValue(List.of(
                 new SimpleResource(id.getNamespace(), id, new ByteArrayInputStream(blockstateProvider.get(id).toString().getBytes(StandardCharsets.UTF_8)), null))
         );
