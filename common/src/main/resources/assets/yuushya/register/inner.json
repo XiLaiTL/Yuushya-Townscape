@@ -181,7 +181,7 @@
 			"render_type": "cutout",
 			"auto_generated": { "blockstate": true, "loot_table": true, "item_model": true },
 			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material":"iron", "is_solid": true, "has_collision": true, "is_delicate": false, "lines": 1 }
+			"properties": { "hardness": 1, "resistance": 1, "material":"iron", "is_solid": true, "has_collision": true, "is_delicate": false }
 		},		
 		
 		{
@@ -223,15 +223,6 @@
 		  "item_group": "yuushya_extrablocks",
 		  "blockstate": { "forms": [["yuushya:extra_building_material/platform_metal"]]}
 		},	
-
-	{"name": "Infrastructure_基础设施", "class_type": "_comment" },			
-		
-		{
-		  "class_type": "IntactBlock",
-		  "name": "crash_barrel",
-		  "item_group": "yuushya_extrablocks",
-		  "blockstate": { "forms": [["yuushya:extra_building_material/crash_barrel"]]}
-		},
 		
 	{"name": "Decoration_装饰", "class_type": "_comment" },	
 
@@ -718,6 +709,13 @@
 		  "item_group": "yuushya_decoration",
 		  "blockstate": { "forms": [["yuushya:extra_building_material/butterfly_magenta"]]}
 		},	
+					
+		{
+		  "class_type": "DecoBlock",
+		  "name": "fireflies",
+		  "item_group": "yuushya_decoration",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/fireflies"]]}
+		},	
 											
 		{
 		  "class_type": "DecoBlock",
@@ -788,6 +786,20 @@
 		  "name": "pingpong_paddles",
 		  "item_group": "yuushya_decoration",
 		  "blockstate": { "forms": [["yuushya:extra_building_material/pingpong_bat_"]]}
+		},		
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "big_oak_plank",
+		  "item_group": "yuushya_decoration",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/big_plank"]]}
+		},	
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "big_acacia_plank",
+		  "item_group": "yuushya_decoration",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/big_plank_"]]}
 		},	
 								
 		{
@@ -1387,14 +1399,7 @@
 		  "item_group": "yuushya_life",
 		  "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_16"]]}
 		},			
-											
-		{
-		  "class_type": "DecoBlock",
-		  "name": "mounted_clothes_17",
-		  "item_group": "yuushya_life",
-		  "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_17"]]}
-		},			
-						
+													
 		{
 		  "class_type": "DecoBlock",
 		  "name": "mounted_cloth_0",
@@ -1484,7 +1489,369 @@
 		  "name": "tabby",
 		  "item_group": "yuushya_life",
 		  "blockstate": { "forms": [["yuushya:extra_building_material/tabby"]]}
+		},	
+		
+		
+	{"name": "infrastructure_基础设施", "class_type": "_comment" },			
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "crash_barrel",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/crash_barrel"]]}
+		},	
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "traffic_sign_0",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_00"]]}
+		},		
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "traffic_sign_1",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_01"]]}
+		},		
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "traffic_sign_2",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_02"]]}
+		},		
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "traffic_sign_3",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_03"]]}
+		},		
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "traffic_sign_4",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_04"]]}
+		},		
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "traffic_sign_5",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_05"]]}
+		},		
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "traffic_sign_6",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_06"]]}
+		},		
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "traffic_sign_7",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_07"]]}
+		},		
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "traffic_sign_8",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_08"]]}
+		},		
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "traffic_sign_9",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_09"]]}
+		},		
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "traffic_sign_10",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_10"]]}
+		},		
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "traffic_sign_11",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_11"]]}
+		},		
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "traffic_sign_12",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_12"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "stone_pier",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/stone_pier"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "safe",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/safe"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "unlocked_safe",
+		  "properties": {"lines": 1},
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/safe_0"],["yuushya:extra_building_material/safe_1"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "tall_safe",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/tall_safe"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "traffic_lights_0",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/traffic_light_1"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "traffic_lights_1",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/traffic_lights"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "traffic_lights_2",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/traffic_lights_"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "traffic_lights_3",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/traffic_lights__0"]]}
 		},			
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "traffic_lights_3",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/traffic_lights__"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "drain",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/well"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "drainage_channel",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/well_s"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "drainage_channel_",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/road/fix1"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "recycle_bin_0",
+		  "properties": {"lines": 1},
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/dustbin1"],["yuushya:extra_building_material/dustbin1_open"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "recycle_bin_1",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/dustbin_5"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "recycle_bin_2",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/recycle_bin_0"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "recycle_bin_3",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/recycle_bin_1"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "recycle_bin_4",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/recycle_bin_2"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "recycle_bin_5",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/recycle_bin_3"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "fire_hydrant",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/fire_hydrant"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "street_light",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/street_light"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "ceiling_lamp",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/street_lamp_0"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "freezer",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/freezer"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "freezer_",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/freezer_"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "surveillance_camera",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/surveillance_camera"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "ceiling_surveillance_camera",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/surveillance_camera_ceiling"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "cone",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/st"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "sink",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/sink_1"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "sink_",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/sink_2"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "power_house",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/power_house"]]}
+		},			
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "rusty_power_house",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/watt_meter"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "power_distributor",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/distributor"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "utility_pole",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/utility_pole"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "horizontal_utility_pole",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/utility_pole_horizontal"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "utility_pole_cross",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/utility_pole_horizontal_"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "voltage_transformer",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/vol_transformer"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "road_light",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/road_light"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "pedestrian_crossing_forward_line",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/road/fix2"]]}
+		},		
 
 	{"name": "Json防呆", "class_type": "_comment" }
   ]
