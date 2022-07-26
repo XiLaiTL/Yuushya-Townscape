@@ -1,5 +1,6 @@
 package com.yuushya.item;
 
+import com.yuushya.utils.YuushyaLogger;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.TranslatableComponent;
@@ -34,7 +35,7 @@ public class AbstractMultiPurposeToolItem extends AbstractToolItem{
     }
 
 
-
+    //TODO:find the reason why many tools just use on server side
     @Override
     public InteractionResult inOffHandRightClickInAir(Player player, BlockState blockStateTarget, Level level, BlockPos blockPos, ItemStack handItemStack){
         //左手右键用于切换工具状态

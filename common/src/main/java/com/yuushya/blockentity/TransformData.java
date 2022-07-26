@@ -67,7 +67,7 @@ public class TransformData{
         compoundTag.put("isShown",ByteTag.valueOf(isShown));
     }
 
-    private static <T> ListTag toListTag(T... values){
+    public static <T> ListTag toListTag(T... values){
         ListTag listTag=new ListTag();
         Arrays.stream(values).toList().forEach((e)->{
             if(e instanceof Float e1)

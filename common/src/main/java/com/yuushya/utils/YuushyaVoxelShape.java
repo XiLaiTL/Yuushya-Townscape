@@ -102,6 +102,7 @@ public class YuushyaVoxelShape {
         List<QuadWithDirection> quadList=new ArrayList<>();
         for (Direction cullfacedirecion : directions) {
             List<BakedQuad> blockModelQuads = blockModel.getQuads(blockState, cullfacedirecion, rand);
+            if (blockModelQuads.size()>200) return null;//TODO:假装有优化
             for (BakedQuad bakedQuad : blockModelQuads) {
                 int[] vertex = bakedQuad.getVertices();
                 List<Vector3f> quadDotList = new ArrayList<>();
@@ -121,7 +122,7 @@ public class YuushyaVoxelShape {
     public static VoxelShape getVoxelShape(BlockState blockState){
         if(blockState.getBlock() instanceof AirBlock) return Shapes.block();
         List<QuadWithDirection> quadList =getQuadFromBlockState(blockState);
-
+        if (quadList==null) return Shapes.block();
         /*已知：面元的顶点集合,求碰撞箱的对顶点。
         点是逆时针顺序构成面
 

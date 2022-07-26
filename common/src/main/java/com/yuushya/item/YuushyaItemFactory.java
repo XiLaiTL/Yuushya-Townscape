@@ -1,5 +1,6 @@
 package com.yuushya.item;
 
+import com.mojang.datafixers.util.Pair;
 import com.yuushya.registries.YuushyaCreativeModeTab;
 import com.yuushya.registries.YuushyaRegistryData;
 import com.yuushya.utils.YuushyaUtils;
@@ -8,6 +9,8 @@ import net.minecraft.world.item.Item;
 public class YuushyaItemFactory {
     public static AbstractYuushyaItem create(YuushyaRegistryData.Item item){
         return switch (item.classType){
+            case "HatItem"->new HatItem(getItemProperties(item),item.properties.lines);
+            case "StructureCreatorItem"->new StructureCreatorItem(getItemProperties(item), item.properties.lines,item.properties.createNbt,item.properties.cancelNbt);
             default -> new AbstractYuushyaItem(getItemProperties(item),item.properties.lines);
         };
     }

@@ -10,8 +10,10 @@ import com.yuushya.blockentity.showblock.ShowBlockEntity;
 import com.yuushya.datagen.BlockStateData;
 import com.yuushya.datagen.ModelData;
 import com.yuushya.datagen.YuushyaDataProvider;
+import com.yuushya.item.HatItem;
 import com.yuushya.item.TemplateBlockItem;
 import com.yuushya.item.YuushyaDebugStickItem;
+import com.yuushya.item.YuushyaItemFactory;
 import com.yuushya.item.showblocktool.*;
 import com.yuushya.utils.GsonTools;
 import com.yuushya.utils.YuushyaLogger;
@@ -51,6 +53,9 @@ public class YuushyaRegistries {
     public static final Map<String,YuushyaRegistryData.Block> TextureTypeMap=new HashMap<>();
 
     public static void registerRegistries(){
+        for (YuushyaRegistryData.Item item:YuushyaData.item){
+            ITEMS.register(item.name,()-> YuushyaItemFactory.create(item));
+        }
         for (YuushyaRegistryData.Block block:YuushyaData.block){
             switch (block.classType){
                 case "_comment","class"->{}
