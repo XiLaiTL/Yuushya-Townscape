@@ -1889,5 +1889,20 @@
 		},
 
 		{"name": "Json防呆", "class_type": "_comment" }
+	],
+	"particle": [
+		{
+			"class_type":"LeafParticle",
+			"name":"maple",
+			"textures":["yuushya:leaf_particle"],
+			"spawner":{
+				"item_group":"yuushya_item",
+				"item_model":"minecraft:stone",
+				"properties":{
+					"material":"leaves",
+					"lines":1
+				}
+			}
+		}
 	]
 }

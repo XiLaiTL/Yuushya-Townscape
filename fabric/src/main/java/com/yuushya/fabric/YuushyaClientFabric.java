@@ -3,14 +3,19 @@ package com.yuushya.fabric;
 import com.yuushya.YuushyaClient;
 import com.yuushya.fabric.client.ShowBlockModel;
 import com.yuushya.item.showblocktool.GetBlockStateItem;
+import com.yuushya.particle.LeafParticle;
+import com.yuushya.particle.YuushyaParticleFactory;
 import com.yuushya.registries.YuushyaRegistries;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.model.*;
+import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.BuiltinItemRendererRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.minecraft.client.color.block.BlockColor;
 import net.minecraft.client.color.item.ItemColor;
 import net.minecraft.client.renderer.block.BlockModelShaper;
+import net.minecraft.core.particles.ParticleType;
+import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.NbtUtils;
 import net.minecraft.world.item.ItemStack;
@@ -59,5 +64,10 @@ public class YuushyaClientFabric implements ClientModInitializer {
         },YuushyaRegistries.ITEMS.get("get_blockstate_item").get());
 
         BuiltinItemRendererRegistry.INSTANCE.register(YuushyaRegistries.ITEMS.get("get_blockstate_item").get(), GetBlockStateItem::renderByItem);
+
+        YuushyaData.particle.forEach((e)->{
+            ParticleFactoryRegistry.getInstance().register((ParticleType<SimpleParticleType>)YuushyaRegistries.PARTICLE_TYPES.get(e.name).get(), (spriteProvider)-> YuushyaParticleFactory.create(e,spriteProvider));
+        });
+        //ParticleFactoryRegistry.getInstance().register((ParticleType<SimpleParticleType>) YuushyaRegistries.PARTICLE_TYPES.get("leaf_particle").get(), LeafParticle.Factory::new);
     }
 }

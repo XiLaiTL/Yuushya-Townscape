@@ -1,6 +1,8 @@
 package com.yuushya.particle;
 
+import com.yuushya.Yuushya;
 import com.yuushya.block.YuushyaBlockFactory;
+import com.yuushya.utils.YuushyaLogger;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.world.level.Level;
@@ -11,7 +13,7 @@ import java.util.Random;
 public class YuushyaParticleBlock extends YuushyaBlockFactory.BlockWithClassType {
     private final ParticleSupplier particleSupplier;
     public YuushyaParticleBlock(Properties properties, Integer tipLines, String classType,ParticleSupplier particleSupplier) {
-        super(properties.noCollission(), tipLines, classType);
+        super(properties.noCollission().noOcclusion(), tipLines, classType);
         this.particleSupplier =particleSupplier;
     }
     @Override

@@ -9,7 +9,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class LeafParticle extends TextureSheetParticle {
     private final SpriteSet spriteSet;
-    protected LeafParticle(ClientLevel clientLevel, double x, double y, double z, double velocityX, double velocityY, double velocityZ,SpriteSet spriteSet) {
+    public LeafParticle(ClientLevel clientLevel, double x, double y, double z, double velocityX, double velocityY, double velocityZ, SpriteSet spriteSet) {
         super(clientLevel, x, y, z, velocityX,velocityY,velocityZ);
         this.lifetime=300;
         this.gravity= 0.03F+random.nextFloat()*0.03F;
@@ -42,8 +42,8 @@ public class LeafParticle extends TextureSheetParticle {
             this.zd =0.012*Math.cos(this.y*0.2);
 
             if (this.y == this.yo) {
-                this.xo *= 1.1D;
-                this.zo *= 1.1D;
+                this.xd *= 1.1D;
+                this.zd *= 1.1D;
             }
 
             this.roll=(float)Math.sin((double)this.age*0.03)*0.75F;
@@ -61,6 +61,7 @@ public class LeafParticle extends TextureSheetParticle {
     public ParticleRenderType getRenderType() {
         return ParticleRenderType.PARTICLE_SHEET_TRANSLUCENT;
     }
+
     public static class Factory implements ParticleProvider<SimpleParticleType> {
         private final SpriteSet spriteSet;
 
@@ -71,8 +72,7 @@ public class LeafParticle extends TextureSheetParticle {
         @Nullable
         @Override
         public Particle createParticle(SimpleParticleType particleOptions, ClientLevel clientLevel, double d, double e, double f, double g, double h, double i) {
-            LeafParticle leafParticle=new LeafParticle(clientLevel,d,e,f,g,h,i,  this.spriteSet);
-            return null;
+            return new LeafParticle(clientLevel,d,e,f,g,h,i,  this.spriteSet);
         }
     }
 }

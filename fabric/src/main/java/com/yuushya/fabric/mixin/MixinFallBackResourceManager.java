@@ -35,7 +35,8 @@ public class MixinFallBackResourceManager {
             cir.cancel();return;
         }
         if (yuushyaDataProvider.type(YuushyaDataProvider.DataType.ItemModel).contain(id)
-                ||yuushyaDataProvider.type(YuushyaDataProvider.DataType.BlockModel).contain(id)){
+                ||yuushyaDataProvider.type(YuushyaDataProvider.DataType.BlockModel).contain(id)
+                ||yuushyaDataProvider.type(YuushyaDataProvider.DataType.Particle).contain(id)){
             Resource resource = new SimpleResource(id.getNamespace(), id, new ByteArrayInputStream(yuushyaDataProvider.get(id).toString().getBytes(StandardCharsets.UTF_8)), null);
             cir.setReturnValue(resource);
             cir.cancel();

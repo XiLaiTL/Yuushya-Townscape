@@ -86,7 +86,10 @@ public class YuushyaRegistryData{
         }
     }
     public static class Particle{
+        public String classType;
         public String name;
+        public List<String> textures;
+        public Block spawner;
     }
     
 }

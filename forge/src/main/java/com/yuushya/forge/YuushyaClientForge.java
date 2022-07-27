@@ -1,11 +1,17 @@
 package com.yuushya.forge;
 
 import com.yuushya.Yuushya;
+import com.yuushya.particle.LeafParticle;
+import com.yuushya.particle.YuushyaParticleFactory;
 import com.yuushya.registries.YuushyaRegistries;
 import com.yuushya.YuushyaClient;
 import com.yuushya.forge.client.ShowBlockModel;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.color.block.BlockColor;
+import net.minecraft.client.particle.ParticleEngine;
 import net.minecraft.client.renderer.block.BlockModelShaper;
+import net.minecraft.core.particles.ParticleType;
+import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.NbtUtils;
 import net.minecraft.world.level.block.Block;
@@ -13,9 +19,12 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.client.event.ModelBakeEvent;
+import net.minecraftforge.client.event.ParticleFactoryRegisterEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+
+import static com.yuushya.registries.YuushyaRegistryConfig.YuushyaData;
 
 @Mod.EventBusSubscriber(modid = Yuushya.MOD_ID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class YuushyaClientForge {
@@ -55,6 +64,14 @@ public class YuushyaClientForge {
                 YuushyaRegistries.SHOW_BLOCK.get()
         );
     }
+    @SubscribeEvent
+    public static void onParticleFactoryRegistration(ParticleFactoryRegisterEvent event) {
+        YuushyaData.particle.forEach((e)->{
+            Minecraft.getInstance().particleEngine.register((ParticleType<SimpleParticleType>)YuushyaRegistries.PARTICLE_TYPES.get(e.name).get(), (spriteSet)-> YuushyaParticleFactory.create(e,spriteSet));
+        });
+        //Minecraft.getInstance().particleEngine.register((ParticleType<SimpleParticleType>) YuushyaRegistries.PARTICLE_TYPES.get("leaf_particle").get(), LeafParticle.Factory::new);
+    }
+
     @SubscribeEvent
     public static void handleItemColor(ColorHandlerEvent.Item event) {
         event.getItemColors().register(

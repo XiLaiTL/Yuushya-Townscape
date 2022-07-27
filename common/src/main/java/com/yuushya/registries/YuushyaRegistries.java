@@ -9,6 +9,7 @@ import com.yuushya.blockentity.showblock.ShowBlock;
 import com.yuushya.blockentity.showblock.ShowBlockEntity;
 import com.yuushya.datagen.BlockStateData;
 import com.yuushya.datagen.ModelData;
+import com.yuushya.datagen.ParticleData;
 import com.yuushya.datagen.YuushyaDataProvider;
 import com.yuushya.item.HatItem;
 import com.yuushya.item.TemplateBlockItem;
@@ -25,6 +26,7 @@ import dev.architectury.registry.client.rendering.ColorHandlerRegistry;
 import dev.architectury.registry.client.rendering.RenderTypeRegistry;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.fabricmc.api.Environment;
+import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.core.Registry;
@@ -139,6 +141,22 @@ public class YuushyaRegistries {
                 registerTemplateProduct(name,templateBlock,templateModels,blockNew,properties);
             }
         }
+        //TODP: add particle to normal block
+        for(YuushyaRegistryData.Particle particle:YuushyaData.particle){
+            if (particle.spawner==null) particle.spawner=new YuushyaRegistryData.Block();
+            if (particle.spawner.properties==null) {particle.spawner.properties=new YuushyaRegistryData.Block.Properties();}
+            if (particle.spawner.name==null||particle.spawner.name.isEmpty()) particle.spawner.name=particle.name+"_spawner";
+            BLOCKS.register(particle.spawner.name, () -> new YuushyaParticleBlock(YuushyaBlockFactory.getBlockProperties(particle.spawner.properties), particle.spawner.properties.lines,"ParticleBlock", ()-> (SimpleParticleType) PARTICLE_TYPES.get(particle.name).get()));
+            ITEMS.register(particle.spawner.name, () -> new BlockItem(BLOCKS.get(particle.spawner.name).get(), new Item.Properties().tab(YuushyaCreativeModeTab.toGroup(particle.spawner.itemGroup))));
+            PARTICLE_TYPES.register(particle.name, YuushyaParticleBlock.YuushyaParticleType::create);
+
+            YuushyaDataProvider dataProvider= YuushyaDataProvider.of(particle.spawner.name);
+            //TODO: the model of particle spawner
+            dataProvider.type(YuushyaDataProvider.DataType.BlockState).json(()->BlockStateData.genSimpleBlock(new ResourceLocation("yuushya:extra_building_material/blank"))).save();
+            dataProvider.type(YuushyaDataProvider.DataType.ItemModel).add(particle.spawner);
+            dataProvider.type(YuushyaDataProvider.DataType.LootTable).add(particle.spawner);
+            YuushyaDataProvider.of(particle.name).type(YuushyaDataProvider.DataType.Particle).json(()-> ParticleData.genParticleDescription(particle.textures)).save();
+        }
     }
     public static List<YuushyaRegistryData.Block> getTemplateUsageList(YuushyaRegistryData.Block templateBlock){
         List<YuushyaRegistryData.Block> list=new ArrayList<>();
@@ -198,10 +216,10 @@ public class YuushyaRegistries {
         ITEMS.register("get_lit_item",()->new GetLitItem(new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_ITEM),2));
         ITEMS.register("form_trans_item",()->new GetLitItem(new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_ITEM),2));
 
-        // 树叶粒子
-        BLOCKS.register("leafparticleblock", () -> new YuushyaParticleBlock(BlockBehaviour.Properties.of(Material.LEAVES).noOcclusion().strength(4.0f), 1,"LeafParticleBlock", ()-> (SimpleParticleType) PARTICLE_TYPES.get("leaf_particle").get()));
-        ITEMS.register("leafparticleblock", () -> new BlockItem(BLOCKS.get("leafparticleblock").get(), new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_ITEM)));
-        PARTICLE_TYPES.register("leaf_particle", YuushyaParticleBlock.YuushyaParticleType::create);
+//        // 树叶粒子
+//        BLOCKS.register("leafparticleblock", () -> new YuushyaParticleBlock(BlockBehaviour.Properties.of(Material.LEAVES).strength(4.0f), 1,"LeafParticleBlock", ()-> (SimpleParticleType) PARTICLE_TYPES.get("leaf_particle").get()));
+//        ITEMS.register("leafparticleblock", () -> new BlockItem(BLOCKS.get("leafparticleblock").get(), new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_ITEM)));
+//        PARTICLE_TYPES.register("leaf_particle", YuushyaParticleBlock.YuushyaParticleType::create);
 
         SHOW_BLOCK= BLOCKS.register("showblock",()->new ShowBlock(BlockBehaviour.Properties.of(Material.METAL).noCollission().noOcclusion().strength(4.0f).lightLevel(blockState ->blockState.getValue(YuushyaBlockStates.LIT)),1));
         ITEMS.register("showblock",()->new BlockItem(BLOCKS.get("showblock").get(),new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_ITEM)));
@@ -216,7 +234,6 @@ public class YuushyaRegistries {
                 ColorHandlerRegistry.registerBlockColors(YuushyaUtils.toBlockColor(block.colorTint.colorType,block.colorTint.colorString),BLOCKS.get(block.name));
             }
         });
-        ParticleProviderRegistry.register((ParticleType<SimpleParticleType>) PARTICLE_TYPES.get("leaf_particle").get(), LeafParticle.Factory::new);
     }
 
 
