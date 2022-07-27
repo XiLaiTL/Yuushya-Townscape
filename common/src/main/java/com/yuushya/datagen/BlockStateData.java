@@ -42,7 +42,15 @@ public class BlockStateData {
             int formsNum=blockState.forms.size();
             Variant baseVariant=Variant.variant().with(VariantProperties.MODEL,new ResourceLocation(blockState.forms.get(0).get(0)));
             childVariant= switch (blockState.kit){
-                case "normal"-> ChildVariant.of(baseVariant)
+                case "normal"->ChildVariant.of(baseVariant)
+                        .add(createHorizonFacingVariant())
+                        .add(ChildPropertyVariant.of(FORM).generate((variantKeyList)->{
+                            int i=FORM.indexOf(variantKeyList.get(0));
+                            return List.of(i < formsNum
+                                    ? Variant.variant().with(VariantProperties.MODEL, new ResourceLocation(blockState.forms.get(i).get(0)))
+                                    : Variant.variant()) ;
+                        }));
+                case "attachment"-> ChildVariant.of(baseVariant)
                         .add(createFaceAndFacingVariant())
                         .add(ChildPropertyVariant.of(FORM).generate((variantKeyList)->{
                             int i=FORM.indexOf(variantKeyList.get(0));

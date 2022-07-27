@@ -83,8 +83,10 @@ public class YuushyaBlockFactory{
         //套装，依然可以用在自定义的classType里
         if (yuushyaBlock.blockstate.kit !=null&&!yuushyaBlock.blockstate.kit.isEmpty()){
             switch (yuushyaBlock.blockstate.kit){
-                case "normal" -> {
+                case "normal"->{
                     return new NormalBlock(properties,yuushyaBlock.properties.lines, yuushyaBlock.classType);}
+                case "attachment" -> {
+                    return new AttachmentBlock(properties,yuushyaBlock.properties.lines, yuushyaBlock.classType);}
                 case "line" -> {
                     return new LineBlock(properties,yuushyaBlock.properties.lines, yuushyaBlock.classType);}
                 case "face" -> {
