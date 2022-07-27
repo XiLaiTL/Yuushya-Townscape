@@ -18,6 +18,7 @@ public class YuushyaBlockStates {
     public static final EnumProperty<PositionVerticalState> POS_VERTICAL=EnumProperty.create("pos",PositionVerticalState.class);
     public static final IntegerProperty FORM = IntegerProperty.create("form",0,7);
     public static final IntegerProperty LIT = IntegerProperty.create("lit",0,15);
+    public static final BooleanProperty ISHUB = BooleanProperty.create("ishub");
 
     public static Property<?> toBlockStateProperty(String name){
         return switch (name){
@@ -31,6 +32,7 @@ public class YuushyaBlockStates {
             case "face"->(BlockStateProperties.ATTACH_FACE);
             case "horizontal_facing"->(BlockStateProperties.HORIZONTAL_FACING);
             case "facing"->(BlockStateProperties.FACING);
+            case "ishub"->(YuushyaBlockStates.ISHUB);
             default -> throw new IllegalStateException("Unexpected value: " + name);
         };
     }

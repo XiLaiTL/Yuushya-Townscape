@@ -60,7 +60,6 @@ public class YuushyaRegistryData{
             public boolean isSolid;
             public boolean hasCollision;
             public boolean isDelicate;
-            public boolean isHub;
             public String offset;
             public int lines;
         }
