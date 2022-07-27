@@ -144,6 +144,7 @@ public class YuushyaVoxelShape {
                 }
             }
         }
+        if (voxelShape.optimize().isEmpty()) return Shapes.block();
         return voxelShape;
     }
 }

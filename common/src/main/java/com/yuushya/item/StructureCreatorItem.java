@@ -76,9 +76,9 @@ public class StructureCreatorItem extends AbstractMultiPurposeToolItem{
         return InteractionResult.SUCCESS;
     }
 
-    public boolean loadStructure(ServerLevel serverWorld,ResourceLocation structureName,BlockPos blockPos,ItemStack itemStack) {
+    public boolean loadStructure(ServerLevel serverLevel,ResourceLocation structureName,BlockPos blockPos,ItemStack itemStack) {
         if (structureName != null) {
-            StructureManager structureManager = serverWorld.getStructureManager();
+            StructureManager structureManager = serverLevel.getStructureManager();
             BlockPos blockPos1;
             Optional<StructureTemplate> structure2;
             try {
@@ -87,27 +87,27 @@ public class StructureCreatorItem extends AbstractMultiPurposeToolItem{
                 this.size=new Vec3i(size.getX(),size.getY(),size.getZ());
                 setTag(itemStack);
                 blockPos1=getOffset(pos);
-                return this.place(serverWorld, structure2.get(),blockPos1);
+                return this.place(serverLevel, structure2.get(),blockPos1);
             } catch (ResourceLocationException var6) {
                 return false;
             }
         } else { return false;}
     }
 
-    public boolean place(ServerLevel serverWorld, StructureTemplate structure, BlockPos blockPos) {
+    public boolean place(ServerLevel serverLevel, StructureTemplate structure, BlockPos blockPos) {
         StructurePlaceSettings structurePlacementData = new StructurePlaceSettings().setMirror(Mirror.values()[this._mirror]).setRotation(Rotation.values()[this._rot]);
-        structure.placeInWorld(serverWorld,blockPos, blockPos, structurePlacementData, new Random(Util.getMillis()),2);
+        structure.placeInWorld(serverLevel,blockPos, blockPos, structurePlacementData, new Random(Util.getMillis()),2);
         return true;
 
     }
-    public boolean setAir(ServerLevel serverWorld, ResourceLocation structureName){
+    public boolean setAir(ServerLevel serverLevel, ResourceLocation structureName){
         if(pos==null||size==null) return false;
         BlockPos blockPos=getOffset(pos);
         for(int i = 0; Math.abs(i)<=size.getX();i=(_offsetX<0?i-1:i+1))
             for(int j=0;Math.abs(j)<=size.getZ();j=(_offsetZ<0?j-1:j+1))
                 for(int k=0;k<size.getY();k++) {
                     BlockPos blockPos1=new BlockPos(i+blockPos.getX(),k+blockPos.getY(),j+blockPos.getZ());
-                    serverWorld.setBlock(blockPos1, Blocks.AIR.defaultBlockState(),3);
+                    serverLevel.setBlock(blockPos1, Blocks.AIR.defaultBlockState(),3);
                     // serverWorld.syncWorldEvent(player, 2001, blockPos2, Block.getRawIdFromState(block2));
                 }
         pos=null;

@@ -69,12 +69,12 @@ public class LineBlock extends YuushyaBlockFactory.BlockWithClassType {
                 if (wConnected&&eConnected) return PositionHorizonState.MIDDLE;
                 switch (facingDirection) {
                     case NORTH -> {
-                        if (wConnected) return PositionHorizonState.LEFT;
-                        if (eConnected) return PositionHorizonState.RIGHT;
-                    }
-                    case SOUTH -> {
                         if (wConnected) return PositionHorizonState.RIGHT;
                         if (eConnected) return PositionHorizonState.LEFT;
+                    }
+                    case SOUTH -> {
+                        if (wConnected) return PositionHorizonState.LEFT;
+                        if (eConnected) return PositionHorizonState.RIGHT;
                     }
                 }
             }

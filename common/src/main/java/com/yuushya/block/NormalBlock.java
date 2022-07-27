@@ -25,7 +25,7 @@ public class NormalBlock extends YuushyaBlockFactory.BlockWithClassType {
     @Override
     @Nullable
     public BlockState getStateForPlacement(BlockPlaceContext blockPlaceContext) {
-        return blockPlaceContext.getNearestLookingDirection().getAxis() == Direction.Axis.Y
+        return blockPlaceContext.getClickedFace().getAxis() == Direction.Axis.Y
                 ? this.defaultBlockState().setValue(HORIZONTAL_FACING, blockPlaceContext.getHorizontalDirection())
                 : this.defaultBlockState().setValue(HORIZONTAL_FACING, blockPlaceContext.getClickedFace().getOpposite());
     }
