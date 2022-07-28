@@ -1,9 +1,8 @@
 {
 	"credit": "Coco",
 	"textures": {
-		"sides": "yuushya:block_/template",
-		"top": "yuushya:block_/template",
-		"particle": "#sides"
+		"all": "yuushya:block_/template",
+		"particle": "#all"
 	},
 	"elements": [
 		{
@@ -11,12 +10,12 @@
 			"to": [16, 8, 16],
 			"rotation": {"angle": 0, "axis": "y", "origin": [13, 8, 13]},
 			"faces": {
-				"north": {"uv": [0, 8, 16, 16], "texture": "#sides"},
-				"east": {"uv": [0, 8, 16, 16], "texture": "#sides"},
-				"south": {"uv": [0, 8, 16, 16], "texture": "#sides"},
-				"west": {"uv": [0, 8, 16, 16], "texture": "#sides"},
-				"up": {"uv": [0, 0, 16, 16], "texture": "#top"},
-				"down": {"uv": [0, 0, 16, 16], "texture": "#top"}
+				"north": {"uv": [0, 8, 16, 16], "texture": "#all"},
+				"east": {"uv": [0, 8, 16, 16], "texture": "#all"},
+				"south": {"uv": [0, 8, 16, 16], "texture": "#all"},
+				"west": {"uv": [0, 8, 16, 16], "texture": "#all"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#all"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#all"}
 			}
 		},
 		{
@@ -24,12 +23,12 @@
 			"to": [16, 16, 8],
 			"rotation": {"angle": 0, "axis": "y", "origin": [13, 8, 13]},
 			"faces": {
-				"north": {"uv": [0, 0, 16, 8], "texture": "#sides"},
-				"east": {"uv": [8, 0, 16, 8], "texture": "#sides"},
-				"south": {"uv": [0, 0, 16, 8], "texture": "#sides"},
-				"west": {"uv": [0, 0, 8, 8], "texture": "#sides"},
-				"up": {"uv": [0, 0, 16, 8], "texture": "#top"},
-				"down": {"uv": [0, 8, 16, 16], "texture": "#top"}
+				"north": {"uv": [0, 0, 16, 8], "texture": "#all"},
+				"east": {"uv": [8, 0, 16, 8], "texture": "#all"},
+				"south": {"uv": [0, 0, 16, 8], "texture": "#all"},
+				"west": {"uv": [0, 0, 8, 8], "texture": "#all"},
+				"up": {"uv": [0, 0, 16, 8], "texture": "#all"},
+				"down": {"uv": [0, 8, 16, 16], "texture": "#all"}
 			}
 		}
 	],
