@@ -1,0 +1,12 @@
+{
+  "parent": "minecramc:item/generated",
+  "textures": {
+    "layer0": "yuushya:item/mc_x"
+  },
+      "overrides": [
+        { "predicate": { "direction": 0 }, "model": "yuushya:item/mc_x" },
+        { "predicate": { "direction": 0.1 }, "model": "yuushya:item/mc_y" },
+        { "predicate": { "direction": 0.2 }, "model": "yuushya:item/mc_z" },	
+        { "predicate": { "direction": 0.3 }, "model": "yuushya:item/mc_rs" }	
+	]
+}
