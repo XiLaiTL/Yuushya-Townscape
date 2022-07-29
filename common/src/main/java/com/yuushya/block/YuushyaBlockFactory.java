@@ -1,20 +1,21 @@
 package com.yuushya.block;
 
 import com.yuushya.block.blockstate.YuushyaBlockStates;
+import com.yuushya.registries.YuushyaRegistries;
 import com.yuushya.registries.YuushyaRegistryData;
 import com.yuushya.utils.YuushyaUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.Registry;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.block.AirBlock;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DoorBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -99,20 +100,36 @@ public class YuushyaBlockFactory{
                     return new FaceBlock(properties,yuushyaBlock.properties.lines, yuushyaBlock.classType);}
                 case "pole" -> {
                     return new PoleBlock(properties,yuushyaBlock.properties.lines, yuushyaBlock.classType);}
+                case "tri_part"->{
+                    return new TriPartBlock(properties,yuushyaBlock.properties.lines,"TallFurnitureBlock");}
+                case "tube"->{
+                    return new TubeBlock(properties,yuushyaBlock.properties.lines,"TubeBlock");}
+                case "VanillaDoorBlock"->{
+                    return new DoorBlock(properties){
+                        @Override//注释栏数
+                        public void appendHoverText(@NotNull ItemStack itemStack, @Nullable BlockGetter blockGetter, @NotNull List<Component> tooltips, @NotNull TooltipFlag tooltipFlag) {
+                            for(int i=1;i<=yuushyaBlock.properties.lines;i++) tooltips.add(new TranslatableComponent(this.getDescriptionId()+".line"+i));
+                        }};}
+                case "VanillaStairBlock"->{
+                    BlockState blockState= Blocks.OAK_PLANKS.defaultBlockState();
+                    if (yuushyaBlock.properties.parent!=null){
+                        //TODO:这里可能会崩
+                        if (yuushyaBlock.properties.parent.contains(":"))
+                            blockState= Registry.BLOCK.get(new ResourceLocation(yuushyaBlock.properties.parent)).defaultBlockState();
+                        else
+                            blockState= YuushyaRegistries.BLOCKS.get(yuushyaBlock.properties.parent).get().defaultBlockState();
+                    }
+                    return new StairBlock(blockState,properties){
+                        @Override//注释栏数
+                        public void appendHoverText(@NotNull ItemStack itemStack, @Nullable BlockGetter blockGetter, @NotNull List<Component> tooltips, @NotNull TooltipFlag tooltipFlag) {
+                            for(int i=1;i<=yuushyaBlock.properties.lines;i++) tooltips.add(new TranslatableComponent(this.getDescriptionId()+".line"+i));
+                        }};}
             }
         }
         List<? extends Property<?>> blockStateProperties=getBlockStateProperties(yuushyaBlock.blockstate);
         //classType 用于一些内定的方块//TODO:还是算了，直接让kit承担内定方块的重任
         switch (yuushyaBlock.classType){
             case "" -> {return new Block(properties);}
-            case "TriPartBlock"->{return new TriPartBlock(properties,yuushyaBlock.properties.lines,"TallFurnitureBlock");}
-            case "TubeBlock"->{return new TubeBlock(properties,yuushyaBlock.properties.lines,"TubeBlock");}
-            case "VanillaDoorBlock"->{return new DoorBlock(properties){
-                @Override//注释栏数
-                public void appendHoverText(@NotNull ItemStack itemStack, @Nullable BlockGetter blockGetter, @NotNull List<Component> tooltips, @NotNull TooltipFlag tooltipFlag) {
-                    for(int i=1;i<=yuushyaBlock.properties.lines;i++) tooltips.add(new TranslatableComponent(this.getDescriptionId()+".line"+i));
-                }
-            };}
         }
         return new BlockWithClassType(properties,yuushyaBlock.properties.lines, yuushyaBlock.classType){
             {

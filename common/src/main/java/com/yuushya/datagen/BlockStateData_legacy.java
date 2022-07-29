@@ -19,9 +19,7 @@ import net.minecraft.data.models.blockstates.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.properties.AttachFace;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraft.world.level.block.state.properties.Property;
+import net.minecraft.world.level.block.state.properties.*;
 
 import java.util.*;
 import java.util.function.Consumer;
@@ -275,5 +273,139 @@ public class BlockStateData_legacy {
                         Variant.variant().with(VariantProperties.UV_LOCK, true).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270).with(VariantProperties.MODEL, bothLine))
                 ;
 
+    }
+    static BlockStateGenerator createStairs(Block block, ResourceLocation resourceLocation, ResourceLocation resourceLocation2, ResourceLocation resourceLocation3) {
+        return MultiVariantGenerator.multiVariant(block)
+                .with(PropertyDispatch.properties(BlockStateProperties.HORIZONTAL_FACING, BlockStateProperties.HALF, BlockStateProperties.STAIRS_SHAPE)
+                        .select(Direction.EAST, Half.BOTTOM, StairsShape.STRAIGHT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation2))
+                        .select(Direction.WEST, Half.BOTTOM, StairsShape.STRAIGHT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation2).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.SOUTH, Half.BOTTOM, StairsShape.STRAIGHT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation2).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.NORTH, Half.BOTTOM, StairsShape.STRAIGHT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation2).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.EAST, Half.BOTTOM, StairsShape.OUTER_RIGHT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation3))
+                        .select(Direction.WEST, Half.BOTTOM, StairsShape.OUTER_RIGHT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation3).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.SOUTH, Half.BOTTOM, StairsShape.OUTER_RIGHT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation3).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.NORTH, Half.BOTTOM, StairsShape.OUTER_RIGHT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation3).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.EAST, Half.BOTTOM, StairsShape.OUTER_LEFT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation3).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.WEST, Half.BOTTOM, StairsShape.OUTER_LEFT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation3).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.SOUTH, Half.BOTTOM, StairsShape.OUTER_LEFT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation3))
+                        .select(Direction.NORTH, Half.BOTTOM, StairsShape.OUTER_LEFT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation3).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.EAST, Half.BOTTOM, StairsShape.INNER_RIGHT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation))
+                        .select(Direction.WEST, Half.BOTTOM, StairsShape.INNER_RIGHT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.SOUTH, Half.BOTTOM, StairsShape.INNER_RIGHT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.NORTH, Half.BOTTOM, StairsShape.INNER_RIGHT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.EAST, Half.BOTTOM, StairsShape.INNER_LEFT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.WEST, Half.BOTTOM, StairsShape.INNER_LEFT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.SOUTH, Half.BOTTOM, StairsShape.INNER_LEFT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation))
+                        .select(Direction.NORTH, Half.BOTTOM, StairsShape.INNER_LEFT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.EAST, Half.TOP, StairsShape.STRAIGHT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation2).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.WEST, Half.TOP, StairsShape.STRAIGHT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation2).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.SOUTH, Half.TOP, StairsShape.STRAIGHT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation2).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.NORTH, Half.TOP, StairsShape.STRAIGHT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation2).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.EAST, Half.TOP, StairsShape.OUTER_RIGHT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation3).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.WEST, Half.TOP, StairsShape.OUTER_RIGHT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation3).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.SOUTH, Half.TOP, StairsShape.OUTER_RIGHT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation3).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.NORTH, Half.TOP, StairsShape.OUTER_RIGHT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation3).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.EAST, Half.TOP, StairsShape.OUTER_LEFT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation3).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.WEST, Half.TOP, StairsShape.OUTER_LEFT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation3).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.SOUTH, Half.TOP, StairsShape.OUTER_LEFT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation3).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.NORTH, Half.TOP, StairsShape.OUTER_LEFT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation3).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.EAST, Half.TOP, StairsShape.INNER_RIGHT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.WEST, Half.TOP, StairsShape.INNER_RIGHT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.SOUTH, Half.TOP, StairsShape.INNER_RIGHT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.NORTH, Half.TOP, StairsShape.INNER_RIGHT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.EAST, Half.TOP, StairsShape.INNER_LEFT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.WEST, Half.TOP, StairsShape.INNER_LEFT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.SOUTH, Half.TOP, StairsShape.INNER_LEFT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90).with(VariantProperties.UV_LOCK, true))
+                        .select(Direction.NORTH, Half.TOP, StairsShape.INNER_LEFT,
+                                Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270).with(VariantProperties.UV_LOCK, true)));
+
+    }
+    private static PropertyDispatch.C4<Direction, DoubleBlockHalf, DoorHingeSide, Boolean> configureDoorHalf(PropertyDispatch.C4<Direction, DoubleBlockHalf, DoorHingeSide, Boolean> c4, DoubleBlockHalf doubleBlockHalf, ResourceLocation resourceLocation, ResourceLocation resourceLocation2) {
+        return c4
+                .select(Direction.EAST, doubleBlockHalf, DoorHingeSide.LEFT, (Boolean)false,
+                        Variant.variant().with(VariantProperties.MODEL, resourceLocation))
+                .select(Direction.SOUTH, doubleBlockHalf, DoorHingeSide.LEFT, (Boolean)false,
+                        Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90))
+                .select(Direction.WEST, doubleBlockHalf, DoorHingeSide.LEFT, (Boolean)false,
+                        Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180))
+                .select(Direction.NORTH, doubleBlockHalf, DoorHingeSide.LEFT, (Boolean)false,
+                        Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270))
+                .select(Direction.EAST, doubleBlockHalf, DoorHingeSide.RIGHT, (Boolean)false,
+                        Variant.variant().with(VariantProperties.MODEL, resourceLocation2))
+                .select(Direction.SOUTH, doubleBlockHalf, DoorHingeSide.RIGHT, (Boolean)false,
+                        Variant.variant().with(VariantProperties.MODEL, resourceLocation2).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90))
+                .select(Direction.WEST, doubleBlockHalf, DoorHingeSide.RIGHT, (Boolean)false,
+                        Variant.variant().with(VariantProperties.MODEL, resourceLocation2).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180))
+                .select(Direction.NORTH, doubleBlockHalf, DoorHingeSide.RIGHT, (Boolean)false,
+                        Variant.variant().with(VariantProperties.MODEL, resourceLocation2).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270))
+                .select(Direction.EAST, doubleBlockHalf, DoorHingeSide.LEFT, (Boolean)true,
+                        Variant.variant().with(VariantProperties.MODEL, resourceLocation2).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90))
+                .select(Direction.SOUTH, doubleBlockHalf, DoorHingeSide.LEFT, (Boolean)true,
+                        Variant.variant().with(VariantProperties.MODEL, resourceLocation2).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180))
+                .select(Direction.WEST, doubleBlockHalf, DoorHingeSide.LEFT, (Boolean)true,
+                        Variant.variant().with(VariantProperties.MODEL, resourceLocation2).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270))
+                .select(Direction.NORTH, doubleBlockHalf, DoorHingeSide.LEFT, (Boolean)true,
+                        Variant.variant().with(VariantProperties.MODEL, resourceLocation2))
+                .select(Direction.EAST, doubleBlockHalf, DoorHingeSide.RIGHT, (Boolean)true,
+                        Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270))
+                .select(Direction.SOUTH, doubleBlockHalf, DoorHingeSide.RIGHT, (Boolean)true,
+                        Variant.variant().with(VariantProperties.MODEL, resourceLocation))
+                .select(Direction.WEST, doubleBlockHalf, DoorHingeSide.RIGHT, (Boolean)true,
+                        Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90))
+                .select(Direction.NORTH, doubleBlockHalf, DoorHingeSide.RIGHT, (Boolean)true,
+                        Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180));
+    }
+    private static BlockStateGenerator createDoor(Block block, ResourceLocation resourceLocation, ResourceLocation resourceLocation2, ResourceLocation resourceLocation3, ResourceLocation resourceLocation4) {
+        return MultiVariantGenerator.multiVariant(block).with(
+                configureDoorHalf(
+                        configureDoorHalf(
+                                PropertyDispatch.properties(BlockStateProperties.HORIZONTAL_FACING, BlockStateProperties.DOUBLE_BLOCK_HALF, BlockStateProperties.DOOR_HINGE, BlockStateProperties.OPEN),
+                                DoubleBlockHalf.LOWER,
+                                resourceLocation,
+                                resourceLocation2
+                        ),
+                        DoubleBlockHalf.UPPER,
+                        resourceLocation3,
+                        resourceLocation4
+                ));
     }
 }

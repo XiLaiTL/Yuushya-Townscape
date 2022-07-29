@@ -128,6 +128,7 @@ public class YuushyaRegistries {
             for(YuushyaRegistryData.Block block:list){
                 JsonObject blockJson=YuushyaUtils.NormalGSON.toJsonTree(block,YuushyaRegistryData.Block.class).getAsJsonObject();
                 YuushyaRegistryData.Block blockNew=combineYuushyaDataBlockJson(blockJson,templateBlockJson);
+                blockNew.properties.parent=block.name;
                 String name; BlockBehaviour.Properties properties;
                 if (block.classType.equals("remain")){
                     ResourceLocation blockResourceLocation =new ResourceLocation(block.name);

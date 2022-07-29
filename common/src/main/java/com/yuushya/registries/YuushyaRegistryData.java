@@ -62,6 +62,7 @@ public class YuushyaRegistryData{
             public boolean isDelicate;
             public String offset;
             public int lines;
+            public String parent;
         }
         public static class ColorTint{
             public String colorType;
