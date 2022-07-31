@@ -2699,20 +2699,6 @@
 		{"class_type": "HatItem", "name": "butterfly", "item_group": "yuushya_item","properties": {"max_count": 1,"rarity": "epic"}},
 		{"class_type": "HatItem", "name": "head_bucket", "item_group": "yuushya_item","properties": {"max_count": 1,"rarity": "epic"}},
 		{"class_type": "HatItem", "name": "symbol_of_love", "item_group": "yuushya_item","properties": {"max_count": 1,"rarity": "epic"}},
-		{"class_type": "HatItem", "name": "conehead", "item_group": "yuushya_item","properties": {"max_count": 1,"rarity": "epic"}},
-
-		{"class_type": "StructureCreatorItem", "name": "sakura_tree", "item_group": "yuushya_structure","properties": {"create_nbt": "yuushya:tree_sakura"}},
-		{"class_type": "StructureCreatorItem", "name": "maple_tree", "item_group": "yuushya_structure","properties": {"create_nbt": "yuushya:tree_maple"}},
-		{"class_type": "StructureCreatorItem", "name": "normal_tree", "item_group": "yuushya_structure","properties": {"create_nbt": "yuushya:tree_normal"}},
-		{"class_type": "StructureCreatorItem", "name": "pink_flower_tree", "item_group": "yuushya_structure","properties": {"create_nbt": "yuushya:tree_pinkflower"}},
-		{"class_type": "StructureCreatorItem", "name": "white_flower_tree", "item_group": "yuushya_structure","properties": {"create_nbt": "yuushya:tree_whiteflower"}},
-		{"class_type": "StructureCreatorItem", "name": "yellow_flower_tree", "item_group": "yuushya_structure","properties": {"create_nbt": "yuushya:tree_yellowflower"}},
-		{"class_type": "StructureCreatorItem", "name": "cozy_interior_0", "item_group": "yuushya_structure","properties": {"create_nbt": "yuushya:cozy_interior_0"}},
-		{"class_type": "StructureCreatorItem", "name": "cozy_interior_1", "item_group": "yuushya_structure","properties": {"create_nbt": "yuushya:cozy_interior_1"}},
-		{"class_type": "StructureCreatorItem", "name": "model_building_0", "item_group": "yuushya_structure","properties": {"create_nbt": "yuushya:model_building_0"}},
-		{"class_type": "StructureCreatorItem", "name": "model_building_1", "item_group": "yuushya_structure","properties": {"create_nbt": "yuushya:model_building_1"}},
-		{"class_type": "StructureCreatorItem", "name": "grand_building", "item_group": "yuushya_structure","properties": {"create_nbt": "yuushya:grand_building"}},
-		{"class_type": "StructureCreatorItem", "name": "department", "item_group": "yuushya_structure","properties": {"create_nbt": "yuushya:department2"}},
-		{"class_type": "StructureCreatorItem", "name": "shop_sign_examples", "item_group": "yuushya_structure","properties": {"create_nbt": "yuushya:shop_sign_examples"}}
+		{"class_type": "HatItem", "name": "conehead", "item_group": "yuushya_item","properties": {"max_count": 1,"rarity": "epic"}}
 	]
 }
