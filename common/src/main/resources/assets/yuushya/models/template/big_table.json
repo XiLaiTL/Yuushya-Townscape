@@ -3,7 +3,7 @@
 	"textures": {
 		"2": "yuushya:0extra_building_block/concrete/black_concrete",
 		"all": "yuushya:block_/template",
-		"particle": ""
+		"particle": "#all"
 	},
 	"elements": [
 		{

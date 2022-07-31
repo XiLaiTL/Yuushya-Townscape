@@ -10,7 +10,13 @@
 				"set": ["all#yuushya:block_/raw_oak_wood"]}
 		},
 		
-		{ "class_type": "block", "name":"raw_spruce_wood", "texture": {"value":"yuushya:block_/raw_spruce_wood" }},
+		{ 
+			"class_type": "block", "name":"raw_spruce_wood", 
+			"texture": {
+				"value": "yuushya:block_/raw_spruce_wood", "type": "wood",
+				"set": ["all#yuushya:block_/raw_spruce_wood"]}
+		},		
+		
 		{ "class_type": "block", "name":"raw_birch_wood", "texture": {"value":"yuushya:block_/raw_birch_wood" }},
 		{ "class_type": "block", "name":"raw_jungle_wood", "texture": {"value":"yuushya:block_/raw_jungle_wood" }},
 		{ "class_type": "block", "name":"raw_acacia_wood", "texture": {"value":"yuushya:block_/raw_acacia_wood" }},
@@ -89,6 +95,18 @@
 		},		
 		
 		{
+			"name": "slippers",
+			"blockstate": { "forms": [["yuushya:template/slippers"],["yuushya:template/slippers_"]], "kit": "normal"},
+			"render_type": "cutout",
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"class_type": "template", "auto_generated": {"item_model": true },
+			"textures": {
+				"slots": ["all", "sides", "top"],
+				"for_class": ["wool"]
+			}
+		},		
+		
+		{
 			"name": "slab",
 			"blockstate": { "forms": [["yuushya:template/slab"]], "kit": "normal"},
 			"render_type": "cutout",
@@ -108,7 +126,7 @@
 			"name": "ridge",
 			"blockstate": { "forms": [["yuushya:template/ridge"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": true, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"item_model": true }
 		},			
 		
@@ -116,7 +134,7 @@
 			"name": "half_slab",
 			"blockstate": { "forms": [["yuushya:template/half_slab"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": true, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"item_model": true }
 		},		
 		
@@ -124,7 +142,7 @@
 			"name": "column",
 			"blockstate": { "forms": [["yuushya:template/column"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": true, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"item_model": true }
 		},	
 		
@@ -132,7 +150,7 @@
 			"name": "post",
 			"blockstate": { "forms": [["yuushya:template/post"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": true, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"item_model": true }
 		},			
 		
@@ -140,7 +158,7 @@
 			"name": "pole",
 			"blockstate": { "forms": [["yuushya:template/pole"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": true, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"item_model": true }
 		},		
 		
@@ -148,7 +166,7 @@
 			"name": "stick",
 			"blockstate": { "forms": [["yuushya:template/stick"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": true, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"item_model": true }
 		},	
 		
@@ -156,7 +174,7 @@
 			"name": "platform",
 			"blockstate": { "forms": [["yuushya:template/platform"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": true, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"item_model": true }
 		},
 		
@@ -164,7 +182,7 @@
 			"name": "average_table",
 			"blockstate": { "forms": [["yuushya:template/table"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": true, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"item_model": true }
 		},	
 		
@@ -188,7 +206,23 @@
 			"name": "decoration_bookshelf",
 			"blockstate": { "forms": [["yuushya:template/decoration_bookshelf_left","yuushya:template/decoration_bookshelf_middle","yuushya:template/decoration_bookshelf_right","yuushya:template/decoration_bookshelf_none"]], "kit": "line"},
 			"render_type": "cutout",
-			"properties": { "is_solid": true, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"class_type": "template", "auto_generated": {"item_model": true }
+		},
+			
+		{
+			"name": "rain_shed",
+			"blockstate": { "forms": [["yuushya:template/rain_shed"]], "kit": "normal"},
+			"render_type": "cutout",
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"class_type": "template", "auto_generated": {"item_model": true }
+		},			
+		
+		{
+			"name": "lengthened_rain_shed",
+			"blockstate": { "forms": [["yuushya:template/decoration_bookshelf_left","yuushya:template/decoration_bookshelf_middle","yuushya:template/decoration_bookshelf_right","yuushya:template/decoration_bookshelf_none"]], "kit": "line"},
+			"render_type": "cutout",
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"item_model": true }
 		},		
 		
@@ -196,7 +230,7 @@
 			"name": "ladder",
 			"blockstate": { "forms": [["yuushya:template/ladder"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": true, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"item_model": true }
 		},	
 		
@@ -204,7 +238,7 @@
 			"name": "clock",
 			"blockstate": { "forms": [["yuushya:template/clock"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": true, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"item_model": true }
 		},		
 		
@@ -212,7 +246,7 @@
 			"name": "round_clock",
 			"blockstate": { "forms": [["yuushya:template/round_clock"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": true, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"item_model": true }
 		},		
 		
@@ -220,7 +254,7 @@
 			"name": "basket",
 			"blockstate": { "forms": [["yuushya:template/basket"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": true, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"item_model": true }
 		},		
 		
@@ -228,9 +262,18 @@
 			"name": "bicycle",
 			"blockstate": { "forms": [["yuushya:template/bicycle"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": true, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"item_model": true }
-		},
+		},			
+		
+		{
+			"name": "venetian_blinds",
+			"blockstate": { "forms": [["yuushya:template/venetian_blinds"]], "kit": "normal"},
+			"render_type": "cutout",
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"class_type": "template", "auto_generated": {"item_model": true }
+		},	
+
 	
 	{"name": "Block_Types_方块类", "class_type": "_comment" },	
 		
@@ -244,12 +287,21 @@
 		},		
 		
 		{
+			"name": "TranslucentBlock",
+			"blockstate": { "kit": "normal" },
+			"render_type": "translucent",
+			"auto_generated": { "blockstate": true, "loot_table": true, "item_model": true },
+			"class_type": "class",
+			"properties": { "hardness": 1, "resistance": 1, "material":"iron", "is_solid": true, "has_collision": true, "is_delicate": false }
+		},		
+		
+		{
 			"name": "DecoBlock",
 			"blockstate": { "kit": "normal" },
 			"render_type": "cutout",
 			"auto_generated": { "blockstate": true, "loot_table": true, "item_model": true },
 			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material":"iron", "is_solid": true, "has_collision": true, "is_delicate": false }
+			"properties": { "hardness": 1, "resistance": 1, "material":"iron", "is_solid": false, "has_collision": false, "is_delicate": false }
 		},	
 		
 		{
@@ -258,7 +310,7 @@
 			"render_type": "cutout",
 			"auto_generated": { "blockstate": true, "loot_table": true, "item_model": true },
 			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material":"plants", "is_solid": true, "has_collision": true, "is_delicate": false }
+			"properties": { "hardness": 1, "resistance": 1, "material":"plants", "is_solid": false, "has_collision": false, "is_delicate": false }
 		},
 			
 		{
@@ -269,20 +321,954 @@
 			"class_type": "class",
 			"properties": { "hardness": 1, "resistance": 1, "material":"iron", "is_solid": true, "has_collision": true, "is_delicate": false }
 		},
+
 	
 
 
 	{"name": "Extra_Building_Block_拓展方块", "class_type": "_comment" },	
 	
 	{"name": "Extra_Shape_拓展形状", "class_type": "_comment" },	
-	
+				
 		{
-		  "class_type": "IntactBlock",
-		  "name": "platform_metal",
-		  "item_group": "yuushya_extrablocks",
-		  "blockstate": { "forms": [["yuushya:extra_building_material/platform_metal"]]}
+		  "class_type": "ChairBlock",
+		  "name": "roof_0",
+		  "item_group": "yuushya_extrashapes",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/0l","yuushya:extra_building_material/roof/roof/0_","yuushya:extra_building_material/roof/roof/0r","yuushya:extra_building_material/roof/roof/0"]]}
+		},		
+		
+		{
+		  "class_type": "ChairBlock",
+		  "name": "roof_1",
+		  "item_group": "yuushya_extrashapes",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/4l","yuushya:extra_building_material/roof/roof/4_","yuushya:extra_building_material/roof/roof/4r","yuushya:extra_building_material/roof/roof/4"]]}
+		},		
+		
+		{
+		  "class_type": "ChairBlock",
+		  "name": "roof_2",
+		  "item_group": "yuushya_extrashapes",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/2l","yuushya:extra_building_material/roof/roof/2_","yuushya:extra_building_material/roof/roof/2r","yuushya:extra_building_material/roof/roof/2"]]}
+		},		
+		
+		{
+		  "class_type": "ChairBlock",
+		  "name": "roof_3",
+		  "item_group": "yuushya_extrashapes",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/3l","yuushya:extra_building_material/roof/roof/3_","yuushya:extra_building_material/roof/roof/3r","yuushya:extra_building_material/roof/roof/3"]]}
 		},	
 		
+		{
+		  "class_type": "ChairBlock",
+		  "name": "roof_ridge_0",
+		  "item_group": "yuushya_extrashapes",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/0l","yuushya:extra_building_material/roof/roof_ridge/0_","yuushya:extra_building_material/roof/roof_ridge/0r","yuushya:extra_building_material/roof/roof_ridge/0"]]}
+		},		
+		
+		{
+		  "class_type": "ChairBlock",
+		  "name": "roof_ridge_1",
+		  "item_group": "yuushya_extrashapes",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/4l","yuushya:extra_building_material/roof/roof_ridge/4_","yuushya:extra_building_material/roof/roof_ridge/4r","yuushya:extra_building_material/roof/roof_ridge/4"]]}
+		},		
+		
+		{
+		  "class_type": "ChairBlock",
+		  "name": "roof_ridge_2",
+		  "item_group": "yuushya_extrashapes",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/2l","yuushya:extra_building_material/roof/roof_ridge/2_","yuushya:extra_building_material/roof/roof_ridge/2r","yuushya:extra_building_material/roof/roof_ridge/2"]]}
+		},		
+		
+		{
+		  "class_type": "ChairBlock",
+		  "name": "roof_ridge_3",
+		  "item_group": "yuushya_extrashapes",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/3l","yuushya:extra_building_material/roof/roof_ridge/3_","yuushya:extra_building_material/roof/roof_ridge/3r","yuushya:extra_building_material/roof/roof_ridge/3"]]}
+		},	
+		
+
+		{
+		  "class_type": "IntactBlock",
+		  "name": "soot_pipe",
+		  "item_group": "yuushya_extrashapes",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/soot_pipe"]]}
+		},	
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "soot_pipe_horizontal",
+		  "item_group": "yuushya_extrashapes",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/soot_pipe_horizontal"]]}
+		},	
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "soot_pipe_bottom",
+		  "item_group": "yuushya_extrashapes",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/soot_pipe_bottom"]]}
+		},			
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "soot_pipe_top",
+		  "item_group": "yuushya_extrashapes",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/soot_pipe_top"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "soot_pipe_top_corner",
+		  "item_group": "yuushya_extrashapes",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/soot_pipe_top_sym"]]}
+		},			
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "soot_pipe_exhaust",
+		  "item_group": "yuushya_extrashapes",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/soot_pipe_top_sym_"]]}
+		},	
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "iron_ladder",
+		  "item_group": "yuushya_extrashapes",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/iron_ladder"]]}
+		},	
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "iron_ladder_top",
+		  "item_group": "yuushya_extrashapes",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/iron_ladder_"]]}
+		},			
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "white_windows_0",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/white_windows"]]}
+		},			
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "white_windows_1",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/white_windows"]]}
+		},			
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "white_windows_2",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/white_windows"]]}
+		},		
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "white_windows_corner_0",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/white_windows_corner"]]}
+		},		
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "white_windows_corner_1",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/white_windows_corner"]]}
+		},	
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "white_windows_deviated_0",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/white_windows_deviated_0"]]}
+		},			
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "white_windows_deviated_1",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/white_windows_deviated_1"]]}
+		},		
+						
+		{
+		  "class_type": "ChairBlock",
+		  "name": "white_windows_open_0",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",		  
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/white_windows_open_left","yuushya:extra_building_material/windows_frame/white_windows_open_middle","yuushya:extra_building_material/windows_frame/white_windows_open_right","yuushya:extra_building_material/windows_frame/white_windows_open_none"]]}
+		},			
+		
+		{
+		  "class_type": "ChairBlock",
+		  "name": "white_windows_open_1",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",		  
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/white_windows_open_left","yuushya:extra_building_material/windows_frame/white_windows_open_middle","yuushya:extra_building_material/windows_frame/white_windows_open_right","yuushya:extra_building_material/windows_frame/white_windows_open_none"]]}
+		},	
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "red_windows_0",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/red_windows"]]}
+		},			
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "red_windows_1",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/red_windows"]]}
+		},			
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "red_windows_2",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/red_windows"]]}
+		},		
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "red_windows_corner_0",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/red_windows_corner"]]}
+		},		
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "red_windows_corner_1",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/red_windows_corner"]]}
+		},			
+		
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "red_windows_deviated_0",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/red_windows_deviated_0"]]}
+		},			
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "red_windows_deviated_1",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/red_windows_deviated_1"]]}
+		},		
+						
+		{
+		  "class_type": "ChairBlock",
+		  "name": "red_windows_open_0",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",		  
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/red_windows_open_left","yuushya:extra_building_material/windows_frame/red_windows_open_middle","yuushya:extra_building_material/windows_frame/red_windows_open_right","yuushya:extra_building_material/windows_frame/red_windows_open_none"]]}
+		},			
+		
+		{
+		  "class_type": "ChairBlock",
+		  "name": "red_windows_open_1",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",		  
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/red_windows_open_left","yuushya:extra_building_material/windows_frame/red_windows_open_middle","yuushya:extra_building_material/windows_frame/red_windows_open_right","yuushya:extra_building_material/windows_frame/red_windows_open_none"]]}
+		},	
+
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "gray_windows_0",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/gray_windows"]]}
+		},			
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "gray_windows_1",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/gray_windows"]]}
+		},			
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "gray_windows_2",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/gray_windows"]]}
+		},		
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "gray_windows_corner_0",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/gray_windows_corner"]]}
+		},		
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "gray_windows_corner_1",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/gray_windows_corner"]]}
+		},			
+		
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "gray_windows_deviated_0",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/gray_windows_deviated_0"]]}
+		},			
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "gray_windows_deviated_1",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/gray_windows_deviated_1"]]}
+		},		
+						
+		{
+		  "class_type": "ChairBlock",
+		  "name": "gray_windows_open_0",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",		  
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/gray_windows_open_left","yuushya:extra_building_material/windows_frame/gray_windows_open_middle","yuushya:extra_building_material/windows_frame/gray_windows_open_right","yuushya:extra_building_material/windows_frame/gray_windows_open_none"]]}
+		},			
+		
+		{
+		  "class_type": "ChairBlock",
+		  "name": "gray_windows_open_1",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",		  
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/gray_windows_open_left","yuushya:extra_building_material/windows_frame/gray_windows_open_middle","yuushya:extra_building_material/windows_frame/gray_windows_open_right","yuushya:extra_building_material/windows_frame/gray_windows_open_none"]]}
+		},			
+	
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "cyan_windows_0",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/cyan_windows"]]}
+		},			
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "cyan_windows_1",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/cyan_windows"]]}
+		},			
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "cyan_windows_2",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/cyan_windows"]]}
+		},		
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "cyan_windows_corner_0",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/cyan_windows_corner"]]}
+		},		
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "cyan_windows_corner_1",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/cyan_windows_corner"]]}
+		},			
+		
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "cyan_windows_deviated_0",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/cyan_windows_deviated_0"]]}
+		},			
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "cyan_windows_deviated_1",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/cyan_windows_deviated_1"]]}
+		},		
+						
+		{
+		  "class_type": "ChairBlock",
+		  "name": "cyan_windows_open_0",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",		  
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/cyan_windows_open_left","yuushya:extra_building_material/windows_frame/cyan_windows_open_middle","yuushya:extra_building_material/windows_frame/cyan_windows_open_right","yuushya:extra_building_material/windows_frame/cyan_windows_open_none"]]}
+		},			
+		
+		{
+		  "class_type": "ChairBlock",
+		  "name": "cyan_windows_open_1",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",		  
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/cyan_windows_open_left","yuushya:extra_building_material/windows_frame/cyan_windows_open_middle","yuushya:extra_building_material/windows_frame/cyan_windows_open_right","yuushya:extra_building_material/windows_frame/cyan_windows_open_none"]]}
+		},		
+	
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "oak_windows_0",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/oak_windows"]]}
+		},			
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "oak_windows_1",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/oak_windows"]]}
+		},			
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "oak_windows_2",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/oak_windows"]]}
+		},		
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "oak_windows_corner_0",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/oak_windows_corner"]]}
+		},		
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "oak_windows_corner_1",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/oak_windows_corner"]]}
+		},			
+		
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "oak_windows_deviated_0",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/oak_windows_deviated_0"]]}
+		},			
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "oak_windows_deviated_1",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/oak_windows_deviated_1"]]}
+		},		
+						
+		{
+		  "class_type": "ChairBlock",
+		  "name": "oak_windows_open_0",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",		  
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/oak_windows_open_left","yuushya:extra_building_material/windows_frame/oak_windows_open_middle","yuushya:extra_building_material/windows_frame/oak_windows_open_right","yuushya:extra_building_material/windows_frame/oak_windows_open_none"]]}
+		},			
+		
+		{
+		  "class_type": "ChairBlock",
+		  "name": "oak_windows_open_1",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",		  
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/oak_windows_open_left","yuushya:extra_building_material/windows_frame/oak_windows_open_middle","yuushya:extra_building_material/windows_frame/oak_windows_open_right","yuushya:extra_building_material/windows_frame/oak_windows_open_none"]]}
+		},	
+
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "black_windows_0",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/black_windows"]]}
+		},			
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "black_windows_1",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/black_windows"]]}
+		},			
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "black_windows_2",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/black_windows"]]}
+		},		
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "black_windows_corner_0",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/black_windows_corner"]]}
+		},		
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "black_windows_corner_1",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/black_windows_corner"]]}
+		},			
+		
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "black_windows_deviated_0",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/black_windows_deviated_0"]]}
+		},			
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "black_windows_deviated_1",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/black_windows_deviated_1"]]}
+		},		
+						
+		{
+		  "class_type": "ChairBlock",
+		  "name": "black_windows_open_0",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",		  
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/black_windows_open_left","yuushya:extra_building_material/windows_frame/black_windows_open_middle","yuushya:extra_building_material/windows_frame/black_windows_open_right","yuushya:extra_building_material/windows_frame/black_windows_open_none"]]}
+		},			
+		
+		{
+		  "class_type": "ChairBlock",
+		  "name": "black_windows_open_1",
+		  "item_group": "yuushya_extrashapes",
+		  "properties": {"has_collision": false },
+		  "render_type": "translucent",		  
+		  "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/black_windows_open_left","yuushya:extra_building_material/windows_frame/black_windows_open_middle","yuushya:extra_building_material/windows_frame/black_windows_open_right","yuushya:extra_building_material/windows_frame/black_windows_open_none"]]}
+		},
+	
+		{
+		  "class_type": "DecoBlock",
+		  "name": "tiles_fix_lower",
+		  "item_group": "yuushya_extrashapes",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/lp_tiles_fx"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "tiles_fix_upper",
+		  "item_group": "yuushya_extrashapes",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/up_tiles_fx"]]}
+		},		
+
+		{
+		  "class_type": "ChairBlock",
+		  "name": "orange_tile_lower",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/htile1_lp_left","yuushya:extra_building_material/roof/roof/htile1_lp_middle","yuushya:extra_building_material/roof/roof/htile1_lp_right","yuushya:extra_building_material/roof/roof/htile1_lp_none"],["yuushya:extra_building_material/roof/roof/tile1_lp_left","yuushya:extra_building_material/roof/roof/tile1_lp_middle","yuushya:extra_building_material/roof/roof/tile1_lp_right","yuushya:extra_building_material/roof/roof/tile1_lp_none"]]}
+		},	
+
+		{
+		  "class_type": "ChairBlock",
+		  "name": "orange_tile_upper",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/htile1_up_left","yuushya:extra_building_material/roof/roof/htile1_up_middle","yuushya:extra_building_material/roof/roof/htile1_up_right","yuushya:extra_building_material/roof/roof/htile1_up_none"],["yuushya:extra_building_material/roof/roof/tile1_up_left","yuushya:extra_building_material/roof/roof/tile1_up_middle","yuushya:extra_building_material/roof/roof/tile1_up_right","yuushya:extra_building_material/roof/roof/tile1_up_none"]]}
+		},			
+		
+		{
+		  "class_type": "ChairBlock",
+		  "name": "orange_tile_ridge_upper",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/ridge1_up_left","yuushya:extra_building_material/roof/roof_ridge/ridge1_up_middle","yuushya:extra_building_material/roof/roof_ridge/ridge1_up_right","yuushya:extra_building_material/roof/roof_ridge/ridge1_up_none"]]}
+		},	
+
+		{
+		  "class_type": "ChairBlock",
+		  "name": "orange_tile_ridge_lower",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/ridge1_lp_left","yuushya:extra_building_material/roof/roof_ridge/ridge1_lp_middle","yuushya:extra_building_material/roof/roof_ridge/ridge1_lp_right","yuushya:extra_building_material/roof/roof_ridge/ridge1_lp_none"]]}
+		},
+
+		{
+		  "class_type": "ChairBlock",
+		  "name": "orange_tile_with_ridge_upper",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/htile1_up_left","yuushya:extra_building_material/roof/roof_ridge/htile1_up_middle","yuushya:extra_building_material/roof/roof_ridge/htile1_up_right","yuushya:extra_building_material/roof/roof_ridge/htile1_up_none"]]}
+		},	
+
+		{
+		  "class_type": "ChairBlock",
+		  "name": "orange_tile_with_ridge_lower",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/htile1_lp_left","yuushya:extra_building_material/roof/roof_ridge/htile1_lp_middle","yuushya:extra_building_material/roof/roof_ridge/htile1_lp_right","yuushya:extra_building_material/roof/roof_ridge/htile1_lp_none"]]}
+		},	
+
+		{
+		  "class_type": "ChairBlock",
+		  "name": "dark_tile_lower",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/htile2_lp_left","yuushya:extra_building_material/roof/roof/htile2_lp_middle","yuushya:extra_building_material/roof/roof/htile2_lp_right","yuushya:extra_building_material/roof/roof/htile2_lp_none"],["yuushya:extra_building_material/roof/roof/tile2_lp_left","yuushya:extra_building_material/roof/roof/tile2_lp_middle","yuushya:extra_building_material/roof/roof/tile2_lp_right","yuushya:extra_building_material/roof/roof/tile2_lp_none"]]}
+		},	
+
+		{
+		  "class_type": "ChairBlock",
+		  "name": "dark_tile_upper",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/htile2_up_left","yuushya:extra_building_material/roof/roof/htile2_up_middle","yuushya:extra_building_material/roof/roof/htile2_up_right","yuushya:extra_building_material/roof/roof/htile2_up_none"],["yuushya:extra_building_material/roof/roof/tile2_up_left","yuushya:extra_building_material/roof/roof/tile2_up_middle","yuushya:extra_building_material/roof/roof/tile2_up_right","yuushya:extra_building_material/roof/roof/tile2_up_none"]]}
+		},			
+		
+		{
+		  "class_type": "ChairBlock",
+		  "name": "dark_tile_ridge_upper",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/ridge2_up_left","yuushya:extra_building_material/roof/roof_ridge/ridge2_up_middle","yuushya:extra_building_material/roof/roof_ridge/ridge2_up_right","yuushya:extra_building_material/roof/roof_ridge/ridge2_up_none"]]}
+		},	
+
+		{
+		  "class_type": "ChairBlock",
+		  "name": "dark_tile_ridge_lower",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/ridge2_lp_left","yuushya:extra_building_material/roof/roof_ridge/ridge2_lp_middle","yuushya:extra_building_material/roof/roof_ridge/ridge2_lp_right","yuushya:extra_building_material/roof/roof_ridge/ridge2_lp_none"]]}
+		},
+
+		{
+		  "class_type": "ChairBlock",
+		  "name": "dark_tile_with_ridge_upper",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/htile2_up_left","yuushya:extra_building_material/roof/roof_ridge/htile2_up_middle","yuushya:extra_building_material/roof/roof_ridge/htile2_up_right","yuushya:extra_building_material/roof/roof_ridge/htile2_up_none"]]}
+		},	
+
+		{
+		  "class_type": "ChairBlock",
+		  "name": "dark_tile_with_ridge_lower",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/htile2_lp_left","yuushya:extra_building_material/roof/roof_ridge/htile2_lp_middle","yuushya:extra_building_material/roof/roof_ridge/htile2_lp_right","yuushya:extra_building_material/roof/roof_ridge/htile2_lp_none"]]}
+		},
+
+		{
+		  "class_type": "ChairBlock",
+		  "name": "gray_tile_lower",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/htile3_lp_left","yuushya:extra_building_material/roof/roof/htile3_lp_middle","yuushya:extra_building_material/roof/roof/htile3_lp_right","yuushya:extra_building_material/roof/roof/htile3_lp_none"],["yuushya:extra_building_material/roof/roof/tile3_lp_left","yuushya:extra_building_material/roof/roof/tile3_lp_middle","yuushya:extra_building_material/roof/roof/tile3_lp_right","yuushya:extra_building_material/roof/roof/tile3_lp_none"]]}
+		},	
+
+		{
+		  "class_type": "ChairBlock",
+		  "name": "gray_tile_upper",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/htile3_up_left","yuushya:extra_building_material/roof/roof/htile3_up_middle","yuushya:extra_building_material/roof/roof/htile3_up_right","yuushya:extra_building_material/roof/roof/htile3_up_none"],["yuushya:extra_building_material/roof/roof/tile3_up_left","yuushya:extra_building_material/roof/roof/tile3_up_middle","yuushya:extra_building_material/roof/roof/tile3_up_right","yuushya:extra_building_material/roof/roof/tile3_up_none"]]}
+		},			
+		
+		{
+		  "class_type": "ChairBlock",
+		  "name": "gray_tile_ridge_upper",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/ridge3_up_left","yuushya:extra_building_material/roof/roof_ridge/ridge3_up_middle","yuushya:extra_building_material/roof/roof_ridge/ridge3_up_right","yuushya:extra_building_material/roof/roof_ridge/ridge3_up_none"]]}
+		},	
+
+		{
+		  "class_type": "ChairBlock",
+		  "name": "gray_tile_ridge_lower",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/ridge3_lp_left","yuushya:extra_building_material/roof/roof_ridge/ridge3_lp_middle","yuushya:extra_building_material/roof/roof_ridge/ridge3_lp_right","yuushya:extra_building_material/roof/roof_ridge/ridge3_lp_none"]]}
+		},
+
+		{
+		  "class_type": "ChairBlock",
+		  "name": "gray_tile_with_ridge_upper",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/htile3_up_left","yuushya:extra_building_material/roof/roof_ridge/htile3_up_middle","yuushya:extra_building_material/roof/roof_ridge/htile3_up_right","yuushya:extra_building_material/roof/roof_ridge/htile3_up_none"]]}
+		},	
+
+		{
+		  "class_type": "ChairBlock",
+		  "name": "gray_tile_with_ridge_lower",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/htile3_lp_left","yuushya:extra_building_material/roof/roof_ridge/htile3_lp_middle","yuushya:extra_building_material/roof/roof_ridge/htile3_lp_right","yuushya:extra_building_material/roof/roof_ridge/htile3_lp_none"]]}
+		},
+
+		{
+		  "class_type": "ChairBlock",
+		  "name": "blue_tile_lower",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/htile4_lp_left","yuushya:extra_building_material/roof/roof/htile4_lp_middle","yuushya:extra_building_material/roof/roof/htile4_lp_right","yuushya:extra_building_material/roof/roof/htile4_lp_none"],["yuushya:extra_building_material/roof/roof/tile4_lp_left","yuushya:extra_building_material/roof/roof/tile4_lp_middle","yuushya:extra_building_material/roof/roof/tile4_lp_right","yuushya:extra_building_material/roof/roof/tile4_lp_none"]]}
+		},	
+
+		{
+		  "class_type": "ChairBlock",
+		  "name": "blue_tile_upper",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/htile4_up_left","yuushya:extra_building_material/roof/roof/htile4_up_middle","yuushya:extra_building_material/roof/roof/htile4_up_right","yuushya:extra_building_material/roof/roof/htile4_up_none"],["yuushya:extra_building_material/roof/roof/tile4_up_left","yuushya:extra_building_material/roof/roof/tile4_up_middle","yuushya:extra_building_material/roof/roof/tile4_up_right","yuushya:extra_building_material/roof/roof/tile4_up_none"]]}
+		},			
+		
+		{
+		  "class_type": "ChairBlock",
+		  "name": "blue_tile_ridge_upper",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/ridge4_up_left","yuushya:extra_building_material/roof/roof_ridge/ridge4_up_middle","yuushya:extra_building_material/roof/roof_ridge/ridge4_up_right","yuushya:extra_building_material/roof/roof_ridge/ridge4_up_none"]]}
+		},	
+
+		{
+		  "class_type": "ChairBlock",
+		  "name": "blue_tile_ridge_lower",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/ridge4_lp_left","yuushya:extra_building_material/roof/roof_ridge/ridge4_lp_middle","yuushya:extra_building_material/roof/roof_ridge/ridge4_lp_right","yuushya:extra_building_material/roof/roof_ridge/ridge4_lp_none"]]}
+		},
+
+		{
+		  "class_type": "ChairBlock",
+		  "name": "blue_tile_with_ridge_upper",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/htile4_up_left","yuushya:extra_building_material/roof/roof_ridge/htile4_up_middle","yuushya:extra_building_material/roof/roof_ridge/htile4_up_right","yuushya:extra_building_material/roof/roof_ridge/htile4_up_none"]]}
+		},	
+
+		{
+		  "class_type": "ChairBlock",
+		  "name": "blue_tile_with_ridge_lower",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/htile4_lp_left","yuushya:extra_building_material/roof/roof_ridge/htile4_lp_middle","yuushya:extra_building_material/roof/roof_ridge/htile4_lp_right","yuushya:extra_building_material/roof/roof_ridge/htile4_lp_none"]]}
+		},
+
+		{
+		  "class_type": "ChairBlock",
+		  "name": "pale_tile_lower",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/htile5_lp_left","yuushya:extra_building_material/roof/roof/htile5_lp_middle","yuushya:extra_building_material/roof/roof/htile5_lp_right","yuushya:extra_building_material/roof/roof/htile5_lp_none"],["yuushya:extra_building_material/roof/roof/tile5_lp_left","yuushya:extra_building_material/roof/roof/tile5_lp_middle","yuushya:extra_building_material/roof/roof/tile5_lp_right","yuushya:extra_building_material/roof/roof/tile5_lp_none"]]}
+		},	
+
+		{
+		  "class_type": "ChairBlock",
+		  "name": "pale_tile_upper",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/htile5_up_left","yuushya:extra_building_material/roof/roof/htile5_up_middle","yuushya:extra_building_material/roof/roof/htile5_up_right","yuushya:extra_building_material/roof/roof/htile5_up_none"],["yuushya:extra_building_material/roof/roof/tile5_up_left","yuushya:extra_building_material/roof/roof/tile5_up_middle","yuushya:extra_building_material/roof/roof/tile5_up_right","yuushya:extra_building_material/roof/roof/tile5_up_none"]]}
+		},			
+		
+		{
+		  "class_type": "ChairBlock",
+		  "name": "pale_tile_ridge_upper",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/ridge5_up_left","yuushya:extra_building_material/roof/roof_ridge/ridge5_up_middle","yuushya:extra_building_material/roof/roof_ridge/ridge5_up_right","yuushya:extra_building_material/roof/roof_ridge/ridge5_up_none"]]}
+		},	
+
+		{
+		  "class_type": "ChairBlock",
+		  "name": "pale_tile_ridge_lower",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/ridge5_lp_left","yuushya:extra_building_material/roof/roof_ridge/ridge5_lp_middle","yuushya:extra_building_material/roof/roof_ridge/ridge5_lp_right","yuushya:extra_building_material/roof/roof_ridge/ridge5_lp_none"]]}
+		},
+
+		{
+		  "class_type": "ChairBlock",
+		  "name": "pale_tile_with_ridge_upper",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/htile5_up_left","yuushya:extra_building_material/roof/roof_ridge/htile5_up_middle","yuushya:extra_building_material/roof/roof_ridge/htile5_up_right","yuushya:extra_building_material/roof/roof_ridge/htile5_up_none"]]}
+		},	
+
+		{
+		  "class_type": "ChairBlock",
+		  "name": "pale_tile_with_ridge_lower",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/htile5_lp_left","yuushya:extra_building_material/roof/roof_ridge/htile5_lp_middle","yuushya:extra_building_material/roof/roof_ridge/htile5_lp_right","yuushya:extra_building_material/roof/roof_ridge/htile5_lp_none"]]}
+		},		
+	
+		{
+		  "class_type": "ChairBlock",
+		  "name": "road_fence",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/road_fence_left","yuushya:extra_building_material/road_fence_middle","yuushya:extra_building_material/road_fence_right","yuushya:extra_building_material/road_fence_none"]]}
+		},	
+		
+		{
+		  "class_type": "ChairBlock",
+		  "name": "sideway_road_fence",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/side_road_fence_left","yuushya:extra_building_material/side_road_fence_middle","yuushya:extra_building_material/side_road_fence_right","yuushya:extra_building_material/side_road_fence_none"]]}
+		},		
+		
+		{
+		  "class_type": "ChairBlock",
+		  "name": "stone_fence",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/fence/horizontal_fence/stone_fence_left","yuushya:extra_building_material/fence/horizontal_fence/stone_fence_middle","yuushya:extra_building_material/fence/horizontal_fence/stone_fence_right","yuushya:extra_building_material/fence/horizontal_fence/stone_fence_none"]]}
+		},		
+		
+		{
+		  "class_type": "ChairBlock",
+		  "name": "iron_fence",
+		  "item_group": "yuushya_extrashapes", 
+		  "blockstate": { "forms": [["yuushya:extra_building_material/fence/iron_fence_left","yuushya:extra_building_material/fence/iron_fence_middle","yuushya:extra_building_material/fence/iron_fence_right","yuushya:extra_building_material/fence/iron_fence_none"]]}
+		},	
+
+		{
+		  "class_type": "IntactBlock",
+		  "name": "tall_iron_fence_middle_support",
+		  "item_group": "yuushya_extrashapes",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/fence/tall_iron_fence"]]}
+		},
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "tall_iron_fence_middle",
+		  "item_group": "yuushya_extrashapes",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/fence/tall_iron_fence_"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "tall_iron_fence_left",
+		  "item_group": "yuushya_extrashapes",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/fence/tall_iron_fence__"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "tall_iron_fence_right",
+		  "item_group": "yuushya_extrashapes",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/fence/tall_iron_fence___"]]}
+		},			
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "white_curtain",
+		  "item_group": "yuushya_extrashapes",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/curtain_white"]]}
+		},	
+		
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "red_curtain",
+		  "item_group": "yuushya_extrashapes",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/curtain_red"]]}
+		},			
+			
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "blue_curtain",
+		  "item_group": "yuushya_extrashapes",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/curtain_blue"]]}
+		},			
+			
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "yellow_curtain",
+		  "item_group": "yuushya_extrashapes",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/curtain_yellow"]]}
+		},			
+			
+		{
+		  "class_type": "TranslucentBlock",
+		  "name": "cyan_curtain",
+		  "item_group": "yuushya_extrashapes",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/curtain_cyan"]]}
+		},			
+				
+		{
+		  "class_type": "DecoBlock",
+		  "name": "grille_0",
+		  "item_group": "yuushya_extrashapes",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/kal_0"]]}
+		},		
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "grille_1",
+		  "item_group": "yuushya_extrashapes",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/kal_1"]]}
+		},	
+		
+		{
+		  "class_type": "DecoBlock",
+		  "name": "grille_2",
+		  "item_group": "yuushya_extrashapes",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/kal_2"]]}
+		},			
+	
 	{"name": "Decoration_装饰", "class_type": "_comment" },	
 
 		{
@@ -782,48 +1768,103 @@
 		  "item_group": "yuushya_decoration",
 		  "blockstate": { "forms": [["yuushya:extra_building_material/jack"]]}
 		},	
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "rain_shed_0",
+		  "item_group": "yuushya_decoration",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/rain_shed/rain_shed_0"]]}
+		},			
+									
+		{
+		  "class_type": "IntactBlock",
+		  "name": "rain_shed_1",
+		  "item_group": "yuushya_decoration",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/rain_shed/rain_shed_1"]]}
+		},			
+											
+		{
+		  "class_type": "IntactBlock",
+		  "name": "rain_shed_2",
+		  "item_group": "yuushya_decoration",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/rain_shed/rain_shed_2"]]}
+		},			
+											
+		{
+		  "class_type": "IntactBlock",
+		  "name": "rain_shed_3",
+		  "item_group": "yuushya_decoration",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/rain_shed/rain_shed_3"]]}
+		},			
+											
+		{
+		  "class_type": "IntactBlock",
+		  "name": "rain_shed_4",
+		  "item_group": "yuushya_decoration",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/rain_shed/rain_shed_4"]]}
+		},			
+											
+		{
+		  "class_type": "IntactBlock",
+		  "name": "rain_shed_5",
+		  "item_group": "yuushya_decoration",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/rain_shed/rain_shed_5"]]}
+		},			
+											
+		{
+		  "class_type": "IntactBlock",
+		  "name": "rain_shed_6",
+		  "item_group": "yuushya_decoration",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/rain_shed/rain_shed_6"]]}
+		},			
+						
+		{
+		  "class_type": "ChairBlock",
+		  "name": "lengthened_rain_shed_0",
+		  "item_group": "yuushya_decoration",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/wide_rainshed_alt/ori_left","yuushya:extra_building_material/wide_rainshed_alt/ori_middle","yuushya:extra_building_material/wide_rainshed_alt/ori_right","yuushya:extra_building_material/wide_rainshed_alt/ori_none"]]}
+		},	
+									
+		{
+		  "class_type": "ChairBlock",
+		  "name": "lengthened_rain_shed_1",
+		  "item_group": "yuushya_decoration",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/wide_rainshed_alt/1_left","yuushya:extra_building_material/wide_rainshed_alt/1_middle","yuushya:extra_building_material/wide_rainshed_alt/1_right","yuushya:extra_building_material/wide_rainshed_alt/1_none"]]}
+		},	
 												
 		{
-		  "class_type": "DecoBlock",
-		  "name": "tissue_0",
+		  "class_type": "ChairBlock",
+		  "name": "lengthened_rain_shed_2",
 		  "item_group": "yuushya_decoration",
-		  "blockstate": { "forms": [["yuushya:extra_building_material/tissue"]]}
-		},		
-		
-		{
-		  "class_type": "DecoBlock",
-		  "name": "tissue_1",
-		  "item_group": "yuushya_decoration",
-		  "blockstate": { "forms": [["yuushya:extra_building_material/tissue_"]]}
+		  "blockstate": { "forms": [["yuushya:extra_building_material/wide_rainshed_alt/2_left","yuushya:extra_building_material/wide_rainshed_alt/2_middle","yuushya:extra_building_material/wide_rainshed_alt/2_right","yuushya:extra_building_material/wide_rainshed_alt/2_none"]]}
 		},	
-			
+												
 		{
-		  "class_type": "DecoBlock",
-		  "name": "calendar",
+		  "class_type": "ChairBlock",
+		  "name": "lengthened_rain_shed_3",
 		  "item_group": "yuushya_decoration",
-		  "blockstate": { "forms": [["yuushya:extra_building_material/calendar"]]}
+		  "blockstate": { "forms": [["yuushya:extra_building_material/wide_rainshed_alt/3_left","yuushya:extra_building_material/wide_rainshed_alt/3_middle","yuushya:extra_building_material/wide_rainshed_alt/3_right","yuushya:extra_building_material/wide_rainshed_alt/3_none"]]}
 		},	
-				
+												
 		{
-		  "class_type": "DecoBlock",
-		  "name": "fire_extinguisher",
+		  "class_type": "ChairBlock",
+		  "name": "lengthened_rain_shed_6",
 		  "item_group": "yuushya_decoration",
-		  "blockstate": { "forms": [["yuushya:extra_building_material/fire_extinguisher"]]}
-		},		
-		
-		{
-		  "class_type": "DecoBlock",
-		  "name": "nintender_switch",
-		  "item_group": "yuushya_decoration",
-		  "properties": {"lines": 1},
-		  "blockstate": { "forms": [["yuushya:extra_building_material/switch"],["yuushya:extra_building_material/switch_s"]]}
+		  "blockstate": { "forms": [["yuushya:extra_building_material/wide_rainshed_alt/6_left","yuushya:extra_building_material/wide_rainshed_alt/6_middle","yuushya:extra_building_material/wide_rainshed_alt/6_right","yuushya:extra_building_material/wide_rainshed_alt/6_none"]]}
 		},	
-			
+												
 		{
-		  "class_type": "DecoBlock",
-		  "name": "plash_speed_4",
+		  "class_type": "ChairBlock",
+		  "name": "lengthened_rain_shed_7",
 		  "item_group": "yuushya_decoration",
-		  "blockstate": { "forms": [["yuushya:extra_building_material/ps4"]]}
+		  "blockstate": { "forms": [["yuushya:extra_building_material/wide_rainshed_alt/7_left","yuushya:extra_building_material/wide_rainshed_alt/7_middle","yuushya:extra_building_material/wide_rainshed_alt/7_right","yuushya:extra_building_material/wide_rainshed_alt/7_none"]]}
+		},	
+												
+		{
+		  "class_type": "ChairBlock",
+		  "name": "lengthened_rain_shed_8",
+		  "item_group": "yuushya_decoration",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/wide_rainshed_alt/8_left","yuushya:extra_building_material/wide_rainshed_alt/8_middle","yuushya:extra_building_material/wide_rainshed_alt/8_right","yuushya:extra_building_material/wide_rainshed_alt/8_none"]]}
 		},	
 						
 		{
@@ -963,97 +2004,98 @@
 		},	
 							
 		{
-		  "class_type": "DecoBlock",
+		  "class_type": "IntactBlock",
 		  "name": "painting_0",
 		  "item_group": "yuushya_decoration",
-		  "properties": {"lines": 1},
+		  "properties": {"lines": 1, "has_collision": false},
 		  "blockstate": { "forms": [["yuushya:extra_building_material/painting/p0"],["yuushya:extra_building_material/painting/m0"]]}
 		},	
 										
 		{
-		  "class_type": "DecoBlock",
+		  "class_type": "IntactBlock",
 		  "name": "painting_1",
 		  "item_group": "yuushya_decoration",
-		  "properties": {"lines": 1},
+		  "properties": {"lines": 1, "has_collision": false},
 		  "blockstate": { "forms": [["yuushya:extra_building_material/painting/p1"],["yuushya:extra_building_material/painting/m1"]]}
 		},	
 													
 		{
-		  "class_type": "DecoBlock",
+		  "class_type": "IntactBlock",
 		  "name": "painting_2",
 		  "item_group": "yuushya_decoration",
-		  "properties": {"lines": 1},
+		  "properties": {"lines": 1, "has_collision": false},
 		  "blockstate": { "forms": [["yuushya:extra_building_material/painting/p2"],["yuushya:extra_building_material/painting/m2"]]}
 		},	
 													
 		{
-		  "class_type": "DecoBlock",
+		  "class_type": "IntactBlock",
 		  "name": "painting_3",
 		  "item_group": "yuushya_decoration",
-		  "properties": {"lines": 1},
+		  "properties": {"lines": 1, "has_collision": false},
 		  "blockstate": { "forms": [["yuushya:extra_building_material/painting/p3"],["yuushya:extra_building_material/painting/m3"]]}
 		},	
 													
 		{
-		  "class_type": "DecoBlock",
+		  "class_type": "IntactBlock",
 		  "name": "painting_4",
 		  "item_group": "yuushya_decoration",
-		  "properties": {"lines": 1},
+		  "properties": {"lines": 1, "has_collision": false},
 		  "blockstate": { "forms": [["yuushya:extra_building_material/painting/p4"],["yuushya:extra_building_material/painting/m4"]]}
 		},	
 													
 		{
-		  "class_type": "DecoBlock",
+		  "class_type": "IntactBlock",
 		  "name": "painting_5",
 		  "item_group": "yuushya_decoration",
-		  "properties": {"lines": 1},
+		  "properties": {"lines": 1, "has_collision": false},
 		  "blockstate": { "forms": [["yuushya:extra_building_material/painting/p5"],["yuushya:extra_building_material/painting/m5"]]}
 		},	
 													
 		{
-		  "class_type": "DecoBlock",
+		  "class_type": "IntactBlock",
 		  "name": "painting_6",
 		  "item_group": "yuushya_decoration",
-		  "properties": {"lines": 1},
+		  "properties": {"lines": 1, "has_collision": false},
 		  "blockstate": { "forms": [["yuushya:extra_building_material/painting/p6"],["yuushya:extra_building_material/painting/m6"]]}
 		},	
 													
 		{
-		  "class_type": "DecoBlock",
+		  "class_type": "IntactBlock",
 		  "name": "painting_7",
 		  "item_group": "yuushya_decoration",
-		  "properties": {"lines": 1},
+		  "properties": {"lines": 1, "has_collision": false},
 		  "blockstate": { "forms": [["yuushya:extra_building_material/painting/p7"],["yuushya:extra_building_material/painting/m7"]]}
 		},	
 													
 		{
-		  "class_type": "DecoBlock",
+		  "class_type": "IntactBlock",
 		  "name": "painting_8",
 		  "item_group": "yuushya_decoration",
-		  "properties": {"lines": 1},
+		  "properties": {"lines": 1, "has_collision": false},
 		  "blockstate": { "forms": [["yuushya:extra_building_material/painting/p8"],["yuushya:extra_building_material/painting/m8"]]}
 		},	
 															
 		{
-		  "class_type": "DecoBlock",
+		  "class_type": "IntactBlock",
 		  "name": "painting_9",
 		  "item_group": "yuushya_decoration",
-		  "properties": {"lines": 1},
+		  "properties": {"lines": 1, "has_collision": false},
 		  "blockstate": { "forms": [["yuushya:extra_building_material/painting/p9"],["yuushya:extra_building_material/painting/m9"]]}
 		},	
 															
 		{
-		  "class_type": "DecoBlock",
+		  "class_type": "IntactBlock",
 		  "name": "painting_10",
 		  "item_group": "yuushya_decoration",
-		  "properties": {"lines": 1},
+		  "properties": {"lines": 1, "has_collision": false},
 		  "blockstate": { "forms": [["yuushya:extra_building_material/painting/p10"],["yuushya:extra_building_material/painting/m10"]]}
 		},	
 										
 		{
-		  "class_type": "DecoBlock",
+		  "class_type": "IntactBlock",
 		  "name": "painting_11",
 		  "item_group": "yuushya_decoration",
+		  "properties": {"has_collision": false},
 		  "blockstate": { "forms": [["yuushya:extra_building_material/painting/p11"]]}
 		},		
 							
@@ -1710,6 +2752,13 @@
 		  "name": "rusty_air_conditioning_condenser",
 		  "item_group": "yuushya_infrastructure",
 		  "blockstate": { "forms": [["yuushya:extra_building_material/airc"]]}
+		},	
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "burglar_mesh",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/3345"]]}
 		},			
 		
 		{
@@ -1862,10 +2911,11 @@
 		
 		{
 		  "class_type": "IntactBlock",
-		  "name": "traffic_lights_3",
+		  "name": "traffic_lights_4",
 		  "item_group": "yuushya_infrastructure",
 		  "blockstate": { "forms": [["yuushya:extra_building_material/traffic_lights__"]]}
 		},		
+		
 		
 		{
 		  "class_type": "IntactBlock",
@@ -1894,6 +2944,22 @@
 		  "properties": {"lines": 1},
 		  "item_group": "yuushya_infrastructure",
 		  "blockstate": { "forms": [["yuushya:extra_building_material/dustbin1"],["yuushya:extra_building_material/dustbin1_open"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "scroll_door_0",
+		  "properties": {"lines": 1},
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/scrolldoor"],["yuushya:extra_building_material/scrolldoor_lock"]]}
+		},		
+				
+		{
+		  "class_type": "IntactBlock",
+		  "name": "scroll_door_1",
+		  "properties": {"lines": 1},
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/scrolldoor2"],["yuushya:extra_building_material/scrolldoor2_lock"]]}
 		},		
 		
 		{
@@ -1985,21 +3051,7 @@
 		  "name": "cone",
 		  "item_group": "yuushya_infrastructure",
 		  "blockstate": { "forms": [["yuushya:extra_building_material/st"]]}
-		},		
-		
-		{
-		  "class_type": "IntactBlock",
-		  "name": "sink",
-		  "item_group": "yuushya_infrastructure",
-		  "blockstate": { "forms": [["yuushya:extra_building_material/sink_1"]]}
-		},		
-		
-		{
-		  "class_type": "IntactBlock",
-		  "name": "sink_",
-		  "item_group": "yuushya_infrastructure",
-		  "blockstate": { "forms": [["yuushya:extra_building_material/sink_2"]]}
-		},		
+		},			
 		
 		{
 		  "class_type": "IntactBlock",
@@ -2090,10 +3142,17 @@
 		  "name": "rusty_ventilator_outer_part",
 		  "item_group": "yuushya_infrastructure",
 		  "blockstate": { "forms": [["yuushya:extra_building_material/ventilator_w_"]]}
+		},	
+	
+		{
+		  "class_type": "DecoBlock",
+		  "name": "platform_metal",
+		  "item_group": "yuushya_infrastructure",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/platform_metal"]]}
 		},			
 		
 		{
-		  "class_type": "IntactBlock",
+		  "class_type": "DecoBlock",
 		  "name": "pedestrian_crossing_forward_line",
 		  "item_group": "yuushya_infrastructure",
 		  "blockstate": { "forms": [["yuushya:extra_building_material/road/fix2"]]}
@@ -2196,6 +3255,20 @@
 		
 		{
 		  "class_type": "IntactBlock",
+		  "name": "sink",
+		  "item_group": "yuushya_furniture",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/sink_1"]]}
+		},		
+		
+		{
+		  "class_type": "IntactBlock",
+		  "name": "sink_",
+		  "item_group": "yuushya_furniture",
+		  "blockstate": { "forms": [["yuushya:extra_building_material/sink_2"]]}
+		},			
+		
+		{
+		  "class_type": "IntactBlock",
 		  "name": "blackboard",
 		  "item_group": "yuushya_furniture",
 		  "blockstate": { "forms": [["yuushya:extra_building_material/blackboard"]]}
@@ -2246,9 +3319,9 @@
 		},				
 		
 		{
-		  "class_type": "IntactBlock",
+		  "class_type": "TranslucentBlock",
 		  "name": "glass_rainshed",
-		  "render_type": "transparent",
+		  "render_type": "transcluent",
 		  "item_group": "yuushya_furniture",
 		  "blockstate": { "forms": [["yuushya:extra_building_material/air_rainshed"]]}
 		},	
@@ -2661,11 +3734,11 @@
 		  "item_group": "yuushya_furniture",
 		  "properties": {"lines": 0},
 		  "blockstate": { "forms": [["yuushya:extra_building_material/bed/bed20"]]}
-		},	
+		}
 	
+  ], 
+  
 
-	{"name": "Json防呆", "class_type": "_comment" }
-  ],
 	"item": [
 		{"class_type": "", "name": "block_blueprint", "item_group": "yuushya_item","properties": {"max_count": 64,"rarity": "common"}},
 		{"class_type": "", "name": "deco_blueprint", "item_group": "yuushya_item","properties": {"max_count": 64,"rarity": "common"}},
@@ -2674,14 +3747,6 @@
 		{"class_type": "", "name": "furniture_blueprint", "item_group": "yuushya_item","properties": {"max_count": 64,"rarity": "common"}},
 		{"class_type": "", "name": "facility_blueprint", "item_group": "yuushya_item","properties": {"max_count": 64,"rarity": "common"}},
 		{"class_type": "", "name": "extra_shapes_blueprint", "item_group": "yuushya_item","properties": {"max_count": 64,"rarity": "common"}},
-		{"class_type": "", "name": "side_slab_blueprint", "item_group": "yuushya_item","properties": {"max_count": 64,"rarity": "common"}},
-		{"class_type": "", "name": "slab_blueprint", "item_group": "yuushya_item","properties": {"max_count": 64,"rarity": "common"}},
-		{"class_type": "", "name": "stairs_blueprint", "item_group": "yuushya_item","properties": {"max_count": 64,"rarity": "common"}},
-		{"class_type": "", "name": "ridge_blueprint", "item_group": "yuushya_item","properties": {"max_count": 64,"rarity": "common"}},
-		{"class_type": "", "name": "layer_blueprint", "item_group": "yuushya_item","properties": {"max_count": 64,"rarity": "common"}},
-		{"class_type": "", "name": "column_blueprint", "item_group": "yuushya_item","properties": {"max_count": 64,"rarity": "common"}},
-		{"class_type": "", "name": "crossbeam_blueprint", "item_group": "yuushya_item","properties": {"max_count": 64,"rarity": "common"}},
-		{"class_type": "", "name": "frame_stuff_blueprint", "item_group": "yuushya_item","properties": {"max_count": 64,"rarity": "common"}},
 
 		{"class_type": "", "name": "the_encyclopedia", "item_group": "yuushya_item","properties": {"max_count": 16,"rarity": "common"}},
 		{"class_type": "", "name": "shimmering_pearl", "item_group": "yuushya_item","properties": {"max_count": 16,"rarity": "common"}},
@@ -2700,5 +3765,6 @@
 		{"class_type": "HatItem", "name": "head_bucket", "item_group": "yuushya_item","properties": {"max_count": 1,"rarity": "epic"}},
 		{"class_type": "HatItem", "name": "symbol_of_love", "item_group": "yuushya_item","properties": {"max_count": 1,"rarity": "epic"}},
 		{"class_type": "HatItem", "name": "conehead", "item_group": "yuushya_item","properties": {"max_count": 1,"rarity": "epic"}}
-	]
+	]  
+  
 }

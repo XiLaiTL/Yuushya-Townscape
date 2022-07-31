@@ -11,7 +11,7 @@ import net.minecraft.world.item.Items;
 import java.util.function.Supplier;
 
 public class YuushyaCreativeModeTab {
-     public static final CreativeModeTab YUUSHYA_EXTRA_SHAPES = YuushyaCreativeModeTab.create("extra_shapes", ()->YuushyaRegistries.ITEMS.getInstanceOrDefault("020", Items.APPLE));
+    public static final CreativeModeTab YUUSHYA_EXTRA_SHAPES = YuushyaCreativeModeTab.create("extra_shapes", ()->YuushyaRegistries.ITEMS.getInstanceOrDefault("020", Items.APPLE));
     public static final CreativeModeTab YUUSHYA_FURNITURE = YuushyaCreativeModeTab.create("furniture", ()->YuushyaRegistries.ITEMS.getInstanceOrDefault("130", Items.APPLE));
     public static final CreativeModeTab YUUSHYA_DECORATION = YuushyaCreativeModeTab.create("decoration", ()->YuushyaRegistries.ITEMS.getInstanceOrDefault("550", Items.APPLE));
     public static final CreativeModeTab YUUSHYA_SIGNS = YuushyaCreativeModeTab.create("signs", ()->YuushyaRegistries.ITEMS.getInstanceOrDefault("362", Items.APPLE));
