@@ -205,8 +205,36 @@
 		{
 			"name": "decoration_bookshelf",
 			"blockstate": { "forms": [["yuushya:template/decoration_bookshelf_left","yuushya:template/decoration_bookshelf_middle","yuushya:template/decoration_bookshelf_right","yuushya:template/decoration_bookshelf_none"]], "kit": "line"},
+			"item_model": "yuushya:template/decoration_bookshelf_none",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"class_type": "template", "auto_generated": {"item_model": true }
+		},
+
+		{
+			"name": "mounted_fern_pot",
+			"blockstate": { "forms": [["yuushya:template/potted_fern_wall_left","yuushya:template/potted_fern_wall_middle","yuushya:template/potted_fern_wall_right","yuushya:template/potted_fern_wall_none"]], "kit": "line"},
+			"item_model": "yuushya:template/potted_fern_wall_none",
+			"render_type": "cutout",
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"class_type": "template", "auto_generated": {"item_model": true }
+		},
+
+		{
+			"name": "bench",
+			"blockstate": { "forms": [["yuushya:template/bench_left","yuushya:template/bench_middle","yuushya:template/bench_right","yuushya:template/bench_none"]], "kit": "line"},
+			"item_model": "yuushya:template/bench_none",
+			"render_type": "cutout",
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"class_type": "template", "auto_generated": {"item_model": true }
+		},
+
+		{
+			"name": "couch",
+			"blockstate": { "forms": [["yuushya:template/couch_left","yuushya:template/couch_middle","yuushya:template/couch_right","yuushya:template/couch_none"]], "kit": "line"},
+			"item_model": "yuushya:template/couch_none",
+			"render_type": "cutout",
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"item_model": true }
 		},
 
@@ -214,7 +242,7 @@
 			"name": "rain_shed",
 			"blockstate": { "forms": [["yuushya:template/rain_shed"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"item_model": true }
 		},
 
@@ -222,7 +250,7 @@
 			"name": "lengthened_rain_shed",
 			"blockstate": { "forms": [["yuushya:template/lengthened_rain_shed"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"item_model": true }
 		},
 
@@ -237,6 +265,38 @@
 		{
 			"name": "clock",
 			"blockstate": { "forms": [["yuushya:template/clock"]], "kit": "normal"},
+			"render_type": "cutout",
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"class_type": "template", "auto_generated": {"item_model": true }
+		},
+
+		{
+			"name": "park_stool",
+			"blockstate": { "forms": [["yuushya:template/park_stool"]], "kit": "normal"},
+			"render_type": "cutout",
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"class_type": "template", "auto_generated": {"item_model": true }
+		},
+
+		{
+			"name": "seat",
+			"blockstate": { "forms": [["yuushya:template/seat"]], "kit": "normal"},
+			"render_type": "cutout",
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"class_type": "template", "auto_generated": {"item_model": true }
+		},
+
+		{
+			"name": "cushion_armchair",
+			"blockstate": { "forms": [["yuushya:template/cushion_armchair"]], "kit": "normal"},
+			"render_type": "cutout",
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"class_type": "template", "auto_generated": {"item_model": true }
+		},
+
+		{
+			"name": "chair",
+			"blockstate": { "forms": [["yuushya:template/chair"]], "kit": "normal"},
 			"render_type": "cutout",
 			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"item_model": true }
@@ -269,6 +329,30 @@
 		{
 			"name": "venetian_blinds",
 			"blockstate": { "forms": [["yuushya:template/venetian_blinds"]], "kit": "normal"},
+			"render_type": "cutout",
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"class_type": "template", "auto_generated": {"item_model": true }
+		},
+
+		{
+			"name": "cart",
+			"blockstate": { "forms": [["yuushya:template/venetian_blinds"]], "kit": "normal"},
+			"render_type": "cutout",
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"class_type": "template", "auto_generated": {"item_model": true }
+		},
+
+		{
+			"name": "board",
+			"blockstate": { "forms": [["yuushya:template/board_"],["yuushya:template/board"]], "kit": "normal"},
+			"render_type": "cutout",
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 2},
+			"class_type": "template", "auto_generated": {"item_model": true }
+		},
+
+		{
+			"name": "bottle_container",
+			"blockstate": { "forms": [["yuushya:template/bottle_container"]], "kit": "normal"},
 			"render_type": "cutout",
 			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"item_model": true }
@@ -4274,6 +4358,27 @@
 			"name": "goth_lantern",
 			"item_group": "yuushya_furniture",
 			"blockstate": { "forms": [["yuushya:extra_building_material/oriental_lantern_"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "modern_lamp_0",
+			"item_group": "yuushya_furniture",
+			"blockstate": { "forms": [["yuushya:extra_building_material/street_lamp_0"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "modern_lamp_1",
+			"item_group": "yuushya_furniture",
+			"blockstate": { "forms": [["yuushya:extra_building_material/street_lamp_1"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "modern_lamp_2",
+			"item_group": "yuushya_furniture",
+			"blockstate": { "forms": [["yuushya:extra_building_material/street_lamp_2"]]}
 		},
 
 		{
