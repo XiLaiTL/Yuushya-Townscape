@@ -283,7 +283,16 @@
 			"render_type": "cutout",
 			"auto_generated": { "blockstate": true, "loot_table": true, "item_model": true },
 			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material":"iron", "is_solid": true, "has_collision": true, "is_delicate": false }
+			"properties": { "hardness": 1, "resistance": 1, "material": "iron", "is_solid": false, "has_collision": true, "is_delicate": false }
+		},
+
+		{
+			"name": "PlainBlock",
+			"blockstate": { "kit": "normal" },
+			"render_type": "cutout",
+			"auto_generated": { "blockstate": true, "loot_table": true, "item_model": true },
+			"class_type": "class",
+			"properties": { "hardness": 1, "resistance": 1, "material": "iron", "is_solid": true, "has_collision": true, "is_delicate": false }
 		},
 
 		{
@@ -352,10 +361,130 @@
 
 		{
 			"class_type": "IntactBlock",
+			"name": "big_maple_leaves",
+			"item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:extra_building_material/tree/leaves_maple"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "big_sakura",
+			"item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:extra_building_material/tree/sakura"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
 			"name": "average_oak_leaves",
 			"item_group": "yuushya_extrablocks",
 			"blockstate": { "forms": [["yuushya:extra_building_material/tree/leaves_oak_medium"]]}
 		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "average_white_blooming_leaves",
+			"item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:extra_building_material/tree/leaves_oak_blooming_0"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "average_gold_blooming_leaves",
+			"item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:extra_building_material/tree/leaves_oak_blooming_1"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "average_pink_blooming_leaves",
+			"item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:extra_building_material/tree/leaves_oak_blooming_2"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "average_maple_leaves",
+			"item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:extra_building_material/tree/leaves_maple_medium"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "average_sakura",
+			"item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:extra_building_material/tree/sakura_medium"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "average_sakura",
+			"item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:extra_building_material/tree/sakura_medium"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "cluster_oak_leaves",
+			"item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:extra_building_material/tree/leaves_oak_small"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "cluster_maple_leaves",
+			"item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:extra_building_material/tree/leaves_maple_small"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "cluster_sakura",
+			"item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:extra_building_material/tree/sakura_small"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "trunk_0",
+			"item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:extra_building_material/tree/trunk_0"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "trunk_1",
+			"item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:extra_building_material/tree/trunk_1"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "trunk_2",
+			"item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:extra_building_material/tree/trunk_2"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "branch_0",
+			"item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:extra_building_material/tree/trunk_3"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "branch_1",
+			"item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:extra_building_material/tree/trunk_4"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "branch_2",
+			"item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:extra_building_material/tree/trunk_5"]]}
+		},
+
 
 		{"name": "Extra_Shape_拓展形状", "class_type": "_comment" },
 
@@ -2812,14 +2941,14 @@
 
 		{
 			"class_type": "DecoBlock",
-			"name": "jam_0",
+			"name": "jam",
 			"item_group": "yuushya_life",
 			"blockstate": { "forms": [["yuushya:extra_building_material/jam1"]]}
 		},
 
 		{
 			"class_type": "DecoBlock",
-			"name": "jam_1",
+			"name": "paste",
 			"item_group": "yuushya_life",
 			"blockstate": { "forms": [["yuushya:extra_building_material/jam2"]]}
 		},
@@ -3229,6 +3358,158 @@
 			"name": "tabby",
 			"item_group": "yuushya_life",
 			"blockstate": { "forms": [["yuushya:extra_building_material/tabby"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "empty_goods_shelf_double",
+			"item_group": "yuushya_life",
+			"properties": {"lines": 1},
+			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_2x/0"],["yuushya:extra_building_material/grocery/shelf_2x/0_"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "empty_goods_shelf",
+			"item_group": "yuushya_life",
+			"properties": {"lines": 0},
+			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_1x"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "empty_goods_shelf_hook",
+			"item_group": "yuushya_life",
+			"properties": {"lines": 0},
+			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_1n"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "empty_goods_shelf_hook_base",
+			"item_group": "yuushya_life",
+			"properties": {"lines": 0},
+			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_1n_"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "goods_shelf_books",
+			"item_group": "yuushya_life",
+			"properties": {"lines": 1},
+			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_books"],["yuushya:extra_building_material/grocery/shelf_books_"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "goods_shelf_candy",
+			"item_group": "yuushya_life",
+			"properties": {"lines": 1},
+			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_candy"],["yuushya:extra_building_material/grocery/shelf_candy_"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "goods_shelf_chopping_board",
+			"item_group": "yuushya_life",
+			"properties": {"lines": 0},
+			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_chopping_board"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "goods_shelf_glass",
+			"item_group": "yuushya_life",
+			"properties": {"lines": 1},
+			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_glass"],["yuushya:extra_building_material/grocery/shelf_glass_"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "goods_shelf_boxes",
+			"item_group": "yuushya_life",
+			"properties": {"lines": 1},
+			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_lboxes"],["yuushya:extra_building_material/grocery/shelf_lboxes_"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "goods_shelf_mini_boxes",
+			"item_group": "yuushya_life",
+			"properties": {"lines": 1},
+			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_mboxes"],["yuushya:extra_building_material/grocery/shelf_mboxes_"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "goods_shelf_magazine",
+			"item_group": "yuushya_life",
+			"properties": {"lines": 0},
+			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_magazine"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "goods_shelf_milk",
+			"item_group": "yuushya_life",
+			"properties": {"lines": 0},
+			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_milk"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "goods_shelf_soft_drink",
+			"item_group": "yuushya_life",
+			"properties": {"lines": 0},
+			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_soft_drink"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "goods_shelf_wine",
+			"item_group": "yuushya_life",
+			"properties": {"lines": 0},
+			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_wine"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "goods_shelf_shampoo",
+			"item_group": "yuushya_life",
+			"properties": {"lines": 0},
+			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_shampoo"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "goods_shelf_mug",
+			"item_group": "yuushya_life",
+			"properties": {"lines": 1},
+			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_mug"],["yuushya:extra_building_material/grocery/shelf_mug_"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "goods_shelf_plate",
+			"item_group": "yuushya_life",
+			"properties": {"lines": 1},
+			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_plate"],["yuushya:extra_building_material/grocery/shelf_plate_"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "goods_shelf_potatochip",
+			"item_group": "yuushya_life",
+			"properties": {"lines": 1},
+			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_potatochip"],["yuushya:extra_building_material/grocery/shelf_potatochip_"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "goods_shelf_snack",
+			"item_group": "yuushya_life",
+			"properties": {"lines": 1},
+			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_snack"],["yuushya:extra_building_material/grocery/shelf_snack_"]]}
 		},
 
 
@@ -3668,7 +3949,7 @@
 			"blockstate": { "forms": [["yuushya:extra_building_material/road/fix2"]]}
 		},
 
-		{"name": "Life_生活", "class_type": "_comment" },
+		{"name": "Furniture_家具", "class_type": "_comment" },
 
 		{
 			"class_type": "IntactBlock",
@@ -4272,7 +4553,7 @@
 		{"class_type": "", "name": "facility_blueprint", "item_group": "yuushya_item","properties": {"max_count": 64,"rarity": "common"}},
 		{"class_type": "", "name": "extra_shapes_blueprint", "item_group": "yuushya_item","properties": {"max_count": 64,"rarity": "common"}},
 
-		{"class_type": "", "name": "the_encyclopedia", "item_group": "yuushya_item","properties": {"max_count": 16,"rarity": "common"}},
+		{"class_type": "", "name": "the_encyclopedia", "item_group": "yuushya_item","properties": {"max_count": 16,"rarity": "common", "lines": 1}},
 		{"class_type": "", "name": "shimmering_pearl", "item_group": "yuushya_item","properties": {"max_count": 16,"rarity": "common"}},
 		{"class_type": "", "name": "everlasting_wood", "item_group": "yuushya_item","properties": {"max_count": 16,"rarity": "common"}},
 		{"class_type": "", "name": "sprouting_dirt", "item_group": "yuushya_item","properties": {"max_count": 16,"rarity": "common"}},
