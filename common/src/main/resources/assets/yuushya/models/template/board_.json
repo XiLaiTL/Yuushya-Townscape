@@ -2,7 +2,7 @@
 	"credit": "Coco",
 	"ambientocclusion": false,
 	"textures": {
-		"0": "yuushya:0extra_building_material/preview/board/sign/white_compact",
+		"all": "yuushya:block_/template",
 		"1": "yuushya:0extra_building_material/preview/iron_",
 		"particle": "yuushya:0extra_building_material/preview/board/sign/white_compact"
 	},
@@ -11,24 +11,24 @@
 			"from": [0, 0, 14],
 			"to": [16, 16, 16],
 			"faces": {
-				"north": {"uv": [0, 0, 16, 16], "texture": "#0"},
-				"east": {"uv": [0, 0, 2, 16], "texture": "#0"},
-				"south": {"uv": [0, 0, 16, 16], "texture": "#0"},
-				"west": {"uv": [0, 0, 2, 16], "texture": "#0"},
-				"up": {"uv": [0, 0, 16, 2], "texture": "#0"},
-				"down": {"uv": [0, 0, 16, 2], "texture": "#0"}
+				"north": {"uv": [0, 0, 16, 16], "texture": "#all"},
+				"east": {"uv": [0, 0, 2, 16], "texture": "#all"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#all"},
+				"west": {"uv": [0, 0, 2, 16], "texture": "#all"},
+				"up": {"uv": [0, 0, 16, 2], "texture": "#all"},
+				"down": {"uv": [0, 0, 16, 2], "texture": "#all"}
 			}
 		},
 		{
 			"from": [0, 0, 12],
 			"to": [16, 16, 14],
 			"faces": {
-				"north": {"uv": [0, 0, 16, 16], "texture": "#0"},
-				"east": {"uv": [0, 0, 2, 16], "texture": "#0"},
-				"south": {"uv": [0, 0, 16, 16], "texture": "#0"},
-				"west": {"uv": [0, 0, 2, 16], "texture": "#0"},
-				"up": {"uv": [0, 0, 16, 2], "texture": "#0"},
-				"down": {"uv": [0, 0, 16, 2], "texture": "#0"}
+				"north": {"uv": [0, 0, 16, 16], "texture": "#all"},
+				"east": {"uv": [0, 0, 2, 16], "texture": "#all"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#all"},
+				"west": {"uv": [0, 0, 2, 16], "texture": "#all"},
+				"up": {"uv": [0, 0, 16, 2], "texture": "#all"},
+				"down": {"uv": [0, 0, 16, 2], "texture": "#all"}
 			}
 		},
 		{

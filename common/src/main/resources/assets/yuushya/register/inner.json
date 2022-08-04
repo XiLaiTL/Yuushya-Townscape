@@ -234,9 +234,19 @@
 			"blockstate": { "forms": [["yuushya:template/couch_left","yuushya:template/couch_middle","yuushya:template/couch_right","yuushya:template/couch_none"]], "kit": "line"},
 			"item_model": "yuushya:template/couch_none",
 			"render_type": "cutout",
+			"properties": { "is_solid": true, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"class_type": "template", "auto_generated": {"item_model": true }
+		},
+
+		{
+			"name": "shelf",
+			"blockstate": { "forms": [["yuushya:template/shelf_left","yuushya:template/shelf_middle","yuushya:template/shelf_right","yuushya:template/shelf_none"]], "kit": "line"},
+			"item_model": "yuushya:template/shelf_none",
+			"render_type": "cutout",
 			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"item_model": true }
 		},
+
 
 		{
 			"name": "rain_shed",
@@ -257,6 +267,14 @@
 		{
 			"name": "ladder",
 			"blockstate": { "forms": [["yuushya:template/ladder"]], "kit": "normal"},
+			"render_type": "cutout",
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"class_type": "template", "auto_generated": {"item_model": true }
+		},
+
+		{
+			"name": "leaning_ladder",
+			"blockstate": { "forms": [["yuushya:template/leaning_ladder"]], "kit": "normal"},
 			"render_type": "cutout",
 			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"item_model": true }
@@ -3208,6 +3226,14 @@
 
 		{
 			"class_type": "DecoBlock",
+			"name": "clothes_showcase",
+			"item_group": "yuushya_life",
+			"properties": {"lines": 1},
+			"blockstate": { "forms": [["yuushya:extra_building_material/hanging_clothes_1"],["yuushya:extra_building_material/hanging_clothes_1_"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
 			"name": "hanged_things",
 			"item_group": "yuushya_life",
 			"blockstate": { "forms": [["yuushya:extra_building_material/hangerm_both"]]}
@@ -4033,6 +4059,20 @@
 			"blockstate": { "forms": [["yuushya:extra_building_material/road/fix2"]]}
 		},
 
+		{
+			"class_type": "IntactBlock",
+			"name": "tyre",
+			"item_group": "yuushya_infrastructure",
+			"blockstate": { "forms": [["yuushya:extra_building_material/tyre"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "tyre_",
+			"item_group": "yuushya_infrastructure",
+			"blockstate": { "forms": [["yuushya:extra_building_material/tyre_"]]}
+		},
+
 		{"name": "Furniture_家具", "class_type": "_comment" },
 
 		{
@@ -4388,6 +4428,15 @@
 			"item_group": "yuushya_furniture",
 			"blockstate": { "forms": [["yuushya:extra_building_material/fluorescent_lamp"],["yuushya:extra_building_material/fluorescent_lamp_"]]}
 		},
+
+
+		{
+			"class_type": "ChairBlock",
+			"name": "display_cabinet",
+			"item_group": "yuushya_furniture",
+			"blockstate": { "forms": [["yuushya:extra_building_material/display_cabinet_left","yuushya:extra_building_material/display_cabinet_middle","yuushya:extra_building_material/display_cabinet_right","yuushya:extra_building_material/display_cabinet_none"]]}
+		},
+
 
 		{
 			"class_type": "DecoBlock",
