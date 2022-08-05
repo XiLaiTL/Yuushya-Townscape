@@ -430,7 +430,7 @@
 			"render_type": "cutout",
 			"auto_generated": { "blockstate": true, "loot_table": true, "item_model": true },
 			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material":"iron", "is_solid": false, "has_collision": true, "is_delicate": false }
+			"properties": { "hardness": 1, "resistance": 1, "material":"iron", "is_solid": false, "has_collision": false, "is_delicate": false }
 		},
 
 		{
@@ -4073,6 +4073,20 @@
 			"blockstate": { "forms": [["yuushya:extra_building_material/tyre_"]]}
 		},
 
+		{
+			"class_type": "IntactBlock",
+			"name": "wheel",
+			"item_group": "yuushya_infrastructure",
+			"blockstate": { "forms": [["yuushya:extra_building_material/wheel"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "wheel_",
+			"item_group": "yuushya_infrastructure",
+			"blockstate": { "forms": [["yuushya:extra_building_material/wheel_"]]}
+		},
+
 		{"name": "Furniture_家具", "class_type": "_comment" },
 
 		{
@@ -4434,6 +4448,7 @@
 			"class_type": "ChairBlock",
 			"name": "display_cabinet",
 			"item_group": "yuushya_furniture",
+			"item_model": "yuushya:template/display_cabinet_none",
 			"blockstate": { "forms": [["yuushya:extra_building_material/display_cabinet_left","yuushya:extra_building_material/display_cabinet_middle","yuushya:extra_building_material/display_cabinet_right","yuushya:extra_building_material/display_cabinet_none"]]}
 		},
 
@@ -4723,6 +4738,8 @@
 		{"class_type": "HatItem", "name": "butterfly", "item_group": "yuushya_item","properties": {"max_count": 1,"rarity": "epic"}},
 		{"class_type": "HatItem", "name": "head_bucket", "item_group": "yuushya_item","properties": {"max_count": 1,"rarity": "epic"}},
 		{"class_type": "HatItem", "name": "symbol_of_love", "item_group": "yuushya_item","properties": {"max_count": 1,"rarity": "epic"}},
+		{"class_type": "HatItem", "name": "christmas_hat", "item_group": "yuushya_item","properties": {"max_count": 1,"rarity": "epic"}},
+		{"class_type": "HatItem", "name": "toilet_head", "item_group": "yuushya_item","properties": {"max_count": 1,"rarity": "epic"}},
 		{"class_type": "HatItem", "name": "conehead", "item_group": "yuushya_item","properties": {"max_count": 1,"rarity": "epic"}}
 	]
 
