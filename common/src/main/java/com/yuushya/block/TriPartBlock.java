@@ -17,8 +17,8 @@ import static com.yuushya.block.blockstate.YuushyaBlockStates.POS_VERTICAL;
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.HORIZONTAL_FACING;
 
 public class TriPartBlock extends NormalBlock{
-    public TriPartBlock(Properties properties, Integer tipLines, String classType) {
-        super(properties, tipLines, classType);
+    public TriPartBlock(Properties properties, Integer tipLines, String classType, boolean autoCollision) {
+        super(properties, tipLines, classType,autoCollision);
     }
 
     @Override

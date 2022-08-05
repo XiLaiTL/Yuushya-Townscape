@@ -15,8 +15,8 @@ import static com.yuushya.block.YuushyaBlockFactory.isTheSameBlock;
 import static com.yuushya.block.blockstate.YuushyaBlockStates.*;
 
 public class FaceBlock extends YuushyaBlockFactory.BlockWithClassType {
-    public FaceBlock(Properties properties, Integer tipLines, String classType) {
-        super(properties, tipLines, classType);
+    public FaceBlock(Properties properties, Integer tipLines, String classType, boolean autoCollision) {
+        super(properties, tipLines, classType,autoCollision);
     }
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> stateBuilder) {

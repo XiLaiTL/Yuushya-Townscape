@@ -8,17 +8,24 @@ import com.yuushya.registries.YuushyaRegistryData;
 import com.yuushya.utils.YuushyaLogger;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Registry;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.MutableComponent;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import org.jetbrains.annotations.Nullable;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class TemplateBlockItem extends AbstractYuushyaItem {
@@ -62,5 +69,21 @@ public class TemplateBlockItem extends AbstractYuushyaItem {
 
         }
         return InteractionResult.PASS;
+    }
+
+    @Override
+    public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> tooltips, TooltipFlag tooltipFlag) {
+        super.appendHoverText(itemStack,level,tooltips,tooltipFlag);
+        TextComponent textComponent=new TextComponent("");int index=1;
+        for (YuushyaRegistryData.Block block:usageList){
+            ResourceLocation resourceLocation = block.classType.equals("remain")
+                    ? new ResourceLocation(block.name)
+                    : new ResourceLocation(Yuushya.MOD_ID,block.name);
+            textComponent.append(new TranslatableComponent(Registry.BLOCK.get(resourceLocation).getDescriptionId())).append(" ");
+            if (index%3==0) {
+                tooltips.add(textComponent);
+                textComponent=new TextComponent("");
+            }
+        index++;}
     }
 }

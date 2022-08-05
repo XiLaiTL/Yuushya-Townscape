@@ -11,13 +11,17 @@ import net.minecraft.util.GsonHelper;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
 //设置配置文件夹中的注册表的读和写，
 //游戏开始时开始读，数据都读取到YuushyaData中，让YuushyaRegistries准备注册
 public class YuushyaRegistryConfig {
-    public static YuushyaRegistryData YuushyaData;
+    private static YuushyaRegistryData YuushyaData;
+    public static final Map<String,YuushyaRegistryData.Block> YuushyaRawBlockMap=new LinkedHashMap<>();
+    public static final Map<String,YuushyaRegistryData.Item> YuushyaRawItemMap=new LinkedHashMap<>();
+    public static final Map<String,YuushyaRegistryData.Particle> YuushyaRawParticleMap=new LinkedHashMap<>();
     public static final File CONFIG_FILE= Platform.getConfigFolder().resolve("net.cocofish.yuushya/register.json").toFile();
     public static final String VERSION=Platform.getMod(Yuushya.MOD_ID).getVersion();
     public static final InputStream InnerFileInputStream=YuushyaRegistryConfig.class.getResourceAsStream("/assets/yuushya/register/inner.json");
@@ -32,9 +36,15 @@ public class YuushyaRegistryConfig {
             }catch (IOException e){e.printStackTrace();}
         }catch (IOException e){e.printStackTrace();}
     }
+    private static void addResultToRawMap(YuushyaRegistryData from){
+        if (from.block!=null) from.block.forEach((e)->YuushyaRawBlockMap.put(e.name,e));
+        if (from.item!=null) from.item.forEach((e)->YuushyaRawItemMap.put(e.name,e));
+        if (from.particle!=null) from.particle.forEach((e)->YuushyaRawParticleMap.put(e.name,e));
+    }
     public static void readRegistryConfig(){
         if (!CONFIG_FILE.exists()){
             readRegistryInner();
+            addResultToRawMap(YuushyaData);
             return;
         }
         try(BufferedReader reader=new BufferedReader(new InputStreamReader( new FileInputStream(CONFIG_FILE),StandardCharsets.UTF_8))){
@@ -42,25 +52,14 @@ public class YuushyaRegistryConfig {
             mergeYuushyaRegistryBlockJson(configJson.getAsJsonObject().getAsJsonArray("block"));
             YuushyaRegistryData yuushyaRegistryData=YuushyaUtils.NormalGSON.fromJson(configJson,YuushyaRegistryData.class);
             if (yuushyaRegistryData.version.equals(VERSION)){
-                YuushyaData=yuushyaRegistryData;
+                addResultToRawMap(yuushyaRegistryData);
             }
             else {
                 readRegistryInner();//如果不是同一个版本的话，优先读取Jar包内部内容
                 //使用map来合并两者的数据
-                Map<String,YuushyaRegistryData.Block> YuushyaRawBlockMap=new HashMap<>();
-                Map<String,YuushyaRegistryData.Item> YuushyaRawItemMap = new HashMap<>();
-                Map<String,YuushyaRegistryData.Particle> YuushyaRawParticleMap =new HashMap<>();
-                yuushyaRegistryData.block.forEach((e)->YuushyaRawBlockMap.put(e.name,e));
-                yuushyaRegistryData.item.forEach((e)->YuushyaRawItemMap.put(e.name,e));
-                yuushyaRegistryData.particle.forEach((e)->YuushyaRawParticleMap.put(e.name,e));
-                YuushyaData.block.forEach((e)->YuushyaRawBlockMap.put(e.name,e));
-                YuushyaData.item.forEach((e)->YuushyaRawItemMap.put(e.name,e));
-                YuushyaData.particle.forEach((e)->YuushyaRawParticleMap.put(e.name,e));
-                YuushyaData.block=  YuushyaRawBlockMap.values().stream().toList();
-                YuushyaData.item=  YuushyaRawItemMap.values().stream().toList();
-                YuushyaData.particle= YuushyaRawParticleMap.values().stream().toList();
+                addResultToRawMap(yuushyaRegistryData);
+                addResultToRawMap(YuushyaData);
             }
-
         }catch (IOException e){e.printStackTrace();}
     }
     public static void readRegistryInner(){

@@ -20,8 +20,8 @@ import static com.yuushya.block.blockstate.YuushyaBlockStates.*;
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.HORIZONTAL_FACING;
 
 public class LineBlock extends YuushyaBlockFactory.BlockWithClassType {
-    public LineBlock(Properties properties, Integer tipLines, String classType) {
-        super(properties, tipLines, classType);
+    public LineBlock(Properties properties, Integer tipLines, String classType, boolean autoCollision) {
+        super(properties, tipLines, classType,autoCollision);
     }
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> stateBuilder) {
@@ -30,10 +30,10 @@ public class LineBlock extends YuushyaBlockFactory.BlockWithClassType {
     @Override
     @Nullable
     public BlockState getStateForPlacement(BlockPlaceContext blockPlaceContext) {
-        Direction direction = blockPlaceContext.getNearestLookingDirection();
-        BlockState res= direction.getAxis() == Direction.Axis.Y
-                ? this.defaultBlockState().setValue(BlockStateProperties.HORIZONTAL_FACING, blockPlaceContext.getHorizontalDirection())
-                : this.defaultBlockState().setValue(BlockStateProperties.HORIZONTAL_FACING, direction.getOpposite());
+        BlockState res= blockPlaceContext.getClickedFace().getAxis() == Direction.Axis.Y
+                ? this.defaultBlockState().setValue(HORIZONTAL_FACING, blockPlaceContext.getHorizontalDirection())
+                : this.defaultBlockState().setValue(HORIZONTAL_FACING, blockPlaceContext.getClickedFace().getOpposite());
+
         return res.setValue(POS_HORIZON,getPositionOfFace(res,blockPlaceContext.getLevel(),blockPlaceContext.getClickedPos()));
     }
     @Override

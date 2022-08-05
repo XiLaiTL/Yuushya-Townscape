@@ -6,6 +6,7 @@ import com.yuushya.item.showblocktool.GetBlockStateItem;
 import com.yuushya.particle.LeafParticle;
 import com.yuushya.particle.YuushyaParticleFactory;
 import com.yuushya.registries.YuushyaRegistries;
+import com.yuushya.registries.YuushyaRegistryConfig;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.model.*;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
@@ -23,7 +24,6 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 
 import static com.yuushya.registries.YuushyaRegistries.BLOCKS;
-import static com.yuushya.registries.YuushyaRegistryConfig.YuushyaData;
 
 public class YuushyaClientFabric implements ClientModInitializer {
     @Override
@@ -65,7 +65,7 @@ public class YuushyaClientFabric implements ClientModInitializer {
 
         BuiltinItemRendererRegistry.INSTANCE.register(YuushyaRegistries.ITEMS.get("get_blockstate_item").get(), GetBlockStateItem::renderByItem);
 
-        YuushyaData.particle.forEach((e)->{
+        YuushyaRegistryConfig.YuushyaRawParticleMap.values().forEach((e)->{
             ParticleFactoryRegistry.getInstance().register((ParticleType<SimpleParticleType>)YuushyaRegistries.PARTICLE_TYPES.get(e.name).get(), (spriteProvider)-> YuushyaParticleFactory.create(e,spriteProvider));
         });
         //ParticleFactoryRegistry.getInstance().register((ParticleType<SimpleParticleType>) YuushyaRegistries.PARTICLE_TYPES.get("leaf_particle").get(), LeafParticle.Factory::new);

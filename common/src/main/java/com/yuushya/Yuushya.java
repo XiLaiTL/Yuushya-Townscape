@@ -3,6 +3,7 @@ package com.yuushya;
 import com.google.common.base.Suppliers;
 import com.google.gson.JsonElement;
 import com.yuushya.datagen.BlockStateData;
+import com.yuushya.datagen.RecipeData;
 import com.yuushya.registries.YuushyaRegistries;
 import com.yuushya.registries.YuushyaRegistryConfig;
 import com.yuushya.registries.YuushyaResourceReloadListener;

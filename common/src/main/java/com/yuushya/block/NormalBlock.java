@@ -14,8 +14,8 @@ import static net.minecraft.world.level.block.state.properties.BlockStatePropert
 
 public class NormalBlock extends YuushyaBlockFactory.BlockWithClassType {
 
-    public NormalBlock(Properties properties, Integer tipLines, String classType) {
-        super(properties, tipLines, classType);
+    public NormalBlock(Properties properties, Integer tipLines, String classType, boolean autoCollision) {
+        super(properties, tipLines, classType,autoCollision);
     }
 
     @Override

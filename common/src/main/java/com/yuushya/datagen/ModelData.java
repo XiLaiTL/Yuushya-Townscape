@@ -2,7 +2,6 @@ package com.yuushya.datagen;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import com.yuushya.utils.YuushyaLogger;
 import net.minecraft.data.models.model.*;
 import net.minecraft.resources.ResourceLocation;
 
@@ -24,7 +23,9 @@ public class ModelData {
     };
 
     public static JsonElement genChildItemModel(ResourceLocation parent){
-        JsonObject json =new JsonObject();json.addProperty("parent",parent.toString());
+        if (parent==null) parent=new ResourceLocation("block/stone");
+        JsonObject json =new JsonObject();
+        json.addProperty("parent",parent.toString());
         return json;
     }
     public static JsonElement genSimpleFlatItemModel( ResourceLocation texture){
@@ -43,7 +44,6 @@ public class ModelData {
 
     public static TextureSlot getTextureSlot(String textureSlotString){
         try{
-            YuushyaLogger.info(textureSlotString);
             Constructor<TextureSlot> c=TextureSlot.class.getDeclaredConstructor(String.class,TextureSlot.class);
             c.setAccessible(true);
             return c.newInstance(textureSlotString,TextureSlot.ALL);
@@ -63,12 +63,10 @@ public class ModelData {
             Iterator<String> iterator = STATE_SPLITTER.split(e).iterator();
             String slot = iterator.next();
             String texture = iterator.next();
-            YuushyaLogger.info(slot+"?"+texture);
             if (slots.contains(slot)){
                 TextureSlot textureSlot;
                 if (slot.equals("all")) textureSlot=TextureSlot.ALL;
                 else  textureSlot=getTextureSlot(slot);
-                YuushyaLogger.info(textureSlot.getId());
                 ResourceLocation resourceLocation=ResourceLocation.tryParse(texture);
                 if (textureSlot!=null&&resourceLocation!=null){
                     textureMapping.put(textureSlot,resourceLocation);
@@ -85,8 +83,6 @@ public class ModelData {
             YuushyaModelTemplateMap.get(templateName).create(noUse,getTextureMapping(List.of("all"),textures),getJsonElementToList);
         else
             YuushyaModelTemplateMap.get(templateName).create(noUse,getTextureMapping(slots,textures),getJsonElementToList);
-        YuushyaLogger.info("1111");
-        YuushyaLogger.info(tempJsons.get(0));
         return tempJsons.get(0);
     }
     public static JsonElement genTemplateModel(String templateName,ResourceLocation texture){

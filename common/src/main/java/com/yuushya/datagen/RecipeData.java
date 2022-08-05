@@ -2,6 +2,9 @@ package com.yuushya.datagen;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
+import com.yuushya.registries.YuushyaCreativeModeTab;
+import com.yuushya.registries.YuushyaRegistries;
+import com.yuushya.registries.YuushyaRegistryData;
 import net.minecraft.advancements.critereon.EntityPredicate;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.advancements.critereon.ItemPredicate;
@@ -34,11 +37,15 @@ public class RecipeData {
                 .unlockedBy(getHasName(baseItemLike), has(baseItemLike))
                 .save(consumer, getConversionRecipeName(answerItemLike, baseItemLike) + "_stonecutting");
     }
-    public static JsonElement genStoneCutterFromBase(ItemLike answerItemLike, ItemLike baseItemLike){
-        stonecutterResultFromBase(getJsonElementToList,answerItemLike,baseItemLike,4);
+    public static JsonElement genStoneCutterFromBase(ItemLike answerItemLike, ItemLike baseItemLike , int ansNum){
+        stonecutterResultFromBase(getJsonElementToList,answerItemLike,baseItemLike,ansNum);
         return tempJsons.get(0);
     }
-
+    public static JsonElement genStoneCutterRecipe(String name,String group){
+        ItemLike itemLike= YuushyaRegistries.BLOCKS.get(name).get();
+        ItemLike blueprint= YuushyaCreativeModeTab.getBlueprint(group);
+        return genStoneCutterFromBase(itemLike,blueprint,4);
+    }
 
 
 //from recipe provider

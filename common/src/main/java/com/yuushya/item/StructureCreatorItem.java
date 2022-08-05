@@ -40,8 +40,8 @@ public class StructureCreatorItem extends AbstractMultiPurposeToolItem{
     public StructureCreatorItem(Properties properties, Integer tipLines, String createNbt,String cancelNbt) {
         super(properties, tipLines);
         MAX_FORMS=3;
-        this.createNbt=ResourceLocation.tryParse(createNbt);
-        this.cancelNbt=ResourceLocation.tryParse(cancelNbt);
+        this.createNbt=createNbt!=null?ResourceLocation.tryParse(createNbt):null;
+        this.cancelNbt=cancelNbt!=null?ResourceLocation.tryParse(cancelNbt):null;
     }
     //对方块主手右键
     public InteractionResult inMainHandRightClickOnBlock(Player player, BlockState blockState, Level level, BlockPos blockPos, ItemStack handItemStack){

@@ -19,8 +19,8 @@ import static net.minecraft.world.level.block.state.properties.BlockStatePropert
 
 public class TubeBlock extends YuushyaBlockFactory.BlockWithClassType {
 
-    public TubeBlock(Properties properties, Integer tipLines, String classType) {
-        super(properties, tipLines, classType);
+    public TubeBlock(Properties properties, Integer tipLines, String classType, boolean autoCollision) {
+        super(properties, tipLines, classType,autoCollision);
         this.registerDefaultState(this.defaultBlockState().setValue(EAST,false).setValue(WEST,false).setValue(NORTH,false).setValue(SOUTH,false).setValue(UP,false).setValue(DOWN,false).setValue(ISHUB,false));
     }
 

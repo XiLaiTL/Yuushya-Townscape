@@ -15,19 +15,19 @@ import static com.yuushya.registries.YuushyaRegistries.BLOCKS;
 
 public class YuushyaDataProvider {
     public enum DataType{
-        BlockState("blockstates/"),BlockModel("models/block/"),ItemModel("models/item/"),LootTable("loot_tables/blocks/"),Particle("particles/");
+        BlockState("blockstates/"),
+        BlockModel("models/block/"),
+        ItemModel("models/item/"),
+        Recipe("recipes/block/"),
+        LootTable("loot_tables/blocks/"),
+        Particle("particles/");
         private final String prefix;
+        public final Map<ResourceLocation, Supplier<JsonElement>> map = new HashMap<>();
         private static final String suffix=".json";
         DataType(String prefix){
             this.prefix=prefix;
         }
     }
-
-    private static final Map<ResourceLocation, Supplier<JsonElement>> YuushyaBlockStateMap = new HashMap<>();
-    private static final Map<ResourceLocation, Supplier<JsonElement>> YuushyaBlockModelMap = new HashMap<>();
-    private static final Map<ResourceLocation, Supplier<JsonElement>> YuushyaItemModelMap = new HashMap<>();
-    private static final Map<ResourceLocation, Supplier<JsonElement>> YuushyaLootTableMap = new HashMap<>();
-    private static final Map<ResourceLocation, Supplier<JsonElement>> YuushyaParticleMap = new HashMap<>();
 
     private DataType dataType;
     private ResourceLocation resourceLocation;
@@ -56,9 +56,6 @@ public class YuushyaDataProvider {
         return new YuushyaDataProvider().type(dataType);
     }
     public YuushyaDataProvider json(Supplier<JsonElement>  jsonElementSupplier){
-//        switch (this.dataType){
-//            case BlockState,BlockModel,ItemModel,LootTable->this.jsonElementSupplier=jsonElementSupplier;
-//        }
         this.jsonElementSupplier=jsonElementSupplier;
         return this;
     }
@@ -69,70 +66,35 @@ public class YuushyaDataProvider {
     public ResourceLocation getNewId(){
         return selfPrefix==null||selfPrefix.isEmpty()
                 ? new ResourceLocation(this.resourceLocation.getNamespace(),this.dataType.prefix+this.resourceLocation.getPath()+DataType.suffix)
-//                switch (this.dataType){
-//                    case BlockState,BlockModel,ItemModel,LootTable->new ResourceLocation(this.resourceLocation.getNamespace(),this.dataType.prefix+this.resourceLocation.getPath()+DataType.suffix);
-//                    default -> this.resourceLocation;
-//                }
                 : new ResourceLocation(this.resourceLocation.getNamespace(),this.selfPrefix+this.resourceLocation.getPath()+DataType.suffix);
     }
     public void save(){
         ResourceLocation resourceLocationNew = getNewId();
-        switch (this.dataType){
-            case BlockState -> YuushyaBlockStateMap.put(resourceLocationNew,this.jsonElementSupplier);
-            case BlockModel -> YuushyaBlockModelMap.put(resourceLocationNew,this.jsonElementSupplier);
-            case ItemModel -> YuushyaItemModelMap.put(resourceLocationNew,this.jsonElementSupplier);
-            case LootTable -> YuushyaLootTableMap.put(resourceLocationNew,this.jsonElementSupplier);
-            case Particle -> YuushyaParticleMap.put(resourceLocationNew,this.jsonElementSupplier);
-        }
+        this.dataType.map.put(resourceLocationNew,this.jsonElementSupplier);
     }
     public JsonElement get(ResourceLocation resourceLocation){
-        return switch (this.dataType){
-            case BlockState -> YuushyaBlockStateMap.get(resourceLocation).get();
-            case BlockModel -> YuushyaBlockModelMap.get(resourceLocation).get();
-            case ItemModel -> YuushyaItemModelMap.get(resourceLocation).get();
-            case LootTable -> YuushyaLootTableMap.get(resourceLocation).get();
-            case Particle -> YuushyaParticleMap.get(resourceLocation).get();
-        };
+        return this.dataType.map.get(resourceLocation).get();
     }
     public JsonElement get(){
         ResourceLocation resourceLocationNew = getNewId();
-        return switch (this.dataType){
-            case BlockState -> YuushyaBlockStateMap.get(resourceLocationNew).get();
-            case BlockModel -> YuushyaBlockModelMap.get(resourceLocationNew).get();
-            case ItemModel -> YuushyaItemModelMap.get(resourceLocationNew).get();
-            case LootTable -> YuushyaLootTableMap.get(resourceLocationNew).get();
-            case Particle -> YuushyaParticleMap.get(resourceLocationNew).get();
-        };
+        return this.dataType.map.get(resourceLocationNew).get();
     }
     public Boolean contain(ResourceLocation resourceLocation){
-        return switch (this.dataType){
-            case BlockState -> YuushyaBlockStateMap.containsKey(resourceLocation);
-            case BlockModel -> YuushyaBlockModelMap.containsKey(resourceLocation);
-            case ItemModel -> YuushyaItemModelMap.containsKey(resourceLocation);
-            case LootTable -> YuushyaLootTableMap.containsKey(resourceLocation);
-            case Particle -> YuushyaParticleMap.containsKey(resourceLocation);
-        };
+        return this.dataType.map.containsKey(resourceLocation);
     }
     public Boolean contain(){
         ResourceLocation resourceLocationNew = getNewId();
-        return switch (this.dataType){
-            case BlockState -> YuushyaBlockStateMap.containsKey(resourceLocationNew);
-            case BlockModel -> YuushyaBlockModelMap.containsKey(resourceLocationNew);
-            case ItemModel -> YuushyaItemModelMap.containsKey(resourceLocationNew);
-            case LootTable -> YuushyaLootTableMap.containsKey(resourceLocationNew);
-            case Particle -> YuushyaParticleMap.containsKey(resourceLocationNew);
-        };
+        return this.dataType.map.containsKey(resourceLocationNew);
     }
     public void forEach(BiConsumer<? super ResourceLocation, ? super Supplier<JsonElement>> action){
-        switch (this.dataType){
-            case BlockState -> YuushyaBlockStateMap.forEach(action);
-            case BlockModel -> YuushyaBlockModelMap.forEach(action);
-            case ItemModel -> YuushyaItemModelMap.forEach(action);
-            case LootTable -> YuushyaLootTableMap.forEach(action);
-            case Particle -> YuushyaParticleMap.forEach(action);
-        };
+        this.dataType.map.forEach(action);
     }
 
+    public static ResourceLocation toRecipeResourceLocation(ResourceLocation resourceLocation){
+        return new ResourceLocation(
+                resourceLocation.getNamespace(),
+                resourceLocation.getPath().replace("recipes/","").replace(".json",""));
+    }
     public static ResourceLocation toLootTableResourceLocation(ResourceLocation resourceLocation){
         return new ResourceLocation(
                 resourceLocation.getNamespace(),
@@ -160,6 +122,7 @@ public class YuushyaDataProvider {
                     modelUse=null;
                 this.json(()->ModelData.genChildItemModel(modelUse)).save();
             }
+            case Recipe -> this.json(()->RecipeData.genStoneCutterRecipe(block.name,block.itemGroup)).save();
             case BlockModel -> {this.json(()->ModelData.genSimpleCubeBlockModel(ResourceLocation.tryParse(block.texture.value))).save();}
             case LootTable -> this.json(()->LootTableData.genSingleItemTable(BLOCKS.get(block.name).get())).save();
         };

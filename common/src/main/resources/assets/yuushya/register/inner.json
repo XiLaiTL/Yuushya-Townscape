@@ -86,7 +86,7 @@
 			"name": "stairs",
 			"blockstate": { "forms": [["yuushya:template/stairs"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": true, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"item_model": true },
 			"textures": {
 				"slots": ["all", "sides", "top"],
@@ -110,7 +110,7 @@
 			"name": "slab",
 			"blockstate": { "forms": [["yuushya:template/slab"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": true, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"item_model": true }
 		},
 
@@ -118,7 +118,7 @@
 			"name": "side_slab",
 			"blockstate": { "forms": [["yuushya:template/side_slab"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": true, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"item_model": true }
 		},
 
@@ -190,7 +190,7 @@
 			"name": "medium_table",
 			"blockstate": { "forms": [["yuushya:template/medium_table"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": true, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"item_model": true }
 		},
 
@@ -198,7 +198,7 @@
 			"name": "big_table",
 			"blockstate": { "forms": [["yuushya:template/big_table"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": true, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"item_model": true }
 		},
 
@@ -234,7 +234,7 @@
 			"blockstate": { "forms": [["yuushya:template/couch_left","yuushya:template/couch_middle","yuushya:template/couch_right","yuushya:template/couch_none"]], "kit": "line"},
 			"item_model": "yuushya:template/couch_none",
 			"render_type": "cutout",
-			"properties": { "is_solid": true, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"item_model": true }
 		},
 
@@ -385,7 +385,7 @@
 			"render_type": "cutout",
 			"auto_generated": { "blockstate": true, "loot_table": true, "item_model": true },
 			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material": "iron", "is_solid": false, "has_collision": true, "is_delicate": false }
+			"properties": { "hardness": 1, "resistance": 1, "material": "iron", "is_solid": true, "has_collision": true, "is_delicate": false }
 		},
 
 		{
@@ -403,7 +403,7 @@
 			"render_type": "translucent",
 			"auto_generated": { "blockstate": true, "loot_table": true, "item_model": true },
 			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material":"iron", "is_solid": true, "has_collision": true, "is_delicate": false }
+			"properties": { "hardness": 1, "resistance": 1, "material":"iron", "is_solid": false, "has_collision": true, "is_delicate": false }
 		},
 
 		{
@@ -439,7 +439,7 @@
 			"render_type": "cutout",
 			"auto_generated": { "blockstate": true, "loot_table": true, "item_model": true },
 			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material":"iron", "is_solid": true, "has_collision": true, "is_delicate": false }
+			"properties": { "hardness": 1, "resistance": 1, "material":"iron", "is_solid": false, "has_collision": true, "is_delicate": false }
 		},
 
 
@@ -508,13 +508,6 @@
 			"name": "average_maple_leaves",
 			"item_group": "yuushya_extrablocks",
 			"blockstate": { "forms": [["yuushya:extra_building_material/tree/leaves_maple_medium"]]}
-		},
-
-		{
-			"class_type": "IntactBlock",
-			"name": "average_sakura",
-			"item_group": "yuushya_extrablocks",
-			"blockstate": { "forms": [["yuushya:extra_building_material/tree/sakura_medium"]]}
 		},
 
 		{
@@ -3659,7 +3652,8 @@
 			"name": "burglar_mesh",
 			"item_group": "yuushya_infrastructure",
 			"item_model": "yuushya:extra_building_material/burglar_mesh_none",
-			"blockstate": { "forms": [["yuushya:extra_building_material/burglar_mesh_top"],["yuushya:extra_building_material/burglar_mesh_middle"],["yuushya:extra_building_material/burglar_mesh_bottom"],["yuushya:extra_building_material/burglar_mesh_none"]]}
+			"blockstate": { "forms": [["yuushya:extra_building_material/burglar_mesh_top", "yuushya:extra_building_material/burglar_mesh_middle", "yuushya:extra_building_material/burglar_mesh_bottom", "yuushya:extra_building_material/burglar_mesh_none"]]
+			}
 		},
 
 		{

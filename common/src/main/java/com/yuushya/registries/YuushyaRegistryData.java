@@ -43,6 +43,8 @@ public class YuushyaRegistryData{
             public boolean blockstate;
             public boolean lootTable;
             public boolean itemModel;
+            public boolean recipe;
+            public boolean collision;
         }
         public static class BlockState{
             public String kit;

@@ -6,6 +6,7 @@ import com.yuushya.particle.YuushyaParticleFactory;
 import com.yuushya.registries.YuushyaRegistries;
 import com.yuushya.YuushyaClient;
 import com.yuushya.forge.client.ShowBlockModel;
+import com.yuushya.registries.YuushyaRegistryConfig;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.color.block.BlockColor;
 import net.minecraft.client.particle.ParticleEngine;
@@ -23,8 +24,6 @@ import net.minecraftforge.client.event.ParticleFactoryRegisterEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-
-import static com.yuushya.registries.YuushyaRegistryConfig.YuushyaData;
 
 @Mod.EventBusSubscriber(modid = Yuushya.MOD_ID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class YuushyaClientForge {
@@ -66,7 +65,7 @@ public class YuushyaClientForge {
     }
     @SubscribeEvent
     public static void onParticleFactoryRegistration(ParticleFactoryRegisterEvent event) {
-        YuushyaData.particle.forEach((e)->{
+        YuushyaRegistryConfig.YuushyaRawParticleMap.values().forEach((e)->{
             Minecraft.getInstance().particleEngine.register((ParticleType<SimpleParticleType>)YuushyaRegistries.PARTICLE_TYPES.get(e.name).get(), (spriteSet)-> YuushyaParticleFactory.create(e,spriteSet));
         });
         //Minecraft.getInstance().particleEngine.register((ParticleType<SimpleParticleType>) YuushyaRegistries.PARTICLE_TYPES.get("leaf_particle").get(), LeafParticle.Factory::new);

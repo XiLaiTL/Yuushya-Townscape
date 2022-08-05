@@ -6,11 +6,11 @@
     "MixinTitleScreen"
   ],
   "mixins": [
+    "MixinFallBackResourceManager",
     "MixinLootTables",
-    "MixinFallBackResourceManager"
+    "MixinRecipeManager"
   ],
   "server": [
-
   ],
   "injectors": {
     "defaultRequire": 1

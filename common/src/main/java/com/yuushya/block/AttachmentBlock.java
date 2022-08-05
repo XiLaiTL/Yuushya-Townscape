@@ -16,8 +16,8 @@ import static net.minecraft.world.level.block.state.properties.BlockStatePropert
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.HORIZONTAL_FACING;
 
 public class AttachmentBlock extends YuushyaBlockFactory.BlockWithClassType {
-    public AttachmentBlock(Properties properties, Integer tipLines, String classType) {
-        super(properties, tipLines, classType);
+    public AttachmentBlock(Properties properties, Integer tipLines, String classType, boolean autoCollision) {
+        super(properties, tipLines, classType,autoCollision);
     }
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> stateBuilder) {
