@@ -2,6 +2,7 @@ package com.yuushya.datagen;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+import com.yuushya.utils.YuushyaLogger;
 import net.minecraft.data.models.model.*;
 import net.minecraft.resources.ResourceLocation;
 
@@ -42,11 +43,14 @@ public class ModelData {
         return new ModelTemplate(Optional.of(resourceLocation), Optional.empty(), textureSlots);
     }
 
+    private static final Map<String,TextureSlot> textureSlotMap=new HashMap<>();
     public static TextureSlot getTextureSlot(String textureSlotString){
+        if (textureSlotMap.containsKey(textureSlotString)) return textureSlotMap.get(textureSlotString);
         try{
             Constructor<TextureSlot> c=TextureSlot.class.getDeclaredConstructor(String.class,TextureSlot.class);
             c.setAccessible(true);
-            return c.newInstance(textureSlotString,TextureSlot.ALL);
+            textureSlotMap.put(textureSlotString,c.newInstance(textureSlotString,TextureSlot.ALL));
+            return textureSlotMap.get(textureSlotString);
         } catch (InvocationTargetException | InstantiationException | IllegalAccessException | NoSuchMethodException invocationTargetException) {invocationTargetException.printStackTrace();}
         return null;
     }
@@ -64,9 +68,9 @@ public class ModelData {
             String slot = iterator.next();
             String texture = iterator.next();
             if (slots.contains(slot)){
-                TextureSlot textureSlot;
-                if (slot.equals("all")) textureSlot=TextureSlot.ALL;
-                else  textureSlot=getTextureSlot(slot);
+                TextureSlot textureSlot = slot.equals("all")
+                        ?TextureSlot.ALL
+                        :getTextureSlot(slot);
                 ResourceLocation resourceLocation=ResourceLocation.tryParse(texture);
                 if (textureSlot!=null&&resourceLocation!=null){
                     textureMapping.put(textureSlot,resourceLocation);
@@ -78,17 +82,11 @@ public class ModelData {
     public static JsonElement genTemplateModel(String templateName,List<String> slots,String singleTexture,List<String> textures){
         ResourceLocation noUse=new ResourceLocation(singleTexture);
         if ((slots==null||slots.isEmpty())&&(textures==null|| textures.isEmpty()))
-            return genTemplateModel(templateName,noUse);
+            YuushyaModelTemplateMap.get(templateName).create(noUse,TextureMapping.cube(noUse),getJsonElementToList);
         else if((slots==null||slots.isEmpty()))
             YuushyaModelTemplateMap.get(templateName).create(noUse,getTextureMapping(List.of("all"),textures),getJsonElementToList);
-        else
-            YuushyaModelTemplateMap.get(templateName).create(noUse,getTextureMapping(slots,textures),getJsonElementToList);
+        else{
+            YuushyaModelTemplateMap.get(templateName).create(noUse,getTextureMapping(slots,textures),getJsonElementToList);}
         return tempJsons.get(0);
     }
-    public static JsonElement genTemplateModel(String templateName,ResourceLocation texture){
-        YuushyaModelTemplateMap.get(templateName).create(texture,TextureMapping.cube(texture),getJsonElementToList);
-        return tempJsons.get(0);
-    }
-
-
 }
