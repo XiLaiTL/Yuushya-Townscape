@@ -119,7 +119,10 @@
 			"blockstate": { "forms": [["yuushya:template/side_slab"]], "kit": "normal"},
 			"render_type": "cutout",
 			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
-			"class_type": "template", "auto_generated": {"item_model": true }
+			"class_type": "template", "auto_generated": {"item_model": true },
+			"textures": {
+				"slots": ["all", "sides", "top"]
+			}
 		},
 
 		{
@@ -243,8 +246,11 @@
 			"blockstate": { "forms": [["yuushya:template/shelf_left","yuushya:template/shelf_middle","yuushya:template/shelf_right","yuushya:template/shelf_none"]], "kit": "line"},
 			"item_model": "yuushya:template/shelf_none",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
-			"class_type": "template", "auto_generated": {"item_model": true }
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"class_type": "template", "auto_generated": {"item_model": true },
+			"textures": {
+				"slots": ["all", "sides", "top"]
+			}
 		},
 
 
@@ -281,6 +287,15 @@
 		},
 
 		{
+			"name": "foldable_ladder",
+			"blockstate": { "forms": [["yuushya:template/foldable_ladder"]], "kit": "normal"},
+			"render_type": "cutout",
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"class_type": "template", "auto_generated": {"item_model": true }
+		},
+
+
+		{
 			"name": "clock",
 			"blockstate": { "forms": [["yuushya:template/clock"]], "kit": "normal"},
 			"render_type": "cutout",
@@ -315,6 +330,14 @@
 		{
 			"name": "chair",
 			"blockstate": { "forms": [["yuushya:template/chair"]], "kit": "normal"},
+			"render_type": "cutout",
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"class_type": "template", "auto_generated": {"item_model": true }
+		},
+
+		{
+			"name": "bar_stool",
+			"blockstate": { "forms": [["yuushya:template/bar_stool"]], "kit": "normal"},
 			"render_type": "cutout",
 			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"item_model": true }
@@ -377,6 +400,7 @@
 		},
 
 
+
 		{"name": "Block_Types_方块类", "class_type": "_comment" },
 
 		{
@@ -385,7 +409,7 @@
 			"render_type": "cutout",
 			"auto_generated": { "blockstate": true, "loot_table": true, "item_model": true },
 			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material": "iron", "is_solid": true, "has_collision": true, "is_delicate": false }
+			"properties": { "hardness": 1, "resistance": 1, "material": "iron", "is_solid": false, "has_collision": true, "is_delicate": false }
 		},
 
 		{
@@ -3906,12 +3930,6 @@
 			"blockstate": { "forms": [["yuushya:extra_building_material/street_light"]]}
 		},
 
-		{
-			"class_type": "IntactBlock",
-			"name": "ceiling_lamp",
-			"item_group": "yuushya_infrastructure",
-			"blockstate": { "forms": [["yuushya:extra_building_material/street_lamp_0"]]}
-		},
 
 		{
 			"class_type": "IntactBlock",
@@ -4079,6 +4097,13 @@
 			"name": "wheel_",
 			"item_group": "yuushya_infrastructure",
 			"blockstate": { "forms": [["yuushya:extra_building_material/wheel_"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "bicycle_stop",
+			"item_group": "yuushya_infrastructure",
+			"blockstate": { "forms": [["yuushya:extra_building_material/bicycle_stop"]]}
 		},
 
 		{"name": "Furniture_家具", "class_type": "_comment" },
@@ -4437,12 +4462,26 @@
 			"blockstate": { "forms": [["yuushya:extra_building_material/fluorescent_lamp"],["yuushya:extra_building_material/fluorescent_lamp_"]]}
 		},
 
+		{
+			"class_type": "DecoBlock",
+			"name": "desk_lamp",
+			"item_group": "yuushya_furniture",
+			"blockstate": { "forms": [["yuushya:extra_building_material/fluorescent_lamp"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "ceiling_lamp",
+			"item_group": "yuushya_furniture",
+			"blockstate": { "forms": [["yuushya:extra_building_material/street_lamp_0"]]}
+		},
+
 
 		{
 			"class_type": "ChairBlock",
 			"name": "display_cabinet",
 			"item_group": "yuushya_furniture",
-			"item_model": "yuushya:template/display_cabinet_none",
+			"item_model": "yuushya:extra_building_material/display_cabinet_none",
 			"blockstate": { "forms": [["yuushya:extra_building_material/display_cabinet_left","yuushya:extra_building_material/display_cabinet_middle","yuushya:extra_building_material/display_cabinet_right","yuushya:extra_building_material/display_cabinet_none"]]}
 		},
 
