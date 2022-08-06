@@ -1,37 +1,110 @@
 {
 	"block": [
+		{"name": "Block_Types_方块类", "class_type": "_comment" },
+
+		{
+			"name": "IntactBlock",
+			"blockstate": { "kit": "normal" },
+			"render_type": "cutout",
+			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true },
+			"class_type": "class",
+			"properties": { "hardness": 1, "resistance": 1, "material": "iron", "is_solid": false, "has_collision": true, "is_delicate": false }
+		},
+
+		{
+			"name": "PlainBlock",
+			"blockstate": { "kit": "normal" },
+			"render_type": "cutout",
+			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true },
+			"class_type": "class",
+			"properties": { "hardness": 1, "resistance": 1, "material": "iron", "is_solid": true, "has_collision": true, "is_delicate": false }
+		},
+
+		{
+			"name": "TranslucentBlock",
+			"blockstate": { "kit": "normal" },
+			"render_type": "translucent",
+			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true },
+			"class_type": "class",
+			"properties": { "hardness": 1, "resistance": 1, "material":"iron", "is_solid": false, "has_collision": true, "is_delicate": false }
+		},
+
+		{
+			"name": "DecoBlock",
+			"blockstate": { "kit": "normal" },
+			"render_type": "cutout",
+			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true },
+			"class_type": "class",
+			"properties": { "hardness": 1, "resistance": 1, "material":"iron", "is_solid": false, "has_collision": false, "is_delicate": false }
+		},
+
+		{
+			"name": "PlantBlock",
+			"blockstate": { "kit": "normal" },
+			"render_type": "cutout",
+			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true },
+			"class_type": "class",
+			"properties": { "hardness": 1, "resistance": 1, "material":"plants", "is_solid": false, "has_collision": false, "is_delicate": false }
+		},
+
+		{
+			"name": "ChairBlock",
+			"blockstate": { "kit": "line" },
+			"render_type": "cutout",
+			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true },
+			"class_type": "class",
+			"properties": { "hardness": 1, "resistance": 1, "material":"iron", "is_solid": false, "has_collision": false, "is_delicate": false }
+		},
+
+		{
+			"name": "FlowBlock",
+			"blockstate": { "kit": "pole" },
+			"render_type": "cutout",
+			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true },
+			"class_type": "class",
+			"properties": { "hardness": 1, "resistance": 1, "material":"iron", "is_solid": false, "has_collision": true, "is_delicate": false }
+		},
 
 		{"name": "Registed_Texture_Library_模组注册纹理库", "class_type": "_comment" },
-
 
 		{
 			"class_type": "block", "name": "embbed_marble_bricks",
 			"texture": {
-				"set": ["all#yuushya:block_/embbed_marble_bricks"]}
+				"value":"yuushya:block_/embbed_marble_bricks",
+				"set":  [
+					"all#yuushya:block_/embbed_marble_bricks"]}
 		},
 
 		{
 			"class_type": "block", "name": "embbed_stone_bricks",
 			"texture": {
-				"set": ["all#yuushya:block_/embbed_stone_bricks"]}
+				"value":"yuushya:block_/embbed_stone_bricks",
+				"set":  [
+					"all#yuushya:block_/embbed_stone_bricks"]}
 		},
 
 		{
 			"class_type": "block", "name": "straw_mat_a",
 			"texture": {
-				"set": ["all#yuushya:block_/straw_mat"]}
+				"value":"yuushya:block_/straw_mat",
+				"set":  [
+					"all#yuushya:block_/straw_mat"]}
 		},
 
 		{
 			"class_type": "block", "name": "straw_mat_b",
 			"texture": {
-				"set": ["all#yuushya:block_/straw_mat"]}
+				"value":"yuushya:block_/straw_mat",
+				"set":  [
+					"all#yuushya:block_/straw_mat"]}
 		},
 
 		{
 			"class_type": "block", "name": "warning_sign",
 			"texture": {
-				"set": ["all#yuushya:block_/warning"]}
+				"value":"yuushya:block_/warning",
+				"set":  [
+					"all#yuushya:block_/warning"]}
 		},
 
 		{
@@ -45,7 +118,9 @@
 			"class_type": "block", "name": "raw_acacia_wood",
 			"texture": {
 				"type": "raw_wood",
-				"set": ["all#yuushya:block_/raw_wood/raw_acacia_wood_top","sides#yuushya:block_/raw_wood/raw_acacia_wood_sides","top#yuushya:block_/raw_wood/raw_acacia_wood_top"]}
+				"value":"yuushya:block_/raw_wood/raw_acacia_wood_top",
+				"set":  [
+					"all#yuushya:block_/raw_wood/raw_acacia_wood_top","sides#yuushya:block_/raw_wood/raw_acacia_wood_sides","top#yuushya:block_/raw_wood/raw_acacia_wood_top"]}
 		},
 
 
@@ -53,56 +128,71 @@
 			"class_type": "block", "name": "raw_birch_wood",
 			"texture": {
 				"type": "raw_wood",
-				"set": ["all#yuushya:block_/raw_wood/raw_birch_wood_top","sides#yuushya:block_/raw_wood/raw_birch_wood_sides","top#yuushya:block_/raw_wood/raw_birch_wood_top"]}
+				"value":"yuushya:block_/raw_wood/raw_birch_wood_top",
+				"set":  [
+					"all#yuushya:block_/raw_wood/raw_birch_wood_top","sides#yuushya:block_/raw_wood/raw_birch_wood_sides","top#yuushya:block_/raw_wood/raw_birch_wood_top"]}
 		},
 
 		{
 			"class_type": "block", "name": "raw_dark_oak_wood",
 			"texture": {
 				"type": "raw_wood",
-				"set": ["all#yuushya:block_/raw_wood/raw_dark_oak_wood_top","sides#yuushya:block_/raw_wood/raw_dark_oak_wood_sides","top#yuushya:block_/raw_wood/raw_dark_oak_wood_top"]}
+				"value":"yuushya:block_/raw_wood/raw_dark_oak_wood_top",
+				"set":  [
+					"all#yuushya:block_/raw_wood/raw_dark_oak_wood_top","sides#yuushya:block_/raw_wood/raw_dark_oak_wood_sides","top#yuushya:block_/raw_wood/raw_dark_oak_wood_top"]}
 		},
 
 		{
 			"class_type": "block", "name": "raw_jungle_wood",
 			"texture": {
 				"type": "raw_wood",
-				"set": ["all#yuushya:block_/raw_wood/raw_jungle_wood_top","sides#yuushya:block_/raw_wood/raw_jungle_wood_sides","top#yuushya:block_/raw_wood/raw_jungle_wood_top"]}
+				"value":"yuushya:block_/raw_wood/raw_jungle_wood_top",
+				"set":  [
+					"all#yuushya:block_/raw_wood/raw_jungle_wood_top","sides#yuushya:block_/raw_wood/raw_jungle_wood_sides","top#yuushya:block_/raw_wood/raw_jungle_wood_top"]}
 		},
 
 		{
 			"class_type": "block", "name": "raw_oak_wood",
 			"texture": {
 				"type": "raw_wood",
-				"set": ["all#yuushya:block_/raw_wood/raw_oak_wood_top","sides#yuushya:block_/raw_wood/raw_oak_wood_sides","top#yuushya:block_/raw_wood/raw_oak_wood_top"]}
+				"value":"yuushya:block_/raw_wood/raw_oak_wood_top",
+				"set":  [
+					"all#yuushya:block_/raw_wood/raw_oak_wood_top","sides#yuushya:block_/raw_wood/raw_oak_wood_sides","top#yuushya:block_/raw_wood/raw_oak_wood_top"]}
 		},
 
 		{
 			"class_type": "block", "name": "raw_crimson_wood_top",
 			"texture": {
 				"type": "misc",
-				"set": ["all#yuushya:block_/raw_wood/raw_crimson_wood_top","sides#yuushya:block_/raw_wood/raw_crimson_wood_top","top#yuushya:block_/raw_wood/raw_crimson_wood_top"]}
+				"value":"yuushya:block_/raw_wood/raw_crimson_wood_top",
+				"set":  [
+					"all#yuushya:block_/raw_wood/raw_crimson_wood_top","sides#yuushya:block_/raw_wood/raw_crimson_wood_top","top#yuushya:block_/raw_wood/raw_crimson_wood_top"]}
 		},
 
 		{
 			"class_type": "block", "name": "raw_spruce_wood_top",
 			"texture": {
 				"type": "misc",
-				"set": ["all#yuushya:block_/raw_wood/raw_spruce_wood_top","sides#yuushya:block_/raw_wood/raw_spruce_wood_top","top#yuushya:block_/raw_wood/raw_spruce_wood_top"]}
+				"value":"yuushya:block_/raw_wood/raw_spruce_wood_top",
+				"set":  [
+					"all#yuushya:block_/raw_wood/raw_spruce_wood_top","sides#yuushya:block_/raw_wood/raw_spruce_wood_top","top#yuushya:block_/raw_wood/raw_spruce_wood_top"]}
 		},
 
 		{
 			"class_type": "block", "name": "raw_warped_wood_top",
 			"texture": {
 				"type": "misc",
-				"set": ["all#yuushya:block_/raw_wood/raw_warped_wood_top","sides#yuushya:block_/raw_wood/raw_warped_wood_top","top#yuushya:block_/raw_wood/raw_warped_wood_top"]}
+				"value":"yuushya:block_/raw_wood/raw_warped_wood_top",
+				"set":  [
+					"all#yuushya:block_/raw_wood/raw_warped_wood_top","sides#yuushya:block_/raw_wood/raw_warped_wood_top","top#yuushya:block_/raw_wood/raw_warped_wood_top"]}
 		},
 
 		{
 			"class_type": "block", "name": "decorative_black_wool",
 			"texture": {
 				"type": "decorative_wool",
-				"set": [
+				"value":"yuushya:block_/decorative_wool/decorative_black_wool",
+				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_black_wool",
 					"sides#yuushya:block_/decorative_wool/decorative_black_wool",
 					"top#yuushya:block_/decorative_wool/decorative_black_wool"]}
@@ -112,7 +202,8 @@
 			"class_type": "block", "name": "decorative_blue_wool",
 			"texture": {
 				"type": "decorative_wool",
-				"set": [
+				"value":"yuushya:block_/decorative_wool/decorative_blue_wool",
+				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_blue_wool",
 					"sides#yuushya:block_/decorative_wool/decorative_blue_wool",
 					"top#yuushya:block_/decorative_wool/decorative_blue_wool"]}
@@ -122,7 +213,8 @@
 			"class_type": "block", "name": "decorative_brown_wool",
 			"texture": {
 				"type": "decorative_wool",
-				"set": [
+				"value":"yuushya:block_/decorative_wool/decorative_brown_wool",
+				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_brown_wool",
 					"sides#yuushya:block_/decorative_wool/decorative_brown_wool",
 					"top#yuushya:block_/decorative_wool/decorative_brown_wool"]}
@@ -132,7 +224,8 @@
 			"class_type": "block", "name": "decorative_cyan_wool",
 			"texture": {
 				"type": "decorative_wool",
-				"set": [
+				"value":"yuushya:block_/decorative_wool/decorative_cyan_wool",
+				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_cyan_wool",
 					"sides#yuushya:block_/decorative_wool/decorative_cyan_wool",
 					"top#yuushya:block_/decorative_wool/decorative_cyan_wool"]}
@@ -142,7 +235,8 @@
 			"class_type": "block", "name": "decorative_gray_wool",
 			"texture": {
 				"type": "decorative_wool",
-				"set": [
+				"value":"yuushya:block_/decorative_wool/decorative_gray_wool",
+				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_gray_wool",
 					"sides#yuushya:block_/decorative_wool/decorative_gray_wool",
 					"top#yuushya:block_/decorative_wool/decorative_gray_wool"]}
@@ -152,7 +246,8 @@
 			"class_type": "block", "name": "decorative_green_wool",
 			"texture": {
 				"type": "decorative_wool",
-				"set": [
+				"value":"yuushya:block_/decorative_wool/decorative_green_wool",
+				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_green_wool",
 					"sides#yuushya:block_/decorative_wool/decorative_green_wool",
 					"top#yuushya:block_/decorative_wool/decorative_green_wool"]}
@@ -162,7 +257,8 @@
 			"class_type": "block", "name": "decorative_light_blue_wool",
 			"texture": {
 				"type": "decorative_wool",
-				"set": [
+				"value":"yuushya:block_/decorative_wool/decorative_light_blue_wool",
+				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_light_blue_wool",
 					"sides#yuushya:block_/decorative_wool/decorative_light_blue_wool",
 					"top#yuushya:block_/decorative_wool/decorative_light_blue_wool"]}
@@ -172,7 +268,8 @@
 			"class_type": "block", "name": "decorative_light_gray_wool",
 			"texture": {
 				"type": "decorative_wool",
-				"set": [
+				"value":"yuushya:block_/decorative_wool/decorative_light_gray_wool",
+				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_light_gray_wool",
 					"sides#yuushya:block_/decorative_wool/decorative_light_gray_wool",
 					"top#yuushya:block_/decorative_wool/decorative_light_gray_wool"]}
@@ -182,7 +279,8 @@
 			"class_type": "block", "name": "decorative_lime_wool",
 			"texture": {
 				"type": "decorative_wool",
-				"set": [
+				"value":"yuushya:block_/decorative_wool/decorative_lime_wool",
+				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_lime_wool",
 					"sides#yuushya:block_/decorative_wool/decorative_lime_wool",
 					"top#yuushya:block_/decorative_wool/decorative_lime_wool"]}
@@ -192,7 +290,8 @@
 			"class_type": "block", "name": "decorative_magenta_wool",
 			"texture": {
 				"type": "decorative_wool",
-				"set": [
+				"value":"yuushya:block_/decorative_wool/decorative_magenta_wool",
+				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_magenta_wool",
 					"sides#yuushya:block_/decorative_wool/decorative_magenta_wool",
 					"top#yuushya:block_/decorative_wool/decorative_magenta_wool"]}
@@ -202,7 +301,8 @@
 			"class_type": "block", "name": "decorative_orange_wool",
 			"texture": {
 				"type": "decorative_wool",
-				"set": [
+				"value":"yuushya:block_/decorative_wool/decorative_orange_wool",
+				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_orange_wool",
 					"sides#yuushya:block_/decorative_wool/decorative_orange_wool",
 					"top#yuushya:block_/decorative_wool/decorative_orange_wool"]}
@@ -212,7 +312,8 @@
 			"class_type": "block", "name": "decorative_pink_wool",
 			"texture": {
 				"type": "decorative_wool",
-				"set": [
+				"value":"yuushya:block_/decorative_wool/decorative_pink_wool",
+				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_pink_wool",
 					"sides#yuushya:block_/decorative_wool/decorative_pink_wool",
 					"top#yuushya:block_/decorative_wool/decorative_pink_wool"]}
@@ -222,7 +323,8 @@
 			"class_type": "block", "name": "decorative_purple_wool",
 			"texture": {
 				"type": "decorative_wool",
-				"set": [
+				"value":"yuushya:block_/decorative_wool/decorative_purple_wool",
+				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_purple_wool",
 					"sides#yuushya:block_/decorative_wool/decorative_purple_wool",
 					"top#yuushya:block_/decorative_wool/decorative_purple_wool"]}
@@ -232,7 +334,8 @@
 			"class_type": "block", "name": "decorative_red_wool",
 			"texture": {
 				"type": "decorative_wool",
-				"set": [
+				"value":"yuushya:block_/decorative_wool/decorative_red_wool",
+				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_red_wool",
 					"sides#yuushya:block_/decorative_wool/decorative_red_wool",
 					"top#yuushya:block_/decorative_wool/decorative_red_wool"]}
@@ -242,7 +345,8 @@
 			"class_type": "block", "name": "decorative_white_wool",
 			"texture": {
 				"type": "decorative_wool",
-				"set": [
+				"value":"yuushya:block_/decorative_wool/decorative_white_wool",
+				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_white_wool",
 					"sides#yuushya:block_/decorative_wool/decorative_white_wool",
 					"top#yuushya:block_/decorative_wool/decorative_white_wool"]}
@@ -252,7 +356,8 @@
 			"class_type": "block", "name": "decorative_yellow_wool",
 			"texture": {
 				"type": "decorative_wool",
-				"set": [
+				"value":"yuushya:block_/decorative_wool/decorative_yellow_wool",
+				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_yellow_wool",
 					"sides#yuushya:block_/decorative_wool/decorative_yellow_wool",
 					"top#yuushya:block_/decorative_wool/decorative_yellow_wool"]}
@@ -262,7 +367,8 @@
 			"class_type": "block", "name": "market_block_blue",
 			"texture": {
 				"type": "decorative_wool",
-				"set": [
+				"value":"yuushya:block_/decorative_wool/market_block_blue",
+				"set":  [
 					"all#yuushya:block_/decorative_wool/market_block_blue",
 					"sides#yuushya:block_/decorative_wool/market_block_blue",
 					"top#yuushya:block_/decorative_wool/market_block_blue"]}
@@ -272,7 +378,8 @@
 			"class_type": "block", "name": "market_block_brown",
 			"texture": {
 				"type": "decorative_wool",
-				"set": [
+				"value":"yuushya:block_/decorative_wool/market_block_brown",
+				"set":  [
 					"all#yuushya:block_/decorative_wool/market_block_brown",
 					"sides#yuushya:block_/decorative_wool/market_block_brown",
 					"top#yuushya:block_/decorative_wool/market_block_brown"]}
@@ -282,7 +389,8 @@
 			"class_type": "block", "name": "market_block_green",
 			"texture": {
 				"type": "decorative_wool",
-				"set": [
+				"value":"yuushya:block_/decorative_wool/market_block_green",
+				"set":  [
 					"all#yuushya:block_/decorative_wool/market_block_green",
 					"sides#yuushya:block_/decorative_wool/market_block_green",
 					"top#yuushya:block_/decorative_wool/market_block_green"]}
@@ -292,7 +400,8 @@
 			"class_type": "block", "name": "market_block_light_gray",
 			"texture": {
 				"type": "decorative_wool",
-				"set": [
+				"value":"yuushya:block_/decorative_wool/market_block_light_gray",
+				"set":  [
 					"all#yuushya:block_/decorative_wool/market_block_light_gray",
 					"sides#yuushya:block_/decorative_wool/market_block_light_gray",
 					"top#yuushya:block_/decorative_wool/market_block_light_gray"]}
@@ -302,7 +411,8 @@
 			"class_type": "block", "name": "market_block_mixed",
 			"texture": {
 				"type": "decorative_wool",
-				"set": [
+				"value":"yuushya:block_/decorative_wool/market_block_mixed",
+				"set":  [
 					"all#yuushya:block_/decorative_wool/market_block_mixed",
 					"sides#yuushya:block_/decorative_wool/market_block_mixed",
 					"top#yuushya:block_/decorative_wool/market_block_mixed"]}
@@ -312,7 +422,8 @@
 			"class_type": "block", "name": "market_block_purple",
 			"texture": {
 				"type": "decorative_wool",
-				"set": [
+				"value":"yuushya:block_/decorative_wool/market_block_purple",
+				"set":  [
 					"all#yuushya:block_/decorative_wool/market_block_purple",
 					"sides#yuushya:block_/decorative_wool/market_block_purple",
 					"top#yuushya:block_/decorative_wool/market_block_purple"]}
@@ -322,7 +433,8 @@
 			"class_type": "block", "name": "market_block_red",
 			"texture": {
 				"type": "decorative_wool",
-				"set": [
+				"value":"yuushya:block_/decorative_wool/market_block_red",
+				"set":  [
 					"all#yuushya:block_/decorative_wool/market_block_red",
 					"sides#yuushya:block_/decorative_wool/market_block_red",
 					"top#yuushya:block_/decorative_wool/market_block_red"]}
@@ -1046,76 +1158,6 @@
 			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "recipe": true,"item_model": true }
 		},
-
-
-
-		{"name": "Block_Types_方块类", "class_type": "_comment" },
-
-		{
-			"name": "IntactBlock",
-			"blockstate": { "kit": "normal" },
-			"render_type": "cutout",
-			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true },
-			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material": "iron", "is_solid": false, "has_collision": true, "is_delicate": false }
-		},
-
-		{
-			"name": "PlainBlock",
-			"blockstate": { "kit": "normal" },
-			"render_type": "cutout",
-			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true },
-			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material": "iron", "is_solid": true, "has_collision": true, "is_delicate": false }
-		},
-
-		{
-			"name": "TranslucentBlock",
-			"blockstate": { "kit": "normal" },
-			"render_type": "translucent",
-			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true },
-			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material":"iron", "is_solid": false, "has_collision": true, "is_delicate": false }
-		},
-
-		{
-			"name": "DecoBlock",
-			"blockstate": { "kit": "normal" },
-			"render_type": "cutout",
-			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true },
-			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material":"iron", "is_solid": false, "has_collision": false, "is_delicate": false }
-		},
-
-		{
-			"name": "PlantBlock",
-			"blockstate": { "kit": "normal" },
-			"render_type": "cutout",
-			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true },
-			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material":"plants", "is_solid": false, "has_collision": false, "is_delicate": false }
-		},
-
-		{
-			"name": "ChairBlock",
-			"blockstate": { "kit": "line" },
-			"render_type": "cutout",
-			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true },
-			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material":"iron", "is_solid": false, "has_collision": false, "is_delicate": false }
-		},
-
-		{
-			"name": "FlowBlock",
-			"blockstate": { "kit": "pole" },
-			"render_type": "cutout",
-			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true },
-			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material":"iron", "is_solid": false, "has_collision": true, "is_delicate": false }
-		},
-
-
-
 
 		{"name": "Extra_Building_Block_拓展方块", "class_type": "_comment" },
 
