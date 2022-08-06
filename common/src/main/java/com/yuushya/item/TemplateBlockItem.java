@@ -80,7 +80,7 @@ public class TemplateBlockItem extends AbstractYuushyaItem {
                     ? new ResourceLocation(block.name)
                     : new ResourceLocation(Yuushya.MOD_ID,block.name);
             textComponent.append(new TranslatableComponent(Registry.BLOCK.get(resourceLocation).getDescriptionId())).append(" ");
-            if (index%3==0) {
+            if (index%3==0||index==usageList.size()) {
                 tooltips.add(textComponent);
                 textComponent=new TextComponent("");
             }
