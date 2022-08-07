@@ -1,6 +1,6 @@
 {
 	"block": [
-		{"name": "Block_Types_方块类", "class_type": "_comment" },
+		{"name": "~Block_Types_方块类", "class_type": "_comment" },
 
 		{
 			"name": "IntactBlock",
@@ -65,10 +65,11 @@
 			"properties": { "hardness": 1, "resistance": 1, "material":"iron", "is_solid": false, "has_collision": true, "is_delicate": false }
 		},
 
-		{"name": "Registed_Texture_Library_模组注册纹理库", "class_type": "_comment" },
+		{"name": "~Registed_Texture_Library_模组注册纹理库", "class_type": "_comment" },
 
 		{
 			"class_type": "block", "name": "embbed_marble_bricks",
+			"properties": {"lines": 0 }, 
 			"texture": {
 				"value":"yuushya:block_/embbed_marble_bricks",
 				"set":  [
@@ -77,6 +78,7 @@
 
 		{
 			"class_type": "block", "name": "embbed_stone_bricks",
+			"properties": {"lines": 0 }, 
 			"texture": {
 				"value":"yuushya:block_/embbed_stone_bricks",
 				"set":  [
@@ -85,6 +87,7 @@
 
 		{
 			"class_type": "block", "name": "straw_mat_a",
+			"properties": {"lines": 0 }, 
 			"texture": {
 				"value":"yuushya:block_/straw_mat",
 				"set":  [
@@ -93,14 +96,34 @@
 
 		{
 			"class_type": "block", "name": "straw_mat_b",
+			"properties": {"lines": 0 }, 
 			"texture": {
 				"value":"yuushya:block_/straw_mat",
 				"set":  [
 					"all#yuushya:block_/straw_mat"]}
 		},
+		
+		{
+			"class_type": "block", "name": "columned_sandstone_a",
+			"properties": {"lines": 0 }, 
+			"texture": {
+				"value":"yuushya:block_/columned_sandstone",
+				"set":  [
+					"all#yuushya:block_/columned_sandstone"]}
+		},
+
+		{
+			"class_type": "block", "name": "columned_sandstone_b",
+			"properties": {"lines": 0 }, 
+			"texture": {
+				"value":"yuushya:block_/columned_sandstone",
+				"set":  [
+					"all#yuushya:block_/columned_sandstone"]}
+		},
 
 		{
 			"class_type": "block", "name": "warning_sign",
+			"properties": {"lines": 0 }, 
 			"texture": {
 				"value":"yuushya:block_/warning",
 				"set":  [
@@ -108,16 +131,18 @@
 		},
 
 		{
-			"class_type": "PlainBlock",
-			"name": "japanese_wall",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
-			"blockstate": { "forms": [["yuushya:block/japanese_wall"]]}
+			"class_type": "block", "name": "stone_with_dot",
+			"properties": {"lines": 0 }, 
+			"texture": {
+				"value":"yuushya:block_/stone/stone_with_dot",
+				"set":  [
+					"all#yuushya:block_/stone/stone_with_dot"]}
 		},
 
 		{
 			"class_type": "block", "name": "raw_acacia_wood",
 			"texture": {
-				"type": "raw_wood",
+				"type": "raw_wood", "properties": {"sound": "wood" },
 				"value":"yuushya:block_/raw_wood/raw_acacia_wood_top",
 				"set":  [
 					"all#yuushya:block_/raw_wood/raw_acacia_wood_top","sides#yuushya:block_/raw_wood/raw_acacia_wood_sides","top#yuushya:block_/raw_wood/raw_acacia_wood_top"]}
@@ -127,7 +152,7 @@
 		{
 			"class_type": "block", "name": "raw_birch_wood",
 			"texture": {
-				"type": "raw_wood",
+				"type": "raw_wood", "properties": {"sound": "wood" },
 				"value":"yuushya:block_/raw_wood/raw_birch_wood_top",
 				"set":  [
 					"all#yuushya:block_/raw_wood/raw_birch_wood_top","sides#yuushya:block_/raw_wood/raw_birch_wood_sides","top#yuushya:block_/raw_wood/raw_birch_wood_top"]}
@@ -136,7 +161,7 @@
 		{
 			"class_type": "block", "name": "raw_dark_oak_wood",
 			"texture": {
-				"type": "raw_wood",
+				"type": "raw_wood", "properties": {"sound": "wood" },
 				"value":"yuushya:block_/raw_wood/raw_dark_oak_wood_top",
 				"set":  [
 					"all#yuushya:block_/raw_wood/raw_dark_oak_wood_top","sides#yuushya:block_/raw_wood/raw_dark_oak_wood_sides","top#yuushya:block_/raw_wood/raw_dark_oak_wood_top"]}
@@ -145,7 +170,7 @@
 		{
 			"class_type": "block", "name": "raw_jungle_wood",
 			"texture": {
-				"type": "raw_wood",
+				"type": "raw_wood", "properties": {"sound": "wood" },
 				"value":"yuushya:block_/raw_wood/raw_jungle_wood_top",
 				"set":  [
 					"all#yuushya:block_/raw_wood/raw_jungle_wood_top","sides#yuushya:block_/raw_wood/raw_jungle_wood_sides","top#yuushya:block_/raw_wood/raw_jungle_wood_top"]}
@@ -154,7 +179,7 @@
 		{
 			"class_type": "block", "name": "raw_oak_wood",
 			"texture": {
-				"type": "raw_wood",
+				"type": "raw_wood", "properties": {"sound": "wood" },
 				"value":"yuushya:block_/raw_wood/raw_oak_wood_top",
 				"set":  [
 					"all#yuushya:block_/raw_wood/raw_oak_wood_top","sides#yuushya:block_/raw_wood/raw_oak_wood_sides","top#yuushya:block_/raw_wood/raw_oak_wood_top"]}
@@ -190,7 +215,7 @@
 		{
 			"class_type": "block", "name": "decorative_black_wool",
 			"texture": {
-				"type": "decorative_wool",
+				"type": "decorative_wool", "properties": {"sound": "wool" },
 				"value":"yuushya:block_/decorative_wool/decorative_black_wool",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_black_wool",
@@ -201,7 +226,7 @@
 		{
 			"class_type": "block", "name": "decorative_blue_wool",
 			"texture": {
-				"type": "decorative_wool",
+				"type": "decorative_wool", "properties": {"sound": "wool" },
 				"value":"yuushya:block_/decorative_wool/decorative_blue_wool",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_blue_wool",
@@ -212,7 +237,7 @@
 		{
 			"class_type": "block", "name": "decorative_brown_wool",
 			"texture": {
-				"type": "decorative_wool",
+				"type": "decorative_wool", "properties": {"sound": "wool" },
 				"value":"yuushya:block_/decorative_wool/decorative_brown_wool",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_brown_wool",
@@ -223,7 +248,7 @@
 		{
 			"class_type": "block", "name": "decorative_cyan_wool",
 			"texture": {
-				"type": "decorative_wool",
+				"type": "decorative_wool", "properties": {"sound": "wool" },
 				"value":"yuushya:block_/decorative_wool/decorative_cyan_wool",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_cyan_wool",
@@ -234,7 +259,7 @@
 		{
 			"class_type": "block", "name": "decorative_gray_wool",
 			"texture": {
-				"type": "decorative_wool",
+				"type": "decorative_wool", "properties": {"sound": "wool" },
 				"value":"yuushya:block_/decorative_wool/decorative_gray_wool",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_gray_wool",
@@ -245,7 +270,7 @@
 		{
 			"class_type": "block", "name": "decorative_green_wool",
 			"texture": {
-				"type": "decorative_wool",
+				"type": "decorative_wool", "properties": {"sound": "wool" },
 				"value":"yuushya:block_/decorative_wool/decorative_green_wool",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_green_wool",
@@ -256,7 +281,7 @@
 		{
 			"class_type": "block", "name": "decorative_light_blue_wool",
 			"texture": {
-				"type": "decorative_wool",
+				"type": "decorative_wool", "properties": {"sound": "wool" },
 				"value":"yuushya:block_/decorative_wool/decorative_light_blue_wool",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_light_blue_wool",
@@ -267,7 +292,7 @@
 		{
 			"class_type": "block", "name": "decorative_light_gray_wool",
 			"texture": {
-				"type": "decorative_wool",
+				"type": "decorative_wool", "properties": {"sound": "wool" },
 				"value":"yuushya:block_/decorative_wool/decorative_light_gray_wool",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_light_gray_wool",
@@ -278,7 +303,7 @@
 		{
 			"class_type": "block", "name": "decorative_lime_wool",
 			"texture": {
-				"type": "decorative_wool",
+				"type": "decorative_wool", "properties": {"sound": "wool" },
 				"value":"yuushya:block_/decorative_wool/decorative_lime_wool",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_lime_wool",
@@ -289,7 +314,7 @@
 		{
 			"class_type": "block", "name": "decorative_magenta_wool",
 			"texture": {
-				"type": "decorative_wool",
+				"type": "decorative_wool", "properties": {"sound": "wool" },
 				"value":"yuushya:block_/decorative_wool/decorative_magenta_wool",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_magenta_wool",
@@ -300,7 +325,7 @@
 		{
 			"class_type": "block", "name": "decorative_orange_wool",
 			"texture": {
-				"type": "decorative_wool",
+				"type": "decorative_wool", "properties": {"sound": "wool" },
 				"value":"yuushya:block_/decorative_wool/decorative_orange_wool",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_orange_wool",
@@ -311,7 +336,7 @@
 		{
 			"class_type": "block", "name": "decorative_pink_wool",
 			"texture": {
-				"type": "decorative_wool",
+				"type": "decorative_wool", "properties": {"sound": "wool" },
 				"value":"yuushya:block_/decorative_wool/decorative_pink_wool",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_pink_wool",
@@ -322,7 +347,7 @@
 		{
 			"class_type": "block", "name": "decorative_purple_wool",
 			"texture": {
-				"type": "decorative_wool",
+				"type": "decorative_wool", "properties": {"sound": "wool" },
 				"value":"yuushya:block_/decorative_wool/decorative_purple_wool",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_purple_wool",
@@ -333,7 +358,7 @@
 		{
 			"class_type": "block", "name": "decorative_red_wool",
 			"texture": {
-				"type": "decorative_wool",
+				"type": "decorative_wool", "properties": {"sound": "wool" },
 				"value":"yuushya:block_/decorative_wool/decorative_red_wool",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_red_wool",
@@ -344,7 +369,7 @@
 		{
 			"class_type": "block", "name": "decorative_white_wool",
 			"texture": {
-				"type": "decorative_wool",
+				"type": "decorative_wool", "properties": {"sound": "wool" },
 				"value":"yuushya:block_/decorative_wool/decorative_white_wool",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_white_wool",
@@ -355,7 +380,7 @@
 		{
 			"class_type": "block", "name": "decorative_yellow_wool",
 			"texture": {
-				"type": "decorative_wool",
+				"type": "decorative_wool", "properties": {"sound": "wool" },
 				"value":"yuushya:block_/decorative_wool/decorative_yellow_wool",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_yellow_wool",
@@ -366,7 +391,7 @@
 		{
 			"class_type": "block", "name": "market_block_blue",
 			"texture": {
-				"type": "decorative_wool",
+				"type": "decorative_wool", "properties": {"sound": "wool" },
 				"value":"yuushya:block_/decorative_wool/market_block_blue",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/market_block_blue",
@@ -377,7 +402,7 @@
 		{
 			"class_type": "block", "name": "market_block_brown",
 			"texture": {
-				"type": "decorative_wool",
+				"type": "decorative_wool", "properties": {"sound": "wool" },
 				"value":"yuushya:block_/decorative_wool/market_block_brown",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/market_block_brown",
@@ -388,7 +413,7 @@
 		{
 			"class_type": "block", "name": "market_block_green",
 			"texture": {
-				"type": "decorative_wool",
+				"type": "decorative_wool", "properties": {"sound": "wool" },
 				"value":"yuushya:block_/decorative_wool/market_block_green",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/market_block_green",
@@ -399,7 +424,7 @@
 		{
 			"class_type": "block", "name": "market_block_light_gray",
 			"texture": {
-				"type": "decorative_wool",
+				"type": "decorative_wool", "properties": {"sound": "wool" },
 				"value":"yuushya:block_/decorative_wool/market_block_light_gray",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/market_block_light_gray",
@@ -410,7 +435,7 @@
 		{
 			"class_type": "block", "name": "market_block_mixed",
 			"texture": {
-				"type": "decorative_wool",
+				"type": "decorative_wool", "properties": {"sound": "wool" },
 				"value":"yuushya:block_/decorative_wool/market_block_mixed",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/market_block_mixed",
@@ -421,7 +446,7 @@
 		{
 			"class_type": "block", "name": "market_block_purple",
 			"texture": {
-				"type": "decorative_wool",
+				"type": "decorative_wool", "properties": {"sound": "wool" },
 				"value":"yuushya:block_/decorative_wool/market_block_purple",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/market_block_purple",
@@ -432,7 +457,7 @@
 		{
 			"class_type": "block", "name": "market_block_red",
 			"texture": {
-				"type": "decorative_wool",
+				"type": "decorative_wool", "properties": {"sound": "wool" },
 				"value":"yuushya:block_/decorative_wool/market_block_red",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/market_block_red",
@@ -441,7 +466,1081 @@
 		},
 
 
-		{"name": "Vanilla-Imported_Texture_Library_原版引用纹理库", "class_type": "_comment" },
+		{
+			"class_type": "block", "name": "a_black_blindwall",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/blindwall/black_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/black_blindwall",
+					"sides#yuushya:block_/blindwall/black_blindwall",
+					"top#yuushya:block_/blindwall/black_blindwall"]}
+		},
+
+		{
+			"class_type": "block", "name": "a_blue_blindwall",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/blindwall/blue_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/blue_blindwall",
+					"sides#yuushya:block_/blindwall/blue_blindwall",
+					"top#yuushya:block_/blindwall/blue_blindwall"]}
+		},
+
+		{
+			"class_type": "block", "name": "a_brown_blindwall",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/blindwall/brown_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/brown_blindwall",
+					"sides#yuushya:block_/blindwall/brown_blindwall",
+					"top#yuushya:block_/blindwall/brown_blindwall"]}
+		},
+
+		{
+			"class_type": "block", "name": "a_cyan_blindwall",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/blindwall/cyan_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/cyan_blindwall",
+					"sides#yuushya:block_/blindwall/cyan_blindwall",
+					"top#yuushya:block_/blindwall/cyan_blindwall"]}
+		},
+
+		{
+			"class_type": "block", "name": "a_gray_blindwall",
+			"texture": {
+				"properties": {"lines": 0 },
+				"value":"yuushya:block_/blindwall/gray_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/gray_blindwall",
+					"sides#yuushya:block_/blindwall/gray_blindwall",
+					"top#yuushya:block_/blindwall/gray_blindwall"]}
+		},
+
+		{
+			"class_type": "block", "name": "a_green_blindwall",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/blindwall/green_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/green_blindwall",
+					"sides#yuushya:block_/blindwall/green_blindwall",
+					"top#yuushya:block_/blindwall/green_blindwall"]}
+		},
+
+		{
+			"class_type": "block", "name": "a_light_blue_blindwall",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/blindwall/light_blue_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/light_blue_blindwall",
+					"sides#yuushya:block_/blindwall/light_blue_blindwall",
+					"top#yuushya:block_/blindwall/light_blue_blindwall"]}
+		},
+
+		{
+			"class_type": "block", "name": "a_light_gray_blindwall",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/blindwall/light_gray_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/light_gray_blindwall",
+					"sides#yuushya:block_/blindwall/light_gray_blindwall",
+					"top#yuushya:block_/blindwall/light_gray_blindwall"]}
+		},
+
+		{
+			"class_type": "block", "name": "a_lime_blindwall",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/blindwall/lime_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/lime_blindwall",
+					"sides#yuushya:block_/blindwall/lime_blindwall",
+					"top#yuushya:block_/blindwall/lime_blindwall"]}
+		},
+
+		{
+			"class_type": "block", "name": "a_magenta_blindwall",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/blindwall/magenta_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/magenta_blindwall",
+					"sides#yuushya:block_/blindwall/magenta_blindwall",
+					"top#yuushya:block_/blindwall/magenta_blindwall"]}
+		},
+
+		{
+			"class_type": "block", "name": "a_orange_blindwall",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/blindwall/orange_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/orange_blindwall",
+					"sides#yuushya:block_/blindwall/orange_blindwall",
+					"top#yuushya:block_/blindwall/orange_blindwall"]}
+		},
+
+		{
+			"class_type": "block", "name": "a_pink_blindwall",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/blindwall/pink_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/pink_blindwall",
+					"sides#yuushya:block_/blindwall/pink_blindwall",
+					"top#yuushya:block_/blindwall/pink_blindwall"]}
+		},
+
+		{
+			"class_type": "block", "name": "a_purple_blindwall",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/blindwall/purple_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/purple_blindwall",
+					"sides#yuushya:block_/blindwall/purple_blindwall",
+					"top#yuushya:block_/blindwall/purple_blindwall"]}
+		},
+
+		{
+			"class_type": "block", "name": "a_red_blindwall",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/blindwall/red_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/red_blindwall",
+					"sides#yuushya:block_/blindwall/red_blindwall",
+					"top#yuushya:block_/blindwall/red_blindwall"]}
+		},
+
+		{
+			"class_type": "block", "name": "a_white_blindwall",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/blindwall/white_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/white_blindwall",
+					"sides#yuushya:block_/blindwall/white_blindwall",
+					"top#yuushya:block_/blindwall/white_blindwall"]}
+		},
+
+		{
+			"class_type": "block", "name": "a_yellow_blindwall",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/blindwall/yellow_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/yellow_blindwall",
+					"sides#yuushya:block_/blindwall/yellow_blindwall",
+					"top#yuushya:block_/blindwall/yellow_blindwall"]}
+		},
+		
+		{
+			"class_type": "block", "name": "b_black_blindwall",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/blindwall/black_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/black_blindwall",
+					"sides#yuushya:block_/blindwall/black_blindwall",
+					"top#yuushya:block_/blindwall/black_blindwall"]}
+		},
+
+		{
+			"class_type": "block", "name": "b_blue_blindwall",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/blindwall/blue_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/blue_blindwall",
+					"sides#yuushya:block_/blindwall/blue_blindwall",
+					"top#yuushya:block_/blindwall/blue_blindwall"]}
+		},
+
+		{
+			"class_type": "block", "name": "b_brown_blindwall",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/blindwall/brown_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/brown_blindwall",
+					"sides#yuushya:block_/blindwall/brown_blindwall",
+					"top#yuushya:block_/blindwall/brown_blindwall"]}
+		},
+
+		{
+			"class_type": "block", "name": "b_cyan_blindwall",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/blindwall/cyan_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/cyan_blindwall",
+					"sides#yuushya:block_/blindwall/cyan_blindwall",
+					"top#yuushya:block_/blindwall/cyan_blindwall"]}
+		},
+
+		{
+			"class_type": "block", "name": "b_gray_blindwall",
+			"texture": {
+				"properties": {"lines": 0 },
+				"value":"yuushya:block_/blindwall/gray_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/gray_blindwall",
+					"sides#yuushya:block_/blindwall/gray_blindwall",
+					"top#yuushya:block_/blindwall/gray_blindwall"]}
+		},
+
+		{
+			"class_type": "block", "name": "b_green_blindwall",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/blindwall/green_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/green_blindwall",
+					"sides#yuushya:block_/blindwall/green_blindwall",
+					"top#yuushya:block_/blindwall/green_blindwall"]}
+		},
+
+		{
+			"class_type": "block", "name": "b_light_blue_blindwall",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/blindwall/light_blue_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/light_blue_blindwall",
+					"sides#yuushya:block_/blindwall/light_blue_blindwall",
+					"top#yuushya:block_/blindwall/light_blue_blindwall"]}
+		},
+
+		{
+			"class_type": "block", "name": "b_light_gray_blindwall",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/blindwall/light_gray_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/light_gray_blindwall",
+					"sides#yuushya:block_/blindwall/light_gray_blindwall",
+					"top#yuushya:block_/blindwall/light_gray_blindwall"]}
+		},
+
+		{
+			"class_type": "block", "name": "b_lime_blindwall",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/blindwall/lime_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/lime_blindwall",
+					"sides#yuushya:block_/blindwall/lime_blindwall",
+					"top#yuushya:block_/blindwall/lime_blindwall"]}
+		},
+
+		{
+			"class_type": "block", "name": "b_magenta_blindwall",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/blindwall/magenta_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/magenta_blindwall",
+					"sides#yuushya:block_/blindwall/magenta_blindwall",
+					"top#yuushya:block_/blindwall/magenta_blindwall"]}
+		},
+
+		{
+			"class_type": "block", "name": "b_orange_blindwall",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/blindwall/orange_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/orange_blindwall",
+					"sides#yuushya:block_/blindwall/orange_blindwall",
+					"top#yuushya:block_/blindwall/orange_blindwall"]}
+		},
+
+		{
+			"class_type": "block", "name": "b_pink_blindwall",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/blindwall/pink_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/pink_blindwall",
+					"sides#yuushya:block_/blindwall/pink_blindwall",
+					"top#yuushya:block_/blindwall/pink_blindwall"]}
+		},
+
+		{
+			"class_type": "block", "name": "b_purple_blindwall",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/blindwall/purple_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/purple_blindwall",
+					"sides#yuushya:block_/blindwall/purple_blindwall",
+					"top#yuushya:block_/blindwall/purple_blindwall"]}
+		},
+
+		{
+			"class_type": "block", "name": "b_red_blindwall",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/blindwall/red_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/red_blindwall",
+					"sides#yuushya:block_/blindwall/red_blindwall",
+					"top#yuushya:block_/blindwall/red_blindwall"]}
+		},
+
+		{
+			"class_type": "block", "name": "b_white_blindwall",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/blindwall/white_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/white_blindwall",
+					"sides#yuushya:block_/blindwall/white_blindwall",
+					"top#yuushya:block_/blindwall/white_blindwall"]}
+		},
+
+		{
+			"class_type": "block", "name": "b_yellow_blindwall",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/blindwall/yellow_blindwall",
+				"set":  [
+					"all#yuushya:block_/blindwall/yellow_blindwall",
+					"sides#yuushya:block_/blindwall/yellow_blindwall",
+					"top#yuushya:block_/blindwall/yellow_blindwall"]}
+		},
+		
+		{
+			"class_type": "block", "name": "black_concrete_top",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/concrete/black_concrete_top",
+				"set":  [
+					"all#yuushya:block_/concrete/black_concrete_top",
+					"sides#yuushya:block_/concrete/black_concrete_top",
+					"top#yuushya:block_/concrete/black_concrete_top"]}
+		},
+
+		{
+			"class_type": "block", "name": "blue_concrete_top",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/concrete/blue_concrete_top",
+				"set":  [
+					"all#yuushya:block_/concrete/blue_concrete_top",
+					"sides#yuushya:block_/concrete/blue_concrete_top",
+					"top#yuushya:block_/concrete/blue_concrete_top"]}
+		},
+
+		{
+			"class_type": "block", "name": "brown_concrete_top",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/concrete/brown_concrete_top",
+				"set":  [
+					"all#yuushya:block_/concrete/brown_concrete_top",
+					"sides#yuushya:block_/concrete/brown_concrete_top",
+					"top#yuushya:block_/concrete/brown_concrete_top"]}
+		},
+
+		{
+			"class_type": "block", "name": "cyan_concrete_top",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/concrete/cyan_concrete_top",
+				"set":  [
+					"all#yuushya:block_/concrete/cyan_concrete_top",
+					"sides#yuushya:block_/concrete/cyan_concrete_top",
+					"top#yuushya:block_/concrete/cyan_concrete_top"]}
+		},
+
+		{
+			"class_type": "block", "name": "gray_concrete_top",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/concrete/gray_concrete_top",
+				"set":  [
+					"all#yuushya:block_/concrete/gray_concrete_top",
+					"sides#yuushya:block_/concrete/gray_concrete_top",
+					"top#yuushya:block_/concrete/gray_concrete_top"]}
+		},
+
+		{
+			"class_type": "block", "name": "green_concrete_top",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/concrete/green_concrete_top",
+				"set":  [
+					"all#yuushya:block_/concrete/green_concrete_top",
+					"sides#yuushya:block_/concrete/green_concrete_top",
+					"top#yuushya:block_/concrete/green_concrete_top"]}
+		},
+
+		{
+			"class_type": "block", "name": "light_blue_concrete_top",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/concrete/light_blue_concrete_top",
+				"set":  [
+					"all#yuushya:block_/concrete/light_blue_concrete_top",
+					"sides#yuushya:block_/concrete/light_blue_concrete_top",
+					"top#yuushya:block_/concrete/light_blue_concrete_top"]}
+		},
+
+		{
+			"class_type": "block", "name": "light_gray_concrete_top",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/concrete/light_gray_concrete_top",
+				"set":  [
+					"all#yuushya:block_/concrete/light_gray_concrete_top",
+					"sides#yuushya:block_/concrete/light_gray_concrete_top",
+					"top#yuushya:block_/concrete/light_gray_concrete_top"]}
+		},
+
+		{
+			"class_type": "block", "name": "lime_concrete_top",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/concrete/lime_concrete_top",
+				"set":  [
+					"all#yuushya:block_/concrete/lime_concrete_top",
+					"sides#yuushya:block_/concrete/lime_concrete_top",
+					"top#yuushya:block_/concrete/lime_concrete_top"]}
+		},
+
+		{
+			"class_type": "block", "name": "magenta_concrete_top",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/concrete/magenta_concrete_top",
+				"set":  [
+					"all#yuushya:block_/concrete/magenta_concrete_top",
+					"sides#yuushya:block_/concrete/magenta_concrete_top",
+					"top#yuushya:block_/concrete/magenta_concrete_top"]}
+		},
+
+		{
+			"class_type": "block", "name": "orange_concrete_top",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/concrete/orange_concrete_top",
+				"set":  [
+					"all#yuushya:block_/concrete/orange_concrete_top",
+					"sides#yuushya:block_/concrete/orange_concrete_top",
+					"top#yuushya:block_/concrete/orange_concrete_top"]}
+		},
+
+		{
+			"class_type": "block", "name": "pink_concrete_top",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/concrete/pink_concrete_top",
+				"set":  [
+					"all#yuushya:block_/concrete/pink_concrete_top",
+					"sides#yuushya:block_/concrete/pink_concrete_top",
+					"top#yuushya:block_/concrete/pink_concrete_top"]}
+		},
+
+		{
+			"class_type": "block", "name": "purple_concrete_top",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/concrete/purple_concrete_top",
+				"set":  [
+					"all#yuushya:block_/concrete/purple_concrete_top",
+					"sides#yuushya:block_/concrete/purple_concrete_top",
+					"top#yuushya:block_/concrete/purple_concrete_top"]}
+		},
+
+		{
+			"class_type": "block", "name": "red_concrete_top",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/concrete/red_concrete_top",
+				"set":  [
+					"all#yuushya:block_/concrete/red_concrete_top",
+					"sides#yuushya:block_/concrete/red_concrete_top",
+					"top#yuushya:block_/concrete/red_concrete_top"]}
+		},
+
+		{
+			"class_type": "block", "name": "white_concrete_top",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/concrete/white_concrete_top",
+				"set":  [
+					"all#yuushya:block_/concrete/white_concrete_top",
+					"sides#yuushya:block_/concrete/white_concrete_top",
+					"top#yuushya:block_/concrete/white_concrete_top"]}
+		},
+
+		{
+			"class_type": "block", "name": "yellow_concrete_top",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/concrete/yellow_concrete_top",
+				"set":  [
+					"all#yuushya:block_/concrete/yellow_concrete_top",
+					"sides#yuushya:block_/concrete/yellow_concrete_top",
+					"top#yuushya:block_/concrete/yellow_concrete_top"]}
+		},
+
+
+		{
+			"class_type": "block", "name": "black_acrylic",
+			"texture": {
+				"type": "acrylic",
+				"value":"yuushya:block_/acrylic/black_acrylic",
+				"set":  [
+					"all#yuushya:block_/acrylic/black_acrylic",
+					"sides#yuushya:block_/acrylic/black_acrylic",
+					"top#yuushya:block_/acrylic/black_acrylic"]}
+		},
+
+		{
+			"class_type": "block", "name": "blue_acrylic",
+			"texture": {
+				"type": "acrylic",
+				"value":"yuushya:block_/acrylic/blue_acrylic",
+				"set":  [
+					"all#yuushya:block_/acrylic/blue_acrylic",
+					"sides#yuushya:block_/acrylic/blue_acrylic",
+					"top#yuushya:block_/acrylic/blue_acrylic"]}
+		},
+
+		{
+			"class_type": "block", "name": "brown_acrylic",
+			"texture": {
+				"type": "acrylic",
+				"value":"yuushya:block_/acrylic/brown_acrylic",
+				"set":  [
+					"all#yuushya:block_/acrylic/brown_acrylic",
+					"sides#yuushya:block_/acrylic/brown_acrylic",
+					"top#yuushya:block_/acrylic/brown_acrylic"]}
+		},
+
+		{
+			"class_type": "block", "name": "cyan_acrylic",
+			"texture": {
+				"type": "acrylic",
+				"value":"yuushya:block_/acrylic/cyan_acrylic",
+				"set":  [
+					"all#yuushya:block_/acrylic/cyan_acrylic",
+					"sides#yuushya:block_/acrylic/cyan_acrylic",
+					"top#yuushya:block_/acrylic/cyan_acrylic"]}
+		},
+
+		{
+			"class_type": "block", "name": "gray_acrylic",
+			"texture": {
+				"type": "acrylic",
+				"value":"yuushya:block_/acrylic/gray_acrylic",
+				"set":  [
+					"all#yuushya:block_/acrylic/gray_acrylic",
+					"sides#yuushya:block_/acrylic/gray_acrylic",
+					"top#yuushya:block_/acrylic/gray_acrylic"]}
+		},
+
+		{
+			"class_type": "block", "name": "green_acrylic",
+			"texture": {
+				"type": "acrylic",
+				"value":"yuushya:block_/acrylic/green_acrylic",
+				"set":  [
+					"all#yuushya:block_/acrylic/green_acrylic",
+					"sides#yuushya:block_/acrylic/green_acrylic",
+					"top#yuushya:block_/acrylic/green_acrylic"]}
+		},
+
+		{
+			"class_type": "block", "name": "light_blue_acrylic",
+			"texture": {
+				"type": "acrylic",
+				"value":"yuushya:block_/acrylic/light_blue_acrylic",
+				"set":  [
+					"all#yuushya:block_/acrylic/light_blue_acrylic",
+					"sides#yuushya:block_/acrylic/light_blue_acrylic",
+					"top#yuushya:block_/acrylic/light_blue_acrylic"]}
+		},
+
+		{
+			"class_type": "block", "name": "light_gray_acrylic",
+			"texture": {
+				"type": "acrylic",
+				"value":"yuushya:block_/acrylic/light_gray_acrylic",
+				"set":  [
+					"all#yuushya:block_/acrylic/light_gray_acrylic",
+					"sides#yuushya:block_/acrylic/light_gray_acrylic",
+					"top#yuushya:block_/acrylic/light_gray_acrylic"]}
+		},
+
+		{
+			"class_type": "block", "name": "lime_acrylic",
+			"texture": {
+				"type": "acrylic",
+				"value":"yuushya:block_/acrylic/lime_acrylic",
+				"set":  [
+					"all#yuushya:block_/acrylic/lime_acrylic",
+					"sides#yuushya:block_/acrylic/lime_acrylic",
+					"top#yuushya:block_/acrylic/lime_acrylic"]}
+		},
+
+		{
+			"class_type": "block", "name": "magenta_acrylic",
+			"texture": {
+				"type": "acrylic",
+				"value":"yuushya:block_/acrylic/magenta_acrylic",
+				"set":  [
+					"all#yuushya:block_/acrylic/magenta_acrylic",
+					"sides#yuushya:block_/acrylic/magenta_acrylic",
+					"top#yuushya:block_/acrylic/magenta_acrylic"]}
+		},
+
+		{
+			"class_type": "block", "name": "orange_acrylic",
+			"texture": {
+				"type": "acrylic",
+				"value":"yuushya:block_/acrylic/orange_acrylic",
+				"set":  [
+					"all#yuushya:block_/acrylic/orange_acrylic",
+					"sides#yuushya:block_/acrylic/orange_acrylic",
+					"top#yuushya:block_/acrylic/orange_acrylic"]}
+		},
+
+		{
+			"class_type": "block", "name": "pink_acrylic",
+			"texture": {
+				"type": "acrylic",
+				"value":"yuushya:block_/acrylic/pink_acrylic",
+				"set":  [
+					"all#yuushya:block_/acrylic/pink_acrylic",
+					"sides#yuushya:block_/acrylic/pink_acrylic",
+					"top#yuushya:block_/acrylic/pink_acrylic"]}
+		},
+
+		{
+			"class_type": "block", "name": "purple_acrylic",
+			"texture": {
+				"type": "acrylic",
+				"value":"yuushya:block_/acrylic/purple_acrylic",
+				"set":  [
+					"all#yuushya:block_/acrylic/purple_acrylic",
+					"sides#yuushya:block_/acrylic/purple_acrylic",
+					"top#yuushya:block_/acrylic/purple_acrylic"]}
+		},
+
+		{
+			"class_type": "block", "name": "red_acrylic",
+			"texture": {
+				"type": "acrylic",
+				"value":"yuushya:block_/acrylic/red_acrylic",
+				"set":  [
+					"all#yuushya:block_/acrylic/red_acrylic",
+					"sides#yuushya:block_/acrylic/red_acrylic",
+					"top#yuushya:block_/acrylic/red_acrylic"]}
+		},
+
+		{
+			"class_type": "block", "name": "white_acrylic",
+			"texture": {
+				"type": "acrylic",
+				"value":"yuushya:block_/acrylic/white_acrylic",
+				"set":  [
+					"all#yuushya:block_/acrylic/white_acrylic",
+					"sides#yuushya:block_/acrylic/white_acrylic",
+					"top#yuushya:block_/acrylic/white_acrylic"]}
+		},
+
+		{
+			"class_type": "block", "name": "yellow_acrylic",
+			"texture": {
+				"type": "acrylic",
+				"value":"yuushya:block_/acrylic/yellow_acrylic",
+				"set":  [
+					"all#yuushya:block_/acrylic/yellow_acrylic",
+					"sides#yuushya:block_/acrylic/yellow_acrylic",
+					"top#yuushya:block_/acrylic/yellow_acrylic"]}
+		},	
+		
+		{
+			"class_type": "block", "name": "black_framed_acrylic",
+			"texture": {
+				"type": "acrylic",
+				"value":"yuushya:block_/acrylic/acrylic_black_block",
+				"set":  [
+					"all#yuushya:block_/acrylic/acrylic_black_block",
+					"sides#yuushya:block_/acrylic/acrylic_black_block",
+					"top#yuushya:block_/acrylic/acrylic_black_block"]}
+		},		
+		
+		{
+			"class_type": "block", "name": "light_blue_framed_acrylic",
+			"texture": {
+				"type": "acrylic",
+				"value":"yuushya:block_/acrylic/acrylic_light_blue_block",
+				"set":  [
+					"all#yuushya:block_/acrylic/acrylic_light_blue_block",
+					"sides#yuushya:block_/acrylic/acrylic_light_blue_block",
+					"top#yuushya:block_/acrylic/acrylic_light_blue_block"]}
+		},		
+				
+		{
+			"class_type": "block", "name": "lime_framed_acrylic",
+			"texture": {
+				"type": "acrylic",
+				"value":"yuushya:block_/acrylic/acrylic_lime_block",
+				"set":  [
+					"all#yuushya:block_/acrylic/acrylic_lime_block",
+					"sides#yuushya:block_/acrylic/acrylic_lime_block",
+					"top#yuushya:block_/acrylic/acrylic_lime_block"]}
+		},		
+				
+		{
+			"class_type": "block", "name": "red_framed_acrylic",
+			"texture": {
+				"type": "acrylic",
+				"value":"yuushya:block_/acrylic/acrylic_red_block",
+				"set":  [
+					"all#yuushya:block_/acrylic/acrylic_red_block",
+					"sides#yuushya:block_/acrylic/acrylic_red_block",
+					"top#yuushya:block_/acrylic/acrylic_red_block"]}
+		},		
+				
+		{
+			"class_type": "block", "name": "yellow_framed_acrylic",
+			"texture": {
+				"type": "acrylic",
+				"value":"yuushya:block_/acrylic/acrylic_yellow_block",
+				"set":  [
+					"all#yuushya:block_/acrylic/acrylic_yellow_block",
+					"sides#yuushya:block_/acrylic/acrylic_yellow_block",
+					"top#yuushya:block_/acrylic/acrylic_yellow_block"]}
+		},		
+				
+		{
+			"class_type": "block", "name": "colorful_acrylic",
+			"texture": {
+				"type": "acrylic",
+				"value":"yuushya:block_/acrylic/acrylic_colorful_block",
+				"set":  [
+					"all#yuushya:block_/acrylic/acrylic_colorful_block",
+					"sides#yuushya:block_/acrylic/acrylic_colorful_block",
+					"top#yuushya:block_/acrylic/acrylic_colorful_block"]}
+		},		
+						
+		{
+			"class_type": "block", "name": "familymart_acrylic",
+			"texture": {
+				"type": "acrylic",
+				"value":"yuushya:block_/acrylic/acrylic_familymart",
+				"set":  [
+					"all#yuushya:block_/acrylic/acrylic_familymart",
+					"sides#yuushya:block_/acrylic/acrylic_familymart",
+					"top#yuushya:block_/acrylic/acrylic_familymart"]}
+		},		
+								
+		{
+			"class_type": "block", "name": "quartz_acrylic",
+			"texture": {
+				"type": "acrylic",
+				"value":"yuushya:block_/acrylic/acrylic_quartz",
+				"set":  [
+					"all#yuushya:block_/acrylic/acrylic_quartz",
+					"sides#yuushya:block_/acrylic/acrylic_quartz",
+					"top#yuushya:block_/acrylic/acrylic_quartz"]}
+		},		
+										
+		{
+			"class_type": "block", "name": "sandstone_acrylic",
+			"texture": {
+				"type": "acrylic",
+				"value":"yuushya:block_/acrylic/acrylic_sandstone",
+				"set":  [
+					"all#yuushya:block_/acrylic/acrylic_sandstone",
+					"sides#yuushya:block_/acrylic/acrylic_sandstone",
+					"top#yuushya:block_/acrylic/acrylic_sandstone"]}
+		},		
+		
+		{
+			"class_type": "block", "name": "asphalt",
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/stone/asphalt",
+				"set":  [
+					"all#yuushya:block_/stone/asphalt","sides#yuushya:block_/stone/asphalt","top#yuushya:block_/stone/asphalt"]}
+		},		
+				
+		{
+			"class_type": "block", "name": "blue_metal",
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/stone/blue_metal",
+				"set":  [
+					"all#yuushya:block_/stone/blue_metal","sides#yuushya:block_/stone/blue_metal","top#yuushya:block_/stone/blue_metal"]}
+		},			
+		
+		{
+			"class_type": "block", "name": "cut_tile",
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/stone/cut_tile",
+				"set":  [
+					"all#yuushya:block_/stone/cut_tile","sides#yuushya:block_/stone/cut_tile","top#yuushya:block_/stone/cut_tile"]}
+		},		
+				
+		{
+			"class_type": "block", "name": "gray_tile",
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/stone/gray_tile",
+				"set":  [
+					"all#yuushya:block_/stone/gray_tile","sides#yuushya:block_/stone/gray_tile","top#yuushya:block_/stone/gray_tile"]}
+		},		
+						
+		{
+			"class_type": "block", "name": "park_tile",
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/stone/park_tile",
+				"set":  [
+					"all#yuushya:block_/stone/park_tile","sides#yuushya:block_/stone/park_tile","top#yuushya:block_/stone/park_tile"]}
+		},		
+								
+		{
+			"class_type": "block", "name": "scarlet_tile",
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/stone/scarlet_tile",
+				"set":  [
+					"all#yuushya:block_/stone/scarlet_tile","sides#yuushya:block_/stone/scarlet_tile","top#yuushya:block_/stone/scarlet_tile"]}
+		},		
+										
+		{
+			"class_type": "block", "name": "smooth_dark_stonetile",
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/stone/smooth_dark_stonetile",
+				"set":  [
+					"all#yuushya:block_/stone/smooth_dark_stonetile","sides#yuushya:block_/stone/smooth_dark_stonetile","top#yuushya:block_/stone/smooth_dark_stonetile"]}
+		},		
+										
+		{
+			"class_type": "block", "name": "smooth_sandtile",
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/stone/smooth_sandtile",
+				"set":  [
+					"all#yuushya:block_/stone/smooth_sandtile","sides#yuushya:block_/stone/smooth_sandtile","top#yuushya:block_/stone/smooth_sandtile"]}
+		},		
+										
+		{
+			"class_type": "block", "name": "smooth_stonetile",
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/stone/smooth_stonetile",
+				"set":  [
+					"all#yuushya:block_/stone/smooth_stonetile","sides#yuushya:block_/stone/smooth_stonetile","top#yuushya:block_/stone/smooth_stonetile"]}
+		},		
+										
+		{
+			"class_type": "block", "name": "dark_square_bricks",
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/stone/dark_square_bricks",
+				"set":  [
+					"all#yuushya:block_/stone/dark_square_bricks","sides#yuushya:block_/stone/dark_square_bricks","top#yuushya:block_/stone/dark_square_bricks"]}
+		},		
+										
+		{
+			"class_type": "block", "name": "square_brick",
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/stone/square_brick",
+				"set":  [
+					"all#yuushya:block_/stone/square_brick","sides#yuushya:block_/stone/square_brick","top#yuushya:block_/stone/square_brick"]}
+		},		
+										
+		{
+			"class_type": "block", "name": "embbed_dark_bricks",
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/stone/embbed_dark_bricks",
+				"set":  [
+					"all#yuushya:block_/stone/embbed_dark_bricks","sides#yuushya:block_/stone/embbed_dark_bricks","top#yuushya:block_/stone/embbed_dark_bricks"]}
+		},		
+										
+		{
+			"class_type": "block", "name": "embbed_pale_bricks",
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/stone/embbed_pale_bricks",
+				"set":  [
+					"all#yuushya:block_/stone/embbed_pale_bricks","sides#yuushya:block_/stone/embbed_pale_bricks","top#yuushya:block_/stone/embbed_pale_bricks"]}
+		},		
+										
+		{
+			"class_type": "block", "name": "marble_bricks_0",
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/stone/marble_bricks_0",
+				"set":  [
+					"all#yuushya:block_/stone/marble_bricks_0","sides#yuushya:block_/stone/marble_bricks_0","top#yuushya:block_/stone/marble_bricks_0"]}
+		},		
+										
+		{
+			"class_type": "block", "name": "marble_bricks_1",
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/stone/marble_bricks_1",
+				"set":  [
+					"all#yuushya:block_/stone/marble_bricks_1","sides#yuushya:block_/stone/marble_bricks_1","top#yuushya:block_/stone/marble_bricks_1"]}
+		},		
+										
+		{
+			"class_type": "block", "name": "mossy_bricks",
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/stone/mossy_bricks",
+				"set":  [
+					"all#yuushya:block_/stone/mossy_bricks","sides#yuushya:block_/stone/mossy_bricks","top#yuushya:block_/stone/mossy_bricks"]}
+		},		
+										
+		{
+			"class_type": "block", "name": "pale_bricks_0",
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/stone/pale_bricks_0",
+				"set":  [
+					"all#yuushya:block_/stone/pale_bricks_0","sides#yuushya:block_/stone/pale_bricks_0","top#yuushya:block_/stone/pale_bricks_0"]}
+		},		
+										
+		{
+			"class_type": "block", "name": "pale_bricks_1",
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/stone/pale_bricks_1",
+				"set":  [
+					"all#yuushya:block_/stone/pale_bricks_1","sides#yuushya:block_/stone/pale_bricks_1","top#yuushya:block_/stone/pale_bricks_1"]}
+		},		
+										
+		{
+			"class_type": "block", "name": "pale_bricks_2",
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/stone/pale_bricks_2",
+				"set":  [
+					"all#yuushya:block_/stone/pale_bricks_2","sides#yuushya:block_/stone/pale_bricks_2","top#yuushya:block_/stone/pale_bricks_2"]}
+		},		
+												
+		{
+			"class_type": "block", "name": "pale_bricks_3",
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/stone/pale_bricks_3",
+				"set":  [
+					"all#yuushya:block_/stone/pale_bricks_3","sides#yuushya:block_/stone/pale_bricks_3","top#yuushya:block_/stone/pale_bricks_3"]}
+		},		
+														
+		{
+			"class_type": "block", "name": "smoke_bricks",
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/stone/smoke_bricks",
+				"set":  [
+					"all#yuushya:block_/stone/smoke_bricks","sides#yuushya:block_/stone/smoke_bricks","top#yuushya:block_/stone/smoke_bricks"]}
+		},		
+																
+		{
+			"class_type": "block", "name": "marble",
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/stone/marble",
+				"set":  [
+					"all#yuushya:block_/stone/marble","sides#yuushya:block_/stone/marble","top#yuushya:block_/stone/marble"]}
+		},			
+																		
+		{
+			"class_type": "block", "name": "marble_cobblestone",
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/stone/marble_cobblestone",
+				"set":  [
+					"all#yuushya:block_/stone/marble_cobblestone","sides#yuushya:block_/stone/marble_cobblestone","top#yuushya:block_/stone/marble_cobblestone"]}
+		},																				
+		{
+			"class_type": "block", "name": "egg_cobblestone",
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/stone/egg_cobblestone",
+				"set":  [
+					"all#yuushya:block_/stone/egg_cobblestone","sides#yuushya:block_/stone/egg_cobblestone","top#yuushya:block_/stone/egg_cobblestone"]}
+		},			
+																						
+		{
+			"class_type": "block", "name": "terracotta_cobblestone",
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/stone/terracotta_cobblestone",
+				"set":  [
+					"all#yuushya:block_/stone/terracotta_cobblestone","sides#yuushya:block_/stone/terracotta_cobblestone","top#yuushya:block_/stone/terracotta_cobblestone"]}
+		},			
+																						
+		{
+			"class_type": "block", "name": "fossilized_cobblestone",
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/stone/fossilized_cobblestone",
+				"set":  [
+					"all#yuushya:block_/stone/fossilized_cobblestone","sides#yuushya:block_/stone/fossilized_cobblestone","top#yuushya:block_/stone/fossilized_cobblestone"]}
+		},			
+		
+		{
+			"class_type": "block", "name": "wore_metal",
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/stone/wore_metal",
+				"set":  [
+					"all#yuushya:block_/stone/wore_metal","sides#yuushya:block_/stone/wore_metal","top#yuushya:block_/stone/wore_metal"]}
+		},		
+				
+		{
+			"class_type": "block", "name": "wore_lime_wall",
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/stone/wore_lime_wall",
+				"set":  [
+					"all#yuushya:block_/stone/wore_lime_wall","sides#yuushya:block_/stone/wore_lime_wall","top#yuushya:block_/stone/wore_lime_wall"]}
+		},		
+						
+		{
+			"class_type": "block", "name": "gray_wall",
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/stone/gray_wall",
+				"set":  [
+					"all#yuushya:block_/stone/gray_wall","sides#yuushya:block_/stone/gray_wall","top#yuushya:block_/stone/gray_wall"]}
+		},		
+								
+		{
+			"class_type": "block", "name": "wore_stone",
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/stone/wore_stone",
+				"set":  [
+					"all#yuushya:block_/stone/wore_stone","sides#yuushya:block_/stone/wore_stone","top#yuushya:block_/stone/wore_stone"]}
+		},		
+		
+
+		{"name": "~Vanilla-Imported_Texture_Library_原版引用纹理库", "class_type": "_comment" },
 
 		{
 			"class_type": "remain", "name": "minecraft:stone",
@@ -454,7 +1553,8 @@
 			"class_type": "remain", "name": "minecraft:acacia_planks",
 			"texture": {
 				"type": "misc",
-				"set": [
+				"value":"minecraft:block/acacia_planks",
+				"set":  [
 					"all#minecraft:block/acacia_planks",
 					"sides#minecraft:block/acacia_planks",
 					"top#minecraft:block/acacia_planks"]}
@@ -464,7 +1564,8 @@
 			"class_type": "remain", "name": "minecraft:birch_planks",
 			"texture": {
 				"type": "misc",
-				"set": [
+				"value":"minecraft:block/birch_planks",
+				"set":  [
 					"all#minecraft:block/birch_planks",
 					"sides#minecraft:block/birch_planks",
 					"top#minecraft:block/birch_planks"]}
@@ -474,7 +1575,8 @@
 			"class_type": "remain", "name": "minecraft:dark_oak_planks",
 			"texture": {
 				"type": "misc",
-				"set": [
+				"value":"minecraft:block/dark_oak_planks",
+				"set":  [
 					"all#minecraft:block/dark_oak_planks",
 					"sides#minecraft:block/dark_oak_planks",
 					"top#minecraft:block/dark_oak_planks"]}
@@ -484,7 +1586,8 @@
 			"class_type": "remain", "name": "minecraft:jungle_planks",
 			"texture": {
 				"type": "misc",
-				"set": [
+				"value":"minecraft:block/jungle_planks",
+				"set":  [
 					"all#minecraft:block/jungle_planks",
 					"sides#minecraft:block/jungle_planks",
 					"top#minecraft:block/jungle_planks"]}
@@ -494,7 +1597,8 @@
 			"class_type": "remain", "name": "minecraft:oak_planks",
 			"texture": {
 				"type": "misc",
-				"set": [
+				"value":"minecraft:block/oak_planks",
+				"set":  [
 					"all#minecraft:block/oak_planks",
 					"sides#minecraft:block/oak_planks",
 					"top#minecraft:block/oak_planks"]}
@@ -512,7 +1616,8 @@
 			"class_type": "remain", "name": "minecraft:black_wool",
 			"texture": {
 				"type": "wool",
-				"set": [
+				"value":"yuushya:block_/template/black_wool_sides",
+				"set":  [
 					"all#yuushya:block_/template/black_wool_sides",
 					"sides#yuushya:block_/template/black_wool_sides",
 					"top#yuushya:block_/template/black_wool_top"]}
@@ -522,7 +1627,8 @@
 			"class_type": "remain", "name": "minecraft:blue_wool",
 			"texture": {
 				"type": "wool",
-				"set": [
+				"value":"yuushya:block_/template/blue_wool_sides",
+				"set":  [
 					"all#yuushya:block_/template/blue_wool_sides",
 					"sides#yuushya:block_/template/blue_wool_sides",
 					"top#yuushya:block_/template/blue_wool_top"]}
@@ -532,7 +1638,8 @@
 			"class_type": "remain", "name": "minecraft:brown_wool",
 			"texture": {
 				"type": "wool",
-				"set": [
+				"value":"yuushya:block_/template/brown_wool_sides",
+				"set":  [
 					"all#yuushya:block_/template/brown_wool_sides",
 					"sides#yuushya:block_/template/brown_wool_sides",
 					"top#yuushya:block_/template/brown_wool_top"]}
@@ -542,7 +1649,8 @@
 			"class_type": "remain", "name": "minecraft:cyan_wool",
 			"texture": {
 				"type": "wool",
-				"set": [
+				"value":"yuushya:block_/template/cyan_wool_sides",
+				"set":  [
 					"all#yuushya:block_/template/cyan_wool_sides",
 					"sides#yuushya:block_/template/cyan_wool_sides",
 					"top#yuushya:block_/template/cyan_wool_top"]}
@@ -552,7 +1660,8 @@
 			"class_type": "remain", "name": "minecraft:gray_wool",
 			"texture": {
 				"type": "wool",
-				"set": [
+				"value":"yuushya:block_/template/gray_wool_sides",
+				"set":  [
 					"all#yuushya:block_/template/gray_wool_sides",
 					"sides#yuushya:block_/template/gray_wool_sides",
 					"top#yuushya:block_/template/gray_wool_top"]}
@@ -562,7 +1671,8 @@
 			"class_type": "remain", "name": "minecraft:green_wool",
 			"texture": {
 				"type": "wool",
-				"set": [
+				"value":"yuushya:block_/template/green_wool_sides",
+				"set":  [
 					"all#yuushya:block_/template/green_wool_sides",
 					"sides#yuushya:block_/template/green_wool_sides",
 					"top#yuushya:block_/template/green_wool_top"]}
@@ -572,7 +1682,8 @@
 			"class_type": "remain", "name": "minecraft:light_blue_wool",
 			"texture": {
 				"type": "wool",
-				"set": [
+				"value":"yuushya:block_/template/light_blue_wool_sides",
+				"set":  [
 					"all#yuushya:block_/template/light_blue_wool_sides",
 					"sides#yuushya:block_/template/light_blue_wool_sides",
 					"top#yuushya:block_/template/light_blue_wool_top"]}
@@ -582,7 +1693,8 @@
 			"class_type": "remain", "name": "minecraft:light_gray_wool",
 			"texture": {
 				"type": "wool",
-				"set": [
+				"value":"yuushya:block_/template/light_gray_wool_sides",
+				"set":  [
 					"all#yuushya:block_/template/light_gray_wool_sides",
 					"sides#yuushya:block_/template/light_gray_wool_sides",
 					"top#yuushya:block_/template/light_gray_wool_top"]}
@@ -592,7 +1704,8 @@
 			"class_type": "remain", "name": "minecraft:lime_wool",
 			"texture": {
 				"type": "wool",
-				"set": [
+				"value":"yuushya:block_/template/lime_wool_sides",
+				"set":  [
 					"all#yuushya:block_/template/lime_wool_sides",
 					"sides#yuushya:block_/template/lime_wool_sides",
 					"top#yuushya:block_/template/lime_wool_top"]}
@@ -602,7 +1715,8 @@
 			"class_type": "remain", "name": "minecraft:magenta_wool",
 			"texture": {
 				"type": "wool",
-				"set": [
+				"value":"yuushya:block_/template/magenta_wool_sides",
+				"set":  [
 					"all#yuushya:block_/template/magenta_wool_sides",
 					"sides#yuushya:block_/template/magenta_wool_sides",
 					"top#yuushya:block_/template/magenta_wool_top"]}
@@ -612,7 +1726,8 @@
 			"class_type": "remain", "name": "minecraft:orange_wool",
 			"texture": {
 				"type": "wool",
-				"set": [
+				"value":"yuushya:block_/template/orange_wool_sides",
+				"set":  [
 					"all#yuushya:block_/template/orange_wool_sides",
 					"sides#yuushya:block_/template/orange_wool_sides",
 					"top#yuushya:block_/template/orange_wool_top"]}
@@ -622,7 +1737,8 @@
 			"class_type": "remain", "name": "minecraft:pink_wool",
 			"texture": {
 				"type": "wool",
-				"set": [
+				"value":"yuushya:block_/template/pink_wool_sides",
+				"set":  [
 					"all#yuushya:block_/template/pink_wool_sides",
 					"sides#yuushya:block_/template/pink_wool_sides",
 					"top#yuushya:block_/template/pink_wool_top"]}
@@ -632,7 +1748,8 @@
 			"class_type": "remain", "name": "minecraft:purple_wool",
 			"texture": {
 				"type": "wool",
-				"set": [
+				"value":"yuushya:block_/template/purple_wool_sides",
+				"set":  [
 					"all#yuushya:block_/template/purple_wool_sides",
 					"sides#yuushya:block_/template/purple_wool_sides",
 					"top#yuushya:block_/template/purple_wool_top"]}
@@ -642,7 +1759,8 @@
 			"class_type": "remain", "name": "minecraft:red_wool",
 			"texture": {
 				"type": "wool",
-				"set": [
+				"value":"yuushya:block_/template/red_wool_sides",
+				"set":  [
 					"all#yuushya:block_/template/red_wool_sides",
 					"sides#yuushya:block_/template/red_wool_sides",
 					"top#yuushya:block_/template/red_wool_top"]}
@@ -652,7 +1770,8 @@
 			"class_type": "remain", "name": "minecraft:white_wool",
 			"texture": {
 				"type": "wool",
-				"set": [
+				"value":"yuushya:block_/template/white_wool_sides",
+				"set":  [
 					"all#yuushya:block_/template/white_wool_sides",
 					"sides#yuushya:block_/template/white_wool_sides",
 					"top#yuushya:block_/template/white_wool_top"]}
@@ -662,7 +1781,8 @@
 			"class_type": "remain", "name": "minecraft:yellow_wool",
 			"texture": {
 				"type": "wool",
-				"set": [
+				"value":"yuushya:block_/template/yellow_wool_sides",
+				"set":  [
 					"all#yuushya:block_/template/yellow_wool_sides",
 					"sides#yuushya:block_/template/yellow_wool_sides",
 					"top#yuushya:block_/template/yellow_wool_top"]}
@@ -672,7 +1792,8 @@
 			"class_type": "remain", "name": "minecraft:mixed_wool",
 			"texture": {
 				"type": "wool",
-				"set": [
+				"value":"yuushya:block_/template/mixed_wool_sides",
+				"set":  [
 					"all#yuushya:block_/template/mixed_wool_sides",
 					"sides#yuushya:block_/template/mixed_wool_sides",
 					"top#yuushya:block_/template/mixed_wool_top"]}
@@ -682,7 +1803,8 @@
 			"class_type": "remain", "name": "minecraft:black_concrete",
 			"texture": {
 				"type": "concrete",
-				"set": [
+				"value":"yuushya:block_/concrete/black_concrete_sides",
+				"set":  [
 					"all#yuushya:block_/concrete/black_concrete_sides",
 					"sides#yuushya:block_/concrete/black_concrete_sides",
 					"top#yuushya:block_/concrete/black_concrete_top"]}
@@ -692,7 +1814,8 @@
 			"class_type": "remain", "name": "minecraft:blue_concrete",
 			"texture": {
 				"type": "concrete",
-				"set": [
+				"value":"yuushya:block_/concrete/blue_concrete_sides",
+				"set":  [
 					"all#yuushya:block_/concrete/blue_concrete_sides",
 					"sides#yuushya:block_/concrete/blue_concrete_sides",
 					"top#yuushya:block_/concrete/blue_concrete_top"]}
@@ -702,7 +1825,8 @@
 			"class_type": "remain", "name": "minecraft:brown_concrete",
 			"texture": {
 				"type": "concrete",
-				"set": [
+				"value":"yuushya:block_/concrete/brown_concrete_sides",
+				"set":  [
 					"all#yuushya:block_/concrete/brown_concrete_sides",
 					"sides#yuushya:block_/concrete/brown_concrete_sides",
 					"top#yuushya:block_/concrete/brown_concrete_top"]}
@@ -712,7 +1836,8 @@
 			"class_type": "remain", "name": "minecraft:cyan_concrete",
 			"texture": {
 				"type": "concrete",
-				"set": [
+				"value":"yuushya:block_/concrete/cyan_concrete_sides",
+				"set":  [
 					"all#yuushya:block_/concrete/cyan_concrete_sides",
 					"sides#yuushya:block_/concrete/cyan_concrete_sides",
 					"top#yuushya:block_/concrete/cyan_concrete_top"]}
@@ -722,7 +1847,8 @@
 			"class_type": "remain", "name": "minecraft:gray_concrete",
 			"texture": {
 				"type": "concrete",
-				"set": [
+				"value":"yuushya:block_/concrete/gray_concrete_sides",
+				"set":  [
 					"all#yuushya:block_/concrete/gray_concrete_sides",
 					"sides#yuushya:block_/concrete/gray_concrete_sides",
 					"top#yuushya:block_/concrete/gray_concrete_top"]}
@@ -732,7 +1858,8 @@
 			"class_type": "remain", "name": "minecraft:green_concrete",
 			"texture": {
 				"type": "concrete",
-				"set": [
+				"value":"yuushya:block_/concrete/green_concrete_sides",
+				"set":  [
 					"all#yuushya:block_/concrete/green_concrete_sides",
 					"sides#yuushya:block_/concrete/green_concrete_sides",
 					"top#yuushya:block_/concrete/green_concrete_top"]}
@@ -742,7 +1869,8 @@
 			"class_type": "remain", "name": "minecraft:light_blue_concrete",
 			"texture": {
 				"type": "concrete",
-				"set": [
+				"value":"yuushya:block_/concrete/light_blue_concrete_sides",
+				"set":  [
 					"all#yuushya:block_/concrete/light_blue_concrete_sides",
 					"sides#yuushya:block_/concrete/light_blue_concrete_sides",
 					"top#yuushya:block_/concrete/light_blue_concrete_top"]}
@@ -752,7 +1880,8 @@
 			"class_type": "remain", "name": "minecraft:light_gray_concrete",
 			"texture": {
 				"type": "concrete",
-				"set": [
+				"value":"yuushya:block_/concrete/light_gray_concrete_sides",
+				"set":  [
 					"all#yuushya:block_/concrete/light_gray_concrete_sides",
 					"sides#yuushya:block_/concrete/light_gray_concrete_sides",
 					"top#yuushya:block_/concrete/light_gray_concrete_top"]}
@@ -762,7 +1891,8 @@
 			"class_type": "remain", "name": "minecraft:lime_concrete",
 			"texture": {
 				"type": "concrete",
-				"set": [
+				"value":"yuushya:block_/concrete/lime_concrete_sides",
+				"set":  [
 					"all#yuushya:block_/concrete/lime_concrete_sides",
 					"sides#yuushya:block_/concrete/lime_concrete_sides",
 					"top#yuushya:block_/concrete/lime_concrete_top"]}
@@ -772,7 +1902,8 @@
 			"class_type": "remain", "name": "minecraft:magenta_concrete",
 			"texture": {
 				"type": "concrete",
-				"set": [
+				"value":"yuushya:block_/concrete/magenta_concrete_sides",
+				"set":  [
 					"all#yuushya:block_/concrete/magenta_concrete_sides",
 					"sides#yuushya:block_/concrete/magenta_concrete_sides",
 					"top#yuushya:block_/concrete/magenta_concrete_top"]}
@@ -782,7 +1913,8 @@
 			"class_type": "remain", "name": "minecraft:orange_concrete",
 			"texture": {
 				"type": "concrete",
-				"set": [
+				"value":"yuushya:block_/concrete/orange_concrete_sides",
+				"set":  [
 					"all#yuushya:block_/concrete/orange_concrete_sides",
 					"sides#yuushya:block_/concrete/orange_concrete_sides",
 					"top#yuushya:block_/concrete/orange_concrete_top"]}
@@ -792,7 +1924,8 @@
 			"class_type": "remain", "name": "minecraft:pink_concrete",
 			"texture": {
 				"type": "concrete",
-				"set": [
+				"value":"yuushya:block_/concrete/pink_concrete_sides",
+				"set":  [
 					"all#yuushya:block_/concrete/pink_concrete_sides",
 					"sides#yuushya:block_/concrete/pink_concrete_sides",
 					"top#yuushya:block_/concrete/pink_concrete_top"]}
@@ -802,7 +1935,8 @@
 			"class_type": "remain", "name": "minecraft:purple_concrete",
 			"texture": {
 				"type": "concrete",
-				"set": [
+				"value":"yuushya:block_/concrete/purple_concrete_sides",
+				"set":  [
 					"all#yuushya:block_/concrete/purple_concrete_sides",
 					"sides#yuushya:block_/concrete/purple_concrete_sides",
 					"top#yuushya:block_/concrete/purple_concrete_top"]}
@@ -812,7 +1946,8 @@
 			"class_type": "remain", "name": "minecraft:red_concrete",
 			"texture": {
 				"type": "concrete",
-				"set": [
+				"value":"yuushya:block_/concrete/red_concrete_sides",
+				"set":  [
 					"all#yuushya:block_/concrete/red_concrete_sides",
 					"sides#yuushya:block_/concrete/red_concrete_sides",
 					"top#yuushya:block_/concrete/red_concrete_top"]}
@@ -822,7 +1957,8 @@
 			"class_type": "remain", "name": "minecraft:white_concrete",
 			"texture": {
 				"type": "concrete",
-				"set": [
+				"value":"yuushya:block_/concrete/white_concrete_sides",
+				"set":  [
 					"all#yuushya:block_/concrete/white_concrete_sides",
 					"sides#yuushya:block_/concrete/white_concrete_sides",
 					"top#yuushya:block_/concrete/white_concrete_top"]}
@@ -832,7 +1968,8 @@
 			"class_type": "remain", "name": "minecraft:yellow_concrete",
 			"texture": {
 				"type": "concrete",
-				"set": [
+				"value":"yuushya:block_/concrete/yellow_concrete_sides",
+				"set":  [
 					"all#yuushya:block_/concrete/yellow_concrete_sides",
 					"sides#yuushya:block_/concrete/yellow_concrete_sides",
 					"top#yuushya:block_/concrete/yellow_concrete_top"]}
@@ -840,7 +1977,7 @@
 
 
 
-		{"name": "Template_Library_模板库", "class_type": "_comment" },
+		{"name": "~Template_Library_模板库", "class_type": "_comment" },
 
 		{
 			"name": "stairs",
@@ -1137,7 +2274,7 @@
 
 		{
 			"name": "cart",
-			"blockstate": { "forms": [["yuushya:template/venetian_blinds"]], "kit": "normal"},
+			"blockstate": { "forms": [["yuushya:template/cart"]], "kit": "normal"},
 			"render_type": "cutout",
 			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "recipe": true,"item_model": true }
@@ -1159,7 +2296,7 @@
 			"class_type": "template", "auto_generated": { "recipe": true,"item_model": true }
 		},
 
-		{"name": "Extra_Building_Block_拓展方块", "class_type": "_comment" },
+		{"name": "~Extra_Building_Block_拓展方块", "class_type": "_comment" },
 
 		{
 			"class_type": "IntactBlock",
@@ -1313,8 +2450,127 @@
 			"blockstate": { "forms": [["yuushya:extra_building_material/tree/trunk_5"]]}
 		},
 
+		{
+			"class_type": "PlainBlock",
+			"name": "lime_concrete",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:block/lime_concrete"]]}
+		},
+		
+		{
+			"class_type": "PlainBlock",
+			"name": "japanese_wall",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:block/japanese_wall"]]}
+		},
+		
+		{
+			"class_type": "PlainBlock",
+			"name": "raw_acacia_table",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:block/raw_acacia_table"]]}
+		},
+		
+		{
+			"class_type": "PlainBlock",
+			"name": "raw_birch_table",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:block/raw_birch_table"]]}
+		},
+		
+		{
+			"class_type": "PlainBlock",
+			"name": "raw_dark_oak_table",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:block/raw_dark_oak_table"]]}
+		},
+		
+		{
+			"class_type": "PlainBlock",
+			"name": "raw_jungle_table",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:block/raw_jungle_table"]]}
+		},
+		
+		{
+			"class_type": "PlainBlock",
+			"name": "raw_oak_table",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:block/raw_oak_table"]]}
+		},
+		
+		{
+			"class_type": "PlainBlock",
+			"name": "raw_acacia_drawer",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:block/raw_acacia_drawer"]]}
+		},
+		
+		{
+			"class_type": "PlainBlock",
+			"name": "raw_birch_drawer",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:block/raw_birch_drawer"]]}
+		},
+		
+		{
+			"class_type": "PlainBlock",
+			"name": "raw_dark_oak_drawer",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:block/raw_dark_oak_drawer"]]}
+		},
+		
+		{
+			"class_type": "PlainBlock",
+			"name": "raw_jungle_drawer",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:block/raw_jungle_drawer"]]}
+		},
+		
+		{
+			"class_type": "PlainBlock",
+			"name": "raw_oak_drawer",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:block/raw_oak_drawer"]]}
+		},
+		
+		{
+			"class_type": "PlainBlock",
+			"name": "raw_acacia_vertical_drawer",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:block/raw_acacia_vertical_drawer"]]}
+		},
+		
+		{
+			"class_type": "PlainBlock",
+			"name": "raw_birch_vertical_drawer",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:block/raw_birch_vertical_drawer"]]}
+		},
+		
+		{
+			"class_type": "PlainBlock",
+			"name": "raw_dark_oak_vertical_drawer",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:block/raw_dark_oak_vertical_drawer"]]}
+		},
+		
+		{
+			"class_type": "PlainBlock",
+			"name": "raw_jungle_vertical_drawer",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:block/raw_jungle_vertical_drawer"]]}
+		},
+		
+		{
+			"class_type": "PlainBlock",
+			"name": "raw_oak_vertical_drawer",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:block/raw_oak_vertical_drawer"]]}
+		},
 
-		{"name": "Extra_Shape_拓展形状", "class_type": "_comment" },
+
+		{"name": "~Extra_Shape_拓展形状", "class_type": "_comment" },
 
 		{
 			"class_type": "ChairBlock",
@@ -2272,7 +3528,7 @@
 			"blockstate": { "forms": [["yuushya:extra_building_material/kal_2"]]}
 		},
 
-		{"name": "Signs_标牌", "class_type": "_comment" },
+		{"name": "~Signs_标牌", "class_type": "_comment" },
 
 		{
 			"class_type": "DecoBlock",
@@ -2742,7 +3998,7 @@
 		},
 
 
-		{"name": "Decoration_装饰", "class_type": "_comment" },
+		{"name": "~Decoration_装饰", "class_type": "_comment" },
 
 		{
 			"class_type": "DecoBlock",
@@ -3702,7 +4958,7 @@
 
 
 
-		{"name": "Life_生活", "class_type": "_comment" },
+		{"name": "~Life_生活", "class_type": "_comment" },
 
 		{
 			"class_type": "DecoBlock",
@@ -4349,7 +5605,7 @@
 		},
 
 
-		{"name": "infrastructure_基础设施", "class_type": "_comment" },
+		{"name": "~Infrastructure_基础设施", "class_type": "_comment" },
 
 		{
 			"class_type": "IntactBlock",
@@ -4817,7 +6073,7 @@
 			"blockstate": { "forms": [["yuushya:extra_building_material/bicycle_stop"]]}
 		},
 
-		{"name": "Furniture_家具", "class_type": "_comment" },
+		{"name": "~Furniture_家具", "class_type": "_comment" },
 
 		{
 			"class_type": "IntactBlock",
