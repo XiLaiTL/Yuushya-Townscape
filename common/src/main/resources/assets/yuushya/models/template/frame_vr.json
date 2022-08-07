@@ -1,22 +1,20 @@
 {
 	"credit": "Yuushya",
-	"ambientocclusion": false,
-	"texture_size": [32, 32],
 	"textures": {
-		"0": "yuushya:0extra_building_material/preview/poster/poster_large",
-		"particle": "yuushya:0extra_building_material/preview/poster/poster_large"
+		"sides": "yuushya:block_/template",
+		"particle": "#sides"
 	},
 	"elements": [
 		{
-			"from": [-4, 0, 0.2],
-			"to": [28, 32, 0.2],
+			"from": [12, 0, 0],
+			"to": [16, 16, 2],
 			"faces": {
-				"north": {"uv": [16, 0, 0, 16], "texture": "#0"},
-				"east": {"uv": [0, 0, 0, 16], "texture": "#0"},
-				"south": {"uv": [0, 0, 16, 16], "texture": "#0"},
-				"west": {"uv": [0, 0, 0, 16], "texture": "#0"},
-				"up": {"uv": [0, 0, 16, 0], "texture": "#0"},
-				"down": {"uv": [0, 0, 16, 0], "texture": "#0"}
+				"north": {"uv": [0, 0, 4, 16], "texture": "#sides"},
+				"east": {"uv": [0, 0, 2, 16], "texture": "#sides"},
+				"south": {"uv": [0, 0, 4, 16], "texture": "#sides"},
+				"west": {"uv": [0, 0, 2, 16], "texture": "#sides"},
+				"up": {"uv": [1, 8, 5, 10], "texture": "#sides"},
+				"down": {"uv": [3, 8, 7, 10], "texture": "#sides"}
 			}
 		}
 	],
@@ -43,10 +41,6 @@
 		"ground": {
 			"translation": [0, 3, 0],
 			"scale": [0.25, 0.25, 0.25]
-		},
-		"gui": {
-			"translation": [0, -4, 0],
-			"scale": [0.5, 0.5, 0.5]
 		},
 		"fixed": {
 			"scale": [0.5, 0.5, 0.5]

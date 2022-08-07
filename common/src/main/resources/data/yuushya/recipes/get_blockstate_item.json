@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "yuushya:the_encyclopedia"
+    },
+    {
+      "item": "minecraft:redstone"
+    }	
+  ],
+  "result": {
+    "item": "yuushya:get_blockstate_item",
+    "count": 1
+  }
+}

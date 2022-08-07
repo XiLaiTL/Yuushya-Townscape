@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:cobblestone_wall"
+    },
+    {
+      "item": "minecraft:cobblestone_wall"
+    }
+  ],
+  "result": {
+    "item": "yuushya:side_slab_blueprint",
+    "count": 2
+  }
+}

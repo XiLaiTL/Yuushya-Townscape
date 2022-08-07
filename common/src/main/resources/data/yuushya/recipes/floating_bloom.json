@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BS#",
+    "SXS",
+    "#SB"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:clay"
+    },
+	"#": {
+      "item": "minecraft:lapis_block"
+    },
+	"X": {
+      "item": "minecraft:poppy"
+    },
+    "S": {
+      "item": "minecraft:snowball"
+    }
+  },
+  "result": {
+    "item": "yuushya:floating_bloom",
+	"count": 1
+  }
+}

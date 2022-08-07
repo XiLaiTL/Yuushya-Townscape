@@ -129,15 +129,6 @@
 				"set":  [
 					"all#yuushya:block_/warning"]}
 		},
-		
-		{
-			"class_type": "block", "name": "framed_bricks",
-			"properties": {"lines": 0 }, 
-			"texture": {
-				"value":"yuushya:block_/framed_bricks",
-				"set":  [
-					"all#yuushya:block_/framed_bricks"]}
-		},
 
 		{
 			"class_type": "block", "name": "stone_with_dot",
@@ -652,17 +643,6 @@
 		},
 		
 		{
-			"class_type": "block", "name": "a_acacia_blindwall",
-			"texture": {
-				"properties": {"lines": 0 }, 
-				"value":"yuushya:block_/blindwall/acacia_blindwall",
-				"set":  [
-					"all#yuushya:block_/blindwall/acacia_blindwall",
-					"sides#yuushya:block_/blindwall/acacia_blindwall",
-					"top#yuushya:block_/blindwall/acacia_blindwall"]}
-		},
-		
-		{
 			"class_type": "block", "name": "b_black_blindwall",
 			"texture": {
 				"properties": {"lines": 0 }, 
@@ -837,17 +817,6 @@
 					"sides#yuushya:block_/blindwall/yellow_blindwall",
 					"top#yuushya:block_/blindwall/yellow_blindwall"]}
 		},
-			
-		{
-			"class_type": "block", "name": "b_acacia_blindwall",
-			"texture": {
-				"properties": {"lines": 0 }, 
-				"value":"yuushya:block_/blindwall/acacia_blindwall",
-				"set":  [
-					"all#yuushya:block_/blindwall/acacia_blindwall",
-					"sides#yuushya:block_/blindwall/acacia_blindwall",
-					"top#yuushya:block_/blindwall/acacia_blindwall"]}
-		},		
 		
 		{
 			"class_type": "block", "name": "black_concrete_top",
@@ -1893,6 +1862,17 @@
 		},
 
 		{
+			"class_type": "remain", "name": "minecraft:mixed_wool",
+			"texture": {
+				"type": "wool",
+				"value":"yuushya:block_/template/mixed_wool_sides",
+				"set":  [
+					"all#yuushya:block_/template/mixed_wool_sides",
+					"sides#yuushya:block_/template/mixed_wool_sides",
+					"top#yuushya:block_/template/mixed_wool_top"]}
+		},
+
+		{
 			"class_type": "remain", "name": "minecraft:black_concrete",
 			"texture": {
 				"type": "concrete",
@@ -2266,129 +2246,6 @@
 				"for_class": ["raw_wood", "concrete"]
 			}
 		},
-		
-		{
-			"name": "frame_top",
-			"blockstate": { "forms": [["yuushya:template/frame_top_left","yuushya:template/frame_top_middle","yuushya:template/frame_top_right","yuushya:template/frame_top_none"]], "kit": "line"},
-			"item_model": "yuushya:template/frame_top_none",
-			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
-			"class_type": "template", "auto_generated": { "recipe": true,"item_model": true },
-			"texture": {
-				"slots": ["all", "sides", "top"],
-				"for_class": ["raw_wood", "concrete"]
-			}
-		},
-		
-		{
-			"name": "frame_bottom",
-			"blockstate": { "forms": [["yuushya:template/frame_bottom_left","yuushya:template/frame_bottom_middle","yuushya:template/frame_bottom_right","yuushya:template/frame_bottom_none"]], "kit": "line"},
-			"item_model": "yuushya:template/frame_bottom_none",
-			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
-			"class_type": "template", "auto_generated": { "recipe": true,"item_model": true },
-			"texture": {
-				"slots": ["all", "sides", "bottom"],
-				"for_class": ["raw_wood", "concrete"]
-			}
-		},		
-		
-		{
-			"name": "frame_left",
-			"blockstate": { "forms": [["yuushya:template/frame_vl"]], "kit": "normal"},
-			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
-			"class_type": "template", "auto_generated": { "recipe": true,"item_model": true },
-			"texture": {
-				"slots": ["all", "sides", "bottom"],
-				"for_class": ["raw_wood", "concrete"]
-			}
-		},		
-		
-		{
-			"name": "frame_right",
-			"blockstate": { "forms": [["yuushya:template/frame_vr"]], "kit": "normal"},
-			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
-			"class_type": "template", "auto_generated": { "recipe": true,"item_model": true },
-			"texture": {
-				"slots": ["all", "sides", "bottom"],
-				"for_class": ["raw_wood", "concrete"]
-			}
-		},		
-
-		{
-			"name": "fence",
-			"blockstate": { "forms": [["yuushya:template/fence_left","yuushya:template/fence_middle","yuushya:template/fence_right","yuushya:template/fence_none"]], "kit": "line"},
-			"item_model": "yuushya:template/fence_middle",
-			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
-			"class_type": "template", "auto_generated": { "recipe": true,"item_model": true },
-			"texture": {
-				"slots": ["all", "sides", "top"],
-				"for_class": ["raw_wood", "concrete"]
-			}
-		},	
-		
-		{
-			"name": "fence_corner",
-			"blockstate": { "forms": [["yuushya:template/fence_corner"]], "kit": "normal"},
-			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
-			"class_type": "template", "auto_generated": { "recipe": true,"item_model": true },
-			"texture": {
-				"slots": ["all", "sides", "top"],
-				"for_class": ["raw_wood", "concrete"]
-			}
-		},			
-
-		{
-			"name": "hollow_stairs",
-			"blockstate": { "forms": [["yuushya:template/hollow_stairs"]], "kit": "normal"},
-			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
-			"class_type": "template", "auto_generated": { "recipe": true,"item_model": true },
-			"texture": {
-				"slots": ["all", "sides", "top"],
-				"for_class": ["raw_wood", "concrete"]
-			}
-		},		
-		
-		{
-			"name": "handrail_left",
-			"blockstate": { "forms": [["yuushya:template/handrail_left"]], "kit": "normal"},
-			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
-			"class_type": "template", "auto_generated": { "recipe": true,"item_model": true },
-			"texture": {
-				"slots": ["all", "sides", "top"],
-				"for_class": ["raw_wood", "concrete"]
-			}
-		},		
-		
-		{
-			"name": "handrail_middle",
-			"blockstate": { "forms": [["yuushya:template/handrail_middle"]], "kit": "normal"},
-			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
-			"class_type": "template", "auto_generated": { "recipe": true,"item_model": true },
-			"texture": {
-				"slots": ["all", "sides", "top"],
-				"for_class": ["raw_wood", "concrete"]
-			}
-		},		
-		
-		{
-			"name": "handrail_right",
-			"blockstate": { "forms": [["yuushya:template/handrail_right"]], "kit": "normal"},
-			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
-			"class_type": "template", "auto_generated": { "recipe": true,"item_model": true },
-			"texture": {
-				"slots": ["all", "sides", "top"],
-				"for_class": ["raw_wood", "concrete"]
-			}
-		},		
 
 		{
 			"name": "bench",
@@ -2442,18 +2299,6 @@
 			}
 		},
 
-		{
-			"name": "uncovered_shelf",
-			"blockstate": { "forms": [["yuushya:template/uncovered_shelf_left","yuushya:template/uncovered_shelf_middle","yuushya:template/uncovered_shelf_right","yuushya:template/uncovered_shelf_none"]], "kit": "line"},
-			"item_model": "yuushya:template/uncovered_shelf_none",
-			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
-			"class_type": "template", "auto_generated": { "recipe": true,"item_model": true },
-			"texture": {
-				"slots": ["all", "sides", "top"],
-				"for_class": ["raw_wood", "concrete"]
-			}
-		},
 
 		{
 			"name": "rain_shed",
@@ -2838,34 +2683,6 @@
 			"name": "japanese_wall",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
 			"blockstate": { "forms": [["yuushya:block/japanese_wall"]]}
-		},	
-					
-		{
-			"class_type": "PlainBlock",
-			"name": "a_metal_blindwall_0",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
-			"blockstate": { "forms": [["yuushya:block/a_metal_blindwall"]]}
-		},	
-								
-		{
-			"class_type": "PlainBlock",
-			"name": "b_metal_blindwall_0",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
-			"blockstate": { "forms": [["yuushya:block/a_metal_blindwall"]]}
-		},	
-								
-		{
-			"class_type": "PlainBlock",
-			"name": "a_metal_blindwall_1",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
-			"blockstate": { "forms": [["yuushya:block/b_metal_blindwall"]]}
-		},	
-								
-		{
-			"class_type": "PlainBlock",
-			"name": "b_metal_blindwall_1",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
-			"blockstate": { "forms": [["yuushya:block/b_metal_blindwall"]]}
 		},	
 						
 		{
@@ -3864,27 +3681,6 @@
 			"item_model": "yuushya:extra_building_material/fence/horizontal_fence/stone_fence_none",
 			"blockstate": { "forms": [["yuushya:extra_building_material/fence/horizontal_fence/stone_fence_left","yuushya:extra_building_material/fence/horizontal_fence/stone_fence_middle","yuushya:extra_building_material/fence/horizontal_fence/stone_fence_right","yuushya:extra_building_material/fence/horizontal_fence/stone_fence_none"]]}
 		},
-		
-		{
-			"class_type": "IntactBlock",
-			"name": "stone_handrail_left",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
-			"blockstate": { "forms": [["yuushya:extra_building_material/stairsnfence/stone_stairs_fence"]]}
-		},		
-		
-		{
-			"class_type": "IntactBlock",
-			"name": "stone_handrail_right",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
-			"blockstate": { "forms": [["yuushya:extra_building_material/stairsnfence/stone_stairs_fence_sym"]]}
-		},		
-		
-		{
-			"class_type": "IntactBlock",
-			"name": "stone_handrail_middle",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
-			"blockstate": { "forms": [["yuushya:extra_building_material/stairsnfence/stone_stairs_fence_middle"]]}
-		},		
 
 		{
 			"class_type": "ChairBlock",
@@ -3899,20 +3695,6 @@
 			"name": "tall_iron_fence_middle_support",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/fence/tall_iron_fence"]]}
-		},
-
-		{
-			"class_type": "IntactBlock",
-			"name": "iron_hallow_stairs_0",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
-			"blockstate": { "forms": [["yuushya:extra_building_material/iron_hallow_stairs_0"]]}
-		},
-
-		{
-			"class_type": "IntactBlock",
-			"name": "iron_hallow_stairs_1",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
-			"blockstate": { "forms": [["yuushya:extra_building_material/iron_hallow_stairs_1"]]}
 		},
 
 		{
