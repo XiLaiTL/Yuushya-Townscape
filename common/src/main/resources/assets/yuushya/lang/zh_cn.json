@@ -29,7 +29,7 @@
   "item.yuushya.yuushya_debug_stick.update": "将\"%s\"设为%s",
   
   "item.yuushya.pos_trans_item": "方块实体层调节工具",
-  "item.yuushya.pos_trans_item.line1": "\u00A79置于主手右键一[方块实体]调整其相应[层]的位移值",
+  "item.yuushya.pos_trans_item.line1": "\u00A79置于主手左右键[方块实体]调整其相应[层]的位移值",
   "item.yuushya.pos_trans_item.line2": "\u00A79副手右键调整模式(共3种) 主手左右键执行位移",
   "item.yuushya.pos_trans_item.line3": "\u00A79可调整的数值为[层]的XYZ偏移值",
   "item.yuushya.pos_trans_item.line4": "\u00A79您可通过查看F3准星来确定轴向",
@@ -40,10 +40,10 @@
   "item.yuushya.pos_trans_item.switch": "X轴偏移:%s Y轴偏移:%s Z轴偏移:%s",
   
   "item.yuushya.micro_pos_trans_item": "方块实体层微调工具",
-  "item.yuushya.micro_pos_trans_item.line1": "\u00A79置于主手右键一[方块实体]对其[层]进行位置微调",
-  "item.yuushya.micro_pos_trans_item.line2": "\u00A79副手右键调整模式(共4种) 主手左右键执行位移和复原",
+  "item.yuushya.micro_pos_trans_item.line1": "\u00A79置于主手左右键[方块实体]对其[层]进行位置微调",
+  "item.yuushya.micro_pos_trans_item.line2": "\u00A79副手右键调整模式(共4种) 主手左右键执行位移或复原",
   "item.yuushya.micro_pos_trans_item.line3": "\u00A79调整细微偏移值以防止Z-Fighting(闪烁)",
-  "item.yuushya.micro_pos_trans_item.line4": "\u00A79可调整的数值为[层]的XYZ偏移值",  
+  "item.yuushya.micro_pos_trans_item.line4": "\u00A79可调整的数值为[层]的XYZ偏移值以及复原",
   
   "item.yuushya.micro_pos_trans_item.0": "\u00A7cX轴模式",
   "item.yuushya.micro_pos_trans_item.1": "\u00A7aY轴模式",
@@ -52,7 +52,7 @@
   "item.yuushya.micro_pos_trans_item.switch": "X轴偏移:%s Y轴偏移:%s Z轴偏移:%s", 
 
   "item.yuushya.rot_trans_item": "方块实体层旋转工具",
-  "item.yuushya.rot_trans_item.line1": "\u00A79置于主手右键一[方块实体]调整其相应[层]的旋转角度",
+  "item.yuushya.rot_trans_item.line1": "\u00A79置于主手左右键一[方块实体]调整其相应[层]的旋转角度",
   "item.yuushya.rot_trans_item.line2": "\u00A79副手右键调整模式(共3种) 主手左右键执行旋转",
   "item.yuushya.rot_trans_item.line3": "\u00A79可调整的数值为[层]的XYZ偏移值",
   "item.yuushya.rot_trans_item.line4": "\u00A79您可通过查看F3准星来确定轴向",
@@ -65,28 +65,22 @@
   "item.yuushya.slot_trans_item": "方块实体层切换工具",
   
   "item.yuushya.scale_trans_item": "方块实体层缩放工具",
-  "item.yuushya.scale_trans_item.line1": "\u00A79置于主手右键一[方块实体]调整其相应[层]的缩放大小",
+  "item.yuushya.scale_trans_item.line1": "\u00A79置于主手左右键一[方块实体]调整其相应[层]的缩放大小",
   "item.yuushya.scale_trans_item.line2": "\u00A79主手左键执行缩小",
   "item.yuushya.scale_trans_item.line3": "\u00A79主手右键执行放大",
   "item.yuushya.scale_trans_item.line4": "\u00A79可调整的数值为[层]的缩放大小",
   "item.yuushya.scale_trans_item.switch": "执行缩放",   
-  
-  "item.yuushya.get_mixedblock_item": "融合葫芦",
-  "item.yuushya.get_mixedblock_item.success": "融合方块[外壳]转化成功!",
-  "item.yuushya.get_mixedblock_item.line1": "\u00A79右键一方块使其变为[外壳]",
-  "item.yuushya.get_mixedblock_item.line2": "\u00A79之后手持另一方块右键[外壳]使手持方块作为[核心]",
-  "item.yuushya.get_mixedblock_item.line3": "\u00A79实现了[外壳]与[核心]融合的方块融合效果",
-  "item.yuushya.get_mixedblock_item.line4": "\u00A79可用[核心调节工具]等工具调节[核心]的各项数值",  
-  
+
   "item.yuushya.get_showblock_item": "实体葫芦",
-  "item.yuushya.get_showblock_item.line1": "\u00A79右键一方块使其变为[方块实体]",
-  "item.yuushya.get_showblock_item.line2": "\u00A79并自动将这一方块转变为其中一[层]",
-  "item.yuushya.get_showblock_item.line3": "\u00A79右键此方块取下或放上[核心]",
-  "item.yuushya.get_showblock_item.line4": "\u00A79可用[核心调节工具]等工具调整特定[层]的各项数值",
+  "item.yuushya.get_showblock_item.line1": "\u00A79置于主手右键一方块使其变为[方块实体]",
+  "item.yuushya.get_showblock_item.line2": "\u00A79副手右键调整模式(共4种) 主手右键执行功能",
+  "item.yuushya.get_showblock_item.line3": "\u00A79实体模式:当前方块置为[层]   融合模式:新建一[层]",
+  "item.yuushya.get_showblock_item.line4": "\u00A79取出模式:取出当前[层]的物品 复原模式:将[方块实体]复原为方块",
   
   "item.yuushya.get_blockstate_item": "拷贝葫芦",
   "item.yuushya.get_blockstate_item.line1": "\u00A79置于主手右键一普通方块复制其方块ID与方块状态",
-  "item.yuushya.get_blockstate_item.line2": "\u00A79置于副手右键一[方块实体]将其套用到对应的[层]上",
+    "item.yuushya.get_blockstate_item.line2": "\u00A79置于主手右键一[方块实体]剪切本层方块ID与方块状态",
+    "item.yuushya.get_blockstate_item.line3": "\u00A79置于副手右键一[方块实体]将其套用到对应的[层]上",
   "item.yuushya.get_blockstate_item.offhand.success": "成功套用方块ID与方块状态",
   "item.yuushya.get_blockstate_item.mainhand.success": "成功拷贝方块ID与方块状态",
   "item.yuushya.get_blockstate_item.mainhand.pass": "此融合方块没有[核心]!",
@@ -96,18 +90,10 @@
   "item.yuushya.form_trans_item.line2": "\u00A79用于调整特定方块的[形态变量]",
   "item.yuushya.form_trans_item.line3": "\u00A79其注释中有[形态]字样的方块既可以调整[形态变量]",
   "item.yuushya.form_trans_item.line4": "\u00A79持此扳手对这些方块右键即可调整其形态",
-  
-  "item.yuushya.get_entity_tool": "实体工具",  
-  "item.yuushya.get_as_entity_tool": "实体工具",  
-  "item.get_entity_item.tooltip1": "\u00A78未完成,请勿使用",
-  "item.get_entity_item.tooltip2": "\u00A78未完成,请勿使用",
-  "item.get_entity_item.tooltip3": "\u00A78未完成,请勿使用",
-  "item.get_entity_item.tooltip4": "\u00A78未完成,请勿使用",
-  "item.get_entity_item.tooltip5": "\u00A78未完成,请勿使用",
-  
+
   "item.yuushya.get_lit_item": "方块实体点亮工具",   
   "item.yuushya.get_lit_item.line1": "\u00A79点亮或取消点亮一个方块实体",
-  "item.yuushya.get_lit_item.line2": "\u00A79亮度:15",
+  "item.yuushya.get_lit_item.line2": "\u00A79主手左右键调节亮度 0-15",
   "item.yuushya.get_lit_item.line3": "\u00A77\u00A7o妈妈，",
   "item.yuushya.get_lit_item.line4": "\u00A77\u00A7o我将变成一只萤火虫。",
   
@@ -244,17 +230,10 @@
   "item.yuushya.shop_sign_examples.line1": "\u00A79请预留足够空间,此操作不可撤销!",
   "item.yuushya.department.line1": "\u00A79请预留足够空间,此操作不可撤销!",
 
-  "block.yuushya.modelframe": "实体方块",
   "block.yuushya.showblock": "方块实体",
-  "block.yuushya.mixedblock": "融合方块",
-  
-  "block.yuushya.modelframe.line1": "\u00A78不可用",
+
   "block.yuushya.showblock.line1": "\u00A78空",
-  "block.yuushya.mixedblock.line1": "\u00A78不可用",
-  
-  "block.yuushya.leafparticleblock": "落叶",
-  "block.yuushya.leafparticleblock.line1": "\u00A79[粒子生成器]",
-  
+
 "item.yuushya.stairs": "楼梯 模板",
 "item.yuushya.slippers": "拖鞋 模板",
 "item.yuushya.slab": "台阶 模板",
@@ -1104,28 +1083,6 @@
 "block.yuushya.bed_frame_1": "床框架",
 "block.yuushya.bed_frame_2": "床框架",
 "block.yuushya.bed_frame_3": "床框架",
-
-"block.yuushya.inner_bed_0": "方块",
-"block.yuushya.inner_bed_1": "方块",
-"block.yuushya.inner_bed_2": "方块",
-"block.yuushya.inner_bed_3": "方块",
-"block.yuushya.inner_bed_4": "方块",
-"block.yuushya.inner_bed_5": "方块",
-"block.yuushya.inner_bed_6": "方块",
-"block.yuushya.inner_bed_7": "方块",
-"block.yuushya.inner_bed_8": "方块",
-"block.yuushya.inner_bed_9": "方块",
-"block.yuushya.inner_bed_10": "方块",
-"block.yuushya.inner_bed_11": "方块",
-"block.yuushya.inner_bed_12": "方块",
-"block.yuushya.inner_bed_13": "方块",
-"block.yuushya.inner_bed_14": "方块",
-"block.yuushya.inner_bed_15": "方块",
-"block.yuushya.inner_bed_16": "方块",
-"block.yuushya.inner_bed_17": "方块",
-"block.yuushya.inner_bed_18": "方块",
-"block.yuushya.inner_bed_19": "方块",
-"block.yuushya.inner_bed_20": "方块"
   
 "block.yuushya.inner_bed_0": "床本体",
 "block.yuushya.inner_bed_1": "床本体",

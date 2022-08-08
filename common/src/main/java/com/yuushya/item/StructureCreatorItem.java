@@ -69,7 +69,7 @@ public class StructureCreatorItem extends AbstractMultiPurposeToolItem{
                 if (getForm()==2)changeIntMirror();
                 else changeIntRotation();
                 setTag(handItemStack);
-                player.displayClientMessage(new TranslatableComponent(this.getDescriptionId()+".show",Mirror.values()[_mirror].toString(),Rotation.values()[_rot].toString()),true);
+                player.displayClientMessage(new TranslatableComponent("item.yuushya.structure_creator.show",Mirror.values()[_mirror].toString(),Rotation.values()[_rot].toString()),true);
             }
             default -> {return InteractionResult.PASS;}
         }

@@ -10,7 +10,7 @@ import net.minecraft.world.item.Item;
 public class YuushyaFabric implements ModInitializer {
     @Override
     public void onInitialize() {
-        YuushyaRegistries.ITEMS.register("get_blockstate_item", () -> new GetBlockStateItem(new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_ITEM), 1));
+        YuushyaRegistries.ITEMS.register("get_blockstate_item", () -> new GetBlockStateItem(new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_ITEM), 3));
         Yuushya.init();
     }
 }

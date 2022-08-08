@@ -14,7 +14,7 @@ public class YuushyaForge {
     public YuushyaForge() {
         // Submit our event bus to let architectury register our content on the right time
         EventBuses.registerModEventBus(Yuushya.MOD_ID, FMLJavaModLoadingContext.get().getModEventBus());
-        YuushyaRegistries.ITEMS.register("get_blockstate_item", () -> new GetBlockStateItemForge(new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_ITEM), 1));
+        YuushyaRegistries.ITEMS.register("get_blockstate_item", () -> new GetBlockStateItemForge(new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_ITEM), 3));
         Yuushya.init();
     }
 }
