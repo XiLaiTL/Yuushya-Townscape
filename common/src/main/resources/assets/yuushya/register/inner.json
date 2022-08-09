@@ -3,6 +3,16 @@
 		{"name": "~Block_Types_方块类", "class_type": "_comment" },
 
 		{
+			"name": "block",
+			"blockstate": { "kit": "block" },
+			"render_type": "cutout",
+			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": false },
+			"class_type": "class",
+			"properties": { "hardness": 1, "resistance": 1, "material": "iron", "is_solid": true, "has_collision": true, "is_delicate": false, "lines": 1 },
+			"item_group": "yuushya_extrablocks"
+		},
+
+		{
 			"name": "IntactBlock",
 			"blockstate": { "kit": "normal" },
 			"render_type": "cutout",

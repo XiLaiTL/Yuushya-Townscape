@@ -106,15 +106,18 @@ public class YuushyaDataProvider {
         this.id(block.name);
         switch (this.dataType){
             case BlockState ->{
-                this.json(()->BlockStateData.genBlockState(block.blockstate)).save();
+                if (block.blockstate==null||block.blockstate.kit.equals("block"))
+                    this.json(()->BlockStateData.genSimpleBlock(new ResourceLocation(Yuushya.MOD_ID,"block/"+block.name))).save();
+                else
+                    this.json(()->BlockStateData.genBlockState(block.blockstate)).save();
             }
             case ItemModel -> {
                 ResourceLocation modelUse;
                 if (block.itemModel!=null&&!block.itemModel.isEmpty())
                     modelUse=ResourceLocation.tryParse(block.itemModel);
-                else if (block.blockstate==null)
+                else if (block.blockstate==null||block.blockstate.kit.equals("block"))
                     modelUse=new ResourceLocation(Yuushya.MOD_ID,"block/"+block.name);
-                else if (block.blockstate.kit !=null&&!block.blockstate.kit.isEmpty())
+                else if (!block.blockstate.kit.isEmpty())
                     modelUse=ResourceLocation.tryParse(block.blockstate.forms.get(0).get(0));
                 else if (block.blockstate.states!=null&&!block.blockstate.states.isEmpty())
                     modelUse=ResourceLocation.tryParse(getModelListFromData(block.blockstate.models).get(0));

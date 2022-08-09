@@ -18,6 +18,8 @@ public class YuushyaBlockStates {
     public static final EnumProperty<PositionVerticalState> POS_VERTICAL=EnumProperty.create("pos",PositionVerticalState.class);
     public static final IntegerProperty FORM = IntegerProperty.create("form",0,7);
     public static final IntegerProperty LIT = IntegerProperty.create("lit",0,15);
+    public static final IntegerProperty DISTANCE = IntegerProperty.create("distance",0,15);
+    public static final BooleanProperty ISEND = BooleanProperty.create("isend");
     public static final BooleanProperty ISHUB = BooleanProperty.create("ishub");
 
     public static Property<?> toBlockStateProperty(String name){

@@ -262,6 +262,7 @@ public class YuushyaUtils {
     }
 
     public static BlockBehaviour.OffsetType toOffsetType(String offset){
+        if (offset==null) return BlockBehaviour.OffsetType.NONE;
         return switch (offset){
             case "xz"-> BlockBehaviour.OffsetType.XZ;
             case "xyz"-> BlockBehaviour.OffsetType.XYZ;

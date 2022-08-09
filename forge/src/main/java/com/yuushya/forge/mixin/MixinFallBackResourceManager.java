@@ -30,7 +30,6 @@ public class MixinFallBackResourceManager {
     )
     public void getResource(ResourceLocation id, CallbackInfoReturnable<Resource> cir){
         YuushyaDataProvider yuushyaDataProvider=YuushyaDataProvider.of(id);
-        if (id.toString().contains("particles")) YuushyaLogger.info(id.toString());
         if (id.toString().contains("blockstates")) return;
         if (yuushyaDataProvider.type(YuushyaDataProvider.DataType.LootTable).contain(id)){
             cir.cancel();return;
@@ -38,8 +37,6 @@ public class MixinFallBackResourceManager {
         if (yuushyaDataProvider.type(YuushyaDataProvider.DataType.ItemModel).contain(id)
                 ||yuushyaDataProvider.type(YuushyaDataProvider.DataType.BlockModel).contain(id)
                 ||yuushyaDataProvider.type(YuushyaDataProvider.DataType.Particle).contain(id)){
-            YuushyaLogger.info(id.toString());
-            YuushyaLogger.info(yuushyaDataProvider.get(id).toString());
             Resource resource = new SimpleResource(id.getNamespace(), id, new ByteArrayInputStream(yuushyaDataProvider.get(id).toString().getBytes(StandardCharsets.UTF_8)), null);
             cir.setReturnValue(resource);
             cir.cancel();
