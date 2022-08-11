@@ -2,9 +2,9 @@
 	"credit": "Yuushya",
 	"ambientocclusion": false,
 	"textures": {
-		"2": "yuushya:0extra_building_block/scrolldoor_",
-		"particle": "yuushya:0extra_building_block/scrolldoor",
-		"sides": "yuushya:0extra_building_block/scrolldoor"
+		"2": "yuushya:block_/scrolldoor_0",
+		"particle": "yuushya:block_/scrolldoor_0",
+		"sides": "yuushya:block_/scrolldoor_0"
 	},
 	"elements": [
 		{
