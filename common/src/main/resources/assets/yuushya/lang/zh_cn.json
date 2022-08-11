@@ -98,8 +98,8 @@
   "item.yuushya.get_lit_item.line4": "\u00A77\u00A7o我将变成一只萤火虫。",
   
   "item.yuushya.slot_trans_item.slot": "当前层: %s，内容: %s 本层可见: %s",   
-  "item.yuushya.slot_trans_item.slot.fail.max": "已达到最高层，此层无内容，您可以副手持拷贝葫芦右键放置所复制的内容",   
-  "item.yuushya.slot_trans_item.slot.fail.min": "已达到最低层，此层无内容，您可以副手持拷贝葫芦右键放置所复制的内容", 
+  "item.yuushya.slot_trans_item.slot.fail.max": "已达到最高层，此层无内容，您可以副手持拷贝葫芦右键放置所复制的内容",
+  "item.yuushya.slot_trans_item.slot.fail.min": "已达到最低层，内容: %s 本层可见: %s",
   
   "item.yuushya.the_encyclopedia": "\u00A7c「世界的证明」",  
   "item.yuushya.the_encyclopedia.line1": "\u00A77\u00A7o“你已被世界认可”",  

@@ -23,7 +23,10 @@ public class SlotTransItem extends AbstractToolItem {
     @Override
     public InteractionResult inOffHandRightClickOnBlock(Player player, BlockState blockState, Level level, BlockPos blockPos, ItemStack handItemStack){
         //左手右键 切换可见性
-        return translateSlot(player,blockState,level,blockPos,handItemStack,(showBlockEntity)-> showBlockEntity.getTransFormDataNow().isShown=!showBlockEntity.getTransFormDataNow().isShown);
+        return translateSlot(player,blockState,level,blockPos,handItemStack,(showBlockEntity)-> {
+            showBlockEntity.getTransFormDataNow().isShown=!showBlockEntity.getTransFormDataNow().isShown;
+            player.displayClientMessage(new TranslatableComponent(this.getDescriptionId()+".slot",showBlockEntity.getSlot(),showBlockEntity.getTransFormDataNow().blockState.toString(),showBlockEntity.getTransFormDataNow().isShown),true);
+        });
     }
 
     @Override
@@ -32,10 +35,10 @@ public class SlotTransItem extends AbstractToolItem {
         return translateSlot(player,blockState,level,blockPos,handItemStack,(showBlockEntity)->{
             int slot=showBlockEntity.getSlot();
             if (slot==0){
-                player.displayClientMessage(new TranslatableComponent(this.getDescriptionId()+".slot.fail.min"),true);
+                player.displayClientMessage(new TranslatableComponent(this.getDescriptionId()+".slot.fail.min",showBlockEntity.getTransFormDataNow().blockState.toString(),showBlockEntity.getTransFormDataNow().isShown),true);
             } else {
                 showBlockEntity.setSlot(slot-1);
-                player.displayClientMessage(new TranslatableComponent(this.getDescriptionId()+".slot",showBlockEntity.getSlot(),showBlockEntity.getTransFormDataNow(),showBlockEntity.getTransFormDataNow().isShown),true);
+                player.displayClientMessage(new TranslatableComponent(this.getDescriptionId()+".slot",showBlockEntity.getSlot(),showBlockEntity.getTransFormDataNow().blockState.toString(),showBlockEntity.getTransFormDataNow().isShown),true);
             }
         });
     }
@@ -47,7 +50,10 @@ public class SlotTransItem extends AbstractToolItem {
                 player.displayClientMessage(new TranslatableComponent(this.getDescriptionId()+".slot.fail.max"),true);
             }else{
                 showBlockEntity.setSlot(showBlockEntity.getSlot()+1);
-                player.displayClientMessage(new TranslatableComponent(this.getDescriptionId()+".slot",showBlockEntity.getSlot(),showBlockEntity.getTransFormDataNow(),showBlockEntity.getTransFormDataNow().isShown),true);
+                if (showBlockEntity.getTransFormDataNow().blockState.getBlock() instanceof AirBlock){
+                    player.displayClientMessage(new TranslatableComponent(this.getDescriptionId()+".slot.fail.max"),true);}
+                else{
+                    player.displayClientMessage(new TranslatableComponent(this.getDescriptionId()+".slot",showBlockEntity.getSlot(),showBlockEntity.getTransFormDataNow().blockState.toString(),showBlockEntity.getTransFormDataNow().isShown),true);}
             }
         });
     }

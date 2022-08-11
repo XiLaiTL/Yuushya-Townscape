@@ -49,14 +49,22 @@ public interface iTransformDataInventory {
 
     //readNbt from compoundTag
     static void load(CompoundTag compoundTag, List<TransformData> transformDatas) {
-        ListTag listTag = compoundTag.getList("Blocks", 10);int index=0;//10 means Compound
-        for(TransformData transformData:transformDatas){
+        ListTag listTag = compoundTag.getList("Blocks", 10);//int index=0;//10 means Compound
+        if (!transformDatas.isEmpty()) transformDatas.clear();
+        for (int index=0;index<compoundTag.size();index++){
+            TransformData transformData=new TransformData();
             CompoundTag compoundTagTemp = listTag.getCompound(index);
             transformData.load(compoundTagTemp);
-            //int slot = compoundTagTemp.getByte("Slot") & 255;
-            //if(slot< transformDatas.size())
-                //transformDatas.set(slot, NbtUtils.readTransformData(compoundTagTemp.getCompound("TransformData")));
-        index++;}
+            transformDatas.add(transformData);
+        }
+        if (transformDatas.isEmpty()) transformDatas.add(new TransformData());
+//        for(TransformData transformData:transformDatas){
+//            CompoundTag compoundTagTemp = listTag.getCompound(index);
+//            transformData.load(compoundTagTemp);
+//            //int slot = compoundTagTemp.getByte("Slot") & 255;
+//            //if(slot< transformDatas.size())
+//                //transformDatas.set(slot, NbtUtils.readTransformData(compoundTagTemp.getCompound("TransformData")));
+//        index++;}
     }
 
     //writeNbt to compoundTag

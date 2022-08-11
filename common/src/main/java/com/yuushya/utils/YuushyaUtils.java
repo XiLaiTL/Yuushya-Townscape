@@ -50,7 +50,7 @@ public class YuushyaUtils {
         return res;
     }
 
-    public static int vertexSize = DefaultVertexFormat.BLOCK.getVertexSize() / 4;// 一个顶点用多少位int表示，原版和开了光影的OptiFine不同所以得在这算出来
+    public static int vertexSize() { return DefaultVertexFormat.BLOCK.getVertexSize() / 4;} // 一个顶点用多少位int表示，原版和开了光影的OptiFine不同所以得在这算出来
 
     public static void scale(PoseStack arg, Vector3f scales){
         if(scales.x()!=1||scales.y()!=1||scales.z()!=1){

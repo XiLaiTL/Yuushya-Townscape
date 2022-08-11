@@ -24,11 +24,12 @@ import java.util.function.Function;
 
 public class ShowBlockModel implements BakedModel, UnbakedModel {
     public List<BakedQuad> getQuads(@Nullable BlockState state, @Nullable Direction side, @NotNull Random rand, @NotNull ShowBlockEntity blockEntity) {
+        int vertexSize=YuushyaUtils.vertexSize();
         BlockRenderDispatcher blockRenderDispatcher =Minecraft.getInstance().getBlockRenderer();
         List<BakedQuad> finalQuads = new ArrayList<>();
         if (side != null) {return Collections.emptyList();}
         ArrayList<Direction> directions = new ArrayList<>(Arrays.asList(Direction.values()));directions.add(null); // 加个null
-        for(TransformData transformData:blockEntity.getTransformDatas()){
+        for(TransformData transformData:blockEntity.getTransformDatas())if (transformData.isShown){
             BlockState blockState = transformData.blockState;
             BakedModel blockModel = blockRenderDispatcher.getBlockModel(blockState);
             for (Direction value : directions) {
@@ -43,13 +44,13 @@ public class ShowBlockModel implements BakedModel, UnbakedModel {
                         YuushyaUtils.rotate(stack,transformData.rot);
                         for (int i = 0; i < 4; i++) {
                             Vector4f vector4f = new Vector4f(// 顶点的原坐标
-                                    Float.intBitsToFloat(vertex[YuushyaUtils.vertexSize*i]),
-                                    Float.intBitsToFloat(vertex[YuushyaUtils.vertexSize*i+1]),
-                                    Float.intBitsToFloat(vertex[YuushyaUtils.vertexSize*i+2]), 1);
+                                    Float.intBitsToFloat(vertex[vertexSize*i]),
+                                    Float.intBitsToFloat(vertex[vertexSize*i+1]),
+                                    Float.intBitsToFloat(vertex[vertexSize*i+2]), 1);
                             vector4f.transform(stack.last().pose());
-                            vertex[YuushyaUtils.vertexSize*i] = Float.floatToRawIntBits(vector4f.x());
-                            vertex[YuushyaUtils.vertexSize*i+1] = Float.floatToRawIntBits(vector4f.y());
-                            vertex[YuushyaUtils.vertexSize*i+2] = Float.floatToRawIntBits(vector4f.z());
+                            vertex[vertexSize*i] = Float.floatToRawIntBits(vector4f.x());
+                            vertex[vertexSize*i+1] = Float.floatToRawIntBits(vector4f.y());
+                            vertex[vertexSize*i+2] = Float.floatToRawIntBits(vector4f.z());
                         }
                     }stack.popPose();
                     if (bakedQuad.getTintIndex() > -1)//将方块状态和颜色编码到tintindex上，在渲染时解码找到对应颜色

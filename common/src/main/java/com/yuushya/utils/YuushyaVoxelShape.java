@@ -94,6 +94,7 @@ public class YuushyaVoxelShape {
     }
 
     public static List<QuadWithDirection> getQuadFromBlockState(BlockState blockState){
+        int vertexSize=YuushyaUtils.vertexSize();
         BlockRenderDispatcher blockRenderDispatcher= Minecraft.getInstance().getBlockRenderer();
         BakedModel blockModel = blockRenderDispatcher.getBlockModel(blockState);
         Random rand = new Random();
@@ -108,9 +109,9 @@ public class YuushyaVoxelShape {
                 List<Vector3f> quadDotList = new ArrayList<>();
                 for (int i = 0; i < 4; i++) {
                     Vector3f vector3f = new Vector3f(// 顶点的原坐标
-                            Float.intBitsToFloat(vertex[YuushyaUtils.vertexSize * i]),
-                            Float.intBitsToFloat(vertex[YuushyaUtils.vertexSize * i + 1]),
-                            Float.intBitsToFloat(vertex[YuushyaUtils.vertexSize * i + 2]));
+                            Float.intBitsToFloat(vertex[vertexSize * i]),
+                            Float.intBitsToFloat(vertex[vertexSize * i + 1]),
+                            Float.intBitsToFloat(vertex[vertexSize * i + 2]));
                     quadDotList.add(vector3f);
                 }
                 quadList.add(new QuadWithDirection(quadDotList));
