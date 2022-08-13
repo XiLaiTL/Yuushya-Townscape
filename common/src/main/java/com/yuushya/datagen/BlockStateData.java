@@ -102,7 +102,7 @@ public class BlockStateData {
                         .add(ChildPropertyVariant.of(FORM,POS_VERTICAL).generate((variantKeyList)->{
                             int i=FORM.indexOf(variantKeyList.get(0));
                             if (i>=formsNum) return List.of(Variant.variant());
-                            else if (variantKeyList.get(1).equals("middle")) return List.of(Variant.variant().with(VariantProperties.MODEL, new ResourceLocation(blockState.forms.get(i).get(0))));
+                            else if (variantKeyList.get(1).equals("pos=middle")) return List.of(Variant.variant().with(VariantProperties.MODEL, new ResourceLocation(blockState.forms.get(i).get(0))));
                             else return List.of(Variant.variant().with(VariantProperties.MODEL,blankModel));
                         }));
                 case "VanillaStairBlock"->{
