@@ -21,6 +21,7 @@ public class YuushyaCreativeModeTab {
     public static final CreativeModeTab YUUSHYA_INFRASTRUCTURE = YuushyaCreativeModeTab.create("infrastructure", ()->YuushyaRegistries.ITEMS.getInstanceOrDefault("crash_barrel", Items.APPLE));
     public static final CreativeModeTab YUUSHYA_ITEM = YuushyaCreativeModeTab.create("item", ()->YuushyaRegistries.ITEMS.getInstanceOrDefault("pos_trans_item", Items.APPLE));
     public static final CreativeModeTab YUUSHYA_STRUCTURE = YuushyaCreativeModeTab.create("structure", ()->YuushyaRegistries.ITEMS.getInstanceOrDefault("maple_tree", Items.APPLE));
+    public static final CreativeModeTab YUUSHYA_TEMPLATE = YuushyaCreativeModeTab.create("template",()->YuushyaRegistries.ITEMS.getInstanceOrDefault("ridge", Items.APPLE));
 
     private YuushyaCreativeModeTab() {}
     public static CreativeModeTab create(String name, Supplier<Item> item){
@@ -51,6 +52,7 @@ public class YuushyaCreativeModeTab {
             case "yuushya_extrashapes" -> YuushyaCreativeModeTab.YUUSHYA_EXTRA_SHAPES;
             case "yuushya_infrastructure" -> YuushyaCreativeModeTab.YUUSHYA_INFRASTRUCTURE;
             case "yuushya_structure" -> YuushyaCreativeModeTab.YUUSHYA_STRUCTURE;
+            case "yuushya_template" -> YuushyaCreativeModeTab.YUUSHYA_TEMPLATE;
             default -> YuushyaCreativeModeTab.YUUSHYA_ITEM;
         };
     }

@@ -7839,8 +7839,75 @@
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_furniture",
 			"properties": {"lines": 0},
 			"blockstate": { "forms": [["yuushya:extra_building_material/bed/bed20"]]}
-		}
+		},
 
+		{ "name": "test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!","class_type": "_comment"},
+
+		{
+			"name": "TestBlock",
+			"render_type": "cutout",
+			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": false },
+			"class_type": "class",
+			"properties": { "hardness": 1, "resistance": 1, "material": "iron", "is_solid": false, "has_collision": true, "is_delicate": false }
+		},
+		{
+			"class_type": "TestBlock",
+			"name": "table_test",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_template",
+			"blockstate": {
+				"kit": "face" ,
+				"forms": [
+					[
+						"yuushya:extra_building_material/table/table/dark_oak_none",
+						"yuushya:extra_building_material/table/table/dark_oak_south_none",
+						"yuushya:extra_building_material/table/table/dark_oak_middle",
+						"yuushya:extra_building_material/table/table/dark_oak_single_es"
+					]
+				]
+			}
+		},
+		{
+			"class_type": "TestBlock",
+			"name": "tri_part_test",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_template",
+			"blockstate": {
+				"kit": "tri_part" ,
+				"forms": [
+					["yuushya:extra_building_material/vending_1"]
+				]
+			}
+		},
+		{
+			"class_type": "TestBlock",
+			"name": "stair_test",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_template",
+			"blockstate": {
+				"kit": "VanillaStairBlock" ,
+				"forms": [
+					[
+						"minecraft:block/acacia_stairs_inner",
+						"minecraft:block/acacia_stairs",
+						"minecraft:block/acacia_stairs_outer"
+					]
+				]
+			}
+		},
+		{
+			"class_type": "TestBlock",
+			"name": "door_test",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_template",
+			"blockstate": {
+				"kit": "VanillaDoorBlock" ,
+				"forms": [
+					[
+						"minecraft:block/acacia_door_bottom",
+						"minecraft:block/acacia_door_bottom_hinge",
+						"minecraft:block/acacia_door_top",
+						"minecraft:block/acacia_door_top_hinge"
+					]
+				]
+			}
+		}
 	],
 
 
