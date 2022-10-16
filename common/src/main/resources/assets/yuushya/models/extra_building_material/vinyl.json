@@ -1,5 +1,5 @@
 {
-	"credit": "Yuushya",
+	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "yuushya:0extra_building_block/vinyl_record",
 		"1": "yuushya:0extra_building_block/wool/red_wool",
@@ -35,8 +35,8 @@
 			}
 		},
 		{
-			"from": [8, 6.4, 1.9],
-			"to": [14, 6.9, 2.9],
+			"from": [9, 6.4, 1.9],
+			"to": [15, 6.9, 2.9],
 			"rotation": {"angle": 0, "axis": "y", "origin": [12, 6.55, 2.9]},
 			"faces": {
 				"north": {"uv": [6, 0, 7, 1], "rotation": 90, "texture": "#4"},

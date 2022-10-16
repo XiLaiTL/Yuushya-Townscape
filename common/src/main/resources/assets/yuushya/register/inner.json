@@ -34,9 +34,9 @@
 			"name": "TranslucentBlock",
 			"blockstate": { "kit": "normal" },
 			"render_type": "translucent",
-			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true },
+			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": true },
 			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material":"iron", "is_solid": false, "has_collision": true, "is_delicate": false }
+			"properties": { "hardness": 1, "resistance": 1, "material":"iron", "is_solid": false, "has_collision": false, "is_delicate": false }
 		},
 
 		{
@@ -1034,17 +1034,71 @@
 					"sides#yuushya:block_/concrete/white_concrete_top",
 					"top#yuushya:block_/concrete/white_concrete_top"]}
 		},
-
+		
 		{
-			"class_type": "block", "name": "yellow_concrete_top",
+			"class_type": "PlainBlock",
+			"name": "light_gray_worn_concrete",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:block/light_gray_worn_concrete"]]}
+		},			
+					
+		{
+			"class_type": "PlainBlock",
+			"name": "white_worn_concrete",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:block/white_worn_concrete"]]}
+		},			
+							
+		{
+			"class_type": "PlainBlock",
+			"name": "cream_worn_concrete",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:block/cream_worn_concrete"]]}
+		},			
+							
+		{
+			"class_type": "PlainBlock",
+			"name": "mink_worn_concrete",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:block/mink_worn_concrete"]]}
+		},			
+							
+		{
+			"class_type": "PlainBlock",
+			"name": "yellow_worn_concrete",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:block/yellow_worn_concrete"]]}
+		},			
+							
+		{
+			"class_type": "PlainBlock",
+			"name": "orange_worn_concrete",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:block/orange_worn_concrete"]]}
+		},			
+				
+		{
+			"class_type": "block", "name": "white_worn_concrete",
 			"texture": {
 				"properties": {"lines": 0 }, 
-				"value":"yuushya:block_/concrete/yellow_concrete_top",
+				"value":"yuushya:block_/concrete/white_worn_concrete",
 				"set":  [
-					"all#yuushya:block_/concrete/yellow_concrete_top",
-					"sides#yuushya:block_/concrete/yellow_concrete_top",
-					"top#yuushya:block_/concrete/yellow_concrete_top"]}
+					"all#yuushya:block_/concrete/white_worn_concrete",
+					"sides#yuushya:block_/concrete/white_worn_concrete",
+					"top#yuushya:block_/concrete/white_worn_concrete"]}
 		},
+						
+		{
+			"class_type": "block", "name": "light_gray_worn_concrete",
+			"texture": {
+				"properties": {"lines": 0 }, 
+				"value":"yuushya:block_/concrete/light_gray_worn_concrete",
+				"set":  [
+					"all#yuushya:block_/concrete/light_gray_worn_concrete",
+					"sides#yuushya:block_/concrete/light_gray_worn_concrete",
+					"top#yuushya:block_/concrete/light_gray_worn_concrete"]}
+		},
+		
 
 		{
 			"class_type": "block", "name": "black_framed_acrylic",
@@ -2576,6 +2630,19 @@
 			"texture": {
 				"slots": ["all", "sides", "top"],
 				"for_class": ["wool"]
+			}
+		},
+		
+		{
+			"name": "solid_rain_shed",
+			"blockstate": { "forms": [["yuushya:template/wooden_rain_shed_left","yuushya:template/wooden_rain_shed_middle","yuushya:template/wooden_rain_shed_right","yuushya:template/wooden_rain_shed_none"]], "kit": "line"},
+			"item_model": "yuushya:template/wooden_rain_shed_none",
+			"render_type": "cutout",
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"class_type": "template", "auto_generated": { "recipe": true,"item_model": true },
+			"texture": {
+				"slots": ["all", "sides", "top"],
+				"for_class": ["raw_wood", "concrete"]
 			}
 		},
 
@@ -5570,13 +5637,37 @@
 		},
 
 		{
-			"class_type": "DecoBlock",
-			"name": "sorted_books",
+			"class_type": "TranslucentBlock",
+			"name": "broken_list",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_decoration",
-			"properties": {"lines": 0},
-			"blockstate": { "forms": [["yuushya:extra_building_material/books__"]]}
-		},
-
+			"properties": {"lines": 1},
+			"blockstate": { "forms": [["yuushya:extra_building_material/broken_to_do_list_1"],["yuushya:extra_building_material/broken_to_do_list_2"],["yuushya:extra_building_material/broken_to_do_list_3"],["yuushya:extra_building_material/broken_to_do_list_4"],["yuushya:extra_building_material/broken_to_do_list_5"]]}
+		},	
+		
+		{
+			"class_type": "TranslucentBlock",
+			"name": "completely_broken_list",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_decoration",
+			"properties": {"lines": 1},
+			"blockstate": { "forms": [["yuushya:extra_building_material/completely_broken_list"]]}
+		},	
+		
+		{
+			"class_type": "TranslucentBlock",
+			"name": "broken_commercial_poster",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_decoration",
+			"properties": {"lines": 1},
+			"blockstate": { "forms": [["yuushya:extra_building_material/broken_to_do_list_1"],["yuushya:extra_building_material/broken_to_do_list_2"],["yuushya:extra_building_material/broken_to_do_list_3"],["yuushya:extra_building_material/broken_to_do_list_4"],["yuushya:extra_building_material/broken_to_do_list_5"]]}
+		},		
+		
+		{
+			"class_type": "TranslucentBlock",
+			"name": "completely_broken_commercial_poster",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_decoration",
+			"properties": {"lines": 1},
+			"blockstate": { "forms": [["yuushya:extra_building_material/completely_broken_commercial_poster"]]}
+		},	
+		
 		{
 			"class_type": "DecoBlock",
 			"name": "globe",
@@ -6417,6 +6508,14 @@
 
 		{
 			"class_type": "IntactBlock",
+			"name": "goods_shelf_frying_pan",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_life",
+			"properties": {"lines": 0},
+			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_frying_pan"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
 			"name": "goods_shelf_glass",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_life",
 			"properties": {"lines": 1},
@@ -7004,6 +7103,13 @@
 			"name": "cone",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_infrastructure",
 			"blockstate": { "forms": [["yuushya:extra_building_material/st"]]}
+		},
+		
+		{
+			"class_type": "IntactBlock",
+			"name": "spiral_razor_wire",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_infrastructure",
+			"blockstate": { "forms": [["yuushya:extra_building_material/spiral_razor_wire"]]}
 		},
 		
 		{
