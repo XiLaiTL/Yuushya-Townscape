@@ -1,0 +1,44 @@
+{
+	"credit": "Yuushya",
+	"elements": [
+		{
+			"from": [3, 0.5, 1],
+			"to": [12, 4.5, 10],
+			"color": 6,
+			"faces": {
+				"north": {"uv": [0, 0, 9, 4], "texture": "#missing"},
+				"east": {"uv": [0, 0, 9, 4], "texture": "#missing"},
+				"south": {"uv": [0, 0, 9, 4], "texture": "#missing"},
+				"west": {"uv": [0, 0, 9, 4], "texture": "#missing"},
+				"up": {"uv": [0, 0, 9, 9], "texture": "#missing"},
+				"down": {"uv": [0, 0, 9, 9], "texture": "#missing"}
+			}
+		},
+		{
+			"from": [3, 4.5, 1],
+			"to": [12, 5.5, 10],
+			"color": 6,
+			"faces": {
+				"north": {"uv": [0, 0, 9, 1], "texture": "#missing"},
+				"east": {"uv": [0, 0, 9, 1], "texture": "#missing"},
+				"south": {"uv": [0, 0, 9, 1], "texture": "#missing"},
+				"west": {"uv": [0, 0, 9, 1], "texture": "#missing"},
+				"up": {"uv": [0, 0, 9, 9], "texture": "#missing"},
+				"down": {"uv": [0, 0, 9, 9], "texture": "#missing"}
+			}
+		},
+		{
+			"from": [4, 0, 2],
+			"to": [11, 0.5, 9],
+			"color": 6,
+			"faces": {
+				"north": {"uv": [0, 0, 7, 0.5], "texture": "#missing"},
+				"east": {"uv": [0, 0, 7, 0.5], "texture": "#missing"},
+				"south": {"uv": [0, 0, 7, 0.5], "texture": "#missing"},
+				"west": {"uv": [0, 0, 7, 0.5], "texture": "#missing"},
+				"up": {"uv": [0, 0, 7, 7], "texture": "#missing"},
+				"down": {"uv": [0, 0, 7, 7], "texture": "#missing"}
+			}
+		}
+	]
+}

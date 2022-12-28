@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "yuushya:the_encyclopedia"
+    },
+    {
+      "item": "minecraft:bread"
+    }	
+  ],
+  "result": {
+    "item": "yuushya:move_transformdata_item",
+    "count": 1
+  }
+}

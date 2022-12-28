@@ -63,6 +63,11 @@
   "item.yuushya.rot_trans_item.switch": "X轴旋转:%s Y轴旋转:%s Z轴旋转:%s",  
   
   "item.yuushya.slot_trans_item": "方块实体层切换工具",
+  "item.yuushya.slot_trans_item.line1": "",
+  "item.yuushya.slot_trans_item.line2": "\u00A79左右键切换[方块实体]的当前选定层",
+  "item.yuushya.slot_trans_item.line3": "\u00A79左键一[方块实体]即可切换当前操作层为其空白层，即最高层",
+  "item.yuushya.slot_trans_item.line4": "\u00A79左键一[方块实体]将当前选定层下移一层",  
+  
   
   "item.yuushya.scale_trans_item": "方块实体层缩放工具",
   "item.yuushya.scale_trans_item.line1": "\u00A79置于主手右键一[方块实体]调整其相应[层]的缩放大小",
@@ -85,16 +90,27 @@
   "item.yuushya.get_showblock_item.line4": "\u00A79可用[核心调节工具]等工具调整特定[层]的各项数值",
   
   "item.yuushya.get_blockstate_item": "拷贝葫芦",
-  "item.yuushya.get_blockstate_item.line1": "\u00A79置于主手右键一普通方块复制其方块ID与方块状态",
-  "item.yuushya.get_blockstate_item.line2": "\u00A79置于副手右键一[方块实体]将其套用到对应的[层]上",
+  "item.yuushya.get_blockstate_item.line1": "",
+  "item.yuushya.get_blockstate_item.line2": "\u00A79置于主手右键一普通方块复制其方块ID与方块状态",
+  "item.yuushya.get_blockstate_item.line3": "\u00A79置于副手右键一[方块实体]将其套用到对应的[层]上",
   "item.yuushya.get_blockstate_item.offhand.success": "成功套用方块ID与方块状态",
   "item.yuushya.get_blockstate_item.mainhand.success": "成功拷贝方块ID与方块状态",
-  "item.yuushya.get_blockstate_item.mainhand.pass": "此融合方块没有[核心]!",
+  "item.yuushya.get_blockstate_item.mainhand.pass": "此层无内容!",
+  
+    
+  "item.yuushya.move_transformdata_item": "层剪切葫芦",
+  "item.yuushya.move_transformdata_item.line1": "",
+  "item.yuushya.move_transformdata_item.line2": "\u00A79置于主手右键一[方块实体]剪切其当前层的所有内容",
+  "item.yuushya.move_transformdata_item.line3": "\u00A79置于副手右键一[方块实体]将其套用到对应的[层]上",
+  "item.yuushya.move_transformdata_item.line4": "",
+  "item.yuushya.move_transformdata_item.offhand.success": "成功套用剪切",
+  "item.yuushya.move_transformdata_item.mainhand.success": "成功拷贝剪切",
+  "item.yuushya.move_transformdata_item.mainhand.pass": "此层无内容!",
   
   "item.yuushya.form_trans_item": "形态扳手",
-  "item.yuushya.form_trans_item.line1": "",
-  "item.yuushya.form_trans_item.line2": "\u00A79用于调整特定方块的[形态变量]",
-  "item.yuushya.form_trans_item.line3": "\u00A79其注释中有[形态]字样的方块既可以调整[形态变量]",
+  "item.yuushya.form_trans_item.line3": "",
+  "item.yuushya.form_trans_item.line1": "\u00A79左右键特定方块切换其前一个或后一个[形态变量]",
+  "item.yuushya.form_trans_item.line2": "\u00A79其注释中有[可变形态]字样的方块方可调整",
   "item.yuushya.form_trans_item.line4": "\u00A79持此扳手对这些方块右键即可调整其形态",
   
   "item.yuushya.get_entity_tool": "实体工具",  
@@ -129,7 +145,8 @@
   "item.yuushya.floating_bloom.line1": "\u00A77\u00A7o“刚柔”",
   "item.yuushya.sparking_flame.line1": "\u00A77\u00A7o“命运”",
   
-  "item.yuushya.yuushya": "玉纱",  
+  
+  "item.yuushya.yuushya": "油漆工",  
   "item.yuushya.bismuth_crystal": "铋晶体", 
   "item.yuushya.tippy": "提比", 
   "item.yuushya.wriggle_nightbug": "莉格露· 奈特巴格", 
@@ -142,10 +159,15 @@
   "item.yuushya.symbol_of_love": "头顶植物园", 
   "item.yuushya.conehead": "路障头", 
   "item.yuushya.satori_eye": "睁开的第三只眼", 
-  "item.yuushya.koishi_eye": "紧闭的第三只眼", 
+  "item.yuushya.koishi_eye": "紧闭的第三只眼",   
+  "item.yuushya.christmas_hat": "圣诞帽", 
+  "item.yuushya.toilet_head": "马桶头", 
+  "item.yuushya.fan_head": "风扇头", 
+  
+  
   "item.yuushya.yuushya.line1": "\u00A79[头戴装饰]\u00A77\u00A7o“感谢使用Yuushya!”",
   "item.yuushya.tippy.line1": "\u00A79[头戴装饰]\u00A77\u00A7o“是一只会调咖啡的吉祥物”",
-  "item.yuushya.suspicious_chair.line1": "\u00A79[头戴装饰]\u00A77\u00A7o“铃芽户缔”",
+  "item.yuushya.suspicious_chair.line1": "\u00A79[头戴装饰]\u00A77\u00A7o“三脚凳”",
   "item.yuushya.sleeping_orange_cat.line1": "\u00A79[头戴装饰]\u00A77\u00A7o“你的天灵盖承受着非一般的重量”",
   "item.yuushya.sleeping_ragdoll.line1": "\u00A79[头戴装饰]\u00A77\u00A7o“布偶猫在你头上安稳地睡着...”",
   "item.yuushya.head_bucket.line1": "\u00A79[头戴装饰]\u00A77\u00A7o“注意安全”",
@@ -157,6 +179,9 @@
   "item.yuushya.bismuth_crystal.line1": "\u00A79[头戴装饰]\u00A77\u00A7o“华丽的晶体”",
   "item.yuushya.butterfly.line1": "\u00A79[头戴装饰]\u00A77\u00A7o“飞~”",
   "item.yuushya.symbol_of_love.line1": "\u00A79[头戴装饰]\u00A77\u00A7o“万年青”",
+  "item.yuushya.christmas_hat.line1": "\u00A79[头戴装饰]\u00A77\u00A7o“圣诞快乐!”",
+  "item.yuushya.toilet_head.line1": "\u00A79[头戴装饰]\u00A77\u00A7o“不用冲水”",
+  "item.yuushya.fan_head.line1": "\u00A79[头戴装饰]\u00A77\u00A7o“电扇人”",
   
   "block.yuushya.ghost_light_9": "光照方块",
   "block.yuushya.ghost_light_9.line1": "\u00A78亮度:9",

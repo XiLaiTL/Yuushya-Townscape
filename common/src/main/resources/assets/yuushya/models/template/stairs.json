@@ -1,8 +1,8 @@
 {
 	"credit": "Yuushya",
 	"textures": {
-		"all": "yuushya:block_/template",
-		"particle": "#all"
+		"particle": "#all",
+		"all": "yuushya:block_/template"
 	},
 	"elements": [
 		{
@@ -51,7 +51,7 @@
 			"scale": [0.4, 0.4, 0.4]
 		},
 		"gui": {
-			"rotation": [22.5, 45, 0],
+			"rotation": [22.5, 135, 0],
 			"translation": [0, -0.75, 0],
 			"scale": [0.65, 0.65, 0.65]
 		},

@@ -2,6 +2,6 @@
     "parent": "yuushya:block/template_column",
     "textures": {
         "sides": "yuushya:block_/concrete/white_worn_concrete",
-        "top": "yuushya:block_/concrete/white_concrete_top"
+        "top": "yuushya:block_/raw_wood/raw_acacia_wood_top"
     }
 }
