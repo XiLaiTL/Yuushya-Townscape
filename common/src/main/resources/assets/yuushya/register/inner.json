@@ -82,6 +82,24 @@
 			"class_type": "class",
 			"properties": { "hardness": 1, "resistance": 1, "material":"iron", "is_solid": false, "has_collision": false, "is_delicate": false }
 		},
+		
+		{
+			"name": "RoofBlock",
+			"blockstate": { "kit": "line" },
+			"render_type": "cutout",
+			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true },
+			"class_type": "class",
+			"properties": { "hardness": 1, "resistance": 1, "material":"iron", "is_solid": false, "has_collision": true, "is_delicate": false }
+		},
+		
+		{
+			"name": "StairBlock",
+			"blockstate": { "kit": "VanillaStairBlock" },
+			"render_type": "cutout",
+			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true },
+			"class_type": "class",
+			"properties": { "hardness": 1, "resistance": 1, "material":"iron", "is_solid": false, "has_collision": true, "is_delicate": false }
+		},
 
 		{
 			"name": "FlowBlock",
@@ -3482,62 +3500,115 @@
 		{"name": "~Extra_Shape_拓展形状", "class_type": "_comment" },
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "roof_0",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/0l","yuushya:extra_building_material/roof/roof/0_","yuushya:extra_building_material/roof/roof/0r","yuushya:extra_building_material/roof/roof/0"]]}
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "roof_1",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/4l","yuushya:extra_building_material/roof/roof/4_","yuushya:extra_building_material/roof/roof/4r","yuushya:extra_building_material/roof/roof/4"]]}
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "roof_2",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/2l","yuushya:extra_building_material/roof/roof/2_","yuushya:extra_building_material/roof/roof/2r","yuushya:extra_building_material/roof/roof/2"]]}
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "roof_3",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/3l","yuushya:extra_building_material/roof/roof/3_","yuushya:extra_building_material/roof/roof/3r","yuushya:extra_building_material/roof/roof/3"]]}
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "roof_ridge_0",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/0l","yuushya:extra_building_material/roof/roof_ridge/0_","yuushya:extra_building_material/roof/roof_ridge/0r","yuushya:extra_building_material/roof/roof_ridge/0"]]}
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "roof_ridge_1",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/4l","yuushya:extra_building_material/roof/roof_ridge/4_","yuushya:extra_building_material/roof/roof_ridge/4r","yuushya:extra_building_material/roof/roof_ridge/4"]]}
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "roof_ridge_2",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/2l","yuushya:extra_building_material/roof/roof_ridge/2_","yuushya:extra_building_material/roof/roof_ridge/2r","yuushya:extra_building_material/roof/roof_ridge/2"]]}
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "roof_ridge_3",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/3l","yuushya:extra_building_material/roof/roof_ridge/3_","yuushya:extra_building_material/roof/roof_ridge/3r","yuushya:extra_building_material/roof/roof_ridge/3"]]}
 		},
 
-
+		{
+			"class_type": "IntactBlock",
+			"name": "roof_corner_0_outer",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/roof_corner_0_outer"]]}
+		},
+		
+		{
+			"class_type": "IntactBlock",
+			"name": "roof_corner_0_inner",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/roof_corner_0_inner"]]}
+		},
+		{
+			"class_type": "IntactBlock",
+			"name": "roof_corner_1_outer",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/roof_corner_1_outer"]]}
+		},
+		
+		{
+			"class_type": "IntactBlock",
+			"name": "roof_corner_1_inner",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/roof_corner_1_inner"]]}
+		},
+		
+		{
+			"class_type": "IntactBlock",
+			"name": "roof_corner_2_outer",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/roof_corner_2_outer"]]}
+		},
+		
+		{
+			"class_type": "IntactBlock",
+			"name": "roof_corner_2_inner",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/roof_corner_2_inner"]]}
+		},
+		
+		{
+			"class_type": "IntactBlock",
+			"name": "roof_corner_3_outer",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/roof_corner_3_outer"]]}
+		},
+		
+		{
+			"class_type": "IntactBlock",
+			"name": "roof_corner_3_inner",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/roof_corner_3_inner"]]}
+		},
 
 
 		{
@@ -4158,7 +4229,7 @@
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "orange_tile_lower",
 			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
@@ -4166,7 +4237,7 @@
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "orange_tile_upper",
 			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
@@ -4174,35 +4245,35 @@
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "orange_tile_ridge_upper",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/ridge1_up_left","yuushya:extra_building_material/roof/roof_ridge/ridge1_up_middle","yuushya:extra_building_material/roof/roof_ridge/ridge1_up_right","yuushya:extra_building_material/roof/roof_ridge/ridge1_up_none"]]}
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "orange_tile_ridge_lower",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/ridge1_lp_left","yuushya:extra_building_material/roof/roof_ridge/ridge1_lp_middle","yuushya:extra_building_material/roof/roof_ridge/ridge1_lp_right","yuushya:extra_building_material/roof/roof_ridge/ridge1_lp_none"]]}
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "orange_tile_with_ridge_upper",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/htile1_up_left","yuushya:extra_building_material/roof/roof_ridge/htile1_up_middle","yuushya:extra_building_material/roof/roof_ridge/htile1_up_right","yuushya:extra_building_material/roof/roof_ridge/htile1_up_none"]]}
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "orange_tile_with_ridge_lower",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/htile1_lp_left","yuushya:extra_building_material/roof/roof_ridge/htile1_lp_middle","yuushya:extra_building_material/roof/roof_ridge/htile1_lp_right","yuushya:extra_building_material/roof/roof_ridge/htile1_lp_none"]]}
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "dark_tile_lower",
 			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
@@ -4210,7 +4281,7 @@
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "dark_tile_upper",
 			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
@@ -4218,35 +4289,35 @@
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "dark_tile_ridge_upper",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/ridge2_up_left","yuushya:extra_building_material/roof/roof_ridge/ridge2_up_middle","yuushya:extra_building_material/roof/roof_ridge/ridge2_up_right","yuushya:extra_building_material/roof/roof_ridge/ridge2_up_none"]]}
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "dark_tile_ridge_lower",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/ridge2_lp_left","yuushya:extra_building_material/roof/roof_ridge/ridge2_lp_middle","yuushya:extra_building_material/roof/roof_ridge/ridge2_lp_right","yuushya:extra_building_material/roof/roof_ridge/ridge2_lp_none"]]}
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "dark_tile_with_ridge_upper",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/htile2_up_left","yuushya:extra_building_material/roof/roof_ridge/htile2_up_middle","yuushya:extra_building_material/roof/roof_ridge/htile2_up_right","yuushya:extra_building_material/roof/roof_ridge/htile2_up_none"]]}
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "dark_tile_with_ridge_lower",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/htile2_lp_left","yuushya:extra_building_material/roof/roof_ridge/htile2_lp_middle","yuushya:extra_building_material/roof/roof_ridge/htile2_lp_right","yuushya:extra_building_material/roof/roof_ridge/htile2_lp_none"]]}
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "gray_tile_lower",
 			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
@@ -4254,7 +4325,7 @@
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "gray_tile_upper",
 			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
@@ -4262,35 +4333,35 @@
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "gray_tile_ridge_upper",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/ridge3_up_left","yuushya:extra_building_material/roof/roof_ridge/ridge3_up_middle","yuushya:extra_building_material/roof/roof_ridge/ridge3_up_right","yuushya:extra_building_material/roof/roof_ridge/ridge3_up_none"]]}
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "gray_tile_ridge_lower",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/ridge3_lp_left","yuushya:extra_building_material/roof/roof_ridge/ridge3_lp_middle","yuushya:extra_building_material/roof/roof_ridge/ridge3_lp_right","yuushya:extra_building_material/roof/roof_ridge/ridge3_lp_none"]]}
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "gray_tile_with_ridge_upper",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/htile3_up_left","yuushya:extra_building_material/roof/roof_ridge/htile3_up_middle","yuushya:extra_building_material/roof/roof_ridge/htile3_up_right","yuushya:extra_building_material/roof/roof_ridge/htile3_up_none"]]}
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "gray_tile_with_ridge_lower",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/htile3_lp_left","yuushya:extra_building_material/roof/roof_ridge/htile3_lp_middle","yuushya:extra_building_material/roof/roof_ridge/htile3_lp_right","yuushya:extra_building_material/roof/roof_ridge/htile3_lp_none"]]}
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "blue_tile_lower",
 			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
@@ -4298,7 +4369,7 @@
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "blue_tile_upper",
 			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
@@ -4306,35 +4377,35 @@
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "blue_tile_ridge_upper",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/ridge4_up_left","yuushya:extra_building_material/roof/roof_ridge/ridge4_up_middle","yuushya:extra_building_material/roof/roof_ridge/ridge4_up_right","yuushya:extra_building_material/roof/roof_ridge/ridge4_up_none"]]}
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "blue_tile_ridge_lower",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/ridge4_lp_left","yuushya:extra_building_material/roof/roof_ridge/ridge4_lp_middle","yuushya:extra_building_material/roof/roof_ridge/ridge4_lp_right","yuushya:extra_building_material/roof/roof_ridge/ridge4_lp_none"]]}
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "blue_tile_with_ridge_upper",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/htile4_up_left","yuushya:extra_building_material/roof/roof_ridge/htile4_up_middle","yuushya:extra_building_material/roof/roof_ridge/htile4_up_right","yuushya:extra_building_material/roof/roof_ridge/htile4_up_none"]]}
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "blue_tile_with_ridge_lower",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/htile4_lp_left","yuushya:extra_building_material/roof/roof_ridge/htile4_lp_middle","yuushya:extra_building_material/roof/roof_ridge/htile4_lp_right","yuushya:extra_building_material/roof/roof_ridge/htile4_lp_none"]]}
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "pale_tile_lower",
 			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
@@ -4342,7 +4413,7 @@
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "pale_tile_upper",
 			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
@@ -4350,33 +4421,173 @@
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "pale_tile_ridge_upper",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/ridge5_up_left","yuushya:extra_building_material/roof/roof_ridge/ridge5_up_middle","yuushya:extra_building_material/roof/roof_ridge/ridge5_up_right","yuushya:extra_building_material/roof/roof_ridge/ridge5_up_none"]]}
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "pale_tile_ridge_lower",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/ridge5_lp_left","yuushya:extra_building_material/roof/roof_ridge/ridge5_lp_middle","yuushya:extra_building_material/roof/roof_ridge/ridge5_lp_right","yuushya:extra_building_material/roof/roof_ridge/ridge5_lp_none"]]}
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "pale_tile_with_ridge_upper",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/htile5_up_left","yuushya:extra_building_material/roof/roof_ridge/htile5_up_middle","yuushya:extra_building_material/roof/roof_ridge/htile5_up_right","yuushya:extra_building_material/roof/roof_ridge/htile5_up_none"]]}
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "pale_tile_with_ridge_lower",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/htile5_lp_left","yuushya:extra_building_material/roof/roof_ridge/htile5_lp_middle","yuushya:extra_building_material/roof/roof_ridge/htile5_lp_right","yuushya:extra_building_material/roof/roof_ridge/htile5_lp_none"]]}
 		},
+		
+		{
+			"class_type": "IntactBlock",
+			"name": "orange_tile_outer_corner_upper",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile1_up_corner"]]}
+		},		
+		
+		{
+			"class_type": "IntactBlock",
+			"name": "orange_tile_inner_corner_upper",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile1_up_corner_inner"]]}
+		},		
+					
+		{
+			"class_type": "IntactBlock",
+			"name": "orange_tile_outer_corner_lower",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile1_lp_corner"]]}
+		},		
+		
+		{
+			"class_type": "IntactBlock",
+			"name": "orange_tile_inner_corner_lower",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile1_lp_corner_inner"]]}
+		},	
 
+		{
+			"class_type": "IntactBlock",
+			"name": "dark_tile_outer_corner_upper",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile2_up_corner"]]}
+		},		
+		
+		{
+			"class_type": "IntactBlock",
+			"name": "dark_tile_inner_corner_upper",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile2_up_corner_inner"]]}
+		},		
+					
+		{
+			"class_type": "IntactBlock",
+			"name": "dark_tile_outer_corner_lower",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile2_lp_corner"]]}
+		},		
+		
+		{
+			"class_type": "IntactBlock",
+			"name": "dark_tile_inner_corner_lower",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile2_lp_corner_inner"]]}
+		},	
+
+		{
+			"class_type": "IntactBlock",
+			"name": "gray_tile_outer_corner_upper",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile3_up_corner"]]}
+		},		
+		
+		{
+			"class_type": "IntactBlock",
+			"name": "gray_tile_inner_corner_upper",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile3_up_corner_inner"]]}
+		},		
+					
+		{
+			"class_type": "IntactBlock",
+			"name": "gray_tile_outer_corner_lower",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile3_lp_corner"]]}
+		},		
+		
+		{
+			"class_type": "IntactBlock",
+			"name": "gray_tile_inner_corner_lower",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile3_lp_corner_inner"]]}
+		},	
+
+		{
+			"class_type": "IntactBlock",
+			"name": "blue_tile_outer_corner_upper",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile4_up_corner"]]}
+		},		
+		
+		{
+			"class_type": "IntactBlock",
+			"name": "blue_tile_inner_corner_upper",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile4_up_corner_inner"]]}
+		},		
+					
+		{
+			"class_type": "IntactBlock",
+			"name": "blue_tile_outer_corner_lower",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile4_lp_corner"]]}
+		},		
+		
+		{
+			"class_type": "IntactBlock",
+			"name": "blue_tile_inner_corner_lower",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile4_lp_corner_inner"]]}
+		},	
+
+		{
+			"class_type": "IntactBlock",
+			"name": "pale_tile_outer_corner_upper",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile5_up_corner"]]}
+		},		
+		
+		{
+			"class_type": "IntactBlock",
+			"name": "pale_tile_inner_corner_upper",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile5_up_corner_inner"]]}
+		},		
+					
+		{
+			"class_type": "IntactBlock",
+			"name": "pale_tile_outer_corner_lower",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile5_lp_corner"]]}
+		},		
+		
+		{
+			"class_type": "IntactBlock",
+			"name": "pale_tile_inner_corner_lower",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile5_lp_corner_inner"]]}
+		},			
+				
 		{
 			"class_type": "ChairBlock",
 			"name": "road_fence",
@@ -4436,19 +4647,23 @@
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/fence/tall_iron_fence"]]}
 		},
+		
+
 
 		{
-			"class_type": "IntactBlock",
+			"class_type": "StairBlock",
 			"name": "iron_hollow_stairs_0",
+			"item_model": "yuushya:block/iron_hollow_stairs_0",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
-			"blockstate": { "forms": [["yuushya:extra_building_material/iron_hallow_stairs_0"]]}
+			"blockstate": { "forms": [["yuushya:block/iron_hollow_stairs_0_inner","yuushya:block/iron_hollow_stairs_0","yuushya:block/iron_hollow_stairs_0_outer"]]}
 		},
 
 		{
-			"class_type": "IntactBlock",
+			"class_type": "StairBlock",
 			"name": "iron_hollow_stairs_1",
+			"item_model": "yuushya:block/iron_hollow_stairs_1",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
-			"blockstate": { "forms": [["yuushya:extra_building_material/iron_hallow_stairs_1"]]}
+			"blockstate": { "forms": [["yuushya:block/iron_hollow_stairs_1_inner","yuushya:block/iron_hollow_stairs_1","yuushya:block/iron_hollow_stairs_1_outer"]]}
 		},
 
 		{
@@ -4470,6 +4685,20 @@
 			"name": "tall_iron_fence_right",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/fence/tall_iron_fence___"]]}
+		},
+		
+		{
+			"class_type": "IntactBlock",
+			"name": "tall_iron_fence_stairs",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/fence/tall_iron_fence_stairs"]]}
+		},		
+		
+		{
+			"class_type": "IntactBlock",
+			"name": "tall_iron_fence_stairs_sym",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/fence/tall_iron_fence_stairs_sym"]]}
 		},
 
 		{
@@ -5035,6 +5264,14 @@
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_signs",
 			"properties": {"lines": 1},
 			"blockstate": { "forms": [["yuushya:extra_building_material/poster/mini_banner_1"],["yuushya:extra_building_material/poster/mini_banner_1_"]]}
+		},		
+		
+		{
+			"class_type": "TranslucentBlock",
+			"name": "hanzi_banner_0",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_signs",
+			"properties": {"lines": 0},
+			"blockstate": { "forms": [["yuushya:extra_building_material/poster/hanzi_banner_0"]]}
 		},
 						
 		{
@@ -6234,7 +6471,7 @@
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_life",
 			"blockstate": { "forms": [["yuushya:extra_building_material/pressure_cooker"]]}
 		},
-
+		
 		{
 			"class_type": "DecoBlock",
 			"name": "casserole_0",
@@ -6262,6 +6499,21 @@
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_life",
 			"blockstate": { "forms": [["yuushya:extra_building_material/frying_pan"]]}
 		},
+		
+
+		{
+			"class_type": "DecoBlock",
+			"name": "gas_stove",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_life",
+			"blockstate": { "forms": [["yuushya:extra_building_material/gas_stove"]]}
+		},		
+		
+		{
+			"class_type": "IntactBlock",
+			"name": "gas_stove_block",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_life",
+			"blockstate": { "forms": [["yuushya:extra_building_material/gas_stove_block"]]}
+		},		
 
 		{
 			"class_type": "DecoBlock",
@@ -6303,6 +6555,27 @@
 			"name": "melon",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_life",
 			"blockstate": { "forms": [["yuushya:extra_building_material/food/melon"]]}
+		},		
+		
+		{
+			"class_type": "DecoBlock",
+			"name": "apple",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_life",
+			"blockstate": { "forms": [["yuushya:extra_building_material/food/apple"]]}
+		},			
+		
+		{
+			"class_type": "DecoBlock",
+			"name": "green_apple",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_life",
+			"blockstate": { "forms": [["yuushya:extra_building_material/food/green_apple"]]}
+		},		
+		
+		{
+			"class_type": "DecoBlock",
+			"name": "radish",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_life",
+			"blockstate": { "forms": [["yuushya:extra_building_material/food/radish"]]}
 		},		
 
 		{
@@ -6466,6 +6739,27 @@
 			"blockstate": { "forms": [["yuushya:extra_building_material/small_coffee"]]}
 		},
 
+		{
+			"class_type": "DecoBlock",
+			"name": "packed_apple",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_life",
+			"blockstate": { "forms": [["yuushya:extra_building_material/packed_apple"]]}
+		},
+		
+		{
+			"class_type": "DecoBlock",
+			"name": "packed_green_apple",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_life",
+			"blockstate": { "forms": [["yuushya:extra_building_material/packed_green_apple"]]}
+		},		
+		
+		{
+			"class_type": "DecoBlock",
+			"name": "packed_radish",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_life",
+			"blockstate": { "forms": [["yuushya:extra_building_material/packed_radish"]]}
+		},
+		
 		{
 			"class_type": "DecoBlock",
 			"name": "plate",
@@ -6637,6 +6931,13 @@
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_life",
 			"blockstate": { "forms": [["yuushya:extra_building_material/mirror_wall"]]}
 		},
+		
+		{
+			"class_type": "ChairBlock",
+			"name": "shopping_cart",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_life",
+			"blockstate": { "forms": [["yuushya:extra_building_material/shopping_cart_left","yuushya:extra_building_material/shopping_cart_middle","yuushya:extra_building_material/shopping_cart_right","yuushya:extra_building_material/shopping_cart_none"]]}
+		},		
 
 		{
 			"class_type": "DecoBlock",
@@ -6860,6 +7161,7 @@
 		{
 			"class_type": "DecoBlock",
 			"name": "british_shorthair",
+			"properties": { "sound": "wool" },
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_life",
 			"blockstate": { "forms": [["yuushya:extra_building_material/british_shorthair"]]}
 		},
@@ -6867,6 +7169,7 @@
 		{
 			"class_type": "DecoBlock",
 			"name": "orange_cat",
+			"properties": { "sound": "wool" },
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_life",
 			"blockstate": { "forms": [["yuushya:extra_building_material/orange_cat"]]}
 		},
@@ -6874,6 +7177,7 @@
 		{
 			"class_type": "DecoBlock",
 			"name": "white_cat",
+			"properties": { "sound": "wool" },
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_life",
 			"blockstate": { "forms": [["yuushya:extra_building_material/white_cat"]]}
 		},
@@ -6881,6 +7185,7 @@
 		{
 			"class_type": "DecoBlock",
 			"name": "black_cat",
+			"properties": { "sound": "wool" },
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_life",
 			"blockstate": { "forms": [["yuushya:extra_building_material/black_cat"]]}
 		},
@@ -6888,6 +7193,7 @@
 		{
 			"class_type": "DecoBlock",
 			"name": "ragdoll",
+			"properties": { "sound": "wool" },
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_life",
 			"blockstate": { "forms": [["yuushya:extra_building_material/ragdoll"]]}
 		},
@@ -6895,6 +7201,7 @@
 		{
 			"class_type": "DecoBlock",
 			"name": "calico",
+			"properties": { "sound": "wool" },
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_life",
 			"blockstate": { "forms": [["yuushya:extra_building_material/calico"]]}
 		},
@@ -6902,6 +7209,7 @@
 		{
 			"class_type": "DecoBlock",
 			"name": "jellie",
+			"properties": { "sound": "wool" },
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_life",
 			"blockstate": { "forms": [["yuushya:extra_building_material/jellie"]]}
 		},
@@ -6909,6 +7217,7 @@
 		{
 			"class_type": "DecoBlock",
 			"name": "siamese",
+			"properties": { "sound": "wool" },
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_life",
 			"blockstate": { "forms": [["yuushya:extra_building_material/siamese"]]}
 		},
@@ -6916,6 +7225,7 @@
 		{
 			"class_type": "DecoBlock",
 			"name": "tabby",
+			"properties": { "sound": "wool" },
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_life",
 			"blockstate": { "forms": [["yuushya:extra_building_material/tabby"]]}
 		},
@@ -7845,6 +8155,13 @@
 			"name": "platform_metal",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_infrastructure",
 			"blockstate": { "forms": [["yuushya:extra_building_material/platform_metal"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "satellite_dish",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_infrastructure",
+			"blockstate": { "forms": [["yuushya:extra_building_material/satellite_dish"]]}
 		},
 
 		{
