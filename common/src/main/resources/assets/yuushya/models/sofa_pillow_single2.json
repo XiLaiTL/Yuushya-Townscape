@@ -1,0 +1,22 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "yuushya:0extra_building_block/wool/mixed_wool",
+		"particle": "yuushya:0extra_building_block/wool/mixed_wool"
+	},
+	"elements": [
+		{
+			"from": [8.5, -4, 2.5],
+			"to": [11.5, 7, 13.5],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [0, 0, 0]},
+			"faces": {
+				"north": {"uv": [12, 6, 14, 16], "texture": "#0"},
+				"east": {"uv": [14, 6, 4, 16], "texture": "#0"},
+				"south": {"uv": [4, 6, 6, 16], "texture": "#0"},
+				"west": {"uv": [4, 6, 14, 16], "texture": "#0"},
+				"up": {"uv": [4, 13, 14, 16], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [14, 6, 4, 9], "rotation": 270, "texture": "#0"}
+			}
+		}
+	]
+}

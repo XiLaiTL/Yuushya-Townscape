@@ -22,6 +22,7 @@ public class YuushyaCreativeModeTab {
     public static final CreativeModeTab YUUSHYA_ITEM = YuushyaCreativeModeTab.create("item", ()->YuushyaRegistries.ITEMS.getInstanceOrDefault("pos_trans_item", Items.APPLE));
     public static final CreativeModeTab YUUSHYA_STRUCTURE = YuushyaCreativeModeTab.create("structure", ()->YuushyaRegistries.ITEMS.getInstanceOrDefault("maple_tree", Items.APPLE));
     public static final CreativeModeTab YUUSHYA_TEMPLATE = YuushyaCreativeModeTab.create("template",()->YuushyaRegistries.ITEMS.getInstanceOrDefault("ridge", Items.APPLE));
+    public static final CreativeModeTab YUUSHYA_LIGHTING = YuushyaCreativeModeTab.create("lighting",()->YuushyaRegistries.ITEMS.getInstanceOrDefault("desk_lamp", Items.APPLE));
 
     private YuushyaCreativeModeTab() {}
     public static CreativeModeTab create(String name, Supplier<Item> item){
@@ -32,6 +33,7 @@ public class YuushyaCreativeModeTab {
         return switch (CreativeModeTab) {
             case "yuushya_extrablocks" -> YuushyaRegistries.ITEMS.get("block_blueprint").get();
             case "yuushya_furniture" -> YuushyaRegistries.ITEMS.get("furniture_blueprint").get();
+            case "yuushya_lighting" -> YuushyaRegistries.ITEMS.get("furniture_blueprint").get();
             case "yuushya_decoration" -> YuushyaRegistries.ITEMS.get("deco_blueprint").get();
             case "yuushya_signs" -> YuushyaRegistries.ITEMS.get("sign_blueprint").get();
             case "yuushya_life" -> YuushyaRegistries.ITEMS.get("dailylife_stuff_blueprint").get();
@@ -46,6 +48,7 @@ public class YuushyaCreativeModeTab {
         return switch (CreativeModeTab) {
             case "yuushya_extrablocks" -> YuushyaCreativeModeTab.YUUSHYA_EXTRA_BLOCKS;
             case "yuushya_furniture" -> YuushyaCreativeModeTab.YUUSHYA_FURNITURE;
+            case "yuushya_lighting" -> YuushyaCreativeModeTab.YUUSHYA_LIGHTING;
             case "yuushya_decoration" -> YuushyaCreativeModeTab.YUUSHYA_DECORATION;
             case "yuushya_signs" -> YuushyaCreativeModeTab.YUUSHYA_SIGNS;
             case "yuushya_life" -> YuushyaCreativeModeTab.YUUSHYA_LIFE;

@@ -1,8 +1,8 @@
 {
-	"credit": "Coco",
+	"credit": "Yuushya",
 	"textures": {
-		"all": "yuushya:block_/template",
-		"particle": "#all"
+		"particle": "#all",
+		"all": "yuushya:block_/template"
 	},
 	"elements": [
 		{
@@ -19,16 +19,15 @@
 			}
 		},
 		{
-			"from": [0, 8, 0],
-			"to": [16, 16, 8],
-			"rotation": {"angle": 0, "axis": "y", "origin": [13, 8, 13]},
+			"from": [8, 8, 0],
+			"to": [16, 16, 16],
 			"faces": {
-				"north": {"uv": [0, 0, 16, 8], "texture": "#all"},
-				"east": {"uv": [8, 0, 16, 8], "texture": "#all"},
-				"south": {"uv": [0, 0, 16, 8], "texture": "#all"},
-				"west": {"uv": [0, 0, 8, 8], "texture": "#all"},
-				"up": {"uv": [0, 0, 16, 8], "texture": "#all"},
-				"down": {"uv": [0, 8, 16, 16], "texture": "#all"}
+				"north": {"uv": [0, 0, 8, 8], "texture": "#all"},
+				"east": {"uv": [0, 0, 16, 8], "texture": "#all"},
+				"south": {"uv": [8, 0, 16, 8], "texture": "#all"},
+				"west": {"uv": [0, 0, 16, 8], "texture": "#all"},
+				"up": {"uv": [8, 0, 16, 16], "texture": "#all"},
+				"down": {"uv": [8, 0, 16, 16], "texture": "#all"}
 			}
 		}
 	],
@@ -52,7 +51,7 @@
 			"scale": [0.4, 0.4, 0.4]
 		},
 		"gui": {
-			"rotation": [22.5, 45, 0],
+			"rotation": [22.5, 135, 0],
 			"translation": [0, -0.75, 0],
 			"scale": [0.65, 0.65, 0.65]
 		},

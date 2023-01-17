@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "yuushya:the_encyclopedia"
+    },
+    {
+      "item": "minecraft:lever"
+    }	
+  ],
+  "result": {
+    "item": "yuushya:form_trans_item",
+    "count": 1
+  }
+}

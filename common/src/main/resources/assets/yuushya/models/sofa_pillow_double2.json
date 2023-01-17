@@ -1,0 +1,36 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "yuushya:0extra_building_block/wool/yellow_wool_",
+		"1": "yuushya:0extra_building_block/wool/mixed_wool",
+		"particle": "yuushya:0extra_building_block/wool/yellow_wool_"
+	},
+	"elements": [
+		{
+			"from": [6.5, -5, 5],
+			"to": [8.5, 2, 12],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [0, 0, 0]},
+			"faces": {
+				"north": {"uv": [2, 6, 4, 14], "texture": "#0"},
+				"east": {"uv": [2, 6, 10, 14], "texture": "#0"},
+				"south": {"uv": [2, 6, 4, 14], "texture": "#0"},
+				"west": {"uv": [2, 6, 10, 14], "texture": "#0"},
+				"up": {"uv": [2, 8, 10, 6], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [10, 14, 2, 12], "rotation": 90, "texture": "#0"}
+			}
+		},
+		{
+			"from": [8.5, -4, 2.5],
+			"to": [11.5, 7, 13.5],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [0, 0, 0]},
+			"faces": {
+				"north": {"uv": [12, 0, 14, 10], "texture": "#1"},
+				"east": {"uv": [14, 0, 4, 10], "texture": "#1"},
+				"south": {"uv": [4, 0, 6, 10], "texture": "#1"},
+				"west": {"uv": [4, 0, 14, 10], "texture": "#1"},
+				"up": {"uv": [14, 0, 4, 3], "rotation": 270, "texture": "#1"},
+				"down": {"uv": [14, 0, 4, 3], "rotation": 270, "texture": "#1"}
+			}
+		}
+	]
+}
