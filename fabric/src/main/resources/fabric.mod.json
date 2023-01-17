@@ -26,7 +26,7 @@
   "depends": {
     "fabric": "*",
     "minecraft": ">=1.18.2",
-    "architectury": ">=4.4.59"
+    "architectury": ">=4.10.88"
   },
   "mixins": [
     "yuushya.mixins.json",
