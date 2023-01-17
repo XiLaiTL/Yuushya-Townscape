@@ -26,7 +26,6 @@ public class Yuushya {
 
     public static void init() {
 
-        ReloadListenerRegistry.register(PackType.CLIENT_RESOURCES,new YuushyaResourceReloadListener());
         YuushyaRegistryConfig.readRegistryConfig();
         YuushyaRegistries.registerRegistries();
         YuushyaRegistries.registerAll();
