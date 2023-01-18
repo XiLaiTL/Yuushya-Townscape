@@ -27,6 +27,13 @@
   "item.yuushya.debug_stick_item.select": "已选择“%s”（%s）",
   "item.yuushya.debug_stick_item.update": "将\"%s\"设为%s",
   
+  "itemGroup.yuushya.lighting": "Yuushya-灯具",
+  "itemGroup.yuushya.electrical_appliance": "Yuushya-电器",
+  "itemGroup.yuushya.catering": "Yuushya-餐饮",
+  "itemGroup.yuushya.store": "Yuushya-经营",
+  "itemGroup.yuushya.living_being": "Yuushya-动植物",
+  "itemGroup.yuushya.traffic": "Yuushya-交通",
+  
   "item.yuushya.pos_trans_item": "方块实体层位移工具",
   "item.yuushya.pos_trans_item.line1": "\u00A79置于主手右键一[方块实体]调整其相应[层]的位移值",
   "item.yuushya.pos_trans_item.line2": "\u00A79副手右键调整模式(共3种) 主手左右键执行位移",
