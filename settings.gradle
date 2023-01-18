@@ -11,5 +11,6 @@ include("common")
 include("fabric")
 include("quilt")
 include("forge")
+include("fabric-like")
 
 rootProject.name = "architectury-yuushya-mod"

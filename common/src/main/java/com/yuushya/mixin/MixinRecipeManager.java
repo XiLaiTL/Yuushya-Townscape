@@ -19,7 +19,6 @@ public class MixinRecipeManager {
             method = "apply(Ljava/util/Map;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;)V",
             at = @At("HEAD"))
     public void apply(Map<ResourceLocation, JsonElement> map, ResourceManager resourceManager, ProfilerFiller profiler, CallbackInfo ci){
-
         YuushyaDataProvider.of(YuushyaDataProvider.DataType.Recipe).forEach((key, value)->{
             map.put(YuushyaDataProvider.toRecipeResourceLocation(key),value.get());
         });

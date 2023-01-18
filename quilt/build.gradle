@@ -35,6 +35,8 @@ dependencies {
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionQuilt")) { transitive false }
+    common(project(path: ":fabric-like", configuration: "namedElements")) { transitive false }
+    shadowCommon(project(path: ":fabric-like", configuration: "transformProductionQuilt")) { transitive false }
 }
 def resourceTargets = 'quilt.mod.json'
 def replaceProperties = [

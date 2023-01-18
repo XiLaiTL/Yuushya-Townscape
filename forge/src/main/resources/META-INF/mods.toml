@@ -33,6 +33,6 @@ side = "BOTH"
 [[dependencies.yuushya]]
 modId = "architectury"
 mandatory = true
-versionRange = "[4.4.59,)"
+versionRange = "[4.10.88,)"
 ordering = "AFTER"
 side = "BOTH"
