@@ -6425,256 +6425,6 @@
 			"blockstate": { "forms": [["yuushya:extra_building_material/bell"]]}
 		},
 
-		{
-			"class_type": "DecoBlock",
-			"name": "ashtray",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/ashtray"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "rusty_bucket",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/bucket"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "mirror",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/mirror_table"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "mounted_mirror",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/mirror_wall"]]}
-		},
-		
-	
-
-		{
-			"class_type": "DecoBlock",
-			"name": "hanger_rod",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/hangerm"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "hanger_rod_rail",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/clothes_rail"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "hanged_cloth",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/hangerm_cloth"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "hanged_clothes",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/hangerm_clothes"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "clothes_showcase",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"properties": {"lines": 1},
-			"blockstate": { "forms": [["yuushya:extra_building_material/hanging_clothes_1"],["yuushya:extra_building_material/hanging_clothes_1_"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "hanging_clothes_staff",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"properties": {"lines": 0},
-			"blockstate": { "forms": [["yuushya:extra_building_material/hanging_clothes_staff"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "hanged_things",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/hangerm_both"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "hanged_things_",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/hangerm_both_"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "hanger_rod_anchor",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/hanger_pin"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "ceiling_hanger_rod_anchor",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/hanger_pin_vertical"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "mounted_clothes_0",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_0"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "mounted_clothes_1",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_1"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "mounted_clothes_2",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_2"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "mounted_clothes_3",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_3"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "mounted_clothes_4",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_4"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "mounted_clothes_5",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_5"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "mounted_clothes_6",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_6"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "mounted_clothes_7",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_7"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "mounted_clothes_8",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_8"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "mounted_clothes_9",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_9"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "mounted_clothes_10",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_10"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "mounted_clothes_11",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_11"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "mounted_clothes_12",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_12"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "mounted_clothes_13",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_13"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "mounted_clothes_14",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_14"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "mounted_clothes_15",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_15"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "mounted_clothes_16",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_16"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "mounted_cloth_0",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/cloth_0"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "mounted_cloth_1",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/cloth_1"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "mounted_cloth_2",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/cloth_2"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "mounted_cloth_3",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
-			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/cloth_3"]]}
-		},
-
-
 
 
 
@@ -8179,6 +7929,13 @@
 		
 		{
 			"class_type": "DecoBlock",
+			"name": "ashtray",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/ashtray"]]}
+		},		
+		
+		{
+			"class_type": "DecoBlock",
 			"name": "closet_handle_left",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_furniture",
 			"blockstate": { "forms": [["yuushya:extra_building_material/closet_handle_left"]]}
@@ -8306,6 +8063,27 @@
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_furniture",
 			"blockstate": { "forms": [["yuushya:extra_building_material/flower_painting"]]}
 		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "rusty_bucket",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/bucket"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "mirror",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/mirror_table"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "mounted_mirror",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/mirror_wall"]]}
+		},		
 
 
 		{
@@ -8488,6 +8266,229 @@
 			"auto_generated": { "recipe": true, "collision": false }, "item_group": "yuushya_furniture",
 			"blockstate": { "forms": [["yuushya:extra_building_material/vinyl_record_white"]]}
 		},
+		
+
+		
+	
+
+		{
+			"class_type": "DecoBlock",
+			"name": "hanger_rod",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/hangerm"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "hanger_rod_rail",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/clothes_rail"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "hanged_cloth",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/hangerm_cloth"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "hanged_clothes",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/hangerm_clothes"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "clothes_showcase",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"properties": {"lines": 1},
+			"blockstate": { "forms": [["yuushya:extra_building_material/hanging_clothes_1"],["yuushya:extra_building_material/hanging_clothes_1_"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "hanging_clothes_staff",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"properties": {"lines": 0},
+			"blockstate": { "forms": [["yuushya:extra_building_material/hanging_clothes_staff"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "hanged_things",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/hangerm_both"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "hanged_things_",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/hangerm_both_"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "hanger_rod_anchor",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/hanger_pin"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "ceiling_hanger_rod_anchor",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/hanger_pin_vertical"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "mounted_clothes_0",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_0"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "mounted_clothes_1",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_1"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "mounted_clothes_2",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_2"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "mounted_clothes_3",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_3"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "mounted_clothes_4",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_4"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "mounted_clothes_5",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_5"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "mounted_clothes_6",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_6"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "mounted_clothes_7",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_7"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "mounted_clothes_8",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_8"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "mounted_clothes_9",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_9"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "mounted_clothes_10",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_10"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "mounted_clothes_11",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_11"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "mounted_clothes_12",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_12"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "mounted_clothes_13",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_13"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "mounted_clothes_14",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_14"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "mounted_clothes_15",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_15"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "mounted_clothes_16",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_16"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "mounted_cloth_0",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/cloth_0"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "mounted_cloth_1",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/cloth_1"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "mounted_cloth_2",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/cloth_2"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "mounted_cloth_3",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/cloth_3"]]}
+		},		
 		
 		{
 			"class_type": "DecoBlock",
