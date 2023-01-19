@@ -13,7 +13,9 @@ import java.util.function.Supplier;
 
 public class YuushyaCreativeModeTab {
 
-    public static final CreativeModeTab YUUSHYA_EXTRA_BLOCKS = YuushyaCreativeModeTab.create("extra_blocks", ()->YuushyaRegistries.ITEMS.getInstanceOrDefault("raw_oak_wood", Items.APPLE));
+    public static final CreativeModeTab YUUSHYA_EXTRA_BLOCKS = YuushyaCreativeModeTab.create("extra_blocks", ()->YuushyaRegistries.ITEMS.getInstanceOrDefault("yellow_acrylic", Items.APPLE));
+    public static final CreativeModeTab YUUSHYA_WOOD = YuushyaCreativeModeTab.create("wood", ()->YuushyaRegistries.ITEMS.getInstanceOrDefault("raw_oak_wood", Items.APPLE));
+    public static final CreativeModeTab YUUSHYA_STONE = YuushyaCreativeModeTab.create("stone", ()->YuushyaRegistries.ITEMS.getInstanceOrDefault("park_tile", Items.APPLE));
     public static final CreativeModeTab YUUSHYA_EXTRA_SHAPES = YuushyaCreativeModeTab.create("extra_shapes", ()->YuushyaRegistries.ITEMS.getInstanceOrDefault("orange_tile_with_ridge_lower", Items.APPLE));
     public static final CreativeModeTab YUUSHYA_FURNITURE = YuushyaCreativeModeTab.create("furniture", ()->YuushyaRegistries.ITEMS.getInstanceOrDefault("classroom_chair", Items.APPLE));
     public static final CreativeModeTab YUUSHYA_LIGHTING = YuushyaCreativeModeTab.create("lighting",()->YuushyaRegistries.ITEMS.getInstanceOrDefault("desk_lamp_0", Items.APPLE));
@@ -36,6 +38,8 @@ public class YuushyaCreativeModeTab {
     public static ItemLike getBlueprint(String CreativeModeTab){
         return switch (CreativeModeTab) {
             case "yuushya_extrablocks" -> YuushyaRegistries.ITEMS.get("block_blueprint").get();
+            case "yuushya_wood" -> YuushyaRegistries.ITEMS.get("block_blueprint").get();
+            case "yuushya_stone" -> YuushyaRegistries.ITEMS.get("block_blueprint").get();
             case "yuushya_furniture" -> YuushyaRegistries.ITEMS.get("furniture_blueprint").get();
             case "yuushya_lighting" -> YuushyaRegistries.ITEMS.get("furniture_blueprint").get();
             case "yuushya_electrical_appliance" -> YuushyaRegistries.ITEMS.get("furniture_blueprint").get();
@@ -54,6 +58,8 @@ public class YuushyaCreativeModeTab {
     public static CreativeModeTab toGroup(String CreativeModeTab) {
         return switch (CreativeModeTab) {
             case "yuushya_extrablocks" -> YuushyaCreativeModeTab.YUUSHYA_EXTRA_BLOCKS;
+            case "yuushya_wood" -> YuushyaCreativeModeTab.YUUSHYA_WOOD;
+            case "yuushya_stone" -> YuushyaCreativeModeTab.YUUSHYA_STONE;
             case "yuushya_furniture" -> YuushyaCreativeModeTab.YUUSHYA_FURNITURE;
             case "yuushya_lighting" -> YuushyaCreativeModeTab.YUUSHYA_LIGHTING;
             case "yuushya_catering" -> YuushyaCreativeModeTab.YUUSHYA_CATERING;
