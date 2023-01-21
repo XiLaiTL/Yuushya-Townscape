@@ -157,6 +157,105 @@
 				"set":  [
 					"all#yuushya:block_/warning"]}
 		},
+		
+		{
+			"class_type": "IntactBlock",
+			"name": "tree_base",
+			"properties": {"sound": "wood" },
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:extra_building_material/tree_base"]]}
+		},
+
+
+
+		{
+			"class_type": "PlainBlock", "item_group": "yuushya_stone",
+			"name": "lime__concrete",
+			"auto_generated": { "recipe": true },
+			"blockstate": { "forms": [["yuushya:block/lime_concrete"]]}
+		},
+
+		{
+			"class_type": "PlainBlock", "item_group": "yuushya_stone",
+			"name": "reinforced_concrete",
+			"auto_generated": { "recipe": true },
+			"blockstate": { "forms": [["yuushya:block/reinforced_concrete"]]}
+		},
+
+		{
+			"class_type": "PlainBlock", "item_group": "yuushya_stone",
+			"name": "top_reinforced_concrete",
+			"auto_generated": { "recipe": true },
+			"blockstate": { "forms": [["yuushya:block/top_reinforced_concrete"]]}
+		},
+
+		{
+			"class_type": "PlainBlock",
+			"name": "japanese_wall",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:block/japanese_wall"]]}
+		},
+
+		{
+			"class_type": "PlainBlock",
+			"name": "tatami",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:block/tatami"]]}
+		},
+
+		{
+			"class_type": "PlainBlock",
+			"name": "tatami_rotated",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:block/tatami_"]]}
+		},
+
+		{
+			"class_type": "PlainBlock",
+			"name": "a_metal_blindwall_0",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:block/a_metal_blindwall"]]}
+		},
+
+		{
+			"class_type": "PlainBlock",
+			"name": "b_metal_blindwall_0",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:block/a_metal_blindwall"]]}
+		},
+
+		{
+			"class_type": "PlainBlock",
+			"name": "a_metal_blindwall_1",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:block/b_metal_blindwall"]]}
+		},
+
+		{
+			"class_type": "PlainBlock",
+			"name": "b_metal_blindwall_1",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
+			"blockstate": { "forms": [["yuushya:block/b_metal_blindwall"]]}
+		},		
+		
+		{
+			"class_type": "block", "name": "blue_metal",
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/stone/blue_metal",
+				"set":  [
+					"all#yuushya:block_/stone/blue_metal","sides#yuushya:block_/stone/blue_metal","top#yuushya:block_/stone/blue_metal"]}
+		},
+
+		{
+			"class_type": "block", "name": "grass",
+			"properties": {"sound": "plant"},
+			"texture": {
+				"type": "misc",
+				"value":"yuushya:block_/grass",
+				"set":  [
+					"all#yuushya:block_/grass","sides#yuushya:block_/grass","top#yuushya:block_/grass"]}
+		},		
 
 		{
 			"class_type": "block", "name": "framed_bricks", "item_group": "yuushya_stone",
@@ -1386,24 +1485,7 @@
 					"top#yuushya:block_/concrete/yellow_concrete_top"]}
 		},
 
-		{
-			"class_type": "block", "name": "blue_metal",
-			"texture": {
-				"type": "misc",
-				"value":"yuushya:block_/stone/blue_metal",
-				"set":  [
-					"all#yuushya:block_/stone/blue_metal","sides#yuushya:block_/stone/blue_metal","top#yuushya:block_/stone/blue_metal"]}
-		},
 
-		{
-			"class_type": "block", "name": "grass",
-			"properties": {"sound": "plant"},
-			"texture": {
-				"type": "misc",
-				"value":"yuushya:block_/grass",
-				"set":  [
-					"all#yuushya:block_/grass","sides#yuushya:block_/grass","top#yuushya:block_/grass"]}
-		},
 
 		{
 			"class_type": "block", "name": "cut_tile", "item_group": "yuushya_stone",
@@ -2940,85 +3022,7 @@
 
 		{"name": "~Extra_Building_Block_拓展方块", "class_type": "_comment" },
 
-		{
-			"class_type": "IntactBlock",
-			"name": "tree_base",
-			"properties": {"sound": "wood" },
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
-			"blockstate": { "forms": [["yuushya:extra_building_material/tree_base"]]}
-		},
 
-
-
-		{
-			"class_type": "PlainBlock", "item_group": "yuushya_stone",
-			"name": "lime__concrete",
-			"auto_generated": { "recipe": true },
-			"blockstate": { "forms": [["yuushya:block/lime_concrete"]]}
-		},
-
-		{
-			"class_type": "PlainBlock", "item_group": "yuushya_stone",
-			"name": "reinforced_concrete",
-			"auto_generated": { "recipe": true },
-			"blockstate": { "forms": [["yuushya:block/reinforced_concrete"]]}
-		},
-
-		{
-			"class_type": "PlainBlock", "item_group": "yuushya_stone",
-			"name": "top_reinforced_concrete",
-			"auto_generated": { "recipe": true },
-			"blockstate": { "forms": [["yuushya:block/top_reinforced_concrete"]]}
-		},
-
-		{
-			"class_type": "PlainBlock",
-			"name": "japanese_wall",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
-			"blockstate": { "forms": [["yuushya:block/japanese_wall"]]}
-		},
-
-		{
-			"class_type": "PlainBlock",
-			"name": "tatami",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
-			"blockstate": { "forms": [["yuushya:block/tatami"]]}
-		},
-
-		{
-			"class_type": "PlainBlock",
-			"name": "tatami_rotated",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
-			"blockstate": { "forms": [["yuushya:block/tatami_"]]}
-		},
-
-		{
-			"class_type": "PlainBlock",
-			"name": "a_metal_blindwall_0",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
-			"blockstate": { "forms": [["yuushya:block/a_metal_blindwall"]]}
-		},
-
-		{
-			"class_type": "PlainBlock",
-			"name": "b_metal_blindwall_0",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
-			"blockstate": { "forms": [["yuushya:block/a_metal_blindwall"]]}
-		},
-
-		{
-			"class_type": "PlainBlock",
-			"name": "a_metal_blindwall_1",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
-			"blockstate": { "forms": [["yuushya:block/b_metal_blindwall"]]}
-		},
-
-		{
-			"class_type": "PlainBlock",
-			"name": "b_metal_blindwall_1",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrablocks",
-			"blockstate": { "forms": [["yuushya:block/b_metal_blindwall"]]}
-		},
 
 		{
 			"class_type": "block", "name": "asphalt", "item_group": "yuushya_stone",
@@ -9166,6 +9170,22 @@
 
 		{
 			"class_type": "DecoBlock",
+			"name": "tv_online",
+			"properties": {"lines": 1},
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_electrical_appliance",
+			"blockstate": { "forms": [["yuushya:extra_building_material/tv_program_0"],["yuushya:extra_building_material/tv_program_1"],["yuushya:extra_building_material/tv_program_2"],["yuushya:extra_building_material/tv_program_3"],["yuushya:extra_building_material/tv_program_4"],["yuushya:extra_building_material/tv_program_5"],["yuushya:extra_building_material/tv_program_6"],["yuushya:extra_building_material/tv_program_7"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "mounted_tv_online",
+			"properties": {"lines": 1},
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_electrical_appliance",
+			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_tv_program_0"],["yuushya:extra_building_material/mounted_tv_program_1"],["yuushya:extra_building_material/mounted_tv_program_2"],["yuushya:extra_building_material/mounted_tv_program_3"],["yuushya:extra_building_material/mounted_tv_program_4"],["yuushya:extra_building_material/mounted_tv_program_5"],["yuushya:extra_building_material/mounted_tv_program_6"],["yuushya:extra_building_material/mounted_tv_program_7"]]}
+		},
+		
+		{
+			"class_type": "DecoBlock",
 			"name": "tv",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_electrical_appliance",
 			"blockstate": { "forms": [["yuushya:extra_building_material/tv"]]}
@@ -9176,20 +9196,6 @@
 			"name": "mounted_tv",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_electrical_appliance",
 			"blockstate": { "forms": [["yuushya:extra_building_material/tv_wall"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "tv_online",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_electrical_appliance",
-			"blockstate": { "forms": [["yuushya:extra_building_material/tv_bc"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "mounted_tv_online",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_electrical_appliance",
-			"blockstate": { "forms": [["yuushya:extra_building_material/tv_wall_bc"]]}
 		},
 
 
