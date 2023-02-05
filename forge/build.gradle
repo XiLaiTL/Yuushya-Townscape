@@ -2,13 +2,19 @@ plugins {
     id "com.github.johnrengelman.shadow"
 }
 
-architectury {
-    platformSetupLoomIde()
-    fabric()
-}
-
 loom {
     accessWidenerPath = project(":common").loom.accessWidenerPath
+    forge {
+        convertAccessWideners = true;
+        extraAccessWideners.add loom.accessWidenerPath.get().asFile.name
+        mixinConfig "yuushya-common.mixins.json"
+        mixinConfig "yuushya.mixins.json"
+    }
+}
+
+architectury {
+    platformSetupLoomIde()
+    forge()
 }
 
 configurations {
@@ -16,27 +22,29 @@ configurations {
     shadowCommon
     compileClasspath.extendsFrom common
     runtimeClasspath.extendsFrom common
-    developmentFabric.extendsFrom common
+    developmentForge.extendsFrom common
 }
 
 dependencies {
-    modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_loader_version}"
-    modApi "net.fabricmc.fabric-api:fabric-api:${rootProject.fabric_api_version}"
+    forge "net.minecraftforge:forge:${rootProject.forge_version}"
+    modApi "${rootProject.architectury_id}:architectury-forge:${rootProject.architectury_version}"
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
-    shadowCommon(project(path: ":common", configuration: "transformProductionFabric")) { transitive false }
+    shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
 }
 
 processResources {
     inputs.property "version", project.version
 
-    filesMatching("fabric.mod.json") {
+    filesMatching("META-INF/mods.toml") {
         expand "version": project.version
     }
 }
 
 shadowJar {
+    exclude "fabric.mod.json"
     exclude "architectury.common.json"
+
     configurations = [project.configurations.shadowCommon]
     classifier "dev-shadow"
 }
@@ -53,10 +61,10 @@ components.java {
     }
 }
 
-task moveFabricBuilds() {
+task moveForgeBuilds() {
     doLast {
         delete fileTree("../build").matching {
-            include "**/Yuushya-Townscape-fabric*"
+            include "**/Yuushya-Townscape-forge*"
         }
         copy {
             from "build/libs"
@@ -75,7 +83,7 @@ task moveFabricBuilds() {
 afterEvaluate {
     for (def task in it.tasks) {
         if (task == tasks.build) {
-            task.finalizedBy tasks.moveFabricBuilds
+            task.finalizedBy tasks.moveForgeBuilds
         }
     }
 }

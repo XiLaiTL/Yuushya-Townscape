@@ -1,6 +1,0 @@
-{
-      "type": "minecraft:stonecutting", 
-      "ingredient": { "item": "yuushya:slab_blueprint" }, 
-      "result": "yuushya:slab03",
-      "count": 4
-}

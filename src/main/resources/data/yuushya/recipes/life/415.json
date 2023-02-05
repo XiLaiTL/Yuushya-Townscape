@@ -1,6 +1,0 @@
-{
-      "type": "minecraft:stonecutting", 
-      "ingredient": { "item": "yuushya:dailylife_stuff_blueprint" }, 
-      "result": "yuushya:415",
-      "count": 1
-}

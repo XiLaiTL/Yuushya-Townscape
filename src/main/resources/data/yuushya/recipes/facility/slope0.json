@@ -1,6 +1,0 @@
-{
-      "type": "minecraft:stonecutting", 
-      "ingredient": { "item": "yuushya:facility_blueprint" }, 
-      "result": "yuushya:slope0",
-      "count": 4
-}

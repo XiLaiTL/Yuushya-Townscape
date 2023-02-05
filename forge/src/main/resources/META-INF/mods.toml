@@ -1,0 +1,33 @@
+modLoader = "javafml"
+loaderVersion = "[36,)"
+license = "等写"
+
+[[mods]]
+modId = "yuushya"
+version = "${version}"
+displayName = "Yuushya Townscape"
+authors = "等写"
+description = "等写"
+logoFile = "pack.png"
+
+[[dependencies.yuushya]]
+modId = "forge"
+mandatory = true
+versionRange = "[36,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.yuushya]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.16.5,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.yuushya]]
+modId = "architectury"
+mandatory = true
+versionRange = "[1.26.37,)"
+ordering = "AFTER"
+side = "BOTH"
+

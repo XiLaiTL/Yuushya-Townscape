@@ -1,6 +1,0 @@
-{
-      "type": "minecraft:stonecutting", 
-      "ingredient": { "item": "yuushya:furniture_blueprint" }, 
-      "result": "yuushya:table_bookshelf04",
-      "count": 4
-}

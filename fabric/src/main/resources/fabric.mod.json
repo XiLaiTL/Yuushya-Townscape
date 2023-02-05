@@ -1,39 +1,30 @@
 {
   "schemaVersion": 1,
   "id": "yuushya",
-  "version": "${mod_version}",
-  "name": "${mod_name}",
-  "description": "${mod_description}",
+  "version": "${version}",
+  "name": "Yuushya Townscape",
+  "description": "等写",
   "authors": [
-    "${mod_authors}"
+    "等写",
   ],
-  "contact": {
-    "homepage": "${mod_url}",
-    "sources": "https://gitee.com/yuushya/yuushya-release/releases/Release"
-  },
-
-  "license": "${mod_licence}",
+  "license": "等写",
   "icon": "pack.png",
-
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.cocofish.yuushya.Yuushya"
+      "com.yuushya.fabric.YuushyaMainFabric"
     ],
     "client": [
-      {
-        "value": "net.cocofish.yuushya.YuushyaClient"
-      }
+      "com.yuushya.fabric.YuushyaMainFabricClient"
     ]
   },
-
+  "mixins": [
+    "yuushya.mixins.json",
+    "yuushya-common.mixins.json"
+  ],
   "depends": {
-    "fabricloader": ">=0.11.3",
     "fabric": "*",
-    "minecraft": "1.18.x",
-    "java": ">=17"
-  },
-  "suggests": {
-    "another-mod": "*"
+    "minecraft": "*",
+    "mtr": "*"
   }
 }
