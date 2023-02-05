@@ -5,7 +5,7 @@ plugins {
 loom {
     accessWidenerPath = project(":common").loom.accessWidenerPath
     forge {
-        convertAccessWideners = true;
+        convertAccessWideners = true
         extraAccessWideners.add loom.accessWidenerPath.get().asFile.name
         mixinConfig "yuushya-common.mixins.json"
         mixinConfig "yuushya.mixins.json"
