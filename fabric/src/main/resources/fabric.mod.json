@@ -3,11 +3,14 @@
   "id": "yuushya",
   "version": "${version}",
   "name": "Yuushya Townscape",
-  "description": "等写",
+  "description": "Adore the life in a busy city?",
   "authors": [
-    "等写",
+    "Coco",
+    "Xiao2 or XiLaiTL",
+    "SQwatermark",
+    "XieZai"
   ],
-  "license": "等写",
+  "license": "GNU 3.0",
   "icon": "pack.png",
   "environment": "*",
   "entrypoints": {

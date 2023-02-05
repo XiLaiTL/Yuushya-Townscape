@@ -1,13 +1,13 @@
 modLoader = "javafml"
 loaderVersion = "[36,)"
-license = "等写"
+license = "GNU 3.0"
 
 [[mods]]
 modId = "yuushya"
 version = "${version}"
 displayName = "Yuushya Townscape"
-authors = "等写"
-description = "等写"
+authors = "Coco, Xiao2 or XiLaiTL, SQwatermark, XieZai"
+description = "Adore the life in a busy city?"
 logoFile = "pack.png"
 
 [[dependencies.yuushya]]
