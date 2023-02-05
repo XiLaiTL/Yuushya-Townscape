@@ -55,7 +55,7 @@ task setupFiles() {
     System.out.println("Architectury: " + rootProject.architectury_version)
 
     download {
-        src "https://github.com/AIDA64S/Minecraft-Mappings/archive/refs/heads/1.${minecraft_main_version}${is_1_19_3 ? ".3" : ""}.zip"
+        src "https://github.com/jonafanho/Minecraft-Mappings/archive/refs/heads/1.${minecraft_main_version}${is_1_19_3 ? ".3" : ""}.zip"
         dest "common/src/main/java/com/yuushya/mappings/files.zip"
         overwrite true
     }
