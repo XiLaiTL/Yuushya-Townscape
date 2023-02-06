@@ -12,6 +12,7 @@ import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.color.block.BlockColor;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderDispatcher;
@@ -22,6 +23,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.function.Consumer;
 import java.util.function.Function;
@@ -48,7 +50,19 @@ public class RegistryClientImpl {
     }
 
     public static void registerBlockColors(Block block) {
-        ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> 0xFFFFFF, block);
+        ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> {
+            if (tintIndex > -1) {
+                BlockState trueState = Block.stateById(tintIndex >> 8);
+                int trueTint = tintIndex & 0xFF;
+                BlockColor blockColor = ColorProviderRegistry.BLOCK.get(trueState.getBlock());
+                if(blockColor == null) {
+                    return 0xFFFFFFFF;
+                }
+                return blockColor.getColor(trueState, view, pos, trueTint);
+            } else {
+                return 0xFFFFFFFF;
+            }
+        }, block);
     }
 
     public static void registerNetworkReceiver(ResourceLocation resourceLocation, Consumer<FriendlyByteBuf> consumer) {
@@ -70,4 +84,6 @@ public class RegistryClientImpl {
     public static void sendToServer(ResourceLocation id, FriendlyByteBuf packet) {
         ClientPlayNetworking.send(id, packet);
     }
+
+    public static void registerVariantProvider(){}
 }

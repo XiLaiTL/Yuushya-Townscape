@@ -16,12 +16,18 @@ import net.minecraft.client.resources.model.*;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.state.BlockState;
+#if MC_VERSION >= "11902"
 import net.minecraft.util.RandomSource;
+#endif
 import java.util.*;
 import java.util.function.Function;
 
 public class ShowBlockModel implements UnbakedModel, BakedModel {
+#if MC_VERSION >= "11902"
     public List<BakedQuad> getQuads(BlockState state, Direction side, RandomSource rand, ShowBlock.TileEntityShowBlock blockEntity) {
+#else
+    public List<BakedQuad> getQuads(BlockState state, Direction side, Random rand, ShowBlock.TileEntityShowBlock blockEntity) {
+#endif
         int vertexSize = Utils.vertexSize();
         BlockRenderDispatcher blockRenderDispatcher = Minecraft.getInstance().getBlockRenderer();
         List<BakedQuad> finalQuads = new ArrayList<>();
@@ -68,7 +74,11 @@ public class ShowBlockModel implements UnbakedModel, BakedModel {
     }
 
     @Override
-    public List<BakedQuad> getQuads(BlockState blockState, Direction direction, RandomSource randomSource) {
+#if MC_VERSION >= "11902"
+    public List<BakedQuad> getQuads(BlockState state, Direction side, RandomSource rand) {
+#else
+    public List<BakedQuad> getQuads(BlockState state, Direction side, Random rand) {
+#endif
         return Collections.emptyList();
     }
 

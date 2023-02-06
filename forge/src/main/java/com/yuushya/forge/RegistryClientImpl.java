@@ -4,6 +4,7 @@ import com.yuushya.mappings.*;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.color.block.BlockColor;
+import net.minecraft.client.color.block.BlockColors;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderDispatcher;
@@ -64,8 +65,14 @@ public class RegistryClientImpl {
 
     private static class CustomBlockColor implements BlockColor {
         @Override
-        public int getColor(BlockState blockState, BlockAndTintGetter blockAndTintGetter, BlockPos blockPos, int i) {
-            return 0xFFFFFF;
+        public int getColor(BlockState state, BlockAndTintGetter view, BlockPos pos, int tintIndex) {
+            if (tintIndex > -1) {
+                BlockState trueState = Block.stateById(tintIndex >> 8);
+                int trueTint = tintIndex & 0xFF;
+                return BlockColors.createDefault().getColor(trueState, view, pos, trueTint);
+            } else {
+                return 0xFFFFFFFF;
+            }
         }
     }
 }
