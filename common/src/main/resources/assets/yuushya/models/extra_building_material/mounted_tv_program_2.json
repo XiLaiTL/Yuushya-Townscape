@@ -1,6 +1,6 @@
 {
   "parent": "yuushya:extra_building_material/tv_wall_bc",
   "textures": {
-    "1": "yuushya:0extra_building_material/preview/tv_wall_bc_programs/2"
+    "particle": "yuushya:0extra_building_material/preview/tv_programs/2"
   }
 }
