@@ -17,7 +17,11 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
+#if MC_VERSION >= "11902"
 import net.minecraftforge.client.event.ModelEvent;
+#else
+import net.minecraftforge.client.event.ModelBakeEvent;
+#endif
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -104,8 +108,12 @@ public class YuushyaMainForge {
         }
 
         @SubscribeEvent
+#if MC_VERSION >= "11902"
         public static void onModelBaked(ModelEvent.BakingCompleted event){
-            for (BlockState blockState : Blocks.SHOW_BLOCK.get().getStateDefinition().getPossibleStates()){
+#else
+        public static void onModelBaked(ModelBakeEvent event){
+#endif
+    for (BlockState blockState : Blocks.SHOW_BLOCK.get().getStateDefinition().getPossibleStates()){
                 event.getModels().put(BlockModelShaper.stateToModelLocation(blockState), new ShowBlockModelForge());
             }
         }
