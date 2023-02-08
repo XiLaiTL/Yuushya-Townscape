@@ -2,6 +2,7 @@ package com.yuushya.data;
 
 import com.mojang.math.Vector3d;
 import com.mojang.math.Vector3f;
+import com.yuushya.mappings.Vector3dMapper;
 import net.minecraft.nbt.*;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
@@ -16,14 +17,14 @@ public class TransformData {
     private static final String STATE_KEY = "BlockState";
     private static final String SHOWN_KEY = "isShown";
 
-    public Vector3d pos;
+    public Vector3dMapper pos;
     public Vector3f rot;
     public Vector3f scales;
     public BlockState blockState;
     public boolean isShown;
 
     public TransformData() {
-        this.pos = new Vector3d(0, 0, 0);
+        this.pos = new Vector3dMapper(0, 0, 0);
         this.rot = new Vector3f(0, 0, 0);
         this.scales = new Vector3f(1, 1, 1);
         this.blockState = Blocks.AIR.defaultBlockState();
