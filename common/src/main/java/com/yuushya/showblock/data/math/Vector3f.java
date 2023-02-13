@@ -2,10 +2,12 @@ package com.yuushya.showblock.data.math;
 
 import com.google.common.collect.ImmutableList;
 import com.mojang.serialization.Codec;
+import com.mojang.serialization.DataResult;
 import it.unimi.dsi.fastutil.floats.Float2FloatFunction;
-import net.minecraft.Util;
 import net.minecraft.util.Mth;
 import net.minecraft.world.phys.Vec3;
+
+import java.util.List;
 
 public class Vector3f {
     public static final Codec<Vector3f> CODEC;
@@ -200,7 +202,7 @@ public class Vector3f {
     }
 
     static {
-        CODEC = Codec.FLOAT.listOf().comapFlatMap((list) -> Util.fixedSize(list, 3).map((listx) -> new Vector3f(listx.get(0), listx.get(1), listx.get(2))), (vector3f) -> ImmutableList.of(vector3f.x, vector3f.y, vector3f.z));
+        CODEC = Codec.FLOAT.listOf().comapFlatMap((list) -> fixedSize(list, 3).map((listx) -> new Vector3f(listx.get(0), listx.get(1), listx.get(2))), (vector3f) -> ImmutableList.of(vector3f.x, vector3f.y, vector3f.z));
         XN = new Vector3f(-1.0F, 0.0F, 0.0F);
         XP = new Vector3f(1.0F, 0.0F, 0.0F);
         YN = new Vector3f(0.0F, -1.0F, 0.0F);
@@ -208,5 +210,14 @@ public class Vector3f {
         ZN = new Vector3f(0.0F, 0.0F, -1.0F);
         ZP = new Vector3f(0.0F, 0.0F, 1.0F);
         ZERO = new Vector3f(0.0F, 0.0F, 0.0F);
+    }
+
+    public static <T> DataResult<List<T>> fixedSize(List<T> list, int i) {
+        if (list.size() != i) {
+            String string = "Input is not a list of " + i + " elements";
+            return list.size() >= i ? DataResult.error(string, list.subList(0, i)) : DataResult.error(string);
+        } else {
+            return DataResult.success(list);
+        }
     }
 }
