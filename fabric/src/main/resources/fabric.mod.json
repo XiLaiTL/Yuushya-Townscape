@@ -27,7 +27,6 @@
   ],
   "depends": {
     "fabric": "*",
-    "minecraft": "*",
-    "mtr": "*"
+    "minecraft": "*"
   }
 }

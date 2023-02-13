@@ -1,5 +1,6 @@
 package com.yuushya.showblock;
 
+import com.yuushya.BlockEntityTypes;
 import com.yuushya.blocks.AbstractYuushyaBlock;
 import com.yuushya.mappings.BlockEntityMapper;
 import com.yuushya.mappings.EntityBlockMapper;
@@ -59,7 +60,7 @@ public class ShowBlock extends AbstractYuushyaBlock implements EntityBlockMapper
         private Integer slot;
 
         public ShowBlockEntity(BlockPos pos, BlockState state) {
-            super(null, pos, state);
+            super(BlockEntityTypes.SHOW_BLOCK_ENTITY.get(), pos, state);
             transformDatas = new ArrayList<>();
             transformDatas.add(new TransformData());
             slot = 0;

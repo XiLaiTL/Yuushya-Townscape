@@ -69,12 +69,12 @@ public class ShowBlockModel implements UnbakedModelMapper, BakedModelMapper {
     }
 
     @Override
-    public List<BakedQuad> getQuads(BlockState blockState, Direction direction) {
+    public List<BakedQuad> getQuadsMapper(BlockState blockState, Direction direction) {
         return Collections.emptyList();
     }
 
     @Override
-    public BakedModel bake() {
+    public BakedModel bakeMapper() {
         return this;
     }
 
