@@ -1,13 +1,13 @@
 package com.yuushya.utils;
 
 import com.mojang.blaze3d.vertex.DefaultVertexFormat;
-import com.mojang.blaze3d.vertex.PoseStack;
 import com.yuushya.showblock.ShowBlock;
 import com.yuushya.showblock.data.math.Vector3d;
 import com.yuushya.showblock.data.math.Vector3f;
 import com.yuushya.showblock.data.vertex.CustomPoseStack;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 
 public class YuushyaUtils {
@@ -15,7 +15,11 @@ public class YuushyaUtils {
         return DefaultVertexFormat.BLOCK.getVertexSize() / 4;
     }
 
-    public static void scale(PoseStack arg, Vector3f scales) {
+    public static int encodeTintWithState(int tint, BlockState state) {
+        return Block.getId(state) << 8 | tint;
+    }
+
+    public static void scale(CustomPoseStack arg, Vector3f scales) {
         if (scales.x() != 1 || scales.y() != 1 || scales.z() != 1) {
             arg.translate(0.5, 0.5, 0.5);
             arg.scale(scales.x(), scales.y(), scales.z());
@@ -23,7 +27,7 @@ public class YuushyaUtils {
         }
     }
 
-    public static void translate(PoseStack arg, Vector3d pos) {
+    public static void translate(CustomPoseStack arg, Vector3d pos) {
         if (pos.x != 0.0 || pos.y != 0.0 || pos.z != 0.0) {
             arg.translate(pos.x / 16, pos.y / 16, pos.z / 16);
         }
