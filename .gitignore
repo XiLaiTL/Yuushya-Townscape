@@ -20,3 +20,4 @@ classes/
 .vscode
 .settings
 *.launch
+build.properties
