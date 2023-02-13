@@ -21,6 +21,9 @@ public class YuushyaMain {
                             BiConsumer<String, RegistryObject<? extends EntityType<? extends Entity>>> registerEntityType,
                             BiConsumer<String, SoundEvent> registerSoundEvent
     ) {
+        registerBlockItem.accept("show_block", Blocks.SHOW_BLOCK, CreativeModeTabs.TEST_TABS);
+
+        registerBlockEntityType.accept("show_block", BlockEntityTypes.SHOW_BLOCK_ENTITY);
     }
     @FunctionalInterface
     public interface RegisterBlockItem {
