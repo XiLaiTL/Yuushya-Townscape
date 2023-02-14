@@ -3,6 +3,7 @@ package com.yuushya.client;
 import com.yuushya.mappings.BakedModelMapper;
 import com.yuushya.mappings.ForgeBakedModelMapper;
 import com.yuushya.mappings.ForgeModelDataMapper;
+import com.yuushya.mappings.RandomMapper;
 import com.yuushya.showblock.ShowBlock;
 import com.yuushya.showblock.ShowBlockModel;
 import net.minecraft.client.renderer.block.model.BakedQuad;
@@ -26,11 +27,11 @@ public class ShowBlockModelForge extends ShowBlockModel implements BakedModelMap
     }
 
     @Override
-    public List<BakedQuad> getQuads(BlockState state, Direction side, ForgeModelDataMapper forgeModelDataMapper) {
+    public List<BakedQuad> getQuads(BlockState state, Direction side, RandomMapper random, ForgeModelDataMapper forgeModelDataMapper) {
         ShowBlock.ShowBlockEntity blockEntity = forgeModelDataMapper.get(BASE_BLOCK_ENTITY);
         if (blockEntity == null) {
             return Collections.emptyList();
         }
-        return super.getQuads(state, side, blockEntity);
+        return super.getQuads(state, side, blockEntity, random);
     }
 }

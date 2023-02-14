@@ -1,6 +1,7 @@
 package com.yuushya.forge;
 
 import com.yuushya.*;
+import com.yuushya.client.GetBlockStateItemForge;
 import com.yuushya.client.ShowBlockModelForge;
 import com.yuushya.items.ItemBlockEnchanted;
 import com.yuushya.items.ItemWithCreativeTabBase;
@@ -38,6 +39,8 @@ public class YuushyaMainForge {
 
     static {
         YuushyaMain.init(YuushyaMainForge::registerItem, YuushyaMainForge::registerBlock, YuushyaMainForge::registerBlock, YuushyaMainForge::registerEnchantedBlock, YuushyaMainForge::registerBlockEntityType, YuushyaMainForge::registerEntityType, YuushyaMainForge::registerSoundEvent);
+        RegistryObject<Item> GET_BLOCK_STATE_ITEM = new RegistryObject<>(GetBlockStateItemForge::new);
+        registerItem("get_block_state_item", GET_BLOCK_STATE_ITEM);
     }
 
     public YuushyaMainForge() {
@@ -120,5 +123,7 @@ public class YuushyaMainForge {
             }
         }
         #endif
+
+
     }
 }

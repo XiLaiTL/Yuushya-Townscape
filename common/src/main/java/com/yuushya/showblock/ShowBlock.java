@@ -30,7 +30,7 @@ public class ShowBlock extends AbstractYuushyaBlock implements EntityBlockMapper
 
     @Override
     public BlockEntityMapper createBlockEntity(BlockPos pos, BlockState state) {
-        return null;
+        return new ShowBlockEntity(pos, state);
     }
 
     @Override

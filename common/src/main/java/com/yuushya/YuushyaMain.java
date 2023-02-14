@@ -21,10 +21,17 @@ public class YuushyaMain {
                             BiConsumer<String, RegistryObject<? extends EntityType<? extends Entity>>> registerEntityType,
                             BiConsumer<String, SoundEvent> registerSoundEvent
     ) {
+        registerItem.accept("get_show_block_item", Items.GET_SHOW_BLOCK_ENTITY_ITEM);
+        registerItem.accept("micro_pos_trans_item", Items.MICRO_POS_TRANS_ITEM);
+        registerItem.accept("pos_trans_item", Items.POS_TRANS_ITEM);
+        registerItem.accept("rot_trans_item", Items.ROT_TRANS_ITEM);
+        registerItem.accept("scale_trans_item", Items.SCALE_TRANS_ITEM);
+
         registerBlockItem.accept("show_block", Blocks.SHOW_BLOCK, CreativeModeTabs.TEST_TABS);
 
         registerBlockEntityType.accept("show_block", BlockEntityTypes.SHOW_BLOCK_ENTITY);
     }
+
     @FunctionalInterface
     public interface RegisterBlockItem {
         void accept(String string, RegistryObject<Block> block, CreativeModeTabs.Wrapper tab);

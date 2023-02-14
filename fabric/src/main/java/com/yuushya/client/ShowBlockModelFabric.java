@@ -1,6 +1,7 @@
 package com.yuushya.client;
 
 import com.yuushya.mappings.BakedModelMapper;
+import com.yuushya.mappings.RandomMapper;
 import com.yuushya.mappings.UnbakedModelMapper;
 import com.yuushya.showblock.ShowBlock;
 import com.yuushya.showblock.ShowBlockModel;
@@ -41,8 +42,8 @@ public class ShowBlockModelFabric extends ShowBlockModel implements FabricBakedM
             }
 
             @Override
-            public List<BakedQuad> getQuadsMapper(BlockState blockState, Direction direction) {
-                return super.getQuads(blockState, direction, blockEntity);
+            public List<BakedQuad> getQuadsMapper(BlockState blockState, Direction direction, RandomMapper random) {
+                return super.getQuads(blockState, direction, blockEntity, random);
             }
         });
     }

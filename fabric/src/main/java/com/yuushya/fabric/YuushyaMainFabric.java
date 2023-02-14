@@ -1,6 +1,7 @@
 package com.yuushya.fabric;
 
 import com.yuushya.CreativeModeTabs;
+import com.yuushya.Items;
 import com.yuushya.RegistryObject;
 import com.yuushya.YuushyaMain;
 import com.yuushya.items.ItemBlockEnchanted;
@@ -23,6 +24,7 @@ public class YuushyaMainFabric implements ModInitializer {
     @Override
     public void onInitialize() {
         YuushyaMain.init(YuushyaMainFabric::registerItem, YuushyaMainFabric::registerBlock, YuushyaMainFabric::registerBlock, YuushyaMainFabric::registerEnchantedBlock, YuushyaMainFabric::registerBlockEntityType, YuushyaMainFabric::registerEntityType, YuushyaMainFabric::registerSoundEvent);
+        registerItem("get_block_state_item", Items.GET_BLOCK_STATE_ITEM);
     }
 
     private static void registerItem(String path, RegistryObject<Item> item) {
