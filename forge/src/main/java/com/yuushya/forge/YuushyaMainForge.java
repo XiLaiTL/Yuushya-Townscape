@@ -1,12 +1,14 @@
 package com.yuushya.forge;
 
 import com.yuushya.*;
+import com.yuushya.client.ShowBlockModelForge;
 import com.yuushya.items.ItemBlockEnchanted;
 import com.yuushya.items.ItemWithCreativeTabBase;
 import com.yuushya.mappings.BlockEntityMapper;
 import com.yuushya.mappings.DeferredRegisterHolder;
 import com.yuushya.mappings.ForgeUtilities;
 import com.yuushya.mappings.RegistryUtilities;
+import net.minecraft.client.renderer.block.BlockModelShaper;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
@@ -14,9 +16,11 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.state.BlockState;
 #if MC_VERSION >= "11902"
 import net.minecraftforge.client.event.ModelEvent;
 #else
+import net.minecraftforge.client.event.ModelBakeEvent;
 #endif
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -102,5 +106,19 @@ public class YuushyaMainForge {
             YuushyaMainClient.init();
             event.enqueueWork(YuushyaMainClient::initItemModelPredicate);
         }
+        @SubscribeEvent
+        #if MC_VERSION >= "11902"
+        public static void onModelBaked(ModelEvent.BakingCompleted event){
+            for(BlockState blockState : Blocks.SHOW_BLOCK.get().getStateDefinition().getPossibleStates()) {
+                event.getModels().put(BlockModelShaper.stateToModelLocation(blockState), new ShowBlockModelForge());
+            }
+        }
+        #else
+        public static void onModelBaked(ModelBakeEvent event) {
+            for (BlockState blockState : Blocks.SHOW_BLOCK.get().getStateDefinition().getPossibleStates()) {
+                event.getModelRegistry().put(BlockModelShaper.stateToModelLocation(blockState), new ShowBlockModelForge());
+            }
+        }
+        #endif
     }
 }
