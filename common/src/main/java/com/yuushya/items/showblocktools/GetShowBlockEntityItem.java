@@ -3,6 +3,7 @@ package com.yuushya.items.showblocktools;
 import com.yuushya.Blocks;
 import com.yuushya.CreativeModeTabs;
 import com.yuushya.items.AbstractMultiPurposeToolItem;
+import com.yuushya.mappings.Utilities;
 import com.yuushya.showblock.ShowBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionResult;
@@ -44,7 +45,7 @@ public class GetShowBlockEntityItem extends AbstractMultiPurposeToolItem {
             case GET_ITEM: {
                 if (!(blockState.getBlock() instanceof ShowBlock)) return InteractionResult.PASS;
                 ShowBlock.ShowBlockEntity showBlockEntity = (ShowBlock.ShowBlockEntity) level.getBlockEntity(blockPos);
-                player.getInventory().placeItemBackInInventory(showBlockEntity.getTransFormDataNow().blockState.getBlock().asItem().getDefaultInstance());
+                Utilities.getInventory(player).placeItemBackInInventory(#if MC_VERSION <= "11605" level, #endif showBlockEntity.getTransFormDataNow().blockState.getBlock().asItem().getDefaultInstance());
                 return InteractionResult.SUCCESS;
             }
             case RESTORE: {
