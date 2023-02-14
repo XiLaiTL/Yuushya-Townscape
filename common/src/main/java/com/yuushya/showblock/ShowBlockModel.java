@@ -36,7 +36,7 @@ public class ShowBlockModel implements UnbakedModelMapper, BakedModelMapper {
                 BlockState blockState = transformData.blockState;
                 BakedModel blockModel = blockRenderDispatcher.getBlockModel(blockState);
                 for (Direction value : directions) {
-                    List<BakedQuad> blockModelQuads = ((BakedModelMapper) blockModel).getQuads(blockState, value);
+                    List<BakedQuad> blockModelQuads = blockModel.getQuads(blockState, value, null);
                     for (BakedQuad bakedQuad : blockModelQuads) {
                         int[] vertex = bakedQuad.getVertices().clone();
                         CustomPoseStack stack = new CustomPoseStack();
