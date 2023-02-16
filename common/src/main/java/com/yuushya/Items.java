@@ -4,7 +4,7 @@ import com.yuushya.items.showblocktools.*;
 import net.minecraft.world.item.Item;
 
 public interface Items {
-    RegistryObject<Item> GET_BLOCK_STATE_ITEM = new RegistryObject<>(GetBlockStateItem::new);
+    RegistryObject<Item> GET_BLOCK_STATE_ITEM = new RegistryObject<>(() -> new GetBlockStateItem(properties -> properties.stacksTo(1)));
     RegistryObject<Item> GET_SHOW_BLOCK_ENTITY_ITEM = new RegistryObject<>(GetShowBlockEntityItem::new);
     RegistryObject<Item> MICRO_POS_TRANS_ITEM = new RegistryObject<>(MicroPosTransItem::new);
     RegistryObject<Item> POS_TRANS_ITEM = new RegistryObject<>(PosTransItem::new);
