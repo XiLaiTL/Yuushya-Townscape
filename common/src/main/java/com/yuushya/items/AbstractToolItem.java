@@ -11,13 +11,15 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 
+import java.util.function.Function;
+
 public class AbstractToolItem extends AbstractYuushyaItem {
     /**
      * creativeModeTab: 创造物品栏
      * tipLines: 注释栏行数
      */
-    public AbstractToolItem(CreativeModeTabs.Wrapper creativeModeTab, Integer tipLines) {
-        super(creativeModeTab, tipLines);
+    public AbstractToolItem(CreativeModeTabs.Wrapper creativeModeTab, Function<Properties, Properties> propertiesConsumer, Integer tipLines) {
+        super(creativeModeTab, propertiesConsumer, tipLines);
     }
 
     @Override

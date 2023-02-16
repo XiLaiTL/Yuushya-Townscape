@@ -18,7 +18,7 @@ public class AbstractMultiPurposeToolItem extends AbstractToolItem {
      * tipLines: 注释栏行数
      */
     public AbstractMultiPurposeToolItem(CreativeModeTabs.Wrapper creativeModeTab, Integer tipLines) {
-        super(creativeModeTab, tipLines);
+        super(creativeModeTab, properties -> properties.stacksTo(1), tipLines);
     }
 
     private int _form_now = 0;

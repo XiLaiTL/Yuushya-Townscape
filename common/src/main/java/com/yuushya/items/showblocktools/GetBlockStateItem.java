@@ -21,16 +21,24 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.AirBlock;
 import net.minecraft.world.level.block.state.BlockState;
 
+import java.util.function.Function;
+
 public class GetBlockStateItem extends AbstractToolItem {
     private BlockState blockState;
     private static final String KEY_BLOCK_STATE = "BlockState";
 
     /**
+     * creativeModeTab: 创造物品栏
      * tipLines: 注释栏行数
      */
-    public GetBlockStateItem() {
-        super(CreativeModeTabs.TEST_TABS, 3);
+    public GetBlockStateItem(Function<Properties, Properties> propertiesConsumer) {
+        super(CreativeModeTabs.TEST_TABS, propertiesConsumer, 3);
     }
+
+    /**
+     * tipLines: 注释栏行数
+     */
+
 
     @Override
     public InteractionResult inMainHandRightClickOnBlock(Player player, BlockState blockStateTarget, Level level, BlockPos blockPos, ItemStack handItemStack) {

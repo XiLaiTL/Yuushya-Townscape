@@ -6,18 +6,26 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.block.model.ItemTransforms;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 #if MC_VERSION >= "11902"
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
-#else
+#elif MC_VERSION >= "11701"
 import net.minecraftforge.client.IItemRenderProperties;
+#else
 #endif
 
 import java.util.function.Consumer;
+import java.util.function.Function;
 
 public class GetBlockStateItemForge extends GetBlockStateItem {
-    @Override
+
+
     #if MC_VERSION >= "11902"
+    public GetBlockStateItemForge() {
+         super(properties -> properties.stacksTo(1));
+    }
+    @Override
     public void initializeClient(Consumer<IClientItemExtensions> consumer) {
         consumer.accept(new IClientItemExtensions() {
             @Override
@@ -31,7 +39,11 @@ public class GetBlockStateItemForge extends GetBlockStateItem {
             }
         });
     }
-    #else
+    #elif MC_VERSION >= "11701"
+    public GetBlockStateItemForge() {
+         super(properties -> properties.stacksTo(1));
+    }
+    @Override
     public void initializeClient(Consumer<IItemRenderProperties> consumer) {
         consumer.accept(new IItemRenderProperties() {
             @Override
@@ -44,6 +56,15 @@ public class GetBlockStateItemForge extends GetBlockStateItem {
                 };
             }
         });
+    }
+    #else
+    public GetBlockStateItemForge() {
+        super(properties -> properties.setISTER(() -> () -> new BlockEntityWithoutLevelRenderer(){
+            @Override
+            public void renderByItem(ItemStack stack, ItemTransforms.TransformType mode, PoseStack matrices, MultiBufferSource vertexConsumers, int light, int overlay) {
+                GetBlockStateItem.renderByItem(stack, mode, matrices, vertexConsumers, light, overlay);
+            }
+        }));
     }
     #endif
 }
