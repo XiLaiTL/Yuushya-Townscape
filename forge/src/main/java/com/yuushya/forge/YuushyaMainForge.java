@@ -111,7 +111,7 @@ public class YuushyaMainForge {
         }
         @SubscribeEvent
         #if MC_VERSION >= "11902"
-        public static void onModelBaked(ModelEvent.ModifyBakingResult event){
+        public static void onModelBaked(ModelEvent.BakingCompleted event){
             for(BlockState blockState : Blocks.SHOW_BLOCK.get().getStateDefinition().getPossibleStates()) {
                 event.getModels().put(BlockModelShaper.stateToModelLocation(blockState), new ShowBlockModelForge());
             }
