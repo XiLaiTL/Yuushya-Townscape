@@ -41,6 +41,9 @@ public class ShowBlock extends AbstractYuushyaBlock implements EntityBlockMapper
     @Override
     public BlockState updateShape(BlockState stateIn, Direction facing, BlockState facingState, LevelAccessor worldIn, BlockPos currentPos, BlockPos facingPos) {
         ShowBlockEntity showBlockEntity = (ShowBlockEntity) worldIn.getBlockEntity(currentPos);
+        if(showBlockEntity == null) {
+            return stateIn.setValue(POWERED, false);
+        }
         BlockState blockState = showBlockEntity.getTransformData(0).blockState;
         Block block = blockState.getBlock();
         if (facingState.getBlock() instanceof ShowBlock) {

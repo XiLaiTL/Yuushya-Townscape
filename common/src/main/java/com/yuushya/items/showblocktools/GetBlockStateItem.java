@@ -25,7 +25,7 @@ import java.util.function.Function;
 
 public class GetBlockStateItem extends AbstractToolItem {
     private BlockState blockState;
-    private static final String KEY_BLOCK_STATE = "BlockState";
+    public static final String KEY_BLOCK_STATE = "BlockState";
 
     /**
      * creativeModeTab: 创造物品栏
@@ -45,6 +45,7 @@ public class GetBlockStateItem extends AbstractToolItem {
         if (blockStateTarget.getBlock() instanceof ShowBlock) {
             ShowBlock.ShowBlockEntity showBlockEntity = (ShowBlock.ShowBlockEntity) level.getBlockEntity(blockPos);
             BlockState blockStateShowBlock = showBlockEntity.getTransFormDataNow().blockState;
+
             if (!(blockStateShowBlock.getBlock() instanceof AirBlock)) {
                 blockStateTarget = blockStateShowBlock;
                 showBlockEntity.removeTransFormDataNow();
@@ -92,7 +93,7 @@ public class GetBlockStateItem extends AbstractToolItem {
 
     public static void renderByItem(ItemStack stack, ItemTransforms.TransformType mode, PoseStack matrices, MultiBufferSource vertexConsumers, int light, int overlay) {
         ItemRenderer itemRenderer = Minecraft.getInstance().getItemRenderer();
-        BlockState blockState = CustomNbtUtils.readBlockState(stack.getOrCreateTag().getCompound("BlockState"));
+        BlockState blockState = CustomNbtUtils.readBlockState(stack.getOrCreateTag().getCompound(KEY_BLOCK_STATE));
         BlockRenderDispatcher blockRenderDispatcher = Minecraft.getInstance().getBlockRenderer();
         itemRenderer.render(stack, mode, false, matrices, vertexConsumers, light, overlay, blockRenderDispatcher.getBlockModel(blockState));
     }

@@ -31,6 +31,11 @@ public class RegistryClient {
     }
 
     @ExpectPlatform
+    public static void registerCustomItemModelPredicate(String id, Item item, String tag) {
+        throw new AssertionError();
+    }
+
+    @ExpectPlatform
     public static <T extends BlockEntityMapper> void registerTileEntityRenderer(BlockEntityType<T> type, Function<BlockEntityRenderDispatcher, BlockEntityRendererMapper<T>> function) {
         throw new AssertionError();
     }

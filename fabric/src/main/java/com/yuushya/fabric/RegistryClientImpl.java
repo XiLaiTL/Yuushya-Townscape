@@ -37,6 +37,10 @@ public class RegistryClientImpl {
         FabricRegistryUtilities.registerItemModelPredicate(id, item, tag);
     }
 
+    public static void registerCustomItemModelPredicate(String id, Item item, String tag) {
+        FabricRegistryUtilities.registerCustomItemModelPredicate(id, item, tag);
+    }
+
     public static <T extends BlockEntityMapper> void registerTileEntityRenderer(BlockEntityType<T> type, Function<BlockEntityRenderDispatcher, BlockEntityRendererMapper<T>> function) {
         FabricRegistryUtilities.registerTileEntityRenderer(type, function);
     }

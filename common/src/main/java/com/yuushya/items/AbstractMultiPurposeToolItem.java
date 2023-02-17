@@ -11,7 +11,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 
 public class AbstractMultiPurposeToolItem extends AbstractToolItem {
-    private static final String KEY_TRANS_DIRECTION = "TransDirection";
+    public static final String KEY_TRANS_DIRECTION = "TransDirection";
 
     /**
      * creativeModeTab: 创造物品栏
