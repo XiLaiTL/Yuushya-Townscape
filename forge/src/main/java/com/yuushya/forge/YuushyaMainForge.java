@@ -110,7 +110,13 @@ public class YuushyaMainForge {
             event.enqueueWork(YuushyaMainClient::initItemModelPredicate);
         }
         @SubscribeEvent
-        #if MC_VERSION >= "11902"
+        #if MC_VERSION >= "11903"
+        public static void onModelBaked(ModelEvent.ModifyBakingResult event){
+            for(BlockState blockState : Blocks.SHOW_BLOCK.get().getStateDefinition().getPossibleStates()) {
+                event.getModels().put(BlockModelShaper.stateToModelLocation(blockState), new ShowBlockModelForge());
+            }
+        }
+        #elif MC_VERSION >= "11902"
         public static void onModelBaked(ModelEvent.BakingCompleted event){
             for(BlockState blockState : Blocks.SHOW_BLOCK.get().getStateDefinition().getPossibleStates()) {
                 event.getModels().put(BlockModelShaper.stateToModelLocation(blockState), new ShowBlockModelForge());
@@ -123,7 +129,5 @@ public class YuushyaMainForge {
             }
         }
         #endif
-
-
     }
 }
