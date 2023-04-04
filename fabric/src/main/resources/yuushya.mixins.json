@@ -3,7 +3,6 @@
   "package": "com.yuushya.fabric.mixin",
   "compatibilityLevel": "JAVA_17",
   "client": [
-    "MixinFallBackResourceManager"
   ],
   "mixins": [
   ],

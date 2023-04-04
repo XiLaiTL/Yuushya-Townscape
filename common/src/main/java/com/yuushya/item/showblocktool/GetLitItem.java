@@ -1,7 +1,6 @@
 package com.yuushya.item.showblocktool;
 
 import com.yuushya.block.blockstate.YuushyaBlockStates;
-import com.yuushya.datagen.BlockStateData;
 import com.yuushya.item.AbstractToolItem;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.TranslatableComponent;
@@ -9,7 +8,6 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.Property;

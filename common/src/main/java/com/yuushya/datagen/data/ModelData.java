@@ -1,19 +1,17 @@
-package com.yuushya.datagen;
+package com.yuushya.datagen.data;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import com.yuushya.utils.YuushyaLogger;
-import net.minecraft.data.models.model.*;
-import net.minecraft.resources.ResourceLocation;
+import com.yuushya.datagen.utils.ModelTemplate;
+import com.yuushya.datagen.utils.ResourceLocation;
+import com.yuushya.datagen.utils.TextureMapping;
+import com.yuushya.datagen.utils.TextureSlot;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 import java.util.*;
 import java.util.function.BiConsumer;
 import java.util.function.Supplier;
 
-import static com.yuushya.datagen.BlockStateData.STATE_SPLITTER;
+import static com.yuushya.datagen.data.BlockStateData.STATE_SPLITTER;
 
 public class ModelData {
 
@@ -30,11 +28,11 @@ public class ModelData {
         return json;
     }
     public static JsonElement genSimpleFlatItemModel( ResourceLocation texture){
-        ModelTemplates.FLAT_ITEM.create(texture, TextureMapping.layer0(texture), getJsonElementToList);
+        ModelTemplate.FLAT_ITEM.create(texture, TextureMapping.layer0(texture), getJsonElementToList);
         return tempJsons.get(0);
     }
     public static JsonElement genSimpleCubeBlockModel(ResourceLocation texture){
-        ModelTemplates.CUBE_ALL.create(texture,TextureMapping.cube(texture),getJsonElementToList);
+        ModelTemplate.CUBE_ALL.create(texture, TextureMapping.cube(texture),getJsonElementToList);
         return tempJsons.get(0);
     }
 
@@ -43,16 +41,11 @@ public class ModelData {
         return new ModelTemplate(Optional.of(resourceLocation), Optional.empty(), textureSlots);
     }
 
-    private static final Map<String,TextureSlot> textureSlotMap=new HashMap<>();
+    private static final Map<String, TextureSlot> textureSlotMap=new HashMap<>();
     public static TextureSlot getTextureSlot(String textureSlotString){
         if (textureSlotMap.containsKey(textureSlotString)) return textureSlotMap.get(textureSlotString);
-        try{
-            Constructor<TextureSlot> c=TextureSlot.class.getDeclaredConstructor(String.class,TextureSlot.class);
-            c.setAccessible(true);
-            textureSlotMap.put(textureSlotString,c.newInstance(textureSlotString,TextureSlot.ALL));
-            return textureSlotMap.get(textureSlotString);
-        } catch (InvocationTargetException | InstantiationException | IllegalAccessException | NoSuchMethodException invocationTargetException) {invocationTargetException.printStackTrace();}
-        return null;
+        textureSlotMap.put(textureSlotString,new TextureSlot(textureSlotString,TextureSlot.ALL));
+        return textureSlotMap.get(textureSlotString);
     }
     public static void setModelTemplate(String name,List<String> textureSlotString) {//name= "namespace:models/block/xxx"
         if (textureSlotString==null||textureSlotString.isEmpty()){
@@ -71,8 +64,8 @@ public class ModelData {
                 TextureSlot textureSlot = slot.equals("all")
                         ?TextureSlot.ALL
                         :getTextureSlot(slot);
-                ResourceLocation resourceLocation=ResourceLocation.tryParse(texture);
-                if (textureSlot!=null&&resourceLocation!=null){
+                ResourceLocation resourceLocation=new ResourceLocation(texture);
+                if (textureSlot!=null){
                     textureMapping.put(textureSlot,resourceLocation);
                 }
             }

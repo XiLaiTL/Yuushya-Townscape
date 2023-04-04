@@ -1,25 +1,23 @@
-package com.yuushya.datagen;
+package com.yuushya.datagen.data;
 
-import com.google.common.base.Splitter;
-import com.google.common.collect.ImmutableList;
-import com.google.errorprone.annotations.Var;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonPrimitive;
-import com.yuushya.datagen.BlockStateData.ChildVariant.ChildPropertyVariant;
-import com.yuushya.datagen.BlockStateData.ChildVariant.ChildPropertyVariant.ChildProperty;
+import com.yuushya.datagen.data.BlockStateData.ChildVariant.ChildPropertyVariant;
+import com.yuushya.datagen.data.BlockStateData.ChildVariant.ChildPropertyVariant.ChildProperty;
+import com.yuushya.datagen.utils.ResourceLocation;
+import com.yuushya.datagen.utils.Utils;
+import com.yuushya.datagen.utils.Variant;
+import com.yuushya.datagen.utils.VariantProperty;
 import com.yuushya.registries.YuushyaRegistryData;
-import com.yuushya.utils.YuushyaLogger;
-import com.yuushya.utils.YuushyaModelUtils;
-import com.yuushya.utils.YuushyaUtils;
-import net.minecraft.data.models.blockstates.Variant;
-import net.minecraft.data.models.blockstates.VariantProperties;
-import net.minecraft.resources.ResourceLocation;
 
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Stream;
+
+import static com.yuushya.datagen.utils.Utils.CartesianProduct;
+import static com.yuushya.datagen.utils.Utils.COMMA_SPLITTER;
 
 public class BlockStateData {
     //Property
@@ -41,7 +39,7 @@ public class BlockStateData {
 
 
     public static JsonElement genSimpleBlock(ResourceLocation resourceLocation) {
-        return ChildVariant.of(Variant.variant().with(VariantProperties.MODEL,resourceLocation)).get();
+        return ChildVariant.of(Variant.variant().with(VariantProperty.MODEL,resourceLocation)).get();
     }
     //TODO: support for block which written in both kit and states
     private static final ResourceLocation blankModel=new ResourceLocation("yuushya:extra_building_material/blank");
@@ -49,14 +47,14 @@ public class BlockStateData {
         ChildVariant childVariant;
         if (blockState.kit!=null&&!blockState.kit.isEmpty()){
             int formsNum=blockState.forms.size();
-            Variant baseVariant=Variant.variant().with(VariantProperties.MODEL,new ResourceLocation(blockState.forms.get(0).get(0)));
+            Variant baseVariant=Variant.variant().with(VariantProperty.MODEL,new ResourceLocation(blockState.forms.get(0).get(0)));
             childVariant= switch (blockState.kit){
                 case "normal"->ChildVariant.of(baseVariant)
                         .add(createHorizonFacingVariant())
                         .add(ChildPropertyVariant.of(FORM).generate((variantKeyList)->{
                             int i=FORM.indexOf(variantKeyList.get(0));
                             return List.of(i < formsNum
-                                    ? Variant.variant().with(VariantProperties.MODEL, new ResourceLocation(blockState.forms.get(i).get(0)))
+                                    ? Variant.variant().with(VariantProperty.MODEL, new ResourceLocation(blockState.forms.get(i).get(0)))
                                     : Variant.variant()) ;
                         }));
                 case "attachment"-> ChildVariant.of(baseVariant)
@@ -64,7 +62,7 @@ public class BlockStateData {
                         .add(ChildPropertyVariant.of(FORM).generate((variantKeyList)->{
                             int i=FORM.indexOf(variantKeyList.get(0));
                             return List.of(i < formsNum
-                                    ? Variant.variant().with(VariantProperties.MODEL, new ResourceLocation(blockState.forms.get(i).get(0)))
+                                    ? Variant.variant().with(VariantProperty.MODEL, new ResourceLocation(blockState.forms.get(i).get(0)))
                                     : Variant.variant()) ;
                         }));
                 case "line"->ChildVariant.of(baseVariant)
@@ -73,7 +71,7 @@ public class BlockStateData {
                             int i=FORM.indexOf(variantKeyList.get(0));
                             int j=POS_HORIZON.indexOf(variantKeyList.get(1));
                             return List.of(i < formsNum
-                                    ? Variant.variant().with(VariantProperties.MODEL, new ResourceLocation(blockState.forms.get(i).get(j)))
+                                    ? Variant.variant().with(VariantProperty.MODEL, new ResourceLocation(blockState.forms.get(i).get(j)))
                                     : Variant.variant());
                         }));
                 case "face"->ChildVariant.of(baseVariant)
@@ -94,7 +92,7 @@ public class BlockStateData {
                             int i=FORM.indexOf(variantKeyList.get(0));
                             int j=POS_VERTICAL.indexOf(variantKeyList.get(1));
                             return List.of(i < formsNum
-                                    ? Variant.variant().with(VariantProperties.MODEL, new ResourceLocation(blockState.forms.get(i).get(j)))
+                                    ? Variant.variant().with(VariantProperty.MODEL, new ResourceLocation(blockState.forms.get(i).get(j)))
                                     : Variant.variant());
                         }));
                 case "tri_part"->ChildVariant.of(baseVariant)
@@ -102,8 +100,8 @@ public class BlockStateData {
                         .add(ChildPropertyVariant.of(FORM,POS_VERTICAL).generate((variantKeyList)->{
                             int i=FORM.indexOf(variantKeyList.get(0));
                             if (i>=formsNum) return List.of(Variant.variant());
-                            else if (variantKeyList.get(1).equals("pos=middle")) return List.of(Variant.variant().with(VariantProperties.MODEL, new ResourceLocation(blockState.forms.get(i).get(0))));
-                            else return List.of(Variant.variant().with(VariantProperties.MODEL,blankModel));
+                            else if (variantKeyList.get(1).equals("pos=middle")) return List.of(Variant.variant().with(VariantProperty.MODEL, new ResourceLocation(blockState.forms.get(i).get(0))));
+                            else return List.of(Variant.variant().with(VariantProperty.MODEL,blankModel));
                         }));
                 case "VanillaStairBlock"->{
                     ResourceLocation inner=new ResourceLocation(blockState.forms.get(0).get(0));
@@ -126,7 +124,7 @@ public class BlockStateData {
             return childVariant.get();
         }
         else {
-            Variant baseVariant=Variant.variant().with(VariantProperties.MODEL,new ResourceLocation(getModelListFromData(blockState.models).get(0)));
+            Variant baseVariant=Variant.variant().with(VariantProperty.MODEL,new ResourceLocation(getModelListFromData(blockState.models).get(0)));
             childVariant=ChildVariant.of(baseVariant);
             if (blockState.states.contains("powered")) {
                 childVariant.add(createDefaultVariant(POWERED));
@@ -156,25 +154,25 @@ public class BlockStateData {
     }
     private static ChildPropertyVariant createFaceVariant() {
         return ChildPropertyVariant.of(FACE)
-                .addVariant(List.of("face=wall"), Variant.variant().with(VariantProperties.X_ROT, VariantProperties.Rotation.R90))
+                .addVariant(List.of("face=wall"), Variant.variant().with(VariantProperty.X_ROT, VariantProperty.Rotation.R90))
                 .addVariant(List.of("face=floor"), Variant.variant())
-                .addVariant(List.of("face=ceiling"), Variant.variant().with(VariantProperties.X_ROT, VariantProperties.Rotation.R180));
+                .addVariant(List.of("face=ceiling"), Variant.variant().with(VariantProperty.X_ROT, VariantProperty.Rotation.R180));
     }
     private static ChildPropertyVariant createHorizonFacingVariant() {
         return ChildPropertyVariant.of(HORIZONTAL_FACING)
                 .addVariant(List.of("facing=north"), Variant.variant())
-                .addVariant(List.of("facing=south"),Variant.variant().with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180))
-                .addVariant(List.of("facing=west"),Variant.variant().with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270))
-                .addVariant(List.of("facing=east"), Variant.variant().with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90));
+                .addVariant(List.of("facing=south"),Variant.variant().with(VariantProperty.Y_ROT, VariantProperty.Rotation.R180))
+                .addVariant(List.of("facing=west"),Variant.variant().with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270))
+                .addVariant(List.of("facing=east"), Variant.variant().with(VariantProperty.Y_ROT, VariantProperty.Rotation.R90));
     }
     private static ChildPropertyVariant createFacingVariant() {
         return ChildPropertyVariant.of(HORIZONTAL_FACING)
-                .addVariant(List.of("facing=down"), Variant.variant().with(VariantProperties.X_ROT, VariantProperties.Rotation.R90))
-                .addVariant(List.of("facing=up"), Variant.variant().with(VariantProperties.X_ROT, VariantProperties.Rotation.R270))
+                .addVariant(List.of("facing=down"), Variant.variant().with(VariantProperty.X_ROT, VariantProperty.Rotation.R90))
+                .addVariant(List.of("facing=up"), Variant.variant().with(VariantProperty.X_ROT, VariantProperty.Rotation.R270))
                 .addVariant(List.of("facing=north"), Variant.variant())
-                .addVariant(List.of("facing=south"),Variant.variant().with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180))
-                .addVariant(List.of("facing=west"),Variant.variant().with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270))
-                .addVariant(List.of("facing=east"), Variant.variant().with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90));
+                .addVariant(List.of("facing=south"),Variant.variant().with(VariantProperty.Y_ROT, VariantProperty.Rotation.R180))
+                .addVariant(List.of("facing=west"),Variant.variant().with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270))
+                .addVariant(List.of("facing=east"), Variant.variant().with(VariantProperty.Y_ROT, VariantProperty.Rotation.R90));
     }
     private static ChildPropertyVariant createDefaultVariant(ChildProperty childProperty) {
         return ChildPropertyVariant.of(childProperty).generate(e ->List.of(Variant.variant()));
@@ -183,218 +181,218 @@ public class BlockStateData {
     private static ChildPropertyVariant createFaceAndFacingVariant(){
         return ChildPropertyVariant.of(FACE,FACING)
                 .addVariant(List.of("face=floor", "facing=east"),
-                        Variant.variant().with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90))
+                        Variant.variant().with(VariantProperty.Y_ROT, VariantProperty.Rotation.R90))
                 .addVariant(List.of("face=floor", "facing=west"),
-                        Variant.variant().with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270))
+                        Variant.variant().with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270))
                 .addVariant(List.of("face=floor", "facing=south"),
-                        Variant.variant().with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180))
+                        Variant.variant().with(VariantProperty.Y_ROT, VariantProperty.Rotation.R180))
                 .addVariant(List.of("face=floor", "facing=north"),
                         Variant.variant())
                 .addVariant(List.of("face=wall", "facing=east"),
-                        Variant.variant().with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90).with(VariantProperties.X_ROT, VariantProperties.Rotation.R90).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.Y_ROT, VariantProperty.Rotation.R90).with(VariantProperty.X_ROT, VariantProperty.Rotation.R90).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("face=wall", "facing=west"),
-                        Variant.variant().with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270).with(VariantProperties.X_ROT, VariantProperties.Rotation.R90).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270).with(VariantProperty.X_ROT, VariantProperty.Rotation.R90).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("face=wall", "facing=south"),
-                        Variant.variant().with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180).with(VariantProperties.X_ROT, VariantProperties.Rotation.R90).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.Y_ROT, VariantProperty.Rotation.R180).with(VariantProperty.X_ROT, VariantProperty.Rotation.R90).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("face=wall", "facing=north"),
-                        Variant.variant().with(VariantProperties.X_ROT, VariantProperties.Rotation.R90).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.X_ROT, VariantProperty.Rotation.R90).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("face=ceiling", "facing=east"),
-                        Variant.variant().with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180))
+                        Variant.variant().with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270).with(VariantProperty.X_ROT, VariantProperty.Rotation.R180))
                 .addVariant(List.of("face=ceiling", "facing=west"),
-                        Variant.variant().with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180))
+                        Variant.variant().with(VariantProperty.Y_ROT, VariantProperty.Rotation.R90).with(VariantProperty.X_ROT, VariantProperty.Rotation.R180))
                 .addVariant(List.of("face=ceiling", "facing=south"),
-                        Variant.variant().with(VariantProperties.X_ROT, VariantProperties.Rotation.R180))
+                        Variant.variant().with(VariantProperty.X_ROT, VariantProperty.Rotation.R180))
                 .addVariant(List.of("face=ceiling", "facing=north"),
-                        Variant.variant().with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180));
+                        Variant.variant().with(VariantProperty.Y_ROT, VariantProperty.Rotation.R180).with(VariantProperty.X_ROT, VariantProperty.Rotation.R180));
     }
     private static ChildPropertyVariant createDoorVariant(ResourceLocation bottom,ResourceLocation bottom_hinge,ResourceLocation top,ResourceLocation top_hinge){
         return ChildPropertyVariant.of(HORIZONTAL_FACING,DOUBLE_BLOCK_HALF,DOOR_HINGE,OPEN)
                 .addVariant(List.of("facing=east", "half=lower", "hinge=left", "open=false"),
-                        Variant.variant().with(VariantProperties.MODEL, bottom))
+                        Variant.variant().with(VariantProperty.MODEL, bottom))
                 .addVariant(List.of("facing=south", "half=lower", "hinge=left", "open=false"),
-                        Variant.variant().with(VariantProperties.MODEL, bottom).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90))
+                        Variant.variant().with(VariantProperty.MODEL, bottom).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R90))
                 .addVariant(List.of("facing=west", "half=lower", "hinge=left", "open=false"),
-                        Variant.variant().with(VariantProperties.MODEL, bottom).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180))
+                        Variant.variant().with(VariantProperty.MODEL, bottom).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R180))
                 .addVariant(List.of("facing=north", "half=lower", "hinge=left", "open=false"),
-                        Variant.variant().with(VariantProperties.MODEL, bottom).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270))
+                        Variant.variant().with(VariantProperty.MODEL, bottom).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270))
                 .addVariant(List.of("facing=east", "half=lower", "hinge=right", "open=false"),
-                        Variant.variant().with(VariantProperties.MODEL, bottom_hinge))
+                        Variant.variant().with(VariantProperty.MODEL, bottom_hinge))
                 .addVariant(List.of("facing=south", "half=lower", "hinge=right", "open=false"),
-                        Variant.variant().with(VariantProperties.MODEL, bottom_hinge).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90))
+                        Variant.variant().with(VariantProperty.MODEL, bottom_hinge).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R90))
                 .addVariant(List.of("facing=west", "half=lower", "hinge=right", "open=false"),
-                        Variant.variant().with(VariantProperties.MODEL, bottom_hinge).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180))
+                        Variant.variant().with(VariantProperty.MODEL, bottom_hinge).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R180))
                 .addVariant(List.of("facing=north", "half=lower", "hinge=right", "open=false"),
-                        Variant.variant().with(VariantProperties.MODEL, bottom_hinge).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270))
+                        Variant.variant().with(VariantProperty.MODEL, bottom_hinge).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270))
                 .addVariant(List.of("facing=east", "half=lower", "hinge=left", "open=true"),
-                        Variant.variant().with(VariantProperties.MODEL, bottom_hinge).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90))
+                        Variant.variant().with(VariantProperty.MODEL, bottom_hinge).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R90))
                 .addVariant(List.of("facing=south", "half=lower", "hinge=left", "open=true"),
-                        Variant.variant().with(VariantProperties.MODEL, bottom_hinge).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180))
+                        Variant.variant().with(VariantProperty.MODEL, bottom_hinge).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R180))
                 .addVariant(List.of("facing=west", "half=lower", "hinge=left", "open=true"),
-                        Variant.variant().with(VariantProperties.MODEL, bottom_hinge).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270))
+                        Variant.variant().with(VariantProperty.MODEL, bottom_hinge).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270))
                 .addVariant(List.of("facing=north", "half=lower", "hinge=left", "open=true"),
-                        Variant.variant().with(VariantProperties.MODEL, bottom_hinge))
+                        Variant.variant().with(VariantProperty.MODEL, bottom_hinge))
                 .addVariant(List.of("facing=east", "half=lower", "hinge=right", "open=true"),
-                        Variant.variant().with(VariantProperties.MODEL, bottom).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270))
+                        Variant.variant().with(VariantProperty.MODEL, bottom).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270))
                 .addVariant(List.of("facing=south", "half=lower", "hinge=right", "open=true"),
-                        Variant.variant().with(VariantProperties.MODEL, bottom))
+                        Variant.variant().with(VariantProperty.MODEL, bottom))
                 .addVariant(List.of("facing=west", "half=lower", "hinge=right", "open=true"),
-                        Variant.variant().with(VariantProperties.MODEL, bottom).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90))
+                        Variant.variant().with(VariantProperty.MODEL, bottom).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R90))
                 .addVariant(List.of("facing=north", "half=lower", "hinge=right", "open=true"),
-                        Variant.variant().with(VariantProperties.MODEL, bottom).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180))
+                        Variant.variant().with(VariantProperty.MODEL, bottom).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R180))
                 .addVariant(List.of("facing=east", "half=upper", "hinge=left", "open=false"),
-                    Variant.variant().with(VariantProperties.MODEL, top))
+                    Variant.variant().with(VariantProperty.MODEL, top))
                 .addVariant(List.of("facing=south", "half=upper", "hinge=left", "open=false"),
-                        Variant.variant().with(VariantProperties.MODEL, top).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90))
+                        Variant.variant().with(VariantProperty.MODEL, top).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R90))
                 .addVariant(List.of("facing=west", "half=upper", "hinge=left", "open=false"),
-                        Variant.variant().with(VariantProperties.MODEL, top).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180))
+                        Variant.variant().with(VariantProperty.MODEL, top).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R180))
                 .addVariant(List.of("facing=north", "half=upper", "hinge=left", "open=false"),
-                        Variant.variant().with(VariantProperties.MODEL, top).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270))
+                        Variant.variant().with(VariantProperty.MODEL, top).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270))
                 .addVariant(List.of("facing=east", "half=upper", "hinge=right", "open=false"),
-                        Variant.variant().with(VariantProperties.MODEL, top_hinge))
+                        Variant.variant().with(VariantProperty.MODEL, top_hinge))
                 .addVariant(List.of("facing=south", "half=upper", "hinge=right", "open=false"),
-                        Variant.variant().with(VariantProperties.MODEL, top_hinge).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90))
+                        Variant.variant().with(VariantProperty.MODEL, top_hinge).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R90))
                 .addVariant(List.of("facing=west", "half=upper", "hinge=right", "open=false"),
-                        Variant.variant().with(VariantProperties.MODEL, top_hinge).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180))
+                        Variant.variant().with(VariantProperty.MODEL, top_hinge).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R180))
                 .addVariant(List.of("facing=north", "half=upper", "hinge=right", "open=false"),
-                        Variant.variant().with(VariantProperties.MODEL, top_hinge).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270))
+                        Variant.variant().with(VariantProperty.MODEL, top_hinge).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270))
                 .addVariant(List.of("facing=east", "half=upper", "hinge=left", "open=true"),
-                        Variant.variant().with(VariantProperties.MODEL, top_hinge).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90))
+                        Variant.variant().with(VariantProperty.MODEL, top_hinge).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R90))
                 .addVariant(List.of("facing=south", "half=upper", "hinge=left", "open=true"),
-                        Variant.variant().with(VariantProperties.MODEL, top_hinge).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180))
+                        Variant.variant().with(VariantProperty.MODEL, top_hinge).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R180))
                 .addVariant(List.of("facing=west", "half=upper", "hinge=left", "open=true"),
-                        Variant.variant().with(VariantProperties.MODEL, top_hinge).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270))
+                        Variant.variant().with(VariantProperty.MODEL, top_hinge).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270))
                 .addVariant(List.of("facing=north", "half=upper", "hinge=left", "open=true"),
-                        Variant.variant().with(VariantProperties.MODEL, top_hinge))
+                        Variant.variant().with(VariantProperty.MODEL, top_hinge))
                 .addVariant(List.of("facing=east", "half=upper", "hinge=right", "open=true"),
-                        Variant.variant().with(VariantProperties.MODEL, top).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270))
+                        Variant.variant().with(VariantProperty.MODEL, top).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270))
                 .addVariant(List.of("facing=south", "half=upper", "hinge=right", "open=true"),
-                        Variant.variant().with(VariantProperties.MODEL, top))
+                        Variant.variant().with(VariantProperty.MODEL, top))
                 .addVariant(List.of("facing=west", "half=upper", "hinge=right", "open=true"),
-                        Variant.variant().with(VariantProperties.MODEL, top).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90))
+                        Variant.variant().with(VariantProperty.MODEL, top).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R90))
                 .addVariant(List.of("facing=north", "half=upper", "hinge=right", "open=true"),
-                        Variant.variant().with(VariantProperties.MODEL, top).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180));
+                        Variant.variant().with(VariantProperty.MODEL, top).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R180));
 
     }
 
     private static ChildPropertyVariant createStairVariant(ResourceLocation inner,ResourceLocation straight,ResourceLocation outer){
         return ChildPropertyVariant.of(HORIZONTAL_FACING,HALF,STAIRS_SHAPE)
                 .addVariant(List.of("facing=east", "half=bottom", "shape=straight"),
-                        Variant.variant().with(VariantProperties.MODEL, straight))
+                        Variant.variant().with(VariantProperty.MODEL, straight))
                 .addVariant(List.of("facing=west", "half=bottom", "shape=straight"),
-                        Variant.variant().with(VariantProperties.MODEL, straight).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, straight).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R180).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=south", "half=bottom", "shape=straight"),
-                        Variant.variant().with(VariantProperties.MODEL, straight).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, straight).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R90).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=north", "half=bottom", "shape=straight"),
-                        Variant.variant().with(VariantProperties.MODEL, straight).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, straight).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=east", "half=bottom", "shape=outer_right"),
-                        Variant.variant().with(VariantProperties.MODEL, outer))
+                        Variant.variant().with(VariantProperty.MODEL, outer))
                 .addVariant(List.of("facing=west", "half=bottom", "shape=outer_right"),
-                        Variant.variant().with(VariantProperties.MODEL, outer).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, outer).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R180).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=south", "half=bottom", "shape=outer_right"),
-                        Variant.variant().with(VariantProperties.MODEL, outer).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, outer).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R90).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=north", "half=bottom", "shape=outer_right"),
-                        Variant.variant().with(VariantProperties.MODEL, outer).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, outer).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=east", "half=bottom", "shape=outer_left"),
-                        Variant.variant().with(VariantProperties.MODEL, outer).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, outer).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=west", "half=bottom", "shape=outer_left"),
-                        Variant.variant().with(VariantProperties.MODEL, outer).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, outer).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R90).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=south", "half=bottom", "shape=outer_left"),
-                        Variant.variant().with(VariantProperties.MODEL, outer))
+                        Variant.variant().with(VariantProperty.MODEL, outer))
                 .addVariant(List.of("facing=north", "half=bottom", "shape=outer_left"),
-                        Variant.variant().with(VariantProperties.MODEL, outer).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, outer).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R180).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=east", "half=bottom", "shape=inner_right"),
-                        Variant.variant().with(VariantProperties.MODEL, inner))
+                        Variant.variant().with(VariantProperty.MODEL, inner))
                 .addVariant(List.of("facing=west", "half=bottom", "shape=inner_right"),
-                        Variant.variant().with(VariantProperties.MODEL, inner).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, inner).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R180).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=south", "half=bottom", "shape=inner_right"),
-                        Variant.variant().with(VariantProperties.MODEL, inner).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, inner).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R90).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=north", "half=bottom", "shape=inner_right"),
-                        Variant.variant().with(VariantProperties.MODEL, inner).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, inner).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=east", "half=bottom", "shape=inner_left"),
-                        Variant.variant().with(VariantProperties.MODEL, inner).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, inner).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=west", "half=bottom", "shape=inner_left"),
-                        Variant.variant().with(VariantProperties.MODEL, inner).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, inner).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R90).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=south", "half=bottom", "shape=inner_left"),
-                        Variant.variant().with(VariantProperties.MODEL, inner))
+                        Variant.variant().with(VariantProperty.MODEL, inner))
                 .addVariant(List.of("facing=north", "half=bottom", "shape=inner_left"),
-                        Variant.variant().with(VariantProperties.MODEL, inner).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, inner).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R180).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=east", "half=top", "shape=straight"),
-                        Variant.variant().with(VariantProperties.MODEL, straight).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, straight).with(VariantProperty.X_ROT, VariantProperty.Rotation.R180).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=west", "half=top", "shape=straight"),
-                        Variant.variant().with(VariantProperties.MODEL, straight).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, straight).with(VariantProperty.X_ROT, VariantProperty.Rotation.R180).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R180).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=south", "half=top", "shape=straight"),
-                        Variant.variant().with(VariantProperties.MODEL, straight).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, straight).with(VariantProperty.X_ROT, VariantProperty.Rotation.R180).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R90).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=north", "half=top", "shape=straight"),
-                        Variant.variant().with(VariantProperties.MODEL, straight).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, straight).with(VariantProperty.X_ROT, VariantProperty.Rotation.R180).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=east", "half=top", "shape=outer_right"),
-                        Variant.variant().with(VariantProperties.MODEL, outer).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, outer).with(VariantProperty.X_ROT, VariantProperty.Rotation.R180).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R90).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=west", "half=top", "shape=outer_right"),
-                        Variant.variant().with(VariantProperties.MODEL, outer).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, outer).with(VariantProperty.X_ROT, VariantProperty.Rotation.R180).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=south", "half=top", "shape=outer_right"),
-                        Variant.variant().with(VariantProperties.MODEL, outer).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, outer).with(VariantProperty.X_ROT, VariantProperty.Rotation.R180).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R180).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=north", "half=top", "shape=outer_right"),
-                        Variant.variant().with(VariantProperties.MODEL, outer).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, outer).with(VariantProperty.X_ROT, VariantProperty.Rotation.R180).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=east", "half=top", "shape=outer_left"),
-                        Variant.variant().with(VariantProperties.MODEL, outer).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, outer).with(VariantProperty.X_ROT, VariantProperty.Rotation.R180).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=west", "half=top", "shape=outer_left"),
-                        Variant.variant().with(VariantProperties.MODEL, outer).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, outer).with(VariantProperty.X_ROT, VariantProperty.Rotation.R180).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R180).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=south", "half=top", "shape=outer_left"),
-                        Variant.variant().with(VariantProperties.MODEL, outer).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, outer).with(VariantProperty.X_ROT, VariantProperty.Rotation.R180).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R90).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=north", "half=top", "shape=outer_left"),
-                        Variant.variant().with(VariantProperties.MODEL, outer).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, outer).with(VariantProperty.X_ROT, VariantProperty.Rotation.R180).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=east", "half=top", "shape=inner_right"),
-                        Variant.variant().with(VariantProperties.MODEL, inner).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, inner).with(VariantProperty.X_ROT, VariantProperty.Rotation.R180).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R90).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=west", "half=top", "shape=inner_right"),
-                        Variant.variant().with(VariantProperties.MODEL, inner).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, inner).with(VariantProperty.X_ROT, VariantProperty.Rotation.R180).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=south", "half=top", "shape=inner_right"),
-                        Variant.variant().with(VariantProperties.MODEL, inner).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, inner).with(VariantProperty.X_ROT, VariantProperty.Rotation.R180).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R180).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=north", "half=top", "shape=inner_right"),
-                        Variant.variant().with(VariantProperties.MODEL, inner).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, inner).with(VariantProperty.X_ROT, VariantProperty.Rotation.R180).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=east", "half=top", "shape=inner_left"),
-                        Variant.variant().with(VariantProperties.MODEL, inner).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, inner).with(VariantProperty.X_ROT, VariantProperty.Rotation.R180).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=west", "half=top", "shape=inner_left"),
-                        Variant.variant().with(VariantProperties.MODEL, inner).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, inner).with(VariantProperty.X_ROT, VariantProperty.Rotation.R180).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R180).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=south", "half=top", "shape=inner_left"),
-                        Variant.variant().with(VariantProperties.MODEL, inner).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90).with(VariantProperties.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.MODEL, inner).with(VariantProperty.X_ROT, VariantProperty.Rotation.R180).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R90).with(VariantProperty.UV_LOCK, true))
                 .addVariant(List.of("facing=north", "half=top", "shape=inner_left"),
-                        Variant.variant().with(VariantProperties.MODEL, inner).with(VariantProperties.X_ROT, VariantProperties.Rotation.R180).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270).with(VariantProperties.UV_LOCK, true));
+                        Variant.variant().with(VariantProperty.MODEL, inner).with(VariantProperty.X_ROT, VariantProperty.Rotation.R180).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270).with(VariantProperty.UV_LOCK, true));
 
     }
 
     private static Variant createXYPosVariant(String xpos,String zpos,ResourceLocation none, ResourceLocation singleLine, ResourceLocation middle, ResourceLocation bothLine){
-        YuushyaLogger.info(xpos+" "+zpos);
+
         if (xpos.equals("xpos=none") && zpos.equals("zpos=none")) return
-                Variant.variant().with(VariantProperties.UV_LOCK, true).with(VariantProperties.MODEL, none);
+                Variant.variant().with(VariantProperty.UV_LOCK, true).with(VariantProperty.MODEL, none);
         if (xpos.equals("xpos=none") && zpos.equals("zpos=south")) return
-                Variant.variant().with(VariantProperties.UV_LOCK, true).with(VariantProperties.MODEL, singleLine);
+                Variant.variant().with(VariantProperty.UV_LOCK, true).with(VariantProperty.MODEL, singleLine);
         if (xpos.equals("xpos=none") && zpos.equals("zpos=north")) return
-                Variant.variant().with(VariantProperties.UV_LOCK, true).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180).with(VariantProperties.MODEL, singleLine);
+                Variant.variant().with(VariantProperty.UV_LOCK, true).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R180).with(VariantProperty.MODEL, singleLine);
         if (xpos.equals("xpos=west") && zpos.equals("zpos=none")) return
-                Variant.variant().with(VariantProperties.UV_LOCK, true).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90).with(VariantProperties.MODEL, singleLine);
+                Variant.variant().with(VariantProperty.UV_LOCK, true).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R90).with(VariantProperty.MODEL, singleLine);
         if (xpos.equals("xpos=east") && zpos.equals("zpos=none")) return
-                Variant.variant().with(VariantProperties.UV_LOCK, true).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270).with(VariantProperties.MODEL, singleLine);
+                Variant.variant().with(VariantProperty.UV_LOCK, true).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270).with(VariantProperty.MODEL, singleLine);
         if (xpos.equals("xpos=middle") && zpos.equals("zpos=middle")) return
-                Variant.variant().with(VariantProperties.UV_LOCK, true).with(VariantProperties.MODEL, middle);
+                Variant.variant().with(VariantProperty.UV_LOCK, true).with(VariantProperty.MODEL, middle);
         if (xpos.equals("xpos=middle") && zpos.equals("zpos=none")) return
-                Variant.variant().with(VariantProperties.UV_LOCK, true).with(VariantProperties.MODEL, middle);
+                Variant.variant().with(VariantProperty.UV_LOCK, true).with(VariantProperty.MODEL, middle);
         if (xpos.equals("xpos=none") && zpos.equals("zpos=middle")) return
-                Variant.variant().with(VariantProperties.UV_LOCK, true).with(VariantProperties.MODEL, middle);
+                Variant.variant().with(VariantProperty.UV_LOCK, true).with(VariantProperty.MODEL, middle);
         if (xpos.equals("xpos=middle") && zpos.equals("zpos=north")) return
-                Variant.variant().with(VariantProperties.UV_LOCK, true).with(VariantProperties.MODEL, middle);
+                Variant.variant().with(VariantProperty.UV_LOCK, true).with(VariantProperty.MODEL, middle);
         if (xpos.equals("xpos=middle") && zpos.equals("zpos=south")) return
-                Variant.variant().with(VariantProperties.UV_LOCK, true).with(VariantProperties.MODEL, middle);
+                Variant.variant().with(VariantProperty.UV_LOCK, true).with(VariantProperty.MODEL, middle);
         if (xpos.equals("xpos=middle") && zpos.equals("zpos=west")) return
-                Variant.variant().with(VariantProperties.UV_LOCK, true).with(VariantProperties.MODEL, middle);
+                Variant.variant().with(VariantProperty.UV_LOCK, true).with(VariantProperty.MODEL, middle);
         if (xpos.equals("xpos=middle") && zpos.equals("zpos=east")) return
-                Variant.variant().with(VariantProperties.UV_LOCK, true).with(VariantProperties.MODEL, middle);
+                Variant.variant().with(VariantProperty.UV_LOCK, true).with(VariantProperty.MODEL, middle);
         if (xpos.equals("xpos=west") && zpos.equals("zpos=south")) return
-                Variant.variant().with(VariantProperties.UV_LOCK, true).with(VariantProperties.MODEL, bothLine);
+                Variant.variant().with(VariantProperty.UV_LOCK, true).with(VariantProperty.MODEL, bothLine);
         if (xpos.equals("xpos=west") && zpos.equals("zpos=north")) return
-                Variant.variant().with(VariantProperties.UV_LOCK, true).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90).with(VariantProperties.MODEL, bothLine);
+                Variant.variant().with(VariantProperty.UV_LOCK, true).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R90).with(VariantProperty.MODEL, bothLine);
         if (xpos.equals("xpos=east") && zpos.equals("zpos=south")) return
-                Variant.variant().with(VariantProperties.UV_LOCK, true).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180).with(VariantProperties.MODEL, bothLine);
+                Variant.variant().with(VariantProperty.UV_LOCK, true).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R180).with(VariantProperty.MODEL, bothLine);
         if (xpos.equals("xpos=east") && zpos.equals("zpos=north")) return
-                Variant.variant().with(VariantProperties.UV_LOCK, true).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270).with(VariantProperties.MODEL, bothLine);
+                Variant.variant().with(VariantProperty.UV_LOCK, true).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270).with(VariantProperty.MODEL, bothLine);
         return Variant.variant();
     }
 
@@ -428,7 +426,7 @@ public class BlockStateData {
             }
             public ChildPropertyVariant generate(Function<List<String>, List<Variant>> fromVariantKeyToVariants){
                 List<List<String>> childPropertiesVariantKeys=childProperties.stream().map(ChildProperty::getVariantKeys).toList();
-                possibleCombination.addAll(YuushyaUtils.CartesianProduct(childPropertiesVariantKeys));
+                possibleCombination.addAll(CartesianProduct(childPropertiesVariantKeys));
                 for(List<String> combination:possibleCombination){
                     values.put(String.join(",",combination),fromVariantKeyToVariants.apply(combination));
                 }
@@ -469,17 +467,17 @@ public class BlockStateData {
             return json;
         }
         private static List<Variant> mergeVariants(List<Variant> list1, List<Variant> list2) {
-            ImmutableList.Builder<Variant> list3 = ImmutableList.builder();
+            List<Variant> list3 = new ArrayList<>();
             for (Variant variant1:list1) for (Variant variant2:list2){
                 list3.add(Variant.merge(variant1,variant2));
             }
-            return list3.build();
+            return list3.stream().toList();
         }
         public static ChildVariant of(Variant ...variant){
             return new ChildVariant().setBaseVariants(variant);
         }
     }
-    public static final Splitter STATE_SPLITTER = Splitter.on('#');
+    public static final Utils.Splitter STATE_SPLITTER = Utils.Splitter.on("#");
     public static List<String> getModelListFromData(List<String> models) {
         return models.stream().map((name) -> {
             if (name.contains("#")) {
@@ -514,7 +512,7 @@ public class BlockStateData {
                 variants.entrySet().stream().filter((entry) -> {
                             String s = entry.getKey();
                             boolean res = s != null;
-                            for (String con : YuushyaModelUtils.COMMA_SPLITTER.split(state)) {
+                            for (String con : COMMA_SPLITTER.split(state)) {
                                 res = res && s.contains(con);
                                 if (!res) break;
                             }

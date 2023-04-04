@@ -1,8 +1,8 @@
 package com.yuushya.utils;
 
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
+import com.google.gson.*;
+import com.yuushya.registries.YuushyaRegistryData;
+
 import java.util.Map;
 /**
  * https://stackoverflow.com/questions/34092373/merge-extend-json-objects-using-gson-in-java
@@ -11,6 +11,8 @@ import java.util.Map;
 
 public class GsonTools {
 
+
+    public static final Gson NormalGSON = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES).setPrettyPrinting().create();
     public static enum ConflictStrategy {
 
         THROW_EXCEPTION, PREFER_FIRST_OBJ, PREFER_SECOND_OBJ, PREFER_NON_NULL;
@@ -57,7 +59,12 @@ public class GsonTools {
             }
         }
     }
-
+    public static YuushyaRegistryData.Block combineYuushyaDataBlockJson(JsonObject blockJson, JsonObject templateBlockJson){
+        try {
+            GsonTools.extendJsonObject(blockJson, GsonTools.ConflictStrategy.PREFER_SECOND_OBJ, templateBlockJson);
+        } catch (GsonTools.JsonObjectExtensionConflictException e) {e.printStackTrace();}
+        return NormalGSON.fromJson(blockJson,YuushyaRegistryData.Block.class);
+    }
     private static void handleMergeConflict(String key, JsonObject leftObj, JsonElement leftVal, JsonElement rightVal, ConflictStrategy conflictStrategy)
             throws JsonObjectExtensionConflictException {
         {

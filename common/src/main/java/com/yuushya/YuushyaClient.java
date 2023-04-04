@@ -15,7 +15,7 @@ import static com.yuushya.registries.YuushyaRegistries.BLOCKS;
 
 public class YuushyaClient {
     public static void onInitializeClient(){
-        ReloadListenerRegistry.register(PackType.CLIENT_RESOURCES,new YuushyaResourceReloadListener());
+//        ReloadListenerRegistry.register(PackType.CLIENT_RESOURCES,new YuushyaResourceReloadListener());
         RenderTypeRegistry.register(RenderType.cutout(), YuushyaRegistries.SHOW_BLOCK.get());
 //        BlockEntityRendererRegistry.register((BlockEntityType<ShowBlockEntity>) YuushyaRegistries.SHOW_BLOCK_ENTITY.get(), ShowBlockEntityRender::new);
         YuushyaRegistries.registerClient();

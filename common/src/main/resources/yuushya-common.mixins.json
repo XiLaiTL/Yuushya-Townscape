@@ -6,9 +6,6 @@
     "MixinTitleScreen"
   ],
   "mixins": [
-    "MixinFallBackResourceManager",
-    "MixinLootTables",
-    "MixinRecipeManager"
   ],
   "server": [
 

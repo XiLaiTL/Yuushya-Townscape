@@ -3,6 +3,7 @@ package com.yuushya.mixin;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 import com.yuushya.datagen.YuushyaDataProvider;
+import com.yuushya.datagen.utils.ResourceLocationConvert;
 import com.yuushya.utils.YuushyaLogger;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.ResourceManager;
@@ -23,7 +24,9 @@ public class MixinLootTables {
     public void apply(Map<ResourceLocation, JsonElement> map, ResourceManager resourceManager, ProfilerFiller profiler, CallbackInfo ci){
 
         YuushyaDataProvider.of(YuushyaDataProvider.DataType.LootTable).forEach((key,value)->{
-            map.put(YuushyaDataProvider.toLootTableResourceLocation(key),value.get());
+            YuushyaLogger.info(value.get());
+            map.put(ResourceLocationConvert.from(YuushyaDataProvider.toLootTableResourceLocation(key)),value.get());
+            throw new RuntimeException();
         });
     }
 }

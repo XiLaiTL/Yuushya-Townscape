@@ -34,7 +34,7 @@ import java.util.Map;
 
 import static com.yuushya.utils.YuushyaUtils.toBlockMaterial;
 import static com.yuushya.utils.YuushyaUtils.toSound;
-import static com.yuushya.utils.YuushyaVoxelShape.getVoxelShape;
+import static com.yuushya.collision.utils.VoxelShapeFromFace.getVoxelShape;
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.HORIZONTAL_FACING;
 
 public class YuushyaBlockFactory{

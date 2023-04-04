@@ -2,6 +2,7 @@ package com.yuushya.mixin;
 
 import com.google.gson.JsonElement;
 import com.yuushya.datagen.YuushyaDataProvider;
+import com.yuushya.datagen.utils.ResourceLocationConvert;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.ResourceManager;
 import net.minecraft.util.profiling.ProfilerFiller;
@@ -20,7 +21,8 @@ public class MixinRecipeManager {
             at = @At("HEAD"))
     public void apply(Map<ResourceLocation, JsonElement> map, ResourceManager resourceManager, ProfilerFiller profiler, CallbackInfo ci){
         YuushyaDataProvider.of(YuushyaDataProvider.DataType.Recipe).forEach((key, value)->{
-            map.put(YuushyaDataProvider.toRecipeResourceLocation(key),value.get());
+            map.put(ResourceLocationConvert.from(YuushyaDataProvider.toRecipeResourceLocation(key)),value.get());
+
         });
 
     }

@@ -3,71 +3,63 @@ package com.yuushya.registries;
 import com.google.gson.*;
 import com.yuushya.Yuushya;
 import com.yuushya.utils.GsonTools;
-import com.yuushya.utils.YuushyaLogger;
-import com.yuushya.utils.YuushyaUtils;
 import dev.architectury.platform.Platform;
-import net.minecraft.util.GsonHelper;
 
 import java.io.*;
-import java.nio.charset.StandardCharsets;
+import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
-import java.util.List;
 import java.util.Map;
+
+import static com.yuushya.utils.GsonTools.NormalGSON;
 
 //设置配置文件夹中的注册表的读和写，
 //游戏开始时开始读，数据都读取到YuushyaData中，让YuushyaRegistries准备注册
 public class YuushyaRegistryConfig {
+
     private static YuushyaRegistryData YuushyaData;
     public static final Map<String,YuushyaRegistryData.Block> YuushyaRawBlockMap=new LinkedHashMap<>();
     public static final Map<String,YuushyaRegistryData.Item> YuushyaRawItemMap=new LinkedHashMap<>();
     public static final Map<String,YuushyaRegistryData.Particle> YuushyaRawParticleMap=new LinkedHashMap<>();
-    public static final File CONFIG_FILE= Platform.getConfigFolder().resolve("net.cocofish.yuushya/register.json").toFile();
-    public static final String VERSION=Platform.getMod(Yuushya.MOD_ID).getVersion();
-    public static final InputStream InnerFileInputStream=YuushyaRegistryConfig.class.getResourceAsStream("/assets/yuushya/register/inner.json");
-    public static void writeRegistryConfig(){
-        try{
-            CONFIG_FILE.getParentFile().mkdirs();
-            CONFIG_FILE.createNewFile();
-            YuushyaRegistryData yuushyaRegistryData=YuushyaResourceReloadListener.getYuushyaRegistryData();
-            String json= YuushyaUtils.NormalGSON.toJson(yuushyaRegistryData);
-            try(BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(new FileOutputStream(CONFIG_FILE), StandardCharsets.UTF_8))){
-                writer.write(json);
-            }catch (IOException e){e.printStackTrace();}
-        }catch (IOException e){e.printStackTrace();}
-    }
-    private static void addResultToRawMap(YuushyaRegistryData from){
+
+    public static final InputStream InnerFileInputStream=YuushyaRegistryConfig.class.getResourceAsStream("/data/yuushya/register/inner.json");
+
+    public static void addResultToRawMap(YuushyaRegistryData from){
         if (from.block!=null) from.block.forEach((e)->YuushyaRawBlockMap.put(e.name,e));
         if (from.item!=null) from.item.forEach((e)->YuushyaRawItemMap.put(e.name,e));
         if (from.particle!=null) from.particle.forEach((e)->YuushyaRawParticleMap.put(e.name,e));
     }
-    public static void readRegistryConfig(){
-        if (!CONFIG_FILE.exists()){
+    public static final File CONFIG_FILE= Platform.getConfigFolder().resolve("com.yuushya/register.json").toFile();
+    public static final String VERSION= Platform.getMod(Yuushya.MOD_ID).getVersion();
+
+    public static void readRegistryConfig() {
+        if (!CONFIG_FILE.exists()) {
             readRegistryInner();
             addResultToRawMap(YuushyaData);
             return;
         }
-        try(BufferedReader reader=new BufferedReader(new InputStreamReader( new FileInputStream(CONFIG_FILE),StandardCharsets.UTF_8))){
-            JsonElement configJson= JsonParser.parseReader(reader);
+        try (BufferedReader reader = new BufferedReader(new FileReader(CONFIG_FILE))) {
+            JsonElement configJson = JsonParser.parseReader(reader);
             mergeYuushyaRegistryBlockJson(configJson.getAsJsonObject().getAsJsonArray("block"));
-            YuushyaRegistryData yuushyaRegistryData=YuushyaUtils.NormalGSON.fromJson(configJson,YuushyaRegistryData.class);
-            if (yuushyaRegistryData.version.equals(VERSION)){
+            YuushyaRegistryData yuushyaRegistryData = NormalGSON.fromJson(configJson, YuushyaRegistryData.class);
+            if (yuushyaRegistryData.version.equals(VERSION)) {
                 addResultToRawMap(yuushyaRegistryData);
-            }
-            else {
+            } else {
                 readRegistryInner();//如果不是同一个版本的话，优先读取Jar包内部内容
                 //使用map来合并两者的数据
                 addResultToRawMap(yuushyaRegistryData);
                 addResultToRawMap(YuushyaData);
             }
-        }catch (IOException e){e.printStackTrace();}
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
     public static void readRegistryInner(){
         if (InnerFileInputStream!=null){
             try (BufferedReader reader=new BufferedReader(new InputStreamReader(InnerFileInputStream))){
                 JsonElement innerJson=JsonParser.parseReader(reader);
                 mergeYuushyaRegistryBlockJson(innerJson.getAsJsonObject().getAsJsonArray("block"));
-                YuushyaData=YuushyaUtils.NormalGSON.fromJson(innerJson,YuushyaRegistryData.class);
+                YuushyaData=NormalGSON.fromJson(innerJson,YuushyaRegistryData.class);
             }catch (IOException e){e.printStackTrace();}
         }
     }

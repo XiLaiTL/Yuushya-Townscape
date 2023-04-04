@@ -2,6 +2,7 @@ package com.yuushya.mixin;
 
 import com.yuushya.Yuushya;
 import com.yuushya.datagen.YuushyaDataProvider;
+import com.yuushya.datagen.utils.ResourceLocationConvert;
 import com.yuushya.utils.YuushyaLogger;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.FallbackResourceManager;
@@ -36,10 +37,10 @@ public class MixinFallBackResourceManager {
     )
     public void getResources(ResourceLocation id, CallbackInfoReturnable<List<Resource>> cir) {
         YuushyaDataProvider blockstateProvider = YuushyaDataProvider.of(YuushyaDataProvider.DataType.BlockState);
-        if (id.toString().contains("blockstates") && id.toString().contains(Yuushya.MOD_ID) && blockstateProvider.contain(id)){
+        if (id.toString().contains("blockstates") && id.toString().contains(Yuushya.MOD_ID) && blockstateProvider.contain(ResourceLocationConvert.from(id))){
             //YuushyaLogger.info(id.toString());YuushyaLogger.info(blockstateProvider.get(id).toString());
             cir.setReturnValue(List.of(
-                    new SimpleResource(id.getNamespace(), id, new ByteArrayInputStream(blockstateProvider.get(id).toString().getBytes(StandardCharsets.UTF_8)), null))
+                    new SimpleResource(id.getNamespace(), id, new ByteArrayInputStream(blockstateProvider.get(ResourceLocationConvert.from(id)).toString().getBytes(StandardCharsets.UTF_8)), null))
             );
             cir.cancel();
         }

@@ -1,4 +1,4 @@
-package com.yuushya.datagen;
+package com.yuushya.datagen.data;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;

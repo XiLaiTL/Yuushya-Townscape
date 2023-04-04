@@ -1,6 +1,7 @@
-package com.yuushya.utils;
+package com.yuushya.collision.utils;
 
 import com.mojang.math.Vector3f;
+import com.yuushya.utils.YuushyaUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.BlockRenderDispatcher;
 import net.minecraft.client.renderer.block.model.BakedQuad;
@@ -13,7 +14,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.*;
 
-public class YuushyaVoxelShape {
+public class VoxelShapeFromFace {
     record Line(Vector3f begin, Vector3f end) {
         boolean equal(Line line) {
             return begin.equals(line.end) && end.equals(line.begin);
@@ -94,7 +95,7 @@ public class YuushyaVoxelShape {
     }
 
     public static List<QuadWithDirection> getQuadFromBlockState(BlockState blockState){
-        int vertexSize=YuushyaUtils.vertexSize();
+        int vertexSize= YuushyaUtils.vertexSize();
         BlockRenderDispatcher blockRenderDispatcher= Minecraft.getInstance().getBlockRenderer();
         BakedModel blockModel = blockRenderDispatcher.getBlockModel(blockState);
         Random rand = new Random();

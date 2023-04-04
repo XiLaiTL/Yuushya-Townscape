@@ -29,20 +29,20 @@ public class YuushyaCreativeModeTab {
         return CreativeTabRegistry.create(new ResourceLocation(Yuushya.MOD_ID,name),()->new ItemStack(item.get()));
     }
 
-    public static ItemLike getBlueprint(String CreativeModeTab){
-        return switch (CreativeModeTab) {
-            case "yuushya_extrablocks" -> YuushyaRegistries.ITEMS.get("block_blueprint").get();
-            case "yuushya_furniture" -> YuushyaRegistries.ITEMS.get("furniture_blueprint").get();
-            case "yuushya_lighting" -> YuushyaRegistries.ITEMS.get("furniture_blueprint").get();
-            case "yuushya_decoration" -> YuushyaRegistries.ITEMS.get("deco_blueprint").get();
-            case "yuushya_signs" -> YuushyaRegistries.ITEMS.get("sign_blueprint").get();
-            case "yuushya_life" -> YuushyaRegistries.ITEMS.get("dailylife_stuff_blueprint").get();
-            case "yuushya_extrashapes" -> YuushyaRegistries.ITEMS.get("extra_shapes_blueprint").get();
-            case "yuushya_infrastructure" -> YuushyaRegistries.ITEMS.get("facility_blueprint").get();
-            //case "yuushya_structure" -> YuushyaRegistries.ITEMS.get("extra_shapes_blueprint").get();
-            default -> YuushyaRegistries.ITEMS.get("extra_shapes_blueprint").get();
-        };
-    }
+//    public static ItemLike getBlueprint(String CreativeModeTab){
+//        return switch (CreativeModeTab) {
+//            case "yuushya_extrablocks" -> YuushyaRegistries.ITEMS.get("block_blueprint").get();
+//            case "yuushya_furniture" -> YuushyaRegistries.ITEMS.get("furniture_blueprint").get();
+//            case "yuushya_lighting" -> YuushyaRegistries.ITEMS.get("furniture_blueprint").get();
+//            case "yuushya_decoration" -> YuushyaRegistries.ITEMS.get("deco_blueprint").get();
+//            case "yuushya_signs" -> YuushyaRegistries.ITEMS.get("sign_blueprint").get();
+//            case "yuushya_life" -> YuushyaRegistries.ITEMS.get("dailylife_stuff_blueprint").get();
+//            case "yuushya_extrashapes" -> YuushyaRegistries.ITEMS.get("extra_shapes_blueprint").get();
+//            case "yuushya_infrastructure" -> YuushyaRegistries.ITEMS.get("facility_blueprint").get();
+//            //case "yuushya_structure" -> YuushyaRegistries.ITEMS.get("extra_shapes_blueprint").get();
+//            default -> YuushyaRegistries.ITEMS.get("extra_shapes_blueprint").get();
+//        };
+//    }
 
     public static CreativeModeTab toGroup(String CreativeModeTab) {
         return switch (CreativeModeTab) {

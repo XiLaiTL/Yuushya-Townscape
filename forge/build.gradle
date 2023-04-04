@@ -29,7 +29,7 @@ dependencies {
     forge "net.minecraftforge:forge:${rootProject.forge_version}"
     // Remove the next line if you don't want to depend on the API
     modApi "dev.architectury:architectury-forge:${rootProject.architectury_version}"
-
+    implementation "com.google.code.gson:gson:2.8.9"
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
 }
@@ -74,6 +74,13 @@ remapJar {
 
 jar {
     classifier "dev"
+    manifest {
+        attributes(
+                'Main-Class': 'com.yuushya.ui.Main',
+                'Class-Path': 'gson-2.8.9.jar'
+        )
+    }
+
 }
 
 sourcesJar {

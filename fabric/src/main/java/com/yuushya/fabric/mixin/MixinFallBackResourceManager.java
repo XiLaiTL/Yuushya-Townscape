@@ -2,6 +2,7 @@ package com.yuushya.fabric.mixin;
 
 import com.yuushya.Yuushya;
 import com.yuushya.datagen.YuushyaDataProvider;
+import com.yuushya.datagen.utils.ResourceLocationConvert;
 import com.yuushya.utils.YuushyaLogger;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.FallbackResourceManager;
@@ -29,15 +30,15 @@ public class MixinFallBackResourceManager {
             cancellable = true
     )
     public void getResource(ResourceLocation id, CallbackInfoReturnable<Resource> cir){
-        YuushyaDataProvider yuushyaDataProvider=YuushyaDataProvider.of(id);
+        YuushyaDataProvider yuushyaDataProvider=YuushyaDataProvider.of(ResourceLocationConvert.from(id));
         if (id.toString().contains("blockstates")) return;
 //        if (yuushyaDataProvider.type(YuushyaDataProvider.DataType.LootTable).contain(id)){
 //            cir.cancel();return;
 //        }
-        if (yuushyaDataProvider.type(YuushyaDataProvider.DataType.ItemModel).contain(id)
-                ||yuushyaDataProvider.type(YuushyaDataProvider.DataType.BlockModel).contain(id)
-                ||yuushyaDataProvider.type(YuushyaDataProvider.DataType.Particle).contain(id)){
-            Resource resource = new SimpleResource(id.getNamespace(), id, new ByteArrayInputStream(yuushyaDataProvider.get(id).toString().getBytes(StandardCharsets.UTF_8)), null);
+        if (yuushyaDataProvider.type(YuushyaDataProvider.DataType.ItemModel).contain(ResourceLocationConvert.from(id))
+                ||yuushyaDataProvider.type(YuushyaDataProvider.DataType.BlockModel).contain(ResourceLocationConvert.from(id))
+                ||yuushyaDataProvider.type(YuushyaDataProvider.DataType.Particle).contain(ResourceLocationConvert.from(id))){
+            Resource resource = new SimpleResource(id.getNamespace(), id, new ByteArrayInputStream(yuushyaDataProvider.get(ResourceLocationConvert.from(id)).toString().getBytes(StandardCharsets.UTF_8)), null);
             cir.setReturnValue(resource);
             cir.cancel();
         }

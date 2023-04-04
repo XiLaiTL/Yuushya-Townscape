@@ -34,21 +34,7 @@ import java.util.List;
 import java.util.function.Predicate;
 
 public class YuushyaUtils {
-    public static final Gson NormalGSON =new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES).setPrettyPrinting().create();
 
-    public static <T> List<List<T>> CartesianProduct(List<List<T>> fatherCollection){
-        int size=1; for (List<T> list:fatherCollection){size*=list.size();}
-        List<List<T>> res=new ArrayList<>(size);
-        for(int i=0;i<size;i++){int j=i;
-            List<T> childCollection =new ArrayList<>(fatherCollection.size());
-            for (List<T> list:fatherCollection){
-                childCollection.add(list.get(j % list.size()));
-                j/=list.size();
-            }
-            res.add(childCollection);
-        }
-        return res;
-    }
 
     public static int vertexSize() { return DefaultVertexFormat.BLOCK.getVertexSize() / 4;} // 一个顶点用多少位int表示，原版和开了光影的OptiFine不同所以得在这算出来
 
