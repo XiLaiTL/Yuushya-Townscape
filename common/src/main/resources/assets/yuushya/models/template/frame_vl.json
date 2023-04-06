@@ -1,20 +1,20 @@
 {
 	"credit": "Yuushya",
 	"textures": {
-		"sides": "yuushya:block_/template",
-		"particle": "#sides"
+		"all": "yuushya:block_/template",
+		"particle": "#all"
 	},
 	"elements": [
 		{
 			"from": [0, 0, 0],
 			"to": [4, 16, 2],
 			"faces": {
-				"north": {"uv": [0, 0, 4, 16], "texture": "#sides"},
-				"east": {"uv": [0, 0, 2, 16], "texture": "#sides"},
-				"south": {"uv": [0, 0, 4, 16], "texture": "#sides"},
-				"west": {"uv": [0, 0, 2, 16], "texture": "#sides"},
-				"up": {"uv": [0, 8, 4, 10], "texture": "#sides"},
-				"down": {"uv": [0, 9, 4, 11], "texture": "#sides"}
+				"north": {"uv": [0, 0, 4, 16], "texture": "#all"},
+				"east": {"uv": [0, 0, 2, 16], "texture": "#all"},
+				"south": {"uv": [0, 0, 4, 16], "texture": "#all"},
+				"west": {"uv": [0, 0, 2, 16], "texture": "#all"},
+				"up": {"uv": [0, 8, 4, 10], "texture": "#all"},
+				"down": {"uv": [0, 9, 4, 11], "texture": "#all"}
 			}
 		}
 	],

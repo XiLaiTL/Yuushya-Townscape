@@ -211,7 +211,7 @@
   "block.yuushya.falling_sakura_spawner.line1": "\u00A79[Particle Spawner]",
    
   
-    "item.yuushya.yuushya": "The Painter",  
+    "item.yuushya.pictor": "The Painter",  
   "item.yuushya.bismuth_crystal": "Bismuth Crystal", 
   "item.yuushya.wriggle_nightbug": "Wriggle Nightbug", 
   "item.yuushya.suspicious_chair": "Suspicious Chair", 
@@ -226,7 +226,7 @@
   "item.yuushya.fan_head": "Fan Head", 
   
   
-  "item.yuushya.yuushya.line1": "\u00A79[Hat]\u00A77\u00A7o“Thanks for using Yuushya!”",
+  "item.yuushya.pictor.line1": "\u00A79[Hat]\u00A77\u00A7o“Thanks for using Yuushya!”",
   "item.yuushya.suspicious_chair.line1": "\u00A79[Hat]\u00A77\u00A7o“Suspicious”",
   "item.yuushya.sleeping_orange_cat.line1": "\u00A79[Hat]\u00A77\u00A7o“So heavy...”",
   "item.yuushya.sleeping_ragdoll.line1": "\u00A79[Hat]\u00A77\u00A7o“Ragdoll is sleeping on you safe and sound”",
