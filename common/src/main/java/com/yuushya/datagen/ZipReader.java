@@ -8,9 +8,7 @@ import java.nio.file.*;
 import java.nio.file.attribute.BasicFileAttributes;
 
 public class ZipReader {
-    public static void main(String[] args){
 
-    }
     private final Path _basePath;
     private final Path _resPath;
     private final int _isZip;
@@ -31,7 +29,9 @@ public class ZipReader {
                         Files.walkFileTree(found,new SimpleFileVisitor<>(){
                             @Override
                             public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException{
-                                Files.copy(file,output.resolve(found.getParent().relativize(file)));
+                                Path pathNew = output.resolve(found.relativize(file).normalize().toString());
+                                pathNew.getParent().toFile().mkdirs();
+                                Files.copy(file,pathNew,StandardCopyOption.REPLACE_EXISTING);
                                 return FileVisitResult.CONTINUE;
                             }
                         });

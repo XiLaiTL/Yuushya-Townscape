@@ -21,6 +21,7 @@ import static com.yuushya.utils.GsonTools.NormalGSON;
 import static com.yuushya.utils.GsonTools.combineYuushyaDataBlockJson;
 
 public class ConfigReader {
+    public static final Map<String,String> TemplateBrother = new HashMap<>();
     public final Map<String,YuushyaRegistryData.Block> BlockALL=new HashMap<>();
     public final Map<String,YuushyaRegistryData.Block> BlockTemplate=new HashMap<>();
     public final Map<String,YuushyaRegistryData.Block> BlockOnly=new HashMap<>();
@@ -30,7 +31,7 @@ public class ConfigReader {
     public final Map<String,YuushyaRegistryData.Item> YuushyaRawItemMap=new LinkedHashMap<>();
     public final Map<String,YuushyaRegistryData.Particle> YuushyaRawParticleMap=new LinkedHashMap<>();
     private YuushyaRegistryData YuushyaData;
-    public static final InputStream InnerFileInputStream= ConfigReader.class.getResourceAsStream("/data/yuushya/register/inner.json");
+
     public static final Path CONFIG_FILE_PATH = Path.of("../config/com.yuushya/register.json");
     public void generateRegistries(){
 
@@ -96,6 +97,7 @@ public class ConfigReader {
 
             JsonObject templateBlockJson= NormalGSON.toJsonTree(templateBlock,YuushyaRegistryData.Block.class).getAsJsonObject();
             List<YuushyaRegistryData.Block> list=getTemplateUsageList(templateBlock);
+            String templateBrother = new ResourceLocation(list.get(0).name).getPath();
             for(YuushyaRegistryData.Block block:list){
                 JsonObject blockJson= NormalGSON.toJsonTree(block,YuushyaRegistryData.Block.class).getAsJsonObject();
                 YuushyaRegistryData.Block blockNew=combineYuushyaDataBlockJson(blockJson,templateBlockJson);
@@ -105,10 +107,8 @@ public class ConfigReader {
                     ResourceLocation blockResourceLocation =new ResourceLocation(block.name);
                     name=blockResourceLocation.getPath();
                 }
-                else{
-                    name= block.name;
-                }
-                generateTemplateProduct(name,templateBlock,templateModels,blockNew);
+                else{ name= block.name; }
+                generateTemplateProduct(name,templateBlock,templateModels,blockNew,templateBrother);
             }
         }
         //TODP: add particle to normal block
@@ -126,7 +126,7 @@ public class ConfigReader {
             YuushyaDataProvider.of(particle.name).type(YuushyaDataProvider.DataType.Particle).json(()-> ParticleData.genParticleDescription(particle.textures)).save();
         }
     }
-    private void generateTemplateProduct(String name, YuushyaRegistryData.Block templateBlock, List<String> templateModels, YuushyaRegistryData.Block block){
+    private void generateTemplateProduct(String name, YuushyaRegistryData.Block templateBlock, List<String> templateModels, YuushyaRegistryData.Block block,String templateBrother){
         if(templateBlock.blockstate.models!=null)  block.blockstate.models=templateBlock.blockstate.models.stream().map((s)->s+"_"+name).toList();
         if(templateBlock.blockstate.forms!=null) block.blockstate.forms=templateBlock.blockstate.forms.stream().map((list)->list.stream().map((s)->s+"_"+name).toList()).toList();
         block.name=templateBlock.name+"_"+name;
@@ -139,6 +139,7 @@ public class ConfigReader {
         dataProvider.type(YuushyaDataProvider.DataType.LootTable).add(block).save();
         dataProvider.type(YuushyaDataProvider.DataType.ItemModel).add(block).save();
         BlockALL.put(block.name,block);
+        TemplateBrother.put(block.name,templateBlock.name+"_"+templateBrother);
     }
 
     public List<YuushyaRegistryData.Block> getTemplateUsageList(YuushyaRegistryData.Block templateBlock){
@@ -162,6 +163,7 @@ public class ConfigReader {
     }
 
     public void readRegistryInner(){
+        InputStream InnerFileInputStream= ConfigReader.class.getResourceAsStream("/data/yuushya/register/inner.json");
         if (InnerFileInputStream!=null){
             try (BufferedReader reader=new BufferedReader(new InputStreamReader(InnerFileInputStream))){
                 JsonElement innerJson=JsonParser.parseReader(reader);
@@ -177,12 +179,14 @@ public class ConfigReader {
         List<File> list = files==null?new ArrayList<>() :  new ArrayList<>(List.of(files));
         list.add(CONFIG_FILE_PATH.toFile());
         for(var file:list){
-            try(BufferedReader reader=new BufferedReader( new FileReader(CONFIG_FILE_PATH.toFile()))){
-                JsonElement configJson= JsonParser.parseReader(reader);
-                mergeYuushyaRegistryBlockJson(configJson.getAsJsonObject().getAsJsonArray("block"));
-                YuushyaRegistryData yuushyaRegistryData=NormalGSON.fromJson(configJson,YuushyaRegistryData.class);
-                addResultToRawMap(yuushyaRegistryData);
-            }catch (IOException e){e.printStackTrace();}
+            if(file.exists()) {
+                try(BufferedReader reader=new BufferedReader( new FileReader(file))){
+                    JsonElement configJson= JsonParser.parseReader(reader);
+                    mergeYuushyaRegistryBlockJson(configJson.getAsJsonObject().getAsJsonArray("block"));
+                    YuushyaRegistryData yuushyaRegistryData=NormalGSON.fromJson(configJson,YuushyaRegistryData.class);
+                    addResultToRawMap(yuushyaRegistryData);
+                }catch (IOException e){e.printStackTrace();}
+            }
         }
         addResultToRawMap(YuushyaData);
     }
@@ -206,9 +210,9 @@ public class ConfigReader {
     }
 
     private YuushyaRegistryData getYuushyaRegistryData(){
-        JsonArray block=new JsonArray();YuushyaRawBlockMap.values().forEach(e->block.add(NormalGSON.toJson(e)));
-        JsonArray item=new JsonArray();YuushyaRawItemMap.values().forEach(e->item.add(NormalGSON.toJson(e)));
-        JsonArray particle=new JsonArray();YuushyaRawParticleMap.values().forEach(e->particle.add(NormalGSON.toJson(e)));
+        JsonArray block=new JsonArray();YuushyaRawBlockMap.values().forEach(e->block.add(NormalGSON.toJsonTree(e)));
+        JsonArray item=new JsonArray();YuushyaRawItemMap.values().forEach(e->item.add(NormalGSON.toJsonTree(e)));
+        JsonArray particle=new JsonArray();YuushyaRawParticleMap.values().forEach(e->particle.add(NormalGSON.toJsonTree(e)));
         mergeYuushyaRegistryBlockJson(block);
         JsonObject json=new JsonObject();
         json.add("block",block);

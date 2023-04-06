@@ -29,7 +29,6 @@ dependencies {
     forge "net.minecraftforge:forge:${rootProject.forge_version}"
     // Remove the next line if you don't want to depend on the API
     modApi "dev.architectury:architectury-forge:${rootProject.architectury_version}"
-    implementation "com.google.code.gson:gson:2.8.9"
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
 }
@@ -61,10 +60,15 @@ processResources {
 shadowJar {
     exclude "fabric.mod.json"
     exclude "architectury.common.json"
-
+//    relocate( 'com.google.gson','my.com.google.gson')
+//    dependencies ({
+//        include(dependency("com.google.code.gson:gson:2.8.9"))
+//    })
     configurations = [project.configurations.shadowCommon]
     classifier "dev-shadow"
+
 }
+
 
 remapJar {
     input.set shadowJar.archiveFile
@@ -77,7 +81,7 @@ jar {
     manifest {
         attributes(
                 'Main-Class': 'com.yuushya.ui.Main',
-                'Class-Path': 'gson-2.8.9.jar'
+                'Class-Path': 'gson-2.8.9.jar ../../../libraries/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar ../libraries/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar'
         )
     }
 
@@ -87,6 +91,7 @@ sourcesJar {
     def commonSources = project(":common").sourcesJar
     dependsOn commonSources
     from commonSources.archiveFile.map { zipTree(it) }
+
 }
 
 components.java {

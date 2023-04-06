@@ -23,6 +23,9 @@ public class YuushyaModelUtils {
     }
 
     public static Predicate<BlockState> predicate(StateDefinition<Block, BlockState> stateDefinition, String string) {
+        if(string.equals("empty")){
+            return blockState -> (blockState != null && blockState.is(stateDefinition.getOwner())) ;
+        }
         HashMap<Property<?>, Object> map = Maps.newHashMap();
         for (String s : COMMA_SPLITTER.split(string)) {
             Iterator<String> iterator = EQUAL_SPLITTER.split(s).iterator();

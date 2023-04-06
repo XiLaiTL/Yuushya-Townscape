@@ -1,6 +1,8 @@
 package com.yuushya.collision;
 
+import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
+import com.google.gson.stream.JsonReader;
 import com.yuushya.collision.data.Model;
 import com.yuushya.datagen.utils.ResourceLocation;
 
@@ -21,14 +23,14 @@ public class ModelReader {
     public static Map<ResourceLocation,Model> modelMap = new HashMap<>();
     public Model read(ResourceLocation namespaceID){
         if(modelMap.containsKey(namespaceID)) return modelMap.get(namespaceID);
-        Path path = this._basePath.resolve(namespaceID.toRelativePath("models"));
-        try (BufferedReader reader=new BufferedReader(new FileReader(path.toFile()))){
+        Path path = this._basePath.resolve("./assets/"+namespaceID.toRelativePath("models")+".json");
+        try (JsonReader reader=new JsonReader(new BufferedReader(new FileReader(path.toFile())))){
             Model model = NormalGSON.fromJson(JsonParser.parseReader(reader), Model.class);
-            if (model.elements==null&&model.parent!=null) {return read(new ResourceLocation(model.parent));}
-            else {
-                modelMap.put(namespaceID,model);
-                return model;
+            if (model.elements==null&&model.parent!=null) {
+                model = read(new ResourceLocation(model.parent));
             }
+            modelMap.put(namespaceID,model);
+            return model;
         }catch (IOException e){e.printStackTrace();}
         return null;
     }

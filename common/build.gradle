@@ -27,3 +27,10 @@ publishing {
         // Add repositories to publish to here.
     }
 }
+
+processResources{
+    from("build/config/com.yuushya/yuushya/"){
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+        into '.'
+    }
+}

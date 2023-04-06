@@ -91,7 +91,7 @@ description = "Auto Generation By Yuushya Townscape
     }
     public void create(){
         ConfigReader configReader = new ConfigReader();
-        configReader.readRegistryConfig(this._basePath.resolve("data/"+this._nameSpace+"/register/"));
+        configReader.readRegistryConfig(this._basePath.resolve("./data/"+this._nameSpace+"/register/"));
         configReader.generateRegistries();
         configReader.writeRegistryConfig();
         YuushyaDataProvider yuushyaDataProvider = new YuushyaDataProvider();
