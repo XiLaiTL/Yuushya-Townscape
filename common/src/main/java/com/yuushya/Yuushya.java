@@ -13,7 +13,7 @@ public class Yuushya {
 
     public static void init() {
 
-        //ReloadListenerRegistry.register(PackType.SERVER_DATA,new CollisionFileReadReloadListener());
+        ReloadListenerRegistry.register(PackType.SERVER_DATA,new CollisionFileReadReloadListener());
         YuushyaRegistryConfig.readRegistryConfig();
         YuushyaRegistries.registerRegistries();
         YuushyaRegistries.registerAll();

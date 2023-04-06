@@ -55,15 +55,16 @@ public class YuushyaBlockFactory{
         }
         @Override
         public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
-            //if (autoCollision){}
-            BlockState blockState1=blockGetter.getBlockState(blockPos);
-            if (!(blockState1.getBlock() instanceof AirBlock)) {
-                if (YuushyaVoxelShapes.get(blockState)==null){
-                    System.out.println(Registry.BLOCK.getKey(blockState.getBlock()));
-                    CollisionFileReader.readone(Registry.BLOCK.getKey(blockState.getBlock()).toString());
-                    //YuushyaVoxelShapes.put(blockState,getVoxelShape(blockState));
+            if (autoCollision){
+                BlockState blockState1=blockGetter.getBlockState(blockPos);
+                if (!(blockState1.getBlock() instanceof AirBlock)) {
+                    if (YuushyaVoxelShapes.get(blockState)==null){
+                        System.out.println(Registry.BLOCK.getKey(blockState.getBlock()));
+                        CollisionFileReader.readone(Registry.BLOCK.getKey(blockState.getBlock()).toString());
+                        //YuushyaVoxelShapes.put(blockState,getVoxelShape(blockState));
+                    }
+                    return YuushyaVoxelShapes.get(blockState);
                 }
-                return YuushyaVoxelShapes.get(blockState);
             }
             return Shapes.block();
         }

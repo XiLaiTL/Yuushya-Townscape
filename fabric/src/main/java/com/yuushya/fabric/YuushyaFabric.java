@@ -14,8 +14,6 @@ public class YuushyaFabric implements ModInitializer {
     public void onInitialize() {
         YuushyaRegistries.ITEMS.register("get_blockstate_item", () -> new GetBlockStateItem(new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_ITEM), 3));
         Yuushya.init();
-//        ServerLifecycleEvents.SERVER_STARTED.register((server)->{
-//            CollisionFileReader.readin();
-//        });
+        //ServerLifecycleEvents.SERVER_STARTED.register((server)->{CollisionFileReader.readin();});
     }
 }

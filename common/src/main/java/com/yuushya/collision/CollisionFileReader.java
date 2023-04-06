@@ -16,6 +16,7 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -42,10 +43,12 @@ public class CollisionFileReader {
                     try (DirectoryStream<Path> collisionFiles = Files.newDirectoryStream(newPath)) {
                         for(Path collisionFile:collisionFiles){
                             //String id = collisionFile.getFileName().toString().replace(".json","");
-                            try(JsonReader reader= new JsonReader(new BufferedReader(new FileReader(collisionFile.toFile(), StandardCharsets.UTF_8))) ){
-                                //reader.setLenient(true);
-                                CollisionItem collision = NormalGSON.fromJson(JsonParser.parseReader(reader),CollisionItem.class);
-                                CollisionMap.put(new ResourceLocation(collision.namespace,collision.id).toString(),collision);
+                            if(Files.exists(collisionFile)){
+                                try(JsonReader reader= new JsonReader(new BufferedReader(new FileReader(collisionFile.toFile(), StandardCharsets.UTF_8))) ){
+                                    //reader.setLenient(true);
+                                    CollisionItem collision = NormalGSON.fromJson(JsonParser.parseReader(reader),CollisionItem.class);
+                                    CollisionMap.put(new ResourceLocation(collision.namespace,collision.id).toString(),collision);
+                                }
                             }
                         }
                     }
@@ -80,7 +83,10 @@ public class CollisionFileReader {
             shape=Shapes.or(shape,Shapes.box(cube.from.get(0)/16.0,cube.from.get(1)/16.0,cube.from.get(2)/16.0,cube.to.get(0)/16.0,cube.to.get(1)/16.0,cube.to.get(2)/16.0));
         }
         shape = rotate(shape, model.x, model.y);
-        return shape;
+        if(shape.optimize().isEmpty()){
+            return Shapes.block();
+        }
+        else{ return shape.optimize();}
     }
     public static VoxelShape rotate(VoxelShape shape,Integer x,Integer y){
         if(x!=null){
