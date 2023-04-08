@@ -1,3 +1,7 @@
+//plugins{
+//    id "com.github.johnrengelman.shadow" version "7.1.2"
+//}
+
 architectury {
     common(rootProject.enabled_platforms.split(","))
 }
@@ -11,6 +15,7 @@ dependencies {
     // Do NOT use other classes from fabric loader
     modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_loader_version}"
     // Remove the next line if you don't want to depend on the API
+    include(implementation("com.google.code.gson:gson:2.8.9") )
     modApi "dev.architectury:architectury:${rootProject.architectury_version}"
 }
 
@@ -27,6 +32,12 @@ publishing {
         // Add repositories to publish to here.
     }
 }
+
+//shadowJar{
+//    dependencies ({
+//        include(dependency("com.google.code.gson:gson:2.8.9"))
+//    })
+//}
 
 processResources{
     from("build/config/com.yuushya/yuushya/"){

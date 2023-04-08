@@ -28,6 +28,7 @@ configurations {
 dependencies {
     forge "net.minecraftforge:forge:${rootProject.forge_version}"
     // Remove the next line if you don't want to depend on the API
+    include(implementation("com.google.code.gson:gson:2.8.9") )
     modApi "dev.architectury:architectury-forge:${rootProject.architectury_version}"
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
@@ -60,10 +61,6 @@ processResources {
 shadowJar {
     exclude "fabric.mod.json"
     exclude "architectury.common.json"
-//    relocate( 'com.google.gson','my.com.google.gson')
-//    dependencies ({
-//        include(dependency("com.google.code.gson:gson:2.8.9"))
-//    })
     configurations = [project.configurations.shadowCommon]
     classifier "dev-shadow"
 
