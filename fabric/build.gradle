@@ -28,7 +28,7 @@ dependencies {
     shadowCommon(project(path: ":common", configuration: "transformProductionFabric")) { transitive false }
     common(project(path: ":fabric-like", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":fabric-like", configuration: "transformProductionFabric")) { transitive false }
-    include(implementation("com.google.code.gson:gson:2.8.9") )
+    include(implementation("com.github.Querz:NBT:6.1") )
 }
 def resourceTargets = 'fabric.mod.json'
 def replaceProperties = [
