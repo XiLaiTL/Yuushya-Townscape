@@ -28,10 +28,10 @@ configurations {
 dependencies {
     forge "net.minecraftforge:forge:${rootProject.forge_version}"
     // Remove the next line if you don't want to depend on the API
-    include(implementation("com.google.code.gson:gson:2.8.9") )
     modApi "dev.architectury:architectury-forge:${rootProject.architectury_version}"
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
+    include(implementation("com.google.code.gson:gson:2.8.9") )
 }
 def resourceTargets = ['META-INF/mods.toml']
 def replaceProperties = [
