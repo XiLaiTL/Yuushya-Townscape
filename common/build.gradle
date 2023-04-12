@@ -1,3 +1,7 @@
+//plugins{
+//    id "com.github.johnrengelman.shadow" version "7.1.2"
+//}
+
 architectury {
     common(rootProject.enabled_platforms.split(","))
 }
@@ -27,6 +31,12 @@ publishing {
         // Add repositories to publish to here.
     }
 }
+
+//shadowJar{
+//    dependencies ({
+//        include(dependency("com.google.code.gson:gson:2.8.9"))
+//    })
+//}
 
 processResources{
     from("build/config/com.yuushya/yuushya/"){

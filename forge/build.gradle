@@ -31,6 +31,7 @@ dependencies {
     modApi "dev.architectury:architectury-forge:${rootProject.architectury_version}"
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
+    include(implementation("com.github.Querz:NBT:6.1") )
 }
 def resourceTargets = ['META-INF/mods.toml']
 def replaceProperties = [
@@ -60,10 +61,6 @@ processResources {
 shadowJar {
     exclude "fabric.mod.json"
     exclude "architectury.common.json"
-//    relocate( 'com.google.gson','my.com.google.gson')
-//    dependencies ({
-//        include(dependency("com.google.code.gson:gson:2.8.9"))
-//    })
     configurations = [project.configurations.shadowCommon]
     classifier "dev-shadow"
 
