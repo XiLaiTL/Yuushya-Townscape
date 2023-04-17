@@ -2,10 +2,7 @@ package com.yuushya.collision.utils;
 
 import com.yuushya.collision.data.CollisionItem;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 import static com.yuushya.collision.utils.RotateCube.MAX;
@@ -41,8 +38,13 @@ public class OptimizeModel {
                 Math.max(el1.to.get(0),el2.to.get(0)),Math.max(el1.to.get(1),el2.to.get(1)),Math.max(el1.to.get(2),el2.to.get(2))
         );
     }
+    public static  CollisionItem.Model.Element combine(List<CollisionItem.Model.Element> list){
+        Optional<CollisionItem.Model.Element> optionalElement = list.stream().reduce(OptimizeModel::combine);
+        return optionalElement.orElseGet(() -> new CollisionItem.Model.Element(0.0, 0.0, 0.0, 16.0, 16.0, 16.0));
+    }
 
-    public static double volume(CollisionItem.Model.Element element){
+
+        public static double volume(CollisionItem.Model.Element element){
         double res=1;
         for(int i=0;i<3;i++){
             res*=(element.to.get(i)-element.from.get(i));

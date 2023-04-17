@@ -4,6 +4,7 @@ import com.yuushya.block.blockstate.YuushyaBlockStates;
 import com.yuushya.collision.CollisionFileReader;
 import com.yuushya.registries.YuushyaRegistries;
 import com.yuushya.registries.YuushyaRegistryData;
+import com.yuushya.utils.YuushyaLogger;
 import com.yuushya.utils.YuushyaUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -54,19 +55,20 @@ public class YuushyaBlockFactory{
         }
         @Override
         public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
-            if (autoCollision){
-                BlockState blockState1=blockGetter.getBlockState(blockPos);
-                if (!(blockState1.getBlock() instanceof AirBlock)) {
-                    if (YuushyaVoxelShapes.get(blockState)==null){
-                        System.out.println(Registry.BLOCK.getKey(blockState.getBlock()));
-                        CollisionFileReader.readCollisionToVoxelShape(Registry.BLOCK.getKey(blockState.getBlock()).toString());
-                        //YuushyaVoxelShapes.put(blockState,getVoxelShape(blockState));
-                    }
-                    return YuushyaVoxelShapes.get(blockState);
-                }
+            if (YuushyaVoxelShapes.get(blockState)==null){
+                CollisionFileReader.readCollisionToVoxelShape(Registry.BLOCK.getKey(blockState.getBlock()).toString());
+            }
+            if (YuushyaVoxelShapes.get(blockState)!=null){
+                return YuushyaVoxelShapes.get(blockState);
             }
             return Shapes.block();
         }
+
+//        @Override
+//        public VoxelShape getVisualShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
+//            return Shapes.create(this.getCollisionShape(state,level,pos,context).bounds());
+//        }
+
 //        @Override
 //        public VoxelShape getCollisionShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
 //            return this.hasCollision ? Shapes.block() : Shapes.empty();

@@ -7,6 +7,7 @@ import com.yuushya.registries.YuushyaRegistries;
 import com.yuushya.utils.YuushyaModelUtils;
 import dev.architectury.platform.Platform;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -77,7 +78,7 @@ public class CollisionFileReader {
     public static VoxelShape getVoxelShape(CollisionItem.Model model){
         VoxelShape shape = Shapes.empty();
         for(var cube:model.collision){
-            shape=Shapes.or(shape,Shapes.box(cube.from.get(0)/16.0,cube.from.get(1)/16.0,cube.from.get(2)/16.0,cube.to.get(0)/16.0,cube.to.get(1)/16.0,cube.to.get(2)/16.0));
+            shape=Shapes.or(shape, Block.box(cube.from.get(0),cube.from.get(1),cube.from.get(2),cube.to.get(0),cube.to.get(1),cube.to.get(2)));
         }
         shape = shape.optimize();
         if(shape.isEmpty()){ return Shapes.block();}
