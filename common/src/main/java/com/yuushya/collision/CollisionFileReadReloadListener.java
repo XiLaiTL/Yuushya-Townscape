@@ -3,6 +3,7 @@ package com.yuushya.collision;
 
 import com.google.gson.JsonElement;
 import com.yuushya.collision.data.CollisionItem;
+import com.yuushya.utils.YuushyaLogger;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.ResourceManager;
 import net.minecraft.server.packs.resources.SimpleJsonResourceReloadListener;
@@ -35,5 +36,6 @@ public class CollisionFileReadReloadListener extends SimpleJsonResourceReloadLis
             }
 
         });
+        CollisionFileReader.readAllCollision();
     }
 }

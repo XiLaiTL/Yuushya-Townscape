@@ -22,9 +22,10 @@ public class Yuushya {
         YuushyaRegistries.registerRegistries();
         YuushyaRegistries.registerAll();
         CollisionNetWorkChannel.register();
-        LifecycleEvent.SERVER_STARTED.register((server)->{
-            CollisionFileReader.readAllCollision();
-        });
+//        LifecycleEvent.SERVER_STARTED.register((server)->{
+//            CollisionFileReader.readAllCollision();
+//        });
+
         PlayerEvent.PLAYER_JOIN.register((player)->{
             CollisionNetWorkChannel.sendAllToClient(player);
         });
