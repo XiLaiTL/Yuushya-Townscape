@@ -79,7 +79,7 @@ public class CollisionFileReader {
         for(var cube:model.collision){
             shape=Shapes.or(shape,Shapes.box(cube.from.get(0)/16.0,cube.from.get(1)/16.0,cube.from.get(2)/16.0,cube.to.get(0)/16.0,cube.to.get(1)/16.0,cube.to.get(2)/16.0));
         }
-        //shape = shape.optimize();
+        shape = shape.optimize();
         if(shape.isEmpty()){ return Shapes.block();}
         else{ return shape;}
     }

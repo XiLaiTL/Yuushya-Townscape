@@ -97,7 +97,7 @@ public class YuushyaRegistries {
                 String name; BlockBehaviour.Properties properties;
                 if (block.classType.equals("remain")){
                     ResourceLocation blockResourceLocation =new ResourceLocation(block.name);
-                    properties = BlockBehaviour.Properties.copy(Registry.BLOCK.get(blockResourceLocation));
+                    properties =YuushyaBlockFactory.getBlockProperties(BlockBehaviour.Properties.copy(Registry.BLOCK.get(blockResourceLocation)),blockNew.properties);
                     name=blockResourceLocation.getPath();
                 }
                 else{

@@ -70,12 +70,10 @@ public class OptimizeModel {
                 .collect(Collectors.groupingBy(x->x.volume>=MAX_VOLUME));
         List<CollisionItem.Model.Element> res = new ArrayList<>();
 
-
         if(filterMap.containsKey(true)){res.addAll(filterMap.get(true).stream().map(x -> x.element).toList());}
         if(filterMap.containsKey(false)){
             List<ElementRelation> relation = filterMap.get(false);
             int groupNum = relation.size()/controlNum;
-            groupNum = groupNum > 0 ? groupNum : 1;
             for(int i=0;i<relation.size();i++){
                 ElementRelation first = relation.get(i);
                 if(!first.isInclude){
@@ -84,7 +82,7 @@ public class OptimizeModel {
                         if(!second.isInclude){
                             double distance = distance2(first.element,second.element);
                             first.distance.put(second,distance);
-                            second.distance.put(first,distance);
+                            //second.distance.put(first,distance);
                         }
                     }
                     int groupNumTime = groupNum;
@@ -97,6 +95,7 @@ public class OptimizeModel {
                             current.isInclude = true;
                         }
                     }
+                    first.isInclude = true;
                     res.add(first.element);
                 }
             }

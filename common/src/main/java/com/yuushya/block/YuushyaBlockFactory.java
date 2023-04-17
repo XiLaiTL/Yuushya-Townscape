@@ -73,16 +73,20 @@ public class YuushyaBlockFactory{
 //        }
     }
 
-    public static BlockBehaviour.Properties getBlockProperties(YuushyaRegistryData.Block.Properties yuushyaBlockProperties){
-        BlockBehaviour.Properties blockProperties = BlockBehaviour.Properties
-                .of(toBlockMaterial(yuushyaBlockProperties.material))
-                .strength(yuushyaBlockProperties.hardness,yuushyaBlockProperties.resistance);
+    public static BlockBehaviour.Properties getBlockProperties(BlockBehaviour.Properties blockProperties, YuushyaRegistryData.Block.Properties yuushyaBlockProperties){
+        blockProperties = blockProperties.strength(yuushyaBlockProperties.hardness,yuushyaBlockProperties.resistance);
         if ( yuushyaBlockProperties.sound!=null&&!yuushyaBlockProperties.sound.isEmpty()) blockProperties=blockProperties.sound(toSound(yuushyaBlockProperties.sound));
         if (yuushyaBlockProperties.lightLevel!=0) blockProperties=blockProperties.lightLevel((state)->yuushyaBlockProperties.lightLevel);
         if (!yuushyaBlockProperties.hasCollision) blockProperties=blockProperties.noCollission();
         if (yuushyaBlockProperties.isDelicate) blockProperties=blockProperties.instabreak();
         if (!yuushyaBlockProperties.isSolid) blockProperties=blockProperties.noOcclusion();
         return blockProperties;
+    }
+
+    public static BlockBehaviour.Properties getBlockProperties(YuushyaRegistryData.Block.Properties yuushyaBlockProperties){
+        BlockBehaviour.Properties blockProperties = BlockBehaviour.Properties
+                .of(toBlockMaterial(yuushyaBlockProperties.material));
+        return getBlockProperties(blockProperties,yuushyaBlockProperties);
     }
     private static List<? extends Property<?>> getBlockStateProperties(YuushyaRegistryData.Block.BlockState yuushyaBlockState){
         if (yuushyaBlockState==null||yuushyaBlockState.states==null) return List.of();
