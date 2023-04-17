@@ -35,7 +35,6 @@ import java.util.Map;
 
 import static com.yuushya.utils.YuushyaUtils.toBlockMaterial;
 import static com.yuushya.utils.YuushyaUtils.toSound;
-import static com.yuushya.collision.utils.VoxelShapeFromFace.getVoxelShape;
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.HORIZONTAL_FACING;
 
 public class YuushyaBlockFactory{
@@ -60,7 +59,7 @@ public class YuushyaBlockFactory{
                 if (!(blockState1.getBlock() instanceof AirBlock)) {
                     if (YuushyaVoxelShapes.get(blockState)==null){
                         System.out.println(Registry.BLOCK.getKey(blockState.getBlock()));
-                        CollisionFileReader.readone(Registry.BLOCK.getKey(blockState.getBlock()).toString());
+                        CollisionFileReader.readCollisionToVoxelShape(Registry.BLOCK.getKey(blockState.getBlock()).toString());
                         //YuushyaVoxelShapes.put(blockState,getVoxelShape(blockState));
                     }
                     return YuushyaVoxelShapes.get(blockState);

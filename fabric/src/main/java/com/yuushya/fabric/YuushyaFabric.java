@@ -2,6 +2,7 @@ package com.yuushya.fabric;
 
 import com.yuushya.Yuushya;
 import com.yuushya.collision.CollisionFileReader;
+import com.yuushya.collision.CollisionNetWorkChannel;
 import com.yuushya.item.showblocktool.GetBlockStateItem;
 import com.yuushya.registries.YuushyaCreativeModeTab;
 import com.yuushya.registries.YuushyaRegistries;
@@ -14,6 +15,5 @@ public class YuushyaFabric implements ModInitializer {
     public void onInitialize() {
         YuushyaRegistries.ITEMS.register("get_blockstate_item", () -> new GetBlockStateItem(new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_ITEM), 3));
         Yuushya.init();
-        //ServerLifecycleEvents.SERVER_STARTED.register((server)->{CollisionFileReader.readin();});
     }
 }

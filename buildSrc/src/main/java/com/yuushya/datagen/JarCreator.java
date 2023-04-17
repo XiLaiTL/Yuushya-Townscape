@@ -19,7 +19,7 @@ public class JarCreator {
     }
     private final String _nameSpaceAfter;
     private final String _nameSpace;
-    private final Path _resPath;
+    private Path _resPath;
     private final Path _basePath;
 
     private void writeJson(YuushyaDataProvider.ResourceType resource, ResourceLocation resourceLocation, Supplier<JsonElement> getJson) {
@@ -91,6 +91,18 @@ description = "Auto Generation By Yuushya Townscape
             out.write(forge_file);
         }catch (IOException e){e.printStackTrace();}
     }
+
+    public void createJson(){
+        this._resPath = this._basePath;
+        ConfigReader configReader = new ConfigReader();
+        configReader.readRegistryConfig(this._basePath.resolve("./data/"+this._nameSpace +"/register/"));
+        configReader.generateRegistries();
+        YuushyaDataProvider yuushyaDataProvider = new YuushyaDataProvider();
+        for(var dataType:YuushyaDataProvider.DataType.values() ){
+            yuushyaDataProvider.type(dataType).forEach((key,value)->{writeJson(dataType.resource,key,value);});
+        }
+    }
+
     public void create(){
         ConfigReader configReader = new ConfigReader();
         configReader.readRegistryConfig(this._basePath.resolve("./data/"+this._nameSpace +"/register/"));

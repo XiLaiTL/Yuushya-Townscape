@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+group 'com.yuushya'
+version '0.0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.realityforge.org.jetbrains.annotations:org.jetbrains.annotations:1.7.0'
+    implementation 'com.google.code.gson:gson:2.8.9'
+
+}

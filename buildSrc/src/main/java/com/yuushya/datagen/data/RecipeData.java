@@ -3,8 +3,6 @@ package com.yuushya.datagen.data;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 import com.yuushya.datagen.utils.ResourceLocation;
-import com.yuushya.registries.YuushyaRegistries;
-import net.minecraft.world.level.ItemLike;
 
 import static com.yuushya.datagen.utils.Utils.MOD_ID;
 

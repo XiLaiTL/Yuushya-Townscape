@@ -20,8 +20,6 @@ public class YuushyaForge {
         YuushyaRegistries.ITEMS.register("get_blockstate_item", () -> new GetBlockStateItemForge(new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_ITEM), 3));
         Yuushya.init();
     }
-    @SubscribeEvent
-    public static void onServerStarted(ServerStartedEvent serverStartedEvent){
-        //CollisionFileReader.readin();
-    }
+
+
 }

@@ -23,7 +23,7 @@ import static com.yuushya.utils.GsonTools.NormalGSON;
 public class CollisionFileCreator {
 
     private final Path _basePath;
-    private final Path _resPath;
+    private Path _resPath;
     private final String _nameSpace ;
     private static final CollisionItem.Model.Element CUBE = new CollisionItem.Model.Element(0.0,0.0,0.0,16.0,16.0,16.0);
     private Map<String,CollisionItem> collisionData = new HashMap<>();
@@ -71,8 +71,10 @@ public class CollisionFileCreator {
                                     else{
                                         itemBlockstate.collision = RotateModel.rotate(model, variant.x, variant.y);
                                         itemBlockstate.collision = OptimizeModel.optimize(itemBlockstate.collision,15);
+
                                     }
                                     item.blockstates.add(itemBlockstate);
+
                                 }
                                 else{
                                     System.out.println("Error on"+variant.model);
@@ -107,4 +109,9 @@ public class CollisionFileCreator {
         writeCollision();
     }
 
+    public void createJson(){
+        readBlockStateAndModel();
+        this._resPath =this._basePath;
+        writeCollision();
+    }
 }

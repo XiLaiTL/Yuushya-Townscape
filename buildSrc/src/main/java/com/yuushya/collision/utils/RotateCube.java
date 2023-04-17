@@ -1,12 +1,11 @@
 package com.yuushya.collision.utils;
 
-import com.yuushya.collision.data.Collision;
 import com.yuushya.collision.data.CollisionItem;
 import com.yuushya.collision.data.Model;
 
 import java.util.List;
 
-public class CollisionCalc {
+public class RotateCube {
 
     private static List<Vec3> getPossiblePointList(Model.Element element){
         Vec3 from = new Vec3(element.from.get(0), element.from.get(1), element.from.get(2));
@@ -46,7 +45,7 @@ public class CollisionCalc {
         }
     }
     public static final double MAX = 1000000000;
-    public static CollisionItem.Model.Element getPointList(Model.Element element){
+    public static CollisionItem.Model.Element rotate(Model.Element element){
         List<Vec3> list = getPossiblePointList(element);
         Vec3 max = new Vec3(-MAX,-MAX,-MAX);
         Vec3 min = new Vec3(MAX,MAX,MAX);

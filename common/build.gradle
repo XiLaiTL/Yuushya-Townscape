@@ -39,8 +39,18 @@ publishing {
 //}
 
 processResources{
-    from("build/config/com.yuushya/yuushya/"){
-        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
-        into '.'
+//    from("build/config/com.yuushya/yuushya/"){
+//        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+//        into '.'
+//    }
+    finalizedBy('generateAssetsAndData')
+
+}
+
+tasks.register('generateAssetsAndData', CreateAssetsAndDataTask){
+    it.path = projectDir.toPath().resolve("./build/resources/main/")
+    onlyIf { !processResources.state.upToDate }
+    doLast {
+        println 'Assets and Data Build Success'
     }
 }

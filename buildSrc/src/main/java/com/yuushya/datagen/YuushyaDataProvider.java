@@ -5,8 +5,8 @@ import com.yuushya.datagen.data.BlockStateData;
 import com.yuushya.datagen.data.LootTableData;
 import com.yuushya.datagen.data.ModelData;
 import com.yuushya.datagen.data.RecipeData;
-import com.yuushya.registries.YuushyaRegistryData;
 import com.yuushya.datagen.utils.ResourceLocation;
+import com.yuushya.registries.YuushyaRegistryData;
 
 import java.util.HashMap;
 import java.util.Map;

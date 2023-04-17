@@ -1,5 +1,8 @@
 package com.yuushya.datagen.utils;
 
+
+import java.lang.reflect.Type;
+
 public final class ResourceLocation {
     private final String namespace;
     private final String path;

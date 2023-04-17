@@ -88,6 +88,9 @@ public class Main {
             for (Path path : paths) {
                 String namespace = "yuushya";//path.getFileName().toString()
                 if(Files.isDirectory(path)){
+                    ConfigReader configReader = new ConfigReader();
+                    configReader.readRegistryConfig(path.resolve("./data/"+namespace+"/register/"));
+                    configReader.generateRegistries();
                     CollisionFileCreator collisionFileCreator=new CollisionFileCreator(namespace,path);
                     collisionFileCreator.create();
                 }
