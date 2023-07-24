@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BXB",
+    "B#B",
+    "BZB"
+  ],
+  "key": {
+    "Z": {
+      "item": "minecraft:redstone_lamp"
+    },     
+	"B": {
+      "item": "minecraft:cake"
+    },    
+	"#": {
+      "item": "yuushya:plain_gift_box"
+    },
+	"X": {
+      "item": "minecraft:golden_apple"
+    }
+  },
+  "result": {
+    "item": "yuushya:idol_gift_box",
+	"count": 1
+  }
+}

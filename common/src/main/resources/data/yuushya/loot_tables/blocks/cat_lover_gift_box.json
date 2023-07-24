@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 8,
+      "entries": [
+	  
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+			"name": "yuushya:british_shorthair" },        
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:orange_cat" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:white_cat" },
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:black_cat" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:ragdoll" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 3 }],
+            "name": "yuushya:calico" },		
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:jellie" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:siamese" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:tabby" }
+	
+              	  
+               
+         
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion",
+		  "block": "yuushya:food_gift_box"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+allprojects {
+    apply plugin: "java"
+    apply plugin: "maven-publish"
+
+    archivesBaseName = rootProject.archives_base_name
+    version = rootProject.mod_version
+    group = rootProject.maven_group
+
+    repositories {
+        // Add repositories to retrieve artifacts from in here.
+        // You should only use this when depending on other mods because
+        // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
+        // See https://docs.gradle.org/current/userguide/declaring_repositories.html
+        // for more information about repositories.
+    }
+
+    tasks.withType(JavaCompile) {
+        options.encoding = "UTF-8"
+        options.release = 17
+    }
+
+    java {
+        withSourcesJar()
+    }
+}
+
+tasks.register("runClient-1.16.5-fabric"){dependsOn(':1.16.5:fabric:runClient')}
+tasks.register("runClient-1.16.5-forge"){dependsOn(':1.16.5:forge:runClient')}
+tasks.register("runClient-1.18.2-fabric"){dependsOn(':1.18.2:fabric:runClient')}
+tasks.register("runClient-1.18.2-forge"){dependsOn(':1.18.2:forge:runClient')}
+tasks.register("runClient-1.19.2-fabric"){dependsOn(':1.19.2:fabric:runClient')}
+tasks.register("runClient-1.19.2-forge"){dependsOn(':1.19.2:forge:runClient')}
+tasks.register("runClient-1.19.4-fabric"){dependsOn(':1.19.4:fabric:runClient')}
+tasks.register("runClient-1.19.4-forge"){dependsOn(':1.19.4:forge:runClient')}
+tasks.register("runClient-1.20.1-fabric"){dependsOn(':1.20.1:fabric:runClient')}
+tasks.register("runClient-1.20.1-forge"){dependsOn(':1.20.1:forge:runClient')}

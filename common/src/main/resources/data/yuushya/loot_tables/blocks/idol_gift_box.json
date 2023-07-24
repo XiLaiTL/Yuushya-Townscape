@@ -1,0 +1,160 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "yuushya:pictor",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }	
+        ]	  
+        },  
+      
+		{
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "yuushya:wriggle_nightbug",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }	
+        ]
+        },        
+		{
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "yuushya:bismuth_crystal",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }	
+        ]
+        },        
+		{
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "yuushya:sleeping_orange_cat",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }	
+        ]
+        },        
+		{
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "yuushya:sleeping_ragdoll",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }	
+        ]
+        },		
+		{
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "yuushya:butterfly",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }	
+        ]
+        },		
+		{
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "yuushya:head_bucket",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }	
+        ]
+        },		
+		{
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "yuushya:symbol_of_love",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }	
+        ]
+        },		
+		{
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "yuushya:christmas_hat",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }	
+        ]
+        },		
+		{
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "yuushya:toilet_head",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }	
+        ]
+        },		
+		{
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "yuushya:conehead",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }	
+        ]
+        },		
+		{
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "yuushya:fan_head",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }	
+        ]
+        },		
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "yuushya:tri_legged_chair",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }	
+        ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion",
+		  "block": "yuushya:idol_gift_box"
+        }
+      ]
+    }
+  ]
+}

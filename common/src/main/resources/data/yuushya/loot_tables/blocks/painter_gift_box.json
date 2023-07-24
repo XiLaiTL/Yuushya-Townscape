@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:block",
+  
+	  "pools": [
+		{ "rolls": 1, "entries": [{ "type": "minecraft:item", "name": "yuushya:get_lit_item" }]},
+		{ "rolls": 1, "entries": [{ "type": "minecraft:item", "name": "yuushya:slot_trans_item" }]},
+		{ "rolls": 1, "entries": [{ "type": "minecraft:item", "name": "yuushya:scale_trans_item" }]},
+		{ "rolls": 1, "entries": [{ "type": "minecraft:item", "name": "yuushya:pos_trans_item" }]},
+		{ "rolls": 1, "entries": [{ "type": "minecraft:item", "name": "yuushya:micro_pos_trans_item" }]},
+		{ "rolls": 1, "entries": [{ "type": "minecraft:item", "name": "yuushya:move_transformdata_item" }]},
+		{ "rolls": 1, "entries": [{ "type": "minecraft:item", "name": "yuushya:form_trans_item" }]},
+		{ "rolls": 1, "entries": [{ "type": "minecraft:item", "name": "yuushya:get_blockstate_item" }]},
+		{ "rolls": 1, "entries": [{ "type": "minecraft:item", "name": "yuushya:get_blockstate_item" }]},
+		{ "rolls": 1, "entries": [{ "type": "minecraft:item", "name": "yuushya:rot_trans_item" }]}
+		  
+		
+		  
+	  ],
+
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion",
+		  "block": "yuushya:food_gift_box"
+        }
+      ]
+    }
+  ]
+}

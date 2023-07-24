@@ -1,0 +1,7 @@
+{
+  "parent": "yuushya:item/template_wrench_alt",
+  "textures": {
+    "nbt": "yuushya:item/wrench/translate_z",
+    "head": "yuushya:item/wrench/rotate_z"
+  }
+}

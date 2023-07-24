@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+group 'com.yuushya'
+version '0.0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url "https://jitpack.io/" }
+}
+
+dependencies {
+    implementation 'org.realityforge.org.jetbrains.annotations:org.jetbrains.annotations:1.7.0'
+    implementation 'com.google.code.gson:gson:2.8.9'
+    implementation "com.github.Querz:NBT:6.1"
+}

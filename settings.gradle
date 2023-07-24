@@ -1,0 +1,40 @@
+pluginManagement {
+    repositories {
+        maven { url "https://maven.fabricmc.net/" }
+        maven { url "https://maven.architectury.dev/" }
+        maven { url "https://maven.minecraftforge.net/" }
+        gradlePluginPortal()
+    }
+}
+
+include("1.20.1")
+include("1.20.1:common")
+include("1.20.1:forge")
+include("1.20.1:fabric")
+include("1.20.1:fabric-like")
+include("1.20.1:quilt")
+include("1.19.4")
+include("1.19.4:common")
+include("1.19.4:forge")
+include("1.19.4:fabric")
+include("1.19.4:fabric-like")
+include("1.19.4:quilt")
+include("1.19.2")
+include("1.19.2:common")
+include("1.19.2:forge")
+include("1.19.2:fabric")
+include("1.19.2:fabric-like")
+include("1.19.2:quilt")
+include("1.18.2")
+include("1.18.2:common")
+include("1.18.2:forge")
+include("1.18.2:fabric")
+include("1.18.2:fabric-like")
+include("1.18.2:quilt")
+include("1.16.5")
+include("1.16.5:common")
+include("1.16.5:forge")
+include("1.16.5:fabric")
+include("common")
+
+rootProject.name = "yuushya-townscape"

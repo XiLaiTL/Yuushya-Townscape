@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BXB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "tag": "minecraft:planks"
+    },    
+	"X": {
+      "item": "yuushya:plain_gift_box"
+    }
+  },
+  "result": {
+    "item": "yuushya:carpenter_gift_box",
+	"count": 1
+  }
+}

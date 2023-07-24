@@ -1,0 +1,240 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 8,
+      "entries": [
+	  
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+			"name": "yuushya:sign_0" },        
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:sign_1" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:sign_2" },
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:sign_3" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:sign_4" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 3 }],
+            "name": "yuushya:sign_5" },		
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:sign_6" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:sign_7" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:sign_8" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:sign_9" },		
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+			"name": "yuushya:sign_10" },        
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:sign_11" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:sign_12" },
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:sign_13" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:sign_14" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 3 }],
+            "name": "yuushya:sign_15" },		
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:sign_16" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:sign_17" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:sign_18" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:sign_19" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+			"name": "yuushya:sign_20" },        
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:sign_21" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:sign_22" },
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:sign_23" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:sign_24" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 3 }],
+            "name": "yuushya:sign_25" },		
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:sign_26" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:sign_27" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:sign_28" },		
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 3 }],
+            "name": "yuushya:shopping_cart" },			
+					
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:checkout_computer" },			
+								
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:goods_shelf_books" },			
+								
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:goods_shelf_candy" },			
+								
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:goods_shelf_chopping_board" },			
+								
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:goods_shelf_frying_pan" },			
+								
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:goods_shelf_glass" },			
+								
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:goods_shelf_boxes" },			
+								
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:goods_shelf_mini_boxes" },			
+								
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:goods_shelf_magazine" },			
+								
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:goods_shelf_milk" },			
+								
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:goods_shelf_soft_drink" },			
+								
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:goods_shelf_small_soft_drink" },			
+								
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:goods_shelf_wine" },			
+								
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:checkout_computer" },			
+											
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:goods_shelf_shampoo" },			
+											
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:goods_shelf_paste" },			
+											
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:goods_shelf_jam" },			
+											
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:goods_shelf_mug" },			
+														
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:goods_shelf_potatochip" },			
+														
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:goods_shelf_snack" },			
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 5 }],
+            "name": "yuushya:small_poster_0" },
+   			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 5 }],
+            "name": "yuushya:small_poster_1" }, 
+  			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 5 }],
+            "name": "yuushya:big_poster" },  		
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 5 }],
+            "name": "yuushya:high_poster" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 5 }],
+            "name": "yuushya:long_poster" }
+              
+              	  
+               
+         
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion",
+		  "block": "yuushya:food_gift_box"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BS#",
+    "SXS",
+    "#SB"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:blaze_rod"
+    },
+	"#": {
+      "item": "minecraft:blaze_powder"
+    },
+	"X": {
+      "item": "minecraft:gold_block"
+    },
+    "S": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "yuushya:shimmering_pearl",
+	"count": 1
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "yuushya:item/template_wrench_alt",
+  "textures": {
+    "nbt": "yuushya:item/wrench/fine_tune_reset",
+    "head": "yuushya:item/wrench/reset"
+  }
+}

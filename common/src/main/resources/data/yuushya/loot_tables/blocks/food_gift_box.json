@@ -1,0 +1,70 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 2,
+      "entries": [
+	  
+			{	"type": "minecraft:item", "weight": 1, "name": "minecraft:cake" },
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 10 }],
+            "name": "minecraft:apple" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 10 }],
+            "name": "minecraft:cooked_salmon" },
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 10 }],
+            "name": "minecraft:pumpkin_pie" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 10 }],
+            "name": "minecraft:golden_carrot" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 3 }],
+            "name": "minecraft:golden_apple" },		
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 10 }],
+            "name": "minecraft:cooked_beef" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 10 }],
+            "name": "minecraft:cookie" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 10 }],
+            "name": "minecraft:melon_slice" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 10 }],
+            "name": "minecraft:cooked_cod" },		
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 10 }],
+            "name": "minecraft:cooked_chicken" },
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 10 }],
+            "name": "minecraft:sweet_berries" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 10 }],
+            "name": "minecraft:cooked_rabbit" }
+              
+              	  
+               
+         
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion",
+		  "block": "yuushya:food_gift_box"
+        }
+      ]
+    }
+  ]
+}

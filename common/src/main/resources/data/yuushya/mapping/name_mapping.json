@@ -1,0 +1,5540 @@
+[
+  {
+    "yuushya2.0.0": "blind_pathway",
+    "yuushya1.10.2": "20"
+  },
+  {
+    "yuushya2.0.0": "sandstone_acrylic",
+    "yuushya1.10.2": "a96"
+  },
+  {
+    "yuushya2.0.0": "asphalt",
+    "yuushya1.10.2": "47"
+  },
+  {
+    "yuushya2.0.0": "blind_pathway",
+    "yuushya1.10.2": "21"
+  },
+  {
+    "yuushya2.0.0": "embbed_marble_bricks",
+    "yuushya1.10.2": "44"
+  },
+  {
+    "yuushya2.0.0": "japanese_wall",
+    "yuushya1.10.2": "10"
+  },
+  {
+    "yuushya2.0.0": "straw_mat_a",
+    "yuushya1.10.2": "11"
+  },
+  {
+    "yuushya2.0.0": "straw_mat_b",
+    "yuushya1.10.2": "12"
+  },
+  {
+    "yuushya2.0.0": "egg_cobblestone",
+    "yuushya1.10.2": "13"
+  },
+  {
+    "yuushya2.0.0": "square_brick",
+    "yuushya1.10.2": "14"
+  },
+  {
+    "yuushya2.0.0": "yellow_acrylic",
+    "yuushya1.10.2": "15"
+  },
+  {
+    "yuushya2.0.0": "park_tile",
+    "yuushya1.10.2": "16"
+  },
+  {
+    "yuushya2.0.0": "wore_lime_wall",
+    "yuushya1.10.2": "17"
+  },
+  {
+    "yuushya2.0.0": "asphalt",
+    "yuushya1.10.2": "18"
+  },
+  {
+    "yuushya2.0.0": "wore_stone",
+    "yuushya1.10.2": "19"
+  },
+  {
+    "yuushya2.0.0": "safe",
+    "yuushya1.10.2": "22"
+  },
+  {
+    "yuushya2.0.0": "sandstone_acrylic",
+    "yuushya1.10.2": "23"
+  },
+  {
+    "yuushya2.0.0": "quartz_acrylic",
+    "yuushya1.10.2": "24"
+  },
+  {
+    "yuushya2.0.0": "black_framed_acrylic",
+    "yuushya1.10.2": "25"
+  },
+  {
+    "yuushya2.0.0": "red_framed_acrylic",
+    "yuushya1.10.2": "26"
+  },
+  {
+    "yuushya2.0.0": "light_blue_framed_acrylic",
+    "yuushya1.10.2": "27"
+  },
+  {
+    "yuushya2.0.0": "lime_framed_acrylic",
+    "yuushya1.10.2": "29"
+  },
+  {
+    "yuushya2.0.0": "yellow_framed_acrylic",
+    "yuushya1.10.2": "30"
+  },
+  {
+    "yuushya2.0.0": "goods_shelf_soft_drink",
+    "yuushya1.10.2": "31"
+  },
+  {
+    "yuushya2.0.0": "goods_shelf_shampoo",
+    "yuushya1.10.2": "32"
+  },
+  {
+    "yuushya2.0.0": "goods_shelf_mug",
+    "yuushya1.10.2": "33"
+  },
+  {
+    "yuushya2.0.0": "goods_shelf_plate",
+    "yuushya1.10.2": "35"
+  },
+  {
+    "yuushya2.0.0": "crash_barrel",
+    "yuushya1.10.2": "36"
+  },
+  {
+    "yuushya2.0.0": "lime__concrete",
+    "yuushya1.10.2": "37"
+  },
+  {
+    "yuushya2.0.0": "dark_square_bricks",
+    "yuushya1.10.2": "38"
+  },
+  {
+    "yuushya2.0.0": "gray_wall",
+    "yuushya1.10.2": "39"
+  },
+  {
+    "yuushya2.0.0": "average_white_blooming_leaves",
+    "yuushya1.10.2": "40"
+  },
+  {
+    "yuushya2.0.0": "average_gold_blooming_leaves",
+    "yuushya1.10.2": "41"
+  },
+  {
+    "yuushya2.0.0": "pale_bricks_0",
+    "yuushya1.10.2": "43"
+  },
+  {
+    "yuushya2.0.0": "embbed_stone_bricks",
+    "yuushya1.10.2": "45"
+  },
+  {
+    "yuushya2.0.0": "embbed_dark_bricks",
+    "yuushya1.10.2": "46"
+  },
+  {
+    "yuushya2.0.0": "road_marking_0",
+    "yuushya1.10.2": "48"
+  },
+  {
+    "yuushya2.0.0": "road_marking_7",
+    "yuushya1.10.2": "49"
+  },
+  {
+    "yuushya2.0.0": "empty_goods_shelf",
+    "yuushya1.10.2": "50"
+  },
+  {
+    "yuushya2.0.0": "empty_goods_shelf_double",
+    "yuushya1.10.2": "51"
+  },
+  {
+    "yuushya2.0.0": "goods_shelf_snack",
+    "yuushya1.10.2": "52"
+  },
+  {
+    "yuushya2.0.0": "goods_shelf_potatochip",
+    "yuushya1.10.2": "53"
+  },
+  {
+    "yuushya2.0.0": "goods_shelf_mini_boxes",
+    "yuushya1.10.2": "54"
+  },
+  {
+    "yuushya2.0.0": "goods_shelf_boxes",
+    "yuushya1.10.2": "55"
+  },
+  {
+    "yuushya2.0.0": "goods_shelf_candy",
+    "yuushya1.10.2": "56"
+  },
+  {
+    "yuushya2.0.0": "goods_shelf_wine",
+    "yuushya1.10.2": "57"
+  },
+  {
+    "yuushya2.0.0": "goods_shelf_books",
+    "yuushya1.10.2": "58"
+  },
+  {
+    "yuushya2.0.0": "goods_shelf_magazine",
+    "yuushya1.10.2": "59"
+  },
+  {
+    "yuushya2.0.0": "goods_shelf_milk",
+    "yuushya1.10.2": "60"
+  },
+  {
+    "yuushya2.0.0": "raw_oak_table",
+    "yuushya1.10.2": "70"
+  },
+  {
+    "yuushya2.0.0": "raw_acacia_table",
+    "yuushya1.10.2": "71"
+  },
+  {
+    "yuushya2.0.0": "raw_jungle_table",
+    "yuushya1.10.2": "72"
+  },
+  {
+    "yuushya2.0.0": "raw_birch_table",
+    "yuushya1.10.2": "73"
+  },
+  {
+    "yuushya2.0.0": "raw_dark_oak_table",
+    "yuushya1.10.2": "74"
+  },
+  {
+    "yuushya2.0.0": "goods_shelf_glass",
+    "yuushya1.10.2": "75"
+  },
+  {
+    "yuushya2.0.0": "empty_goods_shelf_hook",
+    "yuushya1.10.2": "76"
+  },
+  {
+    "yuushya2.0.0": "goods_shelf_chopping_board",
+    "yuushya1.10.2": "77"
+  },
+  {
+    "yuushya2.0.0": "marble_cobblestone",
+    "yuushya1.10.2": "78"
+  },
+  {
+    "yuushya2.0.0": "horizontal_utility_pole",
+    "yuushya1.10.2": "99"
+  },
+  {
+    "yuushya2.0.0": "gray_windows_open_0",
+    "yuushya1.10.2": "100"
+  },
+  {
+    "yuushya2.0.0": "gray_windows_open_1",
+    "yuushya1.10.2": "102"
+  },
+  {
+    "yuushya2.0.0": "white_windows_open_0",
+    "yuushya1.10.2": "103"
+  },
+  {
+    "yuushya2.0.0": "white_windows_open_1",
+    "yuushya1.10.2": "104"
+  },
+  {
+    "yuushya2.0.0": "black_windows_open_0",
+    "yuushya1.10.2": "105"
+  },
+  {
+    "yuushya2.0.0": "black_windows_open_1",
+    "yuushya1.10.2": "106"
+  },
+  {
+    "yuushya2.0.0": "cyan_windows_open_0",
+    "yuushya1.10.2": "108"
+  },
+  {
+    "yuushya2.0.0": "cyan_windows_open_1",
+    "yuushya1.10.2": "109"
+  },
+  {
+    "yuushya2.0.0": "rain_shed_0",
+    "yuushya1.10.2": "110"
+  },
+  {
+    "yuushya2.0.0": "rain_shed_1",
+    "yuushya1.10.2": "111"
+  },
+  {
+    "yuushya2.0.0": "rain_shed_2",
+    "yuushya1.10.2": "112"
+  },
+  {
+    "yuushya2.0.0": "rain_shed_3",
+    "yuushya1.10.2": "113"
+  },
+  {
+    "yuushya2.0.0": "rain_shed_4",
+    "yuushya1.10.2": "116"
+  },
+  {
+    "yuushya2.0.0": "rain_shed_5",
+    "yuushya1.10.2": "117"
+  },
+  {
+    "yuushya2.0.0": "rain_shed_6",
+    "yuushya1.10.2": "118"
+  },
+  {
+    "yuushya2.0.0": "classroom_chair",
+    "yuushya1.10.2": "132"
+  },
+  {
+    "yuushya2.0.0": "checkout_computer",
+    "yuushya1.10.2": "133"
+  },
+  {
+    "yuushya2.0.0": "oak_foldable_table",
+    "yuushya1.10.2": "134"
+  },
+  {
+    "yuushya2.0.0": "mop_bucket",
+    "yuushya1.10.2": "135"
+  },
+  {
+    "yuushya2.0.0": "mop",
+    "yuushya1.10.2": "136"
+  },
+  {
+    "yuushya2.0.0": "easel",
+    "yuushya1.10.2": "137"
+  },
+  {
+    "yuushya2.0.0": "easel_with_canvas",
+    "yuushya1.10.2": "138"
+  },
+  {
+    "yuushya2.0.0": "hay_table",
+    "yuushya1.10.2": "149"
+  },
+  {
+    "yuushya2.0.0": "classroom_desk",
+    "yuushya1.10.2": "150"
+  },
+  {
+    "yuushya2.0.0": "orange_tile_lower",
+    "yuushya1.10.2": "152"
+  },
+  {
+    "yuushya2.0.0": "orange_tile_upper",
+    "yuushya1.10.2": "153"
+  },
+  {
+    "yuushya2.0.0": "blackboard",
+    "yuushya1.10.2": "154"
+  },
+  {
+    "yuushya2.0.0": "glass_rainshed",
+    "yuushya1.10.2": "155"
+  },
+  {
+    "yuushya2.0.0": "laptop",
+    "yuushya1.10.2": "156"
+  },
+  {
+    "yuushya2.0.0": "pc_case",
+    "yuushya1.10.2": "157"
+  },
+  {
+    "yuushya2.0.0": "dark_tile_lower",
+    "yuushya1.10.2": "159"
+  },
+  {
+    "yuushya2.0.0": "mounted_clothes_0",
+    "yuushya1.10.2": "160"
+  },
+  {
+    "yuushya2.0.0": "mounted_clothes_1",
+    "yuushya1.10.2": "161"
+  },
+  {
+    "yuushya2.0.0": "mounted_clothes_2",
+    "yuushya1.10.2": "162"
+  },
+  {
+    "yuushya2.0.0": "mounted_clothes_3",
+    "yuushya1.10.2": "163"
+  },
+  {
+    "yuushya2.0.0": "mounted_clothes_4",
+    "yuushya1.10.2": "164"
+  },
+  {
+    "yuushya2.0.0": "mounted_clothes_5",
+    "yuushya1.10.2": "165"
+  },
+  {
+    "yuushya2.0.0": "mounted_clothes_6",
+    "yuushya1.10.2": "166"
+  },
+  {
+    "yuushya2.0.0": "mounted_clothes_7",
+    "yuushya1.10.2": "167"
+  },
+  {
+    "yuushya2.0.0": "mounted_clothes_8",
+    "yuushya1.10.2": "168"
+  },
+  {
+    "yuushya2.0.0": "mounted_clothes_9",
+    "yuushya1.10.2": "169"
+  },
+  {
+    "yuushya2.0.0": "stone_handrail_left",
+    "yuushya1.10.2": "177"
+  },
+  {
+    "yuushya2.0.0": "roof_0",
+    "yuushya1.10.2": "180"
+  },
+  {
+    "yuushya2.0.0": "roof_2",
+    "yuushya1.10.2": "182"
+  },
+  {
+    "yuushya2.0.0": "roof_3",
+    "yuushya1.10.2": "183"
+  },
+  {
+    "yuushya2.0.0": "roof_1",
+    "yuushya1.10.2": "184"
+  },
+  {
+    "yuushya2.0.0": "surveillance_camera",
+    "yuushya1.10.2": "199"
+  },
+  {
+    "yuushya2.0.0": "car_yellow_part_b",
+    "yuushya1.10.2": "200"
+  },
+  {
+    "yuushya2.0.0": "car_yellow_part_a",
+    "yuushya1.10.2": "201"
+  },
+  {
+    "yuushya2.0.0": "car_dark_part_a",
+    "yuushya1.10.2": "202"
+  },
+  {
+    "yuushya2.0.0": "car_dark_part_b",
+    "yuushya1.10.2": "203"
+  },
+  {
+    "yuushya2.0.0": "car_white_part_a",
+    "yuushya1.10.2": "204"
+  },
+  {
+    "yuushya2.0.0": "car_white_part_b",
+    "yuushya1.10.2": "205"
+  },
+  {
+    "yuushya2.0.0": "car_blue_part_b",
+    "yuushya1.10.2": "206"
+  },
+  {
+    "yuushya2.0.0": "car_blue_part_a",
+    "yuushya1.10.2": "207"
+  },
+  {
+    "yuushya2.0.0": "car_red_part_b",
+    "yuushya1.10.2": "208"
+  },
+  {
+    "yuushya2.0.0": "car_red_part_a",
+    "yuushya1.10.2": "209"
+  },
+  {
+    "yuushya2.0.0": "beverage_drawer",
+    "yuushya1.10.2": "220"
+  },
+  {
+    "yuushya2.0.0": "beverage_drawer_sym",
+    "yuushya1.10.2": "221"
+  },
+  {
+    "yuushya2.0.0": "traffic_lights_0",
+    "yuushya1.10.2": "222"
+  },
+  {
+    "yuushya2.0.0": "grille_0",
+    "yuushya1.10.2": "227"
+  },
+  {
+    "yuushya2.0.0": "grille_1",
+    "yuushya1.10.2": "228"
+  },
+  {
+    "yuushya2.0.0": "grille_2",
+    "yuushya1.10.2": "229"
+  },
+  {
+    "yuushya2.0.0": "average_fallen_leaves",
+    "yuushya1.10.2": "272"
+  },
+  {
+    "yuushya2.0.0": "lesser_fallen_leaves",
+    "yuushya1.10.2": "273"
+  },
+  {
+    "yuushya2.0.0": "thick_fallen_leaves",
+    "yuushya1.10.2": "274"
+  },
+  {
+    "yuushya2.0.0": "chalk_box",
+    "yuushya1.10.2": "280"
+  },
+  {
+    "yuushya2.0.0": "soot_pipe_top",
+    "yuushya1.10.2": "281"
+  },
+  {
+    "yuushya2.0.0": "soot_pipe",
+    "yuushya1.10.2": "282"
+  },
+  {
+    "yuushya2.0.0": "soot_pipe_bottom",
+    "yuushya1.10.2": "283"
+  },
+  {
+    "yuushya2.0.0": "soot_pipe_top_corner",
+    "yuushya1.10.2": "284"
+  },
+  {
+    "yuushya2.0.0": "soot_pipe_exhaust",
+    "yuushya1.10.2": "285"
+  },
+  {
+    "yuushya2.0.0": "soot_pipe_horizontal",
+    "yuushya1.10.2": "286"
+  },
+  {
+    "yuushya2.0.0": "iron_fence",
+    "yuushya1.10.2": "289"
+  },
+  {
+    "yuushya2.0.0": "drain",
+    "yuushya1.10.2": "290"
+  },
+  {
+    "yuushya2.0.0": "drainage_channel",
+    "yuushya1.10.2": "291"
+  },
+  {
+    "yuushya2.0.0": "drainage_channel_",
+    "yuushya1.10.2": "292"
+  },
+  {
+    "yuushya2.0.0": "pedestrian_crossing_forward_line",
+    "yuushya1.10.2": "293"
+  },
+  {
+    "yuushya2.0.0": "stairs_average_fallen_leaves",
+    "yuushya1.10.2": "297"
+  },
+  {
+    "yuushya2.0.0": "stairs_thick_fallen_leaves",
+    "yuushya1.10.2": "298"
+  },
+  {
+    "yuushya2.0.0": "stairs_lesser_fallen_leaves",
+    "yuushya1.10.2": "299"
+  },
+  {
+    "yuushya2.0.0": "title_white",
+    "yuushya1.10.2": "300"
+  },
+  {
+    "yuushya2.0.0": "title_brown",
+    "yuushya1.10.2": "302"
+  },
+  {
+    "yuushya2.0.0": "title_black",
+    "yuushya1.10.2": "304"
+  },
+  {
+    "yuushya2.0.0": "title_gray",
+    "yuushya1.10.2": "306"
+  },
+  {
+    "yuushya2.0.0": "title_lime",
+    "yuushya1.10.2": "308"
+  },
+  {
+    "yuushya2.0.0": "title_orange",
+    "yuushya1.10.2": "310"
+  },
+  {
+    "yuushya2.0.0": "title_pink",
+    "yuushya1.10.2": "312"
+  },
+  {
+    "yuushya2.0.0": "title_blue",
+    "yuushya1.10.2": "314"
+  },
+  {
+    "yuushya2.0.0": "title_red",
+    "yuushya1.10.2": "316"
+  },
+  {
+    "yuushya2.0.0": "title_yellow",
+    "yuushya1.10.2": "318"
+  },
+  {
+    "yuushya2.0.0": "dual_small_title_white",
+    "yuushya1.10.2": "320"
+  },
+  {
+    "yuushya2.0.0": "dual_small_title_brown",
+    "yuushya1.10.2": "322"
+  },
+  {
+    "yuushya2.0.0": "dual_small_title_black",
+    "yuushya1.10.2": "324"
+  },
+  {
+    "yuushya2.0.0": "dual_small_title_gray",
+    "yuushya1.10.2": "326"
+  },
+  {
+    "yuushya2.0.0": "dual_small_title_lime",
+    "yuushya1.10.2": "328"
+  },
+  {
+    "yuushya2.0.0": "dual_small_title_orange",
+    "yuushya1.10.2": "330"
+  },
+  {
+    "yuushya2.0.0": "dual_small_title_pink",
+    "yuushya1.10.2": "332"
+  },
+  {
+    "yuushya2.0.0": "dual_small_title_blue",
+    "yuushya1.10.2": "334"
+  },
+  {
+    "yuushya2.0.0": "dual_small_title_red",
+    "yuushya1.10.2": "336"
+  },
+  {
+    "yuushya2.0.0": "dual_small_title_yellow",
+    "yuushya1.10.2": "338"
+  },
+  {
+    "yuushya2.0.0": "recycle_bin_1",
+    "yuushya1.10.2": "343"
+  },
+  {
+    "yuushya2.0.0": "sign_0",
+    "yuushya1.10.2": "351"
+  },
+  {
+    "yuushya2.0.0": "sign_1",
+    "yuushya1.10.2": "352"
+  },
+  {
+    "yuushya2.0.0": "sign_2",
+    "yuushya1.10.2": "353"
+  },
+  {
+    "yuushya2.0.0": "sign_3",
+    "yuushya1.10.2": "354"
+  },
+  {
+    "yuushya2.0.0": "sign_4",
+    "yuushya1.10.2": "355"
+  },
+  {
+    "yuushya2.0.0": "sign_5",
+    "yuushya1.10.2": "356"
+  },
+  {
+    "yuushya2.0.0": "sign_6",
+    "yuushya1.10.2": "357"
+  },
+  {
+    "yuushya2.0.0": "sign_7",
+    "yuushya1.10.2": "358"
+  },
+  {
+    "yuushya2.0.0": "sign_8",
+    "yuushya1.10.2": "359"
+  },
+  {
+    "yuushya2.0.0": "sign_9",
+    "yuushya1.10.2": "360"
+  },
+  {
+    "yuushya2.0.0": "sign_10",
+    "yuushya1.10.2": "361"
+  },
+  {
+    "yuushya2.0.0": "sign_11",
+    "yuushya1.10.2": "362"
+  },
+  {
+    "yuushya2.0.0": "sign_12",
+    "yuushya1.10.2": "363"
+  },
+  {
+    "yuushya2.0.0": "sign_13",
+    "yuushya1.10.2": "364"
+  },
+  {
+    "yuushya2.0.0": "sign_14",
+    "yuushya1.10.2": "365"
+  },
+  {
+    "yuushya2.0.0": "sign_15",
+    "yuushya1.10.2": "366"
+  },
+  {
+    "yuushya2.0.0": "sign_16",
+    "yuushya1.10.2": "367"
+  },
+  {
+    "yuushya2.0.0": "sign_17",
+    "yuushya1.10.2": "368"
+  },
+  {
+    "yuushya2.0.0": "sign_18",
+    "yuushya1.10.2": "369"
+  },
+  {
+    "yuushya2.0.0": "sign_19",
+    "yuushya1.10.2": "370"
+  },
+  {
+    "yuushya2.0.0": "sign_20",
+    "yuushya1.10.2": "371"
+  },
+  {
+    "yuushya2.0.0": "sign_21",
+    "yuushya1.10.2": "372"
+  },
+  {
+    "yuushya2.0.0": "sign_22",
+    "yuushya1.10.2": "373"
+  },
+  {
+    "yuushya2.0.0": "sign_23",
+    "yuushya1.10.2": "374"
+  },
+  {
+    "yuushya2.0.0": "sign_24",
+    "yuushya1.10.2": "375"
+  },
+  {
+    "yuushya2.0.0": "sign_25",
+    "yuushya1.10.2": "376"
+  },
+  {
+    "yuushya2.0.0": "sign_26",
+    "yuushya1.10.2": "377"
+  },
+  {
+    "yuushya2.0.0": "power_house",
+    "yuushya1.10.2": "378"
+  },
+  {
+    "yuushya2.0.0": "power_house",
+    "yuushya1.10.2": "379"
+  },
+  {
+    "yuushya2.0.0": "small_poster_0",
+    "yuushya1.10.2": "380"
+  },
+  {
+    "yuushya2.0.0": "small_poster_1",
+    "yuushya1.10.2": "381"
+  },
+  {
+    "yuushya2.0.0": "long_poster",
+    "yuushya1.10.2": "382"
+  },
+  {
+    "yuushya2.0.0": "high_poster",
+    "yuushya1.10.2": "383"
+  },
+  {
+    "yuushya2.0.0": "big_poster",
+    "yuushya1.10.2": "384"
+  },
+  {
+    "yuushya2.0.0": "big_poster",
+    "yuushya1.10.2": "385"
+  },
+  {
+    "yuushya2.0.0": "sign_27",
+    "yuushya1.10.2": "393"
+  },
+  {
+    "yuushya2.0.0": "dark_tile_upper",
+    "yuushya1.10.2": "394"
+  },
+  {
+    "yuushya2.0.0": "gray_tile_lower",
+    "yuushya1.10.2": "395"
+  },
+  {
+    "yuushya2.0.0": "tall_iron_fence_middle",
+    "yuushya1.10.2": "396"
+  },
+  {
+    "yuushya2.0.0": "tall_iron_fence_middle_support",
+    "yuushya1.10.2": "397"
+  },
+  {
+    "yuushya2.0.0": "tall_iron_fence_left",
+    "yuushya1.10.2": "398"
+  },
+  {
+    "yuushya2.0.0": "tall_iron_fence_right",
+    "yuushya1.10.2": "399"
+  },
+  {
+    "yuushya2.0.0": "recycle_bin_0",
+    "yuushya1.10.2": "400"
+  },
+  {
+    "yuushya2.0.0": "recycle_bin_2",
+    "yuushya1.10.2": "401"
+  },
+  {
+    "yuushya2.0.0": "recycle_bin_3",
+    "yuushya1.10.2": "402"
+  },
+  {
+    "yuushya2.0.0": "recycle_bin_4",
+    "yuushya1.10.2": "403"
+  },
+  {
+    "yuushya2.0.0": "recycle_bin_5",
+    "yuushya1.10.2": "404"
+  },
+  {
+    "yuushya2.0.0": "recycle_bin_0",
+    "yuushya1.10.2": "405"
+  },
+  {
+    "yuushya2.0.0": "recycle_bin_0",
+    "yuushya1.10.2": "406"
+  },
+  {
+    "yuushya2.0.0": "recycle_bin_0",
+    "yuushya1.10.2": "407"
+  },
+  {
+    "yuushya2.0.0": "recycle_bin_0",
+    "yuushya1.10.2": "408"
+  },
+  {
+    "yuushya2.0.0": "blackboard_eraser",
+    "yuushya1.10.2": "409"
+  },
+  {
+    "yuushya2.0.0": "bottles",
+    "yuushya1.10.2": "412"
+  },
+  {
+    "yuushya2.0.0": "microwaver",
+    "yuushya1.10.2": "414"
+  },
+  {
+    "yuushya2.0.0": "knife_rest",
+    "yuushya1.10.2": "415"
+  },
+  {
+    "yuushya2.0.0": "pressure_cooker",
+    "yuushya1.10.2": "416"
+  },
+  {
+    "yuushya2.0.0": "freezer",
+    "yuushya1.10.2": "417"
+  },
+  {
+    "yuushya2.0.0": "freezer_",
+    "yuushya1.10.2": "418"
+  },
+  {
+    "yuushya2.0.0": "tree_base",
+    "yuushya1.10.2": "419"
+  },
+  {
+    "yuushya2.0.0": "rusty_bucket",
+    "yuushya1.10.2": "420"
+  },
+  {
+    "yuushya2.0.0": "gray_tile_upper",
+    "yuushya1.10.2": "422"
+  },
+  {
+    "yuushya2.0.0": "blue_tile_lower",
+    "yuushya1.10.2": "423"
+  },
+  {
+    "yuushya2.0.0": "blue_tile_upper",
+    "yuushya1.10.2": "424"
+  },
+  {
+    "yuushya2.0.0": "pale_tile_lower",
+    "yuushya1.10.2": "425"
+  },
+  {
+    "yuushya2.0.0": "pale_tile_upper",
+    "yuushya1.10.2": "426"
+  },
+  {
+    "yuushya2.0.0": "trunk_0",
+    "yuushya1.10.2": "427"
+  },
+  {
+    "yuushya2.0.0": "trunk_1",
+    "yuushya1.10.2": "428"
+  },
+  {
+    "yuushya2.0.0": "trunk_2",
+    "yuushya1.10.2": "429"
+  },
+  {
+    "yuushya2.0.0": "mounted_cloth_0",
+    "yuushya1.10.2": "431"
+  },
+  {
+    "yuushya2.0.0": "mounted_cloth_1",
+    "yuushya1.10.2": "432"
+  },
+  {
+    "yuushya2.0.0": "mounted_cloth_2",
+    "yuushya1.10.2": "433"
+  },
+  {
+    "yuushya2.0.0": "hanger_rod",
+    "yuushya1.10.2": "434"
+  },
+  {
+    "yuushya2.0.0": "hanged_clothes",
+    "yuushya1.10.2": "435"
+  },
+  {
+    "yuushya2.0.0": "hanged_cloth",
+    "yuushya1.10.2": "436"
+  },
+  {
+    "yuushya2.0.0": "hanged_things",
+    "yuushya1.10.2": "437"
+  },
+  {
+    "yuushya2.0.0": "hanger_rod_anchor",
+    "yuushya1.10.2": "438"
+  },
+  {
+    "yuushya2.0.0": "hanger_rod_anchor",
+    "yuushya1.10.2": "439"
+  },
+  {
+    "yuushya2.0.0": "ragdoll",
+    "yuushya1.10.2": "440"
+  },
+  {
+    "yuushya2.0.0": "black_cat",
+    "yuushya1.10.2": "441"
+  },
+  {
+    "yuushya2.0.0": "british_shorthair",
+    "yuushya1.10.2": "442"
+  },
+  {
+    "yuushya2.0.0": "tabby",
+    "yuushya1.10.2": "443"
+  },
+  {
+    "yuushya2.0.0": "jellie",
+    "yuushya1.10.2": "444"
+  },
+  {
+    "yuushya2.0.0": "orange_cat",
+    "yuushya1.10.2": "445"
+  },
+  {
+    "yuushya2.0.0": "siamese",
+    "yuushya1.10.2": "446"
+  },
+  {
+    "yuushya2.0.0": "calico",
+    "yuushya1.10.2": "447"
+  },
+  {
+    "yuushya2.0.0": "white_cat",
+    "yuushya1.10.2": "448"
+  },
+  {
+    "yuushya2.0.0": "peking_roast_duck",
+    "yuushya1.10.2": "450"
+  },
+  {
+    "yuushya2.0.0": "melon",
+    "yuushya1.10.2": "451"
+  },
+  {
+    "yuushya2.0.0": "tall_safe",
+    "yuushya1.10.2": "452"
+  },
+  {
+    "yuushya2.0.0": "paste",
+    "yuushya1.10.2": "453"
+  },
+  {
+    "yuushya2.0.0": "mug",
+    "yuushya1.10.2": "454"
+  },
+  {
+    "yuushya2.0.0": "shampoo",
+    "yuushya1.10.2": "455"
+  },
+  {
+    "yuushya2.0.0": "potato_chips",
+    "yuushya1.10.2": "456"
+  },
+  {
+    "yuushya2.0.0": "soda",
+    "yuushya1.10.2": "457"
+  },
+  {
+    "yuushya2.0.0": "soda_",
+    "yuushya1.10.2": "458"
+  },
+  {
+    "yuushya2.0.0": "beef",
+    "yuushya1.10.2": "459"
+  },
+  {
+    "yuushya2.0.0": "washing_machine_sym",
+    "yuushya1.10.2": "460"
+  },
+  {
+    "yuushya2.0.0": "branch_0",
+    "yuushya1.10.2": "461"
+  },
+  {
+    "yuushya2.0.0": "branch_1",
+    "yuushya1.10.2": "462"
+  },
+  {
+    "yuushya2.0.0": "branch_2",
+    "yuushya1.10.2": "463"
+  },
+  {
+    "yuushya2.0.0": "floor_fan",
+    "yuushya1.10.2": "464"
+  },
+  {
+    "yuushya2.0.0": "floor_fan_",
+    "yuushya1.10.2": "465"
+  },
+  {
+    "yuushya2.0.0": "bottle",
+    "yuushya1.10.2": "466"
+  },
+  {
+    "yuushya2.0.0": "hanging_azure_bluet",
+    "yuushya1.10.2": "470"
+  },
+  {
+    "yuushya2.0.0": "hanging_gold_tulip",
+    "yuushya1.10.2": "471"
+  },
+  {
+    "yuushya2.0.0": "hanging_white_tulip",
+    "yuushya1.10.2": "472"
+  },
+  {
+    "yuushya2.0.0": "hanging_blue_tulip",
+    "yuushya1.10.2": "473"
+  },
+  {
+    "yuushya2.0.0": "hanging_oak_sprout",
+    "yuushya1.10.2": "474"
+  },
+  {
+    "yuushya2.0.0": "hanging_sakura_sprout",
+    "yuushya1.10.2": "475"
+  },
+  {
+    "yuushya2.0.0": "hanging_maple_sprout",
+    "yuushya1.10.2": "476"
+  },
+  {
+    "yuushya2.0.0": "hanging_red_tulip",
+    "yuushya1.10.2": "477"
+  },
+  {
+    "yuushya2.0.0": "stone_fence",
+    "yuushya1.10.2": "481"
+  },
+  {
+    "yuushya2.0.0": "classroom_sign",
+    "yuushya1.10.2": "486"
+  },
+  {
+    "yuushya2.0.0": "piled_magazine",
+    "yuushya1.10.2": "487"
+  },
+  {
+    "yuushya2.0.0": "sorted_magazine",
+    "yuushya1.10.2": "488"
+  },
+  {
+    "yuushya2.0.0": "sorted_magazine",
+    "yuushya1.10.2": "489"
+  },
+  {
+    "yuushya2.0.0": "meshed_air_conditioning_condenser",
+    "yuushya1.10.2": "500"
+  },
+  {
+    "yuushya2.0.0": "rusty_air_conditioning_condenser",
+    "yuushya1.10.2": "501"
+  },
+  {
+    "yuushya2.0.0": "air_conditioning_condenser",
+    "yuushya1.10.2": "502"
+  },
+  {
+    "yuushya2.0.0": "meshed_air_conditioning_condenser",
+    "yuushya1.10.2": "503"
+  },
+  {
+    "yuushya2.0.0": "cone",
+    "yuushya1.10.2": "504"
+  },
+  {
+    "yuushya2.0.0": "fire_hydrant",
+    "yuushya1.10.2": "505"
+  },
+  {
+    "yuushya2.0.0": "beverage_drawer",
+    "yuushya1.10.2": "506"
+  },
+  {
+    "yuushya2.0.0": "jack",
+    "yuushya1.10.2": "507"
+  },
+  {
+    "yuushya2.0.0": "toilet",
+    "yuushya1.10.2": "509"
+  },
+  {
+    "yuushya2.0.0": "old_tv",
+    "yuushya1.10.2": "511"
+  },
+  {
+    "yuushya2.0.0": "vinyl_record_player",
+    "yuushya1.10.2": "512"
+  },
+  {
+    "yuushya2.0.0": "tv",
+    "yuushya1.10.2": "513"
+  },
+  {
+    "yuushya2.0.0": "tv_online",
+    "yuushya1.10.2": "514"
+  },
+  {
+    "yuushya2.0.0": "monitor_with_tablet",
+    "yuushya1.10.2": "515"
+  },
+  {
+    "yuushya2.0.0": "refrigerator",
+    "yuushya1.10.2": "516"
+  },
+  {
+    "yuushya2.0.0": "decorated_refrigerator",
+    "yuushya1.10.2": "517"
+  },
+  {
+    "yuushya2.0.0": "voltage_transformer",
+    "yuushya1.10.2": "518"
+  },
+  {
+    "yuushya2.0.0": "power_distributor",
+    "yuushya1.10.2": "519"
+  },
+  {
+    "yuushya2.0.0": "gold_vase",
+    "yuushya1.10.2": "520"
+  },
+  {
+    "yuushya2.0.0": "power_house",
+    "yuushya1.10.2": "521"
+  },
+  {
+    "yuushya2.0.0": "utility_pole",
+    "yuushya1.10.2": "522"
+  },
+  {
+    "yuushya2.0.0": "rusty_power_house",
+    "yuushya1.10.2": "524"
+  },
+  {
+    "yuushya2.0.0": "porcelain_vase",
+    "yuushya1.10.2": "525"
+  },
+  {
+    "yuushya2.0.0": "vending_machine_blue_h",
+    "yuushya1.10.2": "526"
+  },
+  {
+    "yuushya2.0.0": "vending_machine_red_h",
+    "yuushya1.10.2": "527"
+  },
+  {
+    "yuushya2.0.0": "vending_machine_gray_h",
+    "yuushya1.10.2": "528"
+  },
+  {
+    "yuushya2.0.0": "vending_machine_red_v",
+    "yuushya1.10.2": "529"
+  },
+  {
+    "yuushya2.0.0": "vending_machine_blue_v",
+    "yuushya1.10.2": "530"
+  },
+  {
+    "yuushya2.0.0": "vending_machine_gray_v",
+    "yuushya1.10.2": "531"
+  },
+  {
+    "yuushya2.0.0": "fan",
+    "yuushya1.10.2": "532"
+  },
+  {
+    "yuushya2.0.0": "fan_",
+    "yuushya1.10.2": "534"
+  },
+  {
+    "yuushya2.0.0": "books",
+    "yuushya1.10.2": "536"
+  },
+  {
+    "yuushya2.0.0": "pingpong_paddles",
+    "yuushya1.10.2": "537"
+  },
+  {
+    "yuushya2.0.0": "globe",
+    "yuushya1.10.2": "539"
+  },
+  {
+    "yuushya2.0.0": "washing_machine",
+    "yuushya1.10.2": "540"
+  },
+  {
+    "yuushya2.0.0": "fluorescent_lamp",
+    "yuushya1.10.2": "541"
+  },
+  {
+    "yuushya2.0.0": "fluorescent_lamp",
+    "yuushya1.10.2": "542"
+  },
+  {
+    "yuushya2.0.0": "pingpong_paddle_with_ball",
+    "yuushya1.10.2": "544"
+  },
+  {
+    "yuushya2.0.0": "air_conditioner",
+    "yuushya1.10.2": "547"
+  },
+  {
+    "yuushya2.0.0": "air_conditioner_sym",
+    "yuushya1.10.2": "548"
+  },
+  {
+    "yuushya2.0.0": "ceiling_fan",
+    "yuushya1.10.2": "551"
+  },
+  {
+    "yuushya2.0.0": "package_0",
+    "yuushya1.10.2": "552"
+  },
+  {
+    "yuushya2.0.0": "big_package",
+    "yuushya1.10.2": "553"
+  },
+  {
+    "yuushya2.0.0": "package_1",
+    "yuushya1.10.2": "554"
+  },
+  {
+    "yuushya2.0.0": "ventilator",
+    "yuushya1.10.2": "555"
+  },
+  {
+    "yuushya2.0.0": "ventilator_outer_part",
+    "yuushya1.10.2": "556"
+  },
+  {
+    "yuushya2.0.0": "binoculars",
+    "yuushya1.10.2": "558"
+  },
+  {
+    "yuushya2.0.0": "stone_table",
+    "yuushya1.10.2": "559"
+  },
+  {
+    "yuushya2.0.0": "beverage_drawer_sym",
+    "yuushya1.10.2": "560"
+  },
+  {
+    "yuushya2.0.0": "gas_tank",
+    "yuushya1.10.2": "563"
+  },
+  {
+    "yuushya2.0.0": "generator",
+    "yuushya1.10.2": "564"
+  },
+  {
+    "yuushya2.0.0": "marble_table",
+    "yuushya1.10.2": "565"
+  },
+  {
+    "yuushya2.0.0": "sorted_bottle",
+    "yuushya1.10.2": "566"
+  },
+  {
+    "yuushya2.0.0": "street_light",
+    "yuushya1.10.2": "223"
+  },
+  {
+    "yuushya2.0.0": "road_light",
+    "yuushya1.10.2": "568"
+  },
+  {
+    "yuushya2.0.0": "mailbox",
+    "yuushya1.10.2": "572"
+  },
+  {
+    "yuushya2.0.0": "mailbox",
+    "yuushya1.10.2": "573"
+  },
+  {
+    "yuushya2.0.0": "hood",
+    "yuushya1.10.2": "574"
+  },
+  {
+    "yuushya2.0.0": "air_conditioner_floor",
+    "yuushya1.10.2": "575"
+  },
+  {
+    "yuushya2.0.0": "call_bell",
+    "yuushya1.10.2": "577"
+  },
+  {
+    "yuushya2.0.0": "ashtray",
+    "yuushya1.10.2": "579"
+  },
+  {
+    "yuushya2.0.0": "list",
+    "yuushya1.10.2": "587"
+  },
+  {
+    "yuushya2.0.0": "album",
+    "yuushya1.10.2": "588"
+  },
+  {
+    "yuushya2.0.0": "centre_speaker",
+    "yuushya1.10.2": "589"
+  },
+  {
+    "yuushya2.0.0": "books",
+    "yuushya1.10.2": "590"
+  },
+  {
+    "yuushya2.0.0": "sorted_books",
+    "yuushya1.10.2": "591"
+  },
+  {
+    "yuushya2.0.0": "sorted_books",
+    "yuushya1.10.2": "592"
+  },
+  {
+    "yuushya2.0.0": "rusty_ventilator",
+    "yuushya1.10.2": "593"
+  },
+  {
+    "yuushya2.0.0": "rusty_ventilator_outer_part",
+    "yuushya1.10.2": "594"
+  },
+  {
+    "yuushya2.0.0": "lengthened_rain_shed_0",
+    "yuushya1.10.2": "600"
+  },
+  {
+    "yuushya2.0.0": "lengthened_rain_shed_1",
+    "yuushya1.10.2": "601"
+  },
+  {
+    "yuushya2.0.0": "lengthened_rain_shed_2",
+    "yuushya1.10.2": "602"
+  },
+  {
+    "yuushya2.0.0": "lengthened_rain_shed_3",
+    "yuushya1.10.2": "603"
+  },
+  {
+    "yuushya2.0.0": "lengthened_rain_shed_6",
+    "yuushya1.10.2": "606"
+  },
+  {
+    "yuushya2.0.0": "lengthened_rain_shed_7",
+    "yuushya1.10.2": "607"
+  },
+  {
+    "yuushya2.0.0": "lengthened_rain_shed_8",
+    "yuushya1.10.2": "608"
+  },
+  {
+    "yuushya2.0.0": "gray_windows_0",
+    "yuushya1.10.2": "610"
+  },
+  {
+    "yuushya2.0.0": "gray_windows_1",
+    "yuushya1.10.2": "611"
+  },
+  {
+    "yuushya2.0.0": "gray_windows_2",
+    "yuushya1.10.2": "612"
+  },
+  {
+    "yuushya2.0.0": "gray_windows_corner_0",
+    "yuushya1.10.2": "613"
+  },
+  {
+    "yuushya2.0.0": "gray_windows_corner_1",
+    "yuushya1.10.2": "614"
+  },
+  {
+    "yuushya2.0.0": "white_windows_0",
+    "yuushya1.10.2": "615"
+  },
+  {
+    "yuushya2.0.0": "white_windows_1",
+    "yuushya1.10.2": "616"
+  },
+  {
+    "yuushya2.0.0": "white_windows_2",
+    "yuushya1.10.2": "617"
+  },
+  {
+    "yuushya2.0.0": "white_windows_corner_0",
+    "yuushya1.10.2": "618"
+  },
+  {
+    "yuushya2.0.0": "white_windows_corner_1",
+    "yuushya1.10.2": "619"
+  },
+  {
+    "yuushya2.0.0": "black_windows_0",
+    "yuushya1.10.2": "620"
+  },
+  {
+    "yuushya2.0.0": "black_windows_1",
+    "yuushya1.10.2": "621"
+  },
+  {
+    "yuushya2.0.0": "black_windows_2",
+    "yuushya1.10.2": "622"
+  },
+  {
+    "yuushya2.0.0": "black_windows_corner_0",
+    "yuushya1.10.2": "623"
+  },
+  {
+    "yuushya2.0.0": "black_windows_corner_1",
+    "yuushya1.10.2": "624"
+  },
+  {
+    "yuushya2.0.0": "cyan_windows_0",
+    "yuushya1.10.2": "625"
+  },
+  {
+    "yuushya2.0.0": "cyan_windows_1",
+    "yuushya1.10.2": "626"
+  },
+  {
+    "yuushya2.0.0": "cyan_windows_2",
+    "yuushya1.10.2": "627"
+  },
+  {
+    "yuushya2.0.0": "cyan_windows_corner_0",
+    "yuushya1.10.2": "628"
+  },
+  {
+    "yuushya2.0.0": "cyan_windows_corner_1",
+    "yuushya1.10.2": "629"
+  },
+  {
+    "yuushya2.0.0": "gray_windows_deviated_0",
+    "yuushya1.10.2": "630"
+  },
+  {
+    "yuushya2.0.0": "gray_windows_deviated_1",
+    "yuushya1.10.2": "631"
+  },
+  {
+    "yuushya2.0.0": "white_windows_deviated_0",
+    "yuushya1.10.2": "632"
+  },
+  {
+    "yuushya2.0.0": "white_windows_deviated_1",
+    "yuushya1.10.2": "633"
+  },
+  {
+    "yuushya2.0.0": "black_windows_deviated_0",
+    "yuushya1.10.2": "634"
+  },
+  {
+    "yuushya2.0.0": "black_windows_deviated_1",
+    "yuushya1.10.2": "635"
+  },
+  {
+    "yuushya2.0.0": "cyan_windows_deviated_0",
+    "yuushya1.10.2": "636"
+  },
+  {
+    "yuushya2.0.0": "cyan_windows_deviated_1",
+    "yuushya1.10.2": "637"
+  },
+  {
+    "yuushya2.0.0": "painting_0",
+    "yuushya1.10.2": "668"
+  },
+  {
+    "yuushya2.0.0": "painting_1",
+    "yuushya1.10.2": "669"
+  },
+  {
+    "yuushya2.0.0": "painting_2",
+    "yuushya1.10.2": "670"
+  },
+  {
+    "yuushya2.0.0": "painting_3",
+    "yuushya1.10.2": "671"
+  },
+  {
+    "yuushya2.0.0": "painting_4",
+    "yuushya1.10.2": "672"
+  },
+  {
+    "yuushya2.0.0": "painting_5",
+    "yuushya1.10.2": "673"
+  },
+  {
+    "yuushya2.0.0": "painting_6",
+    "yuushya1.10.2": "674"
+  },
+  {
+    "yuushya2.0.0": "painting_7",
+    "yuushya1.10.2": "675"
+  },
+  {
+    "yuushya2.0.0": "painting_8",
+    "yuushya1.10.2": "676"
+  },
+  {
+    "yuushya2.0.0": "painting_9",
+    "yuushya1.10.2": "677"
+  },
+  {
+    "yuushya2.0.0": "painting_10",
+    "yuushya1.10.2": "678"
+  },
+  {
+    "yuushya2.0.0": "painting_11",
+    "yuushya1.10.2": "679"
+  },
+  {
+    "yuushya2.0.0": "white_curtain",
+    "yuushya1.10.2": "688"
+  },
+  {
+    "yuushya2.0.0": "red_curtain",
+    "yuushya1.10.2": "689"
+  },
+  {
+    "yuushya2.0.0": "blue_curtain",
+    "yuushya1.10.2": "690"
+  },
+  {
+    "yuushya2.0.0": "yellow_curtain",
+    "yuushya1.10.2": "691"
+  },
+  {
+    "yuushya2.0.0": "cyan_curtain",
+    "yuushya1.10.2": "692"
+  },
+  {
+    "yuushya2.0.0": "sticky_note",
+    "yuushya1.10.2": "705"
+  },
+  {
+    "yuushya2.0.0": "butterfly_red",
+    "yuushya1.10.2": "714"
+  },
+  {
+    "yuushya2.0.0": "butterfly_magenta",
+    "yuushya1.10.2": "715"
+  },
+  {
+    "yuushya2.0.0": "butterfly_blue",
+    "yuushya1.10.2": "716"
+  },
+  {
+    "yuushya2.0.0": "cluster_oak_leaves",
+    "yuushya1.10.2": "717"
+  },
+  {
+    "yuushya2.0.0": "cluster_maple_leaves",
+    "yuushya1.10.2": "718"
+  },
+  {
+    "yuushya2.0.0": "cluster_sakura",
+    "yuushya1.10.2": "719"
+  },
+  {
+    "yuushya2.0.0": "hanging_goods",
+    "yuushya1.10.2": "720"
+  },
+  {
+    "yuushya2.0.0": "oak_windows_0",
+    "yuushya1.10.2": "721"
+  },
+  {
+    "yuushya2.0.0": "oak_windows_1",
+    "yuushya1.10.2": "722"
+  },
+  {
+    "yuushya2.0.0": "oak_windows_2",
+    "yuushya1.10.2": "723"
+  },
+  {
+    "yuushya2.0.0": "oak_windows_corner_0",
+    "yuushya1.10.2": "724"
+  },
+  {
+    "yuushya2.0.0": "oak_windows_corner_1",
+    "yuushya1.10.2": "725"
+  },
+  {
+    "yuushya2.0.0": "red_windows_0",
+    "yuushya1.10.2": "726"
+  },
+  {
+    "yuushya2.0.0": "red_windows_1",
+    "yuushya1.10.2": "727"
+  },
+  {
+    "yuushya2.0.0": "red_windows_2",
+    "yuushya1.10.2": "728"
+  },
+  {
+    "yuushya2.0.0": "red_windows_corner_0",
+    "yuushya1.10.2": "729"
+  },
+  {
+    "yuushya2.0.0": "red_windows_corner_1",
+    "yuushya1.10.2": "730"
+  },
+  {
+    "yuushya2.0.0": "big_sakura",
+    "yuushya1.10.2": "731"
+  },
+  {
+    "yuushya2.0.0": "average_sakura",
+    "yuushya1.10.2": "732"
+  },
+  {
+    "yuushya2.0.0": "roof_ridge_0",
+    "yuushya1.10.2": "733"
+  },
+  {
+    "yuushya2.0.0": "roof_ridge_2",
+    "yuushya1.10.2": "735"
+  },
+  {
+    "yuushya2.0.0": "roof_ridge_3",
+    "yuushya1.10.2": "736"
+  },
+  {
+    "yuushya2.0.0": "roof_ridge_1",
+    "yuushya1.10.2": "737"
+  },
+  {
+    "yuushya2.0.0": "oak_windows_deviated_0",
+    "yuushya1.10.2": "738"
+  },
+  {
+    "yuushya2.0.0": "oak_windows_deviated_1",
+    "yuushya1.10.2": "739"
+  },
+  {
+    "yuushya2.0.0": "red_windows_deviated_0",
+    "yuushya1.10.2": "740"
+  },
+  {
+    "yuushya2.0.0": "red_windows_deviated_1",
+    "yuushya1.10.2": "741"
+  },
+  {
+    "yuushya2.0.0": "oak_windows_open_0",
+    "yuushya1.10.2": "742"
+  },
+  {
+    "yuushya2.0.0": "oak_windows_open_1",
+    "yuushya1.10.2": "743"
+  },
+  {
+    "yuushya2.0.0": "red_windows_open_0",
+    "yuushya1.10.2": "744"
+  },
+  {
+    "yuushya2.0.0": "red_windows_open_1",
+    "yuushya1.10.2": "745"
+  },
+  {
+    "yuushya2.0.0": "orange_tile_with_ridge_lower",
+    "yuushya1.10.2": "750"
+  },
+  {
+    "yuushya2.0.0": "dark_tile_with_ridge_lower",
+    "yuushya1.10.2": "751"
+  },
+  {
+    "yuushya2.0.0": "gray_tile_with_ridge_lower",
+    "yuushya1.10.2": "752"
+  },
+  {
+    "yuushya2.0.0": "blue_tile_with_ridge_lower",
+    "yuushya1.10.2": "753"
+  },
+  {
+    "yuushya2.0.0": "pale_tile_with_ridge_lower",
+    "yuushya1.10.2": "754"
+  },
+  {
+    "yuushya2.0.0": "orange_tile_with_ridge_upper",
+    "yuushya1.10.2": "755"
+  },
+  {
+    "yuushya2.0.0": "dark_tile_with_ridge_upper",
+    "yuushya1.10.2": "756"
+  },
+  {
+    "yuushya2.0.0": "gray_tile_with_ridge_upper",
+    "yuushya1.10.2": "757"
+  },
+  {
+    "yuushya2.0.0": "blue_tile_with_ridge_upper",
+    "yuushya1.10.2": "758"
+  },
+  {
+    "yuushya2.0.0": "pale_tile_with_ridge_upper",
+    "yuushya1.10.2": "759"
+  },
+  {
+    "yuushya2.0.0": "orange_tile_ridge_lower",
+    "yuushya1.10.2": "760"
+  },
+  {
+    "yuushya2.0.0": "dark_tile_ridge_lower",
+    "yuushya1.10.2": "761"
+  },
+  {
+    "yuushya2.0.0": "gray_tile_ridge_lower",
+    "yuushya1.10.2": "762"
+  },
+  {
+    "yuushya2.0.0": "blue_tile_ridge_lower",
+    "yuushya1.10.2": "763"
+  },
+  {
+    "yuushya2.0.0": "pale_tile_ridge_lower",
+    "yuushya1.10.2": "764"
+  },
+  {
+    "yuushya2.0.0": "orange_tile_ridge_upper",
+    "yuushya1.10.2": "765"
+  },
+  {
+    "yuushya2.0.0": "dark_tile_ridge_upper",
+    "yuushya1.10.2": "766"
+  },
+  {
+    "yuushya2.0.0": "gray_tile_ridge_upper",
+    "yuushya1.10.2": "767"
+  },
+  {
+    "yuushya2.0.0": "blue_tile_ridge_upper",
+    "yuushya1.10.2": "768"
+  },
+  {
+    "yuushya2.0.0": "pale_tile_ridge_upper",
+    "yuushya1.10.2": "769"
+  },
+  {
+    "yuushya2.0.0": "tiles_fix_upper",
+    "yuushya1.10.2": "770"
+  },
+  {
+    "yuushya2.0.0": "tiles_fix_lower",
+    "yuushya1.10.2": "771"
+  },
+  {
+    "yuushya2.0.0": "hanging_goods_snack",
+    "yuushya1.10.2": "785"
+  },
+  {
+    "yuushya2.0.0": "hanging_goods_candy",
+    "yuushya1.10.2": "786"
+  },
+  {
+    "yuushya2.0.0": "hanging_goods_candy",
+    "yuushya1.10.2": "787"
+  },
+  {
+    "yuushya2.0.0": "plate",
+    "yuushya1.10.2": "788"
+  },
+  {
+    "yuushya2.0.0": "small_chopping_board",
+    "yuushya1.10.2": "789"
+  },
+  {
+    "yuushya2.0.0": "chopping_board",
+    "yuushya1.10.2": "790"
+  },
+  {
+    "yuushya2.0.0": "milk",
+    "yuushya1.10.2": "791"
+  },
+  {
+    "yuushya2.0.0": "snack",
+    "yuushya1.10.2": "792"
+  },
+  {
+    "yuushya2.0.0": "jam",
+    "yuushya1.10.2": "793"
+  },
+  {
+    "yuushya2.0.0": "glasses",
+    "yuushya1.10.2": "794"
+  },
+  {
+    "yuushya2.0.0": "pigment_bucket",
+    "yuushya1.10.2": "795"
+  },
+  {
+    "yuushya2.0.0": "pigment_bucket",
+    "yuushya1.10.2": "796"
+  },
+  {
+    "yuushya2.0.0": "sink",
+    "yuushya1.10.2": "808"
+  },
+  {
+    "yuushya2.0.0": "sink_",
+    "yuushya1.10.2": "809"
+  },
+  {
+    "yuushya2.0.0": "small_title_white",
+    "yuushya1.10.2": "810"
+  },
+  {
+    "yuushya2.0.0": "small_title_brown",
+    "yuushya1.10.2": "811"
+  },
+  {
+    "yuushya2.0.0": "small_title_black",
+    "yuushya1.10.2": "812"
+  },
+  {
+    "yuushya2.0.0": "small_title_gray",
+    "yuushya1.10.2": "813"
+  },
+  {
+    "yuushya2.0.0": "small_title_lime",
+    "yuushya1.10.2": "814"
+  },
+  {
+    "yuushya2.0.0": "small_title_orange",
+    "yuushya1.10.2": "815"
+  },
+  {
+    "yuushya2.0.0": "small_title_pink",
+    "yuushya1.10.2": "816"
+  },
+  {
+    "yuushya2.0.0": "small_title_blue",
+    "yuushya1.10.2": "817"
+  },
+  {
+    "yuushya2.0.0": "small_title_red",
+    "yuushya1.10.2": "818"
+  },
+  {
+    "yuushya2.0.0": "small_title_yellow",
+    "yuushya1.10.2": "819"
+  },
+  {
+    "yuushya2.0.0": "painting_0",
+    "yuushya1.10.2": "830"
+  },
+  {
+    "yuushya2.0.0": "painting_1",
+    "yuushya1.10.2": "831"
+  },
+  {
+    "yuushya2.0.0": "painting_2",
+    "yuushya1.10.2": "832"
+  },
+  {
+    "yuushya2.0.0": "painting_3",
+    "yuushya1.10.2": "833"
+  },
+  {
+    "yuushya2.0.0": "painting_4",
+    "yuushya1.10.2": "834"
+  },
+  {
+    "yuushya2.0.0": "painting_5",
+    "yuushya1.10.2": "835"
+  },
+  {
+    "yuushya2.0.0": "painting_6",
+    "yuushya1.10.2": "836"
+  },
+  {
+    "yuushya2.0.0": "painting_7",
+    "yuushya1.10.2": "837"
+  },
+  {
+    "yuushya2.0.0": "painting_8",
+    "yuushya1.10.2": "838"
+  },
+  {
+    "yuushya2.0.0": "painting_9",
+    "yuushya1.10.2": "839"
+  },
+  {
+    "yuushya2.0.0": "painting_10",
+    "yuushya1.10.2": "840"
+  },
+  {
+    "yuushya2.0.0": "painting_11",
+    "yuushya1.10.2": "841"
+  },
+  {
+    "yuushya2.0.0": "painting_11",
+    "yuushya1.10.2": "842"
+  },
+  {
+    "yuushya2.0.0": "burglar_mesh",
+    "yuushya1.10.2": "850"
+  },
+  {
+    "yuushya2.0.0": "scroll_door_0",
+    "yuushya1.10.2": "015"
+  },
+  {
+    "yuushya2.0.0": "scroll_door_1",
+    "yuushya1.10.2": "016"
+  },
+  {
+    "yuushya2.0.0": "big_oak_leaves",
+    "yuushya1.10.2": "04"
+  },
+  {
+    "yuushya2.0.0": "platform_metal",
+    "yuushya1.10.2": "049"
+  },
+  {
+    "yuushya2.0.0": "average_oak_leaves",
+    "yuushya1.10.2": "05"
+  },
+  {
+    "yuushya2.0.0": "traffic_sign_0",
+    "yuushya1.10.2": "050"
+  },
+  {
+    "yuushya2.0.0": "traffic_sign_1",
+    "yuushya1.10.2": "051"
+  },
+  {
+    "yuushya2.0.0": "traffic_sign_2",
+    "yuushya1.10.2": "052"
+  },
+  {
+    "yuushya2.0.0": "traffic_sign_3",
+    "yuushya1.10.2": "053"
+  },
+  {
+    "yuushya2.0.0": "traffic_sign_4",
+    "yuushya1.10.2": "054"
+  },
+  {
+    "yuushya2.0.0": "traffic_sign_5",
+    "yuushya1.10.2": "055"
+  },
+  {
+    "yuushya2.0.0": "traffic_sign_6",
+    "yuushya1.10.2": "056"
+  },
+  {
+    "yuushya2.0.0": "traffic_lights_1",
+    "yuushya1.10.2": "057"
+  },
+  {
+    "yuushya2.0.0": "traffic_lights_2",
+    "yuushya1.10.2": "058"
+  },
+  {
+    "yuushya2.0.0": "traffic_lights_3",
+    "yuushya1.10.2": "060"
+  },
+  {
+    "yuushya2.0.0": "traffic_lights_4",
+    "yuushya1.10.2": "061"
+  },
+  {
+    "yuushya2.0.0": "stone_pier",
+    "yuushya1.10.2": "062"
+  },
+  {
+    "yuushya2.0.0": "wore_metal",
+    "yuushya1.10.2": "068"
+  },
+  {
+    "yuushya2.0.0": "gray_acrylic",
+    "yuushya1.10.2": "069"
+  },
+  {
+    "yuushya2.0.0": "marble",
+    "yuushya1.10.2": "07"
+  },
+  {
+    "yuushya2.0.0": "fossilized_cobblestone",
+    "yuushya1.10.2": "08"
+  },
+  {
+    "yuushya2.0.0": "colorful_acrylic",
+    "yuushya1.10.2": "09"
+  },
+  {
+    "yuushya2.0.0": "gray_tile",
+    "yuushya1.10.2": "a04"
+  },
+  {
+    "yuushya2.0.0": "road_marking_1",
+    "yuushya1.10.2": "a05"
+  },
+  {
+    "yuushya2.0.0": "pale_bricks_2",
+    "yuushya1.10.2": "a06"
+  },
+  {
+    "yuushya2.0.0": "pale_bricks_1",
+    "yuushya1.10.2": "a07"
+  },
+  {
+    "yuushya2.0.0": "pale_bricks_3",
+    "yuushya1.10.2": "a08"
+  },
+  {
+    "yuushya2.0.0": "marble_bricks_0",
+    "yuushya1.10.2": "a09"
+  },
+  {
+    "yuushya2.0.0": "marble_bricks_1",
+    "yuushya1.10.2": "a10"
+  },
+  {
+    "yuushya2.0.0": "pink_concrete_top",
+    "yuushya1.10.2": "a32"
+  },
+  {
+    "yuushya2.0.0": "gray_concrete_top",
+    "yuushya1.10.2": "a33"
+  },
+  {
+    "yuushya2.0.0": "light_gray_concrete_top",
+    "yuushya1.10.2": "a34"
+  },
+  {
+    "yuushya2.0.0": "cyan_concrete_top",
+    "yuushya1.10.2": "a35"
+  },
+  {
+    "yuushya2.0.0": "purple_concrete_top",
+    "yuushya1.10.2": "a36"
+  },
+  {
+    "yuushya2.0.0": "blue_concrete_top",
+    "yuushya1.10.2": "a37"
+  },
+  {
+    "yuushya2.0.0": "brown_concrete_top",
+    "yuushya1.10.2": "a38"
+  },
+  {
+    "yuushya2.0.0": "green_concrete_top",
+    "yuushya1.10.2": "a39"
+  },
+  {
+    "yuushya2.0.0": "red_concrete_top",
+    "yuushya1.10.2": "a40"
+  },
+  {
+    "yuushya2.0.0": "black_concrete_top",
+    "yuushya1.10.2": "a41"
+  },
+  {
+    "yuushya2.0.0": "white_concrete_top",
+    "yuushya1.10.2": "a42"
+  },
+  {
+    "yuushya2.0.0": "orange_concrete_top",
+    "yuushya1.10.2": "a43"
+  },
+  {
+    "yuushya2.0.0": "lime_concrete_top",
+    "yuushya1.10.2": "a44"
+  },
+  {
+    "yuushya2.0.0": "yellow_concrete_top",
+    "yuushya1.10.2": "a45"
+  },
+  {
+    "yuushya2.0.0": "light_blue_concrete_top",
+    "yuushya1.10.2": "a46"
+  },
+  {
+    "yuushya2.0.0": "magenta_concrete_top",
+    "yuushya1.10.2": "a47"
+  },
+  {
+    "yuushya2.0.0": "asphalt_pbr",
+    "yuushya1.10.2": "a49"
+  },
+  {
+    "yuushya2.0.0": "red_acrylic",
+    "yuushya1.10.2": "a50"
+  },
+  {
+    "yuushya2.0.0": "white_acrylic",
+    "yuushya1.10.2": "a51"
+  },
+  {
+    "yuushya2.0.0": "blue_acrylic",
+    "yuushya1.10.2": "a52"
+  },
+  {
+    "yuushya2.0.0": "black_acrylic",
+    "yuushya1.10.2": "a53"
+  },
+  {
+    "yuushya2.0.0": "light_gray_acrylic",
+    "yuushya1.10.2": "a54"
+  },
+  {
+    "yuushya2.0.0": "cyan_acrylic",
+    "yuushya1.10.2": "a55"
+  },
+  {
+    "yuushya2.0.0": "purple_acrylic",
+    "yuushya1.10.2": "a56"
+  },
+  {
+    "yuushya2.0.0": "lime_acrylic",
+    "yuushya1.10.2": "a57"
+  },
+  {
+    "yuushya2.0.0": "brown_acrylic",
+    "yuushya1.10.2": "a58"
+  },
+  {
+    "yuushya2.0.0": "green_acrylic",
+    "yuushya1.10.2": "a59"
+  },
+  {
+    "yuushya2.0.0": "pink_acrylic",
+    "yuushya1.10.2": "a60"
+  },
+  {
+    "yuushya2.0.0": "orange_acrylic",
+    "yuushya1.10.2": "a61"
+  },
+  {
+    "yuushya2.0.0": "magenta_acrylic",
+    "yuushya1.10.2": "a62"
+  },
+  {
+    "yuushya2.0.0": "light_blue_acrylic",
+    "yuushya1.10.2": "a63"
+  },
+  {
+    "yuushya2.0.0": "carpet_0",
+    "yuushya1.10.2": "a64"
+  },
+  {
+    "yuushya2.0.0": "carpet_1",
+    "yuushya1.10.2": "a65"
+  },
+  {
+    "yuushya2.0.0": "carpet_2",
+    "yuushya1.10.2": "a66"
+  },
+  {
+    "yuushya2.0.0": "carpet_3",
+    "yuushya1.10.2": "a67"
+  },
+  {
+    "yuushya2.0.0": "carpet_4",
+    "yuushya1.10.2": "a68"
+  },
+  {
+    "yuushya2.0.0": "carpet_5",
+    "yuushya1.10.2": "a69"
+  },
+  {
+    "yuushya2.0.0": "carpet_6",
+    "yuushya1.10.2": "a70"
+  },
+  {
+    "yuushya2.0.0": "carpet_7",
+    "yuushya1.10.2": "a71"
+  },
+  {
+    "yuushya2.0.0": "carpet_8",
+    "yuushya1.10.2": "a72"
+  },
+  {
+    "yuushya2.0.0": "carpet_9",
+    "yuushya1.10.2": "a73"
+  },
+  {
+    "yuushya2.0.0": "carpet_10",
+    "yuushya1.10.2": "a74"
+  },
+  {
+    "yuushya2.0.0": "carpet_11",
+    "yuushya1.10.2": "a75"
+  },
+  {
+    "yuushya2.0.0": "carpet_12",
+    "yuushya1.10.2": "a76"
+  },
+  {
+    "yuushya2.0.0": "carpet_13",
+    "yuushya1.10.2": "a77"
+  },
+  {
+    "yuushya2.0.0": "carpet_14",
+    "yuushya1.10.2": "a78"
+  },
+  {
+    "yuushya2.0.0": "carpet_15",
+    "yuushya1.10.2": "a79"
+  },
+  {
+    "yuushya2.0.0": "carpet_15",
+    "yuushya1.10.2": "a80"
+  },
+  {
+    "yuushya2.0.0": "average_pink_blooming_leaves",
+    "yuushya1.10.2": "a81"
+  },
+  {
+    "yuushya2.0.0": "big_maple_leaves",
+    "yuushya1.10.2": "a82"
+  },
+  {
+    "yuushya2.0.0": "average_maple_leaves",
+    "yuushya1.10.2": "a83"
+  },
+  {
+    "yuushya2.0.0": "market_block_red",
+    "yuushya1.10.2": "a84"
+  },
+  {
+    "yuushya2.0.0": "market_block_brown",
+    "yuushya1.10.2": "a85"
+  },
+  {
+    "yuushya2.0.0": "market_block_blue",
+    "yuushya1.10.2": "a86"
+  },
+  {
+    "yuushya2.0.0": "market_block_light_gray",
+    "yuushya1.10.2": "a87"
+  },
+  {
+    "yuushya2.0.0": "market_block_green",
+    "yuushya1.10.2": "a88"
+  },
+  {
+    "yuushya2.0.0": "market_block_mixed",
+    "yuushya1.10.2": "a89"
+  },
+  {
+    "yuushya2.0.0": "scarlet_tile",
+    "yuushya1.10.2": "a90"
+  },
+  {
+    "yuushya2.0.0": "familymart_acrylic",
+    "yuushya1.10.2": "a95"
+  },
+  {
+    "yuushya2.0.0": "columned_sandstone_a",
+    "yuushya1.10.2": "a97"
+  },
+  {
+    "yuushya2.0.0": "columned_sandstone_b",
+    "yuushya1.10.2": "a98"
+  },
+  {
+    "yuushya2.0.0": "smooth_stonetile",
+    "yuushya1.10.2": "a99"
+  },
+  {
+    "yuushya2.0.0": "a_white_blindwall",
+    "yuushya1.10.2": "b01"
+  },
+  {
+    "yuushya2.0.0": "b_white_blindwall",
+    "yuushya1.10.2": "b02"
+  },
+  {
+    "yuushya2.0.0": "a_light_gray_blindwall",
+    "yuushya1.10.2": "b03"
+  },
+  {
+    "yuushya2.0.0": "b_light_gray_blindwall",
+    "yuushya1.10.2": "b04"
+  },
+  {
+    "yuushya2.0.0": "a_orange_blindwall",
+    "yuushya1.10.2": "b05"
+  },
+  {
+    "yuushya2.0.0": "b_orange_blindwall",
+    "yuushya1.10.2": "b06"
+  },
+  {
+    "yuushya2.0.0": "a_red_blindwall",
+    "yuushya1.10.2": "b07"
+  },
+  {
+    "yuushya2.0.0": "b_red_blindwall",
+    "yuushya1.10.2": "b08"
+  },
+  {
+    "yuushya2.0.0": "a_light_blue_blindwall",
+    "yuushya1.10.2": "b09"
+  },
+  {
+    "yuushya2.0.0": "b_light_blue_blindwall",
+    "yuushya1.10.2": "b10"
+  },
+  {
+    "yuushya2.0.0": "road_marking_6",
+    "yuushya1.10.2": "b100"
+  },
+  {
+    "yuushya2.0.0": "a_yellow_blindwall",
+    "yuushya1.10.2": "b11"
+  },
+  {
+    "yuushya2.0.0": "b_yellow_blindwall",
+    "yuushya1.10.2": "b12"
+  },
+  {
+    "yuushya2.0.0": "a_lime_blindwall",
+    "yuushya1.10.2": "b13"
+  },
+  {
+    "yuushya2.0.0": "b_lime_blindwall",
+    "yuushya1.10.2": "b14"
+  },
+  {
+    "yuushya2.0.0": "a_pink_blindwall",
+    "yuushya1.10.2": "b15"
+  },
+  {
+    "yuushya2.0.0": "b_pink_blindwall",
+    "yuushya1.10.2": "b16"
+  },
+  {
+    "yuushya2.0.0": "a_gray_blindwall",
+    "yuushya1.10.2": "b17"
+  },
+  {
+    "yuushya2.0.0": "b_gray_blindwall",
+    "yuushya1.10.2": "b18"
+  },
+  {
+    "yuushya2.0.0": "a_cyan_blindwall",
+    "yuushya1.10.2": "b19"
+  },
+  {
+    "yuushya2.0.0": "b_cyan_blindwall",
+    "yuushya1.10.2": "b20"
+  },
+  {
+    "yuushya2.0.0": "road_fence",
+    "yuushya1.10.2": "b21"
+  },
+  {
+    "yuushya2.0.0": "sideway_road_fence",
+    "yuushya1.10.2": "b22"
+  },
+  {
+    "yuushya2.0.0": "a_purple_blindwall",
+    "yuushya1.10.2": "b23"
+  },
+  {
+    "yuushya2.0.0": "b_purple_blindwall",
+    "yuushya1.10.2": "b24"
+  },
+  {
+    "yuushya2.0.0": "a_brown_blindwall",
+    "yuushya1.10.2": "b25"
+  },
+  {
+    "yuushya2.0.0": "b_brown_blindwall",
+    "yuushya1.10.2": "b26"
+  },
+  {
+    "yuushya2.0.0": "a_green_blindwall",
+    "yuushya1.10.2": "b27"
+  },
+  {
+    "yuushya2.0.0": "b_green_blindwall",
+    "yuushya1.10.2": "b28"
+  },
+  {
+    "yuushya2.0.0": "a_magenta_blindwall",
+    "yuushya1.10.2": "b29"
+  },
+  {
+    "yuushya2.0.0": "b_magenta_blindwall",
+    "yuushya1.10.2": "b30"
+  },
+  {
+    "yuushya2.0.0": "a_black_blindwall",
+    "yuushya1.10.2": "b31"
+  },
+  {
+    "yuushya2.0.0": "b_black_blindwall",
+    "yuushya1.10.2": "b32"
+  },
+  {
+    "yuushya2.0.0": "a_blue_blindwall",
+    "yuushya1.10.2": "b33"
+  },
+  {
+    "yuushya2.0.0": "b_blue_blindwall",
+    "yuushya1.10.2": "b34"
+  },
+  {
+    "yuushya2.0.0": "a_acacia_blindwall",
+    "yuushya1.10.2": "b35"
+  },
+  {
+    "yuushya2.0.0": "b_acacia_blindwall",
+    "yuushya1.10.2": "b36"
+  },
+  {
+    "yuushya2.0.0": "raw_oak_drawer",
+    "yuushya1.10.2": "b40"
+  },
+  {
+    "yuushya2.0.0": "raw_acacia_drawer",
+    "yuushya1.10.2": "b41"
+  },
+  {
+    "yuushya2.0.0": "raw_jungle_drawer",
+    "yuushya1.10.2": "b42"
+  },
+  {
+    "yuushya2.0.0": "raw_birch_drawer",
+    "yuushya1.10.2": "b43"
+  },
+  {
+    "yuushya2.0.0": "raw_dark_oak_drawer",
+    "yuushya1.10.2": "b44"
+  },
+  {
+    "yuushya2.0.0": "raw_oak_vertical_drawer",
+    "yuushya1.10.2": "b45"
+  },
+  {
+    "yuushya2.0.0": "raw_acacia_vertical_drawer",
+    "yuushya1.10.2": "b46"
+  },
+  {
+    "yuushya2.0.0": "raw_jungle_vertical_drawer",
+    "yuushya1.10.2": "b47"
+  },
+  {
+    "yuushya2.0.0": "raw_birch_vertical_drawer",
+    "yuushya1.10.2": "b48"
+  },
+  {
+    "yuushya2.0.0": "raw_dark_oak_vertical_drawer",
+    "yuushya1.10.2": "b49"
+  },
+  {
+    "yuushya2.0.0": "road_marking_2",
+    "yuushya1.10.2": "b50"
+  },
+  {
+    "yuushya2.0.0": "oriental_lantern",
+    "yuushya1.10.2": "b56"
+  },
+  {
+    "yuushya2.0.0": "goth_lantern",
+    "yuushya1.10.2": "b57"
+  },
+  {
+    "yuushya2.0.0": "road_marking_3",
+    "yuushya1.10.2": "b58"
+  },
+  {
+    "yuushya2.0.0": "road_marking_4",
+    "yuushya1.10.2": "b59"
+  },
+  {
+    "yuushya2.0.0": "modern_lamp_0",
+    "yuushya1.10.2": "b62"
+  },
+  {
+    "yuushya2.0.0": "modern_lamp_1",
+    "yuushya1.10.2": "b63"
+  },
+  {
+    "yuushya2.0.0": "modern_lamp_2",
+    "yuushya1.10.2": "b64"
+  },
+  {
+    "yuushya2.0.0": "smooth_dark_stonetile",
+    "yuushya1.10.2": "b69"
+  },
+  {
+    "yuushya2.0.0": "smooth_sandtile",
+    "yuushya1.10.2": "b70"
+  },
+  {
+    "yuushya2.0.0": "umbrella_red",
+    "yuushya1.10.2": "b71"
+  },
+  {
+    "yuushya2.0.0": "umbrella_blue",
+    "yuushya1.10.2": "b72"
+  },
+  {
+    "yuushya2.0.0": "umbrella_orange",
+    "yuushya1.10.2": "b73"
+  },
+  {
+    "yuushya2.0.0": "umbrella_light_gray",
+    "yuushya1.10.2": "b74"
+  },
+  {
+    "yuushya2.0.0": "hanging_plant_pot_rope",
+    "yuushya1.10.2": "b75"
+  },
+  {
+    "yuushya2.0.0": "hanging_plant_pot_hook",
+    "yuushya1.10.2": "b76"
+  },
+  {
+    "yuushya2.0.0": "acacia_foldable_table",
+    "yuushya1.10.2": "b77"
+  },
+  {
+    "yuushya2.0.0": "mini_banner_0",
+    "yuushya1.10.2": "b78"
+  },
+  {
+    "yuushya2.0.0": "mini_banner_1",
+    "yuushya1.10.2": "b79"
+  },
+  {
+    "yuushya2.0.0": "mounted_bush",
+    "yuushya1.10.2": "b84"
+  },
+  {
+    "yuushya2.0.0": "mounted_oak_sprout",
+    "yuushya1.10.2": "b85"
+  },
+  {
+    "yuushya2.0.0": "mounted_maple_sprout",
+    "yuushya1.10.2": "b86"
+  },
+  {
+    "yuushya2.0.0": "mounted_sakura_sprout",
+    "yuushya1.10.2": "b87"
+  },
+  {
+    "yuushya2.0.0": "mounted_fern",
+    "yuushya1.10.2": "b89"
+  },
+  {
+    "yuushya2.0.0": "embbed_pale_bricks",
+    "yuushya1.10.2": "b90"
+  },
+  {
+    "yuushya2.0.0": "digital_payment",
+    "yuushya1.10.2": "b91"
+  },
+  {
+    "yuushya2.0.0": "monitor",
+    "yuushya1.10.2": "b92"
+  },
+  {
+    "yuushya2.0.0": "toilet_water_tank",
+    "yuushya1.10.2": "b93"
+  },
+  {
+    "yuushya2.0.0": "road_marking_5",
+    "yuushya1.10.2": "b95"
+  },
+  {
+    "yuushya2.0.0": "decorative_blue_wool",
+    "yuushya1.10.2": "b96"
+  },
+  {
+    "yuushya2.0.0": "decorative_lime_wool",
+    "yuushya1.10.2": "b97"
+  },
+  {
+    "yuushya2.0.0": "decorative_magenta_wool",
+    "yuushya1.10.2": "b98"
+  },
+  {
+    "yuushya2.0.0": "decorative_orange_wool",
+    "yuushya1.10.2": "b99"
+  },
+  {
+    "yuushya2.0.0": "inner_bed_0",
+    "yuushya1.10.2": "bed0"
+  },
+  {
+    "yuushya2.0.0": "inner_bed_1",
+    "yuushya1.10.2": "bed1"
+  },
+  {
+    "yuushya2.0.0": "inner_bed_10",
+    "yuushya1.10.2": "bed10"
+  },
+  {
+    "yuushya2.0.0": "inner_bed_11",
+    "yuushya1.10.2": "bed11"
+  },
+  {
+    "yuushya2.0.0": "inner_bed_12",
+    "yuushya1.10.2": "bed12"
+  },
+  {
+    "yuushya2.0.0": "inner_bed_13",
+    "yuushya1.10.2": "bed13"
+  },
+  {
+    "yuushya2.0.0": "inner_bed_14",
+    "yuushya1.10.2": "bed14"
+  },
+  {
+    "yuushya2.0.0": "inner_bed_15",
+    "yuushya1.10.2": "bed15"
+  },
+  {
+    "yuushya2.0.0": "inner_bed_16",
+    "yuushya1.10.2": "bed16"
+  },
+  {
+    "yuushya2.0.0": "inner_bed_17",
+    "yuushya1.10.2": "bed17"
+  },
+  {
+    "yuushya2.0.0": "inner_bed_18",
+    "yuushya1.10.2": "bed18"
+  },
+  {
+    "yuushya2.0.0": "inner_bed_19",
+    "yuushya1.10.2": "bed19"
+  },
+  {
+    "yuushya2.0.0": "inner_bed_2",
+    "yuushya1.10.2": "bed2"
+  },
+  {
+    "yuushya2.0.0": "inner_bed_20",
+    "yuushya1.10.2": "bed20"
+  },
+  {
+    "yuushya2.0.0": "inner_bed_3",
+    "yuushya1.10.2": "bed3"
+  },
+  {
+    "yuushya2.0.0": "inner_bed_4",
+    "yuushya1.10.2": "bed4"
+  },
+  {
+    "yuushya2.0.0": "inner_bed_5",
+    "yuushya1.10.2": "bed5"
+  },
+  {
+    "yuushya2.0.0": "inner_bed_6",
+    "yuushya1.10.2": "bed6"
+  },
+  {
+    "yuushya2.0.0": "inner_bed_7",
+    "yuushya1.10.2": "bed7"
+  },
+  {
+    "yuushya2.0.0": "inner_bed_8",
+    "yuushya1.10.2": "bed8"
+  },
+  {
+    "yuushya2.0.0": "inner_bed_9",
+    "yuushya1.10.2": "bed9"
+  },
+  {
+    "yuushya2.0.0": "bed_frame_0",
+    "yuushya1.10.2": "bedframe0"
+  },
+  {
+    "yuushya2.0.0": "bed_frame_1",
+    "yuushya1.10.2": "bedframe1"
+  },
+  {
+    "yuushya2.0.0": "bed_frame_2",
+    "yuushya1.10.2": "bedframe2"
+  },
+  {
+    "yuushya2.0.0": "bed_frame_3",
+    "yuushya1.10.2": "bedframe3"
+  },
+  {
+    "yuushya2.0.0": "display_cabinet",
+    "yuushya1.10.2": "cabinet_a"
+  },
+  {
+    "yuushya2.0.0": "potted_sakura_sprout",
+    "yuushya1.10.2": "flowerpot00"
+  },
+  {
+    "yuushya2.0.0": "potted_allium",
+    "yuushya1.10.2": "flowerpot01"
+  },
+  {
+    "yuushya2.0.0": "potted_azure_bluet",
+    "yuushya1.10.2": "flowerpot02"
+  },
+  {
+    "yuushya2.0.0": "potted_lycoris",
+    "yuushya1.10.2": "flowerpot04"
+  },
+  {
+    "yuushya2.0.0": "potted_cactus",
+    "yuushya1.10.2": "flowerpot05"
+  },
+  {
+    "yuushya2.0.0": "potted_cornflower",
+    "yuushya1.10.2": "flowerpot06"
+  },
+  {
+    "yuushya2.0.0": "potted_sunflower",
+    "yuushya1.10.2": "flowerpot07"
+  },
+  {
+    "yuushya2.0.0": "potted_bush",
+    "yuushya1.10.2": "flowerpot08"
+  },
+  {
+    "yuushya2.0.0": "potted_fern",
+    "yuushya1.10.2": "flowerpot09"
+  },
+  {
+    "yuushya2.0.0": "potted_jungle_sprout",
+    "yuushya1.10.2": "flowerpot10"
+  },
+  {
+    "yuushya2.0.0": "potted_sprout",
+    "yuushya1.10.2": "flowerpot11"
+  },
+  {
+    "yuushya2.0.0": "potted_oak_sprout",
+    "yuushya1.10.2": "flowerpot12"
+  },
+  {
+    "yuushya2.0.0": "potted_orange_tulip",
+    "yuushya1.10.2": "flowerpot13"
+  },
+  {
+    "yuushya2.0.0": "potted_pink_tulip",
+    "yuushya1.10.2": "flowerpot14"
+  },
+  {
+    "yuushya2.0.0": "potted_red_tulip",
+    "yuushya1.10.2": "flowerpot15"
+  },
+  {
+    "yuushya2.0.0": "potted_white_tulip",
+    "yuushya1.10.2": "flowerpot16"
+  },
+  {
+    "yuushya2.0.0": "potted_maple_sprout",
+    "yuushya1.10.2": "flowerpot17"
+  },
+  {
+    "yuushya2.0.0": "potted_yuuca",
+    "yuushya1.10.2": "flowerpot18"
+  },
+  {
+    "yuushya2.0.0": "potted_flower_basket",
+    "yuushya1.10.2": "flowerpot19"
+  },
+  {
+    "yuushya2.0.0": "potted_tall_oak",
+    "yuushya1.10.2": "flowerpot20"
+  },
+  {
+    "yuushya2.0.0": "potted_bamboo",
+    "yuushya1.10.2": "flowerpot21"
+  },
+  {
+    "yuushya2.0.0": "potted_tall_sakura",
+    "yuushya1.10.2": "flowerpot22"
+  },
+  {
+    "yuushya2.0.0": "potted_tall_maple",
+    "yuushya1.10.2": "flowerpot23"
+  },
+  {
+    "yuushya2.0.0": "iron_ladder",
+    "yuushya1.10.2": "ladder3"
+  },
+  {
+    "yuushya2.0.0": "gold_tulip",
+    "yuushya1.10.2": "plant06"
+  },
+  {
+    "yuushya2.0.0": "pink_tulip",
+    "yuushya1.10.2": "plant07"
+  },
+  {
+    "yuushya2.0.0": "red_tulip",
+    "yuushya1.10.2": "plant08"
+  },
+  {
+    "yuushya2.0.0": "white_tulip",
+    "yuushya1.10.2": "plant09"
+  },
+  {
+    "yuushya2.0.0": "evergreen",
+    "yuushya1.10.2": "plant10"
+  },
+  {
+    "yuushya2.0.0": "azure_bluet",
+    "yuushya1.10.2": "plant15"
+  },
+  {
+    "yuushya2.0.0": "fern",
+    "yuushya1.10.2": "plant16"
+  },
+  {
+    "yuushya2.0.0": "ceiling_vine",
+    "yuushya1.10.2": "plant17"
+  },
+  {
+    "yuushya2.0.0": "ramp_marking_white_1",
+    "yuushya1.10.2": "slope_line0"
+  },
+  {
+    "yuushya2.0.0": "ramp_marking_white_2",
+    "yuushya1.10.2": "slope_line1"
+  },
+  {
+    "yuushya2.0.0": "ramp_marking_white_3",
+    "yuushya1.10.2": "slope_line2"
+  },
+  {
+    "yuushya2.0.0": "ramp_marking_white_4",
+    "yuushya1.10.2": "slope_line3"
+  },
+  {
+    "yuushya2.0.0": "ramp_marking_white_5",
+    "yuushya1.10.2": "slope_line4"
+  },
+  {
+    "yuushya2.0.0": "ramp_1",
+    "yuushya1.10.2": "slope0"
+  },
+  {
+    "yuushya2.0.0": "ramp_2",
+    "yuushya1.10.2": "slope1"
+  },
+  {
+    "yuushya2.0.0": "ramp_3",
+    "yuushya1.10.2": "slope2"
+  },
+  {
+    "yuushya2.0.0": "ramp_4",
+    "yuushya1.10.2": "slope3"
+  },
+  {
+    "yuushya2.0.0": "ramp_5",
+    "yuushya1.10.2": "slope4"
+  },
+  {
+    "yuushya2.0.0": "warning_sign"
+  },
+  {
+    "yuushya2.0.0": "framed_bricks"
+  },
+  {
+    "yuushya2.0.0": "stone_with_dot"
+  },
+  {
+    "yuushya2.0.0": "raw_acacia_wood"
+  },
+  {
+    "yuushya2.0.0": "raw_birch_wood"
+  },
+  {
+    "yuushya2.0.0": "raw_dark_oak_wood"
+  },
+  {
+    "yuushya2.0.0": "raw_jungle_wood"
+  },
+  {
+    "yuushya2.0.0": "raw_oak_wood"
+  },
+  {
+    "yuushya2.0.0": "raw_crimson_wood_top"
+  },
+  {
+    "yuushya2.0.0": "raw_spruce_wood_top"
+  },
+  {
+    "yuushya2.0.0": "raw_warped_wood_top"
+  },
+  {
+    "yuushya2.0.0": "decorative_black_wool"
+  },
+  {
+    "yuushya2.0.0": "decorative_brown_wool"
+  },
+  {
+    "yuushya2.0.0": "decorative_cyan_wool"
+  },
+  {
+    "yuushya2.0.0": "decorative_gray_wool"
+  },
+  {
+    "yuushya2.0.0": "decorative_green_wool"
+  },
+  {
+    "yuushya2.0.0": "decorative_light_blue_wool"
+  },
+  {
+    "yuushya2.0.0": "decorative_light_gray_wool"
+  },
+  {
+    "yuushya2.0.0": "decorative_pink_wool"
+  },
+  {
+    "yuushya2.0.0": "decorative_purple_wool"
+  },
+  {
+    "yuushya2.0.0": "decorative_red_wool"
+  },
+  {
+    "yuushya2.0.0": "decorative_white_wool"
+  },
+  {
+    "yuushya2.0.0": "decorative_yellow_wool"
+  },
+  {
+    "yuushya2.0.0": "market_block_purple"
+  },
+  {
+    "yuushya2.0.0": "cut_tile"
+  },
+  {
+    "yuushya2.0.0": "mossy_bricks"
+  },
+  {
+    "yuushya2.0.0": "smoke_bricks"
+  },
+  {
+    "yuushya2.0.0": "terracotta_cobblestone"
+  },
+  {
+    "yuushya2.0.0": "blue_metal",
+    "yuushya1.10.2": "a11"
+  },
+  {
+    "yuushya2.0.0": "reinforced_concrete"
+  },
+  {
+    "yuushya2.0.0": "top_reinforced_concrete"
+  },
+  {
+    "yuushya2.0.0": "tatami"
+  },
+  {
+    "yuushya2.0.0": "tatami_rotated"
+  },
+  {
+    "yuushya2.0.0": "a_metal_blindwall_0"
+  },
+  {
+    "yuushya2.0.0": "b_metal_blindwall_0"
+  },
+  {
+    "yuushya2.0.0": "a_metal_blindwall_1"
+  },
+  {
+    "yuushya2.0.0": "b_metal_blindwall_1"
+  },
+  {
+    "yuushya2.0.0": "acacia_framed_planks"
+  },
+  {
+    "yuushya2.0.0": "birch_framed_planks"
+  },
+  {
+    "yuushya2.0.0": "dark_oak_framed_planks"
+  },
+  {
+    "yuushya2.0.0": "jungle_framed_planks"
+  },
+  {
+    "yuushya2.0.0": "oak_framed_planks"
+  },
+  {
+    "yuushya2.0.0": "acacia_framed_raw_wood_a"
+  },
+  {
+    "yuushya2.0.0": "birch_framed_raw_wood_a"
+  },
+  {
+    "yuushya2.0.0": "dark_oak_framed_raw_wood_a"
+  },
+  {
+    "yuushya2.0.0": "jungle_framed_raw_wood_a"
+  },
+  {
+    "yuushya2.0.0": "oak_framed_raw_wood_a"
+  },
+  {
+    "yuushya2.0.0": "acacia_framed_raw_wood_b"
+  },
+  {
+    "yuushya2.0.0": "birch_framed_raw_wood_b"
+  },
+  {
+    "yuushya2.0.0": "dark_oak_framed_raw_wood_b"
+  },
+  {
+    "yuushya2.0.0": "jungle_framed_raw_wood_b"
+  },
+  {
+    "yuushya2.0.0": "oak_framed_raw_wood_b"
+  },
+  {
+    "yuushya2.0.0": "iron_ladder_top"
+  },
+  {
+    "yuushya2.0.0": "stone_handrail_right"
+  },
+  {
+    "yuushya2.0.0": "stone_handrail_middle"
+  },
+  {
+    "yuushya2.0.0": "iron_hallow_stairs_0"
+  },
+  {
+    "yuushya2.0.0": "iron_hallow_stairs_1"
+  },
+  {
+    "yuushya2.0.0": "potted_blue_orchid"
+  },
+  {
+    "yuushya2.0.0": "blooming_evergreen"
+  },
+  {
+    "yuushya2.0.0": "ceiling_vine_flowering"
+  },
+  {
+    "yuushya2.0.0": "grown_wheat"
+  },
+  {
+    "yuushya2.0.0": "hanging_pink_tulip"
+  },
+  {
+    "yuushya2.0.0": "fireflies",
+    "yuushya1.10.2": "224"
+  },
+  {
+    "yuushya2.0.0": "big_oak_plank",
+    "yuushya1.10.2": "278"
+  },
+  {
+    "yuushya2.0.0": "big_acacia_plank",
+    "yuushya1.10.2": "279"
+  },
+  {
+    "yuushya2.0.0": "mounted_album"
+  },
+  {
+    "yuushya2.0.0": "frying_pan"
+  },
+  {
+    "yuushya2.0.0": "sorted_mug"
+  },
+  {
+    "yuushya2.0.0": "piled_plate"
+  },
+  {
+    "yuushya2.0.0": "sorted_milk"
+  },
+  {
+    "yuushya2.0.0": "mounted_mirror"
+  },
+  {
+    "yuushya2.0.0": "clothes_showcase"
+  },
+  {
+    "yuushya2.0.0": "hanging_clothes_staff"
+  },
+  {
+    "yuushya2.0.0": "hanged_things_"
+  },
+  {
+    "yuushya2.0.0": "ceiling_hanger_rod_anchor"
+  },
+  {
+    "yuushya2.0.0": "mounted_clothes_10"
+  },
+  {
+    "yuushya2.0.0": "mounted_clothes_11"
+  },
+  {
+    "yuushya2.0.0": "mounted_clothes_12"
+  },
+  {
+    "yuushya2.0.0": "mounted_clothes_13"
+  },
+  {
+    "yuushya2.0.0": "mounted_clothes_14"
+  },
+  {
+    "yuushya2.0.0": "mounted_clothes_15"
+  },
+  {
+    "yuushya2.0.0": "mounted_clothes_16"
+  },
+  {
+    "yuushya2.0.0": "mounted_cloth_3"
+  },
+  {
+    "yuushya2.0.0": "empty_goods_shelf_hook_base"
+  },
+  {
+    "yuushya2.0.0": "unlocked_safe"
+  },
+  {
+    "yuushya2.0.0": "ramp_marking_yellow_1"
+  },
+  {
+    "yuushya2.0.0": "ramp_marking_yellow_2"
+  },
+  {
+    "yuushya2.0.0": "ramp_marking_yellow_3"
+  },
+  {
+    "yuushya2.0.0": "ramp_marking_yellow_4"
+  },
+  {
+    "yuushya2.0.0": "ramp_marking_yellow_5"
+  },
+  {
+    "yuushya2.0.0": "ceiling_surveillance_camera"
+  },
+  {
+    "yuushya2.0.0": "utility_pole_cross"
+  },
+  {
+    "yuushya2.0.0": "truck_wheel"
+  },
+  {
+    "yuushya2.0.0": "truck_wheel_"
+  },
+  {
+    "yuushya2.0.0": "truck_wheels"
+  },
+  {
+    "yuushya2.0.0": "truck_chassis_basic"
+  },
+  {
+    "yuushya2.0.0": "truck_chassis_outer"
+  },
+  {
+    "yuushya2.0.0": "truck_chassis_wheel"
+  },
+  {
+    "yuushya2.0.0": "truck_chassis_front"
+  },
+  {
+    "yuushya2.0.0": "truck_chassis_end"
+  },
+  {
+    "yuushya2.0.0": "truck_head_yellow"
+  },
+  {
+    "yuushya2.0.0": "truck_head_red"
+  },
+  {
+    "yuushya2.0.0": "truck_head_white"
+  },
+  {
+    "yuushya2.0.0": "truck_head_dark"
+  },
+  {
+    "yuushya2.0.0": "truck_head_blue"
+  },
+  {
+    "yuushya2.0.0": "wheel"
+  },
+  {
+    "yuushya2.0.0": "wheel_"
+  },
+  {
+    "yuushya2.0.0": "bicycle_stop"
+  },
+  {
+    "yuushya2.0.0": "mounted_blackboard_eraser"
+  },
+  {
+    "yuushya2.0.0": "centre_speaker_sym"
+  },
+  {
+    "yuushya2.0.0": "mounted_tv"
+  },
+  {
+    "yuushya2.0.0": "mounted_tv_online"
+  },
+  {
+    "yuushya2.0.0": "vinyl_record_red"
+  },
+  {
+    "yuushya2.0.0": "vinyl_record_yellow"
+  },
+  {
+    "yuushya2.0.0": "vinyl_record_cyan"
+  },
+  {
+    "yuushya2.0.0": "vinyl_record_white"
+  },
+  {
+    "yuushya2.0.0": "closet_handle_left"
+  },
+  {
+    "yuushya2.0.0": "closet_handle_right"
+  },
+  {
+    "yuushya2.0.0": "desk_lamp"
+  },
+  {
+    "yuushya2.0.0": "unboxed_package"
+  },
+  {
+    "yuushya2.0.0": "uncovered_package"
+  },
+  {
+    "yuushya2.0.0": "slab_white_concrete",
+    "yuushya1.10.2": "slab00"
+  },
+  {
+    "yuushya2.0.0": "slab_orange_concrete",
+    "yuushya1.10.2": "slab01"
+  },
+  {
+    "yuushya2.0.0": "slab_red_concrete",
+    "yuushya1.10.2": "slab02"
+  },
+  {
+    "yuushya2.0.0": "slab_light_blue_concrete",
+    "yuushya1.10.2": "slab03"
+  },
+  {
+    "yuushya2.0.0": "slab_yellow_concrete",
+    "yuushya1.10.2": "slab04"
+  },
+  {
+    "yuushya2.0.0": "slab_lime_concrete",
+    "yuushya1.10.2": "slab05"
+  },
+  {
+    "yuushya2.0.0": "slab_pink_concrete",
+    "yuushya1.10.2": "slab06"
+  },
+  {
+    "yuushya2.0.0": "slab_gray_concrete",
+    "yuushya1.10.2": "slab07"
+  },
+  {
+    "yuushya2.0.0": "slab_light_gray_concrete",
+    "yuushya1.10.2": "slab08"
+  },
+  {
+    "yuushya2.0.0": "slab_cyan_concrete",
+    "yuushya1.10.2": "slab09"
+  },
+  {
+    "yuushya2.0.0": "slab_purple_concrete",
+    "yuushya1.10.2": "slab10"
+  },
+  {
+    "yuushya2.0.0": "slab_blue_concrete",
+    "yuushya1.10.2": "slab11"
+  },
+  {
+    "yuushya2.0.0": "slab_brown_concrete",
+    "yuushya1.10.2": "slab12"
+  },
+  {
+    "yuushya2.0.0": "slab_green_concrete",
+    "yuushya1.10.2": "slab13"
+  },
+  {
+    "yuushya2.0.0": "slab_magenta_concrete",
+    "yuushya1.10.2": "slab14"
+  },
+  {
+    "yuushya2.0.0": "slab_black_concrete",
+    "yuushya1.10.2": "slab15"
+  },
+  {
+    "yuushya2.0.0": "slab_raw_oak_wood",
+    "yuushya1.10.2": "slab16"
+  },
+  {
+    "yuushya2.0.0": "slab_birch_raw_wood",
+    "yuushya1.10.2": "slab17"
+  },
+  {
+    "yuushya2.0.0": "slab_acacia_raw_wood",
+    "yuushya1.10.2": "slab18"
+  },
+  {
+    "yuushya2.0.0": "slab_dark_oak_raw_wood",
+    "yuushya1.10.2": "slab19"
+  },
+  {
+    "yuushya2.0.0": "slab_jungle_raw_wood",
+    "yuushya1.10.2": "slab20"
+  },
+  {
+    "yuushya2.0.0": "slab_spruce_raw_wood",
+    "yuushya1.10.2": "slab21"
+  },
+  {
+    "yuushya2.0.0": "slab_raw_oak_wood",
+    "yuushya1.10.2": "slab22"
+  },
+  {
+    "yuushya2.0.0": "slab_birch_raw_wood",
+    "yuushya1.10.2": "slab23"
+  },
+  {
+    "yuushya2.0.0": "slab_acacia_raw_wood",
+    "yuushya1.10.2": "slab24"
+  },
+  {
+    "yuushya2.0.0": "slab_dark_oak_raw_wood",
+    "yuushya1.10.2": "slab25"
+  },
+  {
+    "yuushya2.0.0": "slab_jungle_raw_wood",
+    "yuushya1.10.2": "slab26"
+  },
+  {
+    "yuushya2.0.0": "slab_spruce_raw_wood",
+    "yuushya1.10.2": "slab27"
+  },
+  {
+    "yuushya2.0.0": "slab_raw_oak_wood",
+    "yuushya1.10.2": "slab28"
+  },
+  {
+    "yuushya2.0.0": "slab_birch_raw_wood",
+    "yuushya1.10.2": "slab29"
+  },
+  {
+    "yuushya2.0.0": "slab_acacia_raw_wood",
+    "yuushya1.10.2": "slab30"
+  },
+  {
+    "yuushya2.0.0": "slab_dark_oak_raw_wood",
+    "yuushya1.10.2": "slab31"
+  },
+  {
+    "yuushya2.0.0": "slab_jungle_raw_wood",
+    "yuushya1.10.2": "slab32"
+  },
+  {
+    "yuushya2.0.0": "slab_spruce_raw_wood",
+    "yuushya1.10.2": "slab33"
+  },
+  {
+    "yuushya2.0.0": "slab_fossilized_cobblestone",
+    "yuushya1.10.2": "slab34"
+  },
+  {
+    "yuushya2.0.0": "slab_gray_tile",
+    "yuushya1.10.2": "slab35"
+  },
+  {
+    "yuushya2.0.0": "slab_bricks",
+    "yuushya1.10.2": "slab36"
+  },
+  {
+    "yuushya2.0.0": "slab_pale_bricks_0",
+    "yuushya1.10.2": "slab37"
+  },
+  {
+    "yuushya2.0.0": "slab_pale_bricks_0",
+    "yuushya1.10.2": "slab38"
+  },
+  {
+    "yuushya2.0.0": "stairs_raw_oak_wood",
+    "yuushya1.10.2": "775"
+  },
+  {
+    "yuushya2.0.0": "stairs_birch_raw_wood",
+    "yuushya1.10.2": "776"
+  },
+  {
+    "yuushya2.0.0": "stairs_acacia_raw_wood",
+    "yuushya1.10.2": "777"
+  },
+  {
+    "yuushya2.0.0": "stairs_dark_oak_wood",
+    "yuushya1.10.2": "778"
+  },
+  {
+    "yuushya2.0.0": "stairs_jungle_wood",
+    "yuushya1.10.2": "779"
+  },
+  {
+    "yuushya2.0.0": "stairs_spruce_wood",
+    "yuushya1.10.2": "780"
+  },
+  {
+    "yuushya2.0.0": "stairs_stone",
+    "yuushya1.10.2": "781"
+  },
+  {
+    "yuushya2.0.0": "stairs_fossilized_cobblestone",
+    "yuushya1.10.2": "782"
+  },
+  {
+    "yuushya2.0.0": "stairs_marble",
+    "yuushya1.10.2": "783"
+  },
+  {
+    "yuushya2.0.0": "stairs_pale_stone_0",
+    "yuushya1.10.2": "784"
+  },
+  {
+    "yuushya2.0.0": "side_slab_raw_oak_wood",
+    "yuushya1.10.2": "000"
+  },
+  {
+    "yuushya2.0.0": "side_slab_birch_raw_wood",
+    "yuushya1.10.2": "001"
+  },
+  {
+    "yuushya2.0.0": "side_slab_dark_oak_raw_wood",
+    "yuushya1.10.2": "002"
+  },
+  {
+    "yuushya2.0.0": "side_slab_dark_oak_raw_wood",
+    "yuushya1.10.2": "003"
+  },
+  {
+    "yuushya2.0.0": "side_slab_jungle_raw_wood",
+    "yuushya1.10.2": "004"
+  },
+  {
+    "yuushya2.0.0": "side_slab_spruce_raw_wood",
+    "yuushya1.10.2": "005"
+  },
+  {
+    "yuushya2.0.0": "side_slab_stone",
+    "yuushya1.10.2": "006"
+  },
+  {
+    "yuushya2.0.0": "side_slab_raw_oak_wood",
+    "yuushya1.10.2": "007"
+  },
+  {
+    "yuushya2.0.0": "side_slab_raw_oak_wood",
+    "yuushya1.10.2": "008"
+  },
+  {
+    "yuushya2.0.0": "side_slab_birch_raw_wood",
+    "yuushya1.10.2": "009"
+  },
+  {
+    "yuushya2.0.0": "side_slab_birch_raw_wood",
+    "yuushya1.10.2": "010"
+  },
+  {
+    "yuushya2.0.0": "side_slab_spruce_raw_wood",
+    "yuushya1.10.2": "011"
+  },
+  {
+    "yuushya2.0.0": "side_slab_spruce_raw_wood",
+    "yuushya1.10.2": "012"
+  },
+  {
+    "yuushya2.0.0": "side_slab_jungle_raw_wood",
+    "yuushya1.10.2": "013"
+  },
+  {
+    "yuushya2.0.0": "side_slab_jungle_raw_wood",
+    "yuushya1.10.2": "014"
+  },
+  {
+    "yuushya2.0.0": "side_slab_dark_oak_raw_wood",
+    "yuushya1.10.2": "017"
+  },
+  {
+    "yuushya2.0.0": "side_slab_dark_oak_raw_wood",
+    "yuushya1.10.2": "018"
+  },
+  {
+    "yuushya2.0.0": "side_slab_acacia_raw_wood",
+    "yuushya1.10.2": "019"
+  },
+  {
+    "yuushya2.0.0": "side_slab_acacia_raw_wood",
+    "yuushya1.10.2": "020"
+  },
+  {
+    "yuushya2.0.0": "side_slab_acacia_raw_wood",
+    "yuushya1.10.2": "021"
+  },
+  {
+    "yuushya2.0.0": "side_slab_bricks",
+    "yuushya1.10.2": "022"
+  },
+  {
+    "yuushya2.0.0": "side_slab_granite",
+    "yuushya1.10.2": "023"
+  },
+  {
+    "yuushya2.0.0": "side_slab_diorite",
+    "yuushya1.10.2": "024"
+  },
+  {
+    "yuushya2.0.0": "side_slab_andesite",
+    "yuushya1.10.2": "025"
+  },
+  {
+    "yuushya2.0.0": "side_slab_white_concrete",
+    "yuushya1.10.2": "026"
+  },
+  {
+    "yuushya2.0.0": "side_slab_orange_concrete",
+    "yuushya1.10.2": "027"
+  },
+  {
+    "yuushya2.0.0": "side_slab_red_concrete",
+    "yuushya1.10.2": "028"
+  },
+  {
+    "yuushya2.0.0": "side_slab_light_blue_concrete",
+    "yuushya1.10.2": "029"
+  },
+  {
+    "yuushya2.0.0": "side_slab_yellow_concrete",
+    "yuushya1.10.2": "030"
+  },
+  {
+    "yuushya2.0.0": "side_slab_lime_concrete",
+    "yuushya1.10.2": "031"
+  },
+  {
+    "yuushya2.0.0": "side_slab_pink_concrete",
+    "yuushya1.10.2": "032"
+  },
+  {
+    "yuushya2.0.0": "side_slab_gray_concrete",
+    "yuushya1.10.2": "033"
+  },
+  {
+    "yuushya2.0.0": "side_slab_light_gray_concrete",
+    "yuushya1.10.2": "034"
+  },
+  {
+    "yuushya2.0.0": "side_slab_cyan_concrete",
+    "yuushya1.10.2": "035"
+  },
+  {
+    "yuushya2.0.0": "side_slab_purple_concrete",
+    "yuushya1.10.2": "036"
+  },
+  {
+    "yuushya2.0.0": "side_slab_blue_concrete",
+    "yuushya1.10.2": "037"
+  },
+  {
+    "yuushya2.0.0": "side_slab_brown_concrete",
+    "yuushya1.10.2": "038"
+  },
+  {
+    "yuushya2.0.0": "side_slab_green_concrete",
+    "yuushya1.10.2": "039"
+  },
+  {
+    "yuushya2.0.0": "side_slab_magenta_concrete"
+  },
+  {
+    "yuushya2.0.0": "side_slab_black_concrete",
+    "yuushya1.10.2": "a12"
+  },
+  {
+    "yuushya2.0.0": "side_slab_stone",
+    "yuushya1.10.2": "a14"
+  },
+  {
+    "yuushya2.0.0": "side_slab_stone",
+    "yuushya1.10.2": "a15"
+  },
+  {
+    "yuushya2.0.0": "side_slab_white_concrete",
+    "yuushya1.10.2": "a16"
+  },
+  {
+    "yuushya2.0.0": "side_slab_orange_concrete",
+    "yuushya1.10.2": "a17"
+  },
+  {
+    "yuushya2.0.0": "side_slab_magenta_concrete",
+    "yuushya1.10.2": "a18"
+  },
+  {
+    "yuushya2.0.0": "side_slab_light_blue_concrete",
+    "yuushya1.10.2": "a19"
+  },
+  {
+    "yuushya2.0.0": "side_slab_yellow_concrete",
+    "yuushya1.10.2": "a20"
+  },
+  {
+    "yuushya2.0.0": "side_slab_lime_concrete",
+    "yuushya1.10.2": "a21"
+  },
+  {
+    "yuushya2.0.0": "side_slab_pink_concrete",
+    "yuushya1.10.2": "a22"
+  },
+  {
+    "yuushya2.0.0": "side_slab_gray_concrete",
+    "yuushya1.10.2": "a23"
+  },
+  {
+    "yuushya2.0.0": "side_slab_light_gray_concrete",
+    "yuushya1.10.2": "a24"
+  },
+  {
+    "yuushya2.0.0": "side_slab_cyan_concrete",
+    "yuushya1.10.2": "a25"
+  },
+  {
+    "yuushya2.0.0": "side_slab_purple_concrete",
+    "yuushya1.10.2": "a26"
+  },
+  {
+    "yuushya2.0.0": "side_slab_blue_concrete",
+    "yuushya1.10.2": "a27"
+  },
+  {
+    "yuushya2.0.0": "side_slab_brown_concrete",
+    "yuushya1.10.2": "a28"
+  },
+  {
+    "yuushya2.0.0": "side_slab_green_concrete",
+    "yuushya1.10.2": "a29"
+  },
+  {
+    "yuushya2.0.0": "side_slab_red_concrete",
+    "yuushya1.10.2": "a30"
+  },
+  {
+    "yuushya2.0.0": "side_slab_black_concrete",
+    "yuushya1.10.2": "a31"
+  },
+  {
+    "yuushya2.0.0": "ridge_white_concrete",
+    "yuushya1.10.2": "ridge00"
+  },
+  {
+    "yuushya2.0.0": "ridge_orange_concrete",
+    "yuushya1.10.2": "ridge01"
+  },
+  {
+    "yuushya2.0.0": "ridge_red_concrete",
+    "yuushya1.10.2": "ridge02"
+  },
+  {
+    "yuushya2.0.0": "ridge_light_blue_concrete",
+    "yuushya1.10.2": "ridge03"
+  },
+  {
+    "yuushya2.0.0": "ridge_yellow_concrete",
+    "yuushya1.10.2": "ridge04"
+  },
+  {
+    "yuushya2.0.0": "ridge_lime_concrete",
+    "yuushya1.10.2": "ridge05"
+  },
+  {
+    "yuushya2.0.0": "ridge_pink_concrete",
+    "yuushya1.10.2": "ridge06"
+  },
+  {
+    "yuushya2.0.0": "ridge_gray_concrete",
+    "yuushya1.10.2": "ridge07"
+  },
+  {
+    "yuushya2.0.0": "ridge_light_gray_concrete",
+    "yuushya1.10.2": "ridge08"
+  },
+  {
+    "yuushya2.0.0": "ridge_cyan_concrete",
+    "yuushya1.10.2": "ridge09"
+  },
+  {
+    "yuushya2.0.0": "ridge_purple_concrete",
+    "yuushya1.10.2": "ridge10"
+  },
+  {
+    "yuushya2.0.0": "ridge_blue_concrete",
+    "yuushya1.10.2": "ridge11"
+  },
+  {
+    "yuushya2.0.0": "ridge_brown_concrete",
+    "yuushya1.10.2": "ridge12"
+  },
+  {
+    "yuushya2.0.0": "ridge_green_concrete",
+    "yuushya1.10.2": "ridge13"
+  },
+  {
+    "yuushya2.0.0": "ridge_magenta_concrete",
+    "yuushya1.10.2": "ridge14"
+  },
+  {
+    "yuushya2.0.0": "ridge_black_concrete",
+    "yuushya1.10.2": "ridge15"
+  },
+  {
+    "yuushya2.0.0": "ridge_light_gray_concrete",
+    "yuushya1.10.2": "ridge16"
+  },
+  {
+    "yuushya2.0.0": "ridge_light_gray_concrete",
+    "yuushya1.10.2": "ridge17"
+  },
+  {
+    "yuushya2.0.0": "ridge_light_gray_concrete",
+    "yuushya1.10.2": "ridge18"
+  },
+  {
+    "yuushya2.0.0": "ridge_black_concrete",
+    "yuushya1.10.2": "ridge19"
+  },
+  {
+    "yuushya2.0.0": "half_slab_white_concrete",
+    "yuushya1.10.2": "layer00"
+  },
+  {
+    "yuushya2.0.0": "half_slab_orange_concrete",
+    "yuushya1.10.2": "layer01"
+  },
+  {
+    "yuushya2.0.0": "half_slab_red_concrete",
+    "yuushya1.10.2": "layer02"
+  },
+  {
+    "yuushya2.0.0": "half_slab_light_blue_concrete",
+    "yuushya1.10.2": "layer03"
+  },
+  {
+    "yuushya2.0.0": "half_slab_yellow_concrete",
+    "yuushya1.10.2": "layer04"
+  },
+  {
+    "yuushya2.0.0": "half_slab_lime_concrete",
+    "yuushya1.10.2": "layer05"
+  },
+  {
+    "yuushya2.0.0": "half_slab_pink_concrete",
+    "yuushya1.10.2": "layer06"
+  },
+  {
+    "yuushya2.0.0": "half_slab_gray_concrete",
+    "yuushya1.10.2": "layer07"
+  },
+  {
+    "yuushya2.0.0": "half_slab_light_gray_concrete",
+    "yuushya1.10.2": "layer08"
+  },
+  {
+    "yuushya2.0.0": "half_slab_cyan_concrete",
+    "yuushya1.10.2": "layer09"
+  },
+  {
+    "yuushya2.0.0": "half_slab_purple_concrete",
+    "yuushya1.10.2": "layer10"
+  },
+  {
+    "yuushya2.0.0": "half_slab_blue_concrete",
+    "yuushya1.10.2": "layer11"
+  },
+  {
+    "yuushya2.0.0": "half_slab_brown_concrete",
+    "yuushya1.10.2": "layer12"
+  },
+  {
+    "yuushya2.0.0": "half_slab_green_concrete",
+    "yuushya1.10.2": "layer13"
+  },
+  {
+    "yuushya2.0.0": "half_slab_magenta_concrete",
+    "yuushya1.10.2": "layer14"
+  },
+  {
+    "yuushya2.0.0": "half_slab_black_concrete",
+    "yuushya1.10.2": "layer15"
+  },
+  {
+    "yuushya2.0.0": "half_slab_raw_oak_wood",
+    "yuushya1.10.2": "layer16"
+  },
+  {
+    "yuushya2.0.0": "half_slab_birch_raw_wood",
+    "yuushya1.10.2": "layer17"
+  },
+  {
+    "yuushya2.0.0": "half_slab_acacia_raw_wood",
+    "yuushya1.10.2": "layer18"
+  },
+  {
+    "yuushya2.0.0": "half_slab_dark_oak_raw_wood",
+    "yuushya1.10.2": "layer19"
+  },
+  {
+    "yuushya2.0.0": "half_slab_jungle_raw_wood",
+    "yuushya1.10.2": "layer20"
+  },
+  {
+    "yuushya2.0.0": "half_slab_light_gray_concrete",
+    "yuushya1.10.2": "layer21"
+  },
+  {
+    "yuushya2.0.0": "half_slab_light_gray_concrete",
+    "yuushya1.10.2": "layer22"
+  },
+  {
+    "yuushya2.0.0": "half_slab_light_gray_concrete",
+    "yuushya1.10.2": "layer24"
+  },
+  {
+    "yuushya2.0.0": "half_slab_fossilized_cobblestone",
+    "yuushya1.10.2": "layer25"
+  },
+  {
+    "yuushya2.0.0": "post_white_concrete",
+    "yuushya1.10.2": "post00"
+  },
+  {
+    "yuushya2.0.0": "post_orange_concrete",
+    "yuushya1.10.2": "post01"
+  },
+  {
+    "yuushya2.0.0": "post_red_concrete",
+    "yuushya1.10.2": "post02"
+  },
+  {
+    "yuushya2.0.0": "post_light_blue_concrete",
+    "yuushya1.10.2": "post03"
+  },
+  {
+    "yuushya2.0.0": "post_yellow_concrete",
+    "yuushya1.10.2": "post04"
+  },
+  {
+    "yuushya2.0.0": "post_lime_concrete",
+    "yuushya1.10.2": "post05"
+  },
+  {
+    "yuushya2.0.0": "post_pink_concrete",
+    "yuushya1.10.2": "post06"
+  },
+  {
+    "yuushya2.0.0": "post_gray_concrete",
+    "yuushya1.10.2": "post07"
+  },
+  {
+    "yuushya2.0.0": "post_light_gray_concrete",
+    "yuushya1.10.2": "post08"
+  },
+  {
+    "yuushya2.0.0": "post_cyan_concrete",
+    "yuushya1.10.2": "post09"
+  },
+  {
+    "yuushya2.0.0": "post_purple_concrete",
+    "yuushya1.10.2": "post10"
+  },
+  {
+    "yuushya2.0.0": "post_blue_concrete",
+    "yuushya1.10.2": "post11"
+  },
+  {
+    "yuushya2.0.0": "post_brown_concrete",
+    "yuushya1.10.2": "post12"
+  },
+  {
+    "yuushya2.0.0": "post_green_concrete",
+    "yuushya1.10.2": "post13"
+  },
+  {
+    "yuushya2.0.0": "post_magenta_concrete",
+    "yuushya1.10.2": "post14"
+  },
+  {
+    "yuushya2.0.0": "post_black_concrete",
+    "yuushya1.10.2": "post15"
+  },
+  {
+    "yuushya2.0.0": "post_light_gray_concrete",
+    "yuushya1.10.2": "post16"
+  },
+  {
+    "yuushya2.0.0": "post_bricks",
+    "yuushya1.10.2": "post17"
+  },
+  {
+    "yuushya2.0.0": "post_raw_oak_wood",
+    "yuushya1.10.2": "post18"
+  },
+  {
+    "yuushya2.0.0": "post_acacia_raw_wood",
+    "yuushya1.10.2": "post19"
+  },
+  {
+    "yuushya2.0.0": "post_dark_oak_raw_wood",
+    "yuushya1.10.2": "post20"
+  },
+  {
+    "yuushya2.0.0": "post_jungle_raw_wood",
+    "yuushya1.10.2": "post21"
+  },
+  {
+    "yuushya2.0.0": "post_spruce_raw_wood",
+    "yuushya1.10.2": "post22"
+  },
+  {
+    "yuushya2.0.0": "post_birch_raw_wood",
+    "yuushya1.10.2": "post23"
+  },
+  {
+    "yuushya2.0.0": "post_stone",
+    "yuushya1.10.2": "post24"
+  },
+  {
+    "yuushya2.0.0": "post_white_concrete",
+    "yuushya1.10.2": "post25"
+  },
+  {
+    "yuushya2.0.0": "post_light_gray_concrete",
+    "yuushya1.10.2": "post26"
+  },
+  {
+    "yuushya2.0.0": "post_light_gray_concrete",
+    "yuushya1.10.2": "post27"
+  },
+  {
+    "yuushya2.0.0": "post_white_concrete",
+    "yuushya1.10.2": "post28"
+  },
+  {
+    "yuushya2.0.0": "post_black_concrete",
+    "yuushya1.10.2": "post29"
+  },
+  {
+    "yuushya2.0.0": "post_brown_concrete",
+    "yuushya1.10.2": "post30"
+  },
+  {
+    "yuushya2.0.0": "thin_post_white_concrete",
+    "yuushya1.10.2": "thin_post00"
+  },
+  {
+    "yuushya2.0.0": "thin_post_orange_concrete",
+    "yuushya1.10.2": "thin_post01"
+  },
+  {
+    "yuushya2.0.0": "thin_post_red_concrete",
+    "yuushya1.10.2": "thin_post02"
+  },
+  {
+    "yuushya2.0.0": "thin_post_light_blue_concrete",
+    "yuushya1.10.2": "thin_post03"
+  },
+  {
+    "yuushya2.0.0": "thin_post_yellow_concrete",
+    "yuushya1.10.2": "thin_post04"
+  },
+  {
+    "yuushya2.0.0": "thin_post_lime_concrete",
+    "yuushya1.10.2": "thin_post05"
+  },
+  {
+    "yuushya2.0.0": "thin_post_pink_concrete",
+    "yuushya1.10.2": "thin_post06"
+  },
+  {
+    "yuushya2.0.0": "thin_post_gray_concrete",
+    "yuushya1.10.2": "thin_post07"
+  },
+  {
+    "yuushya2.0.0": "thin_post_light_gray_concrete",
+    "yuushya1.10.2": "thin_post08"
+  },
+  {
+    "yuushya2.0.0": "thin_post_cyan_concrete",
+    "yuushya1.10.2": "thin_post09"
+  },
+  {
+    "yuushya2.0.0": "thin_post_purple_concrete",
+    "yuushya1.10.2": "thin_post10"
+  },
+  {
+    "yuushya2.0.0": "thin_post_blue_concrete",
+    "yuushya1.10.2": "thin_post11"
+  },
+  {
+    "yuushya2.0.0": "thin_post_brown_concrete",
+    "yuushya1.10.2": "thin_post12"
+  },
+  {
+    "yuushya2.0.0": "thin_post_green_concrete",
+    "yuushya1.10.2": "thin_post13"
+  },
+  {
+    "yuushya2.0.0": "thin_post_magenta_concrete",
+    "yuushya1.10.2": "thin_post14"
+  },
+  {
+    "yuushya2.0.0": "thin_post_black_concrete",
+    "yuushya1.10.2": "thin_post15"
+  },
+  {
+    "yuushya2.0.0": "thin_post_light_gray_concrete",
+    "yuushya1.10.2": "thin_post16"
+  },
+  {
+    "yuushya2.0.0": "thin_post_bricks",
+    "yuushya1.10.2": "thin_post17"
+  },
+  {
+    "yuushya2.0.0": "thin_post_raw_oak_wood",
+    "yuushya1.10.2": "thin_post18"
+  },
+  {
+    "yuushya2.0.0": "thin_post_acacia_raw_wood",
+    "yuushya1.10.2": "thin_post19"
+  },
+  {
+    "yuushya2.0.0": "thin_post_dark_oak_raw_wood",
+    "yuushya1.10.2": "thin_post20"
+  },
+  {
+    "yuushya2.0.0": "thin_post_jungle_raw_wood",
+    "yuushya1.10.2": "thin_post21"
+  },
+  {
+    "yuushya2.0.0": "thin_post_spruce_raw_wood",
+    "yuushya1.10.2": "thin_post22"
+  },
+  {
+    "yuushya2.0.0": "thin_post_birch_raw_wood",
+    "yuushya1.10.2": "thin_post23"
+  },
+  {
+    "yuushya2.0.0": "thin_post_stone",
+    "yuushya1.10.2": "thin_post24"
+  },
+  {
+    "yuushya2.0.0": "thin_post_white_concrete",
+    "yuushya1.10.2": "thin_post25"
+  },
+  {
+    "yuushya2.0.0": "thin_post_light_gray_concrete",
+    "yuushya1.10.2": "thin_post26"
+  },
+  {
+    "yuushya2.0.0": "thin_post_light_gray_concrete",
+    "yuushya1.10.2": "thin_post27"
+  },
+  {
+    "yuushya2.0.0": "thin_post_white_concrete",
+    "yuushya1.10.2": "thin_post28"
+  },
+  {
+    "yuushya2.0.0": "thin_post_black_concrete",
+    "yuushya1.10.2": "thin_post29"
+  },
+  {
+    "yuushya2.0.0": "thin_post_brown_concrete",
+    "yuushya1.10.2": "thin_post30"
+  },
+  {
+    "yuushya2.0.0": "horizontal_post_white_concrete",
+    "yuushya1.10.2": "horizontalpost00"
+  },
+  {
+    "yuushya2.0.0": "horizontal_post_orange_concrete",
+    "yuushya1.10.2": "horizontalpost01"
+  },
+  {
+    "yuushya2.0.0": "horizontal_post_red_concrete",
+    "yuushya1.10.2": "horizontalpost02"
+  },
+  {
+    "yuushya2.0.0": "horizontal_post_light_blue_concrete",
+    "yuushya1.10.2": "horizontalpost03"
+  },
+  {
+    "yuushya2.0.0": "horizontal_post_yellow_concrete",
+    "yuushya1.10.2": "horizontalpost04"
+  },
+  {
+    "yuushya2.0.0": "horizontal_post_lime_concrete",
+    "yuushya1.10.2": "horizontalpost05"
+  },
+  {
+    "yuushya2.0.0": "horizontal_post_pink_concrete",
+    "yuushya1.10.2": "horizontalpost06"
+  },
+  {
+    "yuushya2.0.0": "horizontal_post_gray_concrete",
+    "yuushya1.10.2": "horizontalpost07"
+  },
+  {
+    "yuushya2.0.0": "horizontal_post_light_gray_concrete",
+    "yuushya1.10.2": "horizontalpost08"
+  },
+  {
+    "yuushya2.0.0": "horizontal_post_cyan_concrete",
+    "yuushya1.10.2": "horizontalpost09"
+  },
+  {
+    "yuushya2.0.0": "horizontal_post_purple_concrete",
+    "yuushya1.10.2": "horizontalpost10"
+  },
+  {
+    "yuushya2.0.0": "horizontal_post_blue_concrete",
+    "yuushya1.10.2": "horizontalpost11"
+  },
+  {
+    "yuushya2.0.0": "horizontal_post_brown_concrete",
+    "yuushya1.10.2": "horizontalpost12"
+  },
+  {
+    "yuushya2.0.0": "horizontal_post_green_concrete",
+    "yuushya1.10.2": "horizontalpost13"
+  },
+  {
+    "yuushya2.0.0": "horizontal_post_magenta_concrete",
+    "yuushya1.10.2": "horizontalpost14"
+  },
+  {
+    "yuushya2.0.0": "horizontal_post_black_concrete",
+    "yuushya1.10.2": "horizontalpost15"
+  },
+  {
+    "yuushya2.0.0": "horizontal_post_light_gray_concrete",
+    "yuushya1.10.2": "horizontalpost16"
+  },
+  {
+    "yuushya2.0.0": "horizontal_post_bricks",
+    "yuushya1.10.2": "horizontalpost17"
+  },
+  {
+    "yuushya2.0.0": "horizontal_post_raw_oak_wood",
+    "yuushya1.10.2": "horizontalpost18"
+  },
+  {
+    "yuushya2.0.0": "horizontal_post_acacia_raw_wood",
+    "yuushya1.10.2": "horizontalpost19"
+  },
+  {
+    "yuushya2.0.0": "horizontal_post_dark_oak_raw_wood",
+    "yuushya1.10.2": "horizontalpost20"
+  },
+  {
+    "yuushya2.0.0": "horizontal_post_jungle_raw_wood",
+    "yuushya1.10.2": "horizontalpost21"
+  },
+  {
+    "yuushya2.0.0": "horizontal_post_spruce_raw_wood",
+    "yuushya1.10.2": "horizontalpost22"
+  },
+  {
+    "yuushya2.0.0": "horizontal_post_birch_raw_wood",
+    "yuushya1.10.2": "horizontalpost23"
+  },
+  {
+    "yuushya2.0.0": "horizontal_post_stone",
+    "yuushya1.10.2": "horizontalpost24"
+  },
+  {
+    "yuushya2.0.0": "horizontal_post_white_concrete",
+    "yuushya1.10.2": "horizontalpost25"
+  },
+  {
+    "yuushya2.0.0": "horizontal_post_light_gray_concrete",
+    "yuushya1.10.2": "horizontalpost26"
+  },
+  {
+    "yuushya2.0.0": "horizontal_post_light_gray_concrete",
+    "yuushya1.10.2": "horizontalpost27"
+  },
+  {
+    "yuushya2.0.0": "horizontal_post_white_concrete",
+    "yuushya1.10.2": "horizontalpost28"
+  },
+  {
+    "yuushya2.0.0": "horizontal_post_black_concrete",
+    "yuushya1.10.2": "horizontalpost29"
+  },
+  {
+    "yuushya2.0.0": "horizontal_post_brown_concrete",
+    "yuushya1.10.2": "horizontalpost30"
+  },
+  {
+    "yuushya2.0.0": "frame_top_white_concrete",
+    "yuushya1.10.2": "topframe00"
+  },
+  {
+    "yuushya2.0.0": "frame_top_orange_concrete",
+    "yuushya1.10.2": "topframe01"
+  },
+  {
+    "yuushya2.0.0": "frame_top_red_concrete",
+    "yuushya1.10.2": "topframe02"
+  },
+  {
+    "yuushya2.0.0": "frame_top_light_blue_concrete",
+    "yuushya1.10.2": "topframe03"
+  },
+  {
+    "yuushya2.0.0": "frame_top_yellow_concrete",
+    "yuushya1.10.2": "topframe04"
+  },
+  {
+    "yuushya2.0.0": "frame_top_lime_concrete",
+    "yuushya1.10.2": "topframe05"
+  },
+  {
+    "yuushya2.0.0": "frame_top_pink_concrete",
+    "yuushya1.10.2": "topframe06"
+  },
+  {
+    "yuushya2.0.0": "frame_top_gray_concrete",
+    "yuushya1.10.2": "topframe07"
+  },
+  {
+    "yuushya2.0.0": "frame_top_light_gray_concrete",
+    "yuushya1.10.2": "topframe08"
+  },
+  {
+    "yuushya2.0.0": "frame_top_cyan_concrete",
+    "yuushya1.10.2": "topframe09"
+  },
+  {
+    "yuushya2.0.0": "frame_top_purple_concrete",
+    "yuushya1.10.2": "topframe10"
+  },
+  {
+    "yuushya2.0.0": "frame_top_blue_concrete",
+    "yuushya1.10.2": "topframe11"
+  },
+  {
+    "yuushya2.0.0": "frame_top_brown_concrete",
+    "yuushya1.10.2": "topframe12"
+  },
+  {
+    "yuushya2.0.0": "frame_top_green_concrete",
+    "yuushya1.10.2": "topframe13"
+  },
+  {
+    "yuushya2.0.0": "frame_top_magenta_concrete",
+    "yuushya1.10.2": "topframe14"
+  },
+  {
+    "yuushya2.0.0": "frame_top_black_concrete",
+    "yuushya1.10.2": "topframe15"
+  },
+  {
+    "yuushya2.0.0": "frame_bottom_white_concrete",
+    "yuushya1.10.2": "bottomframe00"
+  },
+  {
+    "yuushya2.0.0": "frame_bottom_orange_concrete",
+    "yuushya1.10.2": "bottomframe01"
+  },
+  {
+    "yuushya2.0.0": "frame_bottom_red_concrete",
+    "yuushya1.10.2": "bottomframe02"
+  },
+  {
+    "yuushya2.0.0": "frame_bottom_light_blue_concrete",
+    "yuushya1.10.2": "bottomframe03"
+  },
+  {
+    "yuushya2.0.0": "frame_bottom_yellow_concrete",
+    "yuushya1.10.2": "bottomframe04"
+  },
+  {
+    "yuushya2.0.0": "frame_bottom_lime_concrete",
+    "yuushya1.10.2": "bottomframe05"
+  },
+  {
+    "yuushya2.0.0": "frame_bottom_pink_concrete",
+    "yuushya1.10.2": "bottomframe06"
+  },
+  {
+    "yuushya2.0.0": "frame_bottom_gray_concrete",
+    "yuushya1.10.2": "bottomframe07"
+  },
+  {
+    "yuushya2.0.0": "frame_bottom_light_gray_concrete",
+    "yuushya1.10.2": "bottomframe08"
+  },
+  {
+    "yuushya2.0.0": "frame_bottom_cyan_concrete",
+    "yuushya1.10.2": "bottomframe09"
+  },
+  {
+    "yuushya2.0.0": "frame_bottom_purple_concrete",
+    "yuushya1.10.2": "bottomframe10"
+  },
+  {
+    "yuushya2.0.0": "frame_bottom_blue_concrete",
+    "yuushya1.10.2": "bottomframe11"
+  },
+  {
+    "yuushya2.0.0": "frame_bottom_brown_concrete",
+    "yuushya1.10.2": "bottomframe12"
+  },
+  {
+    "yuushya2.0.0": "frame_bottom_green_concrete",
+    "yuushya1.10.2": "bottomframe13"
+  },
+  {
+    "yuushya2.0.0": "frame_bottom_magenta_concrete",
+    "yuushya1.10.2": "bottomframe14"
+  },
+  {
+    "yuushya2.0.0": "frame_bottom_black_concrete",
+    "yuushya1.10.2": "bottomframe15"
+  },
+  {
+    "yuushya2.0.0": "platform_white_concrete",
+    "yuushya1.10.2": "platform00"
+  },
+  {
+    "yuushya2.0.0": "platform_orange_concrete",
+    "yuushya1.10.2": "platform01"
+  },
+  {
+    "yuushya2.0.0": "platform_red_concrete",
+    "yuushya1.10.2": "platform02"
+  },
+  {
+    "yuushya2.0.0": "platform_light_blue_concrete",
+    "yuushya1.10.2": "platform03"
+  },
+  {
+    "yuushya2.0.0": "platform_yellow_concrete",
+    "yuushya1.10.2": "platform04"
+  },
+  {
+    "yuushya2.0.0": "platform_lime_concrete",
+    "yuushya1.10.2": "platform05"
+  },
+  {
+    "yuushya2.0.0": "platform_pink_concrete",
+    "yuushya1.10.2": "platform06"
+  },
+  {
+    "yuushya2.0.0": "platform_gray_concrete",
+    "yuushya1.10.2": "platform07"
+  },
+  {
+    "yuushya2.0.0": "platform_light_gray_concrete",
+    "yuushya1.10.2": "platform08"
+  },
+  {
+    "yuushya2.0.0": "platform_cyan_concrete",
+    "yuushya1.10.2": "platform09"
+  },
+  {
+    "yuushya2.0.0": "platform_purple_concrete",
+    "yuushya1.10.2": "platform10"
+  },
+  {
+    "yuushya2.0.0": "platform_blue_concrete",
+    "yuushya1.10.2": "platform11"
+  },
+  {
+    "yuushya2.0.0": "platform_brown_concrete",
+    "yuushya1.10.2": "platform12"
+  },
+  {
+    "yuushya2.0.0": "platform_green_concrete",
+    "yuushya1.10.2": "platform13"
+  },
+  {
+    "yuushya2.0.0": "platform_magenta_concrete",
+    "yuushya1.10.2": "platform14"
+  },
+  {
+    "yuushya2.0.0": "platform_black_concrete",
+    "yuushya1.10.2": "platform15"
+  },
+  {
+    "yuushya2.0.0": "platform_raw_oak_wood",
+    "yuushya1.10.2": "040"
+  },
+  {
+    "yuushya2.0.0": "platform_raw_birch_wood",
+    "yuushya1.10.2": "041"
+  },
+  {
+    "yuushya2.0.0": "platform_raw_spruce_wood",
+    "yuushya1.10.2": "042"
+  },
+  {
+    "yuushya2.0.0": "platform_raw_jungle_wood",
+    "yuushya1.10.2": "043"
+  },
+  {
+    "yuushya2.0.0": "platform_raw_dark_oak_wood",
+    "yuushya1.10.2": "044"
+  },
+  {
+    "yuushya2.0.0": "platform_raw_acacia_wood",
+    "yuushya1.10.2": "045"
+  },
+  {
+    "yuushya2.0.0": "rain_shed_black_wool",
+    "yuushya1.10.2": "114"
+  },
+  {
+    "yuushya2.0.0": "rain_shed_blue_wool",
+    "yuushya1.10.2": "115"
+  },
+  {
+    "yuushya2.0.0": "rain_shed_white_wool",
+    "yuushya1.10.2": "119"
+  },
+  {
+    "yuushya2.0.0": "rain_shed_yellow_wool",
+    "yuushya1.10.2": "210"
+  },
+  {
+    "yuushya2.0.0": "rain_shed_red_wool",
+    "yuushya1.10.2": "211"
+  },
+  {
+    "yuushya2.0.0": "rain_shed_green_wool",
+    "yuushya1.10.2": "212"
+  },
+  {
+    "yuushya2.0.0": "rain_shed_cyan_wool",
+    "yuushya1.10.2": "213"
+  },
+  {
+    "yuushya2.0.0": "rain_shed_brown_wool",
+    "yuushya1.10.2": "214"
+  },
+  {
+    "yuushya2.0.0": "lengthened_rain_shed_black_wool",
+    "yuushya1.10.2": "604"
+  },
+  {
+    "yuushya2.0.0": "lengthened_rain_shed_blue_wool",
+    "yuushya1.10.2": "605"
+  },
+  {
+    "yuushya2.0.0": "lengthened_rain_shed_white_wool",
+    "yuushya1.10.2": "609"
+  },
+  {
+    "yuushya2.0.0": "lengthened_rain_shed_yellow_wool",
+    "yuushya1.10.2": "215"
+  },
+  {
+    "yuushya2.0.0": "lengthened_rain_shed_red_wool",
+    "yuushya1.10.2": "216"
+  },
+  {
+    "yuushya2.0.0": "lengthened_rain_shed_green_wool",
+    "yuushya1.10.2": "217"
+  },
+  {
+    "yuushya2.0.0": "lengthened_rain_shed_cyan_wool",
+    "yuushya1.10.2": "218"
+  },
+  {
+    "yuushya2.0.0": "lengthened_rain_shed_brown_wool",
+    "yuushya1.10.2": "219"
+  },
+  {
+    "yuushya2.0.0": "fence_raw_oak_wood",
+    "yuushya1.10.2": "467"
+  },
+  {
+    "yuushya2.0.0": "fence_raw_birch_wood",
+    "yuushya1.10.2": "468"
+  },
+  {
+    "yuushya2.0.0": "fence_raw_jungle_wood",
+    "yuushya1.10.2": "469"
+  },
+  {
+    "yuushya2.0.0": "fence_raw_dark_oak_wood",
+    "yuushya1.10.2": "478"
+  },
+  {
+    "yuushya2.0.0": "fence_raw_acacia_wood",
+    "yuushya1.10.2": "479"
+  },
+  {
+    "yuushya2.0.0": "fence_red_concrete",
+    "yuushya1.10.2": "483"
+  },
+  {
+    "yuushya2.0.0": "fence_white_concrete",
+    "yuushya1.10.2": "484"
+  },
+  {
+    "yuushya2.0.0": "hollow_stairs_raw_spruce_wood",
+    "yuushya1.10.2": "265"
+  },
+  {
+    "yuushya2.0.0": "hollow_stairs_raw_oak_wood",
+    "yuushya1.10.2": "260"
+  },
+  {
+    "yuushya2.0.0": "hollow_stairs_raw_birch_wood",
+    "yuushya1.10.2": "261"
+  },
+  {
+    "yuushya2.0.0": "hollow_stairs_raw_jungle_wood",
+    "yuushya1.10.2": "262"
+  },
+  {
+    "yuushya2.0.0": "hollow_stairs_raw_dark_oak_wood",
+    "yuushya1.10.2": "263"
+  },
+  {
+    "yuushya2.0.0": "hollow_stairs_raw_acacia_wood",
+    "yuushya1.10.2": "264"
+  },
+  {
+    "yuushya2.0.0": "hollow_stairs_red_concrete",
+    "yuushya1.10.2": "189"
+  },
+  {
+    "yuushya2.0.0": "hollow_stairs_white_concrete",
+    "yuushya1.10.2": "266"
+  },
+  {
+    "yuushya2.0.0": "hollow_stairs_white_concrete",
+    "yuushya1.10.2": "267"
+  },
+  {
+    "yuushya2.0.0": "ladder_raw_oak_wood",
+    "yuushya1.10.2": "ladder0"
+  },
+  {
+    "yuushya2.0.0": "ladder_raw_acacia_wood",
+    "yuushya1.10.2": "ladder1"
+  },
+  {
+    "yuushya2.0.0": "ladder_raw_birch_wood",
+    "yuushya1.10.2": "ladder2"
+  },
+  {
+    "yuushya2.0.0": "shelf_raw_oak_wood",
+    "yuushya1.10.2": "shelf00"
+  },
+  {
+    "yuushya2.0.0": "shelf_raw_acacia_wood",
+    "yuushya1.10.2": "shelf01"
+  },
+  {
+    "yuushya2.0.0": "shelf_raw_jungle_wood",
+    "yuushya1.10.2": "shelf02"
+  },
+  {
+    "yuushya2.0.0": "shelf_raw_birch_wood",
+    "yuushya1.10.2": "shelf03"
+  },
+  {
+    "yuushya2.0.0": "shelf_raw_dark_oak_wood",
+    "yuushya1.10.2": "shelf04"
+  },
+  {
+    "yuushya2.0.0": "bookshelf_raw_oak_wood",
+    "yuushya1.10.2": "bookshelf00"
+  },
+  {
+    "yuushya2.0.0": "bookshelf_raw_acacia_wood",
+    "yuushya1.10.2": "bookshelf01"
+  },
+  {
+    "yuushya2.0.0": "bookshelf_raw_jungle_wood",
+    "yuushya1.10.2": "bookshelf02"
+  },
+  {
+    "yuushya2.0.0": "bookshelf_raw_birch_wood",
+    "yuushya1.10.2": "bookshelf03"
+  },
+  {
+    "yuushya2.0.0": "bookshelf_raw_dark_oak_wood",
+    "yuushya1.10.2": "bookshelf04"
+  },
+  {
+    "yuushya2.0.0": "venetian_blinds_white_concrete",
+    "yuushya1.10.2": "268"
+  },
+  {
+    "yuushya2.0.0": "venetian_blinds_raw_oak_wood",
+    "yuushya1.10.2": "269"
+  },
+  {
+    "yuushya2.0.0": "venetian_blinds_white_concrete",
+    "yuushya1.10.2": "287"
+  },
+  {
+    "yuushya2.0.0": "venetian_blinds_raw_oak_wood",
+    "yuushya1.10.2": "288"
+  },
+  {
+    "yuushya2.0.0": "horizontal_utility_pole",
+    "yuushya1.10.2": "099"
+  },
+  {
+    "yuushya2.0.0": "gaming_chair",
+    "yuushya1.10.2": "125"
+  },
+  {
+    "yuushya2.0.0": "minecraft:light",
+    "yuushya1.10.2": "ghost_light_9"
+  },
+  {
+    "yuushya2.0.0": "minecraft:light",
+    "yuushya1.10.2": "ghost_light_15"
+  },
+  {
+    "yuushya2.0.0": "calendar",
+    "yuushya1.10.2": "508"
+  },
+  {
+    "yuushya2.0.0": "ps4",
+    "yuushya1.10.2": "510"
+  },
+  {
+    "yuushya2.0.0": "switch",
+    "yuushya1.10.2": "538"
+  },
+  {
+    "yuushya2.0.0": "tissue",
+    "yuushya1.10.2": "561"
+  },
+  {
+    "yuushya2.0.0": "tissue_",
+    "yuushya1.10.2": "562"
+  },
+  {
+    "yuushya2.0.0": "fire_extinguisher",
+    "yuushya1.10.2": "567"
+  },
+  {
+    "yuushya2.0.0": "grass",
+    "yuushya1.10.2": "067"
+  },
+  {
+    "yuushya2.0.0": "smooth_stonetile",
+    "yuushya1.10.2": "b00"
+  },
+  {
+    "yuushya2.0.0": "pale_bricks_0",
+    "yuushya1.10.2": "b65"
+  },
+  {
+    "yuushya2.0.0": "pale_bricks_0",
+    "yuushya1.10.2": "b66"
+  },
+  {
+    "yuushya2.0.0": "pale_bricks_0",
+    "yuushya1.10.2": "b67"
+  },
+  {
+    "yuushya2.0.0": "pale_bricks_0",
+    "yuushya1.10.2": "b68"
+  },
+  {
+    "yuushya2.0.0": "retaining_wall",
+    "yuushya1.10.2": "802"
+  },
+  {
+    "yuushya2.0.0": "retaining_wall",
+    "yuushya1.10.2": "803"
+  },
+  {
+    "yuushya2.0.0": "retaining_wall",
+    "yuushya1.10.2": "804"
+  },
+  {
+    "yuushya2.0.0": "retaining_wall",
+    "yuushya1.10.2": "805"
+  },
+  {
+    "yuushya2.0.0": "retaining_wall",
+    "yuushya1.10.2": "806"
+  },
+  {
+    "yuushya2.0.0": "retaining_wall_corner",
+    "yuushya1.10.2": "807"
+  },
+  {
+    "yuushya2.0.0": "light_blue_framed_acrylic",
+    "yuushya1.10.2": "28"
+  },
+  {
+    "yuushya2.0.0": "goods_shelf_jam",
+    "yuushya1.10.2": "61"
+  },
+  {
+    "yuushya2.0.0": "goods_shelf_paste",
+    "yuushya1.10.2": "34"
+  },
+  {
+    "yuushya2.0.0": "raw_oak_wood",
+    "yuushya1.10.2": "63"
+  },
+  {
+    "yuushya2.0.0": "raw_acacia_wood",
+    "yuushya1.10.2": "64"
+  },
+  {
+    "yuushya2.0.0": "raw_jungle_wood",
+    "yuushya1.10.2": "06"
+  },
+  {
+    "yuushya2.0.0": "raw_spruce_wood_top",
+    "yuushya1.10.2": "65"
+  },
+  {
+    "yuushya2.0.0": "raw_birch_wood",
+    "yuushya1.10.2": "66"
+  },
+  {
+    "yuushya2.0.0": "raw_dark_oak_wood",
+    "yuushya1.10.2": "67"
+  },
+  {
+    "yuushya2.0.0": "raw_crimson_wood_top",
+    "yuushya1.10.2": "68"
+  },
+  {
+    "yuushya2.0.0": "raw_warped_wood_top",
+    "yuushya1.10.2": "69"
+  },
+  {
+    "yuushya2.0.0": "raw_oak_wood",
+    "yuushya1.10.2": "081"
+  },
+  {
+    "yuushya2.0.0": "raw_acacia_wood",
+    "yuushya1.10.2": "084"
+  },
+  {
+    "yuushya2.0.0": "raw_jungle_wood",
+    "yuushya1.10.2": "085"
+  },
+  {
+    "yuushya2.0.0": "raw_spruce_wood_top",
+    "yuushya1.10.2": "083"
+  },
+  {
+    "yuushya2.0.0": "raw_birch_wood",
+    "yuushya1.10.2": "082"
+  },
+  {
+    "yuushya2.0.0": "raw_dark_oak_wood",
+    "yuushya1.10.2": "087"
+  },
+  {
+    "yuushya2.0.0": "raw_crimson_wood_top",
+    "yuushya1.10.2": "086"
+  },
+  {
+    "yuushya2.0.0": "raw_warped_wood_top",
+    "yuushya1.10.2": "088"
+  },
+  {
+    "yuushya2.0.0": "raw_acacia_wood",
+    "yuushya1.10.2": "089"
+  },
+  {
+    "yuushya2.0.0": "raw_birch_wood",
+    "yuushya1.10.2": "065"
+  },
+  {
+    "yuushya2.0.0": "raw_oak_wood",
+    "yuushya1.10.2": "090"
+  },
+  {
+    "yuushya2.0.0": "raw_oak_wood",
+    "yuushya1.10.2": "066"
+  },
+  {
+    "yuushya2.0.0": "decorative_blue_wool",
+    "yuushya1.10.2": "94"
+  },
+  {
+    "yuushya2.0.0": "decorative_brown_wool",
+    "yuushya1.10.2": "95"
+  },
+  {
+    "yuushya2.0.0": "decorative_light_blue_wool",
+    "yuushya1.10.2": "96"
+  },
+  {
+    "yuushya2.0.0": "decorative_lime_wool",
+    "yuushya1.10.2": "97"
+  },
+  {
+    "yuushya2.0.0": "decorative_magenta_wool",
+    "yuushya1.10.2": "98"
+  },
+  {
+    "yuushya2.0.0": "decorative_orange_wool",
+    "yuushya1.10.2": "a00"
+  },
+  {
+    "yuushya2.0.0": "decorative_blue_wool",
+    "yuushya1.10.2": "a01"
+  },
+  {
+    "yuushya2.0.0": "decorative_red_wool",
+    "yuushya1.10.2": "a02"
+  },
+  {
+    "yuushya2.0.0": "decorative_white_wool",
+    "yuushya1.10.2": "a03"
+  },
+  {
+    "yuushya2.0.0": "marble_bricks_0",
+    "yuushya1.10.2": "a91"
+  },
+  {
+    "yuushya2.0.0": "blue_metal",
+    "yuushya1.10.2": "a92"
+  },
+  {
+    "yuushya2.0.0": "marble_bricks_0",
+    "yuushya1.10.2": "a93"
+  },
+  {
+    "yuushya2.0.0": "blue_metal",
+    "yuushya1.10.2": "a94"
+  },
+  {
+    "yuushya2.0.0": "roof_0",
+    "yuushya1.10.2": "181"
+  },
+  {
+    "yuushya2.0.0": "roof_ridge_0",
+    "yuushya1.10.2": "734"
+  },
+  {
+    "yuushya2.0.0": "iron_fence",
+    "yuushya1.10.2": "655"
+  },
+  {
+    "yuushya2.0.0": "iron_fence",
+    "yuushya1.10.2": "660"
+  },
+  {
+    "yuushya2.0.0": "iron_fence",
+    "yuushya1.10.2": "661"
+  },
+  {
+    "yuushya2.0.0": "iron_fence",
+    "yuushya1.10.2": "662"
+  },
+  {
+    "yuushya2.0.0": "iron_fence",
+    "yuushya1.10.2": "663"
+  },
+  {
+    "yuushya2.0.0": "iron_fence",
+    "yuushya1.10.2": "270"
+  },
+  {
+    "yuushya2.0.0": "iron_fence",
+    "yuushya1.10.2": "271"
+  },
+  {
+    "yuushya2.0.0": "grille_1",
+    "yuushya1.10.2": "664"
+  },
+  {
+    "yuushya2.0.0": "grille_0",
+    "yuushya1.10.2": "665"
+  },
+  {
+    "yuushya2.0.0": "grille_2",
+    "yuushya1.10.2": "666"
+  },
+  {
+    "yuushya2.0.0": "cart_white_concrete",
+    "yuushya1.10.2": "341"
+  },
+  {
+    "yuushya2.0.0": "cart_blue_concrete",
+    "yuushya1.10.2": "342"
+  },
+  {
+    "yuushya2.0.0": "pole_white_concrete",
+    "yuushya1.10.2": "063"
+  },
+  {
+    "yuushya2.0.0": "pole_white_concrete",
+    "yuushya1.10.2": "064"
+  },
+  {
+    "yuushya2.0.0": "column_white_concrete",
+    "yuushya1.10.2": "079"
+  },
+  {
+    "yuushya2.0.0": "platform_white_concrete",
+    "yuushya1.10.2": "048"
+  },
+  {
+    "yuushya2.0.0": "iron_fence",
+    "yuushya1.10.2": "101"
+  },
+  {
+    "yuushya2.0.0": "bicycle_yellow_concrete",
+    "yuushya1.10.2": "190"
+  },
+  {
+    "yuushya2.0.0": "bicycle_blue_concrete",
+    "yuushya1.10.2": "191"
+  },
+  {
+    "yuushya2.0.0": "bicycle_yellow_concrete",
+    "yuushya1.10.2": "192"
+  },
+  {
+    "yuushya2.0.0": "bicycle_blue_concrete",
+    "yuushya1.10.2": "193"
+  },
+  {
+    "yuushya2.0.0": "bicycle_red_concrete",
+    "yuushya1.10.2": "194"
+  },
+  {
+    "yuushya2.0.0": "electric_motorcycle",
+    "yuushya1.10.2": "197"
+  },
+  {
+    "yuushya2.0.0": "iron_fence",
+    "yuushya1.10.2": "275"
+  },
+  {
+    "yuushya2.0.0": "iron_fence",
+    "yuushya1.10.2": "277"
+  },
+  {
+    "yuushya2.0.0": "pipe_vertical",
+    "yuushya1.10.2": "693"
+  },
+  {
+    "yuushya2.0.0": "pipe_vertical",
+    "yuushya1.10.2": "694"
+  },
+  {
+    "yuushya2.0.0": "pipe_horizontal",
+    "yuushya1.10.2": "695"
+  },
+  {
+    "yuushya2.0.0": "pipe_horizontal",
+    "yuushya1.10.2": "696"
+  },
+  {
+    "yuushya2.0.0": "pipe_extend",
+    "yuushya1.10.2": "697"
+  },
+  {
+    "yuushya2.0.0": "pipe_extend_sym",
+    "yuushya1.10.2": "698"
+  },
+  {
+    "yuushya2.0.0": "pipe_corner_bottom_left",
+    "yuushya1.10.2": "699"
+  },
+  {
+    "yuushya2.0.0": "deployed_utility_service_drop",
+    "yuushya1.10.2": "523"
+  },
+  {
+    "yuushya2.0.0": "mounted_utility_service_drop",
+    "yuushya1.10.2": "557"
+  },
+  {
+    "yuushya2.0.0": "wire",
+    "yuushya1.10.2": "844"
+  },
+  {
+    "yuushya2.0.0": "chair_raw_acacia_wood",
+    "yuushya1.10.2": "120"
+  },
+  {
+    "yuushya2.0.0": "chair_raw_birch_wood",
+    "yuushya1.10.2": "121"
+  },
+  {
+    "yuushya2.0.0": "chair_raw_oak_wood",
+    "yuushya1.10.2": "122"
+  },
+  {
+    "yuushya2.0.0": "bench_raw_oak_wood",
+    "yuushya1.10.2": "b80"
+  },
+  {
+    "yuushya2.0.0": "bench_raw_birch_wood",
+    "yuushya1.10.2": "b81"
+  },
+  {
+    "yuushya2.0.0": "bench_raw_acacia_wood",
+    "yuushya1.10.2": "b82"
+  },
+  {
+    "yuushya2.0.0": "bench_raw_jungle_wood",
+    "yuushya1.10.2": "b83"
+  },
+  {
+    "yuushya2.0.0": "bench_raw_acacia_wood",
+    "yuushya1.10.2": "123"
+  },
+  {
+    "yuushya2.0.0": "bench_raw_birch_wood",
+    "yuushya1.10.2": "124"
+  },
+  {
+    "yuushya2.0.0": "seat_raw_oak_wood",
+    "yuushya1.10.2": "126"
+  },
+  {
+    "yuushya2.0.0": "seat_raw_acacia_wood",
+    "yuushya1.10.2": "127"
+  },
+  {
+    "yuushya2.0.0": "seat_raw_dark_oak_wood",
+    "yuushya1.10.2": "128"
+  },
+  {
+    "yuushya2.0.0": "seat_raw_birch_wood",
+    "yuushya1.10.2": "129"
+  },
+  {
+    "yuushya2.0.0": "seat_raw_oak_wood",
+    "yuushya1.10.2": "130"
+  },
+  {
+    "yuushya2.0.0": "seat_raw_jungle_wood",
+    "yuushya1.10.2": "131"
+  },
+  {
+    "yuushya2.0.0": "armchair_white_wool",
+    "yuushya1.10.2": "797"
+  },
+  {
+    "yuushya2.0.0": "armchair_white_wool",
+    "yuushya1.10.2": "798"
+  },
+  {
+    "yuushya2.0.0": "table_raw_oak_wood",
+    "yuushya1.10.2": "140"
+  },
+  {
+    "yuushya2.0.0": "table_raw_birch_wood",
+    "yuushya1.10.2": "141"
+  },
+  {
+    "yuushya2.0.0": "table_raw_acacia_wood",
+    "yuushya1.10.2": "142"
+  },
+  {
+    "yuushya2.0.0": "table_raw_jungle_wood",
+    "yuushya1.10.2": "143"
+  },
+  {
+    "yuushya2.0.0": "table_raw_dark_oak_wood",
+    "yuushya1.10.2": "144"
+  },
+  {
+    "yuushya2.0.0": "table_raw_birch_wood",
+    "yuushya1.10.2": "145"
+  },
+  {
+    "yuushya2.0.0": "table_raw_oak_wood",
+    "yuushya1.10.2": "146"
+  },
+  {
+    "yuushya2.0.0": "table_raw_acacia_wood",
+    "yuushya1.10.2": "147"
+  },
+  {
+    "yuushya2.0.0": "table_raw_jungle_wood",
+    "yuushya1.10.2": "148"
+  },
+  {
+    "yuushya2.0.0": "couch_white_wool",
+    "yuushya1.10.2": "240"
+  },
+  {
+    "yuushya2.0.0": "couch_white_wool",
+    "yuushya1.10.2": "241"
+  },
+  {
+    "yuushya2.0.0": "couch_gray_wool",
+    "yuushya1.10.2": "242"
+  },
+  {
+    "yuushya2.0.0": "couch_yellow_wool",
+    "yuushya1.10.2": "243"
+  },
+  {
+    "yuushya2.0.0": "couch_lime_wool",
+    "yuushya1.10.2": "244"
+  },
+  {
+    "yuushya2.0.0": "couch_brown_wool",
+    "yuushya1.10.2": "245"
+  },
+  {
+    "yuushya2.0.0": "couch_blue_wool",
+    "yuushya1.10.2": "246"
+  },
+  {
+    "yuushya2.0.0": "oak_tall_door",
+    "yuushya1.10.2": "b37"
+  },
+  {
+    "yuushya2.0.0": "acacia_tall_door",
+    "yuushya1.10.2": "b38"
+  },
+  {
+    "yuushya2.0.0": "jungle_tall_door",
+    "yuushya1.10.2": "b39"
+  },
+  {
+    "yuushya2.0.0": "birch_tall_door",
+    "yuushya1.10.2": "845"
+  },
+  {
+    "yuushya2.0.0": "dark_oak_tall_door",
+    "yuushya1.10.2": "846"
+  },
+  {
+    "yuushya2.0.0": "iron_tall_door",
+    "yuushya1.10.2": "847"
+  },
+  {
+    "yuushya2.0.0": "decoration_bookshelf_raw_oak_wood",
+    "yuushya1.10.2": "table_bookshelf_01"
+  },
+  {
+    "yuushya2.0.0": "decoration_bookshelf_acacia_raw_wood",
+    "yuushya1.10.2": "table_bookshelf_02"
+  },
+  {
+    "yuushya2.0.0": "decoration_bookshelf_jungle_raw_wood",
+    "yuushya1.10.2": "table_bookshelf_03"
+  },
+  {
+    "yuushya2.0.0": "decoration_bookshelf_birch_raw_wood",
+    "yuushya1.10.2": "table_bookshelf_04"
+  },
+  {
+    "yuushya2.0.0": "decoration_bookshelf_dark_oak_raw_wood",
+    "yuushya1.10.2": "table_bookshelf_05"
+  },
+  {
+    "yuushya2.0.0": "leaning_ladder_raw_oak_wood",
+    "yuushya1.10.2": "b94"
+  },
+  {
+    "yuushya2.0.0": "board_white_concrete",
+    "yuushya1.10.2": "340"
+  },
+  {
+    "yuushya2.0.0": "title_black",
+    "yuushya1.10.2": "301"
+  },
+  {
+    "yuushya2.0.0": "title_black",
+    "yuushya1.10.2": "303"
+  },
+  {
+    "yuushya2.0.0": "title_black",
+    "yuushya1.10.2": "305"
+  },
+  {
+    "yuushya2.0.0": "title_black",
+    "yuushya1.10.2": "307"
+  },
+  {
+    "yuushya2.0.0": "title_black",
+    "yuushya1.10.2": "309"
+  },
+  {
+    "yuushya2.0.0": "title_black",
+    "yuushya1.10.2": "311"
+  },
+  {
+    "yuushya2.0.0": "title_black",
+    "yuushya1.10.2": "313"
+  },
+  {
+    "yuushya2.0.0": "title_black",
+    "yuushya1.10.2": "315"
+  },
+  {
+    "yuushya2.0.0": "title_black",
+    "yuushya1.10.2": "317"
+  },
+  {
+    "yuushya2.0.0": "title_black",
+    "yuushya1.10.2": "319"
+  },
+  {
+    "yuushya2.0.0": "dual_small_title_black",
+    "yuushya1.10.2": "321"
+  },
+  {
+    "yuushya2.0.0": "dual_small_title_black",
+    "yuushya1.10.2": "323"
+  },
+  {
+    "yuushya2.0.0": "dual_small_title_black",
+    "yuushya1.10.2": "325"
+  },
+  {
+    "yuushya2.0.0": "dual_small_title_black",
+    "yuushya1.10.2": "327"
+  },
+  {
+    "yuushya2.0.0": "dual_small_title_black",
+    "yuushya1.10.2": "329"
+  },
+  {
+    "yuushya2.0.0": "dual_small_title_black",
+    "yuushya1.10.2": "331"
+  },
+  {
+    "yuushya2.0.0": "dual_small_title_black",
+    "yuushya1.10.2": "333"
+  },
+  {
+    "yuushya2.0.0": "dual_small_title_black",
+    "yuushya1.10.2": "335"
+  },
+  {
+    "yuushya2.0.0": "dual_small_title_black",
+    "yuushya1.10.2": "337"
+  },
+  {
+    "yuushya2.0.0": "dual_small_title_black",
+    "yuushya1.10.2": "339"
+  },
+  {
+    "yuushya2.0.0": "dual_small_title_black",
+    "yuushya1.10.2": "820"
+  },
+  {
+    "yuushya2.0.0": "dual_small_title_black",
+    "yuushya1.10.2": "821"
+  },
+  {
+    "yuushya2.0.0": "dual_small_title_black",
+    "yuushya1.10.2": "822"
+  },
+  {
+    "yuushya2.0.0": "dual_small_title_black",
+    "yuushya1.10.2": "823"
+  },
+  {
+    "yuushya2.0.0": "dual_small_title_black",
+    "yuushya1.10.2": "824"
+  },
+  {
+    "yuushya2.0.0": "dual_small_title_black",
+    "yuushya1.10.2": "825"
+  },
+  {
+    "yuushya2.0.0": "dual_small_title_black",
+    "yuushya1.10.2": "826"
+  },
+  {
+    "yuushya2.0.0": "dual_small_title_black",
+    "yuushya1.10.2": "827"
+  },
+  {
+    "yuushya2.0.0": "dual_small_title_black",
+    "yuushya1.10.2": "828"
+  },
+  {
+    "yuushya2.0.0": "dual_small_title_black",
+    "yuushya1.10.2": "829"
+  },
+  {
+    "yuushya2.0.0": "sign_28",
+    "yuushya1.10.2": "543"
+  },
+  {
+    "yuushya2.0.0": "sign_28",
+    "yuushya1.10.2": "350"
+  },
+  {
+    "yuushya2.0.0": "seasoning_box",
+    "yuushya1.10.2": "411"
+  },
+  {
+    "yuushya2.0.0": "steel_pot",
+    "yuushya1.10.2": "413"
+  },
+  {
+    "yuushya2.0.0": "steel_pot",
+    "yuushya1.10.2": "576"
+  },
+  {
+    "yuushya2.0.0": "slippers_white_wool",
+    "yuushya1.10.2": "225"
+  },
+  {
+    "yuushya2.0.0": "slippers_white_wool",
+    "yuushya1.10.2": "226"
+  },
+  {
+    "yuushya2.0.0": "hanger_rod_rail",
+    "yuushya1.10.2": "586"
+  },
+  {
+    "yuushya2.0.0": "mounted_mirror",
+    "yuushya1.10.2": "mirror"
+  },
+  {
+    "yuushya2.0.0": "bucket_white_concrete",
+    "yuushya1.10.2": "421"
+  },
+  {
+    "yuushya2.0.0": "fish_tank_bottom_a",
+    "yuushya1.10.2": "250"
+  },
+  {
+    "yuushya2.0.0": "fish_tank_middle_a",
+    "yuushya1.10.2": "251"
+  },
+  {
+    "yuushya2.0.0": "fish_tank_top_a",
+    "yuushya1.10.2": "252"
+  },
+  {
+    "yuushya2.0.0": "fish_tank_bottom_b",
+    "yuushya1.10.2": "253"
+  },
+  {
+    "yuushya2.0.0": "fish_tank_middle_b",
+    "yuushya1.10.2": "254"
+  },
+  {
+    "yuushya2.0.0": "fish_tank_top_b",
+    "yuushya1.10.2": "255"
+  },
+  {
+    "yuushya2.0.0": "potted_sapling",
+    "yuushya1.10.2": "550"
+  },
+  {
+    "yuushya2.0.0": "potted_evergreen",
+    "yuushya1.10.2": "449"
+  },
+  {
+    "yuushya2.0.0": "potted_blue_orchid",
+    "yuushya1.10.2": "flowerpot03"
+  },
+  {
+    "yuushya2.0.0": "mounted_fern_pot_white_concrete",
+    "yuushya1.10.2": "flowerpot26"
+  },
+  {
+    "yuushya2.0.0": "mounted_fern_pot_raw_acacia_wood",
+    "yuushya1.10.2": "flowerpot27"
+  },
+  {
+    "yuushya2.0.0": "mounted_fern",
+    "yuushya1.10.2": "b88"
+  },
+  {
+    "yuushya2.0.0": "allium",
+    "yuushya1.10.2": "plant00"
+  },
+  {
+    "yuushya2.0.0": "poppy",
+    "yuushya1.10.2": "plant01"
+  },
+  {
+    "yuushya2.0.0": "orchid",
+    "yuushya1.10.2": "plant02"
+  },
+  {
+    "yuushya2.0.0": "dandelion",
+    "yuushya1.10.2": "plant03"
+  },
+  {
+    "yuushya2.0.0": "oxeye_daisy",
+    "yuushya1.10.2": "plant04"
+  },
+  {
+    "yuushya2.0.0": "lily_of_the_valley",
+    "yuushya1.10.2": "plant05"
+  },
+  {
+    "yuushya2.0.0": "tall_orchid",
+    "yuushya1.10.2": "plant11"
+  },
+  {
+    "yuushya2.0.0": "tall_lilac",
+    "yuushya1.10.2": "plant12"
+  },
+  {
+    "yuushya2.0.0": "lower_grass",
+    "yuushya1.10.2": "plant13"
+  },
+  {
+    "yuushya2.0.0": "tall_grass",
+    "yuushya1.10.2": "plant14"
+  },
+  {
+    "yuushya2.0.0": "pole_black_concrete",
+    "yuushya1.10.2": "b61"
+  },
+  {
+    "yuushya2.0.0": "basket_raw_dark_oak_wood",
+    "yuushya1.10.2": "546"
+  },
+  {
+    "yuushya2.0.0": "flower_painting",
+    "yuushya1.10.2": "549"
+  },
+  {
+    "yuushya2.0.0": "clock_raw_birch_wood",
+    "yuushya1.10.2": "569"
+  },
+  {
+    "yuushya2.0.0": "clock_raw_oak_wood",
+    "yuushya1.10.2": "570"
+  },
+  {
+    "yuushya2.0.0": "round_clock_raw_oak_wood",
+    "yuushya1.10.2": "b51"
+  },
+  {
+    "yuushya2.0.0": "round_clock_raw_acacia_wood",
+    "yuushya1.10.2": "b52"
+  },
+  {
+    "yuushya2.0.0": "round_clock_raw_jungle_wood",
+    "yuushya1.10.2": "b53"
+  },
+  {
+    "yuushya2.0.0": "round_clock_raw_birch_wood",
+    "yuushya1.10.2": "b54"
+  },
+  {
+    "yuushya2.0.0": "round_clock_raw_dark_oak_wood",
+    "yuushya1.10.2": "b55"
+  },
+  {
+    "yuushya2.0.0": "bottle_container_raw_oak_wood",
+    "yuushya1.10.2": "580"
+  },
+  {
+    "yuushya2.0.0": "bottle_container_raw_oak_wood",
+    "yuushya1.10.2": "581"
+  },
+  {
+    "yuushya2.0.0": "showblock",
+    "yuushya1.10.2": "mixedblock"
+  }
+]

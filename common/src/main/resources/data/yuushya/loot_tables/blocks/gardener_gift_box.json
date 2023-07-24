@@ -1,0 +1,164 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 8,
+      "entries": [
+	  
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+			"name": "yuushya:potted_bamboo" },        
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:potted_flower_basket" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:potted_sapling" },
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:potted_jungle_sprout" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:potted_tall_oak" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 3 }],
+            "name": "yuushya:potted_tall_maple" },		
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:potted_tall_sakura" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:potted_cornflower" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:potted_cactus" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:potted_oak_sprout" },		
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:potted_sakura_sprout" },
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:potted_maple_sprout" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:potted_azure_bluet" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:potted_evergreen" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:potted_sprout" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:potted_sunflower" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:potted_allium" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:potted_bush" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:potted_fern" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:potted_white_tulip" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:potted_red_tulip" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:potted_pink_tulip" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:potted_blue_orchid" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:potted_orange_tulip" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:potted_yuuca" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:potted_lycoris" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:allium" },	
+									
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:poppy" },	
+									
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:orchid" },	
+									
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:dandelion" },	
+									
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:oxeye_daisy" },	
+									
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:lily_of_the_valley" },	
+									
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:azure_bluet" },	
+												
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:blooming_evergreen" },	
+												
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:evergreen" },		
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:tall_lilac" }
+              
+              	  
+               
+         
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion",
+		  "block": "yuushya:food_gift_box"
+        }
+      ]
+    }
+  ]
+}

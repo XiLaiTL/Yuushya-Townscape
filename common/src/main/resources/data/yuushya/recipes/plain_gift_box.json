@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "#X#"
+  ],
+  "key": {
+    "B": {
+      "tag": "yuushya:vanilla_wool_carpets"
+    },
+	"#": {
+      "tag": "minecraft:wool"
+    },	
+	"X": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "item": "yuushya:plain_gift_box",
+	"count": 1
+  }
+}

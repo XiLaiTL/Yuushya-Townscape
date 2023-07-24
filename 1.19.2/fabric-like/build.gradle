@@ -1,0 +1,16 @@
+architectury {
+    common(parent.enabled_platforms.split(","))
+}
+
+loom {
+    accessWidenerPath = project(":1.19.2:common").loom.accessWidenerPath
+}
+
+dependencies {
+    modImplementation "net.fabricmc:fabric-loader:${parent.fabric_loader_version}"
+    modApi "net.fabricmc.fabric-api:fabric-api:${parent.fabric_api_version}"
+    // Remove the next line if you don't want to depend on the API
+    modApi "dev.architectury:architectury-fabric:${parent.architectury_version}"
+
+    compileClasspath(project(path: ":1.19.2:common", configuration: "namedElements")) { transitive false }
+}

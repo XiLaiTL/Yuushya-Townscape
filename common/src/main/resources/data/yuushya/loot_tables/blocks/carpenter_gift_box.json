@@ -1,0 +1,193 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+	  
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+			"name": "yuushya:raw_acacia_wood" },        
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_birch_wood" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_dark_oak_wood" },
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_spruce_wood" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_oak_wood" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 3 }],
+            "name": "yuushya:raw_bamboo" },		
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_cherry_wood" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_jungle_wood" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_crimson_wood" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_warped_wood" },		
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_mangrove_wood" },
+
+            {	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+			"name": "yuushya:raw_acacia_table" },        
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_birch_table" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_dark_oak_table" },
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_spruce_table" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_oak_table" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 3 }],
+            "name": "yuushya:raw_bamboo_table" },		
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_cherry_table" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_jungle_table" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_crimson_table" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_warped_table" },		
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_mangrove_table" }, 
+            
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+			"name": "yuushya:raw_acacia_drawer" },        
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_birch_drawer" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_dark_oak_drawer" },
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_spruce_drawer" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_oak_drawer" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 3 }],
+            "name": "yuushya:raw_bamboo_drawer" },		
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_cherry_drawer" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_jungle_drawer" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_crimson_drawer" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_warped_drawer" },		
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_mangrove_drawer" },
+
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+			"name": "yuushya:raw_acacia_vertical_drawer" },        
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_birch_vertical_drawer" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_dark_oak_vertical_drawer" },
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_spruce_vertical_drawer" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_oak_vertical_drawer" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 3 }],
+            "name": "yuushya:raw_bamboo_vertical_drawer" },		
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_cherry_vertical_drawer" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_jungle_vertical_drawer" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_crimson_vertical_drawer" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_warped_vertical_drawer" },		
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 16 }],
+            "name": "yuushya:raw_mangrove_vertical_drawer" }			
+         
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion",
+		  "block": "yuushya:food_gift_box"
+        }
+      ]
+    }
+  ]
+}

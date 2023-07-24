@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BXB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:cobblestone"
+    },    
+	"X": {
+      "item": "yuushya:plain_gift_box"
+    }
+  },
+  "result": {
+    "item": "yuushya:carver_gift_box",
+	"count": 1
+  }
+}

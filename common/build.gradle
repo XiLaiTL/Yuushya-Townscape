@@ -1,0 +1,33 @@
+tasks.register('generateAssetsAndData', CreateAssetsAndDataTask){
+    dependsOn(processResources)
+    it.path = projectDir.toPath().resolve("./build/resources/main/")
+    onlyIf { !processResources.state.upToDate }
+    doLast {
+        println 'Assets and Data Build Success'
+    }
+    finalizedBy('copyResources')
+}
+
+tasks.register('copyResources') {
+    dependsOn('copyResources-1.16.5','copyResources-1.18.2','copyResources-1.19.2','copyResources-1.19.4','copyResources-1.20.1')
+}
+tasks.register('copyResources-1.16.5',Copy){
+    from("./build/resources/main/")
+    into("../1.16.5/common/build/resources/main/")
+}
+tasks.register('copyResources-1.18.2',Copy){
+    from("./build/resources/main/")
+    into("../1.18.2/common/build/resources/main/")
+}
+tasks.register('copyResources-1.19.2',Copy) {
+    from("./build/resources/main/")
+    into("../1.19.2/common/build/resources/main/")
+}
+tasks.register('copyResources-1.19.4',Copy) {
+    from("./build/resources/main/")
+    into("../1.19.4/common/build/resources/main/")
+}
+tasks.register('copyResources-1.20.1',Copy) {
+    from("./build/resources/main/")
+    into("../1.20.1/common/build/resources/main/")
+}

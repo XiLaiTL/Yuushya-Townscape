@@ -1,0 +1,9 @@
+{
+  "parent": "yuushya:item/template_wrench",
+  "textures": {
+    "nbt": "yuushya:item/wrench/scale",
+    "x": "yuushya:item/wrench/scale",
+    "y": "yuushya:item/wrench/scale",
+    "z": "yuushya:item/wrench/scale"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "yuushya",
+  "version": "${mod_version}",
+  "name": "${mod_name}",
+  "description": "${mod_description}",
+  "authors": [
+    "${mod_authors}"
+  ],
+  "contact": {
+    "homepage": "${mod_homepage}",
+    "sources": "${mod_source}"
+  },
+
+  "license": "${mod_licence}",
+  "icon": "pack.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.yuushya.fabric.YuushyaFabric"
+    ],
+    "client": [
+      "com.yuushya.fabric.YuushyaClientFabric"
+    ]
+  },
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.18.2",
+    "architectury": ">=4.10.88"
+  },
+  "mixins": [
+    "yuushya.mixins.json",
+    "yuushya-common.mixins.json"
+  ]
+}

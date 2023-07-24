@@ -1,0 +1,11 @@
+{
+  "parent": "yuushya:item/template_wrench_alt",
+  "textures": {
+    "layer0": "yuushya:item/rotate_x"
+  },
+      "overrides": [
+        { "predicate": { "direction": 0 }, "model": "yuushya:item/rotate_x" },
+		{ "predicate": { "direction": 0.1 }, "model": "yuushya:item/rotate_y" },
+        { "predicate": { "direction": 0.2 }, "model": "yuushya:item/rotate_z" }
+	]
+}

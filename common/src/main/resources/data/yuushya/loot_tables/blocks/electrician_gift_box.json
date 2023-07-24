@@ -1,0 +1,164 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 8,
+      "entries": [
+	  
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+			"name": "yuushya:air_conditioning_condenser" },        
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:meshed_air_conditioning_condenser" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:rusty_air_conditioning_condenser" },
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:old_tv" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:tv_online" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 3 }],
+            "name": "yuushya:mounted_tv_online" },		
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:tv" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:mounted_tv" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:vinyl_record_player" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:pc_case" },		
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:monitor" },
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:monitor_with_tablet" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:fan" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:fan_" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:floor_fan" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:floor_fan_" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:air_conditioner_floor" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:refrigerator" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:decorated_refrigerator" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:freezer" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:freezer_" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:vending_machine_blue_v" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:vending_machine_blue_h" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:vending_machine_red_v" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:vending_machine_red_h" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:vending_machine_gray_v" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:vending_machine_gray_h" },	
+									
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:street_light" },	
+									
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:oriental_lantern" },	
+									
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:goth_lantern" },	
+									
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:modern_lamp_0" },	
+									
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:modern_lamp_1" },	
+									
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:modern_lamp_2" },	
+												
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:desk_lamp_0" },	
+												
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:desk_lamp_1" },		
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:fluorescent_lamp" }
+              
+              	  
+               
+         
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion",
+		  "block": "yuushya:food_gift_box"
+        }
+      ]
+    }
+  ]
+}

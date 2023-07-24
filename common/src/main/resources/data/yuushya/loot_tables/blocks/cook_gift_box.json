@@ -1,0 +1,192 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 8,
+      "entries": [
+	  
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+			"name": "yuushya:electric_steamer" },        
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:bottle" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:bottles" },
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:blender" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:knife_rest" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 3 }],
+            "name": "yuushya:mortar_and_pestle" },		
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:wooden_mortar_and_pestle" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:pressure_cooker" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:casserole_0" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:casserole_1" },		
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:steel_pot" },
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:frying_pan" },	
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:gas_stove" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:peking_roast_duck" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:tanghulu" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:beef" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:pizza" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:sushi_set" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:coconut" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:melon" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:apple" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:green_apple" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:radish" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:jam" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:paste" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:seasoning_box" },	
+						
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:potato_chips" },	
+									
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:soda" },	
+									
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:different_soda" },	
+									
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:small_soda" },	
+									
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:croissant" },	
+									
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:milk_tea" },	
+									
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:chocolate_milk" },	
+												
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:strawberry_milk" },	
+												
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:sea_salt_tea" },		
+															
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:pudding" },		
+															
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:bread_with_egg" },		
+															
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:ice_cream_cup" },		
+															
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:macchiato" },		
+															
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:small_coffee" },		
+															
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:milk" },		
+															
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:snack" },		
+			
+			{	"type": "minecraft:item", "weight": 1,
+			"functions": [{ "function": "minecraft:set_count", "count": 1 }],
+            "name": "yuushya:chocolate_cake" }
+              
+              	  
+               
+         
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion",
+		  "block": "yuushya:food_gift_box"
+        }
+      ]
+    }
+  ]
+}
