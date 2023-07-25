@@ -3,7 +3,7 @@ architectury {
 }
 
 loom {
-    accessWidenerPath = project(":1.19.4:common").loom.accessWidenerPath
+    //accessWidenerPath = project(":1.19.4:common").loom.accessWidenerPath
 }
 
 dependencies {

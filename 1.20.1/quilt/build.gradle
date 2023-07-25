@@ -12,7 +12,7 @@ architectury {
 }
 
 loom {
-    accessWidenerPath = project(":1.19.4:common").loom.accessWidenerPath
+    //accessWidenerPath = project(":1.20.1:common").loom.accessWidenerPath
 }
 
 configurations {
@@ -33,10 +33,10 @@ dependencies {
         exclude group: "net.fabricmc.fabric-api"
     }
 
-    common(project(path: ":1.19.4:common", configuration: "namedElements")) { transitive false }
-    shadowCommon(project(path: ":1.19.4:common", configuration: "transformProductionQuilt")) { transitive false }
-    common(project(path: ":1.19.4:fabric-like", configuration: "namedElements")) { transitive false }
-    shadowCommon(project(path: ":1.19.4:fabric-like", configuration: "transformProductionQuilt")) { transitive false }
+    common(project(path: ":1.20.1:common", configuration: "namedElements")) { transitive false }
+    shadowCommon(project(path: ":1.20.1:common", configuration: "transformProductionQuilt")) { transitive false }
+    common(project(path: ":1.20.1:fabric-like", configuration: "namedElements")) { transitive false }
+    shadowCommon(project(path: ":1.20.1:fabric-like", configuration: "transformProductionQuilt")) { transitive false }
 }
 
 processResources {
@@ -68,7 +68,7 @@ jar {
 }
 
 sourcesJar {
-    def commonSources = project(":1.19.4:common").sourcesJar
+    def commonSources = project(":1.20.1:common").sourcesJar
     dependsOn commonSources
     from commonSources.archiveFile.map { zipTree(it) }
 }

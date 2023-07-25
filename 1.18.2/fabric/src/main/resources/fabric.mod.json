@@ -23,13 +23,13 @@
       "com.yuushya.fabric.YuushyaClientFabric"
     ]
   },
+  "mixins": [
+    "yuushya.mixins.json",
+    "yuushya-common.mixins.json"
+  ],
   "depends": {
     "fabric": "*",
     "minecraft": ">=1.18.2",
     "architectury": ">=4.10.88"
-  },
-  "mixins": [
-    "yuushya.mixins.json",
-    "yuushya-common.mixins.json"
-  ]
+  }
 }

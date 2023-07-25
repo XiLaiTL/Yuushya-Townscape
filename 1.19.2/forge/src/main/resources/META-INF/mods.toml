@@ -1,33 +1,36 @@
 modLoader = "javafml"
 loaderVersion = "[43,)"
 #issueTrackerURL = ""
-license = "Insert License Here"
+license = "GNU 3.0"
 
 [[mods]]
-modId = "examplemod"
-version = "${version}"
-displayName = "Example Mod"
-authors = "Me!"
+modId = "yuushya"
+version = "${mod_version}"
+displayName = "${mod_name}"
+logoFile = "pack.png"
+displayURL = "${mod_homepage}"
+credits = "${mod_credits}"
+authors = "${mod_authors}"
 description = '''
-This is an example description! Tell everyone what your mod is about!
-'''
+    ${mod_description}
+    '''
 #logoFile = ""
 
-[[dependencies.examplemod]]
+[[dependencies.yuushya]]
 modId = "forge"
 mandatory = true
 versionRange = "[43,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.yuushya]]
 modId = "minecraft"
 mandatory = true
 versionRange = "[1.19.2,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.yuushya]]
 modId = "architectury"
 mandatory = true
 versionRange = "[6.5.77,)"

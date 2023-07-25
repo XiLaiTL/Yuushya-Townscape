@@ -3,7 +3,7 @@ architectury {
 }
 
 loom {
-    accessWidenerPath = project(":1.19.4:common").loom.accessWidenerPath
+    //accessWidenerPath = project(":1.20.1:common").loom.accessWidenerPath
 }
 
 dependencies {
@@ -12,5 +12,5 @@ dependencies {
     // Remove the next line if you don't want to depend on the API
     modApi "dev.architectury:architectury-fabric:${parent.architectury_version}"
 
-    compileClasspath(project(path: ":1.19.4:common", configuration: "namedElements")) { transitive false }
+    compileClasspath(project(path: ":1.20.1:common", configuration: "namedElements")) { transitive false }
 }

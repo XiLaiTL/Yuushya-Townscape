@@ -8,14 +8,14 @@ architectury {
 }
 
 loom {
-    accessWidenerPath = project(":1.19.2:common").loom.accessWidenerPath
+    //accessWidenerPath = project(":1.19.2:common").loom.accessWidenerPath
 
     forge {
-        convertAccessWideners = true
-        extraAccessWideners.add loom.accessWidenerPath.get().asFile.name
+        //convertAccessWideners = true
+        //extraAccessWideners.add loom.accessWidenerPath.get().asFile.name
 
-        mixinConfig "examplemod-common.mixins.json"
-        mixinConfig "examplemod.mixins.json"
+        mixinConfig "yuushya-common.mixins.json"
+        mixinConfig "yuushya.mixins.json"
     }
 }
 
