@@ -40,12 +40,12 @@ subprojects {
             mod_authors: mod_authors,
             mod_description: mod_description,
             mod_licence:mod_licence]
-//    processResources{
-//        inputs.properties replaceProperties
-//        filesMatching(resourceTargets) {
-//            expand replaceProperties
-//        }
-//    }
+    processResources{
+        inputs.properties replaceProperties
+        filesMatching(resourceTargets) {
+            expand replaceProperties
+        }
+    }
 }
 
 allprojects {
