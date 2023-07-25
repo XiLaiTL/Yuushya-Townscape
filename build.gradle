@@ -24,17 +24,28 @@ allprojects {
     }
 }
 
-tasks.register("runClient-1.16.5-fabric"){dependsOn(':1.16.5:fabric:runClient')}
-tasks.register("runClient-1.16.5-forge"){dependsOn(':1.16.5:forge:runClient')}
-tasks.register("runClient-1.18.2-fabric"){dependsOn(':1.18.2:fabric:runClient')}
-tasks.register("runClient-1.18.2-forge"){dependsOn(':1.18.2:forge:runClient')}
-tasks.register("runClient-1.19.2-fabric"){dependsOn(':1.19.2:fabric:runClient')}
-tasks.register("runClient-1.19.2-forge"){dependsOn(':1.19.2:forge:runClient')}
-tasks.register("runClient-1.19.4-fabric"){dependsOn(':1.19.4:fabric:runClient')}
-tasks.register("runClient-1.19.4-forge"){dependsOn(':1.19.4:forge:runClient')}
-tasks.register("runClient-1.20.1-fabric"){dependsOn(':1.20.1:fabric:runClient')}
-tasks.register("runClient-1.20.1-forge"){dependsOn(':1.20.1:forge:runClient')}
 
-tasks.register("build-1.16.5"){
-    dependsOn(':1.16.5:fabric:build')
+['1.16.5','1.18.2','1.19.2','1.19.4','1.20.1'].forEach {ver->
+    ['forge','fabric'].forEach {api->
+        tasks.register("runClient-${ver}-${api}"){
+            dependsOn(":${ver}:${api}:runClient")
+        }
+        tasks.register("build-jar-${ver}-${api}",Copy){
+            dependsOn(":${ver}:${api}:build")
+            with{
+                from("./${ver}/${api}/build/libs/yuushya-${mod_version}.jar")
+                rename {"yuushya-${ver}-${api}-${mod_version}.jar"}
+                into("./build/libs")
+                duplicatesStrategy(DuplicatesStrategy.INHERIT)
+            }
+        }
+    }
+}
+
+tasks.register("build-jar"){
+    ['1.16.5','1.18.2','1.19.2','1.19.4','1.20.1'].forEach {ver->
+        ['forge','fabric'].forEach { api ->
+            dependsOn "build-jar-${ver}-${api}"
+        }
+    }
 }

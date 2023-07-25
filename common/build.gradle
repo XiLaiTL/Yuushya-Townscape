@@ -9,27 +9,14 @@ tasks.register('generateAssetsAndData', CreateAssetsAndDataTask){
 }
 
 tasks.register('copyResources') {
-    dependsOn('copyResources-1.16.5','copyResources-1.18.2','copyResources-1.19.2','copyResources-1.19.4','copyResources-1.20.1')
+    dependsOn(['1.16.5', '1.18.2', '1.19.2', '1.19.4', '1.20.1'].collect {"copyResources-${it}"})
 }
-tasks.register('copyResources-1.16.5',Copy){
-    from("./build/resources/main/"){
-        exclude("yuushya-common.mixins.json")
+
+['1.16.5','1.18.2','1.19.2','1.19.4','1.20.1'].forEach {ver->
+    tasks.register("copyResources-${ver}",Copy){
+        from("./build/resources/main/")
+        into("../${ver}/common/build/resources/main/")
     }
-    into("../1.16.5/common/build/resources/main/")
+
 }
-tasks.register('copyResources-1.18.2',Copy){
-    from("./build/resources/main/")
-    into("../1.18.2/common/build/resources/main/")
-}
-tasks.register('copyResources-1.19.2',Copy) {
-    from("./build/resources/main/")
-    into("../1.19.2/common/build/resources/main/")
-}
-tasks.register('copyResources-1.19.4',Copy) {
-    from("./build/resources/main/")
-    into("../1.19.4/common/build/resources/main/")
-}
-tasks.register('copyResources-1.20.1',Copy) {
-    from("./build/resources/main/")
-    into("../1.20.1/common/build/resources/main/")
-}
+
