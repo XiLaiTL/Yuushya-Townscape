@@ -12,8 +12,8 @@
         },
         {
             "type": "directory",
-            "source": "block_",
-            "prefix": "block_/"
+            "source": "0extra_building_block",
+            "prefix": "0extra_building_block/"
         },
         {
             "type": "directory",
