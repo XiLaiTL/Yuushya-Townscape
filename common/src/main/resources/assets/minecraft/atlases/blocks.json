@@ -7,17 +7,17 @@
         },
         {
             "type": "directory",
-            "source": "yuushya:block_",
+            "source": "block_",
             "prefix": "block_/"
         },
         {
             "type": "directory",
-            "source": "yuushya:0extra_building_block",
+            "source": "0extra_building_block",
             "prefix": "0extra_building_block/"
         },
         {
             "type": "directory",
-            "source": "yuushya:0extra_building_material",
+            "source": "0extra_building_material",
             "prefix": "0extra_building_material/"
         },		
         {
