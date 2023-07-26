@@ -61,7 +61,10 @@ public class YuushyaRegistries {
             switch (block.classType){
                 case "_comment","class"->{}
                 case "remain"->{BlockRemain.put(block.name, block);}
-                case "template"->{BlockTemplate.put(block.name, block);}
+                case "template"->{
+                    RegisterList.add(()->ITEMS.register(block.name,()->new TemplateBlockItem(new Item.Properties().arch$tab(YuushyaCreativeModeTab.toGroup(block.itemGroup)),1,block.name)));
+                    BlockTemplate.put(block.name, block);
+                }
                 //case "block"->{BlockOnly.put(block.name,block);}
                 default -> {
                     BlockALL.put(block.name, block);
@@ -91,8 +94,6 @@ public class YuushyaRegistries {
             BlockALL.put(block.name, block);
         }
         for (YuushyaRegistryData.Block templateBlock:BlockTemplate.values()){
-            if(templateBlock.itemGroup==null) templateBlock.itemGroup = "yuushya_template";
-            RegisterList.add(()->ITEMS.register(templateBlock.name,()->new TemplateBlockItem(new Item.Properties().arch$tab(YuushyaCreativeModeTab.toGroup(templateBlock.itemGroup)),1,templateBlock.name)));
             JsonObject templateBlockJson=NormalGSON.toJsonTree(templateBlock,YuushyaRegistryData.Block.class).getAsJsonObject();
             List<YuushyaRegistryData.Block> list=getTemplateUsageList(templateBlock);
             for(YuushyaRegistryData.Block block:list){

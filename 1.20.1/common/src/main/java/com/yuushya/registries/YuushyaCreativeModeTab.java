@@ -36,33 +36,11 @@ public class YuushyaCreativeModeTab {
     public static final RegistrySupplier<CreativeModeTab> YUUSHYA_TRAFFIC = YuushyaCreativeModeTab.create("traffic", ()->YuushyaRegistries.ITEMS.getInstanceOrDefault("electric_motorcycle", Items.APPLE));
     public static final RegistrySupplier<CreativeModeTab> YUUSHYA_ITEM = YuushyaCreativeModeTab.create("item", ()->YuushyaRegistries.ITEMS.getInstanceOrDefault("pos_trans_item", Items.APPLE));
     public static final RegistrySupplier<CreativeModeTab> YUUSHYA_STRUCTURE = YuushyaCreativeModeTab.create("structure", ()->YuushyaRegistries.ITEMS.getInstanceOrDefault("maple_tree", Items.APPLE));
-    public static final RegistrySupplier<CreativeModeTab> YUUSHYA_TEMPLATE = YuushyaCreativeModeTab.create("template",()->YuushyaRegistries.ITEMS.getInstanceOrDefault("ridge", Items.APPLE));
+//    public static final RegistrySupplier<CreativeModeTab> YUUSHYA_TEMPLATE = YuushyaCreativeModeTab.create("template",()->YuushyaRegistries.ITEMS.getInstanceOrDefault("ridge", Items.APPLE));
 
     private YuushyaCreativeModeTab() {}
     public static RegistrySupplier<CreativeModeTab> create(String name, Supplier<Item> item){
         return TABS.register(name,()->CreativeTabRegistry.create(Component.translatable("itemGroup.yuushya."+name),()->new ItemStack(item.get())));
-    }
-
-    public static ItemLike getBlueprint(String CreativeModeTab){
-        return switch (CreativeModeTab) {
-            case "yuushya_extrablocks" -> YuushyaRegistries.ITEMS.get("block_blueprint").get();
-            case "yuushya_wood" -> YuushyaRegistries.ITEMS.get("block_blueprint").get();
-            case "yuushya_stone" -> YuushyaRegistries.ITEMS.get("block_blueprint").get();
-            case "yuushya_fabric" -> YuushyaRegistries.ITEMS.get("fabric_blueprint").get();
-            case "yuushya_furniture" -> YuushyaRegistries.ITEMS.get("furniture_blueprint").get();
-            case "yuushya_lighting" -> YuushyaRegistries.ITEMS.get("lighting_blueprint").get();
-            case "yuushya_electrical_appliance" -> YuushyaRegistries.ITEMS.get("lighting_blueprint").get();
-            case "yuushya_living_being" -> YuushyaRegistries.ITEMS.get("living_being_blueprint").get();
-            case "yuushya_signs" -> YuushyaRegistries.ITEMS.get("sign_blueprint").get();
-            case "yuushya_catering" -> YuushyaRegistries.ITEMS.get("catering_blueprint").get();
-            case "yuushya_store" -> YuushyaRegistries.ITEMS.get("store_blueprint").get();
-            case "yuushya_extrashapes" -> YuushyaRegistries.ITEMS.get("extra_shapes_blueprint").get();
-            case "yuushya_window" -> YuushyaRegistries.ITEMS.get("window_blueprint").get();
-            case "yuushya_infrastructure" -> YuushyaRegistries.ITEMS.get("facility_blueprint").get();
-            case "yuushya_traffic" -> YuushyaRegistries.ITEMS.get("traffic_blueprint").get();
-            //case "yuushya_structure" -> YuushyaRegistries.ITEMS.get("extra_shapes_blueprint").get();
-            default -> YuushyaRegistries.ITEMS.get("extra_shapes_blueprint").get();
-        };
     }
 
     public static RegistrySupplier<CreativeModeTab> toGroup(String CreativeModeTab) {
@@ -83,7 +61,7 @@ public class YuushyaCreativeModeTab {
             case "yuushya_infrastructure" -> YuushyaCreativeModeTab.YUUSHYA_INFRASTRUCTURE;
             case "yuushya_traffic" -> YuushyaCreativeModeTab.YUUSHYA_TRAFFIC;
             case "yuushya_structure" -> YuushyaCreativeModeTab.YUUSHYA_STRUCTURE;
-            case "yuushya_template" -> YuushyaCreativeModeTab.YUUSHYA_TEMPLATE;
+            //case "yuushya_template" -> YuushyaCreativeModeTab.YUUSHYA_TEMPLATE;
             default -> YuushyaCreativeModeTab.YUUSHYA_ITEM;
         };
     }
