@@ -25,10 +25,7 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import static com.yuushya.registries.YuushyaRegistryConfig.*;
 import static com.yuushya.utils.GsonTools.NormalGSON;
@@ -43,7 +40,7 @@ public class YuushyaRegistries {
     public static final YuushyaDeferredRegister<ParticleType<?>> PARTICLE_TYPES = new YuushyaDeferredRegister<>(Registry.PARTICLE_TYPE_REGISTRY);
 
     public static final Map<String,YuushyaRegistryData.Block> BlockALL=new HashMap<>();
-    public static final Map<String,YuushyaRegistryData.Block> BlockTemplate=new HashMap<>();
+    public static final Map<String,YuushyaRegistryData.Block> BlockTemplate=new LinkedHashMap<>();
     public static final Map<String,YuushyaRegistryData.Block> BlockOnly=new HashMap<>();
     public static final Map<String,YuushyaRegistryData.Block> BlockRemain=new HashMap<>();
     public static final Map<String,YuushyaRegistryData.Block> TextureTypeMap=new HashMap<>();
@@ -57,7 +54,10 @@ public class YuushyaRegistries {
             switch (block.classType){
                 case "_comment","class"->{}
                 case "remain"->{BlockRemain.put(block.name, block);}
-                case "template"->{BlockTemplate.put(block.name, block);}
+                case "template"->{
+                    RegisterList.add(()->ITEMS.register(block.name,()->new TemplateBlockItem(new Item.Properties().tab(YuushyaCreativeModeTab.toGroup(block.itemGroup)),1,block.name)));
+                    BlockTemplate.put(block.name, block);
+                }
                 //case "block"->{BlockOnly.put(block.name,block);}
                 default -> {
                     BlockALL.put(block.name, block);
@@ -87,8 +87,6 @@ public class YuushyaRegistries {
             BlockALL.put(block.name, block);
         }
         for (YuushyaRegistryData.Block templateBlock:BlockTemplate.values()){
-            if(templateBlock.itemGroup==null) templateBlock.itemGroup = "yuushya_template";
-            RegisterList.add(()->ITEMS.register(templateBlock.name,()->new TemplateBlockItem(new Item.Properties().tab(YuushyaCreativeModeTab.toGroup(templateBlock.itemGroup)),1,templateBlock.name)));
             JsonObject templateBlockJson=NormalGSON.toJsonTree(templateBlock,YuushyaRegistryData.Block.class).getAsJsonObject();
             List<YuushyaRegistryData.Block> list=getTemplateUsageList(templateBlock);
             for(YuushyaRegistryData.Block block:list){

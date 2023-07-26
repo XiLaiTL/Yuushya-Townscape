@@ -28,50 +28,13 @@ public class YuushyaCreativeModeTab {
     public static final CreativeModeTab YUUSHYA_STORE = YuushyaCreativeModeTab.create("store", ()->YuushyaRegistries.ITEMS.getInstanceOrDefault("goods_shelf_jam", Items.APPLE));
     public static final CreativeModeTab YUUSHYA_INFRASTRUCTURE = YuushyaCreativeModeTab.create("infrastructure", ()->YuushyaRegistries.ITEMS.getInstanceOrDefault("crash_barrel", Items.APPLE));
     public static final CreativeModeTab YUUSHYA_TRAFFIC = YuushyaCreativeModeTab.create("traffic", ()->YuushyaRegistries.ITEMS.getInstanceOrDefault("electric_motorcycle", Items.APPLE));
-    public static final CreativeModeTab YUUSHYA_ITEM = YuushyaCreativeModeTab.create("item", ()->YuushyaRegistries.ITEMS.getInstanceOrDefault("pos_trans_item", Items.APPLE));
+    public static final CreativeModeTab YUUSHYA_ITEM = YuushyaCreativeModeTab.create("item", ()->YuushyaRegistries.ITEMS.getInstanceOrDefault("form_trans_item", Items.APPLE));
     public static final CreativeModeTab YUUSHYA_STRUCTURE = YuushyaCreativeModeTab.create("structure", ()->YuushyaRegistries.ITEMS.getInstanceOrDefault("maple_tree", Items.APPLE));
-    public static final CreativeModeTab YUUSHYA_TEMPLATE = YuushyaCreativeModeTab.create("template",()->YuushyaRegistries.ITEMS.getInstanceOrDefault("ridge", Items.APPLE));
+    //public static final CreativeModeTab YUUSHYA_TEMPLATE = YuushyaCreativeModeTab.create("template",()->YuushyaRegistries.ITEMS.getInstanceOrDefault("ridge", Items.APPLE));
 
     private YuushyaCreativeModeTab() {}
     public static CreativeModeTab create(String name, Supplier<Item> item){
         return CreativeTabs.create(new ResourceLocation(Yuushya.MOD_ID,name),()->new ItemStack(item.get()));
-    }
-
-    public static ItemLike getBlueprint(String CreativeModeTab){
-        switch (CreativeModeTab) {
-            case "yuushya_extrablocks":
-                return YuushyaRegistries.ITEMS.get("block_blueprint").get();
-            case "yuushya_wood":
-                return YuushyaRegistries.ITEMS.get("block_blueprint").get();
-            case "yuushya_stone":
-                return YuushyaRegistries.ITEMS.get("block_blueprint").get();
-            case "yuushya_fabric":
-                return YuushyaRegistries.ITEMS.get("fabric_blueprint").get();
-            case "yuushya_furniture":
-                return YuushyaRegistries.ITEMS.get("furniture_blueprint").get();
-            case "yuushya_lighting":
-                return YuushyaRegistries.ITEMS.get("lighting_blueprint").get();
-            case "yuushya_electrical_appliance":
-                return YuushyaRegistries.ITEMS.get("lighting_blueprint").get();
-            case "yuushya_living_being":
-                return YuushyaRegistries.ITEMS.get("living_being_blueprint").get();
-            case "yuushya_signs":
-                return YuushyaRegistries.ITEMS.get("sign_blueprint").get();
-            case "yuushya_catering":
-                return YuushyaRegistries.ITEMS.get("catering_blueprint").get();
-            case "yuushya_store":
-                return YuushyaRegistries.ITEMS.get("store_blueprint").get();
-            case "yuushya_extrashapes":
-                return YuushyaRegistries.ITEMS.get("extra_shapes_blueprint").get();
-            case "yuushya_window":
-                return YuushyaRegistries.ITEMS.get("window_blueprint").get();
-            case "yuushya_infrastructure":
-                return YuushyaRegistries.ITEMS.get("facility_blueprint").get();
-            case "yuushya_traffic":
-                return YuushyaRegistries.ITEMS.get("traffic_blueprint").get();
-            default:
-                return YuushyaRegistries.ITEMS.get("extra_shapes_blueprint").get();
-        }
     }
 
     public static CreativeModeTab toGroup(String CreativeModeTab) {
@@ -108,8 +71,8 @@ public class YuushyaCreativeModeTab {
                 return YuushyaCreativeModeTab.YUUSHYA_TRAFFIC;
             case "yuushya_structure":
                 return YuushyaCreativeModeTab.YUUSHYA_STRUCTURE;
-            case "yuushya_template":
-                return YuushyaCreativeModeTab.YUUSHYA_TEMPLATE;
+//            case "yuushya_template":
+//                return YuushyaCreativeModeTab.YUUSHYA_TEMPLATE;
             default:
                 return YuushyaCreativeModeTab.YUUSHYA_ITEM;
         }

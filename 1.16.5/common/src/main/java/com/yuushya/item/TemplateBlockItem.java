@@ -126,4 +126,9 @@ public class TemplateBlockItem extends AbstractYuushyaItem {
             }
         index++;}
     }
+
+    @Override
+    public boolean isFoil(ItemStack stack) {
+        return true;
+    }
 }
