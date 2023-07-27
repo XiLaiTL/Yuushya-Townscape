@@ -41,13 +41,6 @@
 		{"class_type": "BlueprintItem", "name": "extra_shapes_blueprint",   "item_group": "yuushya_item","properties": {"max_count": 64,"lines": 1, "rarity": "common"}},
 		{"class_type": "BlueprintItem", "name": "window_blueprint",  "item_group": "yuushya_item","properties": {"max_count": 64,"lines": 1, "rarity": "common"}},
 
-		{"class_type": "", "name": "the_encyclopedia",   "item_group": "yuushya_item","properties": {"max_count": 16,"lines": 1, "rarity": "common"}},
-		{"class_type": "", "name": "shimmering_pearl",   "item_group": "yuushya_item","properties": {"max_count": 16,"lines": 1, "rarity": "common"}},
-		{"class_type": "", "name": "everlasting_wood",   "item_group": "yuushya_item","properties": {"max_count": 16,"lines": 1, "rarity": "common"}},
-		{"class_type": "", "name": "sprouting_dirt",   "item_group": "yuushya_item","properties": {"max_count": 16,"lines": 1, "rarity": "common"}},
-		{"class_type": "", "name": "floating_bloom",   "item_group": "yuushya_item","properties": {"max_count": 16,"lines": 1, "rarity": "common"}},
-		{"class_type": "", "name": "sparking_flame",   "item_group": "yuushya_item","properties": {"max_count": 16,"lines": 1, "rarity": "common"}},
-
 		{"class_type": "HatItem", "name": "pictor",   "item_group": "yuushya_item","properties": {"max_count": 64,"lines": 1, "rarity": "epic"}},
 		{"class_type": "HatItem", "name": "bismuth_crystal",   "item_group": "yuushya_item","properties": {"max_count": 64,"lines": 1, "rarity": "epic"}},
 		{"class_type": "HatItem", "name": "tri_legged_chair",   "item_group": "yuushya_item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
