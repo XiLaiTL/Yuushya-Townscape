@@ -5,7 +5,6 @@ tasks.register('generateAssetsAndData', CreateAssetsAndDataTask){
     doLast {
         println 'Assets and Data Build Success'
     }
-    finalizedBy('copyResources')
 }
 
 tasks.register('copyResources') {

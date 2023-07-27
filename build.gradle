@@ -53,9 +53,16 @@ tasks.register("build-jar"){
 }
 
 tasks.register("clean-all"){
+    dependsOn(":common:clean")
     versions.forEach { ver ->
         (["common"]+apis).forEach { api ->
             dependsOn(":${ver}:${api}:clean")
         }
     }
 }
+
+
+def build_tasks = versions.collectMany {ver-> apis.collect {api-> "build-jar-${ver}-${api}"}}
+
+tasks.register("build-chain1",SequenceTask,["clean-all",":common:generateAssetsAndData"]+build_tasks.subList(0, build_tasks.size()/2 as int))
+tasks.register("build-chain2",SequenceTask,build_tasks.subList(build_tasks.size()/2 as int,build_tasks.size()))
