@@ -763,7 +763,7 @@
 		{
 			"class_type": "block", "name": "a_black_blindwall",
 			"texture": {
-				
+
 				"value":"yuushya:block_/blindwall/black_blindwall",
 				"set":  [
 					"all#yuushya:block_/blindwall/black_blindwall",
@@ -774,7 +774,7 @@
 		{
 			"class_type": "block", "name": "a_blue_blindwall",
 			"texture": {
-				
+
 				"value":"yuushya:block_/blindwall/blue_blindwall",
 				"set":  [
 					"all#yuushya:block_/blindwall/blue_blindwall",
@@ -785,7 +785,7 @@
 		{
 			"class_type": "block", "name": "a_brown_blindwall",
 			"texture": {
-				
+
 				"value":"yuushya:block_/blindwall/brown_blindwall",
 				"set":  [
 					"all#yuushya:block_/blindwall/brown_blindwall",
@@ -796,7 +796,7 @@
 		{
 			"class_type": "block", "name": "a_cyan_blindwall",
 			"texture": {
-				
+
 				"value":"yuushya:block_/blindwall/cyan_blindwall",
 				"set":  [
 					"all#yuushya:block_/blindwall/cyan_blindwall",
@@ -807,7 +807,7 @@
 		{
 			"class_type": "block", "name": "a_gray_blindwall",
 			"texture": {
-				
+
 				"value":"yuushya:block_/blindwall/gray_blindwall",
 				"set":  [
 					"all#yuushya:block_/blindwall/gray_blindwall",
@@ -818,7 +818,7 @@
 		{
 			"class_type": "block", "name": "a_green_blindwall",
 			"texture": {
-				
+
 				"value":"yuushya:block_/blindwall/green_blindwall",
 				"set":  [
 					"all#yuushya:block_/blindwall/green_blindwall",
@@ -829,7 +829,7 @@
 		{
 			"class_type": "block", "name": "a_light_blue_blindwall",
 			"texture": {
-				
+
 				"value":"yuushya:block_/blindwall/light_blue_blindwall",
 				"set":  [
 					"all#yuushya:block_/blindwall/light_blue_blindwall",
@@ -840,7 +840,7 @@
 		{
 			"class_type": "block", "name": "a_light_gray_blindwall",
 			"texture": {
-				
+
 				"value":"yuushya:block_/blindwall/light_gray_blindwall",
 				"set":  [
 					"all#yuushya:block_/blindwall/light_gray_blindwall",
@@ -851,7 +851,7 @@
 		{
 			"class_type": "block", "name": "a_lime_blindwall",
 			"texture": {
-				
+
 				"value":"yuushya:block_/blindwall/lime_blindwall",
 				"set":  [
 					"all#yuushya:block_/blindwall/lime_blindwall",
@@ -862,7 +862,7 @@
 		{
 			"class_type": "block", "name": "a_magenta_blindwall",
 			"texture": {
-				
+
 				"value":"yuushya:block_/blindwall/magenta_blindwall",
 				"set":  [
 					"all#yuushya:block_/blindwall/magenta_blindwall",
@@ -873,7 +873,7 @@
 		{
 			"class_type": "block", "name": "a_orange_blindwall",
 			"texture": {
-				
+
 				"value":"yuushya:block_/blindwall/orange_blindwall",
 				"set":  [
 					"all#yuushya:block_/blindwall/orange_blindwall",
@@ -884,7 +884,7 @@
 		{
 			"class_type": "block", "name": "a_pink_blindwall",
 			"texture": {
-				
+
 				"value":"yuushya:block_/blindwall/pink_blindwall",
 				"set":  [
 					"all#yuushya:block_/blindwall/pink_blindwall",
@@ -895,7 +895,7 @@
 		{
 			"class_type": "block", "name": "a_purple_blindwall",
 			"texture": {
-				
+
 				"value":"yuushya:block_/blindwall/purple_blindwall",
 				"set":  [
 					"all#yuushya:block_/blindwall/purple_blindwall",
@@ -906,7 +906,7 @@
 		{
 			"class_type": "block", "name": "a_red_blindwall",
 			"texture": {
-				
+
 				"value":"yuushya:block_/blindwall/red_blindwall",
 				"set":  [
 					"all#yuushya:block_/blindwall/red_blindwall",
@@ -917,7 +917,7 @@
 		{
 			"class_type": "block", "name": "a_white_blindwall",
 			"texture": {
-				
+
 				"value":"yuushya:block_/blindwall/white_blindwall",
 				"set":  [
 					"all#yuushya:block_/blindwall/white_blindwall",
@@ -928,7 +928,7 @@
 		{
 			"class_type": "block", "name": "a_yellow_blindwall",
 			"texture": {
-				
+
 				"value":"yuushya:block_/blindwall/yellow_blindwall",
 				"set":  [
 					"all#yuushya:block_/blindwall/yellow_blindwall",
@@ -1650,6 +1650,7 @@
 		{
 			"class_type": "block", "name": "smooth_dark_stonetile", "item_group": "yuushya_stone",
 			"texture": {
+				"type": "misc",
 				"value":"yuushya:block_/stone/smooth_dark_stonetile",
 				"set":  [
 					"all#yuushya:block_/stone/smooth_dark_stonetile","sides#yuushya:block_/stone/smooth_dark_stonetile","top#yuushya:block_/stone/smooth_dark_stonetile"]}
@@ -1658,6 +1659,7 @@
 		{
 			"class_type": "block", "name": "smooth_sandtile", "item_group": "yuushya_stone",
 			"texture": {
+				"type": "misc",
 				"value":"yuushya:block_/stone/smooth_sandtile",
 				"set":  [
 					"all#yuushya:block_/stone/smooth_sandtile","sides#yuushya:block_/stone/smooth_sandtile","top#yuushya:block_/stone/smooth_sandtile"]}
@@ -1666,6 +1668,7 @@
 		{
 			"class_type": "block", "name": "smooth_stonetile", "item_group": "yuushya_stone",
 			"texture": {
+				"type": "misc",
 				"value":"yuushya:block_/stone/smooth_stonetile",
 				"set":  [
 					"all#yuushya:block_/stone/smooth_stonetile","sides#yuushya:block_/stone/smooth_stonetile","top#yuushya:block_/stone/smooth_stonetile"]}
@@ -1798,6 +1801,7 @@
 		{
 			"class_type": "block", "name": "marble_cobblestone", "item_group": "yuushya_stone",
 			"texture": {
+				"type": "misc",
 				"value":"yuushya:block_/stone/marble_cobblestone",
 				"set":  [
 					"all#yuushya:block_/stone/marble_cobblestone","sides#yuushya:block_/stone/marble_cobblestone","top#yuushya:block_/stone/marble_cobblestone"]}
@@ -1805,6 +1809,7 @@
 		{
 			"class_type": "block", "name": "egg_cobblestone", "item_group": "yuushya_stone",
 			"texture": {
+				"type": "misc",
 				"value":"yuushya:block_/stone/egg_cobblestone",
 				"set":  [
 					"all#yuushya:block_/stone/egg_cobblestone","sides#yuushya:block_/stone/egg_cobblestone","top#yuushya:block_/stone/egg_cobblestone"]}
@@ -1865,6 +1870,13 @@
 
 
 		{"name": "~Vanilla-Imported_Texture_Library_原版引用纹理库", "class_type": "_comment" },
+
+		{
+			"class_type": "remain", "name": "minecraft:stone",
+			"texture": {
+				"type": "misc",
+				"set": ["all#minecraft:block/stone","sides#minecraft:block/stone","top#minecraft:block/stone"]}
+		},
 
 		{
 			"class_type": "remain", "name": "minecraft:cobblestone",
@@ -2766,7 +2778,7 @@
 		{
 			"name": "frame_left",
 			"blockstate": { "forms": [["yuushya:template/frame_vl"]], "kit": "normal"}, "item_group": "yuushya_extrashapes",
-			"render_type": "cutout", 
+			"render_type": "cutout",
 			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
