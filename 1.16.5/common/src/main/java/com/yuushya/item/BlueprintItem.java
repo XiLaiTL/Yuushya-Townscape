@@ -1,6 +1,7 @@
 package com.yuushya.item;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -32,6 +33,6 @@ public class BlueprintItem  extends AbstractYuushyaItem {
     }
 
     public MenuProvider getMenuProvider(Level level, BlockPos pos, ItemStack itemStack){
-        return new SimpleMenuProvider((i, inventory, _player) -> getStonecutterMenu(i,inventory,level,pos,itemStack) , getDescription());
+        return new SimpleMenuProvider((i, inventory, _player) -> getStonecutterMenu(i,inventory,level,pos,itemStack) , new TranslatableComponent(this.getDescriptionId()));
     }
 }

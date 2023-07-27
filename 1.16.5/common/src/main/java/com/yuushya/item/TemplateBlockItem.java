@@ -108,7 +108,7 @@ public class TemplateBlockItem extends AbstractYuushyaItem {
         };
     }
     public MenuProvider getMenuProvider(Level level, BlockPos pos, ItemStack itemStack){
-        return new SimpleMenuProvider((i, inventory, _player) -> getStonecutterMenu(i,inventory,level,pos,itemStack) , getDescription());
+        return new SimpleMenuProvider((i, inventory, _player) -> getStonecutterMenu(i,inventory,level,pos,itemStack) , new TranslatableComponent(this.getDescriptionId()));
     }
 
     @Override
