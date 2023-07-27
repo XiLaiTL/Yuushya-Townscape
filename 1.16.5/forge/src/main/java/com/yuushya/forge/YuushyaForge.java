@@ -9,8 +9,10 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 public class YuushyaForge {
     public YuushyaForge() {
         // Submit our event bus to let architectury register our content on the right time
-        if(!EventBuses.getModEventBus(Yuushya.MOD_ID).isPresent())
-            EventBuses.registerModEventBus(Yuushya.MOD_ID, FMLJavaModLoadingContext.get().getModEventBus());
+        try{
+            if(!EventBuses.getModEventBus(Yuushya.MOD_ID).isPresent())
+                EventBuses.registerModEventBus(Yuushya.MOD_ID, FMLJavaModLoadingContext.get().getModEventBus());
+        } catch (IllegalStateException e) {}
         Yuushya.init();
     }
 }
