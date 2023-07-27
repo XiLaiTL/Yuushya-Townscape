@@ -24,9 +24,11 @@ allprojects {
     }
 }
 
+def versions = ['1.16.5','1.18.2','1.19.2','1.19.4','1.20.1'];
+def apis = ['forge','fabric']
 
-['1.16.5','1.18.2','1.19.2','1.19.4','1.20.1'].forEach {ver->
-    ['forge','fabric'].forEach {api->
+versions.forEach {ver->
+    apis.forEach {api->
         tasks.register("runClient-${ver}-${api}"){
             dependsOn(":${ver}:${api}:runClient")
         }
@@ -43,9 +45,17 @@ allprojects {
 }
 
 tasks.register("build-jar"){
-    ['1.16.5','1.18.2','1.19.2','1.19.4','1.20.1'].forEach {ver->
-        ['forge','fabric'].forEach { api ->
+    versions.forEach {ver->
+        apis.forEach { api ->
             dependsOn "build-jar-${ver}-${api}"
+        }
+    }
+}
+
+tasks.register("clean-all"){
+    versions.forEach { ver ->
+        ["common"]+apis.forEach { api ->
+            dependsOn(":${ver}:${api}:clean")
         }
     }
 }
