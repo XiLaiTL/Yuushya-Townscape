@@ -12,7 +12,7 @@ public class YuushyaForge {
         try{
             if(!EventBuses.getModEventBus(Yuushya.MOD_ID).isPresent())
                 EventBuses.registerModEventBus(Yuushya.MOD_ID, FMLJavaModLoadingContext.get().getModEventBus());
-        } catch (IllegalStateException e) {}
+        } catch (IllegalStateException ignored) {}
         Yuushya.init();
     }
 }
