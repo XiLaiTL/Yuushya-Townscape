@@ -54,7 +54,7 @@ tasks.register("build-jar"){
 
 tasks.register("clean-all"){
     versions.forEach { ver ->
-        ["common"]+apis.forEach { api ->
+        (["common"]+apis).forEach { api ->
             dependsOn(":${ver}:${api}:clean")
         }
     }
