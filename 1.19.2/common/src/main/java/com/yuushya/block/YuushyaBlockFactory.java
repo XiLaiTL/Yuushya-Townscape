@@ -27,6 +27,7 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.AttachFace;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.Property;
+import net.minecraft.world.level.material.Material;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -113,6 +114,7 @@ public class YuushyaBlockFactory{
     }
 
     public static BlockBehaviour.Properties getBlockProperties(YuushyaRegistryData.Block.Properties yuushyaBlockProperties){
+        if(yuushyaBlockProperties == null) return BlockBehaviour.Properties.of(Material.METAL);
         BlockBehaviour.Properties blockProperties = BlockBehaviour.Properties
                 .of(toBlockMaterial(yuushyaBlockProperties.material));
         return getBlockProperties(blockProperties,yuushyaBlockProperties);

@@ -210,6 +210,22 @@
 			"properties": { "hardness": 1, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": true, "is_delicate": false }
 		},
 
+		{
+			"name": "CableBlock",
+			"render_type": "cutout",
+			"auto_generated": {  "collision": "detail" },
+			"class_type": "class",
+			"properties": { "hardness": 1, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": true, "is_delicate": false }
+		},
+
+		{
+			"name": "CablePostBlock",
+			"render_type": "cutout",
+			"auto_generated": { "recipe": true, "loot_table": true,  "collision": "bound" },
+			"class_type": "class",
+			"properties": { "hardness": 1, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": true, "is_delicate": false }
+		},
+
 		{"name": "~Registed_Texture_Library_模组注册纹理库", "class_type": "_comment" },
 
 		{

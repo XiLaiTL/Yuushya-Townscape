@@ -1,7 +1,7 @@
 tasks.register('generateAssetsAndData', CreateAssetsAndDataTask){
     dependsOn(processResources)
     it.path = projectDir.toPath().resolve("./build/resources/main/")
-    onlyIf { !processResources.state.upToDate }
+    //onlyIf { !processResources.state.upToDate }
     doLast {
         println 'Assets and Data Build Success'
     }

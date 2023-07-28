@@ -45,7 +45,7 @@ public class ConfigReader {
                 default -> {
                     BlockALL.put(block.name, block);
                     StaticBlockALL.put(block.name,block);
-                    if (block.blockstate!=null &&block.blockstate.kit.equals("block")){
+                    if (block.blockstate!=null &&block.blockstate.kit!=null&&block.blockstate.kit.equals("block")){
                         if (block.texture==null){ block.texture=new YuushyaRegistryData.Block.Texture();}
                         if (block.texture.type==null){block.texture.type="all";}
                         YuushyaDataProvider.of(block.name).type(YuushyaDataProvider.DataType.BlockModel).add(block);}

@@ -115,6 +115,7 @@ public class YuushyaBlockFactory{
     }
 
     public static BlockBehaviour.Properties getBlockProperties(YuushyaRegistryData.Block.Properties yuushyaBlockProperties){
+        if(yuushyaBlockProperties == null) return BlockBehaviour.Properties.of();
         BlockBehaviour.Properties blockProperties = BlockBehaviour.Properties
                 .of().sound(toSound(yuushyaBlockProperties.material));
         return getBlockProperties(blockProperties,yuushyaBlockProperties);
