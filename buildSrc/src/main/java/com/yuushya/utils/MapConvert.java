@@ -2,23 +2,19 @@ package com.yuushya.utils;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
-
 import net.querz.mca.MCAFile;
 import net.querz.mca.MCAUtil;
-import net.querz.mca.Section;
 import net.querz.nbt.tag.CompoundTag;
 import net.querz.nbt.tag.FloatTag;
 import net.querz.nbt.tag.ListTag;
 
-import javax.swing.*;
-import javax.swing.border.EmptyBorder;
-import java.awt.*;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class MapConvert {

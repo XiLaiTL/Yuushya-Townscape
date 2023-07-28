@@ -61,6 +61,11 @@ tasks.register("clean-all"){
     }
 }
 
+tasks.register("tools",Copy){
+    from("./buildSrc/build/libs/buildSrc-0.0.0.jar")
+    rename {"yuushya-tool.jar"}
+    into("./build/tools")
+}
 
 def build_tasks = versions.collectMany {ver-> apis.collect {api-> "build-jar-${ver}-${api}"}}
 

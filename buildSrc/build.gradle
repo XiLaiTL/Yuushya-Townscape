@@ -3,15 +3,26 @@ plugins {
 }
 
 group 'com.yuushya'
-version '0.0.1-SNAPSHOT'
+version '0.0.0'
 
 repositories {
-    mavenCentral()
     maven { url "https://jitpack.io/" }
+    maven { url "https://maven.syntaxerror.at"}
+    mavenCentral()
 }
 
 dependencies {
     implementation 'org.realityforge.org.jetbrains.annotations:org.jetbrains.annotations:1.7.0'
     implementation 'com.google.code.gson:gson:2.8.9'
     implementation "com.github.Querz:NBT:6.1"
+    implementation "at.syntaxerror:syntaxnbt:1.0.0"
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'com.yuushya.ui.Main',
+                'Class-Path': 'gson-2.8.9.jar ./libs/gson-2.8.9.jar ../../../libraries/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar ../libraries/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar NBT-6.1.jar ./libs/NBT-6.1.jar ../config/com.yuushya/lib/META-INF/jars/NBT-6.1.jar'
+        )
+    }
 }

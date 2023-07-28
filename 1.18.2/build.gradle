@@ -35,14 +35,6 @@ subprojects {
         // mappings "net.fabricmc:yarn:1.18.2+build.4:v2"
     }
 
-    jar{
-        manifest {
-            attributes(
-                    'Main-Class': 'com.yuushya.ui.Main',
-                    'Class-Path': 'gson-2.8.9.jar ../../../libraries/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar ../libraries/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar ../config/com.yuushya/lib/META-INF/jars/NBT-6.1.jar'
-            )
-        }
-    }
     def resourceTargets=["fabric.mod.json",'quilt.mod.json','META-INF/mods.toml'];
     def replaceProperties = [
             mod_name: mod_name,

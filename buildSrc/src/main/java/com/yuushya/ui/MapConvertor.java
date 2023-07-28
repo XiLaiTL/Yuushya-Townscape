@@ -11,9 +11,6 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.yuushya.utils.MapConvert.readMap;
-import static com.yuushya.utils.MapConvert.readSave;
-
 public class MapConvertor {
 
     public static void main(String[] args) {

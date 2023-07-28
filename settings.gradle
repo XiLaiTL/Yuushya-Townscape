@@ -37,4 +37,4 @@ include("1.16.5:forge")
 include("1.16.5:fabric")
 include("common")
 
-rootProject.name = "yuushya-townscape"
+rootProject.name = "Yuushya-Townscape"
