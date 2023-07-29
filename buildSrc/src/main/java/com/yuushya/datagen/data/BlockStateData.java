@@ -25,11 +25,10 @@ public class BlockStateData {
     public static final ChildProperty HORIZONTAL_FACING=ChildProperty.of("facing","north","east","south","west");
     public static final ChildProperty FACE=ChildProperty.of("face","floor","wall","ceiling");
     public static final ChildProperty FORM=ChildProperty.of("form","0","1","2","3","4","5","6","7");
-    public static final ChildProperty POS_DIRECTION=ChildProperty.of("pos","north","south","west","east","middle","none");
     public static final ChildProperty POS_HORIZON=ChildProperty.of("pos","left","middle","right","none");
     public static final ChildProperty POS_VERTICAL=ChildProperty.of("pos","top","middle","bottom","none");
-    public static final ChildProperty XPOS=ChildProperty.of("xpos","north","south","west","east","middle","none");
-    public static final ChildProperty ZPOS=ChildProperty.of("zpos","north","south","west","east","middle","none");
+    public static final ChildProperty XPOS=ChildProperty.of("xpos","west","east","middle","none");
+    public static final ChildProperty ZPOS=ChildProperty.of("zpos","north","south","middle","none");
     public static final ChildProperty POWERED=ChildProperty.of("powered","true","false");
     public static final ChildProperty HALF=ChildProperty.of("half","top","bottom");
     public static final ChildProperty STAIRS_SHAPE=ChildProperty.of("shape","straight","inner_left","inner_right","outer_left","outer_right");
@@ -126,6 +125,8 @@ public class BlockStateData {
         else {
             Variant baseVariant=Variant.variant().with(VariantProperty.MODEL,new ResourceLocation(getModelListFromData(blockState.models).get(0)));
             childVariant=ChildVariant.of(baseVariant);
+            if(blockState.states==null)
+                return addModeltoBlockStateJsonObject(childVariant.get().getAsJsonObject(),blockState.models);
             if (blockState.states.contains("powered")) {
                 childVariant.add(createDefaultVariant(POWERED));
             }
@@ -142,9 +143,7 @@ public class BlockStateData {
                 childVariant.add(createDefaultVariant(FORM));
             }
 
-            if (blockState.states.contains("pos_direction")) {
-                childVariant.add(createDefaultVariant(POS_DIRECTION));
-            } else if (blockState.states.contains("pos_horizon")) {
+            if (blockState.states.contains("pos_horizon")) {
                 childVariant.add(createDefaultVariant(POS_HORIZON));
             } else if (blockState.states.contains("pos_vertical")) {
                 childVariant.add(createDefaultVariant(POS_VERTICAL));

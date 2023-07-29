@@ -27,3 +27,7 @@ publishing {
         // Add repositories to publish to here.
     }
 }
+
+processResources{
+    finalizedBy(':common:copyResources-1.19.4')
+}

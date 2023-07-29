@@ -7844,22 +7844,22 @@
 		{
 			"class_type": "CableBlock",
 			"name": "wire",
-			"auto_generated": { "recipe": true, "collision": "block", "blockstate": true }, "item_group": "yuushya_infrastructure",
-			"blockstate": { "forms": [["yuushya:extra_building_material/wire/0"]]}
+			"auto_generated": { "recipe": true, "collision": "block"}, "item_group": "yuushya_infrastructure",
+			"blockstate": { "models": ["yuushya:extra_building_material/wire/0"]}
 		},
 
 		{
 			"class_type": "CablePostBlock",
 			"name": "deployed_utility_service_drop",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_infrastructure",
-			"blockstate": { "forms": [["yuushya:extra_building_material/utility_service_drop_d"]]}
+			"blockstate": { "models": ["yuushya:extra_building_material/utility_service_drop_d"]}
 		},
 
 		{
 			"class_type": "CablePostBlock",
 			"name": "mounted_utility_service_drop",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_infrastructure",
-			"blockstate": { "forms": [["yuushya:extra_building_material/utility_service_drop_s"]]}
+			"blockstate": { "models": ["yuushya:extra_building_material/utility_service_drop_s"]}
 		},
 
 		{

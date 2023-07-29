@@ -75,6 +75,3 @@ allprojects {
     }
 }
 
-processResources{
-    finalizedBy(':common:copyResources-1.19.2')
-}

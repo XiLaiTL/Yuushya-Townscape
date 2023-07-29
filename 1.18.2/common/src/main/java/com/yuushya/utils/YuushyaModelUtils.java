@@ -43,6 +43,7 @@ public class YuushyaModelUtils {
                 continue;
             }
             if (key.isEmpty()) continue;
+            YuushyaLogger.error(stateDefinition.getOwner());
             throw new RuntimeException("Unknown blockstate property: '" + key + "'");
         }
         Block block = stateDefinition.getOwner();
