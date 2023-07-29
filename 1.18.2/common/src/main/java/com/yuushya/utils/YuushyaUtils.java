@@ -11,6 +11,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.DoubleTag;
 import net.minecraft.nbt.FloatTag;
 import net.minecraft.nbt.ListTag;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.level.FoliageColor;
 import net.minecraft.world.level.GrassColor;

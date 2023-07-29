@@ -1,15 +1,6 @@
 {
 
 	"item": [
-		{"class_type": "StructureCreatorItem", "name": "oak_tree",   "item_group": "yuushya_structure","properties": {"create_nbt": "yuushya:oak_tree", "max_count": 64,"lines": 2, "rarity": "rare"}},
-		{"class_type": "StructureCreatorItem", "name": "white_blooming_oak_tree",   "item_group": "yuushya_structure","properties": {"create_nbt": "yuushya:white_blooming_oak_tree", "max_count": 64,"lines": 2, "rarity": "rare"}},
-		{"class_type": "StructureCreatorItem", "name": "yellow_blooming_oak_tree",   "item_group": "yuushya_structure","properties": {"create_nbt": "yuushya:yellow_blooming_oak_tree", "max_count": 64,"lines": 2, "rarity": "rare"}},
-		{"class_type": "StructureCreatorItem", "name": "pink_blooming_oak_tree",   "item_group": "yuushya_structure","properties": {"create_nbt": "yuushya:pink_blooming_oak_tree", "max_count": 64,"lines": 2, "rarity": "rare"}},
-		{"class_type": "StructureCreatorItem", "name": "maple_tree",   "item_group": "yuushya_structure","properties": {"create_nbt": "yuushya:maple_tree", "max_count": 64,"lines": 2, "rarity": "rare"}},
-		{"class_type": "StructureCreatorItem", "name": "sakura_tree",   "item_group": "yuushya_structure","properties": {"create_nbt": "yuushya:sakura_tree", "max_count": 64,"lines": 2, "rarity": "rare"}},
-		{"class_type": "StructureCreatorItem", "name": "normal_truck",   "item_group": "yuushya_structure","properties": {"create_nbt": "yuushya:normal_truck", "max_count": 64,"lines": 2, "rarity": "rare"}},
-		{"class_type": "StructureCreatorItem", "name": "dining_truck",   "item_group": "yuushya_structure","properties": {"create_nbt": "yuushya:dining_truck", "max_count": 64,"lines": 2, "rarity": "rare"}},
-		{"class_type": "StructureCreatorItem", "name": "villa_0",   "item_group": "yuushya_structure","properties": {"create_nbt": "yuushya:villa_0", "max_count": 64,"lines": 2, "rarity": "rare"}},
 		{"class_type": "StructureCreatorItem", "name": "oak_tree",   "item_group": "yuushya_structure","usage": {"create_nbt": "yuushya:oak_tree"},"properties": { "max_count": 64,"lines": 2, "rarity": "rare"}},
 		{"class_type": "StructureCreatorItem", "name": "white_blooming_oak_tree",   "item_group": "yuushya_structure","usage": {"create_nbt": "yuushya:white_blooming_oak_tree"},"properties": { "max_count": 64,"lines": 2, "rarity": "rare"}},
 		{"class_type": "StructureCreatorItem", "name": "yellow_blooming_oak_tree",   "item_group": "yuushya_structure","usage": {"create_nbt": "yuushya:yellow_blooming_oak_tree"},"properties": { "max_count": 64,"lines": 2, "rarity": "rare"}},
@@ -10337,6 +10328,7 @@
 			"name": "fan",
 			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_electrical_appliance",
+			"usage": {"cycle_forms": [0,1]},
 			"blockstate": { "forms": [["yuushya:extra_building_material/fan"],["yuushya:extra_building_material/fan_off"]]}
 		},
 
@@ -10345,6 +10337,7 @@
 			"name": "fan_",
 			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_electrical_appliance",
+			"usage": {"cycle_forms": [0,1]},
 			"blockstate": { "forms": [["yuushya:extra_building_material/fan_"],["yuushya:extra_building_material/fan_off_"]]}
 		},
 
@@ -10353,6 +10346,7 @@
 			"name": "floor_fan",
 			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_electrical_appliance",
+			"usage": {"cycle_forms": [0,1]},
 			"blockstate": { "forms": [["yuushya:extra_building_material/fan_floor_on"],["yuushya:extra_building_material/fan_floor"]]}
 		},
 
@@ -10361,6 +10355,7 @@
 			"name": "floor_fan_",
 			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_electrical_appliance",
+			"usage": {"cycle_forms": [0,1]},
 			"blockstate": { "forms": [["yuushya:extra_building_material/fan_floor_on_"],["yuushya:extra_building_material/fan_floor_"]]}
 		},
 

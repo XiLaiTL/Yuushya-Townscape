@@ -40,10 +40,12 @@ import org.jetbrains.annotations.Nullable;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
 import static com.yuushya.utils.YuushyaUtils.toBlockMaterial;
 import static com.yuushya.utils.YuushyaUtils.toSound;
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.HORIZONTAL_FACING;
+import static net.minecraft.world.level.block.state.properties.BlockStateProperties.POWERED;
 
 public class YuushyaBlockFactory{
 
@@ -64,15 +66,25 @@ public class YuushyaBlockFactory{
             this.usage=usage;
         }
 
+        //int formIndex = 0;
+
         @Override
         public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
             if(usage!=null){
                 if(usage.sitPos!=null&&usage.sitPos.size()==3&&player.getItemInHand(hand).isEmpty()){
                     return ChairEntityUtils.use(new Vec3(usage.sitPos.get(0),usage.sitPos.get(1),usage.sitPos.get(2)) ,state,level,pos,player,hand,hit);
                 }
+                if(usage.cycleForms!=null&&!usage.cycleForms.isEmpty()&&player.getItemInHand(hand).isEmpty()){
+                    //formIndex%=usage.cycleForms.size();
+                    //state.setValue(YuushyaBlockStates.FORM,usage.cycleForms.get((formIndex)));
+                    do{
+                        state = state.cycle(YuushyaBlockStates.FORM);
+                    } while(!usage.cycleForms.contains(state.getValue(YuushyaBlockStates.FORM)));
+                    level.setBlock(pos, state, 2);
+                    return InteractionResult.sidedSuccess(level.isClientSide);
+                }
             }
             return super.use(state,level,pos,player,hand,hit);
-
         }
 
         public boolean isTheSameType(BlockWithClassType block){
