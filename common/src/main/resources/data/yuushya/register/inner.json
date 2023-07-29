@@ -221,7 +221,7 @@
 		{
 			"name": "CablePostBlock",
 			"render_type": "cutout",
-			"auto_generated": { "recipe": true, "loot_table": true,  "collision": "bound" },
+			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true,  "collision": "bound" },
 			"class_type": "class",
 			"properties": { "hardness": 1, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": true, "is_delicate": false }
 		},
@@ -7844,7 +7844,7 @@
 		{
 			"class_type": "CableBlock",
 			"name": "wire",
-			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "yuushya_infrastructure",
+			"auto_generated": { "recipe": true, "collision": "block", "blockstate": true }, "item_group": "yuushya_infrastructure",
 			"blockstate": { "forms": [["yuushya:extra_building_material/wire/0"]]}
 		},
 
@@ -8682,7 +8682,7 @@
 		{
 			"class_type": "DecoBlock",
 			"name": "sticky_note",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_furniture",
+			"auto_generated": { "recipe": true, "collision": false }, "item_group": "yuushya_furniture",
 			"properties": {"lines": 1},
 			"blockstate": { "forms": [["yuushya:extra_building_material/sticky_note_1"],["yuushya:extra_building_material/sticky_note_2"],["yuushya:extra_building_material/sticky_note_3"],["yuushya:extra_building_material/sticky_note_4"],["yuushya:extra_building_material/sticky_note_5"]]}
 		},
@@ -9505,7 +9505,7 @@
 		{
 			"class_type": "DecoBlock",
 			"name": "hanged_things_",
-			"auto_generated": { "recipe": true, "blockstate": false }, "item_group": "yuushya_fabric",
+			"auto_generated": { "recipe": true, "blockstate": true }, "item_group": "yuushya_fabric",
 			"blockstate": { "forms": [["yuushya:extra_building_material/hangerm_both_"]]}
 		},
 
@@ -10555,3 +10555,4 @@
 
 
 }
+

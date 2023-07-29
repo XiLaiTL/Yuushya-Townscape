@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "yuushya:item/copy"
+  },
+  "overrides": [
+    { "predicate": { "direction": 1 }, "model": "yuushya:item/get_blockstate_item_with_block" }
+  ]
+}
