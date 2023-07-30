@@ -148,7 +148,12 @@ public class YuushyaDataProvider {
             }
             case Recipe -> this.json(()-> RecipeData.genStoneCutterRecipe(new ResourceLocation(MOD_ID,block.name) ,getBlueprint(block.itemGroup),getResultNumber(block.itemGroup) )).save();
             case BlockModel -> {this.json(()->ModelData.genSimpleCubeBlockModel(new ResourceLocation(block.texture.value))).save();}
-            case LootTable -> this.json(()-> LootTableData.genSingleItemTable(new ResourceLocation(MOD_ID,block.name))).save();
+            case LootTable -> {
+                if(block.blockstate != null && "tri_part".equals(block.blockstate.kit))
+                    this.json(() -> LootTableData.genTriBlockLootTable(new ResourceLocation(MOD_ID, block.name))).save();
+                else
+                    this.json(() -> LootTableData.genSingleItemTable(new ResourceLocation(MOD_ID, block.name))).save();
+            }
         };
         return this;
     }

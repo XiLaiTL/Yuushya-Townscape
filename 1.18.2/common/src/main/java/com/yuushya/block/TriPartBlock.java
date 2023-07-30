@@ -3,10 +3,12 @@ package com.yuushya.block;
 import com.yuushya.block.blockstate.PositionVerticalState;
 import com.yuushya.registries.YuushyaRegistryData;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
@@ -32,6 +34,25 @@ public class TriPartBlock extends NormalBlock{
         level.setBlock(blockPos.above(), blockState.setValue(POS_VERTICAL,PositionVerticalState.MIDDLE), 3);
         level.setBlock(blockPos.above().above(), blockState.setValue(POS_VERTICAL,PositionVerticalState.TOP), 3);
     }
+
+    @Override
+    public BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor level, BlockPos currentPos, BlockPos neighborPos) {
+        PositionVerticalState doubleBlockHalf = state.getValue(POS_VERTICAL);
+        if (direction.getAxis() == Direction.Axis.Y
+                && ((doubleBlockHalf == PositionVerticalState.BOTTOM) && (direction == Direction.UP)
+                ||(doubleBlockHalf == PositionVerticalState.TOP) && (direction == Direction.DOWN)
+                || doubleBlockHalf == PositionVerticalState.MIDDLE
+        )
+        ) {
+            return neighborState.is(this) && neighborState.getValue(POS_VERTICAL) != doubleBlockHalf
+                    ? state.setValue(HORIZONTAL_FACING, neighborState.getValue(HORIZONTAL_FACING))
+                            .setValue(FORM, neighborState.getValue(FORM))
+                    : Blocks.AIR.defaultBlockState();
+        } else {
+            return super.updateShape(state, direction, neighborState, level, currentPos, neighborPos);
+        }
+    }
+
     @Override
     public void playerWillDestroy(Level level, BlockPos blockPos, BlockState blockState, Player player) {
         if (!level.isClientSide && player.isCreative()) {
@@ -39,8 +60,7 @@ public class TriPartBlock extends NormalBlock{
             BlockPos blockPos1;
             BlockPos blockPos2;
             if(thispvs==PositionVerticalState.BOTTOM) {
-                blockPos1=blockPos.above();
-                blockPos2=blockPos.above().above();
+                return;
             }
             else if(thispvs==PositionVerticalState.MIDDLE) {
                 blockPos1=blockPos.above();
@@ -57,10 +77,10 @@ public class TriPartBlock extends NormalBlock{
             BlockState block1=level.getBlockState(blockPos1);
             BlockState block2=level.getBlockState(blockPos2);
             if(block1.getBlock()==blockState.getBlock()&&block2.getBlock()==blockState.getBlock()) {
-                level.setBlock(blockPos1, Blocks.AIR.defaultBlockState(), 35);
                 level.setBlock(blockPos2, Blocks.AIR.defaultBlockState(), 35);
-                level.levelEvent(player, 2001, blockPos1, getId(block1));
                 level.levelEvent(player, 2001, blockPos2, getId(block2));
+                level.setBlock(blockPos1, Blocks.AIR.defaultBlockState(), 35);
+                level.levelEvent(player, 2001, blockPos1, getId(block1));
             }
             //TODO: find the reason why it need the number when destory three part block
         }
