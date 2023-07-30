@@ -21,7 +21,10 @@ import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DoorBlock;
+import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -40,12 +43,10 @@ import org.jetbrains.annotations.Nullable;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Random;
 
 import static com.yuushya.utils.YuushyaUtils.toBlockMaterial;
 import static com.yuushya.utils.YuushyaUtils.toSound;
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.HORIZONTAL_FACING;
-import static net.minecraft.world.level.block.state.properties.BlockStateProperties.POWERED;
 
 public class YuushyaBlockFactory{
 
@@ -66,8 +67,6 @@ public class YuushyaBlockFactory{
             this.usage=usage;
         }
 
-        //int formIndex = 0;
-
         @Override
         public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
             if(usage!=null){
@@ -75,8 +74,6 @@ public class YuushyaBlockFactory{
                     return ChairEntityUtils.use(new Vec3(usage.sitPos.get(0),usage.sitPos.get(1),usage.sitPos.get(2)) ,state,level,pos,player,hand,hit);
                 }
                 if(usage.cycleForms!=null&&!usage.cycleForms.isEmpty()&&player.getItemInHand(hand).isEmpty()){
-                    //formIndex%=usage.cycleForms.size();
-                    //state.setValue(YuushyaBlockStates.FORM,usage.cycleForms.get((formIndex)));
                     do{
                         state = state.cycle(YuushyaBlockStates.FORM);
                     } while(!usage.cycleForms.contains(state.getValue(YuushyaBlockStates.FORM)));

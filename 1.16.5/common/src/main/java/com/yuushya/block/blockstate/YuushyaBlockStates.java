@@ -2,6 +2,8 @@ package com.yuushya.block.blockstate;
 
 import net.minecraft.Util;
 import net.minecraft.core.Direction;
+import net.minecraft.world.item.DebugStickItem;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.*;
 import org.jetbrains.annotations.Nullable;
@@ -9,11 +11,14 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 public class YuushyaBlockStates {
-    public static final EnumProperty<PositionDirectionState> POS_DIRECTION = EnumProperty.create("pos",PositionDirectionState.class);
-    public static final EnumProperty<PositionDirectionState> XPOS = EnumProperty.create("xpos",PositionDirectionState.class);
-    public static final EnumProperty<PositionDirectionState> ZPOS = EnumProperty.create("zpos",PositionDirectionState.class);
+    public static final EnumProperty<PositionDirectionXState> XPOS = EnumProperty.create("xpos",PositionDirectionXState.class);
+    public static final EnumProperty<PositionDirectionZState> ZPOS = EnumProperty.create("zpos",PositionDirectionZState.class);
+    public static final EnumProperty<PositionVerticalState> YPOS=EnumProperty.create("ypos",PositionVerticalState.class);
     public static final EnumProperty<PositionHorizonState> POS_HORIZON=EnumProperty.create("pos",PositionHorizonState.class);
     public static final EnumProperty<PositionVerticalState> POS_VERTICAL=EnumProperty.create("pos",PositionVerticalState.class);
+    public static final IntegerProperty X = IntegerProperty.create("x",0,11);
+    public static final IntegerProperty Y = IntegerProperty.create("y",0,11);
+    public static final IntegerProperty Z = IntegerProperty.create("z",0,11);
     public static final IntegerProperty FORM = IntegerProperty.create("form",0,7);
     public static final IntegerProperty LIT = IntegerProperty.create("lit",0,15);
     public static final IntegerProperty DISTANCE = IntegerProperty.create("distance",0,15);
@@ -26,8 +31,6 @@ public class YuushyaBlockStates {
                 return (YuushyaBlockStates.XPOS);
             case "zpos":
                 return (YuushyaBlockStates.ZPOS);
-            case "pos_direction":
-                return (YuushyaBlockStates.POS_DIRECTION);
             case "pos_horizon":
                 return (YuushyaBlockStates.POS_HORIZON);
             case "pos_vertical":

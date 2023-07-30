@@ -17,12 +17,12 @@ public class FormTransItem extends AbstractToolItem {
     //对方块主手右键
     @Override
     public InteractionResult inMainHandRightClickOnBlock(Player player, BlockState blockState, Level level, BlockPos blockPos, ItemStack handItemStack){
-        return transformOneProperty(player,blockState,level,blockPos,handItemStack,YuushyaBlockStates.FORM,player.isSecondaryUseActive());
+        return transformOneProperty(player,blockState,level,blockPos,handItemStack,YuushyaBlockStates.FORM,false);
     }
     //对方块主手左键
     @Override
     public InteractionResult inMainHandLeftClickOnBlock(Player player, BlockState blockState, Level level, BlockPos blockPos, ItemStack handItemStack){
-        return transformOneProperty(player,blockState,level,blockPos,handItemStack,YuushyaBlockStates.FORM,!player.isSecondaryUseActive());
+        return transformOneProperty(player,blockState,level,blockPos,handItemStack,YuushyaBlockStates.FORM,true);
     }
 
     private static <T extends Comparable<T>> InteractionResult transformOneProperty(Player player, BlockState blockState, Level level, BlockPos blockPos, ItemStack handItemStack, Property<T> property,boolean doGetPre){

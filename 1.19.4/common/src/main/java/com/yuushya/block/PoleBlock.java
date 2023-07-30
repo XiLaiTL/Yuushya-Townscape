@@ -1,5 +1,6 @@
 package com.yuushya.block;
 
+import com.yuushya.block.blockstate.PositionDirectionZState;
 import com.yuushya.block.blockstate.PositionVerticalState;
 import com.yuushya.registries.YuushyaRegistryData;
 import com.yuushya.utils.YuushyaUtils;
@@ -14,8 +15,7 @@ import org.jetbrains.annotations.Nullable;
 
 import static com.yuushya.block.YuushyaBlockFactory.isTheSameBlock;
 import static com.yuushya.block.YuushyaBlockFactory.isTheSameFacing;
-import static com.yuushya.block.blockstate.YuushyaBlockStates.FORM;
-import static com.yuushya.block.blockstate.YuushyaBlockStates.POS_VERTICAL;
+import static com.yuushya.block.blockstate.YuushyaBlockStates.*;
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.HORIZONTAL_FACING;
 
 public class PoleBlock extends YuushyaBlockFactory.BlockWithClassType {
@@ -36,20 +36,20 @@ public class PoleBlock extends YuushyaBlockFactory.BlockWithClassType {
 
     @Override
     public BlockState updateShape(BlockState blockState, Direction direction, BlockState blockState2, LevelAccessor levelAccessor, BlockPos blockPos, BlockPos blockPos2) {
-        return getPositionOfPole(blockState,levelAccessor,blockPos);
+        return blockState.setValue(POS_VERTICAL, getPositionOfPole(blockState,levelAccessor,blockPos));
     }
-
-    public BlockState getPositionOfPole(BlockState stateIn,  LevelAccessor worldIn, BlockPos currentPos) {
+    public static PositionVerticalState getPositionOfPole(BlockState stateIn, LevelAccessor worldIn, BlockPos currentPos) {
         BlockState posUp = YuushyaUtils.getBlockState (worldIn.getBlockState(currentPos.above()),worldIn,currentPos.above());
         BlockState posDown =YuushyaUtils.getBlockState( worldIn.getBlockState(currentPos.below()),worldIn,currentPos.below());
         if (isTheSameBlock(posUp,stateIn) && isTheSameFacing(posUp,stateIn)){
             if(isTheSameBlock(posDown,stateIn) && isTheSameFacing(posDown,stateIn))
-                return stateIn.setValue(POS_VERTICAL,PositionVerticalState.MIDDLE);
+                return PositionVerticalState.MIDDLE;
             else
-                return stateIn.setValue(POS_VERTICAL,PositionVerticalState.BOTTOM);}
+                return PositionVerticalState.BOTTOM;}
         else if(isTheSameBlock(posDown,stateIn) && isTheSameFacing(posDown,stateIn)){
-            return stateIn.setValue(POS_VERTICAL,PositionVerticalState.TOP);}
+            return PositionVerticalState.TOP;}
         else {
-            return stateIn.setValue(POS_VERTICAL,PositionVerticalState.NONE);}
+            return PositionVerticalState.NONE;}
     }
+
 }

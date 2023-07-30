@@ -1,6 +1,7 @@
 package com.yuushya.block;
 
-import com.yuushya.block.blockstate.PositionDirectionState;
+import com.yuushya.block.blockstate.PositionDirectionXState;
+import com.yuushya.block.blockstate.PositionDirectionZState;
 import com.yuushya.registries.YuushyaRegistryData;
 import com.yuushya.utils.YuushyaUtils;
 import net.minecraft.core.BlockPos;
@@ -29,46 +30,41 @@ public class FaceBlock extends YuushyaBlockFactory.BlockWithClassType {
         LevelAccessor levelAccessor=blockPlaceContext.getLevel();
         BlockPos blockPos=blockPlaceContext.getClickedPos();
         return this.defaultBlockState()
-                .setValue(XPOS, getPositionOfFace(this.defaultBlockState(),levelAccessor,blockPos,'X'))
-                .setValue(ZPOS, getPositionOfFace(this.defaultBlockState(),levelAccessor,blockPos,'Z'));
+                .setValue(XPOS, getPositionOfFaceX(this.defaultBlockState(),levelAccessor,blockPos))
+                .setValue(ZPOS, getPositionOfFaceZ(this.defaultBlockState(),levelAccessor,blockPos));
     }
     @Override
     public BlockState updateShape(BlockState stateIn, Direction facing, BlockState facingState, LevelAccessor worldIn, BlockPos currentPos, BlockPos facingPos){
         return stateIn
-                .setValue(XPOS, getPositionOfFace(stateIn, worldIn, currentPos,'X'))
-                .setValue(ZPOS, getPositionOfFace(stateIn, worldIn, currentPos,'Z'));
+                .setValue(XPOS, getPositionOfFaceX(stateIn, worldIn, currentPos))
+                .setValue(ZPOS, getPositionOfFaceZ(stateIn, worldIn, currentPos));
     }
 
-    public static PositionDirectionState getPositionOfFace(BlockState state, LevelAccessor worldIn, BlockPos pos, char XorZ) {
-        return switch (XorZ) {
-            case 'X' -> {
-                BlockState wblockstate=YuushyaUtils.getBlockState(worldIn.getBlockState(pos.west()),worldIn,pos.west());
-                BlockState eblockstate=YuushyaUtils.getBlockState(worldIn.getBlockState(pos.east()), worldIn,pos.east());
-                if (isTheSameBlock(wblockstate, state)) {
-                    if (isTheSameBlock(eblockstate, state))
-                        yield  PositionDirectionState.MIDDLE;
-                    else
-                        yield PositionDirectionState.EAST;}
-                else if (isTheSameBlock(eblockstate, state)) {
-                    yield PositionDirectionState.WEST;}
-                else {
-                    yield PositionDirectionState.NONE;}
-            }
-            case 'Z' -> {
-                BlockState nblockstate= YuushyaUtils.getBlockState(worldIn.getBlockState(pos.north()), worldIn,pos.north());
-                BlockState sblockstate=YuushyaUtils.getBlockState(worldIn.getBlockState(pos.south()),worldIn,pos.south());
-                if (isTheSameBlock(nblockstate, state)) {
-                    if (isTheSameBlock(sblockstate, state))
-                        yield PositionDirectionState.MIDDLE;
-                    else
-                        yield PositionDirectionState.SOUTH;}
-                else if (isTheSameBlock(sblockstate, state)) {
-                    yield PositionDirectionState.NORTH;}
-                else {
-                    yield PositionDirectionState.NONE;}
-            }
-            default -> PositionDirectionState.NONE;
-        };
+    public static PositionDirectionXState getPositionOfFaceX(BlockState state, LevelAccessor worldIn, BlockPos pos) {
+        BlockState wblockstate=YuushyaUtils.getBlockState(worldIn.getBlockState(pos.west()),worldIn,pos.west());
+        BlockState eblockstate=YuushyaUtils.getBlockState(worldIn.getBlockState(pos.east()), worldIn,pos.east());
+        if (isTheSameBlock(wblockstate, state)) {
+            if (isTheSameBlock(eblockstate, state))
+                return PositionDirectionXState.MIDDLE;
+            else
+                return PositionDirectionXState.EAST;}
+        else if (isTheSameBlock(eblockstate, state)) {
+            return PositionDirectionXState.WEST;}
+        else {
+            return PositionDirectionXState.NONE;}
     }
 
+    public static PositionDirectionZState getPositionOfFaceZ(BlockState state, LevelAccessor worldIn, BlockPos pos) {
+        BlockState nblockstate= YuushyaUtils.getBlockState(worldIn.getBlockState(pos.north()), worldIn,pos.north());
+        BlockState sblockstate=YuushyaUtils.getBlockState(worldIn.getBlockState(pos.south()),worldIn,pos.south());
+        if (isTheSameBlock(nblockstate, state)) {
+            if (isTheSameBlock(sblockstate, state))
+                return  PositionDirectionZState.MIDDLE;
+            else
+                return PositionDirectionZState.SOUTH;}
+        else if (isTheSameBlock(sblockstate, state)) {
+            return PositionDirectionZState.NORTH;}
+        else {
+            return PositionDirectionZState.NONE;}
+    }
 }
