@@ -204,13 +204,13 @@
 		{
 			"name": "CableBlock",
 			"render_type": "cutout",
-			"auto_generated": {  "collision": "detail" },
 			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": true, "is_delicate": false }
+			"properties": { "hardness": 1, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": false, "is_delicate": false }
 		},
 
 		{
 			"name": "CablePostBlock",
+			"blockstate": { "kit": "normal" },
 			"render_type": "cutout",
 			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true,  "collision": "bound" },
 			"class_type": "class",
@@ -7835,7 +7835,8 @@
 		{
 			"class_type": "CableBlock",
 			"name": "wire",
-			"auto_generated": { "recipe": true, "collision": "block"}, "item_group": "yuushya_infrastructure",
+			"auto_generated": { "recipe": true, "collision": "block","item_model": true}, "item_group": "yuushya_infrastructure",
+			"item_model": "yuushya:extra_building_material/wire/0",
 			"blockstate": { "models": ["yuushya:extra_building_material/wire/0"]}
 		},
 
@@ -7843,14 +7844,16 @@
 			"class_type": "CablePostBlock",
 			"name": "deployed_utility_service_drop",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_infrastructure",
-			"blockstate": { "models": ["yuushya:extra_building_material/utility_service_drop_d"]}
+			"blockstate": {
+				"forms": [["yuushya:extra_building_material/utility_service_drop_d"]]}
 		},
 
 		{
 			"class_type": "CablePostBlock",
 			"name": "mounted_utility_service_drop",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_infrastructure",
-			"blockstate": { "models": ["yuushya:extra_building_material/utility_service_drop_s"]}
+			"blockstate": {
+				"forms": [["yuushya:extra_building_material/utility_service_drop_s"]]}
 		},
 
 		{

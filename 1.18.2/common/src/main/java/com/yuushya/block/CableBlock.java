@@ -33,7 +33,7 @@ public class CableBlock extends YuushyaBlockFactory.BlockWithClassType {
         int fromNW=0; int fromSE=0;
         Direction facingDirection= state.getValue(HORIZONTAL_FACING);
         switch (facingDirection.getAxis()){
-            case X -> {
+            case Z-> {
                 BlockState nblockstate=getBlockState(world.getBlockState(pos.north()),world,pos.north());
                 BlockState sblockstate=getBlockState(world.getBlockState(pos.south()),world,pos.south());
                 Direction ndirection=nblockstate.getBlock() instanceof CableBlock ?nblockstate.getValue(HORIZONTAL_FACING) :state.getValue(HORIZONTAL_FACING);
@@ -44,7 +44,7 @@ public class CableBlock extends YuushyaBlockFactory.BlockWithClassType {
                 else if(isCablePostBlock(sblockstate)) direction=Direction.SOUTH;
                 else {direction = fromNW < fromSE ? ndirection : sdirection;}
             }
-            case Z -> {
+            case X -> {
                 BlockState wblockstate=getBlockState(world.getBlockState(pos.west()),world,pos.west());
                 BlockState eblockstate=getBlockState(world.getBlockState(pos.east()),world,pos.east());
                 Direction wdirection=wblockstate.getBlock() instanceof CableBlock ?wblockstate.getValue(HORIZONTAL_FACING):state.getValue(HORIZONTAL_FACING);
