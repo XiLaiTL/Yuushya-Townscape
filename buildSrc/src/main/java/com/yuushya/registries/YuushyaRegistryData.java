@@ -54,8 +54,8 @@ public class YuushyaRegistryData{
             public List<String> models;
         }
         public static class Properties {
-            public int hardness;
-            public int resistance;
+            public float hardness;
+            public float resistance;
             public int lightLevel;
             public float ambientocclusionLightLevel;
             public String sound;
