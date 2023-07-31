@@ -71,7 +71,7 @@ public class YuushyaBlockFactory{
         @Override
         public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
             if(usage!=null){
-                if(!level.isClientSide&&usage.sound!=null&&!usage.sound.isBlank()&&player.getItemInHand(hand).isEmpty()){
+                if(!level.isClientSide&&usage.sound!=null&&!usage.sound.isEmpty()&&player.getItemInHand(hand).isEmpty()){
                     SoundEvent soundEvent = Registry.SOUND_EVENT.get(new ResourceLocation(usage.sound));
                     level.playSound(null, pos, soundEvent, SoundSource.BLOCKS, 1f, 0.2f);
                 }
