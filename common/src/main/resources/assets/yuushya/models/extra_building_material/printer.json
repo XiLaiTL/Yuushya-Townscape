@@ -10,7 +10,7 @@
 		"6": "yuushya:block/red_concrete_",
 		"7": "yuushya:0extra_building_block/curtain_white",
 		"8": "yuushya:block/acacia_door",
-		"particle": "yuushya:block/acacia_trapdoor"
+		"particle": "yuushya:block/acacia_door"
 	},
 	"elements": [
 		{
