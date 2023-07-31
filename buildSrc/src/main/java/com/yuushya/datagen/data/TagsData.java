@@ -36,7 +36,6 @@ public class TagsData {
         ResourceLocation key = new ResourceLocation(tagName.getNamespace(),  Type.toType(type).type+"/"+tagName.getPath() );
         tagsCache.putIfAbsent(key,new ArrayList<>());
         tagsCache.get(key).add(id.toString());
-        System.out.println(tagsCache.get(key).size());
         return key;
     }
 

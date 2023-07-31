@@ -7420,6 +7420,7 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "goods_shelf_chopping_board",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_store",
 			"properties": {"lines": 0},
 			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_chopping_board"]]}
 		},
@@ -7427,6 +7428,7 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "goods_shelf_frying_pan",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_store",
 			"properties": {"lines": 0},
 			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_frying_pan"]]}
 		},
