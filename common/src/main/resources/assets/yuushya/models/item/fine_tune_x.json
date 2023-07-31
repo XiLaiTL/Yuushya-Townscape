@@ -1,9 +1,0 @@
-{
-  "parent": "yuushya:item/template_wrench",
-  "textures": {
-    "nbt": "yuushya:item/wrench/fine_tune_x",
-    "x": "yuushya:item/wrench/fine_tune_x",
-    "y": "yuushya:item/wrench/blank",
-    "z": "yuushya:item/wrench/blank"
-  }
-}

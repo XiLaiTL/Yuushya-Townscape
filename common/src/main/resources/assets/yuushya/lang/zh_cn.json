@@ -2,8 +2,8 @@
   "language.name": "简体中文",
   "language.region": "China",
   "language.code": "zh_cn",
-  "menu.yuushya.confirm.title": "警告：Yuushya Townscape存档转换提示",
-  "menu.yuushya.confirm.description": "请注意，使用Yuushya Townscape正式版加载BETA版存档前需进行存档转换;\n存档转换教程：https://yuushya.com/townscape/guide/#/save-convert",
+  "menu.yuushya.confirm.title": "若你是Yuushya系列的新玩家，请忽略这则Yuushya Townscape存档转换提示",
+  "menu.yuushya.confirm.description": "请注意，使用Yuushya Townscape正式版加载BETA版存档前需进行存档转换;\n更多信息：yuushya.com/t",
   "itemGroup.yuushya_furniture": "Yuushya-家具",
   "itemGroup.yuushya.furniture": "Yuushya-家具",
   "itemGroup.yuushya_extra_shapes": "Yuushya-扩展形状",
@@ -159,25 +159,7 @@
   "item.yuushya.floating_bloom.line1": "\u00A77\u00A7o“刚柔”",
   "item.yuushya.sparking_flame.line1": "\u00A77\u00A7o“命运”",
 
-  "item.yuushya.window_alert": "注意事项", 
-  "item.yuushya.window_alert.line1": "\u00A76窗框的中部正常情况是半透明的颜色",
-  "item.yuushya.window_alert.line2": "\u00A76如果你遇到窗框中部是完全透明的问题，请启用一个光影",
-  "item.yuushya.window_alert.line3": "\u00A76大部分光影可以规避此问题",
 
-  "item.yuushya.ctm_alert_0": "注意事项",
-  "item.yuushya.ctm_alert_1": "注意事项", 
-  "item.yuushya.ctm_alert_2": "注意事项", 
-  "item.yuushya.ctm_alert_3": "注意事项",  
-
-  "item.yuushya.ctm_alert_0.line1": "\u00A76由于可能存在的部分模组与CTM的冲突，某些方块或出现连接纹理错乱的现象",
-  "item.yuushya.ctm_alert_1.line1": "\u00A76由于可能存在的部分模组与CTM的冲突，某些方块或出现连接纹理错乱的现象",
-  "item.yuushya.ctm_alert_2.line1": "\u00A76由于可能存在的部分模组与CTM的冲突，某些方块或出现连接纹理错乱的现象",
-  "item.yuushya.ctm_alert_3.line1": "\u00A76由于可能存在的部分模组与CTM的冲突，某些方块或出现连接纹理错乱的现象",
-
-  "item.yuushya.ctm_alert_0.line2": "\u00A76如果你遇到此问题，请按F3+A重载一次区块",
-  "item.yuushya.ctm_alert_1.line2": "\u00A76如果你遇到此问题，请按F3+A重载一次区块",
-  "item.yuushya.ctm_alert_2.line2": "\u00A76如果你遇到此问题，请按F3+A重载一次区块",
-  "item.yuushya.ctm_alert_3.line2": "\u00A76如果你遇到此问题，请按F3+A重载一次区块",
 
 
   
@@ -1455,7 +1437,8 @@
 "block.yuushya.half_carved_retaining_wall_0": "雕纹建筑护墙",
 "block.yuushya.half_carved_retaining_wall_1": "雕纹建筑护墙",
 "block.yuushya.half_hollow_retaining_wall_0": "镂空建筑护墙",
-"block.yuushya.half_hollow_retaining_wall_1": "镂空建筑护墙","block.yuushya.half_carved_retaining_wall_top_0": "雕纹建筑护墙顶部",
+"block.yuushya.half_hollow_retaining_wall_1": "镂空建筑护墙",
+"block.yuushya.half_carved_retaining_wall_top_0": "雕纹建筑护墙顶部",
 "block.yuushya.half_carved_retaining_wall_top_1": "雕纹建筑护墙顶部",
 "block.yuushya.half_hollow_retaining_wall_top_0": "镂空建筑护墙顶部",
 "block.yuushya.half_hollow_retaining_wall_top_1": "镂空建筑护墙顶部",
@@ -1857,10 +1840,31 @@
 "block.yuushya.printer": "打印机",
 "block.yuushya.desk_lamp_2": "台灯",
 "block.yuushya.coffee_machine": "咖啡机",
+"block.yuushya.wasterpaper_basket": "废纸篓",
 
+"item.yuushya.window_alert": "注意事项", 
+"item.yuushya.window_alert.line1": "\u00A76窗框的中部正常情况是半透明的颜色",
+"item.yuushya.window_alert.line2": "\u00A76如果你遇到窗框中部是完全透明的问题，请启用一个光影",
+"item.yuushya.window_alert.line3": "\u00A76大部分光影可以规避此问题",
 
+"item.yuushya.ctm_alert_0": "注意事项",
+"item.yuushya.ctm_alert_1": "注意事项", 
+"item.yuushya.ctm_alert_2": "注意事项", 
+"item.yuushya.ctm_alert_3": "注意事项",  
 
+"item.yuushya.ctm_alert_0.line1": "\u00A76由于可能存在的部分模组与CTM的冲突，某些方块或出现连接纹理错乱的现象",
+"item.yuushya.ctm_alert_1.line1": "\u00A76由于可能存在的部分模组与CTM的冲突，某些方块或出现连接纹理错乱的现象",
+"item.yuushya.ctm_alert_2.line1": "\u00A76由于可能存在的部分模组与CTM的冲突，某些方块或出现连接纹理错乱的现象",
+"item.yuushya.ctm_alert_3.line1": "\u00A76由于可能存在的部分模组与CTM的冲突，某些方块或出现连接纹理错乱的现象",
 
+"item.yuushya.ctm_alert_0.line2": "\u00A76如果你遇到此问题，请按F3+A重载一次区块",
+"item.yuushya.ctm_alert_1.line2": "\u00A76如果你遇到此问题，请按F3+A重载一次区块",
+"item.yuushya.ctm_alert_2.line2": "\u00A76如果你遇到此问题，请按F3+A重载一次区块",
+"item.yuushya.ctm_alert_3.line2": "\u00A76如果你遇到此问题，请按F3+A重载一次区块",
+
+"block.yuushya.wire.line1": "\u00A7a[线缆方块]",
+"block.yuushya.deployed_utility_service_drop.line1": "\u00A7a[接线柱方块]",
+"block.yuushya.mounted_utility_service_drop.line1": "\u00A7a[接线柱方块]",
 
 
 

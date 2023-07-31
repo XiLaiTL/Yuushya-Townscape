@@ -6,7 +6,7 @@
 		"3": "yuushya:block_/reinforced_concrete",
 		"4": "yuushya:0extra_building_block/gas_stove_top",
 		"5": "yuushya:block_/top_reinforced_concrete",
-		"6": "block/dark_concrete",
+		"6": "yuushya:block/dark_concrete",
 		"particle": "yuushya:block/machine"
 	},
 	"elements": [
