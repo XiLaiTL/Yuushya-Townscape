@@ -3,9 +3,19 @@ package com.yuushya;
 import com.yuushya.collision.CollisionFileReader;
 import com.yuushya.registries.YuushyaRegistries;
 import com.yuushya.utils.YuushyaLogger;
+import dev.architectury.event.CompoundEventResult;
+import dev.architectury.event.events.client.ClientGuiEvent;
 import dev.architectury.event.events.client.ClientLifecycleEvent;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.screens.ConfirmScreen;
+import net.minecraft.client.gui.screens.worldselection.SelectWorldScreen;
+import net.minecraft.network.chat.ClickEvent;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.TranslatableComponent;
 
 public class YuushyaClient {
+    private static boolean openOnce =true;
+
     public static void onInitializeClient(){
 //        ReloadListenerRegistry.register(PackType.CLIENT_RESOURCES,new YuushyaResourceReloadListener());
 
@@ -14,6 +24,18 @@ public class YuushyaClient {
         ClientLifecycleEvent.CLIENT_STARTED.register((client)->{ //client render thread
             YuushyaLogger.info("test");
             CollisionFileReader.readAllCollision();
+        });
+
+        ClientGuiEvent.SET_SCREEN.register(screen -> {
+            if(openOnce && screen instanceof SelectWorldScreen) {
+                openOnce = false;
+                return CompoundEventResult.interruptTrue(
+                        new ConfirmScreen((b)-> {
+                            Minecraft.getInstance().setScreen(screen);},new TranslatableComponent("menu.yuushya.confirm.title"),new TranslatableComponent("menu.yuushya.confirm.description"))
+                );
+            } else{
+                return CompoundEventResult.pass();
+            }
         });
 
 //        ClientTickEvent.CLIENT_POST.register((client)->{

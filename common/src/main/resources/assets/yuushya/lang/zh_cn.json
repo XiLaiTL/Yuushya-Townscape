@@ -2,6 +2,8 @@
   "language.name": "简体中文",
   "language.region": "China",
   "language.code": "zh_cn",
+  "menu.yuushya.confirm.title": "警告：Yuushya Townscape存档转换提示",
+  "menu.yuushya.confirm.description": "请注意，使用Yuushya Townscape正式版加载BETA版存档前需进行存档转换;\n存档转换教程：https://yuushya.com/townscape/guide/#/save-convert",
   "itemGroup.yuushya_furniture": "Yuushya-家具",
   "itemGroup.yuushya.furniture": "Yuushya-家具",
   "itemGroup.yuushya_extra_shapes": "Yuushya-扩展形状",
