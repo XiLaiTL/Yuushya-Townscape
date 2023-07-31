@@ -1,26 +1,16 @@
 package com.yuushya.datagen.utils;
 
-
-import java.lang.reflect.Type;
-
-public final class ResourceLocation {
-    private final String namespace;
-    private final String path;
-
-    public ResourceLocation(String namespace, String path) {
-        this.namespace = namespace;
-        this.path = path;
-    }
-
-    public ResourceLocation(String single) {
+public record ResourceLocation(String namespace,String path) {
+    public static ResourceLocation parse (String single) {
         String[] split = single.split(":");
         if (split.length == 1) {
-            this.namespace= "minecraft";
-            this.path = split[0];
+            return new ResourceLocation("minecraft",split[0]);
         } else {
-            this.namespace = split[0];
-            this.path = split[1];
+            return new ResourceLocation(split[0],split[1]);
         }
+    }
+    public static ResourceLocation parse(String namespace,String path){
+        return new ResourceLocation(namespace,path);
     }
 
     public String toString() {

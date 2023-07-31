@@ -2986,8 +2986,8 @@
 			"name": "ladder",
 			"blockstate": { "forms": [["yuushya:template/ladder"]], "kit": "normal"}, "item_group": "yuushya_extrashapes",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
-			"class_type": "template", "auto_generated": { "recipe": true,"item_model": true },
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"class_type": "template", "auto_generated": { "recipe": true,"item_model": true ,"tags": [{"value": "climbable"}], "collision": "detail"},
 			"texture": {
 				"slots": ["all", "sides", "top"],
 				"for_class": ["raw_wood", "concrete"]
@@ -2998,8 +2998,8 @@
 			"name": "leaning_ladder",
 			"blockstate": { "forms": [["yuushya:template/leaning_ladder"]], "kit": "normal"}, "item_group": "yuushya_furniture",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
-			"class_type": "template", "auto_generated": { "recipe": true,"item_model": true },
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"class_type": "template", "auto_generated": { "recipe": true,"item_model": true ,"tags": [{"value": "climbable"}], "collision": "detail"},
 			"texture": {
 				"slots": ["all", "sides", "top"],
 				"for_class": ["raw_wood", "concrete"]
@@ -3010,8 +3010,8 @@
 			"name": "foldable_ladder",
 			"blockstate": { "forms": [["yuushya:template/foldable_ladder"]], "kit": "normal"}, "item_group": "yuushya_furniture",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
-			"class_type": "template", "auto_generated": { "recipe": true,"item_model": true },
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"class_type": "template", "auto_generated": { "recipe": true,"item_model": true,"tags": [{"value": "climbable"}], "collision": "detail" },
 			"texture": {
 				"slots": ["all", "sides", "top"],
 				"for_class": ["raw_wood", "concrete"]

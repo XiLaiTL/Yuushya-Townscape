@@ -64,7 +64,7 @@ public class CollisionFileCreator {
                                 JsonElement value = pair.getValue();
                                 if(value.isJsonArray()){ value = value.getAsJsonArray().get(0); }
                                 BlockState.Variant variant = NormalGSON.fromJson(value, BlockState.Variant.class);
-                                Model model = modelReader.read(new ResourceLocation(variant.model));
+                                Model model = modelReader.read( ResourceLocation.parse(variant.model));
                                 if(model!=null){
                                     if(model.elements==null){
                                         itemBlockstate.collision = new ArrayList<>();
@@ -115,7 +115,7 @@ public class CollisionFileCreator {
         Path path = this._resPath.resolve("./data/"+this._nameSpace+"/collision/");
         path.toFile().mkdirs();
         for(String namespaceIdString:collisionData.keySet()){
-            ResourceLocation namespaceId = new ResourceLocation(namespaceIdString);
+            ResourceLocation namespaceId = ResourceLocation.parse(namespaceIdString);
             Path itemPath = path.resolve(namespaceId.getPath()+".json");
             try(BufferedWriter writer=new BufferedWriter( new FileWriter(itemPath.toFile(), StandardCharsets.UTF_8))){
                 String json=NormalGSON.toJson(collisionData.get(namespaceIdString));

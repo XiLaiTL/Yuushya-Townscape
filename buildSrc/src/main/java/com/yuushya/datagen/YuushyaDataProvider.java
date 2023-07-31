@@ -1,10 +1,7 @@
 package com.yuushya.datagen;
 
 import com.google.gson.JsonElement;
-import com.yuushya.datagen.data.BlockStateData;
-import com.yuushya.datagen.data.LootTableData;
-import com.yuushya.datagen.data.ModelData;
-import com.yuushya.datagen.data.RecipeData;
+import com.yuushya.datagen.data.*;
 import com.yuushya.datagen.utils.ResourceLocation;
 import com.yuushya.registries.YuushyaRegistryData;
 
@@ -28,7 +25,8 @@ public class YuushyaDataProvider {
         ItemModel("models/item/",ResourceType.ASSETS),
         Recipe("recipes/block/",ResourceType.DATA),
         LootTable("loot_tables/blocks/",ResourceType.DATA),
-        Particle("particles/",ResourceType.ASSETS);
+        Particle("particles/",ResourceType.ASSETS),
+        Tags("tags/",ResourceType.DATA);
         private final String prefix;
         public final ResourceType resource;
         public final Map<ResourceLocation, Supplier<JsonElement>> map = new HashMap<>();
@@ -44,7 +42,7 @@ public class YuushyaDataProvider {
     private String selfPrefix;
 
     public YuushyaDataProvider id(String name){
-        this.resourceLocation=new ResourceLocation(MOD_ID,name);
+        this.resourceLocation=ResourceLocation.parse(MOD_ID,name);
         return this;
     }
     public YuushyaDataProvider id(ResourceLocation resourceLocation){
@@ -74,8 +72,8 @@ public class YuushyaDataProvider {
     }
     public ResourceLocation getNewId(){
         return selfPrefix==null||selfPrefix.isEmpty()
-                ? new ResourceLocation(this.resourceLocation.getNamespace(),this.dataType.prefix+this.resourceLocation.getPath()+DataType.suffix)
-                : new ResourceLocation(this.resourceLocation.getNamespace(),this.selfPrefix+this.resourceLocation.getPath()+DataType.suffix);
+                ? ResourceLocation.parse(this.resourceLocation.getNamespace(),this.dataType.prefix+this.resourceLocation.getPath()+DataType.suffix)
+                : ResourceLocation.parse(this.resourceLocation.getNamespace(),this.selfPrefix+this.resourceLocation.getPath()+DataType.suffix);
     }
     public void save(){
         ResourceLocation resourceLocationNew = getNewId();
@@ -100,12 +98,12 @@ public class YuushyaDataProvider {
     }
 
     public static ResourceLocation toRecipeResourceLocation(ResourceLocation resourceLocation){
-        return new ResourceLocation(
+        return ResourceLocation.parse(
                 resourceLocation.getNamespace(),
                 resourceLocation.getPath().replace("recipes/","").replace(".json",""));
     }
     public static ResourceLocation toLootTableResourceLocation(ResourceLocation resourceLocation){
-        return new ResourceLocation(
+        return ResourceLocation.parse(
                 resourceLocation.getNamespace(),
                 resourceLocation.getPath().replace("loot_tables/","").replace(".json",""));
     }
@@ -113,13 +111,13 @@ public class YuushyaDataProvider {
     public YuushyaDataProvider addTemplateBlockRecipe(YuushyaRegistryData.Block templateBlock){
         this.id(templateBlock.name);
         this.type(DataType.Recipe);
-        this.json(()-> RecipeData.genStoneCutterRecipe(new ResourceLocation(MOD_ID,templateBlock.name) ,getBlueprint("yuushya_template"),1 )).save();
+        this.json(()-> RecipeData.genStoneCutterRecipe(ResourceLocation.parse(MOD_ID,templateBlock.name) ,getBlueprint("yuushya_template"),1 )).save();
         return this;
     }
     public YuushyaDataProvider addTemplateRecipe(YuushyaRegistryData.Block block,YuushyaRegistryData.Block templateBlock){
         this.id(block.name);
         this.type(DataType.Recipe);
-        this.json(()-> RecipeData.genStoneCutterRecipe(new ResourceLocation(MOD_ID,block.name) ,new ResourceLocation(MOD_ID,templateBlock.name),1 )).save();
+        this.json(()-> RecipeData.genStoneCutterRecipe(ResourceLocation.parse(MOD_ID,block.name) ,ResourceLocation.parse(MOD_ID,templateBlock.name),1 )).save();
         return this;
     }
 
@@ -128,31 +126,39 @@ public class YuushyaDataProvider {
         switch (this.dataType){
             case BlockState ->{
                 if (block.blockstate==null||(block.blockstate.kit!=null&&block.blockstate.kit.equals("block")))
-                    this.json(()-> BlockStateData.genSimpleBlock(new ResourceLocation(MOD_ID,"block/"+block.name))).save();
+                    this.json(()-> BlockStateData.genSimpleBlock(ResourceLocation.parse(MOD_ID,"block/"+block.name))).save();
                 else
                     this.json(()->BlockStateData.genBlockState(block.blockstate)).save();
             }
             case ItemModel -> {
                 ResourceLocation modelUse;
                 if (block.itemModel!=null&&!block.itemModel.isEmpty())
-                    modelUse=new ResourceLocation(block.itemModel);
+                    modelUse=ResourceLocation.parse(block.itemModel);
                 else if (block.blockstate==null||(block.blockstate.kit!=null&&block.blockstate.kit.equals("block")))
-                    modelUse=new ResourceLocation(MOD_ID,"block/"+block.name);
+                    modelUse=ResourceLocation.parse(MOD_ID,"block/"+block.name);
                 else if (block.blockstate.kit!=null&&!block.blockstate.kit.isEmpty())
-                    modelUse=new ResourceLocation(block.blockstate.forms.get(0).get(0));
+                    modelUse=ResourceLocation.parse(block.blockstate.forms.get(0).get(0));
                 else if (block.blockstate.states!=null&&!block.blockstate.states.isEmpty())
-                    modelUse=new ResourceLocation(getModelListFromData(block.blockstate.models).get(0));
+                    modelUse=ResourceLocation.parse(getModelListFromData(block.blockstate.models).get(0));
                 else
                     modelUse=null;
                 this.json(()-> ModelData.genChildItemModel(modelUse)).save();
             }
-            case Recipe -> this.json(()-> RecipeData.genStoneCutterRecipe(new ResourceLocation(MOD_ID,block.name) ,getBlueprint(block.itemGroup),getResultNumber(block.itemGroup) )).save();
-            case BlockModel -> {this.json(()->ModelData.genSimpleCubeBlockModel(new ResourceLocation(block.texture.value))).save();}
+            case Recipe -> this.json(()-> RecipeData.genStoneCutterRecipe(ResourceLocation.parse(MOD_ID,block.name) ,getBlueprint(block.itemGroup),getResultNumber(block.itemGroup) )).save();
+            case BlockModel -> {this.json(()->ModelData.genSimpleCubeBlockModel(ResourceLocation.parse(block.texture.value))).save();}
             case LootTable -> {
                 if(block.blockstate != null && "tri_part".equals(block.blockstate.kit))
-                    this.json(() -> LootTableData.genTriBlockLootTable(new ResourceLocation(MOD_ID, block.name))).save();
+                    this.json(() -> LootTableData.genTriBlockLootTable(ResourceLocation.parse(MOD_ID, block.name))).save();
                 else
-                    this.json(() -> LootTableData.genSingleItemTable(new ResourceLocation(MOD_ID, block.name))).save();
+                    this.json(() -> LootTableData.genSingleItemTable(ResourceLocation.parse(MOD_ID, block.name))).save();
+            }
+            case Tags -> {
+                ResourceLocation name_now = this.resourceLocation;
+                for(YuushyaRegistryData.Block.AutoGenerated.Tag tag:block.autoGenerated.tags){
+                    ResourceLocation key = TagsData.addTag(tag.type,ResourceLocation.parse(tag.value),ResourceLocation.parse(MOD_ID, block.name));
+                    if(!this.contain(key)) this.id(key).type(DataType.Tags).json(()->TagsData.genTags(key)).save();
+                }
+                this.id(name_now);
             }
         };
         return this;
