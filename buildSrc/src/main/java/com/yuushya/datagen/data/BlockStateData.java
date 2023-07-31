@@ -27,14 +27,19 @@ public class BlockStateData {
     public static final ChildProperty FORM=ChildProperty.of("form","0","1","2","3","4","5","6","7");
     public static final ChildProperty POS_HORIZON=ChildProperty.of("pos","left","middle","right","none");
     public static final ChildProperty POS_VERTICAL=ChildProperty.of("pos","top","middle","bottom","none");
+    public static final ChildProperty YPOS=ChildProperty.of("pos","top","middle","bottom","none");
     public static final ChildProperty XPOS=ChildProperty.of("xpos","west","east","middle","none");
     public static final ChildProperty ZPOS=ChildProperty.of("zpos","north","south","middle","none");
+    public static final ChildProperty X=ChildProperty.of("form","0","1","2","3","4","5","6","7","8","9","10","11");
+    public static final ChildProperty Y=X,Z=X;
     public static final ChildProperty POWERED=ChildProperty.of("powered","true","false");
     public static final ChildProperty HALF=ChildProperty.of("half","top","bottom");
+    public static final ChildProperty SLAB_TYPE = ChildProperty.of("type","top","bottom","double");
     public static final ChildProperty STAIRS_SHAPE=ChildProperty.of("shape","straight","inner_left","inner_right","outer_left","outer_right");
     public static final ChildProperty DOOR_HINGE=ChildProperty.of("hinge","left","right");
     public static final ChildProperty DOUBLE_BLOCK_HALF=ChildProperty.of("half","upper","lower");
     public static final ChildProperty OPEN=ChildProperty.of("open","true","false");
+
 
 
     public static JsonElement genSimpleBlock(ResourceLocation resourceLocation) {
@@ -102,6 +107,13 @@ public class BlockStateData {
                             else if (variantKeyList.get(1).equals("pos=middle")) return List.of(Variant.variant().with(VariantProperty.MODEL, new ResourceLocation(blockState.forms.get(i).get(0))));
                             else return List.of(Variant.variant().with(VariantProperty.MODEL,blankModel));
                         }));
+                case "VanillaSlabBlock"->{
+                    ResourceLocation bottom=new ResourceLocation(blockState.forms.get(0).get(0));
+                    ResourceLocation _double=new ResourceLocation(blockState.forms.get(0).get(1));
+                    ResourceLocation top=new ResourceLocation(blockState.forms.get(0).get(2));
+                    yield  ChildVariant.of(baseVariant)
+                            .add(createSlabVariant(bottom,_double,top));
+                }
                 case "VanillaStairBlock"->{
                     ResourceLocation inner=new ResourceLocation(blockState.forms.get(0).get(0));
                     ResourceLocation straight=new ResourceLocation(blockState.forms.get(0).get(1));
@@ -164,6 +176,7 @@ public class BlockStateData {
                 .addVariant(List.of("facing=west"),Variant.variant().with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270))
                 .addVariant(List.of("facing=east"), Variant.variant().with(VariantProperty.Y_ROT, VariantProperty.Rotation.R90));
     }
+
     private static ChildPropertyVariant createFacingVariant() {
         return ChildPropertyVariant.of(HORIZONTAL_FACING)
                 .addVariant(List.of("facing=down"), Variant.variant().with(VariantProperty.X_ROT, VariantProperty.Rotation.R90))
@@ -271,6 +284,13 @@ public class BlockStateData {
                 .addVariant(List.of("facing=north", "half=upper", "hinge=right", "open=true"),
                         Variant.variant().with(VariantProperty.MODEL, top).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R180));
 
+    }
+
+    private static ChildPropertyVariant createSlabVariant(ResourceLocation bottom,ResourceLocation _double,ResourceLocation top){
+        return ChildPropertyVariant.of(SLAB_TYPE)
+                .addVariant(List.of("type=bottom"),Variant.variant().with(VariantProperty.MODEL, bottom))
+                .addVariant(List.of("type=double"),Variant.variant().with(VariantProperty.MODEL, _double))
+                .addVariant(List.of("type=top"),Variant.variant().with(VariantProperty.MODEL, top));
     }
 
     private static ChildPropertyVariant createStairVariant(ResourceLocation inner,ResourceLocation straight,ResourceLocation outer){

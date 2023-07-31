@@ -32,13 +32,6 @@
 		{"class_type": "BlueprintItem", "name": "extra_shapes_blueprint",   "item_group": "yuushya_item","properties": {"max_count": 64,"lines": 1, "rarity": "common"}},
 		{"class_type": "BlueprintItem", "name": "window_blueprint",  "item_group": "yuushya_item","properties": {"max_count": 64,"lines": 1, "rarity": "common"}},
 
-		{"class_type": "", "name": "the_encyclopedia",   "item_group": "yuushya_item","properties": {"max_count": 16,"lines": 1, "rarity": "common"}},
-		{"class_type": "", "name": "shimmering_pearl",   "item_group": "yuushya_item","properties": {"max_count": 16,"lines": 1, "rarity": "common"}},
-		{"class_type": "", "name": "everlasting_wood",   "item_group": "yuushya_item","properties": {"max_count": 16,"lines": 1, "rarity": "common"}},
-		{"class_type": "", "name": "sprouting_dirt",   "item_group": "yuushya_item","properties": {"max_count": 16,"lines": 1, "rarity": "common"}},
-		{"class_type": "", "name": "floating_bloom",   "item_group": "yuushya_item","properties": {"max_count": 16,"lines": 1, "rarity": "common"}},
-		{"class_type": "", "name": "sparking_flame",   "item_group": "yuushya_item","properties": {"max_count": 16,"lines": 1, "rarity": "common"}},
-
 		{"class_type": "HatItem", "name": "pictor",   "item_group": "yuushya_item","properties": {"max_count": 64,"lines": 1, "rarity": "epic"}},
 		{"class_type": "HatItem", "name": "bismuth_crystal",   "item_group": "yuushya_item","properties": {"max_count": 64,"lines": 1, "rarity": "epic"}},
 		{"class_type": "HatItem", "name": "tri_legged_chair",   "item_group": "yuushya_item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
@@ -2445,7 +2438,6 @@
 			}
 		},
 
-
 		{
 			"name": "slippers",
 			"blockstate": { "forms": [["yuushya:template/slippers"],["yuushya:template/slippers_"]], "kit": "normal"},
@@ -2461,7 +2453,10 @@
 
 		{
 			"name": "slab",
-			"blockstate": { "forms": [["yuushya:template/slab"]], "kit": "normal"},
+			"blockstate": {
+				"forms": [["yuushya:template/slab","yuushya:template/slab_cube","yuushya:template/slab_top"]],
+				"kit": "VanillaSlabBlock"
+			},
 			"render_type": "cutout",
 			"item_group": "yuushya_extrashapes",
 			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
@@ -2472,7 +2467,6 @@
 			}
 
 		},
-
 		{
 			"name": "side_slab",
 			"blockstate": { "forms": [["yuushya:template/side_slab"]], "kit": "normal"},
