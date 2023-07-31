@@ -6664,7 +6664,6 @@
 		{
 			"class_type": "DecoBlock",
 			"name": "mounted_fern",
-			"usage": {"cycle_forms": [0,1],"sound": "block.chain.hit"},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_living_being",
 			"blockstate": { "forms": [["yuushya:extra_building_material/flower_pot/wall_flowerpot_0"],["yuushya:extra_building_material/flower_pot/wall_flowerpot_4"]]},
 			"properties": {"lines": 1}
@@ -7225,7 +7224,6 @@
 		{
 			"class_type": "DecoBlock",
 			"name": "snack",
-			"usage": {"cycle_forms": [0,1],"sound": "ui.button.click"},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_catering",
 			"properties": {"lines": 1},
 			"blockstate": { "forms": [["yuushya:extra_building_material/snack"],["yuushya:extra_building_material/snack_"]]}
@@ -7374,7 +7372,6 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "empty_goods_shelf_double",
-			"usage": {"cycle_forms": [0,1],"sound": "ui.button.click"},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_store",
 			"properties": {"lines": 1},
 			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_2x/0"],["yuushya:extra_building_material/grocery/shelf_2x/0_"]]}
@@ -7407,7 +7404,6 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "goods_shelf_books",
-			"usage": {"cycle_forms": [0,1],"sound": "ui.button.click"},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_store",
 			"properties": {"lines": 1},
 			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_books"],["yuushya:extra_building_material/grocery/shelf_books_"]]}
@@ -7416,7 +7412,6 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "goods_shelf_candy",
-			"usage": {"cycle_forms": [0,1],"sound": "ui.button.click"},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_store",
 			"properties": {"lines": 1},
 			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_candy"],["yuushya:extra_building_material/grocery/shelf_candy_"]]}
@@ -7425,7 +7420,6 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "goods_shelf_chopping_board",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_store",
 			"properties": {"lines": 0},
 			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_chopping_board"]]}
 		},
@@ -7433,7 +7427,6 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "goods_shelf_frying_pan",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_store",
 			"properties": {"lines": 0},
 			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_frying_pan"]]}
 		},
@@ -7441,7 +7434,6 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "goods_shelf_glass",
-			"usage": {"cycle_forms": [0,1],"sound": "ui.button.click"},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_store",
 			"properties": {"lines": 1},
 			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_glass"],["yuushya:extra_building_material/grocery/shelf_glass_"]]}
@@ -7450,7 +7442,6 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "goods_shelf_boxes",
-			"usage": {"cycle_forms": [0,1],"sound": "ui.button.click"},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_store",
 			"properties": {"lines": 1},
 			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_lboxes"],["yuushya:extra_building_material/grocery/shelf_lboxes_"]]}
@@ -7459,7 +7450,6 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "goods_shelf_mini_boxes",
-			"usage": {"cycle_forms": [0,1],"sound": "ui.button.click"},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_store",
 			"properties": {"lines": 1},
 			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_mboxes"],["yuushya:extra_building_material/grocery/shelf_mboxes_"]]}
@@ -7492,7 +7482,6 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "goods_shelf_small_soft_drink",
-			"usage": {"cycle_forms": [0,1],"sound": "ui.button.click"},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_store",
 			"properties": {"lines": 1},
 			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_small_soft_drink"],["yuushya:extra_building_material/grocery/shelf_small_soft_drink_"]]}
@@ -7518,7 +7507,6 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "goods_shelf_paste",
-			"usage": {"cycle_forms": [0,1],"sound": "ui.button.click"},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_store",
 			"properties": {"lines": 1},
 			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_jam"],["yuushya:extra_building_material/grocery/shelf_jam_"]]}
@@ -7527,7 +7515,6 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "goods_shelf_jam",
-			"usage": {"cycle_forms": [0,1],"sound": "ui.button.click"},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_store",
 			"properties": {"lines": 1},
 			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_jam2"],["yuushya:extra_building_material/grocery/shelf_jam2_"]]}
@@ -7536,7 +7523,6 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "goods_shelf_mug",
-			"usage": {"cycle_forms": [0,1],"sound": "ui.button.click"},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_store",
 			"properties": {"lines": 1},
 			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_mug"],["yuushya:extra_building_material/grocery/shelf_mug_"]]}
@@ -7545,7 +7531,6 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "goods_shelf_plate",
-			"usage": {"cycle_forms": [0,1],"sound": "ui.button.click"},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_store",
 			"properties": {"lines": 1},
 			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_plate"],["yuushya:extra_building_material/grocery/shelf_plate_"]]}
@@ -7554,7 +7539,6 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "goods_shelf_potatochip",
-			"usage": {"cycle_forms": [0,1],"sound": "ui.button.click"},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_store",
 			"properties": {"lines": 1},
 			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_potatochip"],["yuushya:extra_building_material/grocery/shelf_potatochip_"]]}
@@ -7563,7 +7547,6 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "goods_shelf_snack",
-			"usage": {"cycle_forms": [0,1],"sound": "ui.button.click"},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_store",
 			"properties": {"lines": 1},
 			"blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_snack"],["yuushya:extra_building_material/grocery/shelf_snack_"]]}
@@ -8049,7 +8032,6 @@
 			"class_type": "DecoBlock",
 			"name": "pipe_hub",
 			"properties": {"lines": 1},
-			"usage": {"cycle_forms": [0,1],"sound": "block.metal.hit"},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_infrastructure",
 			"blockstate": { "forms": [["yuushya:extra_building_material/pipe/pipe_hub_0"],["yuushya:extra_building_material/pipe/pipe_hub_1"],["yuushya:extra_building_material/pipe/pipe_hub_2"],["yuushya:extra_building_material/pipe/pipe_hub_3"]]}
 		},
@@ -8709,7 +8691,6 @@
 			"name": "list",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_furniture",
 			"properties": {"lines": 1},
-			"usage": {"cycle_forms": [0,1,2,3,4],"sound": "item.book.page_turn"},
 			"blockstate": { "forms": [["yuushya:extra_building_material/to_do_list_1"],["yuushya:extra_building_material/to_do_list_2"],["yuushya:extra_building_material/to_do_list_3"],["yuushya:extra_building_material/to_do_list_4"],["yuushya:extra_building_material/to_do_list_5"]]}
 		},
 
@@ -8727,7 +8708,6 @@
 			"name": "mounted_album",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_furniture",
 			"properties": {"lines": 1},
-			"usage": {"cycle_forms": [0,1,2],"sound": "item.book.put"},
 			"blockstate": { "forms": [["yuushya:extra_building_material/ad/album1"],["yuushya:extra_building_material/ad/album2"],["yuushya:extra_building_material/ad/album3"]]}
 		},
 
@@ -8736,7 +8716,6 @@
 			"name": "album",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_furniture",
 			"properties": {"lines": 1},
-			"usage": {"cycle_forms": [0,1],"sound": "item.book.put"},
 			"blockstate": { "forms": [["yuushya:extra_building_material/ad/album4"],["yuushya:extra_building_material/ad/album5"]]}
 		},
 
@@ -9147,7 +9126,6 @@
 		{
 			"class_type": "DecoBlock",
 			"name": "pigment_bucket",
-			"usage": {"cycle_forms": [0,1],"sound": "block.iron_trapdoor.open"},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_furniture",
 			"properties": {"lines": 1},
 			"blockstate": { "forms": [["yuushya:extra_building_material/pigment_bucket"],["yuushya:extra_building_material/pigment_bucket_single"],["yuushya:extra_building_material/pigment_bucket_single_"]]}
@@ -9382,7 +9360,6 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "painting_0",
-			"usage": {"cycle_forms": [0,1]},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_furniture",
 			"properties": {"lines": 1, "has_collision": false},
 			"blockstate": { "forms": [["yuushya:extra_building_material/painting/p0"],["yuushya:extra_building_material/painting/m0"]]}
@@ -9391,7 +9368,6 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "painting_1",
-			"usage": {"cycle_forms": [0,1]},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_furniture",
 			"properties": {"lines": 1, "has_collision": false},
 			"blockstate": { "forms": [["yuushya:extra_building_material/painting/p1"],["yuushya:extra_building_material/painting/m1"]]}
@@ -9400,7 +9376,6 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "painting_2",
-			"usage": {"cycle_forms": [0,1]},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_furniture",
 			"properties": {"lines": 1, "has_collision": false},
 			"blockstate": { "forms": [["yuushya:extra_building_material/painting/p2"],["yuushya:extra_building_material/painting/m2"]]}
@@ -9409,7 +9384,6 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "painting_3",
-			"usage": {"cycle_forms": [0,1]},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_furniture",
 			"properties": {"lines": 1, "has_collision": false},
 			"blockstate": { "forms": [["yuushya:extra_building_material/painting/p3"],["yuushya:extra_building_material/painting/m3"]]}
@@ -9418,7 +9392,6 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "painting_4",
-			"usage": {"cycle_forms": [0,1]},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_furniture",
 			"properties": {"lines": 1, "has_collision": false},
 			"blockstate": { "forms": [["yuushya:extra_building_material/painting/p4"],["yuushya:extra_building_material/painting/m4"]]}
@@ -9427,7 +9400,6 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "painting_5",
-			"usage": {"cycle_forms": [0,1]},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_furniture",
 			"properties": {"lines": 1, "has_collision": false},
 			"blockstate": { "forms": [["yuushya:extra_building_material/painting/p5"],["yuushya:extra_building_material/painting/m5"]]}
@@ -9436,7 +9408,6 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "painting_6",
-			"usage": {"cycle_forms": [0,1]},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_furniture",
 			"properties": {"lines": 1, "has_collision": false},
 			"blockstate": { "forms": [["yuushya:extra_building_material/painting/p6"],["yuushya:extra_building_material/painting/m6"]]}
@@ -9445,7 +9416,6 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "painting_7",
-			"usage": {"cycle_forms": [0,1]},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_furniture",
 			"properties": {"lines": 1, "has_collision": false},
 			"blockstate": { "forms": [["yuushya:extra_building_material/painting/p7"],["yuushya:extra_building_material/painting/m7"]]}
@@ -9454,7 +9424,6 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "painting_8",
-			"usage": {"cycle_forms": [0,1]},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_furniture",
 			"properties": {"lines": 1, "has_collision": false},
 			"blockstate": { "forms": [["yuushya:extra_building_material/painting/p8"],["yuushya:extra_building_material/painting/m8"]]}
@@ -9463,7 +9432,6 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "painting_9",
-			"usage": {"cycle_forms": [0,1]},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_furniture",
 			"properties": {"lines": 1, "has_collision": false},
 			"blockstate": { "forms": [["yuushya:extra_building_material/painting/p9"],["yuushya:extra_building_material/painting/m9"]]}
@@ -9472,7 +9440,6 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "painting_10",
-			"usage": {"cycle_forms": [0,1]},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_furniture",
 			"properties": {"lines": 1, "has_collision": false},
 			"blockstate": { "forms": [["yuushya:extra_building_material/painting/p10"],["yuushya:extra_building_material/painting/m10"]]}
@@ -9481,7 +9448,6 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "painting_11",
-			"usage": {"cycle_forms": [0,1]},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_furniture",
 			"properties": {"has_collision": false},
 			"blockstate": { "forms": [["yuushya:extra_building_material/painting/p11"]]}
@@ -9520,7 +9486,6 @@
 		{
 			"class_type": "DecoBlock",
 			"name": "clothes_showcase",
-			"usage": {"cycle_forms": [0,1]},
 			"auto_generated": { "recipe": true, "blockstate": false }, "item_group": "yuushya_fabric",
 			"properties": {"lines": 1},
 			"blockstate": { "forms": [["yuushya:extra_building_material/hanging_clothes_1"],["yuushya:extra_building_material/hanging_clothes_1_"]]}
@@ -9960,7 +9925,6 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "bed_frame_0",
-			"usage": {"cycle_forms": [0,1]},
 			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_fabric",
 			"blockstate": { "forms": [["yuushya:extra_building_material/bed_frame0"],["yuushya:extra_building_material/bed_frame0_"]]}
@@ -9969,7 +9933,6 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "bed_frame_1",
-			"usage": {"cycle_forms": [0,1]},
 			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_fabric",
 			"blockstate": { "forms": [["yuushya:extra_building_material/bed_frame1"],["yuushya:extra_building_material/bed_frame1_"]]}
@@ -9978,7 +9941,6 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "bed_frame_2",
-			"usage": {"cycle_forms": [0,1]},
 			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_fabric",
 			"blockstate": { "forms": [["yuushya:extra_building_material/bed_frame2"],["yuushya:extra_building_material/bed_frame2_"]]}
@@ -9987,7 +9949,6 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "bed_frame_3",
-			"usage": {"cycle_forms": [0,1]},
 			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_fabric",
 			"blockstate": { "forms": [["yuushya:extra_building_material/bed_frame3"],["yuushya:extra_building_material/bed_frame3_"]]}
@@ -10233,7 +10194,6 @@
 		{
 			"class_type": "DecoBlock",
 			"name": "fluorescent_lamp",
-			"usage": {"cycle_forms": [0,1]},
 			"properties": { "light_level": 15, "lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_lighting",
 			"blockstate": { "forms": [["yuushya:extra_building_material/fluorescent_lamp"],["yuushya:extra_building_material/fluorescent_lamp_"]]}
@@ -10268,7 +10228,6 @@
 		{
 			"class_type": "FixedBlock",
 			"name": "air_conditioning_condenser",
-			"usage": {"cycle_forms": [0,1]},
 			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_electrical_appliance",
 			"blockstate": { "forms": [["yuushya:extra_building_material/airc3"],["yuushya:extra_building_material/airc4"]]}
@@ -10305,7 +10264,7 @@
 		{
 			"class_type": "DecoBlock",
 			"name": "tv_online",
-			"usage": {"cycle_forms": [0,1,2,3,4,5,6,7]},
+			"usage": {"cycle_forms": [0,1,2,3,4,5,6,7],"sound": "block.stone_button.click_off"},
 			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_electrical_appliance",
 			"blockstate": { "forms": [["yuushya:extra_building_material/tv_program_0"],["yuushya:extra_building_material/tv_program_1"],["yuushya:extra_building_material/tv_program_2"],["yuushya:extra_building_material/tv_program_3"],["yuushya:extra_building_material/tv_program_4"],["yuushya:extra_building_material/tv_program_5"],["yuushya:extra_building_material/tv_program_6"],["yuushya:extra_building_material/tv_program_7"]]}
@@ -10314,7 +10273,7 @@
 		{
 			"class_type": "DecoBlock",
 			"name": "mounted_tv_online",
-			"usage": {"cycle_forms": [0,1,2,3,4,5,6,7]},
+			"usage": {"cycle_forms": [0,1,2,3,4,5,6,7],"sound": "block.stone_button.click_off"},
 			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_electrical_appliance",
 			"blockstate": { "forms": [["yuushya:extra_building_material/mounted_tv_program_0"],["yuushya:extra_building_material/mounted_tv_program_1"],["yuushya:extra_building_material/mounted_tv_program_2"],["yuushya:extra_building_material/mounted_tv_program_3"],["yuushya:extra_building_material/mounted_tv_program_4"],["yuushya:extra_building_material/mounted_tv_program_5"],["yuushya:extra_building_material/mounted_tv_program_6"],["yuushya:extra_building_material/mounted_tv_program_7"]]}
@@ -10352,7 +10311,7 @@
 		{
 			"class_type": "DecoBlock",
 			"name": "monitor",
-			"usage": {"cycle_forms": [0,1]},
+			"usage": {"cycle_forms": [0,1],"sound": "block.stone_button.click_off"},
 			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_electrical_appliance",
 			"blockstate": { "forms": [["yuushya:extra_building_material/monitor_single"],["yuushya:extra_building_material/monitor_activated"]]}
@@ -10368,7 +10327,7 @@
 		{
 			"class_type": "DecoBlock",
 			"name": "laptop",
-			"usage": {"cycle_forms": [0,1]},
+			"usage": {"cycle_forms": [0,1],"sound": "block.book.put"},
 			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_electrical_appliance",
 			"blockstate": { "forms": [["yuushya:extra_building_material/lap_top"],["yuushya:extra_building_material/lap_top_off"]]}
@@ -10386,7 +10345,7 @@
 			"name": "fan",
 			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_electrical_appliance",
-			"usage": {"cycle_forms": [0,1]},
+			"usage": {"cycle_forms": [0,1],"sound": "block.stone_button.click_off"},
 			"blockstate": { "forms": [["yuushya:extra_building_material/fan"],["yuushya:extra_building_material/fan_off"]]}
 		},
 
@@ -10395,7 +10354,7 @@
 			"name": "fan_",
 			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_electrical_appliance",
-			"usage": {"cycle_forms": [0,1]},
+			"usage": {"cycle_forms": [0,1],"sound": "block.stone_button.click_off"},
 			"blockstate": { "forms": [["yuushya:extra_building_material/fan_"],["yuushya:extra_building_material/fan_off_"]]}
 		},
 
@@ -10404,7 +10363,7 @@
 			"name": "floor_fan",
 			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_electrical_appliance",
-			"usage": {"cycle_forms": [0,1]},
+			"usage": {"cycle_forms": [0,1],"sound": "block.stone_button.click_off"},
 			"blockstate": { "forms": [["yuushya:extra_building_material/fan_floor_on"],["yuushya:extra_building_material/fan_floor"]]}
 		},
 
@@ -10413,7 +10372,7 @@
 			"name": "floor_fan_",
 			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_electrical_appliance",
-			"usage": {"cycle_forms": [0,1]},
+			"usage": {"cycle_forms": [0,1],"sound": "block.stone_button.click_off"},
 			"blockstate": { "forms": [["yuushya:extra_building_material/fan_floor_on_"],["yuushya:extra_building_material/fan_floor_"]]}
 		},
 

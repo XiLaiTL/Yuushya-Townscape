@@ -98,7 +98,10 @@
   "item.yuushya.debug_stick_item.line2": " ",
   "item.yuushya.debug_stick_item.line3": " ",
   "item.yuushya.debug_stick_item.line4": " ",
-  
+  "item.yuushya.debug_stick_item.empty": "%s has not property",
+  "item.yuushya.debug_stick_item.select": "has chose %s（%s）",
+  "item.yuushya.debug_stick_item.update": "set \"%s\" to %s",
+
   "item.yuushya.get_blockstate_item": "Gourd of Copy&Paste",
   "item.yuushya.get_blockstate_item.line2": "\u00A79Mainhand: Right click a normal block to copy its Blockstates",
   "item.yuushya.get_blockstate_item.line3": "\u00A79Offhand: Rightclick a [Block Entity] to apply the copied to its currently selected [Layer]",
@@ -1247,7 +1250,7 @@
 "block.yuushya.inner_bed_17": "Inner Bed 17",
 "block.yuushya.inner_bed_18": "Inner Bed 18",
 "block.yuushya.inner_bed_19": "Inner Bed 19",
-"block.yuushya.inner_bed_20": "Inner Bed 20",  
+"block.yuushya.inner_bed_20": "Inner Bed 20",
 
 "block.yuushya.embbed_marble_bricks.line1": "\u00A79[Template Assets]",
 "block.yuushya.embbed_stone_bricks.line1": "\u00A79[Template Assets]",
@@ -1402,7 +1405,7 @@
 
 
 
-
+"block.yuushya.wastepaper_basket": "Wastepaper Basket",
 "block.yuushya.retaining_wall": "Retaining Wall",
 "block.yuushya.retaining_wall_top": "Retaining Wall Top",
 "block.yuushya.retaining_wall_corner": "Retaining Wall Corner",
@@ -1854,8 +1857,9 @@
 "block.yuushya.air_conditioning_condenser.line1": "\u00A7a(Right click empty-handed or use [Form Wrench] to switch)\u00A79[Available Form:2]",  
 "block.yuushya.unlocked_safe.line1": "\u00A7a(Right click empty-handed or use [Form Wrench] to switch)\u00A79[Available Form:2]",  
 "block.yuushya.snack.line1": "\u00A7a(Right click empty-handed or use [Form Wrench] to switch)\u00A79[Available Form:2]",  
-"block.yuushya.mounted_album.line1": "\u00A7a(Right click empty-handed or use [Form Wrench] to switch)\u00A79[Available Form:3]",  
-"block.yuushya.list.line1": "\u00A7a(Right click empty-handed or use [Form Wrench] to switch)\u00A79[Available Form:5]",  
+"block.yuushya.mounted_album.line1": "\u00A7a(Right click empty-handed or use [Form Wrench] to switch)\u00A79[Available Form:3]",
+"block.yuushya.wastepaper_basket.line1": "\u00A7a(Right click empty-handed or use [Form Wrench] to switch)\u00A79[可变形态:2]",
+"block.yuushya.list.line1": "\u00A7a(Right click empty-handed or use [Form Wrench] to switch)\u00A79[Available Form:5]",
 "block.yuushya.sticky_note.line1": "\u00A7a(Right click empty-handed or use [Form Wrench] to switch)\u00A79[Available Form:5]",  
 "block.yuushya.pigment_bucket.line1": "\u00A7a(Right click empty-handed or use [Form Wrench] to switch)\u00A79[Available Form:3]",  
 "block.yuushya.album.line1": "\u00A7a(Right click empty-handed or use [Form Wrench] to switch)\u00A79[Available Form:2]",  
