@@ -80,6 +80,7 @@ public class YuushyaRegistryData{
         public static class Usage{
             public List<Float> sitPos;
             public List<Integer> cycleForms;
+            public String sound;
         }
     }
     public static class Item{

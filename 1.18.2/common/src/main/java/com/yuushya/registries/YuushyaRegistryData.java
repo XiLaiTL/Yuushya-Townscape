@@ -79,6 +79,7 @@ public class YuushyaRegistryData{
 
         public static class Usage{
             public List<Float> sitPos;
+            public String sound;
             public List<Integer> cycleForms;
         }
     }

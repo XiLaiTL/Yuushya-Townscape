@@ -8124,133 +8124,133 @@
 		{
 			"class_type": "DecoBlock",
 			"name": "traffic_sign_0",
-			"auto_generated": { "recipe": true, "collision": false }, "item_group": "yuushya_traffic",
+			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "yuushya_traffic",
 			"blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_00"]]}
 		},
 
 		{
 			"class_type": "DecoBlock",
 			"name": "traffic_sign_1",
-			"auto_generated": { "recipe": true, "collision": false }, "item_group": "yuushya_traffic",
+			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "yuushya_traffic",
 			"blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_01"]]}
 		},
 
 		{
 			"class_type": "DecoBlock",
 			"name": "traffic_sign_2",
-			"auto_generated": { "recipe": true, "collision": false }, "item_group": "yuushya_traffic",
+			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "yuushya_traffic",
 			"blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_02"]]}
 		},
 
 		{
 			"class_type": "DecoBlock",
 			"name": "traffic_sign_3",
-			"auto_generated": { "recipe": true, "collision": false }, "item_group": "yuushya_traffic",
+			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "yuushya_traffic",
 			"blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_03"]]}
 		},
 
 		{
 			"class_type": "DecoBlock",
 			"name": "traffic_sign_4",
-			"auto_generated": { "recipe": true, "collision": false }, "item_group": "yuushya_traffic",
+			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "yuushya_traffic",
 			"blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_04"]]}
 		},
 
 		{
 			"class_type": "DecoBlock",
 			"name": "traffic_sign_5",
-			"auto_generated": { "recipe": true, "collision": false }, "item_group": "yuushya_traffic",
+			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "yuushya_traffic",
 			"blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_05"]]}
 		},
 
 		{
 			"class_type": "DecoBlock",
 			"name": "traffic_sign_6",
-			"auto_generated": { "recipe": true, "collision": false }, "item_group": "yuushya_traffic",
+			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "yuushya_traffic",
 			"blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_06"]]}
 		},
 
 		{
 			"class_type": "DecoBlock",
 			"name": "traffic_sign_7",
-			"auto_generated": { "recipe": true, "collision": false }, "item_group": "yuushya_traffic",
+			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "yuushya_traffic",
 			"blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_07"]]}
 		},
 
 		{
 			"class_type": "DecoBlock",
 			"name": "traffic_sign_8",
-			"auto_generated": { "recipe": true, "collision": false }, "item_group": "yuushya_traffic",
+			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "yuushya_traffic",
 			"blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_08"]]}
 		},
 
 		{
 			"class_type": "DecoBlock",
 			"name": "traffic_sign_9",
-			"auto_generated": { "recipe": true, "collision": false }, "item_group": "yuushya_traffic",
+			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "yuushya_traffic",
 			"blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_09"]]}
 		},
 
 		{
 			"class_type": "DecoBlock",
 			"name": "traffic_sign_10",
-			"auto_generated": { "recipe": true, "collision": false }, "item_group": "yuushya_traffic",
+			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "yuushya_traffic",
 			"blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_10"]]}
 		},
 
 		{
 			"class_type": "DecoBlock",
 			"name": "traffic_sign_11",
-			"auto_generated": { "recipe": true, "collision": false }, "item_group": "yuushya_traffic",
+			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "yuushya_traffic",
 			"blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_11"]]}
 		},
 
 		{
 			"class_type": "DecoBlock",
 			"name": "traffic_sign_12",
-			"auto_generated": { "recipe": true, "collision": false }, "item_group": "yuushya_traffic",
+			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "yuushya_traffic",
 			"blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_12"]]}
 		},
 
 		{
 			"class_type": "DecoBlock",
 			"name": "traffic_sign_13",
-			"auto_generated": { "recipe": true, "collision": false }, "item_group": "yuushya_traffic",
+			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "yuushya_traffic",
 			"blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_13"]]}
 		},
 
 		{
 			"class_type": "DecoBlock",
 			"name": "traffic_sign_14",
-			"auto_generated": { "recipe": true, "collision": false }, "item_group": "yuushya_traffic",
+			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "yuushya_traffic",
 			"blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_14"]]}
 		},
 
 		{
 			"class_type": "DecoBlock",
 			"name": "traffic_sign_15",
-			"auto_generated": { "recipe": true, "collision": false }, "item_group": "yuushya_traffic",
+			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "yuushya_traffic",
 			"blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_15"]]}
 		},
 
 		{
 			"class_type": "DecoBlock",
 			"name": "traffic_sign_16",
-			"auto_generated": { "recipe": true, "collision": false }, "item_group": "yuushya_traffic",
+			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "yuushya_traffic",
 			"blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_19"]]}
 		},
 
 		{
 			"class_type": "DecoBlock",
 			"name": "traffic_sign_17",
-			"auto_generated": { "recipe": true, "collision": false }, "item_group": "yuushya_traffic",
+			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "yuushya_traffic",
 			"blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_17"]]}
 		},
 
 		{
 			"class_type": "DecoBlock",
 			"name": "traffic_sign_18",
-			"auto_generated": { "recipe": true, "collision": false }, "item_group": "yuushya_traffic",
+			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "yuushya_traffic",
 			"blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_18"]]}
 		},
 
@@ -8637,7 +8637,7 @@
 		{
 			"class_type": "FixedBlock",
 			"name": "oak_foldable_table",
-			"usage": {"cycle_forms": [0,1]},
+			"usage": {"cycle_forms": [0,1],"sound": "block.wood.hit"},
 			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_furniture",
 			"blockstate": { "forms": [["yuushya:extra_building_material/table/big_oak"],["yuushya:extra_building_material/table/big_oak_"]]}
@@ -8646,7 +8646,7 @@
 		{
 			"class_type": "FixedBlock",
 			"name": "acacia_foldable_table",
-			"usage": {"cycle_forms": [0,1]},
+			"usage": {"cycle_forms": [0,1],"sound": "block.wood.hit"},
 			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_furniture",
 			"blockstate": { "forms": [["yuushya:extra_building_material/table/big_acacia"],["yuushya:extra_building_material/table/big_acacia_"]]}
@@ -8692,7 +8692,7 @@
 		{
 			"class_type": "DecoBlock",
 			"name": "sticky_note",
-			"auto_generated": { "recipe": true, "collision": false }, "item_group": "yuushya_furniture",
+			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "yuushya_furniture",
 			"properties": {"lines": 1},
 			"usage": {"cycle_forms": [0,1,2,3,4]},
 			"blockstate": { "forms": [["yuushya:extra_building_material/sticky_note_1"],["yuushya:extra_building_material/sticky_note_2"],["yuushya:extra_building_material/sticky_note_3"],["yuushya:extra_building_material/sticky_note_4"],["yuushya:extra_building_material/sticky_note_5"]]}
