@@ -2483,7 +2483,10 @@
 		{
 			"name": "ridge",
 			"item_group": "yuushya_extrashapes",
-			"blockstate": { "forms": [["yuushya:template/ridge"]], "kit": "normal"},
+			"blockstate": {
+				"forms": [["yuushya:template/ridge","yuushya:template/slab_cube","yuushya:template/ridge_top"]],
+				"kit": "VanillaSlabBlock"
+			},
 			"render_type": "cutout",
 			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail", "recipe": true,"item_model": true },
@@ -2496,7 +2499,10 @@
 		{
 			"name": "half_slab",
 			"item_group": "yuushya_extrashapes",
-			"blockstate": { "forms": [["yuushya:template/half_slab"]], "kit": "normal"},
+			"blockstate": {
+				"forms": [["yuushya:template/half_slab","yuushya:template/side_slab","yuushya:template/half_slab_top"]],
+				"kit": "VanillaSlabBlock"
+			},
 			"render_type": "cutout",
 			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail", "recipe": true,"item_model": true },

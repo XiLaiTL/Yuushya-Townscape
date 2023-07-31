@@ -2,15 +2,15 @@
 	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
 	"textures": {
-		"0": "block/acacia_trapdoor",
-		"1": "block/light_gray_concrete_powder",
-		"3": "block/light_gray_concrete_",
-		"4": "block/lime_concrete",
+		"0": "yuushya:block/acacia_door",
+		"1": "yuushya:block/light_gray_concrete_",
+		"3": "yuushya:block/light_gray_concrete_",
+		"4": "yuushya:block/lime_wool_",
 		"5": "block/yellow_concrete",
-		"6": "block/red_concrete_",
+		"6": "yuushya:block/red_concrete_",
 		"7": "yuushya:0extra_building_block/curtain_white",
-		"8": "block/acacia_door",
-		"particle": "block/acacia_trapdoor"
+		"8": "yuushya:block/acacia_door",
+		"particle": "yuushya:block/acacia_trapdoor"
 	},
 	"elements": [
 		{
