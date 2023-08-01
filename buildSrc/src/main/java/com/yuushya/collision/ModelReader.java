@@ -26,7 +26,7 @@ public class ModelReader {
         try (JsonReader reader=new JsonReader(new BufferedReader(new FileReader(path.toFile())))){
             Model model = NormalGSON.fromJson(JsonParser.parseReader(reader), Model.class);
             if (model.elements==null&&model.parent!=null) {
-                model = read(new ResourceLocation(model.parent));
+                model = read(ResourceLocation.parse(model.parent));
             }
             modelMap.put(namespaceID,model);
             return model;

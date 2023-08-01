@@ -46,19 +46,19 @@ public class BlockStateData {
         return ChildVariant.of(Variant.variant().with(VariantProperty.MODEL,resourceLocation)).get();
     }
     //TODO: support for block which written in both kit and states
-    private static final ResourceLocation blankModel=new ResourceLocation("yuushya:extra_building_material/blank");
+    private static final ResourceLocation blankModel=ResourceLocation.parse("yuushya:extra_building_material/blank");
     public static JsonElement genBlockState(YuushyaRegistryData.Block.BlockState blockState) {
         ChildVariant childVariant;
         if (blockState.kit!=null&&!blockState.kit.isEmpty()){
             int formsNum=blockState.forms.size();
-            Variant baseVariant=Variant.variant().with(VariantProperty.MODEL,new ResourceLocation(blockState.forms.get(0).get(0)));
+            Variant baseVariant=Variant.variant().with(VariantProperty.MODEL,ResourceLocation.parse(blockState.forms.get(0).get(0)));
             childVariant= switch (blockState.kit){
                 case "normal"->ChildVariant.of(baseVariant)
                         .add(createHorizonFacingVariant())
                         .add(ChildPropertyVariant.of(FORM).generate((variantKeyList)->{
                             int i=FORM.indexOf(variantKeyList.get(0));
                             return List.of(i < formsNum
-                                    ? Variant.variant().with(VariantProperty.MODEL, new ResourceLocation(blockState.forms.get(i).get(0)))
+                                    ? Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(i).get(0)))
                                     : Variant.variant()) ;
                         }));
                 case "attachment"-> ChildVariant.of(baseVariant)
@@ -66,7 +66,7 @@ public class BlockStateData {
                         .add(ChildPropertyVariant.of(FORM).generate((variantKeyList)->{
                             int i=FORM.indexOf(variantKeyList.get(0));
                             return List.of(i < formsNum
-                                    ? Variant.variant().with(VariantProperty.MODEL, new ResourceLocation(blockState.forms.get(i).get(0)))
+                                    ? Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(i).get(0)))
                                     : Variant.variant()) ;
                         }));
                 case "line"->ChildVariant.of(baseVariant)
@@ -75,17 +75,17 @@ public class BlockStateData {
                             int i=FORM.indexOf(variantKeyList.get(0));
                             int j=POS_HORIZON.indexOf(variantKeyList.get(1));
                             return List.of(i < formsNum
-                                    ? Variant.variant().with(VariantProperty.MODEL, new ResourceLocation(blockState.forms.get(i).get(j)))
+                                    ? Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(i).get(j)))
                                     : Variant.variant());
                         }));
                 case "face"->ChildVariant.of(baseVariant)
                         .add(ChildPropertyVariant.of(FORM,XPOS,ZPOS).generate((variantKeyList)->{
                             int i=FORM.indexOf(variantKeyList.get(0));
                             if (i < formsNum){
-                                ResourceLocation none = new ResourceLocation(blockState.forms.get(i).get(0));
-                                ResourceLocation singleLine = new ResourceLocation(blockState.forms.get(i).get(1));
-                                ResourceLocation middle = new ResourceLocation(blockState.forms.get(i).get(2));
-                                ResourceLocation bothLine = new ResourceLocation(blockState.forms.get(i).get(3));
+                                ResourceLocation none = ResourceLocation.parse(blockState.forms.get(i).get(0));
+                                ResourceLocation singleLine = ResourceLocation.parse(blockState.forms.get(i).get(1));
+                                ResourceLocation middle = ResourceLocation.parse(blockState.forms.get(i).get(2));
+                                ResourceLocation bothLine = ResourceLocation.parse(blockState.forms.get(i).get(3));
                                 return List.of(createXYPosVariant(variantKeyList.get(1),variantKeyList.get(2),none,singleLine,middle,bothLine)) ;
                             }
                             else return List.of(Variant.variant());
@@ -96,7 +96,7 @@ public class BlockStateData {
                             int i=FORM.indexOf(variantKeyList.get(0));
                             int j=POS_VERTICAL.indexOf(variantKeyList.get(1));
                             return List.of(i < formsNum
-                                    ? Variant.variant().with(VariantProperty.MODEL, new ResourceLocation(blockState.forms.get(i).get(j)))
+                                    ? Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(i).get(j)))
                                     : Variant.variant());
                         }));
                 case "tri_part"->ChildVariant.of(baseVariant)
@@ -104,28 +104,28 @@ public class BlockStateData {
                         .add(ChildPropertyVariant.of(FORM,POS_VERTICAL).generate((variantKeyList)->{
                             int i=FORM.indexOf(variantKeyList.get(0));
                             if (i>=formsNum) return List.of(Variant.variant());
-                            else if (variantKeyList.get(1).equals("pos=middle")) return List.of(Variant.variant().with(VariantProperty.MODEL, new ResourceLocation(blockState.forms.get(i).get(0))));
+                            else if (variantKeyList.get(1).equals("pos=middle")) return List.of(Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(i).get(0))));
                             else return List.of(Variant.variant().with(VariantProperty.MODEL,blankModel));
                         }));
                 case "VanillaSlabBlock"->{
-                    ResourceLocation bottom=new ResourceLocation(blockState.forms.get(0).get(0));
-                    ResourceLocation _double=new ResourceLocation(blockState.forms.get(0).get(1));
-                    ResourceLocation top=new ResourceLocation(blockState.forms.get(0).get(2));
+                    ResourceLocation bottom=ResourceLocation.parse(blockState.forms.get(0).get(0));
+                    ResourceLocation _double=ResourceLocation.parse(blockState.forms.get(0).get(1));
+                    ResourceLocation top=ResourceLocation.parse(blockState.forms.get(0).get(2));
                     yield  ChildVariant.of(baseVariant)
                             .add(createSlabVariant(bottom,_double,top));
                 }
                 case "VanillaStairBlock"->{
-                    ResourceLocation inner=new ResourceLocation(blockState.forms.get(0).get(0));
-                    ResourceLocation straight=new ResourceLocation(blockState.forms.get(0).get(1));
-                    ResourceLocation outer=new ResourceLocation(blockState.forms.get(0).get(2));
+                    ResourceLocation inner=ResourceLocation.parse(blockState.forms.get(0).get(0));
+                    ResourceLocation straight=ResourceLocation.parse(blockState.forms.get(0).get(1));
+                    ResourceLocation outer=ResourceLocation.parse(blockState.forms.get(0).get(2));
                     yield  ChildVariant.of(baseVariant)
                         .add(createStairVariant(inner,straight,outer));
                 }
                 case "VanillaDoorBlock"->{
-                    ResourceLocation bottom=new ResourceLocation(blockState.forms.get(0).get(0));
-                    ResourceLocation bottom_hinge=new ResourceLocation(blockState.forms.get(0).get(1));
-                    ResourceLocation top=new ResourceLocation(blockState.forms.get(0).get(2));
-                    ResourceLocation top_hinge=new ResourceLocation(blockState.forms.get(0).get(3));
+                    ResourceLocation bottom=ResourceLocation.parse(blockState.forms.get(0).get(0));
+                    ResourceLocation bottom_hinge=ResourceLocation.parse(blockState.forms.get(0).get(1));
+                    ResourceLocation top=ResourceLocation.parse(blockState.forms.get(0).get(2));
+                    ResourceLocation top_hinge=ResourceLocation.parse(blockState.forms.get(0).get(3));
                     yield  ChildVariant.of(baseVariant)
                             .add(createDoorVariant(bottom,bottom_hinge,top,top_hinge));
                 }
@@ -135,7 +135,7 @@ public class BlockStateData {
             return childVariant.get();
         }
         else {
-            Variant baseVariant=Variant.variant().with(VariantProperty.MODEL,new ResourceLocation(getModelListFromData(blockState.models).get(0)));
+            Variant baseVariant=Variant.variant().with(VariantProperty.MODEL,ResourceLocation.parse(getModelListFromData(blockState.models).get(0)));
             childVariant=ChildVariant.of(baseVariant);
             if(blockState.states==null)
                 return addModeltoBlockStateJsonObject(childVariant.get().getAsJsonObject(),blockState.models);

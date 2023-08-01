@@ -12,6 +12,9 @@ import net.minecraft.core.Registry;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -67,6 +70,10 @@ public class YuushyaBlockFactory{
         @Override
         public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
             if(usage!=null){
+                if(!level.isClientSide&&usage.sound!=null&&!usage.sound.isBlank()&&player.getItemInHand(hand).isEmpty()){
+                    SoundEvent soundEvent = Registry.SOUND_EVENT.get(new ResourceLocation(usage.sound));
+                    level.playSound(null, pos, soundEvent, SoundSource.BLOCKS, 1f, 0.2f);
+                }
                 if(usage.sitPos!=null&&usage.sitPos.size()==3&&player.getItemInHand(hand).isEmpty()){
                     return ChairEntityUtils.use(new Vec3(usage.sitPos.get(0),usage.sitPos.get(1),usage.sitPos.get(2)) ,state,level,pos,player,hand,hit);
                 }

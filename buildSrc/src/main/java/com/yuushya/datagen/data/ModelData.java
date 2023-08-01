@@ -22,7 +22,7 @@ public class ModelData {
     };
 
     public static JsonElement genChildItemModel(ResourceLocation parent){
-        if (parent==null) parent=new ResourceLocation("block/stone");
+        if (parent==null) parent=ResourceLocation.parse("block/stone");
         JsonObject json =new JsonObject();
         json.addProperty("parent",parent.toString());
         return json;
@@ -49,10 +49,10 @@ public class ModelData {
     }
     public static void setModelTemplate(String name,List<String> textureSlotString) {//name= "namespace:models/block/xxx"
         if (textureSlotString==null||textureSlotString.isEmpty()){
-            YuushyaModelTemplateMap.put(name,createModelTemplate(new ResourceLocation(name),TextureSlot.ALL));}
+            YuushyaModelTemplateMap.put(name,createModelTemplate(ResourceLocation.parse(name),TextureSlot.ALL));}
         else{
             List<TextureSlot> textureSlots=textureSlotString.stream().map(ModelData::getTextureSlot).toList();
-            YuushyaModelTemplateMap.put(name,createModelTemplate(new ResourceLocation(name),textureSlots.toArray(TextureSlot[]::new)));}
+            YuushyaModelTemplateMap.put(name,createModelTemplate(ResourceLocation.parse(name),textureSlots.toArray(TextureSlot[]::new)));}
     }
     public static TextureMapping getTextureMapping(List<String> slots,List<String> textures){
         TextureMapping textureMapping=new TextureMapping();
@@ -64,7 +64,7 @@ public class ModelData {
                 TextureSlot textureSlot = slot.equals("all")
                         ?TextureSlot.ALL
                         :getTextureSlot(slot);
-                ResourceLocation resourceLocation=new ResourceLocation(texture);
+                ResourceLocation resourceLocation=ResourceLocation.parse(texture);
                 if (textureSlot!=null){
                     textureMapping.put(textureSlot,resourceLocation);
                 }
@@ -73,7 +73,7 @@ public class ModelData {
         return textureMapping;
     }
     public static JsonElement genTemplateModel(String templateName,List<String> slots,String singleTexture,List<String> textures){
-        ResourceLocation noUse=new ResourceLocation(singleTexture);
+        ResourceLocation noUse=ResourceLocation.parse(singleTexture);
         if ((slots==null||slots.isEmpty())&&(textures==null|| textures.isEmpty()))
             YuushyaModelTemplateMap.get(templateName).create(noUse,TextureMapping.cube(noUse),getJsonElementToList);
         else if((slots==null||slots.isEmpty()))

@@ -46,6 +46,11 @@ public class YuushyaRegistryData{
             public boolean itemModel;
             public boolean recipe;
             public String collision;
+            public List<Tag> tags;
+            public static class Tag{
+                public String type;
+                public String value;
+            }
         }
         public static class BlockState{
             public String kit;
@@ -75,6 +80,7 @@ public class YuushyaRegistryData{
         public static class Usage{
             public List<Float> sitPos;
             public List<Integer> cycleForms;
+            public String sound;
         }
     }
     public static class Item{
