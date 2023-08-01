@@ -70,10 +70,11 @@ public class JarCreator {
 }""".formatted(this._nameSpaceAfter,this._nameSpaceAfter);
 
         String forge_file = """
-modLoader = "javafml"
-loaderVersion = "[40,)"
+modLoader = "lowcodefml"
+loaderVersion = "[36,)"
 #issueTrackerURL = ""
 license="All Rights Reserved"
+showAsResourcePack=true
                 
 [[mods]]
 modId = "%s"
