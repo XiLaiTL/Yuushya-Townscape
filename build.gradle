@@ -61,7 +61,7 @@ tasks.register("clean-all"){
     }
 }
 
-tasks.register("tools",Copy){
+tasks.register("build-tools",Copy){
     from("./buildSrc/build/libs/buildSrc-0.0.0.jar")
     rename {"yuushya-tool.jar"}
     into("./build/tools")

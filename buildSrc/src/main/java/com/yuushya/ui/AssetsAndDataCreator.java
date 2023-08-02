@@ -34,6 +34,7 @@ public class AssetsAndDataCreator {
         List<Path> paths=new ArrayList<>();
         JButton button0 = new JButton("Choose the minecraft jar");
         button0.setBounds(30, 40,200,30);
+        button0.setToolTipText("under version folder");
         button0.addActionListener((event)->{
             JFileChooser jFileChooser = new JFileChooser("../");
             jFileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
@@ -45,7 +46,7 @@ public class AssetsAndDataCreator {
             }
         });
         JButton button = new JButton("Choose the addon");
-        button.setBounds(30,80,170,30);
+        button.setBounds(30,80,200,30);
         button.addActionListener((event)->{
             JFileChooser jFileChooser = new JFileChooser(".");
             jFileChooser.setMultiSelectionEnabled(true);
@@ -57,15 +58,24 @@ public class AssetsAndDataCreator {
                 }
             }
         });
-        JButton button3 = new JButton("Self");
-        button3.setBounds(200,80,30,30);
-        button3.setToolTipText("This jar itself as addon");
+        JButton button3 = new JButton("Choose Yuushya Mod");
+        button3.setBounds(30,120,200,30);
+        button3.setToolTipText("yuushya-townscape mod");
         button3.addActionListener((event)->{
-            Path self =Paths.get(AssetsAndDataCreator.class.getProtectionDomain().getCodeSource().getLocation().getPath().replaceAll("%20"," ").substring(1));
-            paths.add(self);
+            JFileChooser jFileChooser = new JFileChooser(".");
+            jFileChooser.setMultiSelectionEnabled(true);
+            jFileChooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
+            jFileChooser.setFileFilter(new FileNameExtensionFilter("yuushya-townscape mod","zip","jar"));
+            if(jFileChooser.showOpenDialog(frame)==JFileChooser.APPROVE_OPTION){
+                for (File selectedFile : jFileChooser.getSelectedFiles()) {
+                    paths.add(selectedFile.toPath());
+                }
+            }
+//            Path self =Paths.get(AssetsAndDataCreator.class.getProtectionDomain().getCodeSource().getLocation().getPath().replaceAll("%20"," ").substring(1));
+//            paths.add(self);
         });
         JButton button1 = new JButton("Create the resource");
-        button1.setBounds(30,140,200,30);
+        button1.setBounds(30,160,200,30);
         button1.addActionListener((event)->{
             for (Path path : paths) {
                 String namespace = "yuushya";//path.getFileName().toString()
@@ -83,7 +93,7 @@ public class AssetsAndDataCreator {
             }
         });
         JButton button2 = new JButton("Create the collision");
-        button2.setBounds(30,180,200,30);
+        button2.setBounds(30,200,200,30);
         button2.addActionListener((event)->{
             for (Path path : paths) {
                 String namespace = "yuushya";//path.getFileName().toString()
