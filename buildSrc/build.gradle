@@ -18,6 +18,13 @@ dependencies {
     implementation "at.syntaxerror:syntaxnbt:1.0.0"
 }
 
+
+processResources{
+    from("./common/src/main/resources/data/yuushya/mapping")
+    into("./buildSrc/build/resources/main/data/yuushya")
+    duplicatesStrategy = DuplicatesStrategy.INHERIT
+}
+
 jar {
     manifest {
         attributes(

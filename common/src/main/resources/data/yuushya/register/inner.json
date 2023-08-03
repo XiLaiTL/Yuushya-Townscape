@@ -4039,14 +4039,14 @@
 		{
 			"class_type": "FixedBlock",
 			"name": "iron_ladder",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"auto_generated": { "recipe": true,"tags": [{"value": "climbable"}] }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/iron_ladder"]]}
 		},
 
 		{
 			"class_type": "FixedBlock",
 			"name": "iron_ladder_top",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
+			"auto_generated": { "recipe": true,"tags": [{"value": "climbable"}] }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/iron_ladder_"]]}
 		},
 

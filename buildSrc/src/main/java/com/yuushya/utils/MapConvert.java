@@ -98,7 +98,7 @@ public class MapConvert {
         var mcaFile = (MCAFile) MCAUtil.read(filePath.toFile());
         for (int i = 0; i < 1024; i++) { try {
             var chunk = mcaFile.getChunk(i);//32*32
-            chunk.setStatus("biomes");
+            //chunk.setStatus("biomes");
             for (var section:chunk) { try{
                 for (var blockstate:section.blocksStates()) {try {
                     convertBlockState(blockstate);
