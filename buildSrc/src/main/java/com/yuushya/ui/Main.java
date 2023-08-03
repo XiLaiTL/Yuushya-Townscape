@@ -24,10 +24,10 @@ public class Main {
         JButton button0 = new JButton("存档转换器");
         button0.setBounds(30, 40,200,30);
         button0.addActionListener((event)->{
-            Path self =Paths.get(AssetsAndDataCreator.class.getProtectionDomain().getCodeSource().getLocation().getPath().replaceAll("%20"," ").substring(1));
-            JOptionPane.showMessageDialog(frame,"Load the Dependency. If there was not new window, please reopen! \n正在加载依赖，如果没有新窗口出现，请重新打开软件!");
-            ZipReader zipReader = new ZipReader("lib",self);
-            zipReader.filePath(Path.of("./META-INF/jars"));
+//            Path self =Paths.get(AssetsAndDataCreator.class.getProtectionDomain().getCodeSource().getLocation().getPath().replaceAll("%20"," ").substring(1));
+//            JOptionPane.showMessageDialog(frame,"Load the Dependency. If there was not new window, please reopen! \n正在加载依赖，如果没有新窗口出现，请重新打开软件!");
+//            ZipReader zipReader = new ZipReader("lib",self);
+//            zipReader.filePath(Path.of("./META-INF/jars"));
             MapConvertor.main(args);
         });
         JButton button = new JButton("资源生成器");
