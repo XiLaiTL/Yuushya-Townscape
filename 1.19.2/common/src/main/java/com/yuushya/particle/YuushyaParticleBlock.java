@@ -5,8 +5,12 @@ import com.yuushya.registries.YuushyaRegistryData;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.Random;
 
@@ -16,7 +20,10 @@ public class YuushyaParticleBlock extends YuushyaBlockFactory.BlockWithClassType
         super(properties.noCollission().noOcclusion(), tipLines, classType, autoCollision,usage );
         this.particleSupplier =particleSupplier;
     }
-
+    @Override
+    public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
+        return Shapes.block();
+    }
     @Override
     public void animateTick(BlockState blockState, Level level, BlockPos pos, RandomSource random) {
         double d = pos.getX();

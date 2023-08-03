@@ -3,10 +3,7 @@ package com.yuushya.registries;
 import com.google.gson.JsonObject;
 import com.yuushya.block.YuushyaBlockFactory;
 import com.yuushya.entity.ChairEntity;
-import com.yuushya.item.FormTransItem;
-import com.yuushya.item.TemplateBlockItem;
-import com.yuushya.item.TemplateChildBlockItem;
-import com.yuushya.item.YuushyaItemFactory;
+import com.yuushya.item.*;
 import com.yuushya.particle.YuushyaParticleBlock;
 import com.yuushya.utils.YuushyaUtils;
 import dev.architectury.registry.client.rendering.ColorHandlerRegistry;
@@ -153,6 +150,7 @@ public class YuushyaRegistries {
         RegisterList.forEach(Runnable::run);
 //        ITEMS.register("get_blockstate_item", () -> new GetBlockStateItem(new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_ITEM).stacksTo(1), 1));
         ITEMS.register("form_trans_item",()->new FormTransItem(new Item.Properties().arch$tab(YuushyaCreativeModeTab.YUUSHYA_ITEM).stacksTo(1),2));
+        ITEMS.register("pilatory",()-> new SetHatItem(new Item.Properties().arch$tab(YuushyaCreativeModeTab.YUUSHYA_ITEM).stacksTo(64),2));
         //ITEMS.register("ghost_light",()->new BlockItem(Blocks.LIGHT,new Item.Properties().rarity(Rarity.EPIC).tab(YuushyaCreativeModeTab.YUUSHYA_ITEM)));
 
 //        // 树叶粒子

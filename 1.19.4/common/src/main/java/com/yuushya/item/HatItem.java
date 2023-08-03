@@ -13,7 +13,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class HatItem extends AbstractYuushyaItem implements ItemExtension {
     public HatItem(Properties properties, Integer tipLines) {
-        super(properties.stacksTo(64), tipLines);
+        super(properties, tipLines);
 
     }
     @Override
