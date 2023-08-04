@@ -9334,28 +9334,28 @@
 		{
 			"class_type": "DecoBlock",
 			"name": "vinyl_record_red",
-			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "yuushya_furniture",
+			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "yuushya_furniture",
 			"blockstate": { "forms": [["yuushya:extra_building_material/vinyl_record_red"]]}
 		},
 
 		{
 			"class_type": "DecoBlock",
 			"name": "vinyl_record_yellow",
-			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "yuushya_furniture",
+			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "yuushya_furniture",
 			"blockstate": { "forms": [["yuushya:extra_building_material/vinyl_record_yellow"]]}
 		},
 
 		{
 			"class_type": "DecoBlock",
 			"name": "vinyl_record_cyan",
-			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "yuushya_furniture",
+			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "yuushya_furniture",
 			"blockstate": { "forms": [["yuushya:extra_building_material/vinyl_record_cyan"]]}
 		},
 
 		{
 			"class_type": "DecoBlock",
 			"name": "vinyl_record_white",
-			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "yuushya_furniture",
+			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "yuushya_furniture",
 			"blockstate": { "forms": [["yuushya:extra_building_material/vinyl_record_white"]]}
 		},
 
