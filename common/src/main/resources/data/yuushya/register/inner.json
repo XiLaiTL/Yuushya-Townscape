@@ -8682,7 +8682,7 @@
 		{
 			"class_type": "DecoBlock",
 			"name": "sticky_note",
-			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "yuushya_furniture",
+			"auto_generated": { "recipe": true, "collision": "face" }, "item_group": "yuushya_furniture",
 			"properties": {"lines": 1},
 			"usage": {"cycle_forms": [0,1,2,3,4],"sound": "item.book.page_turn"},
 			"blockstate": { "forms": [["yuushya:extra_building_material/sticky_note_1"],["yuushya:extra_building_material/sticky_note_2"],["yuushya:extra_building_material/sticky_note_3"],["yuushya:extra_building_material/sticky_note_4"],["yuushya:extra_building_material/sticky_note_5"]]}
@@ -8691,7 +8691,7 @@
 		{
 			"class_type": "DecoBlock",
 			"name": "list",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_furniture",
+			"auto_generated": { "recipe": true, "collision": "face" }, "item_group": "yuushya_furniture",
 			"properties": {"lines": 1},
 			"blockstate": { "forms": [["yuushya:extra_building_material/to_do_list_1"],["yuushya:extra_building_material/to_do_list_2"],["yuushya:extra_building_material/to_do_list_3"],["yuushya:extra_building_material/to_do_list_4"],["yuushya:extra_building_material/to_do_list_5"]]}
 		},
@@ -8724,7 +8724,7 @@
 		{
 			"class_type": "TranslucentBlock",
 			"name": "broken_list",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_furniture",
+			"auto_generated": { "recipe": true, "collision": "face" }, "item_group": "yuushya_furniture",
 			"properties": {"lines": 0},
 			"blockstate": { "forms": [["yuushya:extra_building_material/broken_to_do_list_1"],["yuushya:extra_building_material/broken_to_do_list_2"],["yuushya:extra_building_material/broken_to_do_list_3"],["yuushya:extra_building_material/broken_to_do_list_4"],["yuushya:extra_building_material/broken_to_do_list_5"]]}
 		},
@@ -8732,7 +8732,7 @@
 		{
 			"class_type": "TranslucentBlock",
 			"name": "completely_broken_list",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_furniture",
+			"auto_generated": { "recipe": true, "collision": "face" }, "item_group": "yuushya_furniture",
 			"properties": {"lines": 0},
 			"blockstate": { "forms": [["yuushya:extra_building_material/completely_broken_list"]]}
 		},
@@ -8740,7 +8740,7 @@
 		{
 			"class_type": "TranslucentBlock",
 			"name": "water_stain_top",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_furniture",
+			"auto_generated": { "recipe": true, "collision": "face" }, "item_group": "yuushya_furniture",
 			"properties": {"lines": 0},
 			"blockstate": { "forms": [["yuushya:extra_building_material/water_stain_top"]]}
 		},
@@ -8748,7 +8748,7 @@
 		{
 			"class_type": "TranslucentBlock",
 			"name": "water_stain_bottom",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_furniture",
+			"auto_generated": { "recipe": true, "collision": "face" }, "item_group": "yuushya_furniture",
 			"properties": {"lines": 0},
 			"blockstate": { "forms": [["yuushya:extra_building_material/water_stain_bottom"]]}
 		},
