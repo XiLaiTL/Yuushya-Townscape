@@ -1128,7 +1128,6 @@
 "block.yuushya.globe": "地球仪",
 "block.yuushya.sorted_magazine": "杂志",
 "block.yuushya.piled_magazine": "一叠杂志",
-"block.yuushya.wastepaper_basket": "废纸篓",
 
 "block.yuushya.painting_0": "画",
 "block.yuushya.painting_1": "画",
@@ -1866,6 +1865,10 @@
 "block.yuushya.wire.line1": "\u00A7a[线缆方块]",
 "block.yuushya.deployed_utility_service_drop.line1": "\u00A7a[接线柱方块]",
 "block.yuushya.mounted_utility_service_drop.line1": "\u00A7a[接线柱方块]",
+
+"item.yuushya.pilatory": "\u00A7a霸*育发液",
+"item.yuushya.pilatory.line1": "\u00A79[霸*育发液]可以让你头戴任意方块和物品",
+"item.yuushya.pilatory.line2": "\u00A7a主手持此物品,副手持所需佩戴物品,右键即可使用",
 
 
 
