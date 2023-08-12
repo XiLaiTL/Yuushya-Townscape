@@ -10,6 +10,7 @@ import com.yuushya.datagen.data.ParticleData;
 import com.yuushya.datagen.utils.ResourceLocation;
 import com.yuushya.datagen.utils.Utils;
 import com.yuushya.registries.YuushyaRegistryData;
+import com.yuushya.ui.YuushyaLog;
 import com.yuushya.utils.GsonTools;
 
 import java.io.*;
@@ -169,7 +170,7 @@ public class ConfigReader {
                 JsonElement innerJson=JsonParser.parseReader(reader);
                 mergeYuushyaRegistryBlockJson(innerJson.getAsJsonObject().getAsJsonArray("block"));
                 YuushyaData=NormalGSON.fromJson(innerJson,YuushyaRegistryData.class);
-            }catch (IOException e){e.printStackTrace();}
+            }catch (IOException e){e.printStackTrace();YuushyaLog.add(e);}
         }
     }
 
@@ -187,7 +188,7 @@ public class ConfigReader {
                     mergeYuushyaRegistryBlockJson(configJson.getAsJsonObject().getAsJsonArray("block"));
                     YuushyaRegistryData yuushyaRegistryData=NormalGSON.fromJson(configJson,YuushyaRegistryData.class);
                     addResultToRawMap(yuushyaRegistryData);
-                }catch (IOException e){e.printStackTrace();}
+                }catch (IOException e){e.printStackTrace();YuushyaLog.add(e);}
             }
         }
         addResultToRawMap(YuushyaData);
@@ -210,7 +211,7 @@ public class ConfigReader {
                 else if (BlockClass.containsKey(classType))
                     try {
                         GsonTools.extendJsonObject(blockObject, GsonTools.ConflictStrategy.PREFER_FIRST_OBJ, BlockClass.get(classType));
-                    } catch (GsonTools.JsonObjectExtensionConflictException e) {e.printStackTrace();}
+                    } catch (GsonTools.JsonObjectExtensionConflictException e) {e.printStackTrace();YuushyaLog.add(e);  }
             });
     }
 
@@ -235,7 +236,7 @@ public class ConfigReader {
             String json= NormalGSON.toJson(yuushyaRegistryData);
             try(BufferedWriter writer=new BufferedWriter(new FileWriter(CONFIG_FILE_PATH.toFile(),StandardCharsets.UTF_8))){
                 writer.write(json);
-            }catch (IOException e){e.printStackTrace();}
-        }catch (IOException e){e.printStackTrace();}
+            }catch (IOException e){e.printStackTrace();  YuushyaLog.add(e);}
+        }catch (IOException e){e.printStackTrace(); YuushyaLog.add(e);}
     }
 }

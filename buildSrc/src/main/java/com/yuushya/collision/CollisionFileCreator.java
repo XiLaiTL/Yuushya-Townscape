@@ -11,6 +11,7 @@ import com.yuushya.collision.utils.OptimizeModel;
 import com.yuushya.collision.utils.RotateModel;
 import com.yuushya.datagen.ConfigReader;
 import com.yuushya.datagen.utils.ResourceLocation;
+import com.yuushya.ui.YuushyaLog;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
@@ -21,6 +22,7 @@ import java.util.List;
 import java.util.Map;
 
 import static com.yuushya.datagen.ConfigReader.TemplateBrother;
+import static com.yuushya.datagen.utils.Utils.MOD_ID;
 import static com.yuushya.utils.GsonTools.NormalGSON;
 
 public class CollisionFileCreator {
@@ -35,6 +37,12 @@ public class CollisionFileCreator {
         this._resPath =  Path.of("../config/com.yuushya/"+nameSpace+"/");
         this._basePath=basePath;
     }
+    public CollisionFileCreator(Path basePath,Path resPath){
+        this._nameSpace = MOD_ID;
+        this._basePath = basePath;
+        this._resPath = resPath;
+    }
+
     private void readBlockStateAndModel(){
         Path path = _basePath.resolve("./assets/"+ _nameSpace +"/blockstates/");//read the all blockstates under the namespace
         ModelReader modelReader = new ModelReader(this._basePath);
@@ -107,7 +115,7 @@ public class CollisionFileCreator {
                                 }
                             }
                         }
-                    }catch (IOException e){e.printStackTrace();}
+                    }catch (IOException e){e.printStackTrace();YuushyaLog.add(e);}
                     if(collisionData.containsKey(namespaceIdString)){
                         collisionData.get(namespaceIdString).blockstates = item.blockstates;}
                     else{ collisionData.put(namespaceIdString,item);}
@@ -127,7 +135,7 @@ public class CollisionFileCreator {
                 String json=NormalGSON.toJson(collisionData.get(namespaceIdString));
                 json= json.replaceAll("((?<=[,\\[])\n\s*(?=[-0-9]|\"to\"))|((?<=[0-9])\n\s*(?=]))|((?<=\\{)\n\s*(?=\"from\"))"," ").replaceAll("((?<=([0-9] ]))\n\s*(?=}))"," ");
                 writer.write(json);
-            }catch (IOException e){ e.printStackTrace();}
+            }catch (IOException e){e.printStackTrace();YuushyaLog.add(e);}
         }
     }
     public void create(){

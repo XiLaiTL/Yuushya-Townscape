@@ -7,10 +7,7 @@ import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.List;
 
@@ -50,7 +47,6 @@ public class MapConvertor {
             }
         });
 
-        List<String> log = new ArrayList<>();
         JButton button1 = new JButton("进行转换\n Convert");
         button1.setBounds(30, 160,200,30);
         button1.addActionListener((event)->{
@@ -61,16 +57,9 @@ public class MapConvertor {
             }
             catch (Exception e){
                 e.printStackTrace();
-                log.add(e.getMessage()+"\n"+String.join("\n", Arrays.stream(e.getStackTrace()).map(StackTraceElement::toString).toList())+"\n"+e.getLocalizedMessage()+"\n");
+                YuushyaLog.add(e);
             }
-            if(!log.isEmpty()){
-                try {
-                    Files.writeString(
-                            Paths.get("./"+ new SimpleDateFormat("yyyyMMddHHmmss").format(new Date())  +".log"),
-                            String.join("\n",log)
-                    );
-                } catch (IOException e) {e.printStackTrace();}
-            }
+            YuushyaLog.print();
             JOptionPane.showMessageDialog(frame,"Success!");
         });
         contentPane.add(button0);

@@ -4,10 +4,12 @@ import com.google.gson.JsonParser;
 import com.google.gson.stream.JsonReader;
 import com.yuushya.collision.data.Model;
 import com.yuushya.datagen.utils.ResourceLocation;
+import com.yuushya.ui.YuushyaLog;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.Map;
@@ -23,14 +25,16 @@ public class ModelReader {
     public Model read(ResourceLocation namespaceID){
         if(modelMap.containsKey(namespaceID)) return modelMap.get(namespaceID);
         Path path = this._basePath.resolve("./assets/"+namespaceID.toRelativePath("models")+".json");
-        try (JsonReader reader=new JsonReader(new BufferedReader(new FileReader(path.toFile())))){
-            Model model = NormalGSON.fromJson(JsonParser.parseReader(reader), Model.class);
-            if (model.elements==null&&model.parent!=null) {
-                model = read(ResourceLocation.parse(model.parent));
-            }
-            modelMap.put(namespaceID,model);
-            return model;
-        }catch (IOException e){e.printStackTrace();}
+        if(Files.exists(path)){
+            try (JsonReader reader=new JsonReader(new BufferedReader(new FileReader(path.toFile())))){
+                Model model = NormalGSON.fromJson(JsonParser.parseReader(reader), Model.class);
+                if (model.elements==null&&model.parent!=null) {
+                    model = read(ResourceLocation.parse(model.parent));
+                }
+                modelMap.put(namespaceID,model);
+                return model;
+            }catch (IOException e){e.printStackTrace();YuushyaLog.add(e);}
+        }
         return null;
     }
 
