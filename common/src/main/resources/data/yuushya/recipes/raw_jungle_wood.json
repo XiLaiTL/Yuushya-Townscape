@@ -1,0 +1,9 @@
+{
+    "type": "stonecutting",
+    "ingredient": 
+        {
+            "item": "minecraft:jungle_log"
+        },
+    "result": "yuushya:raw_jungle_wood",
+    "count": 1
+}

@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+     "AAA",
+     "ABA",
+     "AAA"
+    ],
+    "key": {
+      "A": 
+      {
+        "item":"yuushya:a_birch_blindwall"
+      },
+      "B":
+        {
+        "item":"minecraft:birch_planks"
+      }
+    },
+    "result": {
+      "item": "yuushya:birch_framed_planks",
+      "count":8
+    }
+  }

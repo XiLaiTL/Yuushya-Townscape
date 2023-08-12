@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+     "AAA",
+     "CBC",
+     "DDD"
+    ],
+    "key": {
+      "A": 
+      {
+        "item":"minecraft:white_concrete_powder"
+      },
+      "B":
+        {
+        "item":"minecraft:water_bucket"
+      },
+      "C":
+        {
+        "item":"minecraft:red_concrete_powder"
+      },
+      "D":
+        {
+        "item":"minecraft:yellow_concrete_powder"
+      }
+    },
+    "result": {
+      "item": "yuushya:cream_worn_concrete",
+      "count":8
+    }
+  }

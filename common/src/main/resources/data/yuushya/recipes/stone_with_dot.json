@@ -1,0 +1,9 @@
+{
+    "type": "stonecutting",
+    "ingredient": 
+        {
+            "item": "minecraft:stone"
+        },
+    "result": "yuushya:stone_with_dot",
+    "count": 1
+}

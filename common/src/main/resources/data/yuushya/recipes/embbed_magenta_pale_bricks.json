@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+     "AAA",
+     "ABA",
+     "AAA"
+    ],
+    "key": {
+      "A": {
+        "item": "yuushya:pale_bricks_3"
+      },
+      "B":[
+        {
+        "item":"minecraft:pink_dye"
+      },
+      {
+        "item":"minecraft:magenta_dye"
+      }
+    ]
+    },
+    "result": {
+      "item": "yuushya:embbed_magenta_pale_bricks",
+      "count":8
+    }
+  }

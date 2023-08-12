@@ -98,10 +98,7 @@
   "item.yuushya.debug_stick_item.line2": " ",
   "item.yuushya.debug_stick_item.line3": " ",
   "item.yuushya.debug_stick_item.line4": " ",
-  "item.yuushya.debug_stick_item.empty": "%s has not property",
-  "item.yuushya.debug_stick_item.select": "has chose %s（%s）",
-  "item.yuushya.debug_stick_item.update": "set \"%s\" to %s",
-
+  
   "item.yuushya.get_blockstate_item": "Gourd of Copy&Paste",
   "item.yuushya.get_blockstate_item.line2": "\u00A79Mainhand: Right click a normal block to copy its Blockstates",
   "item.yuushya.get_blockstate_item.line3": "\u00A79Offhand: Rightclick a [Block Entity] to apply the copied to its currently selected [Layer]",
@@ -1250,7 +1247,7 @@
 "block.yuushya.inner_bed_17": "Inner Bed 17",
 "block.yuushya.inner_bed_18": "Inner Bed 18",
 "block.yuushya.inner_bed_19": "Inner Bed 19",
-"block.yuushya.inner_bed_20": "Inner Bed 20",
+"block.yuushya.inner_bed_20": "Inner Bed 20",  
 
 "block.yuushya.embbed_marble_bricks.line1": "\u00A79[Template Assets]",
 "block.yuushya.embbed_stone_bricks.line1": "\u00A79[Template Assets]",
@@ -1405,7 +1402,7 @@
 
 
 
-"block.yuushya.wastepaper_basket": "Wastepaper Basket",
+
 "block.yuushya.retaining_wall": "Retaining Wall",
 "block.yuushya.retaining_wall_top": "Retaining Wall Top",
 "block.yuushya.retaining_wall_corner": "Retaining Wall Corner",
@@ -1849,6 +1846,10 @@
 "item.yuushya.ctm_alert_2.line2": "\u00A76If this problem occurs to you, press F3+A to reload the chunk to resolve",
 "item.yuushya.ctm_alert_3.line2": "\u00A76If this problem occurs to you, press F3+A to reload the chunk to resolve",
 
+"item.yuushya.pilatory": "\u00A7aPilatory",
+"item.yuushya.pilatory.line1": "\u00A79Use [Pilatory] to wear any item and block as helmet",
+"item.yuushya.pilatory.line2": "\u00A79Right click when this item in the main hand and helmet item in the offhand",
+
 "block.yuushya.hanging_goods.line1": "\u00A7a(Right click empty-handed or use [Form Wrench] to switch)\u00A79[Available Form:2]",  
 "block.yuushya.hanging_goods_candy.line1": "\u00A7a(Right click empty-handed or use [Form Wrench] to switch)\u00A79[Available Form:2]",  
 "block.yuushya.hanging_goods_snack.line1": "\u00A7a(Right click empty-handed or use [Form Wrench] to switch)\u00A79[Available Form:2]",
@@ -1933,7 +1934,8 @@
 "block.yuushya.tv_online.line1": "\u00A7a(Right click empty-handed or use [Form Wrench] to switch)\u00A79[Available Form:8(Switch Channel)]",
 "block.yuushya.mounted_tv_online.line1": "\u00A7a(Right click empty-handed or use [Form Wrench] to switch)\u00A79[Available Form:8(Switch Channel)]",
 
-    "block.yuushya.colornote1.line1": "\u00A79#Blue",
+
+"block.yuushya.colornote1.line1": "\u00A79#Blue",
 "block.yuushya.colornote2.line1": "\u00A76#Yellow"
 
   }

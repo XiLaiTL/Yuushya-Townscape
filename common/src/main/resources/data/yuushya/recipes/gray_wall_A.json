@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+     "AA",
+     "AA"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:tuff"
+      }
+    },
+    "result": {
+      "item": "yuushya:gray_wall",
+      "count":4
+    }
+  }

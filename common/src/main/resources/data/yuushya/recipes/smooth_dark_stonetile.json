@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+     "AA",
+     "AA"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:polished_blackstone"
+      }
+    },
+    "result": {
+      "item": "yuushya:smooth_dark_stonetile",
+      "count":4
+    }
+  }

@@ -1,0 +1,9 @@
+{
+    "type": "stonecutting",
+    "ingredient": 
+        {
+            "item": "minecraft:warped_stem"
+        },
+    "result": "yuushya:raw_warped_wood",
+    "count": 1
+}

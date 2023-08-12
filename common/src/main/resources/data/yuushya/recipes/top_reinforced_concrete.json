@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+     "AAA",
+     "ABA",
+     "AAA"
+    ],
+    "key": {
+      "A": 
+      {
+        "item":"yuushya:reinforced_concrete"
+      },
+      "B":
+        {
+        "item":"minecraft:water_bucket"
+      }
+    },
+    "result": {
+      "item": "yuushya:top_reinforced_concrete",
+      "count":8
+    }
+  }

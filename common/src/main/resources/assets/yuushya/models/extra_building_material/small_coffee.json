@@ -4,7 +4,7 @@
 	"textures": {
 		"6": "yuushya:0extra_building_material/preview/cup",
 		"7": "yuushya:0extra_building_material/preview/coffee_bean",
-		"8": "block/raw_wood/birch",
+		"8": "yuushya:block_/raw_wood/raw_birch_wood_drawer",
 		"particle": "block/iron_block"
 	},
 	"elements": [

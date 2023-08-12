@@ -214,6 +214,7 @@
 
 		{
 			"class_type": "block", "name": "embbed_marble_bricks", "item_group": "yuushya_stone",
+			"auto_generated": {"recipe": false },
 			"properties": {"lines": 0 },
 			"texture": {
 				"value":"yuushya:block_/embbed_marble_bricks",
@@ -223,6 +224,7 @@
 
 		{
 			"class_type": "block", "name": "embbed_stone_bricks", "item_group": "yuushya_stone",
+			"auto_generated": {"recipe": false },
 			"properties": {"lines": 0 },
 			"texture": {
 				"value":"yuushya:block_/embbed_stone_bricks",
@@ -271,21 +273,21 @@
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_stone",
 			"name": "lime__concrete",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/lime_concrete"]]}
 		},
 
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_stone",
 			"name": "reinforced_concrete",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/reinforced_concrete"]]}
 		},
 
 		{
-			"class_type": "PlainBlock", "item_group": "yuushya_stone",
+			"class_type": "PlainBlock", "item_group": "yuushya_stone", 
 			"name": "top_reinforced_concrete",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/top_reinforced_concrete"]]}
 		},
 
@@ -360,6 +362,7 @@
 		{
 			"class_type": "block", "name": "framed_bricks", "item_group": "yuushya_stone",
 			"properties": {"lines": 0 },
+			"auto_generated": { "recipe": false },
 			"texture": {
 				"value":"yuushya:block_/framed_bricks",
 				"set":  [
@@ -369,6 +372,7 @@
 		{
 			"class_type": "block", "name": "stone_with_dot", "item_group": "yuushya_stone",
 			"properties": {"lines": 0 },
+			"auto_generated": { "recipe": false },
 			"texture": {
 				"value":"yuushya:block_/stone/stone_with_dot",
 				"set":  [
@@ -1282,42 +1286,42 @@
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_stone",
 			"name": "light_gray_worn_concrete",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/light_gray_worn_concrete"]]}
 		},
 
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_stone",
 			"name": "white_worn_concrete",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/white_worn_concrete"]]}
 		},
 
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_stone",
 			"name": "cream_worn_concrete",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/cream_worn_concrete"]]}
 		},
 
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_stone",
 			"name": "mink_worn_concrete",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/mink_worn_concrete"]]}
 		},
 
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_stone",
 			"name": "yellow_worn_concrete",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/yellow_worn_concrete"]]}
 		},
 
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_stone",
 			"name": "orange_worn_concrete",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/orange_worn_concrete"]]}
 		},
 
@@ -1613,6 +1617,7 @@
 
 		{
 			"class_type": "block", "name": "cut_tile", "item_group": "yuushya_stone",
+			"auto_generated": { "recipe": false },
 			"texture": {
 				"type": "misc",
 				"value":"yuushya:block_/stone/cut_tile",
@@ -1622,6 +1627,7 @@
 
 		{
 			"class_type": "block", "name": "gray_tile", "item_group": "yuushya_stone",
+			"auto_generated": { "recipe": false },
 			"texture": {
 				"type": "misc",
 				"value":"yuushya:block_/stone/gray_tile",
@@ -1631,6 +1637,7 @@
 
 		{
 			"class_type": "block", "name": "park_tile", "item_group": "yuushya_stone",
+			"auto_generated": { "recipe": false },
 			"texture": {
 				"type": "misc",
 				"value":"yuushya:block_/stone/park_tile",
@@ -1640,6 +1647,7 @@
 
 		{
 			"class_type": "block", "name": "scarlet_tile", "item_group": "yuushya_stone",
+			"auto_generated": { "recipe": false },
 			"texture": {
 				"type": "misc",
 				"value":"yuushya:block_/stone/scarlet_tile",
@@ -1649,6 +1657,7 @@
 
 		{
 			"class_type": "block", "name": "smooth_dark_stonetile", "item_group": "yuushya_stone",
+			"auto_generated": { "recipe": false },
 			"texture": {
 				"type": "misc",
 				"value":"yuushya:block_/stone/smooth_dark_stonetile",
@@ -1658,6 +1667,7 @@
 
 		{
 			"class_type": "block", "name": "smooth_sandtile", "item_group": "yuushya_stone",
+			"auto_generated": { "recipe": false },
 			"texture": {
 				"type": "misc",
 				"value":"yuushya:block_/stone/smooth_sandtile",
@@ -1667,6 +1677,7 @@
 
 		{
 			"class_type": "block", "name": "smooth_stonetile", "item_group": "yuushya_stone",
+			"auto_generated": { "recipe": false },
 			"texture": {
 				"type": "misc",
 				"value":"yuushya:block_/stone/smooth_stonetile",
@@ -1676,6 +1687,7 @@
 
 		{
 			"class_type": "block", "name": "dark_square_bricks", "item_group": "yuushya_stone",
+			"auto_generated": { "recipe": false },
 			"texture": {
 				"value":"yuushya:block_/stone/dark_square_bricks",
 				"set":  [
@@ -1684,6 +1696,7 @@
 
 		{
 			"class_type": "block", "name": "square_brick", "item_group": "yuushya_stone",
+			"auto_generated": { "recipe": false },
 			"texture": {
 				"value":"yuushya:block_/stone/square_brick",
 				"set":  [
@@ -1692,6 +1705,7 @@
 
 		{
 			"class_type": "block", "name": "embbed_dark_bricks", "item_group": "yuushya_stone",
+			"auto_generated": { "recipe": false },
 			"texture": {
 				"type": "misc",
 				"value":"yuushya:block_/stone/embbed_dark_bricks",
@@ -1701,6 +1715,7 @@
 
 		{
 			"class_type": "block", "name": "embbed_pale_bricks", "item_group": "yuushya_stone",
+			"auto_generated": { "recipe": false },
 			"texture": {
 				"type": "misc",
 				"value":"yuushya:block_/stone/embbed_pale_bricks",
@@ -1710,6 +1725,7 @@
 
 		{
 			"class_type": "block", "name": "embbed_magenta_pale_bricks", "item_group": "yuushya_stone",
+			"auto_generated": { "recipe": false },
 			"texture": {
 				"type": "misc",
 				"value":"yuushya:block_/stone/embbed_magenta_pale_bricks",
@@ -1719,6 +1735,7 @@
 
 		{
 			"class_type": "block", "name": "marble_bricks_0", "item_group": "yuushya_stone",
+			"auto_generated": { "recipe": false },
 			"texture": {
 				"type": "misc",
 				"value":"yuushya:block_/stone/marble_bricks_0",
@@ -1728,6 +1745,7 @@
 
 		{
 			"class_type": "block", "name": "marble_bricks_1", "item_group": "yuushya_stone",
+			"auto_generated": { "recipe": false },
 			"texture": {
 				"type": "misc",
 				"value":"yuushya:block_/stone/marble_bricks_1",
@@ -1737,6 +1755,7 @@
 
 		{
 			"class_type": "block", "name": "mossy_bricks", "item_group": "yuushya_stone",
+			"auto_generated": { "recipe": false },
 			"texture": {
 				"type": "misc",
 				"value":"yuushya:block_/stone/mossy_bricks",
@@ -1746,6 +1765,7 @@
 
 		{
 			"class_type": "block", "name": "pale_bricks_0", "item_group": "yuushya_stone",
+			"auto_generated": { "recipe": false },
 			"texture": {
 				"type": "misc",
 				"value":"yuushya:block_/stone/pale_bricks_0",
@@ -1755,6 +1775,7 @@
 
 		{
 			"class_type": "block", "name": "pale_bricks_1", "item_group": "yuushya_stone",
+			"auto_generated": { "recipe": false },
 			"texture": {
 				"type": "misc",
 				"value":"yuushya:block_/stone/pale_bricks_1",
@@ -1764,6 +1785,7 @@
 
 		{
 			"class_type": "block", "name": "pale_bricks_2", "item_group": "yuushya_stone",
+			"auto_generated": { "recipe": false },
 			"texture": {
 				"type": "misc",
 				"value":"yuushya:block_/stone/pale_bricks_2",
@@ -1773,6 +1795,7 @@
 
 		{
 			"class_type": "block", "name": "pale_bricks_3", "item_group": "yuushya_stone",
+			"auto_generated": { "recipe": false },
 			"texture": {
 				"type": "misc",
 				"value":"yuushya:block_/stone/pale_bricks_3",
@@ -1782,6 +1805,7 @@
 
 		{
 			"class_type": "block", "name": "smoke_bricks", "item_group": "yuushya_stone",
+			"auto_generated": { "recipe": false },
 			"texture": {
 				"type": "misc",
 				"value":"yuushya:block_/stone/smoke_bricks",
@@ -1791,6 +1815,7 @@
 
 		{
 			"class_type": "block", "name": "marble", "item_group": "yuushya_stone",
+			"auto_generated": { "recipe": false },
 			"texture": {
 				"type": "misc",
 				"value":"yuushya:block_/stone/marble",
@@ -1800,6 +1825,7 @@
 
 		{
 			"class_type": "block", "name": "marble_cobblestone", "item_group": "yuushya_stone",
+			"auto_generated": { "recipe": false },
 			"texture": {
 				"type": "misc",
 				"value":"yuushya:block_/stone/marble_cobblestone",
@@ -1808,6 +1834,7 @@
 		},
 		{
 			"class_type": "block", "name": "egg_cobblestone", "item_group": "yuushya_stone",
+			"auto_generated": { "recipe": false },
 			"texture": {
 				"type": "misc",
 				"value":"yuushya:block_/stone/egg_cobblestone",
@@ -1817,6 +1844,7 @@
 
 		{
 			"class_type": "block", "name": "terracotta_cobblestone", "item_group": "yuushya_stone",
+			"auto_generated": { "recipe": false },
 			"texture": {
 				"value":"yuushya:block_/stone/terracotta_cobblestone",
 				"set":  [
@@ -1825,6 +1853,7 @@
 
 		{
 			"class_type": "block", "name": "fossilized_cobblestone", "item_group": "yuushya_stone",
+			"auto_generated": { "recipe": false },
 			"texture": {
 				"type": "misc",
 				"value":"yuushya:block_/stone/fossilized_cobblestone",
@@ -1843,6 +1872,7 @@
 
 		{
 			"class_type": "block", "name": "wore_lime_wall", "item_group": "yuushya_stone",
+			"auto_generated": { "recipe": false },
 			"texture": {
 				"type": "misc",
 				"value":"yuushya:block_/stone/wore_lime_wall",
@@ -1852,6 +1882,7 @@
 
 		{
 			"class_type": "block", "name": "gray_wall", "item_group": "yuushya_stone",
+			"auto_generated": { "recipe": false },
 			"texture": {
 				"type": "misc",
 				"value":"yuushya:block_/stone/gray_wall",
@@ -1861,6 +1892,7 @@
 
 		{
 			"class_type": "block", "name": "wore_stone", "item_group": "yuushya_stone",
+			"auto_generated": { "recipe": false },
 			"texture": {
 				"type": "misc",
 				"value":"yuushya:block_/stone/wore_stone",
@@ -3294,56 +3326,56 @@
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_wood",
 			"name": "raw_acacia_table",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/raw_acacia_table"]]}
 		},
 
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_wood",
 			"name": "raw_birch_table",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/raw_birch_table"]]}
 		},
 
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_wood",
 			"name": "raw_dark_oak_table",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/raw_dark_oak_table"]]}
 		},
 
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_wood",
 			"name": "raw_jungle_table",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/raw_jungle_table"]]}
 		},
 
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_wood",
 			"name": "raw_oak_table",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/raw_oak_table"]]}
 		},
 
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_wood",
 			"name": "raw_spruce_table",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/raw_spruce_table"]]}
 		},
 
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_wood",
 			"name": "raw_crimson_table",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/raw_crimson_table"]]}
 		},
 
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_wood",
 			"name": "raw_warped_table",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/raw_warped_table"]]}
 		},
 
@@ -3371,56 +3403,56 @@
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_wood",
 			"name": "raw_acacia_drawer",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/raw_acacia_drawer"]]}
 		},
 
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_wood",
 			"name": "raw_birch_drawer",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/raw_birch_drawer"]]}
 		},
 
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_wood",
 			"name": "raw_dark_oak_drawer",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/raw_dark_oak_drawer"]]}
 		},
 
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_wood",
 			"name": "raw_jungle_drawer",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/raw_jungle_drawer"]]}
 		},
 
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_wood",
 			"name": "raw_oak_drawer",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/raw_oak_drawer"]]}
 		},
 
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_wood",
 			"name": "raw_spruce_drawer",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/raw_spruce_drawer"]]}
 		},
 
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_wood",
 			"name": "raw_crimson_drawer",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/raw_crimson_drawer"]]}
 		},
 
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_wood",
 			"name": "raw_warped_drawer",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/raw_warped_drawer"]]}
 		},
 
@@ -3448,56 +3480,56 @@
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_wood",
 			"name": "raw_acacia_vertical_drawer",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/raw_acacia_vertical_drawer"]]}
 		},
 
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_wood",
 			"name": "raw_birch_vertical_drawer",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/raw_birch_vertical_drawer"]]}
 		},
 
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_wood",
 			"name": "raw_dark_oak_vertical_drawer",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/raw_dark_oak_vertical_drawer"]]}
 		},
 
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_wood",
 			"name": "raw_jungle_vertical_drawer",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/raw_jungle_vertical_drawer"]]}
 		},
 
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_wood",
 			"name": "raw_oak_vertical_drawer",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/raw_oak_vertical_drawer"]]}
 		},
 
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_wood",
 			"name": "raw_spruce_vertical_drawer",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/raw_spruce_vertical_drawer"]]}
 		},
 
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_wood",
 			"name": "raw_crimson_vertical_drawer",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/raw_crimson_vertical_drawer"]]}
 		},
 
 		{
 			"class_type": "PlainBlock", "item_group": "yuushya_wood",
 			"name": "raw_warped_vertical_drawer",
-			"auto_generated": { "recipe": true },
+			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/raw_warped_vertical_drawer"]]}
 		},
 
@@ -3769,6 +3801,7 @@
 
 		{
 			"class_type": "block", "name": "acacia_framed_planks", "item_group": "yuushya_wood",
+			"auto_generated": { "recipe": false },
 			"properties": {"lines": 0 },
 			"texture": {
 				"properties": {"sound": "wood" },
@@ -3780,6 +3813,7 @@
 
 		{
 			"class_type": "block", "name": "birch_framed_planks", "item_group": "yuushya_wood",
+			"auto_generated": { "recipe": false },
 			"properties": {"lines": 0 },
 			"texture": {
 				"properties": {"sound": "wood" },
@@ -3790,6 +3824,7 @@
 
 		{
 			"class_type": "block", "name": "dark_oak_framed_planks", "item_group": "yuushya_wood",
+			"auto_generated": { "recipe": false },
 			"properties": {"lines": 0 },
 			"texture": {
 				"properties": {"sound": "wood" },
@@ -3800,6 +3835,7 @@
 
 		{
 			"class_type": "block", "name": "jungle_framed_planks", "item_group": "yuushya_wood",
+			"auto_generated": { "recipe": false },
 			"properties": {"lines": 0 },
 			"texture": {
 				"properties": {"sound": "wood" },
@@ -3810,6 +3846,7 @@
 
 		{
 			"class_type": "block", "name": "oak_framed_planks", "item_group": "yuushya_wood",
+			"auto_generated": { "recipe": false },
 			"properties": {"lines": 0 },
 			"texture": {
 				"properties": {"sound": "wood" },
@@ -4051,7 +4088,7 @@
 		},
 
 		{
-			"class_type": "FixedBlock",
+			"class_type": "RoofBlock",
 			"name": "road_fence",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"item_model": "yuushya:extra_building_material/road_fence_none",

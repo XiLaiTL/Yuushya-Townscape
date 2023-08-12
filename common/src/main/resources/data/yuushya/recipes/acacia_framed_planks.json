@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+     "AAA",
+     "ABA",
+     "AAA"
+    ],
+    "key": {
+      "A": 
+      {
+        "item":"yuushya:a_acacia_blindwall"
+      },
+      "B":
+        {
+        "item":"minecraft:acacia_planks"
+      }
+    },
+    "result": {
+      "item": "yuushya:acacia_framed_planks",
+      "count":8
+    }
+  }

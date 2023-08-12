@@ -1,0 +1,9 @@
+{
+    "type": "stonecutting",
+    "ingredient": 
+        {
+            "item": "minecraft:bamboo_block"
+        },
+    "result": "yuushya:raw_bamboo",
+    "count": 1
+}

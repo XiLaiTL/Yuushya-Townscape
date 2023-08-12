@@ -1,0 +1,9 @@
+{
+    "type": "stonecutting",
+    "ingredient": 
+        {
+            "item": "yuushya:raw_mangrove_vertical_drawer"
+        },
+    "result": "yuushya:raw_mangrove_drawer",
+    "count": 1
+}

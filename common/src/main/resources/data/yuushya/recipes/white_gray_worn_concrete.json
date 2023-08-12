@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+     "AAA",
+     "ABA",
+     "AAA"
+    ],
+    "key": {
+      "A": 
+      {
+        "item":"minecraft:white_concrete_powder"
+      },
+      "B":
+        {
+        "item":"minecraft:water_bucket"
+      }
+    },
+    "result": {
+      "item": "yuushya:white_worn_concrete",
+      "count":8
+    }
+  }

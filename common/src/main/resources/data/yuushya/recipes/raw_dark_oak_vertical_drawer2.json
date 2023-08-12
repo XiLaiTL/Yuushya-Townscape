@@ -1,0 +1,9 @@
+{
+    "type": "stonecutting",
+    "ingredient": 
+        {
+            "item": "yuushya:raw_dark_oak_drawer"
+        },
+    "result": "yuushya:raw_dark_oak_vertical_drawer",
+    "count": 1
+}

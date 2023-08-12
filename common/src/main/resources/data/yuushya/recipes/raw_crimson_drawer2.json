@@ -1,0 +1,9 @@
+{
+    "type": "stonecutting",
+    "ingredient": 
+        {
+            "item": "yuushya:raw_crimson_vertical_drawer"
+        },
+    "result": "yuushya:raw_crimson_drawer",
+    "count": 1
+}

@@ -1,0 +1,9 @@
+{
+    "type": "stonecutting",
+    "ingredient": 
+        {
+            "item": "yuushya:raw_warped_drawer"
+        },
+    "result": "yuushya:raw_warped_vertical_drawer",
+    "count": 1
+}

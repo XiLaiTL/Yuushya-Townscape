@@ -1,0 +1,9 @@
+{
+    "type": "stonecutting",
+    "ingredient": 
+        {
+            "item": "minecraft:acacia_log"
+        },
+    "result": "yuushya:raw_acacia_wood",
+    "count": 1
+}

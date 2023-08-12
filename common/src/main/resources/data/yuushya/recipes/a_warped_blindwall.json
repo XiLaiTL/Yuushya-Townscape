@@ -1,0 +1,12 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "yuushya:raw_warped_wood"
+        }
+    ],
+    "result": {
+        "item": "yuushya:a_warped_blindwall",
+        "count": 4
+    }
+  }

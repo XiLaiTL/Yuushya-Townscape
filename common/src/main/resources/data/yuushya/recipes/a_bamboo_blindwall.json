@@ -1,0 +1,12 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "yuushya:raw_bamboo"
+        }
+    ],
+    "result": {
+        "item": "yuushya:a_bamboo_blindwall",
+        "count": 4
+    }
+  }

@@ -1,0 +1,12 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "yuushya:raw_cherry_wood"
+        }
+    ],
+    "result": {
+        "item": "yuushya:a_cherry_blindwall",
+        "count": 4
+    }
+  }

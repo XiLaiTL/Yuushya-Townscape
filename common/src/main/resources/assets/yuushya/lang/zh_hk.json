@@ -1868,6 +1868,10 @@
 "block.yuushya.deployed_utility_service_drop.line1": "\u00A7a(接線柱方塊)",
 "block.yuushya.mounted_utility_service_drop.line1": "\u00A7a(接線柱方塊)",
 
+"item.yuushya.pilatory": "\u00A7a霸*育髮液",
+"item.yuushya.pilatory.line1": "\u00A79[霸*育髮液]可以讓你頭戴任意方塊和物品",
+"item.yuushya.pilatory.line2": "\u00A79主手持此物品,副手持所需佩戴物品,右鍵即可使用",
+
 "block.yuushya.air_conditioning_condenser.line1": "\u00A7a(可空手右鍵或用形態扳手變換)\u00A79[可變形態:2]",
 "block.yuushya.unlocked_safe.line1": "\u00A7a(可用形態扳手變換)\u00A79[可變形態:2]",
 "block.yuushya.snack.line1": "\u00A7a(可空手右鍵或用形態扳手變換)\u00A79[可變形態:2]",

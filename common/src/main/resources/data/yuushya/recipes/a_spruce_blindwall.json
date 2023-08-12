@@ -1,0 +1,12 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "yuushya:raw_spruce_wood"
+        }
+    ],
+    "result": {
+        "item": "yuushya:a_spruce_blindwall",
+        "count": 4
+    }
+  }

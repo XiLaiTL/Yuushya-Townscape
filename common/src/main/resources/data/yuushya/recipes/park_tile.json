@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+     "AB",
+     "BA"
+    ],
+    "key": {
+      "A": {
+        "item": "yuushya:gray_tile"
+      },
+      "B":{
+        "item":"minecraft:cobblestone"
+      }
+    },
+    "result": {
+      "item": "yuushya:park_tile",
+      "count":4
+    }
+  }

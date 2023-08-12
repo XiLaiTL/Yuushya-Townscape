@@ -1,0 +1,9 @@
+{
+    "type": "stonecutting",
+    "ingredient": 
+        {
+            "item": "minecraft:bricks"
+        },
+    "result": "yuushya:square_brick",
+    "count": 1
+}

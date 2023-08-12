@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+     "AB",
+     "BA"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:granite"
+      },
+      "B":{
+        "item":"minecraft:gravel"
+      }
+    },
+    "result": {
+      "item": "yuushya:egg_cobblestone",
+      "count":4
+    }
+  }

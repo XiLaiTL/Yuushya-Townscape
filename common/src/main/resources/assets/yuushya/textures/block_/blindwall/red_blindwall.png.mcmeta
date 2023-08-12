@@ -1,7 +1,9 @@
 {
-  "ctm": {
-    "ctm_version": 1,
-    "proxy": "yuushya:block_/blindwall/red_blindwall_ctm"
-  }
+    "ctm":{
+        "ctm_version": 1,
+        "type":"CTM",
+        "textures":[
+            "yuushya:block_/blindwall/red_blindwall_ctm"
+        ]
+    }
 }
-
