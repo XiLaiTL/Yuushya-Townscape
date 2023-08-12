@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+     "AAA",
+     "ABA",
+     "AAA"
+    ],
+    "key": {
+      "A": 
+      {
+        "item":"minecraft:copper_ingot"
+      },
+      "B":
+        {
+        "item":"minecraft:bricks"
+      }
+    },
+    "result": {
+      "item": "yuushya:framed_bricks",
+      "count":2
+    }
+  }

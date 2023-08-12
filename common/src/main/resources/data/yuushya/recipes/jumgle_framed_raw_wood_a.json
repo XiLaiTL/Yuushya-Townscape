@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+     "AAA",
+     "ABA",
+     "AAA"
+    ],
+    "key": {
+      "A": 
+      {
+        "item":"yuushya:a_jungle_blindwall"
+      },
+      "B":
+        {
+        "item":"yuushya:raw_jungle_wood"
+      }
+    },
+    "result": {
+      "item": "yuushya:jungle_framed_raw_wood_a",
+      "count":8
+    }
+  }

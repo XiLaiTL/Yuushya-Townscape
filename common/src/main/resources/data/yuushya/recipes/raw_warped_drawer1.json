@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+     "ABA",
+     "AAA",
+     "ABA"
+    ],
+    "key": {
+      "A": {
+        "item": "yuushya:raw_warped_wood"
+      },
+      "B":{
+        "item":"minecraft:chest"
+      }
+    },
+    "result": {
+      "item": "yuushya:raw_warped_drawer",
+      "count":8
+    }
+  }

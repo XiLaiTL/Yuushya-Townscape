@@ -1,0 +1,12 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "yuushya:raw_birch_wood"
+        }
+    ],
+    "result": {
+        "item": "yuushya:a_birch_blindwall",
+        "count": 4
+    }
+  }

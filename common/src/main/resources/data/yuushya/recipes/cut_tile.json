@@ -1,0 +1,9 @@
+{
+    "type": "stonecutting",
+    "ingredient": 
+        {
+            "item": "yuushya:gray_tile"
+        },
+    "result": "yuushya:cut_tile",
+    "count": 1
+}

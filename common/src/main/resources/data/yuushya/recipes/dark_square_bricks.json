@@ -1,0 +1,9 @@
+{
+    "type": "stonecutting",
+    "ingredient": 
+        {
+            "item": "yuushya:embbed_dark_bricks"
+        },
+    "result": "yuushya:dark_square_bricks",
+    "count": 1
+}

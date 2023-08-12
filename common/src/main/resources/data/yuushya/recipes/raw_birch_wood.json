@@ -1,0 +1,9 @@
+{
+    "type": "stonecutting",
+    "ingredient": 
+        {
+            "item": "minecraft:birch_log"
+        },
+    "result": "yuushya:raw_birch_wood",
+    "count": 1
+}

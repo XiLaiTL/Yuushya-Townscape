@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+     "AAA",
+     "BAB",
+     "AAA"
+    ],
+    "key": {
+      "A": {
+        "item": "yuushya:raw_acacia_wood"
+      },
+      "B":{
+        "item":"minecraft:chest"
+      }
+    },
+    "result": {
+      "item": "yuushya:raw_acacia_vertical_drawer",
+      "count":8
+    }
+  }

@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+     "AAA",
+     "ABA",
+     "AAA"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:nether_brick"
+      },
+      "B":{
+        "item":"minecraft:gray_dye"
+      }
+    },
+    "result": {
+      "item": "yuushya:gray_tile",
+      "count":4
+    }
+  }

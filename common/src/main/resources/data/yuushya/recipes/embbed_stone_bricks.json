@@ -1,0 +1,9 @@
+{
+    "type": "stonecutting",
+    "ingredient": 
+        {
+            "item": "minecraft:stone_bricks"
+        },
+    "result": "yuushya:embbed_stone_bricks",
+    "count": 1
+}

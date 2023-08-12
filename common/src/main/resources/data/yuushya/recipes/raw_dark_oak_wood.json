@@ -1,0 +1,9 @@
+{
+    "type": "stonecutting",
+    "ingredient": 
+        {
+            "item": "minecraft:dark_oak_log"
+        },
+    "result": "yuushya:raw_dark_oak_wood",
+    "count": 1
+}

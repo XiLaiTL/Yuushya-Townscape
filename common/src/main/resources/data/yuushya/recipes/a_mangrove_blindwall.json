@@ -1,0 +1,12 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "yuushya:raw_mangrove_wood"
+        }
+    ],
+    "result": {
+        "item": "yuushya:a_mangrove_blindwall",
+        "count": 4
+    }
+  }

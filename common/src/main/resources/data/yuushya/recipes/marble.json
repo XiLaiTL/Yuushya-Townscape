@@ -1,0 +1,26 @@
+{
+    "type": "blasting",
+    "ingredient": [
+        {
+        "item": "minecraft:calcite"
+    },
+    {
+        "item": "yuushya:pale_bricks_0"
+    },
+    {
+        "item": "yuushya:pale_bricks_1"
+    },
+    {
+        "item": "yuushya:pale_bricks_2"
+    },
+    {
+        "item": "yuushya:pale_bricks_3"
+    },
+    {
+        "item": "yuushya:lime__concrete"
+    }
+],
+    "result": "yuushya:marble",
+    "experience": 0.2,
+    "cookingtime": 60
+}

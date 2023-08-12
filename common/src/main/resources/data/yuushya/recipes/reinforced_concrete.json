@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+     "AB",
+     "BA"
+    ],
+    "key": {
+      "A": {
+        "item": "yuushya:lime__concrete"
+      },
+      "B":{
+        "item":"yuushya:steel_structure"
+      }
+    },
+    "result": {
+      "item": "yuushya:reinforced_concrete",
+      "count":4
+    }
+  }

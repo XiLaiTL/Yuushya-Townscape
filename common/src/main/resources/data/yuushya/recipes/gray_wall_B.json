@@ -1,0 +1,14 @@
+{
+    "type": "blasting",
+    "ingredient": [
+    {
+        "item": "minecraft:light_gray_concrete_powder"
+    },
+    {
+        "item": "minecraft:gray_concrete_powder"
+    }
+],
+    "result": "yuushya:gray_wall",
+    "experience": 0.1,
+    "cookingtime": 120
+}

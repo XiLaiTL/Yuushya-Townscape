@@ -1,0 +1,9 @@
+{
+    "type": "stonecutting",
+    "ingredient": 
+        {
+            "item": "yuushya:raw_acacia_drawer"
+        },
+    "result": "yuushya:raw_acacia_vertical_drawer",
+    "count": 1
+}

@@ -1,0 +1,9 @@
+{
+    "type": "stonecutting",
+    "ingredient": 
+        {
+            "item": "minecraft:cherry_log"
+        },
+    "result": "yuushya:raw_cherry_wood",
+    "count": 1
+}

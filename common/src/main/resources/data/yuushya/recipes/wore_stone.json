@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+     "AAA",
+     "ABA",
+     "AAA"
+    ],
+    "key": {
+      "A": [
+        {
+        "item": "yuushya:wore_lime_wall"
+      },
+      {
+        "item": "minecraft:cobblestone"
+      },
+      {
+        "item":"minecraft:stone"
+      }
+    ],
+      "B":
+        {
+        "item":"minecraft:water_bucket"
+      }
+    },
+    "result": {
+      "item": "yuushya:wore_stone",
+      "count":8
+    }
+  }

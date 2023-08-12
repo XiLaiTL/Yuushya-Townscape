@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+     "AAA",
+     "ABA",
+     "AAA"
+    ],
+    "key": {
+      "A": 
+      {
+        "item":"minecraft:bricks"
+      },
+      "B":
+        {
+        "item":"minecraft:black_dye"
+      }
+    },
+    "result": {
+      "item": "yuushya:embbed_dark_bricks",
+      "count":8
+    }
+  }

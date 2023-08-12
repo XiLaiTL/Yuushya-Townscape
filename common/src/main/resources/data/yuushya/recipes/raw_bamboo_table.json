@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+     "AAA",
+     " A "
+    ],
+    "key": {
+      "A": {
+        "item": "yuushya:raw_bamboo"
+      }
+    },
+    "result": {
+      "item": "yuushya:raw_bamboo_table",
+      "count":4
+    }
+  }

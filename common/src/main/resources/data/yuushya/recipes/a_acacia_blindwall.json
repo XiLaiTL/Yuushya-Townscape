@@ -1,0 +1,12 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+      {
+          "item": "yuushya:raw_acacia_wood"
+      }
+  ],
+  "result": {
+      "item": "yuushya:a_acacia_blindwall",
+      "count": 4
+  }
+}

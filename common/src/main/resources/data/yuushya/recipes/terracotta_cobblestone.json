@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+     "AB",
+     "BA"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:terracotta"
+      },
+      "B":{
+        "item":"yuushya:egg_cobblestone"
+      }
+    },
+    "result": {
+      "item": "yuushya:terracotta_cobblestone",
+      "count":4
+    }
+  }
