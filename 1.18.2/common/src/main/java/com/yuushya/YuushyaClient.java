@@ -22,10 +22,10 @@ public class YuushyaClient {
         YuushyaRegistries.registerClient();
 
         ClientLifecycleEvent.CLIENT_STARTED.register((client)->{ //client render thread
-            YuushyaLogger.info("test");
             CollisionFileReader.readAllCollision();
         });
 
+        /*
         ClientGuiEvent.SET_SCREEN.register(screen -> {
             if(openOnce && screen instanceof SelectWorldScreen) {
                 openOnce = false;
@@ -37,6 +37,7 @@ public class YuushyaClient {
                 return CompoundEventResult.pass();
             }
         });
+         */
 
 //        ClientTickEvent.CLIENT_POST.register((client)->{
 //            if (client.level != null&&client.player!=null&&client.hitResult!=null &&client.hitResult.getType() == HitResult.Type.BLOCK) {

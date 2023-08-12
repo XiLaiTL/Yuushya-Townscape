@@ -24,9 +24,9 @@ public class YuushyaClient {
         YuushyaRegistries.registerClient();
 
         ClientLifecycleEvent.CLIENT_STARTED.register((client)->{ //client render thread
-            YuushyaLogger.info("test");
             CollisionFileReader.readAllCollision();
         });
+        /*
         GuiEvent.SET_SCREEN.register(screen -> {
             if(openOnce && screen instanceof SelectWorldScreen) {
                 openOnce = false;
@@ -38,6 +38,7 @@ public class YuushyaClient {
                 return InteractionResultHolder.pass(screen);
             }
         });
+         */
 
 //        YuushyaRegistryConfig.YuushyaRawParticleMap.values().forEach((e)->{
 //            ParticleProviderRegistry.register((ParticleType<SimpleParticleType>)YuushyaRegistries.PARTICLE_TYPES.get(e.name).get(), (spriteProvider)-> YuushyaParticleFactory.create(e,spriteProvider));
