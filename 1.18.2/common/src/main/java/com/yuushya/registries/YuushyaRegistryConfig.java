@@ -32,6 +32,10 @@ public class YuushyaRegistryConfig {
     public static final File CONFIG_FILE= Platform.getConfigFolder().resolve("com.yuushya/register.json").toFile();
     public static final String VERSION= Platform.getMod(Yuushya.MOD_ID).getVersion();
 
+    public static void readRegistrySelf(){
+        readRegistryInner();
+        addResultToRawMap(YuushyaData);
+    }
     public static void readRegistryConfig() {
         if (!CONFIG_FILE.exists()) {
             readRegistryInner();
@@ -54,6 +58,7 @@ public class YuushyaRegistryConfig {
             e.printStackTrace();
         }
     }
+
     public static void readRegistryInner(){
         if (InnerFileInputStream!=null){
             try (BufferedReader reader=new BufferedReader(new InputStreamReader(InnerFileInputStream))){

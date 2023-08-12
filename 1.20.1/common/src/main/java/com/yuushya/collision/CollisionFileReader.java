@@ -121,6 +121,7 @@ public class CollisionFileReader {
 
     public static VoxelShape getVoxelShape(CollisionItem.Model model){
         VoxelShape shape = Shapes.empty();
+        if(model.collision == null) return Shapes.block();
         for(var cube:model.collision){
             shape=Shapes.or(shape, Block.box(cube.from.get(0),cube.from.get(1),cube.from.get(2),cube.to.get(0),cube.to.get(1),cube.to.get(2)));
         }

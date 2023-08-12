@@ -12,11 +12,12 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.function.Supplier;
 
 public class YuushyaDeferredRegister <T>{
-    private final Map<String, RegistrySupplier<T>> OBJECT_MAP = new HashMap<>();
+    private final Map<String, RegistrySupplier<T>> OBJECT_MAP = new LinkedHashMap<>();
 
     private static final Supplier<RegistrarManager> REGISTRIES = Suppliers.memoize(() -> RegistrarManager.get(Yuushya.MOD_ID));
     private final Registrar<T>  REGISTER;
@@ -28,6 +29,7 @@ public class YuushyaDeferredRegister <T>{
     }
     //set
     public <I extends T> RegistrySupplier<T> register(String name, Supplier<I> sup){
+        if(OBJECT_MAP.containsKey(name)) return OBJECT_MAP.get(name);
         RegistrySupplier<T> registryObject = REGISTER.register(new ResourceLocation(Yuushya.MOD_ID, name), (Supplier<T>) sup);
         OBJECT_MAP.put(name,registryObject);
         return registryObject;

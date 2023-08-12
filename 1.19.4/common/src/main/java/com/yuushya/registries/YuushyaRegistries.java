@@ -148,6 +148,7 @@ public class YuushyaRegistries {
 
     public static void registerAll(){
         RegisterList.forEach(Runnable::run);
+        RegisterList.clear();
 //        ITEMS.register("get_blockstate_item", () -> new GetBlockStateItem(new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_ITEM).stacksTo(1), 1));
         ITEMS.register("form_trans_item",()->new FormTransItem(new Item.Properties().arch$tab(YuushyaCreativeModeTab.YUUSHYA_ITEM).stacksTo(1),2));
         ITEMS.register("pilatory",()-> new SetHatItem(new Item.Properties().arch$tab(YuushyaCreativeModeTab.YUUSHYA_ITEM).stacksTo(64),2));
