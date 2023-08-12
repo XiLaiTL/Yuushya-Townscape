@@ -16,21 +16,18 @@ public class Yuushya {
 
         AddonLoader.loadPackResource(Platform.getModsFolder());
 //        ReloadListenerRegistry.register(PackType.SERVER_DATA,new CollisionFileReadReloadListener());
-        YuushyaRegistryConfig.readRegistryConfig();
         //YuushyaRegistryConfig.readRegistryConfig();
         YuushyaRegistryConfig.readRegistrySelf();
         AddonLoader.getRegister();
         YuushyaRegistries.registerRegistries();
         YuushyaRegistries.registerAll();
 
-        CollisionFileReader.readAllFileFromConfig();
         //CollisionFileReader.readAllFileFromConfig();
         AddonLoader.getCollision();
         CollisionFileReader.readAllFileSelf();
 //        CollisionNetWorkChannel.register();
 
         LifecycleEvent.SERVER_STARTED.register((server)->{ //server thread
-            CollisionFileReader.readAllFileFromConfig();
             //CollisionFileReader.readAllFileFromConfig();
             AddonLoader.getCollision();
             CollisionFileReader.readAllFileSelf();

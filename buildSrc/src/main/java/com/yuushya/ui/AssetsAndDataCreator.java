@@ -92,8 +92,14 @@ public class AssetsAndDataCreator {
         button1.addActionListener((event)-> {
             try {
                 for (Path path : paths) {
-                    ZipReader zipReader = new ZipReader(path,pathTemp);
-                    zipReader.unzip();
+                    if(Files.isDirectory(path)){
+                        copyAll(path,pathTemp);
+                    }
+                    else{
+                        ZipReader zipReader = new ZipReader(path,pathTemp);
+                        zipReader.unzip();
+                    }
+
                     PackData packData;
                     try (JsonReader reader = new JsonReader(Files.newBufferedReader(pathTemp.resolve("./pack.mcmeta")))){
                         packData = GsonTools.NormalGSON.fromJson(reader,PackData.class);
@@ -108,7 +114,7 @@ public class AssetsAndDataCreator {
                     jarCreator.createJar();
                     YuushyaLog.print();
                     JOptionPane.showMessageDialog(frame,"Success!");
-
+                    deleteAll(pathTemp);
                 }
             }
             catch (Exception e1){e1.printStackTrace();YuushyaLog.add(e1);}
@@ -136,8 +142,26 @@ public class AssetsAndDataCreator {
                 Files.deleteIfExists(file);
                 return FileVisitResult.CONTINUE;
             }
+
+            @Override
+            public FileVisitResult postVisitDirectory(Path dir, IOException exc) throws IOException {
+                Files.delete(dir);
+                return FileVisitResult.CONTINUE;
+            }
         });
 
+    }
+
+    public static void copyAll(Path path,Path pathTemp) throws IOException{
+        Files.walkFileTree(path,new SimpleFileVisitor<>(){
+            @Override
+            public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
+                Path pathNew = pathTemp.resolve(path.relativize(file));
+                pathNew.getParent().toFile().mkdirs();
+                Files.copy(file,pathNew,StandardCopyOption.REPLACE_EXISTING);
+                return FileVisitResult.CONTINUE;
+            }
+        });
     }
 
 
