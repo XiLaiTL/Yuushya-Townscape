@@ -104,7 +104,7 @@ public class AssetsAndDataCreator {
                     try (JsonReader reader = new JsonReader(Files.newBufferedReader(pathTemp.resolve("./pack.mcmeta")))){
                         packData = GsonTools.NormalGSON.fromJson(reader,PackData.class);
                     }
-                    catch (IOException e){packData = new PackData();YuushyaLog.add(e);}
+                    catch (IOException e){packData = new PackData();YuushyaLog.error(e);}
                     packData.checkVaild(path.getFileName().toString().replace(".zip","").replace(".jar","").toLowerCase().replace("-","_".replace(" ","_").replace(".","_")));
                     JarCreator jarCreator = new JarCreator(packData,pathTemp,pathTemp);
                     if (chkbox1.isSelected()) jarCreator.createJson();
@@ -117,7 +117,7 @@ public class AssetsAndDataCreator {
                     deleteAll(pathTemp);
                 }
             }
-            catch (Exception e1){e1.printStackTrace();YuushyaLog.add(e1);}
+            catch (Exception e1){e1.printStackTrace();YuushyaLog.error(e1);}
 
         });
 

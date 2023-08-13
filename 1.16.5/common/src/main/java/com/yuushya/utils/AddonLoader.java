@@ -32,7 +32,7 @@ import static com.yuushya.utils.GsonTools.NormalGSON;
 
 //最主要的是读取两种文件：data/register/xxx.json, data/collision/xxx.json
 public class AddonLoader {
-    private static final Predicate<Path> ADDON_FILTER = path -> !Files.isDirectory(path) && path.getFileName().toString().endsWith("."+MOD_ID+".jar");
+    private static final Predicate<Path> ADDON_FILTER = path -> !Files.isDirectory(path) && (path.getFileName().toString().endsWith("."+MOD_ID+".jar")||path.getFileName().toString().endsWith("."+MOD_ID+".zip"));
     private static final Predicate<String> JSON_FILTER = string -> string.endsWith(".json");
     //只读取yuushya文件夹了现在
     private static final FallbackResourceManager YUUSHYA_MANAGER = new FallbackResourceManager(PackType.SERVER_DATA,MOD_ID);

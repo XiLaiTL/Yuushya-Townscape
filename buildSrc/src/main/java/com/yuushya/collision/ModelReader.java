@@ -33,7 +33,7 @@ public class ModelReader {
                 }
                 modelMap.put(namespaceID,model);
                 return model;
-            }catch (IOException e){e.printStackTrace();YuushyaLog.add(e);}
+            }catch (IOException e){e.printStackTrace();YuushyaLog.error(e);}
         }
         return null;
     }

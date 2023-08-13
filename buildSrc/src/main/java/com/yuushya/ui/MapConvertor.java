@@ -57,7 +57,7 @@ public class MapConvertor {
             }
             catch (Exception e){
                 e.printStackTrace();
-                YuushyaLog.add(e);
+                YuushyaLog.error(e);
             }
             YuushyaLog.print();
             JOptionPane.showMessageDialog(frame,"Success!");

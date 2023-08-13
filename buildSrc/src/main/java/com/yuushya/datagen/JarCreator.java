@@ -46,10 +46,10 @@ public class JarCreator {
             }catch (Exception e){
                 System.out.println(resource +" "+resourceLocation);
                 e.printStackTrace();
-                YuushyaLog.add(e);
+                YuushyaLog.error(e);
             }
             if(element !=null) writer.write(element.toString());
-        }catch (IOException e){ e.printStackTrace();YuushyaLog.add(e);}
+        }catch (IOException e){ e.printStackTrace();YuushyaLog.error(e);}
     }
 
 
@@ -67,7 +67,7 @@ public class JarCreator {
                 while ((b = in.read()) != -1) {
                     out.write(b);
                 }
-            }catch (Exception e){e.printStackTrace(); YuushyaLog.add(e);}
+            }catch (Exception e){e.printStackTrace(); YuushyaLog.error(e);}
         }
     }
 
@@ -77,7 +77,7 @@ public class JarCreator {
             zip(out, _resPath.toFile(),"");
             out.flush();
         }
-        catch (Exception e){e.printStackTrace(); YuushyaLog.add(e);}
+        catch (Exception e){e.printStackTrace(); YuushyaLog.error(e);}
     }
 
     public void writeModFile(){
@@ -89,6 +89,7 @@ public class JarCreator {
     "name": "{0}",
     "description": "{2}",
     "environment": "*",
+    "icon": "pack.png",
     "depends": '{'
         "yuushya":">=2.0.0"
     '}'
@@ -106,6 +107,7 @@ modId = "{0}"
 version = "{1}"
 displayName = "{0}"
 description = "{2}"
+logoFile = "pack.png"
 
 [[dependencies.{0}]]
 modId = "yuushya"
@@ -119,10 +121,10 @@ side = "BOTH"
         forge.getParent().toFile().mkdirs();
         try(FileWriter out = new FileWriter(fabric.toFile())) {
             out.write(fabric_file);
-        }catch (IOException e){e.printStackTrace(); YuushyaLog.add(e);}
+        }catch (IOException e){e.printStackTrace(); YuushyaLog.error(e);}
         try(FileWriter out = new FileWriter(forge.toFile())) {
             out.write(forge_file);
-        }catch (IOException e){e.printStackTrace(); YuushyaLog.add(e);}
+        }catch (IOException e){e.printStackTrace(); YuushyaLog.error(e);}
     }
 
     public void createJson(){

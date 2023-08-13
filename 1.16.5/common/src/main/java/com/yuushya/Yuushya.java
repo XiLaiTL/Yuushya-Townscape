@@ -13,7 +13,8 @@ public class Yuushya {
 
     public static void init() {
 
-        AddonLoader.loadPackResource(Platform.getModsFolder());
+        if(Platform.isFabric()) AddonLoader.loadPackResource(Platform.getModsFolder());
+        else if(Platform.isForge()) AddonLoader.loadPackResource(Platform.getModsFolder().resolve("../resourcepacks"));
 //        ReloadListenerRegistry.register(PackType.SERVER_DATA,new CollisionFileReadReloadListener());
         //YuushyaRegistryConfig.readRegistryConfig();
         YuushyaRegistryConfig.readRegistrySelf();

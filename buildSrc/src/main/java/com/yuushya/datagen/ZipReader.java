@@ -2,7 +2,6 @@ package com.yuushya.datagen;
 
 import com.yuushya.ui.YuushyaLog;
 
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.*;
 import java.nio.file.attribute.BasicFileAttributes;
@@ -38,7 +37,7 @@ public class ZipReader {
                         return FileVisitResult.CONTINUE;
                     }
                 });
-            } catch (IOException e) {e.printStackTrace(); YuushyaLog.add(e); }
+            } catch (IOException e) {e.printStackTrace(); YuushyaLog.error(e); }
 
         }
     }
@@ -64,7 +63,7 @@ public class ZipReader {
                         Files.copy(found,output, StandardCopyOption.REPLACE_EXISTING);
                     }
                     return output;
-                } catch (IOException e) {e.printStackTrace(); YuushyaLog.add(e); }
+                } catch (IOException e) {e.printStackTrace(); YuushyaLog.error(e); }
                 return this._basePath.getParent().resolve(realativePath);
             }
             case 2:{ //按照文件夹来读
