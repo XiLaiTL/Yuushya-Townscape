@@ -47,6 +47,7 @@ import java.util.stream.Collectors;
 
 import static com.yuushya.utils.YuushyaUtils.toBlockMaterial;
 import static com.yuushya.utils.YuushyaUtils.toSound;
+import static net.minecraft.world.level.block.state.properties.BlockStateProperties.FACING;
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.HORIZONTAL_FACING;
 
 public class YuushyaBlockFactory{
@@ -116,6 +117,22 @@ public class YuushyaBlockFactory{
 //        public VoxelShape getCollisionShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
 //            return this.hasCollision ? Shapes.block() : Shapes.empty();
 //        }
+        public BlockState rotate(BlockState state, Rotation rotation) {
+            if(state.hasProperty(FACING))
+                return state.setValue(FACING, rotation.rotate(state.getValue(FACING)));
+            else if(state.hasProperty(HORIZONTAL_FACING))
+                return state.setValue(HORIZONTAL_FACING, rotation.rotate(state.getValue(HORIZONTAL_FACING)));
+            return super.rotate(state,rotation);
+        }
+
+        @Override
+        public BlockState mirror(BlockState state, Mirror mirror) {
+            if(state.hasProperty(FACING))
+                return state.setValue(FACING, mirror.mirror(state.getValue(FACING)));
+            else if(state.hasProperty(HORIZONTAL_FACING))
+                return state.setValue(HORIZONTAL_FACING, mirror.mirror(state.getValue(HORIZONTAL_FACING)));
+            return super.mirror(state,mirror);
+        }
     }
 
     public static BlockBehaviour.Properties getBlockProperties(BlockBehaviour.Properties blockProperties, YuushyaRegistryData.Block.Properties yuushyaBlockProperties){
