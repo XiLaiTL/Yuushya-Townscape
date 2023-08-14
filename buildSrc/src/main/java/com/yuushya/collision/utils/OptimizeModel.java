@@ -1,7 +1,12 @@
 package com.yuushya.collision.utils;
 
+import com.yuushya.collision.CollisionFileCreator;
 import com.yuushya.collision.data.CollisionItem;
+import com.yuushya.datagen.utils.ResourceLocation;
+import com.yuushya.ui.Mode;
+import com.yuushya.ui.YuushyaLog;
 
+import java.text.MessageFormat;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -44,7 +49,7 @@ public class OptimizeModel {
     }
 
 
-        public static double volume(CollisionItem.Model.Element element){
+    public static double volume(CollisionItem.Model.Element element){
         double res=1;
         for(int i=0;i<3;i++){
             res*=(element.to.get(i)-element.from.get(i));
@@ -63,7 +68,33 @@ public class OptimizeModel {
         }
 
     }
+    public static void propose(String namespaceId,String modelLocation, List<CollisionItem.Model.Element> elements){
+        Map<Boolean,List<ElementRelation>> filterMap = elements.stream()
+                .map(ElementRelation::new)
+                .filter(x->x.volume>0) //抛弃=0的
+                .collect(Collectors.groupingBy(x->x.volume>=MAX_VOLUME));
+        List<CollisionItem.Model.Element> res = new ArrayList<>();
+        int bigCube=0,smallCube=0,totalCube=0,face=0;
+        if(filterMap.containsKey(true)){
+            res.addAll(filterMap.get(true).stream().map(x -> x.element).toList());
+            bigCube = res.size();
+        }
+        if(filterMap.containsKey(false)){
+            res.addAll(filterMap.get(false).stream().map(x -> x.element).toList());
+            smallCube = res.size()-bigCube;
+        }
+        totalCube=res.size();
+        face=elements.size()-totalCube;
+        CollisionFileCreator.CollisionType proposalType=
+                totalCube>15? CollisionFileCreator.CollisionType.DETAIL30:
+                bigCube==1&&totalCube==1&&filterMap.get(true).get(0).volume==CUBE_VOLUME? CollisionFileCreator.CollisionType.BLOCK:
+                totalCube>0  ? CollisionFileCreator.CollisionType.DETAIL:
+                face >0? CollisionFileCreator.CollisionType.FACE: CollisionFileCreator.CollisionType.BOUND
+                ;
+        Mode.proposalCollision.add(MessageFormat.format("COLLISION PROPOSE:\t{0}\t{1}\t{2}\t{3}\t{4}\t{5}\t{6}", namespaceId,  proposalType.name().toLowerCase(),modelLocation, totalCube, face, bigCube,smallCube));
 
+    }
+    private static final Double CUBE_VOLUME = 16*16*16.0;
     private static final Double MAX_VOLUME = 16*16*12.0;
     public static List<CollisionItem.Model.Element> optimize(List<CollisionItem.Model.Element> elements, int controlNum){
         Map<Boolean,List<ElementRelation>> filterMap = elements.stream()

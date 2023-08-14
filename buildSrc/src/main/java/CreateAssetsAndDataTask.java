@@ -2,6 +2,9 @@ import com.yuushya.collision.CollisionFileCreator;
 import com.yuushya.datagen.ConfigReader;
 import com.yuushya.datagen.JarCreator;
 import com.yuushya.datagen.ZipReader;
+import com.yuushya.ui.Mode;
+import com.yuushya.ui.YuushyaLog;
+import com.yuushya.utils.ImageSizeReader;
 import org.gradle.api.DefaultTask;
 import org.gradle.api.tasks.TaskAction;
 

@@ -13,16 +13,11 @@ public class YuushyaLog {
     private static final List<String> LOG_ERROR = new ArrayList<>();
     private static final List<String> LOG_WARN = new ArrayList<>();
     private static final List<String> LOG_DEBUG = new ArrayList<>();
-
     public static void error(Exception e){
         LOG_ERROR.add(e.getMessage()+"\n"+String.join("\n", Arrays.stream(e.getStackTrace()).map(StackTraceElement::toString).toList())+"\n"+e.getLocalizedMessage()+"\n");
     }
-    public static void warn(String e){
-        LOG_WARN.add(e);
-    }
-    public static void debug(String e){
-        LOG_WARN.add(e);
-    }
+    public static void warn(String e){ LOG_WARN.add(e); }
+    public static void debug(String e){ LOG_DEBUG.add(e); }
 
     public static void print(){
         List<String> all_information = new ArrayList<>();
@@ -37,5 +32,6 @@ public class YuushyaLog {
                 );
             } catch (IOException e) {e.printStackTrace();}
         }
+        Mode.printAll();
     }
 }

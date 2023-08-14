@@ -7,6 +7,10 @@ tasks.register('generateAssetsAndData', CreateAssetsAndDataTask){
     }
 }
 
+tasks.register('checkImageSize', CheckImageSizeTask){
+    it.path = projectDir.toPath().resolve("./src/main/resources/")
+}
+
 tasks.register('copyResources') {
     dependsOn(['1.16.5', '1.18.2', '1.19.2', '1.19.4', '1.20.1'].collect {"copyResources-${it}"})
 }

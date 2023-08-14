@@ -1,5 +1,7 @@
 package com.yuushya.ui;
 
+import com.yuushya.utils.ImageSizeReader;
+
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.io.IOException;
@@ -15,6 +17,15 @@ public class Main {
 
 
     public static void main(String[] args){
+        for (int i = 0; i < args.length; i++){
+            if ("-proposal_collision".equals(args[i])){
+                Mode.proposalCollision=Mode.registerTableType("collision");
+            }
+            else if ("-image_size".equals(args[i])){
+                Mode.imageSize=Mode.registerTableType("image");
+            }
+        }
+
         JFrame.setDefaultLookAndFeelDecorated(true);
         JFrame frame=new JFrame("Yuushya Control Panel");
         frame.setSize(300,300);

@@ -7,6 +7,7 @@ import com.yuushya.datagen.JarCreator;
 import com.yuushya.datagen.ZipReader;
 import com.yuushya.datagen.data.PackData;
 import com.yuushya.utils.GsonTools;
+import com.yuushya.utils.ImageSizeReader;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -18,6 +19,9 @@ import java.nio.file.*;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.ArrayList;
 import java.util.List;
+
+import static com.yuushya.utils.FileUtils.copyAll;
+import static com.yuushya.utils.FileUtils.deleteAll;
 
 public class AssetsAndDataCreator {
     static List<Path> paths=new ArrayList<>();
@@ -99,7 +103,10 @@ public class AssetsAndDataCreator {
                         ZipReader zipReader = new ZipReader(path,pathTemp);
                         zipReader.unzip();
                     }
-
+                    if(Mode.imageSize!=null){
+                        ImageSizeReader imageSizeReader = new ImageSizeReader(pathTemp);
+                        imageSizeReader.readAllPng();
+                    }
                     PackData packData;
                     try (JsonReader reader = new JsonReader(Files.newBufferedReader(pathTemp.resolve("./pack.mcmeta")))){
                         packData = GsonTools.NormalGSON.fromJson(reader,PackData.class);
@@ -135,34 +142,7 @@ public class AssetsAndDataCreator {
         frame.setVisible(true);
     }
 
-    public static void deleteAll(Path path) throws IOException {
-        Files.walkFileTree(path,new SimpleFileVisitor<>(){
-            @Override
-            public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
-                Files.deleteIfExists(file);
-                return FileVisitResult.CONTINUE;
-            }
 
-            @Override
-            public FileVisitResult postVisitDirectory(Path dir, IOException exc) throws IOException {
-                Files.delete(dir);
-                return FileVisitResult.CONTINUE;
-            }
-        });
-
-    }
-
-    public static void copyAll(Path path,Path pathTemp) throws IOException{
-        Files.walkFileTree(path,new SimpleFileVisitor<>(){
-            @Override
-            public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
-                Path pathNew = pathTemp.resolve(path.relativize(file));
-                pathNew.getParent().toFile().mkdirs();
-                Files.copy(file,pathNew,StandardCopyOption.REPLACE_EXISTING);
-                return FileVisitResult.CONTINUE;
-            }
-        });
-    }
 
 
     public static void createResource(){
