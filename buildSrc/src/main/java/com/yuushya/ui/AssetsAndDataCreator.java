@@ -103,10 +103,7 @@ public class AssetsAndDataCreator {
                         ZipReader zipReader = new ZipReader(path,pathTemp);
                         zipReader.unzip();
                     }
-                    if(Mode.imageSize!=null){
-                        ImageSizeReader imageSizeReader = new ImageSizeReader(pathTemp);
-                        imageSizeReader.readAllPng();
-                    }
+
                     PackData packData;
                     try (JsonReader reader = new JsonReader(Files.newBufferedReader(pathTemp.resolve("./pack.mcmeta")))){
                         packData = GsonTools.NormalGSON.fromJson(reader,PackData.class);

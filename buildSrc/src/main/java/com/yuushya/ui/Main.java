@@ -21,9 +21,6 @@ public class Main {
             if ("-proposal_collision".equals(args[i])){
                 Mode.proposalCollision=Mode.registerTableType("collision");
             }
-            else if ("-image_size".equals(args[i])){
-                Mode.imageSize=Mode.registerTableType("image");
-            }
         }
 
         JFrame.setDefaultLookAndFeelDecorated(true);
@@ -50,9 +47,16 @@ public class Main {
         button.addActionListener((event)->{
             AssetsAndDataCreator.main(args);
         });
+        JButton button1 = new JButton("图片分辨率检测");
+        button1.setBounds(30,120,200,30);
+        button1.addActionListener((event)->{
+            Mode.imageSize = Mode.registerTableType("image");
+            ImageSizeChecker.main(args);
+        });
 
         contentPane.add(button0);
         contentPane.add(button);
+        contentPane.add(button1);
 
         frame.setVisible(true);
     }
