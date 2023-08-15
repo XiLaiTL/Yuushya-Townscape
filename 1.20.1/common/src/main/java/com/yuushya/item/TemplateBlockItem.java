@@ -5,6 +5,7 @@ import com.yuushya.Yuushya;
 import com.yuushya.registries.YuushyaRegistries;
 import com.yuushya.registries.YuushyaRegistryData;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.NonNullList;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
@@ -17,15 +18,15 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.ContainerLevelAccess;
 import net.minecraft.world.inventory.StonecutterMenu;
-import net.minecraft.world.item.AirItem;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.inventory.tooltip.BundleTooltip;
+import net.minecraft.world.inventory.tooltip.TooltipComponent;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
+import java.util.Optional;
 
 public class TemplateBlockItem extends AbstractYuushyaItem {
     public String templateType;
@@ -113,19 +114,30 @@ public class TemplateBlockItem extends AbstractYuushyaItem {
     }
 
     @Override
-    public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> tooltips, TooltipFlag tooltipFlag) {
-        super.appendHoverText(itemStack,level,tooltips,tooltipFlag);
-        MutableComponent textComponent=Component.literal("");int index=1;
+    public Optional<TooltipComponent> getTooltipImage(ItemStack stack) {
+        NonNullList<ItemStack> nonNullList = NonNullList.create();
         for (YuushyaRegistryData.Block block:usageList){
             ResourceLocation resourceLocation = block.classType.equals("remain")
                     ? new ResourceLocation(block.name)
                     : new ResourceLocation(Yuushya.MOD_ID,block.name);
-            textComponent.append(Component.translatable(BuiltInRegistries.BLOCK.get(resourceLocation).getDescriptionId())).append(" ");
-            if (index%6==0||index==usageList.size()) {
-                tooltips.add(textComponent);
-                textComponent=Component.literal("");
-            }
-        index++;}
+            nonNullList.add(BuiltInRegistries.BLOCK.get(resourceLocation).asItem().getDefaultInstance());
+        }
+        return Optional.of(new BundleTooltip(nonNullList,nonNullList.size() ));
+    }
+    @Override
+    public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> tooltips, TooltipFlag tooltipFlag) {
+        super.appendHoverText(itemStack,level,tooltips,tooltipFlag);
+//        MutableComponent textComponent=Component.literal("");int index=1;
+//        for (YuushyaRegistryData.Block block:usageList){
+//            ResourceLocation resourceLocation = block.classType.equals("remain")
+//                    ? new ResourceLocation(block.name)
+//                    : new ResourceLocation(Yuushya.MOD_ID,block.name);
+//            textComponent.append(Component.translatable(BuiltInRegistries.BLOCK.get(resourceLocation).getDescriptionId())).append(" ");
+//            if (index%6==0||index==usageList.size()) {
+//                tooltips.add(textComponent);
+//                textComponent=Component.literal("");
+//            }
+//        index++;}
     }
 
     @Override
