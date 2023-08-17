@@ -285,7 +285,7 @@
 		},
 
 		{
-			"class_type": "PlainBlock", "item_group": "yuushya_stone", 
+			"class_type": "PlainBlock", "item_group": "yuushya_stone",
 			"name": "top_reinforced_concrete",
 			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/top_reinforced_concrete"]]}
@@ -2894,7 +2894,7 @@
 			"name": "handrail_left",
 			"blockstate": { "forms": [["yuushya:template/handrail_left"]], "kit": "normal"}, "item_group": "yuushya_extrashapes",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2906,7 +2906,7 @@
 			"name": "handrail_middle",
 			"blockstate": { "forms": [["yuushya:template/handrail_middle"]], "kit": "normal"}, "item_group": "yuushya_extrashapes",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2918,7 +2918,7 @@
 			"name": "handrail_right",
 			"blockstate": { "forms": [["yuushya:template/handrail_right"]], "kit": "normal"}, "item_group": "yuushya_extrashapes",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -4133,7 +4133,7 @@
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "iron_fence",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"item_model": "yuushya:extra_building_material/fence/iron_fence_none",
@@ -4160,42 +4160,42 @@
 		},
 
 		{
-			"class_type": "DecoBlock",
+			"class_type": "FixedBlock",
 			"name": "tall_iron_fence_middle_support",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/fence/tall_iron_fence"]]}
 		},
 
 		{
-			"class_type": "DecoBlock",
+			"class_type": "FixedBlock",
 			"name": "tall_iron_fence_middle",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/fence/tall_iron_fence_"]]}
 		},
 
 		{
-			"class_type": "DecoBlock",
+			"class_type": "FixedBlock",
 			"name": "tall_iron_fence_left",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/fence/tall_iron_fence__"]]}
 		},
 
 		{
-			"class_type": "DecoBlock",
+			"class_type": "FixedBlock",
 			"name": "tall_iron_fence_right",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/fence/tall_iron_fence___"]]}
 		},
 
 		{
-			"class_type": "DecoBlock",
+			"class_type": "FixedBlock",
 			"name": "tall_iron_fence_stairs",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/fence/tall_iron_fence_stairs"]]}
 		},
 
 		{
-			"class_type": "DecoBlock",
+			"class_type": "FixedBlock",
 			"name": "tall_iron_fence_stairs_sym",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/fence/tall_iron_fence_stairs_sym"]]}
@@ -8461,35 +8461,35 @@
 
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "ramp_1",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_traffic",
 			"blockstate": { "forms": [["yuushya:extra_building_material/road/slope/slope_1_left","yuushya:extra_building_material/road/slope/slope_1_middle","yuushya:extra_building_material/road/slope/slope_1_right","yuushya:extra_building_material/road/slope/slope_1_none"]]}
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "ramp_2",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_traffic",
 			"blockstate": { "forms": [["yuushya:extra_building_material/road/slope/slope_2_left","yuushya:extra_building_material/road/slope/slope_2_middle","yuushya:extra_building_material/road/slope/slope_2_right","yuushya:extra_building_material/road/slope/slope_2_none"]]}
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "ramp_3",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_traffic",
 			"blockstate": { "forms": [["yuushya:extra_building_material/road/slope/slope_3_left","yuushya:extra_building_material/road/slope/slope_3_middle","yuushya:extra_building_material/road/slope/slope_3_right","yuushya:extra_building_material/road/slope/slope_3_none"]]}
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "ramp_4",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_traffic",
 			"blockstate": { "forms": [["yuushya:extra_building_material/road/slope/slope_4_left","yuushya:extra_building_material/road/slope/slope_4_middle","yuushya:extra_building_material/road/slope/slope_4_right","yuushya:extra_building_material/road/slope/slope_4_none"]]}
 		},
 
 		{
-			"class_type": "ChairBlock",
+			"class_type": "RoofBlock",
 			"name": "ramp_5",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_traffic",
 			"blockstate": { "forms": [["yuushya:extra_building_material/road/slope/slope_5_left","yuushya:extra_building_material/road/slope/slope_5_middle","yuushya:extra_building_material/road/slope/slope_5_right","yuushya:extra_building_material/road/slope/slope_5_none"]]}

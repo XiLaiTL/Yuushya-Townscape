@@ -34,8 +34,8 @@
   "itemGroup.yuushya.window": "Yuushya-Window",
   "itemGroup.yuushya.fabric": "Yuushya-Fabric",
   
-  "item.yuushya.pos_trans_item": "Block Entity Layer Shifter",
-  "item.yuushya.pos_trans_item.line1": "\u00A79Mainhand: Rightclick a [Block Entity] to adjust the selected [Layer]'s offset",
+  "item.yuushya.pos_trans_item": "Entity Block Layer Shifter",
+  "item.yuushya.pos_trans_item.line1": "\u00A79Mainhand: Rightclick a [Entity Block] to adjust the selected [Layer]'s offset",
   "item.yuushya.pos_trans_item.line2": "\u00A79Offhand: Rightclick to switch the tool's modes(3 in total)",
   "item.yuushya.pos_trans_item.line3": "\u00A79It can adjust the [Layer]'s offsets",
   "item.yuushya.pos_trans_item.line4": "\u00A79Use F3 to know which axis to adjust",
@@ -46,11 +46,11 @@
 
   "item.yuushya.pos_trans_item.switch": "X Offset:%s Y Offset:%s Z Offset:%s",  
   
-  "item.yuushya.micro_pos_trans_item": "Block Entity Layer Fine-tuner",
+  "item.yuushya.micro_pos_trans_item": "Entity Block Layer Fine-tuner",
   "item.yuushya.micro_pos_trans_item.line1": "",
-  "item.yuushya.micro_pos_trans_item.line2": "\u00A79Mainhand: Rightclick a [Block Entity] to fine-tune its offset",
+  "item.yuushya.micro_pos_trans_item.line2": "\u00A79Mainhand: Rightclick a [Entity Block] to fine-tune its offset",
   "item.yuushya.micro_pos_trans_item.line3": "\u00A79Offhand: Rightclick to switch the tool's modes(4 in total)",
-  "item.yuushya.micro_pos_trans_item.line4": "\u00A79Slightly adjust the [Block Entity Layer]'s status to prevent Z-Fighting", 
+  "item.yuushya.micro_pos_trans_item.line4": "\u00A79Slightly adjust the [Entity Block Layer]'s status to prevent Z-Fighting", 
   
   "item.yuushya.micro_pos_trans_item.0": "\u00A7cMode:X Axiz",
   "item.yuushya.micro_pos_trans_item.1": "\u00A7aMode:Y Axiz",
@@ -58,8 +58,8 @@
   "item.yuushya.micro_pos_trans_item.3": "\u00A7aMode:Reset",
   "item.yuushya.micro_pos_trans_item.switch": "X Offset:%s Y Offset:%s Z Offset:%s",   
   
-  "item.yuushya.rot_trans_item": "Block Entity Layer Rotator",
-  "item.yuushya.rot_trans_item.line1": "\u00A79Mainhand: Rightclick a [Block Entity] to rotate the selected [Layer]",
+  "item.yuushya.rot_trans_item": "Entity Block Layer Rotator",
+  "item.yuushya.rot_trans_item.line1": "\u00A79Mainhand: Rightclick a [Entity Block] to rotate the selected [Layer]",
   "item.yuushya.rot_trans_item.line2": "\u00A79Offhand: Rightclick to switch the tool's modes(3 in total)",
   "item.yuushya.rot_trans_item.line3": "\u00A79It can adjust the [Layer]'s rotation",
   "item.yuushya.rot_trans_item.line4": "\u00A79Use F3 to know which axis to adjust",
@@ -70,18 +70,18 @@
   "item.yuushya.rot_trans_item.switch": "X Rotation:%s Y Rotation:%s Z Rotation:%s",  
   
   
-  "item.yuushya.scale_trans_item": "Block Entity Layer Sizer",
-  "item.yuushya.scale_trans_item.line2": "\u00A79Mainhand: Rightclick and leftclick a [Block Entity] to scale the selected [Layer]",
+  "item.yuushya.scale_trans_item": "Entity Block Layer Sizer",
+  "item.yuushya.scale_trans_item.line2": "\u00A79Mainhand: Rightclick and leftclick a [Entity Block] to scale the selected [Layer]",
   "item.yuushya.scale_trans_item.line3": "\u00A79It can adjust the [Layer]'s size",
   "item.yuushya.scale_trans_item.line1": "",
   "item.yuushya.scale_trans_item.line4": "",
   "item.yuushya.scale_trans_item.switch": "Executed Scaling* %s",
   
-   "item.yuushya.slot_trans_item": "Layer-switcher for Block Entity",
-  "item.yuushya.slot_trans_item.line1": "\u00A79Mainhand: Rightclick or leftclick a [Block Entity] to switch its currently selected layer",
+   "item.yuushya.slot_trans_item": "Layer-switcher for Entity Block",
+  "item.yuushya.slot_trans_item.line1": "\u00A79Mainhand: Rightclick or leftclick a [Entity Block] to switch its currently selected layer",
   "item.yuushya.slot_trans_item.line2": "\u00A79Continuously leftclick to switch to the blank [ Layer]",
   "item.yuushya.slot_trans_item.line3": "",
-  "item.yuushya.slot_trans_item.line4": "\u00A79Offhand: Rightclick a [Block Entity] to let it be shown or not",
+  "item.yuushya.slot_trans_item.line4": "\u00A79Offhand: Rightclick a [Entity Block] to let it be shown or not",
 
   "item.yuushya.slot_trans_item.slot": "No.%s Content: %s Shown: %s",
   "item.yuushya.slot_trans_item.slot.fail.max": "No.Top, you can put the blockstate by Gourd of Copy&Paste",
@@ -89,7 +89,7 @@
 
   "item.yuushya.get_showblock_item": "Gourd of Entitilization",
   "item.yuushya.get_showblock_item.line1": "",
-  "item.yuushya.get_showblock_item.line2": "\u00A79Rightclick to turn a block to a [Block Entity]",
+  "item.yuushya.get_showblock_item.line2": "\u00A79Rightclick to turn a block to a [Entity Block]",
   "item.yuushya.get_showblock_item.line3": "\u00A79And automatically set a [Layer] for it",
   "item.yuushya.get_showblock_item.line4": "\u00A79Use various tools to adjust the [Layer]",
   
@@ -101,16 +101,16 @@
   
   "item.yuushya.get_blockstate_item": "Gourd of Copy&Paste",
   "item.yuushya.get_blockstate_item.line2": "\u00A79Mainhand: Right click a normal block to copy its Blockstates",
-  "item.yuushya.get_blockstate_item.line3": "\u00A79Offhand: Rightclick a [Block Entity] to apply the copied to its currently selected [Layer]",
+  "item.yuushya.get_blockstate_item.line3": "\u00A79Offhand: Rightclick a [Entity Block] to apply the copied to its currently selected [Layer]",
   "item.yuushya.get_blockstate_item.line1": " ",  
   
   "item.yuushya.get_blockstate_item.offhand.success": "Applied Blockstate successfully",
   "item.yuushya.get_blockstate_item.mainhand.success": "Copied Blockstate successfully",
   "item.yuushya.get_blockstate_item.mainhand.pass": "No content for this [Layer]!",  
   
-  "item.yuushya.get_lit_item": "Block Entity Lighter",   
-  "item.yuushya.get_lit_item.line1": "\u00A79Switch on or off a [Block Entity]'s Lighting",
-  "item.yuushya.get_lit_item.line2": "\u00A79Mainhand: Leftclick or rightclick a [Block Entity] to adjust its brightness",
+  "item.yuushya.get_lit_item": "Entity Block Lighter",   
+  "item.yuushya.get_lit_item.line1": "\u00A79Switch on or off a [Entity Block]'s Lighting",
+  "item.yuushya.get_lit_item.line2": "\u00A79Mainhand: Leftclick or rightclick a [Entity Block] to adjust its brightness",
   
   "item.yuushya.form_trans_item": "Form Wrench",
   "item.yuushya.form_trans_item.line2": "\u00A79Be used to adjust the forms of certain blocks",
@@ -121,7 +121,7 @@
   "item.yuushya.move_transformdata_item": "Gourd of Cut&Paste",
   "item.yuushya.move_transformdata_item.line1": "",
   "item.yuushya.move_transformdata_item.line2": "\u00A79Mainhand: Right click a normal block to cut its current layer",
-  "item.yuushya.move_transformdata_item.line3": "\u00A79Offhand: Rightclick a [Block Entity] to apply the cut to its currently selected [Layer]",
+  "item.yuushya.move_transformdata_item.line3": "\u00A79Offhand: Rightclick a [Entity Block] to apply the cut to its currently selected [Layer]",
   "item.yuushya.move_transformdata_item.line4": "",
   "item.yuushya.move_transformdata_item.offhand.success": "Pasted",
   "item.yuushya.move_transformdata_item.mainhand.success": "Cut",
@@ -226,7 +226,7 @@
   "block.yuushya.leafparticleblock.line1": "\u00A79[Particle Generator]",
   
   "block.yuushya.modelframe": "Entitilized Block",
-  "block.yuushya.showblock": "Block Entity",
+  "block.yuushya.showblock": "Entity Block",
   "block.yuushya.mixedblock": "Combined Block",
   "block.yuushya.showblock.pos_text": "Pos: ",
   "block.yuushya.showblock.rot_text": "Rot: ",
@@ -1848,7 +1848,7 @@
 
 "item.yuushya.pilatory": "\u00A7aPilatory",
 "item.yuushya.pilatory.line1": "\u00A79Use [Pilatory] to wear any item and block as helmet",
-"item.yuushya.pilatory.line2": "\u00A7aRight click when this item in the main hand and helmet item in the offhand",
+"item.yuushya.pilatory.line2": "\u00A79Right click when this item in the main hand and helmet item in the offhand",
 
 "block.yuushya.hanging_goods.line1": "\u00A7a(Right click empty-handed or use [Form Wrench] to switch)\u00A79[Available Form:2]",  
 "block.yuushya.hanging_goods_candy.line1": "\u00A7a(Right click empty-handed or use [Form Wrench] to switch)\u00A79[Available Form:2]",  

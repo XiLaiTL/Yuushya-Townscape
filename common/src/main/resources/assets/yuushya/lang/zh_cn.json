@@ -42,8 +42,8 @@
   "itemGroup.yuushya.window": "Yuushya-窗框",
   "itemGroup.yuushya.fabric": "Yuushya-纺织物",
   
-  "item.yuushya.pos_trans_item": "方块实体层位移工具",
-  "item.yuushya.pos_trans_item.line1": "\u00A79置于主手右键一[方块实体]调整其相应[层]的位移值",
+  "item.yuushya.pos_trans_item": "实体方块层位移工具",
+  "item.yuushya.pos_trans_item.line1": "\u00A79置于主手右键一[实体方块]调整其相应[层]的位移值",
   "item.yuushya.pos_trans_item.line2": "\u00A79副手右键调整模式(共3种) 主手左右键执行位移",
   "item.yuushya.pos_trans_item.line3": "\u00A79可调整的数值为[层]的XYZ偏移值",
   "item.yuushya.pos_trans_item.line4": "\u00A79您可通过查看F3准星来确定轴向",
@@ -53,8 +53,8 @@
   "item.yuushya.pos_trans_item.2": "\u00A79Z轴模式",
   "item.yuushya.pos_trans_item.switch": "X轴偏移:%s Y轴偏移:%s Z轴偏移:%s",
   
-  "item.yuushya.micro_pos_trans_item": "方块实体层微调工具",
-  "item.yuushya.micro_pos_trans_item.line1": "\u00A79置于主手右键一[方块实体]对其[层]进行位置微调",
+  "item.yuushya.micro_pos_trans_item": "实体方块层微调工具",
+  "item.yuushya.micro_pos_trans_item.line1": "\u00A79置于主手右键一[实体方块]对其[层]进行位置微调",
   "item.yuushya.micro_pos_trans_item.line2": "\u00A79副手右键调整模式(共4种) 主手左右键执行位移和复原",
   "item.yuushya.micro_pos_trans_item.line3": "\u00A79调整细微偏移值以防止Z-Fighting(闪烁)",
   "item.yuushya.micro_pos_trans_item.line4": "\u00A79可调整的数值为[层]的XYZ偏移值",  
@@ -65,8 +65,8 @@
   "item.yuushya.micro_pos_trans_item.3": "\u00A7a复原模式",
   "item.yuushya.micro_pos_trans_item.switch": "X轴偏移:%s Y轴偏移:%s Z轴偏移:%s", 
 
-  "item.yuushya.rot_trans_item": "方块实体层旋转工具",
-  "item.yuushya.rot_trans_item.line1": "\u00A79置于主手右键一[方块实体]调整其相应[层]的旋转角度",
+  "item.yuushya.rot_trans_item": "实体方块层旋转工具",
+  "item.yuushya.rot_trans_item.line1": "\u00A79置于主手右键一[实体方块]调整其相应[层]的旋转角度",
   "item.yuushya.rot_trans_item.line2": "\u00A79副手右键调整模式(共3种) 主手左右键执行旋转",
   "item.yuushya.rot_trans_item.line3": "\u00A79可调整的数值为[层]的XYZ偏移值",
   "item.yuushya.rot_trans_item.line4": "\u00A79您可通过查看F3准星来确定轴向",
@@ -76,15 +76,15 @@
   "item.yuushya.rot_trans_item.2": "\u00A79Z轴模式",
   "item.yuushya.rot_trans_item.switch": "X轴旋转:%s Y轴旋转:%s Z轴旋转:%s",  
   
-  "item.yuushya.slot_trans_item": "方块实体层切换工具",
-  "item.yuushya.slot_trans_item.line1": "\u00A79主手左右键切换[方块实体]的当前选定层",
-  "item.yuushya.slot_trans_item.line2": "\u00A79主手连续左键一[方块实体]即可切换当前操作层为其空白层，即最高层",
-  "item.yuushya.slot_trans_item.line3": "\u00A79主手右键一[方块实体]将当前选定层下移一层",
-  "item.yuushya.slot_trans_item.line4": "\u00A79副手右键一[方块实体]将当前选定层置为不可见",
+  "item.yuushya.slot_trans_item": "实体方块层切换工具",
+  "item.yuushya.slot_trans_item.line1": "\u00A79主手左右键切换[实体方块]的当前选定层",
+  "item.yuushya.slot_trans_item.line2": "\u00A79主手连续左键一[实体方块]即可切换当前操作层为其空白层，即最高层",
+  "item.yuushya.slot_trans_item.line3": "\u00A79主手右键一[实体方块]将当前选定层下移一层",
+  "item.yuushya.slot_trans_item.line4": "\u00A79副手右键一[实体方块]将当前选定层置为不可见",
 
 
-    "item.yuushya.scale_trans_item": "方块实体层缩放工具",
-  "item.yuushya.scale_trans_item.line1": "\u00A79置于主手右键一[方块实体]调整其相应[层]的缩放大小",
+    "item.yuushya.scale_trans_item": "实体方块层缩放工具",
+  "item.yuushya.scale_trans_item.line1": "\u00A79置于主手右键一[实体方块]调整其相应[层]的缩放大小",
   "item.yuushya.scale_trans_item.line2": "\u00A79主手左键执行缩小",
   "item.yuushya.scale_trans_item.line3": "\u00A79主手右键执行放大",
   "item.yuushya.scale_trans_item.line4": "\u00A79可调整的数值为[层]的缩放大小",
@@ -98,7 +98,7 @@
   "item.yuushya.get_mixedblock_item.line4": "\u00A79可用[核心调节工具]等工具调节[核心]的各项数值",  
   
   "item.yuushya.get_showblock_item": "实体葫芦",
-  "item.yuushya.get_showblock_item.line1": "\u00A79右键一方块使其变为[方块实体]",
+  "item.yuushya.get_showblock_item.line1": "\u00A79右键一方块使其变为[实体方块]",
   "item.yuushya.get_showblock_item.line2": "\u00A79并自动将这一方块转变为其中一[层]",
   "item.yuushya.get_showblock_item.line3": "\u00A79右键此方块取下或放上[核心]",
   "item.yuushya.get_showblock_item.line4": "\u00A79可用各种调整工具调整特定[层]的各项数值",
@@ -106,7 +106,7 @@
   "item.yuushya.get_blockstate_item": "拷贝葫芦",
   "item.yuushya.get_blockstate_item.line1": "",
   "item.yuushya.get_blockstate_item.line2": "\u00A79置于主手右键一普通方块复制其方块ID与方块状态",
-  "item.yuushya.get_blockstate_item.line3": "\u00A79置于副手右键一[方块实体]将其套用到对应的[层]上",
+  "item.yuushya.get_blockstate_item.line3": "\u00A79置于副手右键一[实体方块]将其套用到对应的[层]上",
   "item.yuushya.get_blockstate_item.offhand.success": "成功套用方块ID与方块状态",
   "item.yuushya.get_blockstate_item.mainhand.success": "成功拷贝方块ID与方块状态",
   "item.yuushya.get_blockstate_item.mainhand.pass": "此层无内容!",
@@ -114,8 +114,8 @@
     
   "item.yuushya.move_transformdata_item": "层剪切葫芦",
   "item.yuushya.move_transformdata_item.line1": "",
-  "item.yuushya.move_transformdata_item.line2": "\u00A79置于主手右键一[方块实体]剪切其当前层的所有内容",
-  "item.yuushya.move_transformdata_item.line3": "\u00A79置于副手右键一[方块实体]将其套用到对应的[层]上",
+  "item.yuushya.move_transformdata_item.line2": "\u00A79置于主手右键一[实体方块]剪切其当前层的所有内容",
+  "item.yuushya.move_transformdata_item.line3": "\u00A79置于副手右键一[实体方块]将其套用到对应的[层]上",
   "item.yuushya.move_transformdata_item.line4": "",
   "item.yuushya.move_transformdata_item.offhand.success": "成功套用剪切",
   "item.yuushya.move_transformdata_item.mainhand.success": "成功拷贝剪切",
@@ -136,9 +136,9 @@
   "item.get_entity_item.tooltip4": "\u00A78未完成,请勿使用",
   "item.get_entity_item.tooltip5": "\u00A78未完成,请勿使用",
   
-  "item.yuushya.get_lit_item": "方块实体点亮工具",   
-  "item.yuushya.get_lit_item.line1": "\u00A79点亮或取消点亮一个方块实体",
-  "item.yuushya.get_lit_item.line2": "\u00A79主手左右键一[方块实体]加减它的亮度",
+  "item.yuushya.get_lit_item": "实体方块点亮工具",   
+  "item.yuushya.get_lit_item.line1": "\u00A79点亮或取消点亮一个实体方块",
+  "item.yuushya.get_lit_item.line2": "\u00A79主手左右键一[实体方块]加减它的亮度",
 
   
   "item.yuushya.slot_trans_item.slot": "当前层: %s，内容: %s 本层可见: %s",   
@@ -300,7 +300,7 @@
   "item.yuushya.department.line1": "\u00A79请预留足够空间,此操作不可撤销!",
 
   "block.yuushya.modelframe": "实体方块",
-  "block.yuushya.showblock": "方块实体",
+  "block.yuushya.showblock": "实体方块",
   "block.yuushya.mixedblock": "融合方块",
   "block.yuushya.showblock.pos_text": "位置: ",
   "block.yuushya.showblock.rot_text": "旋转: ",
@@ -1868,7 +1868,7 @@
 
 "item.yuushya.pilatory": "\u00A7a霸*育发液",
 "item.yuushya.pilatory.line1": "\u00A79[霸*育发液]可以让你头戴任意方块和物品",
-"item.yuushya.pilatory.line2": "\u00A7a主手持此物品,副手持所需佩戴物品,右键即可使用",
+"item.yuushya.pilatory.line2": "\u00A79主手持此物品,副手持所需佩戴物品,右键即可使用",
 
 
 
