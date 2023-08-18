@@ -34,7 +34,7 @@ public class CollisionFileCreator {
     private Path _resPath;
     private final String _nameSpace ;
     private static final CollisionItem.Model.Element CUBE = new CollisionItem.Model.Element(0.0,0.0,0.0,16.0,16.0,16.0);
-    private Map<String,CollisionItem> collisionData = new HashMap<>();
+    private final Map<String,CollisionItem> collisionData = new HashMap<>();
     public CollisionFileCreator(String nameSpace,Path basePath){
         this._nameSpace = nameSpace;
         this._resPath =  Path.of("../config/com.yuushya/"+nameSpace+"/");
@@ -67,7 +67,9 @@ public class CollisionFileCreator {
         }
     }
 
-    static Map<ResourceLocation,List<CollisionItem.Model.Element>> collisionCache = new HashMap<>();
+    record ModelTriple(ResourceLocation resourceLocation,Integer x,Integer y){}
+    static Map<ResourceLocation,Model> modelCache = new HashMap<>();
+    static Map<ModelTriple,List<CollisionItem.Model.Element>> collisionCache = new HashMap<>();
     private void readBlockStateAndModel(){
         if(Mode.proposalCollision!=null) Mode.proposalCollision.add("COLLISION PROPOSE:\t{namespaceId}\t{TYPE}\t{model}\t{totalCube}\t{face}\t{bigCube}\t{smallCube}");
         Path path = _basePath.resolve("./assets/"+ _nameSpace +"/blockstates/");//read the all blockstates under the namespace
@@ -102,48 +104,50 @@ public class CollisionFileCreator {
                                     if(value.isJsonArray()){ value = value.getAsJsonArray().get(0); }
                                     BlockState.Variant variant = NormalGSON.fromJson(value, BlockState.Variant.class);
                                     ResourceLocation modelLocation = ResourceLocation.parse(variant.model);
-                                    if(collisionCache.containsKey(modelLocation)) {
-                                        itemBlockstate.collision = collisionCache.get(modelLocation);
+                                    Model model;
+                                    if(modelCache.containsKey(modelLocation)) model = modelCache.get(modelLocation);
+                                    else model = modelReader.read( modelLocation);
+
+                                    ModelTriple key = new ModelTriple(modelLocation, variant.x, variant.y);
+                                    if(collisionCache.containsKey(key)) {
+                                        itemBlockstate.collision = collisionCache.get(key);
                                     }
-                                    else{
-                                        Model model = modelReader.read( modelLocation);
-                                        if(model!=null){
-                                            if(model.elements==null){
-                                                itemBlockstate.collision = new ArrayList<>();
-                                                itemBlockstate.collision.add(CUBE);
-                                                if(Mode.proposalCollision!=null) Mode.proposalCollision.add( MessageFormat.format( "COLLISION PROPOSE:\t{0}\tblock\t{1}\t0\t0\t0\t0",namespaceId.getPath(),variant.model));
-                                            }
-                                            else {
-                                                itemBlockstate.collision = RotateModel.rotate(model, variant.x, variant.y);
-                                                if(Mode.proposalCollision!=null) OptimizeModel.propose(namespaceId.getPath(),variant.model,itemBlockstate.collision);
-                                                switch (CollisionType.from(collisionType)) {
-                                                    case FACE -> {
-                                                        itemBlockstate.collision = ExpandModel.expandFace(itemBlockstate.collision,1);
-                                                        itemBlockstate.collision = OptimizeModel.optimize(itemBlockstate.collision, 15);
-                                                    }
-                                                    case DETAIL30 -> {
-                                                        itemBlockstate.collision = OptimizeModel.optimize(itemBlockstate.collision, 30);
-                                                    }
-                                                    case DETAIL -> {
-                                                        itemBlockstate.collision = OptimizeModel.optimize(itemBlockstate.collision, 15);
-                                                    }
-                                                    case BOUND -> {
-                                                        itemBlockstate.collision = OptimizeModel.optimize(itemBlockstate.collision, 15);
-                                                        itemBlockstate.collision = List.of(OptimizeModel.combine(itemBlockstate.collision));
-                                                    }
-                                                    default -> {
-                                                        itemBlockstate.collision = new ArrayList<>();
-                                                        itemBlockstate.collision.add(CUBE);
-                                                    }
+                                    else if(model!=null){
+                                        if(model.elements==null){
+                                            itemBlockstate.collision = new ArrayList<>();
+                                            itemBlockstate.collision.add(CUBE);
+                                            if(Mode.proposalCollision!=null) Mode.proposalCollision.add( MessageFormat.format( "COLLISION PROPOSE:\t{0}\tblock\t{1}\t0\t0\t0\t0",namespaceId.getPath(),variant.model));
+                                        }
+                                        else {
+                                            itemBlockstate.collision = RotateModel.rotate(model, variant.x, variant.y);
+                                            if(Mode.proposalCollision!=null) OptimizeModel.propose(namespaceId.getPath(),variant.model,itemBlockstate.collision);
+                                            switch (CollisionType.from(collisionType)) {
+                                                case FACE -> {
+                                                    itemBlockstate.collision = ExpandModel.expandFace(itemBlockstate.collision,1);
+                                                    itemBlockstate.collision = OptimizeModel.optimize(itemBlockstate.collision, 15);
+                                                }
+                                                case DETAIL30 -> {
+                                                    itemBlockstate.collision = OptimizeModel.optimize(itemBlockstate.collision, 30);
+                                                }
+                                                case DETAIL -> {
+                                                    itemBlockstate.collision = OptimizeModel.optimize(itemBlockstate.collision, 15);
+                                                }
+                                                case BOUND -> {
+                                                    itemBlockstate.collision = OptimizeModel.optimize(itemBlockstate.collision, 15);
+                                                    itemBlockstate.collision = List.of(OptimizeModel.combine(itemBlockstate.collision));
+                                                }
+                                                default -> {
+                                                    itemBlockstate.collision = new ArrayList<>();
+                                                    itemBlockstate.collision.add(CUBE);
                                                 }
                                             }
-                                            item.blockstates.add(itemBlockstate);
-                                            collisionCache.put(modelLocation,itemBlockstate.collision);
                                         }
-                                        else{
-                                            System.out.println("Error on read model: "+variant.model);
-                                            YuushyaLog.warn("Error on read model: "+variant.model);
-                                        }
+                                        item.blockstates.add(itemBlockstate);
+                                        collisionCache.put(key,itemBlockstate.collision);
+                                    }
+                                    else{
+                                        System.out.println("Error on read model: "+variant.model);
+                                        YuushyaLog.warn("Error on read model: "+variant.model);
                                     }
                                 }
                             }

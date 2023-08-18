@@ -1,6 +1,8 @@
 package com.yuushya.datagen.utils;
 
-public record ResourceLocation(String namespace,String path) {
+import java.util.Objects;
+
+public record ResourceLocation(String namespace, String path) {
     public static ResourceLocation parse (String single) {
         String[] split = single.split(":");
         if (split.length == 1) {
@@ -27,4 +29,14 @@ public record ResourceLocation(String namespace,String path) {
         return this.namespace+"/"+resourceType+"/"+this.path;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if(!(o instanceof ResourceLocation) ) return false;
+        return this.toString().equals(o.toString());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(namespace, path);
+    }
 }
