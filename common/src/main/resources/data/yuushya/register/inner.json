@@ -56,7 +56,7 @@
 			"render_type": "cutout",
 			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "block" },
 			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material": "stone", "is_solid": true, "has_collision": true, "is_delicate": false, "lines": 1 },
+			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": true, "has_collision": true, "is_delicate": false, "lines": 1 },
 			"item_group": "yuushya_extrablocks"
 		},
 
@@ -66,7 +66,7 @@
 			"render_type": "cutout",
 			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "block" },
 			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material": "wood", "is_solid": true, "has_collision": true, "is_delicate": false, "lines": 1 }
+			"properties": { "hardness": 0.7, "resistance": 1, "material": "wood", "is_solid": true, "has_collision": true, "is_delicate": false, "lines": 1 }
 		},
 
 		{
@@ -75,7 +75,7 @@
 			"render_type": "cutout",
 			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "bound" },
 			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": true, "is_delicate": false }
+			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": true, "is_delicate": false }
 		},
 
 		{
@@ -84,7 +84,7 @@
 			"render_type": "cutout",
 			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "block" },
 			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material": "leaves", "is_solid": false, "has_collision": true, "is_delicate": false }
+			"properties": { "hardness": 0.7, "resistance": 1, "material": "leaves", "is_solid": false, "has_collision": true, "is_delicate": false }
 		},
 
 		{
@@ -94,7 +94,7 @@
 			"render_type": "cutout",
 			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "block" },
 			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material": "stone", "is_solid": true, "has_collision": true, "is_delicate": false }
+			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": true, "has_collision": true, "is_delicate": false }
 		},
 
 		{
@@ -103,7 +103,7 @@
 			"render_type": "translucent",
 			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "bound" },
 			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": false, "is_delicate": false }
+			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": false, "is_delicate": false }
 		},
 
 		{
@@ -112,7 +112,7 @@
 			"render_type": "cutout",
 			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "detail" },
 			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": false, "is_delicate": false }
+			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": false, "is_delicate": false }
 		},
 
 		{
@@ -121,7 +121,7 @@
 			"render_type": "cutout",
 			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "bound" },
 			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": false, "is_delicate": false }
+			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": false, "is_delicate": false }
 		},
 
 		{
@@ -130,7 +130,7 @@
 			"render_type": "cutout",
 			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "bound" },
 			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": true, "is_delicate": false }
+			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": true, "is_delicate": false }
 		},
 
 		{
@@ -138,7 +138,7 @@
 			"render_type": "cutout",
 			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "bound" },
 			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": true, "is_delicate": false }
+			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": true, "is_delicate": false }
 		},
 
 		{
@@ -146,7 +146,7 @@
 			"render_type": "translucent",
 			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "block" },
 			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": true, "is_delicate": false }
+			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": true, "is_delicate": false }
 		},
 
 		{
@@ -155,7 +155,7 @@
 			"render_type": "cutout",
 			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "block" },
 			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material":"plants", "is_solid": false, "has_collision": false, "is_delicate": true }
+			"properties": { "hardness": 0.7, "resistance": 1, "material":"plants", "is_solid": false, "has_collision": false, "is_delicate": true }
 		},
 
 		{
@@ -164,7 +164,7 @@
 			"render_type": "cutout",
 			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "detail" },
 			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": false, "is_delicate": false }
+			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": false, "is_delicate": false }
 		},
 
 		{
@@ -173,7 +173,7 @@
 			"render_type": "cutout",
 			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "bound" },
 			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": true, "is_delicate": false }
+			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": true, "is_delicate": false }
 		},
 
 		{
@@ -182,7 +182,7 @@
 			"render_type": "cutout",
 			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true },
 			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": true, "is_delicate": false }
+			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": true, "is_delicate": false }
 		},
 
 		{
@@ -191,7 +191,7 @@
 			"render_type": "cutout",
 			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "block" },
 			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": true, "is_delicate": false }
+			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": true, "is_delicate": false }
 		},
 
 		{
@@ -199,7 +199,7 @@
 			"render_type": "cutout",
 			"class_type": "class",
 			"auto_generated": {"collision": "face"},
-			"properties": { "hardness": 1, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": false, "is_delicate": false }
+			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": false, "is_delicate": false }
 		},
 
 		{
@@ -208,7 +208,7 @@
 			"render_type": "cutout",
 			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true,  "collision": "detail" },
 			"class_type": "class",
-			"properties": { "hardness": 1, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": true, "is_delicate": false }
+			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": true, "is_delicate": false }
 		},
 
 		{"name": "~Registed_Texture_Library_模组注册纹理库", "class_type": "_comment" },
@@ -2462,7 +2462,7 @@
 			},
 			"item_model": "yuushya:template/stairs",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail", "recipe": true,"item_model": true },
 			"item_group": "yuushya_extrashapes",
 			"texture": {
@@ -2476,7 +2476,7 @@
 			"blockstate": { "forms": [["yuushya:template/slippers"],["yuushya:template/slippers_"]], "kit": "normal"},
 			"render_type": "cutout",
 			"item_group": "yuushya_furniture",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail", "recipe": true, "item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2492,7 +2492,7 @@
 			},
 			"render_type": "cutout",
 			"item_group": "yuushya_extrashapes",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2505,7 +2505,7 @@
 			"blockstate": { "forms": [["yuushya:template/side_slab"]], "kit": "normal"},
 			"render_type": "cutout",
 			"item_group": "yuushya_extrashapes",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2518,7 +2518,7 @@
 			"item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:template/ridge"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2534,7 +2534,7 @@
 				"kit": "VanillaSlabBlock"
 			},
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2547,7 +2547,7 @@
 			"item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:template/half_side_slab"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2560,7 +2560,7 @@
 			"item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:template/column"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2572,7 +2572,7 @@
 			"name": "post", "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:template/post"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2584,7 +2584,7 @@
 			"name": "pole", "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:template/pole"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2596,7 +2596,7 @@
 			"name": "stick", "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:template/stick"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2608,7 +2608,7 @@
 			"name": "horizontal_column", "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:template/horizontal_column"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2620,7 +2620,7 @@
 			"name": "horizontal_post", "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:template/horizontal_post"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2632,7 +2632,7 @@
 			"name": "horizontal_pole", "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:template/horizontal_pole"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2644,7 +2644,7 @@
 			"name": "horizontal_stick", "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:template/horizontal_stick"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2656,7 +2656,7 @@
 			"name": "platform", "item_group": "yuushya_extrashapes",
 			"blockstate": { "forms": [["yuushya:template/platform"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2668,7 +2668,7 @@
 			"name": "average_table",
 			"blockstate": { "forms": [["yuushya:template/table"]], "kit": "normal"}, "item_group": "yuushya_furniture",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2680,7 +2680,7 @@
 			"name": "medium_table",
 			"blockstate": { "forms": [["yuushya:template/medium_table"]], "kit": "normal"}, "item_group": "yuushya_furniture",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2692,7 +2692,7 @@
 			"name": "big_table",
 			"blockstate": { "forms": [["yuushya:template/big_table"]], "kit": "normal"}, "item_group": "yuushya_furniture",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2704,7 +2704,7 @@
 			"name": "white_bow_gift_box",
 			"blockstate": { "forms": [["yuushya:template/white_bow_gift_box"]], "kit": "normal"},  "item_group": "yuushya_fabric",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2716,7 +2716,7 @@
 			"name": "black_bow_gift_box",
 			"blockstate": { "forms": [["yuushya:template/black_bow_gift_box"]], "kit": "normal"}, "item_group": "yuushya_fabric",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2728,7 +2728,7 @@
 			"name": "white_bow_small_gift_box",
 			"blockstate": { "forms": [["yuushya:template/white_bow_small_gift_box"]], "kit": "normal"}, "item_group": "yuushya_fabric",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2740,7 +2740,7 @@
 			"name": "black_bow_small_gift_box",
 			"blockstate": { "forms": [["yuushya:template/black_bow_small_gift_box"]], "kit": "normal"}, "item_group": "yuushya_fabric",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2753,7 +2753,7 @@
 			"blockstate": { "forms": [["yuushya:template/decoration_bookshelf_left","yuushya:template/decoration_bookshelf_middle","yuushya:template/decoration_bookshelf_right","yuushya:template/decoration_bookshelf_none"]], "kit": "line"},
 			"item_model": "yuushya:template/decoration_bookshelf_none", "item_group": "yuushya_furniture",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2765,7 +2765,7 @@
 			"name": "decorative_shelf",
 			"blockstate": { "forms": [["yuushya:template/decorative_shelf"]], "kit": "normal"}, "item_group": "yuushya_furniture",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2778,7 +2778,7 @@
 			"blockstate": { "forms": [["yuushya:template/potted_fern_wall_left","yuushya:template/potted_fern_wall_middle","yuushya:template/potted_fern_wall_right","yuushya:template/potted_fern_wall_none"]], "kit": "line"},
 			"item_model": "yuushya:template/potted_fern_wall_none", "item_group": "yuushya_living_being",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail","recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2791,7 +2791,7 @@
 			"blockstate": { "forms": [["yuushya:template/frame_top_left","yuushya:template/frame_top_middle","yuushya:template/frame_top_right","yuushya:template/frame_top_none"]], "kit": "line"},
 			"item_model": "yuushya:template/frame_top_none", "item_group": "yuushya_extrashapes",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2804,7 +2804,7 @@
 			"blockstate": { "forms": [["yuushya:template/frame_bottom_left","yuushya:template/frame_bottom_middle","yuushya:template/frame_bottom_right","yuushya:template/frame_bottom_none"]], "kit": "line"},
 			"item_model": "yuushya:template/frame_bottom_none", "item_group": "yuushya_extrashapes",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "bottom"],
@@ -2816,7 +2816,7 @@
 			"name": "frame_left",
 			"blockstate": { "forms": [["yuushya:template/frame_vl"]], "kit": "normal"}, "item_group": "yuushya_extrashapes",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "bottom"],
@@ -2828,7 +2828,7 @@
 			"name": "frame_right",
 			"blockstate": { "forms": [["yuushya:template/frame_vr"]], "kit": "normal"}, "item_group": "yuushya_extrashapes",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "bottom"],
@@ -2841,7 +2841,7 @@
 			"blockstate": { "forms": [["yuushya:template/fence_left","yuushya:template/fence_middle","yuushya:template/fence_right","yuushya:template/fence_none"]], "kit": "line"},
 			"item_model": "yuushya:template/fence_middle", "item_group": "yuushya_extrashapes",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2853,7 +2853,7 @@
 			"name": "fence_corner",
 			"blockstate": { "forms": [["yuushya:template/fence_corner"],["yuushya:template/fence_corner_"]], "kit": "normal"}, "item_group": "yuushya_extrashapes",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2865,7 +2865,7 @@
 			"name": "bucket",
 			"blockstate": { "forms": [["yuushya:template/bucket"]], "kit": "normal"}, "item_group": "yuushya_furniture",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2882,7 +2882,7 @@
 			},
 			"item_model": "yuushya:template/hollow_stairs",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail", "recipe": true,"item_model": true },
 			"item_group": "yuushya_extrashapes",
 			"texture": {
@@ -2895,7 +2895,7 @@
 			"name": "handrail_left",
 			"blockstate": { "forms": [["yuushya:template/handrail_left"]], "kit": "normal"}, "item_group": "yuushya_extrashapes",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2907,7 +2907,7 @@
 			"name": "handrail_middle",
 			"blockstate": { "forms": [["yuushya:template/handrail_middle"]], "kit": "normal"}, "item_group": "yuushya_extrashapes",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail","recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2919,7 +2919,7 @@
 			"name": "handrail_right",
 			"blockstate": { "forms": [["yuushya:template/handrail_right"]], "kit": "normal"}, "item_group": "yuushya_extrashapes",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail","recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2932,7 +2932,7 @@
 			"blockstate": { "forms": [["yuushya:template/bench_left","yuushya:template/bench_middle","yuushya:template/bench_right","yuushya:template/bench_none"]], "kit": "line"},
 			"item_model": "yuushya:template/bench_none", "item_group": "yuushya_furniture",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"usage": {"sit_pos": [0.5,0.5,0.5]},
 			"class_type": "template", "auto_generated": {"collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
@@ -2947,7 +2947,7 @@
 			"item_model": "yuushya:template/couch_none", "item_group": "yuushya_furniture",
 			"render_type": "cutout",
 			"usage": {"sit_pos": [0.5,0.5,0.5]},
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2960,7 +2960,7 @@
 			"blockstate": { "forms": [["yuushya:template/shelf_left","yuushya:template/shelf_middle","yuushya:template/shelf_right","yuushya:template/shelf_none"]], "kit": "line"},
 			"item_model": "yuushya:template/shelf_none", "item_group": "yuushya_furniture",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail","recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2973,7 +2973,7 @@
 			"blockstate": { "forms": [["yuushya:template/bookshelf_left","yuushya:template/bookshelf_middle","yuushya:template/bookshelf_right","yuushya:template/bookshelf_none"]], "kit": "line"},
 			"item_model": "yuushya:template/bookshelf_none", "item_group": "yuushya_furniture",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail","recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2986,7 +2986,7 @@
 			"blockstate": { "forms": [["yuushya:template/uncovered_shelf_left","yuushya:template/uncovered_shelf_middle","yuushya:template/uncovered_shelf_right","yuushya:template/uncovered_shelf_none"]], "kit": "line"},
 			"item_model": "yuushya:template/uncovered_shelf_none", "item_group": "yuushya_furniture",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail","recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -2998,7 +2998,7 @@
 			"name": "rain_shed",
 			"blockstate": { "forms": [["yuushya:template/rain_shed"]], "kit": "normal"}, "item_group": "yuushya_fabric",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail","recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -3010,7 +3010,7 @@
 			"name": "lengthened_rain_shed",
 			"blockstate": { "forms": [["yuushya:template/lengthened_rain_shed"]], "kit": "normal"}, "item_group": "yuushya_fabric",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail","recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -3022,7 +3022,7 @@
 			"name": "ladder",
 			"blockstate": { "forms": [["yuushya:template/ladder"]], "kit": "normal"}, "item_group": "yuushya_extrashapes",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "recipe": true,"item_model": true ,"tags": [{"value": "climbable"}], "collision": "detail"},
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -3034,7 +3034,7 @@
 			"name": "leaning_ladder",
 			"blockstate": { "forms": [["yuushya:template/leaning_ladder"]], "kit": "normal"}, "item_group": "yuushya_furniture",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "recipe": true,"item_model": true ,"tags": [{"value": "climbable"}], "collision": "detail"},
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -3046,7 +3046,7 @@
 			"name": "foldable_ladder",
 			"blockstate": { "forms": [["yuushya:template/foldable_ladder"]], "kit": "normal"}, "item_group": "yuushya_furniture",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "recipe": true,"item_model": true,"tags": [{"value": "climbable"}], "collision": "detail" },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -3059,7 +3059,7 @@
 			"name": "clock",
 			"blockstate": { "forms": [["yuushya:template/clock"]], "kit": "normal"}, "item_group": "yuushya_furniture",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -3071,7 +3071,7 @@
 			"name": "round_clock",
 			"blockstate": { "forms": [["yuushya:template/round_clock"]], "kit": "normal"}, "item_group": "yuushya_furniture",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -3084,7 +3084,7 @@
 			"name": "skateboard",
 			"blockstate": { "forms": [["yuushya:template/skateboard"]], "kit": "normal"}, "item_group": "yuushya_furniture",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail","recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -3096,7 +3096,7 @@
 			"name": "leaned_skateboard",
 			"blockstate": { "forms": [["yuushya:template/leaned_skateboard"]], "kit": "normal"}, "item_group": "yuushya_furniture",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -3109,7 +3109,7 @@
 			"blockstate": { "forms": [["yuushya:template/park_stool"]], "kit": "normal"}, "item_group": "yuushya_furniture",
 			"render_type": "cutout",
 			"usage": {"sit_pos": [0.5,0.7,0.5]},
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail","recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -3122,7 +3122,7 @@
 			"blockstate": { "forms": [["yuushya:template/seat"]], "kit": "normal"}, "item_group": "yuushya_furniture",
 			"render_type": "cutout",
 			"usage": {"sit_pos": [0.5,0.5,0.5]},
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -3135,7 +3135,7 @@
 			"blockstate": { "forms": [["yuushya:template/cushion_armchair"]], "kit": "normal"}, "item_group": "yuushya_furniture",
 			"render_type": "cutout",
 			"usage": {"sit_pos": [0.5,0.6,0.5]},
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail","recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -3148,7 +3148,7 @@
 			"blockstate": { "forms": [["yuushya:template/chair"]], "kit": "normal"}, "item_group": "yuushya_furniture",
 			"render_type": "cutout",
 			"usage": {"sit_pos": [0.5,0.7,0.5]},
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail","recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -3161,7 +3161,7 @@
 			"blockstate": { "forms": [["yuushya:template/bar_stool"]], "kit": "normal"}, "item_group": "yuushya_furniture",
 			"render_type": "cutout",
 			"usage": {"sit_pos": [0.5,1.0,0.5]},
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -3175,7 +3175,7 @@
 			"name": "basket",
 			"blockstate": { "forms": [["yuushya:template/basket"]], "kit": "normal"}, "item_group": "yuushya_furniture",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail","recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -3188,7 +3188,7 @@
 			"blockstate": { "forms": [["yuushya:template/bicycle"]], "kit": "normal"}, "item_group": "yuushya_traffic",
 			"render_type": "cutout",
 			"usage": {"sit_pos": [0.5,1.0,0.5]},
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "recipe": true, "collision": "detail","item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -3200,7 +3200,7 @@
 			"name": "venetian_blinds",
 			"blockstate": { "forms": [["yuushya:template/venetian_blinds"]], "kit": "normal"}, "item_group": "yuushya_fabric",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail","recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -3212,7 +3212,7 @@
 			"name": "cart",
 			"blockstate": { "forms": [["yuushya:template/cart"]], "kit": "normal"},  "item_group": "yuushya_store",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail","recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -3224,7 +3224,7 @@
 			"name": "board",
 			"blockstate": { "forms": [["yuushya:template/board_"],["yuushya:template/board"]], "kit": "normal"}, "item_group": "yuushya_signs",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 2},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 2},
 			"class_type": "template", "auto_generated": { "collision": "detail","recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -3236,7 +3236,7 @@
 			"name": "bottle_container",
 			"blockstate": { "forms": [["yuushya:template/bottle_container"]], "kit": "normal"}, "item_group": "yuushya_catering",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 1, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail","recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
