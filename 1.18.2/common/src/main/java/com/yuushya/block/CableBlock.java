@@ -1,7 +1,6 @@
 package com.yuushya.block;
 
 
-import com.yuushya.registries.YuushyaRegistryData;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -19,8 +18,8 @@ import static net.minecraft.world.level.block.state.properties.BlockStatePropert
 
 public class CableBlock extends YuushyaBlockFactory.BlockWithClassType {
 
-    public CableBlock(Properties properties, Integer tipLines, String classType, String autoCollision, YuushyaRegistryData.Block.Usage usage) {
-        super(properties, tipLines, classType, autoCollision, usage);
+    public CableBlock(Properties properties, Integer tipLines, String classType) {
+        super(properties, tipLines, classType);
     }
 
     @Override

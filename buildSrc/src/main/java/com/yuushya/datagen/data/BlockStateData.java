@@ -24,14 +24,35 @@ public class BlockStateData {
     public static final ChildProperty FACING=ChildProperty.of("facing","north","east","south","west","up","down");
     public static final ChildProperty HORIZONTAL_FACING=ChildProperty.of("facing","north","east","south","west");
     public static final ChildProperty FACE=ChildProperty.of("face","floor","wall","ceiling");
-    public static final ChildProperty FORM=ChildProperty.of("form","0","1","2","3","4","5","6","7");
+    public static final ChildProperty FORM8=ChildProperty.of("form","0","1","2","3","4","5","6","7");
+    public static final ChildProperty FORM7=ChildProperty.of("form","0","1","2","3","4","5","6");
+    public static final ChildProperty FORM6=ChildProperty.of("form","0","1","2","3","4","5");
+    public static final ChildProperty FORM5=ChildProperty.of("form","0","1","2","3","4");
+    public static final ChildProperty FORM4=ChildProperty.of("form","0","1","2","3");
+    public static final ChildProperty FORM3=ChildProperty.of("form","0","1","2");
+    public static final ChildProperty FORM2=ChildProperty.of("form","0","1");
+
+    public static ChildProperty forms(int n){
+        return switch (n){
+            case 0,1->null;
+            case 2->FORM2;
+            case 3->FORM3;
+            case 4->FORM4;
+            case 5->FORM5;
+            case 6->FORM6;
+            case 7->FORM7;
+            default -> FORM8;
+        };
+    }
+
     public static final ChildProperty POS_HORIZON=ChildProperty.of("pos","left","middle","right","none");
     public static final ChildProperty POS_VERTICAL=ChildProperty.of("pos","top","middle","bottom","none");
     public static final ChildProperty YPOS=ChildProperty.of("pos","top","middle","bottom","none");
     public static final ChildProperty XPOS=ChildProperty.of("xpos","west","east","middle","none");
     public static final ChildProperty ZPOS=ChildProperty.of("zpos","north","south","middle","none");
-    public static final ChildProperty X=ChildProperty.of("form","0","1","2","3","4","5","6","7","8","9","10","11");
-    public static final ChildProperty Y=X,Z=X;
+    public static final ChildProperty X=ChildProperty.of("x","0","1","2","3","4","5","6","7","8","9","10","11");
+    public static final ChildProperty Y=ChildProperty.of("y","0","1","2","3","4","5","6","7","8","9","10","11");
+    public static final ChildProperty Z=ChildProperty.of("z","0","1","2","3","4","5","6","7","8","9","10","11");
     public static final ChildProperty POWERED=ChildProperty.of("powered","true","false");
     public static final ChildProperty HALF=ChildProperty.of("half","top","bottom");
     public static final ChildProperty SLAB_TYPE = ChildProperty.of("type","top","bottom","double");
@@ -51,61 +72,96 @@ public class BlockStateData {
         ChildVariant childVariant;
         if (blockState.kit!=null&&!blockState.kit.isEmpty()){
             int formsNum=blockState.forms.size();
+            ChildProperty FORM = forms(formsNum);
             Variant baseVariant=Variant.variant().with(VariantProperty.MODEL,ResourceLocation.parse(blockState.forms.get(0).get(0)));
             childVariant= switch (blockState.kit){
                 case "normal"->ChildVariant.of(baseVariant)
                         .add(createHorizonFacingVariant())
                         .add(ChildPropertyVariant.of(FORM).generate((variantKeyList)->{
-                            int i=FORM.indexOf(variantKeyList.get(0));
-                            return List.of(i < formsNum
-                                    ? Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(i).get(0)))
-                                    : Variant.variant()) ;
+
+                                int i=FORM.indexOf(variantKeyList.get(0));
+                                return List.of(i < formsNum
+                                        ? Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(i).get(0)))
+                                        : Variant.variant()) ;
+
                         }));
                 case "attachment"-> ChildVariant.of(baseVariant)
                         .add(createFaceAndFacingVariant())
                         .add(ChildPropertyVariant.of(FORM).generate((variantKeyList)->{
-                            int i=FORM.indexOf(variantKeyList.get(0));
-                            return List.of(i < formsNum
-                                    ? Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(i).get(0)))
-                                    : Variant.variant()) ;
+
+                                int i=FORM.indexOf(variantKeyList.get(0));
+                                return List.of(i < formsNum
+                                        ? Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(i).get(0)))
+                                        : Variant.variant()) ;
+
                         }));
                 case "line"->ChildVariant.of(baseVariant)
                         .add(createHorizonFacingVariant())
                         .add(ChildPropertyVariant.of(FORM,POS_HORIZON).generate((variantKeyList)->{
-                            int i=FORM.indexOf(variantKeyList.get(0));
-                            int j=POS_HORIZON.indexOf(variantKeyList.get(1));
-                            return List.of(i < formsNum
-                                    ? Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(i).get(j)))
-                                    : Variant.variant());
+                            if(FORM!=null){
+                                int i= FORM.indexOf(variantKeyList.get(0));
+                                int j=POS_HORIZON.indexOf(variantKeyList.get(1));
+                                return List.of(i < formsNum
+                                        ? Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(i).get(j)))
+                                        : Variant.variant());
+                            }
+                            else{
+                                int j=POS_HORIZON.indexOf(variantKeyList.get(0));
+                                return List.of(Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(0).get(j))));
+                            }
+
                         }));
                 case "face"->ChildVariant.of(baseVariant)
                         .add(ChildPropertyVariant.of(FORM,XPOS,ZPOS).generate((variantKeyList)->{
-                            int i=FORM.indexOf(variantKeyList.get(0));
-                            if (i < formsNum){
-                                ResourceLocation none = ResourceLocation.parse(blockState.forms.get(i).get(0));
-                                ResourceLocation singleLine = ResourceLocation.parse(blockState.forms.get(i).get(1));
-                                ResourceLocation middle = ResourceLocation.parse(blockState.forms.get(i).get(2));
-                                ResourceLocation bothLine = ResourceLocation.parse(blockState.forms.get(i).get(3));
-                                return List.of(createXYPosVariant(variantKeyList.get(1),variantKeyList.get(2),none,singleLine,middle,bothLine)) ;
+                            if(FORM!=null){
+                                int i=FORM.indexOf(variantKeyList.get(0));
+                                if (i < formsNum){
+                                    ResourceLocation none = ResourceLocation.parse(blockState.forms.get(i).get(0));
+                                    ResourceLocation singleLine = ResourceLocation.parse(blockState.forms.get(i).get(1));
+                                    ResourceLocation middle = ResourceLocation.parse(blockState.forms.get(i).get(2));
+                                    ResourceLocation bothLine = ResourceLocation.parse(blockState.forms.get(i).get(3));
+                                    return List.of(createXYPosVariant(variantKeyList.get(1),variantKeyList.get(2),none,singleLine,middle,bothLine)) ;
+                                }
+                                else return List.of(Variant.variant());
                             }
-                            else return List.of(Variant.variant());
+                            else{
+                                ResourceLocation none = ResourceLocation.parse(blockState.forms.get(0).get(0));
+                                ResourceLocation singleLine = ResourceLocation.parse(blockState.forms.get(0).get(1));
+                                ResourceLocation middle = ResourceLocation.parse(blockState.forms.get(0).get(2));
+                                ResourceLocation bothLine = ResourceLocation.parse(blockState.forms.get(0).get(3));
+                                return List.of(createXYPosVariant(variantKeyList.get(0),variantKeyList.get(1),none,singleLine,middle,bothLine)) ;
+                            }
+
                         }));
                 case "pole"->ChildVariant.of(baseVariant)
                         .add(createHorizonFacingVariant())
                         .add(ChildPropertyVariant.of(FORM,POS_VERTICAL).generate((variantKeyList)->{
-                            int i=FORM.indexOf(variantKeyList.get(0));
-                            int j=POS_VERTICAL.indexOf(variantKeyList.get(1));
-                            return List.of(i < formsNum
-                                    ? Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(i).get(j)))
-                                    : Variant.variant());
+                            if(FORM!=null){
+                                int i=FORM.indexOf(variantKeyList.get(0));
+                                int j=POS_VERTICAL.indexOf(variantKeyList.get(1));
+                                return List.of(i < formsNum
+                                        ? Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(i).get(j)))
+                                        : Variant.variant());
+                            }
+                            else{
+                                int j=POS_VERTICAL.indexOf(variantKeyList.get(0));
+                                return List.of(Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(0).get(j))));
+                            }
+
                         }));
                 case "tri_part"->ChildVariant.of(baseVariant)
                         .add(createHorizonFacingVariant())
                         .add(ChildPropertyVariant.of(FORM,POS_VERTICAL).generate((variantKeyList)->{
-                            int i=FORM.indexOf(variantKeyList.get(0));
-                            if (i>=formsNum) return List.of(Variant.variant());
-                            else if (variantKeyList.get(1).equals("pos=middle")) return List.of(Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(i).get(0))));
-                            else return List.of(Variant.variant().with(VariantProperty.MODEL,blankModel));
+                            if(FORM!=null){
+                                int i=FORM.indexOf(variantKeyList.get(0));
+                                if (i>=formsNum) return List.of(Variant.variant());
+                                else if (variantKeyList.get(1).equals("pos=middle")) return List.of(Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(i).get(0))));
+                                else return List.of(Variant.variant().with(VariantProperty.MODEL,blankModel));
+                            }
+                            else {
+                                if (variantKeyList.get(0).equals("pos=middle")) return List.of(Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(0).get(0))));
+                                else return List.of(Variant.variant().with(VariantProperty.MODEL,blankModel));
+                            }
                         }));
                 case "VanillaSlabBlock"->{
                     ResourceLocation bottom=ResourceLocation.parse(blockState.forms.get(0).get(0));
@@ -152,7 +208,7 @@ public class BlockStateData {
             }
 
             if (blockState.states.contains("form")) {
-                childVariant.add(createDefaultVariant(FORM));
+                childVariant.add(createDefaultVariant(FORM8));
             }
 
             if (blockState.states.contains("pos_horizon")) {
@@ -439,15 +495,21 @@ public class BlockStateData {
             private final List<ChildProperty> childProperties=new ArrayList<>();
             private final List<List<String>> possibleCombination=new ArrayList<>();
             public ChildPropertyVariant setProperty(ChildProperty ...childProperties){
-                this.childProperties.addAll(List.of(childProperties));
-                Arrays.stream(childProperties).forEach((e)->possibleVariantKeys.addAll(e.getVariantKeys()));
+                Arrays.stream(childProperties).forEach((e)->{
+                    if(e!=null){
+                        this.childProperties.add(e);
+                        possibleVariantKeys.addAll(e.getVariantKeys());
+
+                    }
+                });
                 return this;
             }
             public ChildPropertyVariant generate(Function<List<String>, List<Variant>> fromVariantKeyToVariants){
                 List<List<String>> childPropertiesVariantKeys=childProperties.stream().map(ChildProperty::getVariantKeys).toList();
                 possibleCombination.addAll(CartesianProduct(childPropertiesVariantKeys));
                 for(List<String> combination:possibleCombination){
-                    values.put(String.join(",",combination),fromVariantKeyToVariants.apply(combination));
+                    if(combination!=null&&!combination.isEmpty())
+                        values.put(String.join(",",combination),fromVariantKeyToVariants.apply(combination));
                 }
                 return this;
             }
@@ -467,10 +529,14 @@ public class BlockStateData {
         private final List<ChildPropertyVariant> childPropertyVariants=new ArrayList<>();
         private final List<Variant> baseVariants=new ArrayList<>();
         public ChildVariant setBaseVariants(Variant ...variant){this.baseVariants.addAll(List.of(variant));return this;}
-        public ChildVariant add(ChildPropertyVariant ...childPropertyVariant){this.childPropertyVariants.addAll(List.of(childPropertyVariant));return this;}
+        public ChildVariant add(ChildPropertyVariant ...childPropertyVariant){
+            this.childPropertyVariants.addAll(List.of(childPropertyVariant));
+            return this;
+        }
         public JsonElement get() {
             Stream<Map.Entry<String, List<Variant>>> resStream=Stream.of(Map.entry("",baseVariants));
             for (ChildPropertyVariant propertyVariant : childPropertyVariants) {
+                if(propertyVariant.get().isEmpty()) continue;
                 resStream = resStream.flatMap((fatherPair)-> propertyVariant.get().entrySet().stream().map((childPair)->
                         Map.entry(
                                 fatherPair.getKey().isBlank() ?childPair.getKey() :fatherPair.getKey()+","+childPair.getKey(),

@@ -76,7 +76,7 @@ public class YuushyaRegistries {
         for (YuushyaRegistryData.Block block:BlockOnly.values()){
             if (block.renderType==null||block.renderType.isEmpty()) block.renderType="cutout";
             if (block.itemGroup == null) block.itemGroup="yuushya_extrablocks";
-            RegisterList.add(()->BLOCKS.register(block.name,()->new YuushyaBlockFactory.BlockWithClassType(BlockBehaviour.Properties.of(Material.METAL),1,"block","block",null )));
+            RegisterList.add(()->BLOCKS.register(block.name,()->new YuushyaBlockFactory.BlockWithClassType(BlockBehaviour.Properties.of(Material.METAL),1,"block" )));
             RegisterList.add(()->ITEMS.register(block.name,()->new BlockItem(BLOCKS.get(block.name).get(),new Item.Properties().tab(YuushyaCreativeModeTab.toGroup(block.itemGroup)))));
             if (block.texture==null){ block.texture=new YuushyaRegistryData.Block.Texture();block.texture.type="all";}
             if (block.texture.type!=null&&!block.texture.type.isEmpty()){
@@ -112,7 +112,7 @@ public class YuushyaRegistries {
             if (particle.spawner==null) particle.spawner=new YuushyaRegistryData.Block();
             if (particle.spawner.properties==null) {particle.spawner.properties=new YuushyaRegistryData.Block.Properties();}
             if (particle.spawner.name==null||particle.spawner.name.isEmpty()) particle.spawner.name=particle.name+"_spawner";
-            RegisterList.add(()->BLOCKS.register(particle.spawner.name, () -> new YuushyaParticleBlock(YuushyaBlockFactory.getBlockProperties(particle.spawner.properties), particle.spawner.properties.lines,"ParticleBlock","block",particle.spawner.usage,()-> (SimpleParticleType) PARTICLE_TYPES.get(particle.name).get())));
+            RegisterList.add(()->BLOCKS.register(particle.spawner.name, () -> new YuushyaParticleBlock(YuushyaBlockFactory.getBlockProperties(particle.spawner.properties), particle.spawner.properties.lines,"ParticleBlock",particle.spawner.usage,()-> (SimpleParticleType) PARTICLE_TYPES.get(particle.name).get())));
             RegisterList.add(()->ITEMS.register(particle.spawner.name, () -> new BlockItem(BLOCKS.get(particle.spawner.name).get(), new Item.Properties().tab(YuushyaCreativeModeTab.toGroup(particle.spawner.itemGroup)))));
             RegisterList.add(()->PARTICLE_TYPES.register(particle.name, YuushyaParticleBlock.YuushyaParticleType::create));
         }

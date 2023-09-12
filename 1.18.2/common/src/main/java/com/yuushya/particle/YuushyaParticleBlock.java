@@ -15,8 +15,8 @@ import java.util.Random;
 
 public class YuushyaParticleBlock extends YuushyaBlockFactory.BlockWithClassType {
     private final ParticleSupplier particleSupplier;
-    public YuushyaParticleBlock(Properties properties, Integer tipLines, String classType, String autoCollision, YuushyaRegistryData.Block.Usage usage, ParticleSupplier particleSupplier) {
-        super(properties.noCollission().noOcclusion(), tipLines, classType, autoCollision,usage );
+    public YuushyaParticleBlock(Properties properties, Integer tipLines, String classType, YuushyaRegistryData.Block.Usage usage, ParticleSupplier particleSupplier) {
+        super(properties.noCollission().noOcclusion(), tipLines, classType );
         this.particleSupplier =particleSupplier;
     }
 

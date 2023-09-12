@@ -3,6 +3,7 @@ package com.yuushya.item;
 import com.yuushya.Yuushya;
 import com.yuushya.block.blockstate.YuushyaBlockStates;
 import com.yuushya.utils.YuushyaLogger;
+import com.yuushya.utils.YuushyaUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.InteractionResult;
@@ -21,12 +22,16 @@ public class FormTransItem extends AbstractToolItem{
     //对方块主手右键
     @Override
     public InteractionResult inMainHandRightClickOnBlock(Player player, BlockState blockState, Level level, BlockPos blockPos, ItemStack handItemStack){
-        return transformOneProperty(player,blockState,level,blockPos,handItemStack,YuushyaBlockStates.FORM,false);
+        Property<?> form = YuushyaUtils.getFormFromState(blockState);
+        if(form!=null) return transformOneProperty(player,blockState,level,blockPos,handItemStack,form,false);
+        else return InteractionResult.PASS;
     }
     //对方块主手左键
     @Override
     public InteractionResult inMainHandLeftClickOnBlock(Player player, BlockState blockState, Level level, BlockPos blockPos, ItemStack handItemStack){
-        return transformOneProperty(player,blockState,level,blockPos,handItemStack,YuushyaBlockStates.FORM,true);
+        Property<?> form = YuushyaUtils.getFormFromState(blockState);
+        if(form!=null) return transformOneProperty(player,blockState,level,blockPos,handItemStack,form,true);
+        else return InteractionResult.PASS;
     }
 
     private static <T extends Comparable<T>> InteractionResult transformOneProperty(Player player, BlockState blockState, Level level, BlockPos blockPos, ItemStack handItemStack, Property<T> property,boolean doGetPre){
