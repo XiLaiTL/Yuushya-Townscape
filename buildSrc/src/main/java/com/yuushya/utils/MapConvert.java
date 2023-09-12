@@ -30,9 +30,10 @@ public class MapConvert {
                 for(var obj : jsonArray){
                     var jsonObject = obj.getAsJsonObject();
                     if(jsonObject.has(from)&&jsonObject.has(to)){
-                        var fromName = "yuushya:"+jsonObject.get(from).getAsString();
+                        var fromName = jsonObject.get(from).getAsString();
+                        if(!fromName.contains(":")) fromName =  "yuushya:"+ fromName;
                         var toName = jsonObject.get(to).getAsString();
-                        if(!toName.contains("minecraft:")) toName = "yuushya:"+toName;
+                        if(!toName.contains(":")) toName = "yuushya:"+toName;
                         nameMap.put(fromName,toName);
                     }
                 }
@@ -142,35 +143,33 @@ public class MapConvert {
 
     public static CompoundTag convertBlockState(CompoundTag blockstate){
         var blockName = blockstate.getString("Name");
-        if(blockName.contains("yuushya")) {
-            if(!nameMap.containsKey(blockName)){
+        if(!nameMap.containsKey(blockName)){
+            if(blockName.contains("yuushya"))
                 System.out.println("Could not find "+blockName);
-                return blockstate;
-            }
-            blockstate.putString("Name",nameMap.get(blockName));
-            if(blockstate.containsKey("Properties")){
-                var properties = blockstate.getCompoundTag("Properties");
-                if(properties.containsKey("facing")){
-                    var facing = properties.getString("facing");
-                    var convertFacing = switch (facing){
-                        case "north"->"south";
-                        case "south"->"north";
-                        case "east"->"west";
-                        case "west"->"east";
-                        default -> "south";
-                    };
-                    properties.putString("facing",convertFacing);
-                }
-                if(properties.containsKey("powered")){
-                    var powered = properties.getBoolean("powered");
-                    if(powered){
-                        properties.putInt("form",1);
-                    }
-                }
-                blockstate.put("Properties",properties);
-            }
+            return blockstate;
         }
-
+        blockstate.putString("Name",nameMap.get(blockName));
+        if(blockstate.containsKey("Properties")){
+            var properties = blockstate.getCompoundTag("Properties");
+            if(properties.containsKey("facing")){
+                var facing = properties.getString("facing");
+                var convertFacing = switch (facing){
+                    case "north"->"south";
+                    case "south"->"north";
+                    case "east"->"west";
+                    case "west"->"east";
+                    default -> "south";
+                };
+                properties.putString("facing",convertFacing);
+            }
+            if(properties.containsKey("powered")){
+                var powered = properties.getBoolean("powered");
+                if(powered){
+                    properties.putInt("form",1);
+                }
+            }
+            blockstate.put("Properties",properties);
+        }
         return blockstate;
     }
 
