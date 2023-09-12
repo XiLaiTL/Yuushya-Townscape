@@ -111,6 +111,7 @@ public class CollisionFileCreator {
                                     ModelTriple key = new ModelTriple(modelLocation, variant.x, variant.y);
                                     if(collisionCache.containsKey(key)) {
                                         itemBlockstate.collision = collisionCache.get(key);
+                                        item.blockstates.add(itemBlockstate);
                                     }
                                     else if(model!=null){
                                         if(model.elements==null){
