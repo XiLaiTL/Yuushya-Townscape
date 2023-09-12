@@ -19,6 +19,7 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
@@ -32,6 +33,9 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.AttachFace;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.Property;
+import net.minecraft.world.level.material.Fluid;
+import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
@@ -44,6 +48,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 import static com.yuushya.block.FaceBlock.getPositionOfFaceX;
 import static com.yuushya.block.FaceBlock.getPositionOfFaceZ;
@@ -60,7 +65,7 @@ public class YuushyaBlockFactory{
         return yuushyaVoxelShapes;
     }
 
-    public static class BlockWithClassType extends AbstractYuushyaBlock{
+    public static class BlockWithClassType extends AbstractYuushyaBlock implements SimpleWaterloggedBlock{
         public String classType;
         private final Map<BlockState,VoxelShape> voxelShapeCache = new HashMap<>();
         public BlockWithClassType(Properties properties, Integer tipLines, String classType) {
@@ -121,6 +126,14 @@ public class YuushyaBlockFactory{
                 return state.setValue(HORIZONTAL_FACING, mirror.mirror(state.getValue(HORIZONTAL_FACING)));
             return super.mirror(state,mirror);
         }
+
+        @Override
+        public FluidState getFluidState(BlockState state) {
+            if(state.hasProperty(WATERLOGGED)) return state.getValue(WATERLOGGED)? Fluids.WATER.getSource(false):super.getFluidState(state);
+            return super.getFluidState(state);
+        }
+
+
     }
 
     public static BlockBehaviour.Properties getBlockProperties(BlockBehaviour.Properties blockProperties, YuushyaRegistryData.Block.Properties yuushyaBlockProperties){
@@ -219,6 +232,7 @@ public class YuushyaBlockFactory{
             protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> stateBuilder) {
                 if(finalKitType !=null) stateBuilder.add(finalKitType.getBlockStateProperty().toArray(Property[]::new));
                 else stateBuilder.add(blockStateProperties.toArray(Property[]::new));
+                if(!yuushyaBlock.properties.isSolid) stateBuilder.add(WATERLOGGED);
                 if(yuushyaBlock.blockstate!=null && yuushyaBlock.blockstate.forms!=null&&!blockStateProperties.contains(FORM8)){
                     int forms = yuushyaBlock.blockstate.forms.size();
                     if(forms>1) stateBuilder.add(YuushyaBlockStates.forms(forms));
@@ -240,30 +254,36 @@ public class YuushyaBlockFactory{
             @Override
             @Nullable
             public BlockState getStateForPlacement(BlockPlaceContext blockPlaceContext) {
-                if(finalKitType!=null) return finalKitType.getStateForPlacement(blockPlaceContext);
+                BlockState res=this.defaultBlockState();
                 LevelAccessor levelAccessor=blockPlaceContext.getLevel();
                 BlockPos blockPos=blockPlaceContext.getClickedPos();
-                BlockState res=this.defaultBlockState();
-                //from FaceAttachedHorizontalDirectionalBlock
-                if (res.hasProperty(BlockStateProperties.ATTACH_FACE) && res.hasProperty(BlockStateProperties.HORIZONTAL_FACING)){
-                    Direction direction = blockPlaceContext.getNearestLookingDirection();
-                    res= direction.getAxis() == Direction.Axis.Y
-                            ? res
-                            .setValue(BlockStateProperties.ATTACH_FACE, direction == Direction.UP ? AttachFace.CEILING : AttachFace.FLOOR)
-                            .setValue(BlockStateProperties.HORIZONTAL_FACING, blockPlaceContext.getHorizontalDirection())
-                            : res
-                            .setValue(BlockStateProperties.ATTACH_FACE, AttachFace.WALL)
-                            .setValue(BlockStateProperties.HORIZONTAL_FACING, direction.getOpposite());
+                if(finalKitType!=null){
+                    res = finalKitType.getStateForPlacement(blockPlaceContext);
                 }
-                else if(res.hasProperty(BlockStateProperties.HORIZONTAL_FACING)){
-                    res = blockPlaceContext.getClickedFace().getAxis() == Direction.Axis.Y
-                            ? res.setValue(HORIZONTAL_FACING, blockPlaceContext.getHorizontalDirection())
-                            : res.setValue(HORIZONTAL_FACING, blockPlaceContext.getClickedFace().getOpposite());
-                }
-                if(res.hasProperty(XPOS)) res = res.setValue(XPOS, getPositionOfFaceX(this.defaultBlockState(),levelAccessor,blockPos));
-                if(res.hasProperty(ZPOS)) res = res.setValue(ZPOS, getPositionOfFaceZ(this.defaultBlockState(),levelAccessor,blockPos));
-                if(res.hasProperty(YPOS)) res =res.setValue(YPOS, getPositionOfPole(this.defaultBlockState(),levelAccessor,blockPos));
+                else{
+                    //from FaceAttachedHorizontalDirectionalBlock
+                    if (res.hasProperty(BlockStateProperties.ATTACH_FACE) && res.hasProperty(BlockStateProperties.HORIZONTAL_FACING)){
+                        Direction direction = blockPlaceContext.getNearestLookingDirection();
+                        res= direction.getAxis() == Direction.Axis.Y
+                                ? res
+                                .setValue(BlockStateProperties.ATTACH_FACE, direction == Direction.UP ? AttachFace.CEILING : AttachFace.FLOOR)
+                                .setValue(BlockStateProperties.HORIZONTAL_FACING, blockPlaceContext.getHorizontalDirection())
+                                : res
+                                .setValue(BlockStateProperties.ATTACH_FACE, AttachFace.WALL)
+                                .setValue(BlockStateProperties.HORIZONTAL_FACING, direction.getOpposite());
+                    }
+                    else if(res.hasProperty(BlockStateProperties.HORIZONTAL_FACING)){
+                        res = blockPlaceContext.getClickedFace().getAxis() == Direction.Axis.Y
+                                ? res.setValue(HORIZONTAL_FACING, blockPlaceContext.getHorizontalDirection())
+                                : res.setValue(HORIZONTAL_FACING, blockPlaceContext.getClickedFace().getOpposite());
+                    }
+                    if(res.hasProperty(XPOS)) res = res.setValue(XPOS, getPositionOfFaceX(this.defaultBlockState(),levelAccessor,blockPos));
+                    if(res.hasProperty(ZPOS)) res = res.setValue(ZPOS, getPositionOfFaceZ(this.defaultBlockState(),levelAccessor,blockPos));
+                    if(res.hasProperty(YPOS)) res =res.setValue(YPOS, getPositionOfPole(this.defaultBlockState(),levelAccessor,blockPos));
 //TODO：pos horizon那些都没做
+                }
+                if (res != null && res.hasProperty(WATERLOGGED))
+                    res = res.setValue(WATERLOGGED, levelAccessor.getFluidState(blockPos).is(Fluids.WATER));
                 return res;
             }
             @Override
@@ -272,11 +292,21 @@ public class YuushyaBlockFactory{
                 return super.canSurvive(blockState,levelReader,blockPos);
             }
 
+
             @Override
             public BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor level, BlockPos currentPos, BlockPos neighborPos) {
-                if(finalKitType!=null) return finalKitType.updateShape(state, direction, neighborState, level, currentPos, neighborPos);
-                //TODO: 像上面那样写出来
-                return super.updateShape(state, direction, neighborState, level, currentPos, neighborPos);
+                BlockState res  = defaultBlockState();
+                if(finalKitType!=null) {
+                    res = finalKitType.updateShape(state, direction, neighborState, level, currentPos, neighborPos);
+                }
+                else {
+                    //TODO: 像上面那样写出来
+                    res = super.updateShape(state, direction, neighborState, level, currentPos, neighborPos);
+                }
+                if (res != null && res.hasProperty(WATERLOGGED) && res.getValue(WATERLOGGED)){
+                    level.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
+                }
+                return res;
             }
 
             @Override
@@ -308,6 +338,45 @@ public class YuushyaBlockFactory{
             public OffsetType getOffsetType() {
                 return YuushyaUtils.toOffsetType(yuushyaBlock.properties.offset);
             }
+
+//            @Override
+//            public boolean canPlaceLiquid(BlockGetter level, BlockPos pos, BlockState state, Fluid fluid) {
+//                return  state.hasProperty(WATERLOGGED) && !(Boolean)state.getValue(BlockStateProperties.WATERLOGGED) && fluid == Fluids.WATER;
+//            }
+//
+//            @Override
+//            public boolean placeLiquid(LevelAccessor level, BlockPos pos, BlockState state, FluidState fluidState) {
+//                if (state.hasProperty(WATERLOGGED) && !(Boolean)state.getValue(BlockStateProperties.WATERLOGGED) && fluidState.getType() == Fluids.WATER) {
+//                    if (!level.isClientSide()) {
+//                        level.setBlock(pos, (BlockState)state.setValue(BlockStateProperties.WATERLOGGED, true), 3);
+//                        level.scheduleTick(pos, fluidState.getType(), fluidState.getType().getTickDelay(level));
+//                    }
+//
+//                    return true;
+//                } else {
+//                    return false;
+//                }
+//            }
+//
+//            @Override
+//            public ItemStack pickupBlock(LevelAccessor level, BlockPos pos, BlockState state) {
+//                if (state.hasProperty(WATERLOGGED) && state.getValue(BlockStateProperties.WATERLOGGED)) {
+//                    level.setBlock(pos, (BlockState)state.setValue(BlockStateProperties.WATERLOGGED, false), 3);
+//                    if (!state.canSurvive(level, pos)) {
+//                        level.destroyBlock(pos, true);
+//                    }
+//
+//                    return new ItemStack(Items.WATER_BUCKET);
+//                } else {
+//                    return ItemStack.EMPTY;
+//                }
+//            }
+//
+//            @Override
+//            public Optional<SoundEvent> getPickupSound() {
+//                return Fluids.WATER.getPickupSound();
+//            }
+
 
         };
     }

@@ -71,6 +71,7 @@ public class YuushyaBlockStates {
         if (properties.contains(BlockStateProperties.FACING)) defaultState=defaultState.setValue(BlockStateProperties.FACING, Direction.NORTH);
         if (properties.contains(BlockStateProperties.ATTACH_FACE)) defaultState=defaultState.setValue(BlockStateProperties.ATTACH_FACE,AttachFace.FLOOR);
         if (properties.contains(BlockStateProperties.HORIZONTAL_FACING)) defaultState=defaultState.setValue(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH);
+        if (properties.contains(BlockStateProperties.WATERLOGGED)) defaultState=defaultState.setValue(BlockStateProperties.WATERLOGGED, false);
         return defaultState;
     }
 

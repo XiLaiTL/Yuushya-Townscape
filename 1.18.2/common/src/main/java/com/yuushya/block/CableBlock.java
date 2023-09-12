@@ -15,6 +15,7 @@ import static com.yuushya.block.blockstate.YuushyaBlockStates.DISTANCE;
 import static com.yuushya.block.blockstate.YuushyaBlockStates.ISEND;
 import static com.yuushya.utils.YuushyaUtils.getBlockState;
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.HORIZONTAL_FACING;
+import static net.minecraft.world.level.block.state.properties.BlockStateProperties.WATERLOGGED;
 
 public class CableBlock extends YuushyaBlockFactory.BlockWithClassType {
 
@@ -24,7 +25,7 @@ public class CableBlock extends YuushyaBlockFactory.BlockWithClassType {
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> stateBuilder) {
-        stateBuilder.add(HORIZONTAL_FACING,ISEND,DISTANCE);
+        stateBuilder.add(HORIZONTAL_FACING,ISEND,DISTANCE,WATERLOGGED);
     }
 
     public static BlockState updateDistanceFromPost(BlockState state, LevelAccessor world, BlockPos pos){
