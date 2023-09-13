@@ -116,6 +116,15 @@
 		},
 
 		{
+			"name": "WindowsBlock",
+			"blockstate": { "kit": "normal" },
+			"render_type": "translucent",
+			"auto_generated": { "recipe": true, "blockstate": false, "loot_table": true, "item_model": true, "collision": "face" },
+			"class_type": "class",
+			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": false, "is_delicate": false }
+		},
+
+		{
 			"name": "DecoBlock",
 			"blockstate": { "kit": "normal" },
 			"render_type": "cutout",
@@ -4355,12 +4364,15 @@
 		{"name": "~Window_窗框", "class_type": "_comment" },
 
 		{
-			"class_type": "TranslucentBlock",
+			"class_type": "WindowsBlock",
 			"name": "white_windows_0",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_window",
 			"properties": {"has_collision": false },
 			"render_type": "translucent",
-			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/white_windows"]]}
+			"blockstate": {
+				"kit": "pole_line",
+				"forms": [["yuushya:extra_building_material/windows_frame/white_window"]]
+			}
 		},
 
 		{
