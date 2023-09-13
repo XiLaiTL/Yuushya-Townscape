@@ -1,6 +1,7 @@
 package com.yuushya.block;
 
 import com.yuushya.block.blockstate.PositionHorizonState;
+import com.yuushya.block.blockstate.ShapeState;
 import com.yuushya.entity.ChairEntityUtils;
 import com.yuushya.registries.YuushyaRegistryData;
 import com.yuushya.utils.YuushyaUtils;
@@ -10,12 +11,14 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.Property;
+import net.minecraft.world.level.block.state.properties.StairsShape;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.Nullable;
@@ -90,5 +93,37 @@ public class LineBlock extends AbstractYuushyaBlockType {
             }
         }
         return PositionHorizonState.NONE;
+    }
+
+    public static ShapeState getLineShape(BlockState state, BlockGetter level, BlockPos pos) {
+        Direction direction = state.getValue(HORIZONTAL_FACING);
+        BlockState blockState = level.getBlockState(pos.relative(direction));
+        if (isTheSameBlock(state,blockState)) {
+            Direction direction2 = blockState.getValue(HORIZONTAL_FACING);
+            if (direction2.getAxis() != state.getValue(HORIZONTAL_FACING).getAxis() && canTakeShape(state, level, pos, direction2.getOpposite())) {
+//                if (direction2 == direction.getCounterClockWise()) {
+//                    return StairsShape.OUTER_LEFT;
+//                }
+                return ShapeState.OUTER;
+            }
+        }
+
+        BlockState blockState2 = level.getBlockState(pos.relative(direction.getOpposite()));
+        if (isTheSameBlock(state,blockState2)) {
+            Direction direction3 = (Direction)blockState2.getValue(HORIZONTAL_FACING);
+            if (direction3.getAxis() != ((Direction)state.getValue(HORIZONTAL_FACING)).getAxis() && canTakeShape(state, level, pos, direction3)) {
+//                if (direction3 == direction.getCounterClockWise()) {
+//                    return StairsShape.INNER_LEFT;
+//                }
+                return ShapeState.INNER;
+            }
+        }
+
+        return ShapeState.STRAIGHT;
+    }
+
+    private static boolean canTakeShape(BlockState state, BlockGetter level, BlockPos pos, Direction face) {
+        BlockState blockState = level.getBlockState(pos.relative(face));
+        return !isTheSameBlock(blockState,state) || blockState.getValue(HORIZONTAL_FACING) != state.getValue(HORIZONTAL_FACING) ;
     }
 }
