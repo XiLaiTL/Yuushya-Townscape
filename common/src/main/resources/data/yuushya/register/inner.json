@@ -2961,7 +2961,7 @@
 
 		{
 			"name": "couch",
-			"blockstate": { "forms": [["yuushya:template/couch_left","yuushya:template/couch_middle","yuushya:template/couch_right","yuushya:template/couch_none"]], "kit": "line_corner"},
+			"blockstate": { "forms": [["yuushya:template/couch_left","yuushya:template/couch_middle","yuushya:template/couch_right","yuushya:template/couch_none","yuushya:template/couch_inner_left","yuushya:template/couch_outer_left","yuushya:template/couch_inner_right","yuushya:template/couch_outer_right"]], "kit": "line_corner"},
 			"item_model": "yuushya:template/couch_none", "item_group": "yuushya_furniture",
 			"render_type": "cutout",
 			"usage": {"sit_pos": [0.5,0.5,0.5]},

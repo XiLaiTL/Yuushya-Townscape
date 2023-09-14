@@ -60,6 +60,7 @@ public class BlockStateData {
     public static final ChildProperty DOOR_HINGE=ChildProperty.of("hinge","left","right");
     public static final ChildProperty DOUBLE_BLOCK_HALF=ChildProperty.of("half","upper","lower");
     public static final ChildProperty OPEN=ChildProperty.of("open","true","false");
+    public static final ChildProperty SHAPE = ChildProperty.of("shape","straight","inner","outer");
 
 
 
@@ -108,6 +109,31 @@ public class BlockStateData {
                             else{
                                 int j=POS_HORIZON.indexOf(variantKeyList.get(0));
                                 return List.of(Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(0).get(j))));
+                            }
+
+                        }));
+                case "line_corner"->ChildVariant.of(baseVariant)
+                        .add(createHorizonFacingVariant())
+                        .add(ChildPropertyVariant.of(FORM,POS_HORIZON,SHAPE).generate((variantKeyList)->{
+                            if(FORM!=null){
+                                int i= FORM.indexOf(variantKeyList.get(0));
+                                int j=POS_HORIZON.indexOf(variantKeyList.get(1));
+                                int k=SHAPE.indexOf(variantKeyList.get(2));
+                                int l = "pos=left".equals(variantKeyList.get(1)) && !"shape=straight".equals(variantKeyList.get(2)) ? 3+k
+                                        :"pos=right".equals(variantKeyList.get(1)) && !"shape=straight".equals(variantKeyList.get(2)) ? 5+k
+                                        :j;
+                                // ResourceLocation left, ResourceLocation midlde, ResourceLocation right, ResourceLocation none, ResourceLocation inner_left,ResourceLocation outer_left, ResourceLocation inner_right,ResourceLocation outer_right
+                                return List.of(i < formsNum
+                                        ? Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(i).get(l)))
+                                        : Variant.variant());
+                            }
+                            else{
+                                int j=POS_HORIZON.indexOf(variantKeyList.get(0));
+                                int k=SHAPE.indexOf(variantKeyList.get(1));
+                                int l = "pos=left".equals(variantKeyList.get(0)) && !"shape=straight".equals(variantKeyList.get(1)) ? 3+k
+                                        :"pos=right".equals(variantKeyList.get(0)) && !"shape=straight".equals(variantKeyList.get(1)) ? 5+k
+                                        :j;
+                                return List.of(Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(0).get(l))));
                             }
 
                         }));
@@ -433,6 +459,7 @@ public class BlockStateData {
                         Variant.variant().with(VariantProperty.MODEL, inner).with(VariantProperty.X_ROT, VariantProperty.Rotation.R180).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270).with(VariantProperty.UV_LOCK, true));
 
     }
+
 
     private static Variant createXYPosVariant(String xpos,String zpos,ResourceLocation none, ResourceLocation singleLine, ResourceLocation middle, ResourceLocation bothLine){
 
