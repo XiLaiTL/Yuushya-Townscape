@@ -175,6 +175,8 @@ public class YuushyaBlockFactory{
                     kitType = new AttachmentBlock();}
                 case "line" -> {
                     kitType = new LineBlock();}
+                case "line_corner"->{
+                    kitType = new LineCornerBlock();}
                 case "face" -> {
                     kitType = new FaceBlock();}
                 case "pole" -> {
