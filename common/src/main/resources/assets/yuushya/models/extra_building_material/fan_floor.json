@@ -3,9 +3,9 @@
 	"ambientocclusion": false,
 	"textures": {
 		"4": "yuushya:0extra_building_block/pipe",
-		"6": "yuushya:0extra_building_material/preview/iron",
+		"6": "yuushya:block/machine_grid_",
 		"7": "yuushya:0extra_building_material/preview/iron_bars_alt",
-		"particle": "yuushya:0extra_building_material/preview/iron",
+		"particle": "yuushya:block/machine_grid_",
 		"2_0": "yuushya:0extra_building_material/preview/fan_frame",
 		"2_1": "yuushya:0extra_building_material/preview/fan3"
 	},

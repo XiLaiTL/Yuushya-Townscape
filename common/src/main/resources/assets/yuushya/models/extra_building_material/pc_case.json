@@ -1,9 +1,9 @@
 {
-	"credit": "Coco",
+	"credit": "Yuushya",
 	"ambientocclusion": false,
-	"texture_size": [32, 32],
 	"textures": {
-		"2": "yuushya:0extra_building_material/preview/monitor",
+		"1": "yuushya:0extra_building_block/casserole",
+		"3": "yuushya:0extra_building_material/preview/mug",
 		"particle": "yuushya:0extra_building_material/preview/monitor"
 	},
 	"elements": [
@@ -12,12 +12,24 @@
 			"to": [12, 14, 13],
 			"rotation": {"angle": 0, "axis": "y", "origin": [24, 8, 10]},
 			"faces": {
-				"north": {"uv": [11, 7.5, 15, 14.5], "texture": "#2"},
-				"east": {"uv": [10.5, 7.5, 15.5, 14.5], "texture": "#2"},
-				"south": {"uv": [11.5, 0, 15.5, 7], "texture": "#2"},
-				"west": {"uv": [10.5, 7.5, 15.5, 14.5], "texture": "#2"},
-				"up": {"uv": [3.5, 0.5, 7.5, 5.5], "texture": "#2"},
-				"down": {"uv": [6.5, 3, 8.5, 4], "texture": "#2"}
+				"north": {"uv": [2, 2, 10, 16], "texture": "#1"},
+				"east": {"uv": [3, 2, 13, 16], "texture": "#1"},
+				"south": {"uv": [6, 2, 14, 16], "texture": "#1"},
+				"west": {"uv": [3, 2, 13, 16], "texture": "#1"},
+				"up": {"uv": [6, 3, 14, 13], "texture": "#1"},
+				"down": {"uv": [6, 3, 14, 13], "texture": "#1"}
+			}
+		},
+		{
+			"from": [9, 10, 11.3],
+			"to": [11, 12, 13.3],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 2], "texture": "#3"},
+				"east": {"uv": [0, 0, 2, 2], "texture": "#3"},
+				"south": {"uv": [8, 2, 10, 4], "texture": "#3"},
+				"west": {"uv": [0, 0, 2, 2], "texture": "#3"},
+				"up": {"uv": [0, 0, 2, 2], "texture": "#3"},
+				"down": {"uv": [0, 0, 2, 2], "texture": "#3"}
 			}
 		}
 	],
@@ -47,10 +59,13 @@
 		},
 		"gui": {
 			"rotation": [30, 45, 0],
-			"scale": [0.625, 0.625, 0.625]
+			"translation": [1.25, 1, 0],
+			"scale": [0.7, 0.7, 0.7]
 		},
 		"fixed": {
-			"scale": [0.5, 0.5, 0.5]
+			"rotation": [-90, 5, 0],
+			"translation": [-10, 0, -16],
+			"scale": [2, 2, 2]
 		}
 	},
 	"groups": [
@@ -59,6 +74,7 @@
 			"origin": [8, 8, 8],
 			"color": 0,
 			"children": [0]
-		}
+		},
+		1
 	]
 }

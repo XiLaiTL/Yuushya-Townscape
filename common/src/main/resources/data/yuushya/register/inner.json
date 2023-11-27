@@ -537,6 +537,7 @@
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_black_wool",
 					"sides#yuushya:block_/decorative_wool/decorative_black_wool",
+					"couch#yuushya:block_/decorative_wool/decorative_black_wool_couch",
 					"top#yuushya:block_/decorative_wool/decorative_black_wool"]}
 		},
 
@@ -547,7 +548,7 @@
 				"value":"yuushya:block_/decorative_wool/decorative_blue_wool",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_blue_wool",
-					"sides#yuushya:block_/decorative_wool/decorative_blue_wool",
+					"couch#yuushya:block_/decorative_wool/decorative_blue_wool_couch", "sides#yuushya:block_/decorative_wool/decorative_blue_wool",
 					"top#yuushya:block_/decorative_wool/decorative_blue_wool"]}
 		},
 
@@ -558,7 +559,7 @@
 				"value":"yuushya:block_/decorative_wool/decorative_brown_wool",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_brown_wool",
-					"sides#yuushya:block_/decorative_wool/decorative_brown_wool",
+					"couch#yuushya:block_/decorative_wool/decorative_brown_wool_couch", "sides#yuushya:block_/decorative_wool/decorative_brown_wool",
 					"top#yuushya:block_/decorative_wool/decorative_brown_wool"]}
 		},
 
@@ -569,7 +570,7 @@
 				"value":"yuushya:block_/decorative_wool/decorative_cyan_wool",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_cyan_wool",
-					"sides#yuushya:block_/decorative_wool/decorative_cyan_wool",
+					"couch#yuushya:block_/decorative_wool/decorative_cyan_wool_couch", "sides#yuushya:block_/decorative_wool/decorative_cyan_wool",
 					"top#yuushya:block_/decorative_wool/decorative_cyan_wool"]}
 		},
 
@@ -580,7 +581,7 @@
 				"value":"yuushya:block_/decorative_wool/decorative_gray_wool",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_gray_wool",
-					"sides#yuushya:block_/decorative_wool/decorative_gray_wool",
+					"couch#yuushya:block_/decorative_wool/decorative_gray_wool_couch", "sides#yuushya:block_/decorative_wool/decorative_gray_wool",
 					"top#yuushya:block_/decorative_wool/decorative_gray_wool"]}
 		},
 
@@ -591,7 +592,7 @@
 				"value":"yuushya:block_/decorative_wool/decorative_green_wool",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_green_wool",
-					"sides#yuushya:block_/decorative_wool/decorative_green_wool",
+					"couch#yuushya:block_/decorative_wool/decorative_green_wool_couch", "sides#yuushya:block_/decorative_wool/decorative_green_wool",
 					"top#yuushya:block_/decorative_wool/decorative_green_wool"]}
 		},
 
@@ -602,7 +603,7 @@
 				"value":"yuushya:block_/decorative_wool/decorative_light_blue_wool",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_light_blue_wool",
-					"sides#yuushya:block_/decorative_wool/decorative_light_blue_wool",
+					"couch#yuushya:block_/decorative_wool/decorative_light_blue_wool_couch", "sides#yuushya:block_/decorative_wool/decorative_light_blue_wool",
 					"top#yuushya:block_/decorative_wool/decorative_light_blue_wool"]}
 		},
 
@@ -613,7 +614,7 @@
 				"value":"yuushya:block_/decorative_wool/decorative_light_gray_wool",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_light_gray_wool",
-					"sides#yuushya:block_/decorative_wool/decorative_light_gray_wool",
+					"couch#yuushya:block_/decorative_wool/decorative_light_gray_wool_couch", "sides#yuushya:block_/decorative_wool/decorative_light_gray_wool",
 					"top#yuushya:block_/decorative_wool/decorative_light_gray_wool"]}
 		},
 
@@ -624,7 +625,7 @@
 				"value":"yuushya:block_/decorative_wool/decorative_lime_wool",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_lime_wool",
-					"sides#yuushya:block_/decorative_wool/decorative_lime_wool",
+					"couch#yuushya:block_/decorative_wool/decorative_lime_wool_couch", "sides#yuushya:block_/decorative_wool/decorative_lime_wool",
 					"top#yuushya:block_/decorative_wool/decorative_lime_wool"]}
 		},
 
@@ -635,7 +636,7 @@
 				"value":"yuushya:block_/decorative_wool/decorative_magenta_wool",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_magenta_wool",
-					"sides#yuushya:block_/decorative_wool/decorative_magenta_wool",
+					"couch#yuushya:block_/decorative_wool/decorative_magenta_wool_couch", "sides#yuushya:block_/decorative_wool/decorative_magenta_wool",
 					"top#yuushya:block_/decorative_wool/decorative_magenta_wool"]}
 		},
 
@@ -646,7 +647,7 @@
 				"value":"yuushya:block_/decorative_wool/decorative_orange_wool",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_orange_wool",
-					"sides#yuushya:block_/decorative_wool/decorative_orange_wool",
+					"couch#yuushya:block_/decorative_wool/decorative_orange_wool_couch", "sides#yuushya:block_/decorative_wool/decorative_orange_wool",
 					"top#yuushya:block_/decorative_wool/decorative_orange_wool"]}
 		},
 
@@ -657,7 +658,7 @@
 				"value":"yuushya:block_/decorative_wool/decorative_pink_wool",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_pink_wool",
-					"sides#yuushya:block_/decorative_wool/decorative_pink_wool",
+					"couch#yuushya:block_/decorative_wool/decorative_pink_wool_couch", "sides#yuushya:block_/decorative_wool/decorative_pink_wool",
 					"top#yuushya:block_/decorative_wool/decorative_pink_wool"]}
 		},
 
@@ -668,7 +669,7 @@
 				"value":"yuushya:block_/decorative_wool/decorative_purple_wool",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_purple_wool",
-					"sides#yuushya:block_/decorative_wool/decorative_purple_wool",
+					"couch#yuushya:block_/decorative_wool/decorative_purple_wool_couch", "sides#yuushya:block_/decorative_wool/decorative_purple_wool",
 					"top#yuushya:block_/decorative_wool/decorative_purple_wool"]}
 		},
 
@@ -679,7 +680,7 @@
 				"value":"yuushya:block_/decorative_wool/decorative_red_wool",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_red_wool",
-					"sides#yuushya:block_/decorative_wool/decorative_red_wool",
+					"couch#yuushya:block_/decorative_wool/decorative_red_wool_couch", "sides#yuushya:block_/decorative_wool/decorative_red_wool",
 					"top#yuushya:block_/decorative_wool/decorative_red_wool"]}
 		},
 
@@ -690,7 +691,7 @@
 				"value":"yuushya:block_/decorative_wool/decorative_white_wool",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_white_wool",
-					"sides#yuushya:block_/decorative_wool/decorative_white_wool",
+					"couch#yuushya:block_/decorative_wool/decorative_white_wool_couch", "sides#yuushya:block_/decorative_wool/decorative_white_wool",
 					"top#yuushya:block_/decorative_wool/decorative_white_wool"]}
 		},
 
@@ -701,14 +702,191 @@
 				"value":"yuushya:block_/decorative_wool/decorative_yellow_wool",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_yellow_wool",
-					"sides#yuushya:block_/decorative_wool/decorative_yellow_wool",
+					"couch#yuushya:block_/decorative_wool/decorative_yellow_wool_couch", "sides#yuushya:block_/decorative_wool/decorative_yellow_wool",
 					"top#yuushya:block_/decorative_wool/decorative_yellow_wool"]}
+		},
+
+		{
+			"class_type": "block","properties": {"sound": "wool" }, "name": "decorative_black_wool_plain",
+			"texture": {
+
+				"value":"yuushya:block_/decorative_wool/decorative_black_wool_plain",
+				"set":  [
+					"all#yuushya:block_/decorative_wool/decorative_black_wool_plain",
+					"sides#yuushya:block_/decorative_wool/decorative_black_wool_plain",
+					"couch#yuushya:block_/decorative_wool/decorative_black_wool_couch",
+					"top#yuushya:block_/decorative_wool/decorative_black_wool_plain"]}
+		},
+
+		{
+			"class_type": "block","properties": {"sound": "wool" }, "name": "decorative_blue_wool_plain",
+			"texture": {
+
+				"value":"yuushya:block_/decorative_wool/decorative_blue_wool_plain",
+				"set":  [
+					"all#yuushya:block_/decorative_wool/decorative_blue_wool_plain",
+					"couch#yuushya:block_/decorative_wool/decorative_blue_wool_couch", "sides#yuushya:block_/decorative_wool/decorative_blue_wool_plain",
+					"top#yuushya:block_/decorative_wool/decorative_blue_wool_plain"]}
+		},
+
+		{
+			"class_type": "block","properties": {"sound": "wool" }, "name": "decorative_brown_wool_plain",
+			"texture": {
+
+				"value":"yuushya:block_/decorative_wool/decorative_brown_wool_plain",
+				"set":  [
+					"all#yuushya:block_/decorative_wool/decorative_brown_wool_plain",
+					"couch#yuushya:block_/decorative_wool/decorative_brown_wool_couch", "sides#yuushya:block_/decorative_wool/decorative_brown_wool_plain",
+					"top#yuushya:block_/decorative_wool/decorative_brown_wool_plain"]}
+		},
+
+		{
+			"class_type": "block","properties": {"sound": "wool" }, "name": "decorative_cyan_wool_plain",
+			"texture": {
+
+				"value":"yuushya:block_/decorative_wool/decorative_cyan_wool_plain",
+				"set":  [
+					"all#yuushya:block_/decorative_wool/decorative_cyan_wool_plain",
+					"couch#yuushya:block_/decorative_wool/decorative_cyan_wool_couch", "sides#yuushya:block_/decorative_wool/decorative_cyan_wool_plain",
+					"top#yuushya:block_/decorative_wool/decorative_cyan_wool_plain"]}
+		},
+
+		{
+			"class_type": "block","properties": {"sound": "wool" }, "name": "decorative_gray_wool_plain",
+			"texture": {
+
+				"value":"yuushya:block_/decorative_wool/decorative_gray_wool_plain",
+				"set":  [
+					"all#yuushya:block_/decorative_wool/decorative_gray_wool_plain",
+					"couch#yuushya:block_/decorative_wool/decorative_gray_wool_couch", "sides#yuushya:block_/decorative_wool/decorative_gray_wool_plain",
+					"top#yuushya:block_/decorative_wool/decorative_gray_wool_plain"]}
+		},
+
+		{
+			"class_type": "block","properties": {"sound": "wool" }, "name": "decorative_green_wool_plain",
+			"texture": {
+
+				"value":"yuushya:block_/decorative_wool/decorative_green_wool_plain",
+				"set":  [
+					"all#yuushya:block_/decorative_wool/decorative_green_wool_plain",
+					"couch#yuushya:block_/decorative_wool/decorative_green_wool_couch", "sides#yuushya:block_/decorative_wool/decorative_green_wool_plain",
+					"top#yuushya:block_/decorative_wool/decorative_green_wool_plain"]}
+		},
+
+		{
+			"class_type": "block","properties": {"sound": "wool" }, "name": "decorative_light_blue_wool_plain",
+			"texture": {
+
+				"value":"yuushya:block_/decorative_wool/decorative_light_blue_wool_plain",
+				"set":  [
+					"all#yuushya:block_/decorative_wool/decorative_light_blue_wool_plain",
+					"couch#yuushya:block_/decorative_wool/decorative_light_blue_wool_couch", "sides#yuushya:block_/decorative_wool/decorative_light_blue_wool_plain",
+					"top#yuushya:block_/decorative_wool/decorative_light_blue_wool_plain"]}
+		},
+
+		{
+			"class_type": "block","properties": {"sound": "wool" }, "name": "decorative_light_gray_wool_plain",
+			"texture": {
+
+				"value":"yuushya:block_/decorative_wool/decorative_light_gray_wool_plain",
+				"set":  [
+					"all#yuushya:block_/decorative_wool/decorative_light_gray_wool_plain",
+					"couch#yuushya:block_/decorative_wool/decorative_light_gray_wool_couch", "sides#yuushya:block_/decorative_wool/decorative_light_gray_wool_plain",
+					"top#yuushya:block_/decorative_wool/decorative_light_gray_wool_plain"]}
+		},
+
+		{
+			"class_type": "block","properties": {"sound": "wool" }, "name": "decorative_lime_wool_plain",
+			"texture": {
+
+				"value":"yuushya:block_/decorative_wool/decorative_lime_wool_plain",
+				"set":  [
+					"all#yuushya:block_/decorative_wool/decorative_lime_wool_plain",
+					"couch#yuushya:block_/decorative_wool/decorative_lime_wool_couch", "sides#yuushya:block_/decorative_wool/decorative_lime_wool_plain",
+					"top#yuushya:block_/decorative_wool/decorative_lime_wool_plain"]}
+		},
+
+		{
+			"class_type": "block","properties": {"sound": "wool" }, "name": "decorative_magenta_wool_plain",
+			"texture": {
+
+				"value":"yuushya:block_/decorative_wool/decorative_magenta_wool_plain",
+				"set":  [
+					"all#yuushya:block_/decorative_wool/decorative_magenta_wool_plain",
+					"couch#yuushya:block_/decorative_wool/decorative_magenta_wool_couch", "sides#yuushya:block_/decorative_wool/decorative_magenta_wool_plain",
+					"top#yuushya:block_/decorative_wool/decorative_magenta_wool_plain"]}
+		},
+
+		{
+			"class_type": "block","properties": {"sound": "wool" }, "name": "decorative_orange_wool_plain",
+			"texture": {
+
+				"value":"yuushya:block_/decorative_wool/decorative_orange_wool_plain",
+				"set":  [
+					"all#yuushya:block_/decorative_wool/decorative_orange_wool_plain",
+					"couch#yuushya:block_/decorative_wool/decorative_orange_wool_couch", "sides#yuushya:block_/decorative_wool/decorative_orange_wool_plain",
+					"top#yuushya:block_/decorative_wool/decorative_orange_wool_plain"]}
+		},
+
+		{
+			"class_type": "block","properties": {"sound": "wool" }, "name": "decorative_pink_wool_plain",
+			"texture": {
+
+				"value":"yuushya:block_/decorative_wool/decorative_pink_wool_plain",
+				"set":  [
+					"all#yuushya:block_/decorative_wool/decorative_pink_wool_plain",
+					"couch#yuushya:block_/decorative_wool/decorative_pink_wool_couch", "sides#yuushya:block_/decorative_wool/decorative_pink_wool_plain",
+					"top#yuushya:block_/decorative_wool/decorative_pink_wool_plain"]}
+		},
+
+		{
+			"class_type": "block","properties": {"sound": "wool" }, "name": "decorative_purple_wool_plain",
+			"texture": {
+
+				"value":"yuushya:block_/decorative_wool/decorative_purple_wool_plain",
+				"set":  [
+					"all#yuushya:block_/decorative_wool/decorative_purple_wool_plain",
+					"couch#yuushya:block_/decorative_wool/decorative_purple_wool_couch", "sides#yuushya:block_/decorative_wool/decorative_purple_wool_plain",
+					"top#yuushya:block_/decorative_wool/decorative_purple_wool_plain"]}
+		},
+
+		{
+			"class_type": "block","properties": {"sound": "wool" }, "name": "decorative_red_wool_plain",
+			"texture": {
+
+				"value":"yuushya:block_/decorative_wool/decorative_red_wool_plain",
+				"set":  [
+					"all#yuushya:block_/decorative_wool/decorative_red_wool_plain",
+					"couch#yuushya:block_/decorative_wool/decorative_red_wool_couch", "sides#yuushya:block_/decorative_wool/decorative_red_wool_plain",
+					"top#yuushya:block_/decorative_wool/decorative_red_wool_plain"]}
+		},
+
+		{
+			"class_type": "block","properties": {"sound": "wool" }, "name": "decorative_white_wool_plain",
+			"texture": {
+
+				"value":"yuushya:block_/decorative_wool/decorative_white_wool_plain",
+				"set":  [
+					"all#yuushya:block_/decorative_wool/decorative_white_wool_plain",
+					"couch#yuushya:block_/decorative_wool/decorative_white_wool_couch", "sides#yuushya:block_/decorative_wool/decorative_white_wool_plain",
+					"top#yuushya:block_/decorative_wool/decorative_white_wool_plain"]}
+		},
+
+		{
+			"class_type": "block","properties": {"sound": "wool" }, "name": "decorative_yellow_wool_plain",
+			"texture": {
+
+				"value":"yuushya:block_/decorative_wool/decorative_yellow_wool_plain",
+				"set":  [
+					"all#yuushya:block_/decorative_wool/decorative_yellow_wool_plain",
+					"couch#yuushya:block_/decorative_wool/decorative_yellow_wool_couch", "sides#yuushya:block_/decorative_wool/decorative_yellow_wool_plain",
+					"top#yuushya:block_/decorative_wool/decorative_yellow_wool_plain"]}
 		},
 
 		{
 			"class_type": "block", "name": "market_block_blue",
 			"texture": {
-				"type": "decorative_wool",
+
 				"value":"yuushya:block_/decorative_wool/market_block_blue",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/market_block_blue",
@@ -719,7 +897,7 @@
 		{
 			"class_type": "block", "name": "market_block_brown",
 			"texture": {
-				"type": "decorative_wool",
+
 				"value":"yuushya:block_/decorative_wool/market_block_brown",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/market_block_brown",
@@ -730,7 +908,7 @@
 		{
 			"class_type": "block", "name": "market_block_green",
 			"texture": {
-				"type": "decorative_wool",
+
 				"value":"yuushya:block_/decorative_wool/market_block_green",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/market_block_green",
@@ -741,7 +919,7 @@
 		{
 			"class_type": "block", "name": "market_block_light_gray",
 			"texture": {
-				"type": "decorative_wool",
+
 				"value":"yuushya:block_/decorative_wool/market_block_light_gray",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/market_block_light_gray",
@@ -752,7 +930,7 @@
 		{
 			"class_type": "block", "name": "market_block_mixed",
 			"texture": {
-				"type": "decorative_wool",
+
 				"value":"yuushya:block_/decorative_wool/market_block_mixed",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/market_block_mixed",
@@ -763,7 +941,7 @@
 		{
 			"class_type": "block", "name": "market_block_purple",
 			"texture": {
-				"type": "decorative_wool",
+
 				"value":"yuushya:block_/decorative_wool/market_block_purple",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/market_block_purple",
@@ -774,7 +952,7 @@
 		{
 			"class_type": "block", "name": "market_block_red",
 			"texture": {
-				"type": "decorative_wool",
+
 				"value":"yuushya:block_/decorative_wool/market_block_red",
 				"set":  [
 					"all#yuushya:block_/decorative_wool/market_block_red",
@@ -2115,7 +2293,6 @@
 				"set": ["all#yuushya:block_/template/spruce_planks_all","sides#yuushya:block_/template/spruce_planks_sides","top#yuushya:block_/template/spruce_planks_top"]}
 		},
 
-
 		{
 			"class_type": "remain", "name": "minecraft:black_wool",
 			"texture": {
@@ -2123,7 +2300,7 @@
 				"value":"yuushya:block_/template/black_wool_sides",
 				"set":  [
 					"all#yuushya:block_/template/black_wool_sides",
-					"sides#yuushya:block_/template/black_wool_sides",
+					"couch#yuushya:0extra_building_block/wool/black_couch", "sides#yuushya:block_/template/black_wool_sides",
 					"top#yuushya:block_/template/black_wool_top"]}
 		},
 
@@ -2134,7 +2311,7 @@
 				"value":"yuushya:block_/template/blue_wool_sides",
 				"set":  [
 					"all#yuushya:block_/template/blue_wool_sides",
-					"sides#yuushya:block_/template/blue_wool_sides",
+					"couch#yuushya:0extra_building_block/wool/blue_couch", "sides#yuushya:block_/template/blue_wool_sides",
 					"top#yuushya:block_/template/blue_wool_top"]}
 		},
 
@@ -2145,7 +2322,7 @@
 				"value":"yuushya:block_/template/brown_wool_sides",
 				"set":  [
 					"all#yuushya:block_/template/brown_wool_sides",
-					"sides#yuushya:block_/template/brown_wool_sides",
+					"couch#yuushya:0extra_building_block/wool/brown_couch", "sides#yuushya:block_/template/brown_wool_sides",
 					"top#yuushya:block_/template/brown_wool_top"]}
 		},
 
@@ -2156,7 +2333,7 @@
 				"value":"yuushya:block_/template/cyan_wool_sides",
 				"set":  [
 					"all#yuushya:block_/template/cyan_wool_sides",
-					"sides#yuushya:block_/template/cyan_wool_sides",
+					"couch#yuushya:0extra_building_block/wool/cyan_couch", "sides#yuushya:block_/template/cyan_wool_sides",
 					"top#yuushya:block_/template/cyan_wool_top"]}
 		},
 
@@ -2167,7 +2344,7 @@
 				"value":"yuushya:block_/template/gray_wool_sides",
 				"set":  [
 					"all#yuushya:block_/template/gray_wool_sides",
-					"sides#yuushya:block_/template/gray_wool_sides",
+					"couch#yuushya:0extra_building_block/wool/gray_couch", "sides#yuushya:block_/template/gray_wool_sides",
 					"top#yuushya:block_/template/gray_wool_top"]}
 		},
 
@@ -2178,7 +2355,7 @@
 				"value":"yuushya:block_/template/green_wool_sides",
 				"set":  [
 					"all#yuushya:block_/template/green_wool_sides",
-					"sides#yuushya:block_/template/green_wool_sides",
+					"couch#yuushya:0extra_building_block/wool/green_couch", "sides#yuushya:block_/template/green_wool_sides",
 					"top#yuushya:block_/template/green_wool_top"]}
 		},
 
@@ -2189,7 +2366,7 @@
 				"value":"yuushya:block_/template/light_blue_wool_sides",
 				"set":  [
 					"all#yuushya:block_/template/light_blue_wool_sides",
-					"sides#yuushya:block_/template/light_blue_wool_sides",
+					"couch#yuushya:0extra_building_block/wool/light_blue_couch", "sides#yuushya:block_/template/light_blue_wool_sides",
 					"top#yuushya:block_/template/light_blue_wool_top"]}
 		},
 
@@ -2200,7 +2377,7 @@
 				"value":"yuushya:block_/template/light_gray_wool_sides",
 				"set":  [
 					"all#yuushya:block_/template/light_gray_wool_sides",
-					"sides#yuushya:block_/template/light_gray_wool_sides",
+					"couch#yuushya:0extra_building_block/wool/light_gray_couch", "sides#yuushya:block_/template/light_gray_wool_sides",
 					"top#yuushya:block_/template/light_gray_wool_top"]}
 		},
 
@@ -2211,7 +2388,7 @@
 				"value":"yuushya:block_/template/lime_wool_sides",
 				"set":  [
 					"all#yuushya:block_/template/lime_wool_sides",
-					"sides#yuushya:block_/template/lime_wool_sides",
+					"couch#yuushya:0extra_building_block/wool/lime_couch", "sides#yuushya:block_/template/lime_wool_sides",
 					"top#yuushya:block_/template/lime_wool_top"]}
 		},
 
@@ -2222,7 +2399,7 @@
 				"value":"yuushya:block_/template/magenta_wool_sides",
 				"set":  [
 					"all#yuushya:block_/template/magenta_wool_sides",
-					"sides#yuushya:block_/template/magenta_wool_sides",
+					"couch#yuushya:0extra_building_block/wool/magenta_couch", "sides#yuushya:block_/template/magenta_wool_sides",
 					"top#yuushya:block_/template/magenta_wool_top"]}
 		},
 
@@ -2233,7 +2410,7 @@
 				"value":"yuushya:block_/template/orange_wool_sides",
 				"set":  [
 					"all#yuushya:block_/template/orange_wool_sides",
-					"sides#yuushya:block_/template/orange_wool_sides",
+					"couch#yuushya:0extra_building_block/wool/orange_couch", "sides#yuushya:block_/template/orange_wool_sides",
 					"top#yuushya:block_/template/orange_wool_top"]}
 		},
 
@@ -2244,7 +2421,7 @@
 				"value":"yuushya:block_/template/pink_wool_sides",
 				"set":  [
 					"all#yuushya:block_/template/pink_wool_sides",
-					"sides#yuushya:block_/template/pink_wool_sides",
+					"couch#yuushya:0extra_building_block/wool/pink_couch", "sides#yuushya:block_/template/pink_wool_sides",
 					"top#yuushya:block_/template/pink_wool_top"]}
 		},
 
@@ -2255,7 +2432,7 @@
 				"value":"yuushya:block_/template/purple_wool_sides",
 				"set":  [
 					"all#yuushya:block_/template/purple_wool_sides",
-					"sides#yuushya:block_/template/purple_wool_sides",
+					"couch#yuushya:0extra_building_block/wool/purple_couch", "sides#yuushya:block_/template/purple_wool_sides",
 					"top#yuushya:block_/template/purple_wool_top"]}
 		},
 
@@ -2266,7 +2443,7 @@
 				"value":"yuushya:block_/template/red_wool_sides",
 				"set":  [
 					"all#yuushya:block_/template/red_wool_sides",
-					"sides#yuushya:block_/template/red_wool_sides",
+					"couch#yuushya:0extra_building_block/wool/red_couch", "sides#yuushya:block_/template/red_wool_sides",
 					"top#yuushya:block_/template/red_wool_top"]}
 		},
 
@@ -2277,7 +2454,7 @@
 				"value":"yuushya:block_/template/white_wool_sides",
 				"set":  [
 					"all#yuushya:block_/template/white_wool_sides",
-					"sides#yuushya:block_/template/white_wool_sides",
+					"couch#yuushya:0extra_building_block/wool/white_couch", "sides#yuushya:block_/template/white_wool_sides",
 					"top#yuushya:block_/template/white_wool_top"]}
 		},
 
@@ -2288,7 +2465,7 @@
 				"value":"yuushya:block_/template/yellow_wool_sides",
 				"set":  [
 					"all#yuushya:block_/template/yellow_wool_sides",
-					"sides#yuushya:block_/template/yellow_wool_sides",
+					"couch#yuushya:0extra_building_block/wool/yellow_couch", "sides#yuushya:block_/template/yellow_wool_sides",
 					"top#yuushya:block_/template/yellow_wool_top"]}
 		},
 
@@ -2968,7 +3145,7 @@
 			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": {"collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
-				"slots": ["all", "sides", "top"],
+				"slots": ["all", "sides", "top", "couch"],
 				"for_class": ["raw_wood", "wool", "decorative_wool"]
 			}
 		},
@@ -7686,6 +7863,27 @@
 		},
 
 		{
+			"class_type": "FixedBlock",
+			"name": "crate",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_infrastructure",
+			"blockstate": { "forms": [["yuushya:extra_building_material/crate"]]}
+		},
+
+		{
+			"class_type": "FixedBlock",
+			"name": "crate_horizontal",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_infrastructure",
+			"blockstate": { "forms": [["yuushya:extra_building_material/crate_horizontal"]]}
+		},
+
+		{
+			"class_type": "FixedBlock",
+			"name": "crate_vertical",
+			"auto_generated": { "recipe": true }, "item_group": "yuushya_infrastructure",
+			"blockstate": { "forms": [["yuushya:extra_building_material/crate_vertical"]]}
+		},
+
+		{
 			"class_type": "DecoBlock",
 			"name": "exit_sign",
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_infrastructure",
@@ -10487,11 +10685,13 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "refrigerator",
+			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_electrical_appliance",
 			"blockstate": {
 				"kit": "tri_part" ,
 				"forms": [
-					["yuushya:extra_building_material/refrigerator_"]
+					["yuushya:extra_building_material/refrigerator_"],
+					["yuushya:extra_building_material/refrigerator_open"]
 				]
 			}
 		},
@@ -10499,11 +10699,13 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "decorated_refrigerator",
+			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "yuushya_electrical_appliance",
 			"blockstate": {
 				"kit": "tri_part" ,
 				"forms": [
-					["yuushya:extra_building_material/refrigerator_decorated_"]
+					["yuushya:extra_building_material/refrigerator_decorated_"],
+					["yuushya:extra_building_material/refrigerator_decorated_open"]
 				]
 			}
 		},
