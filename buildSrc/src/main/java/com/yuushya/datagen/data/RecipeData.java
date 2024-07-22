@@ -2,7 +2,9 @@ package com.yuushya.datagen.data;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
+import com.yuushya.datagen.ConfigReader;
 import com.yuushya.datagen.utils.ResourceLocation;
+import com.yuushya.registries.YuushyaRegistryData;
 
 import static com.yuushya.datagen.utils.Utils.MOD_ID;
 
@@ -21,27 +23,35 @@ public class RecipeData {
             default -> 4;
         };
     }
-    public static ResourceLocation getBlueprint(String CreativeModeTab){
-        return switch (CreativeModeTab) {
-            case "yuushya_extrablocks" -> new ResourceLocation(MOD_ID,"block_blueprint");
-            case "yuushya_wood" -> new ResourceLocation(MOD_ID,"wood_blueprint");
-            case "yuushya_stone" -> new ResourceLocation(MOD_ID,"stone_blueprint");
-            case "yuushya_fabric" -> new ResourceLocation(MOD_ID,"fabric_blueprint");
-            case "yuushya_furniture" -> new ResourceLocation(MOD_ID,"furniture_blueprint");
-            case "yuushya_lighting" -> new ResourceLocation(MOD_ID,"lighting_blueprint");
-            case "yuushya_electrical_appliance" -> new ResourceLocation(MOD_ID,"lighting_blueprint");
-            case "yuushya_catering" -> new ResourceLocation(MOD_ID,"catering_blueprint");
-            case "yuushya_window" -> new ResourceLocation(MOD_ID,"window_blueprint");
-            case "yuushya_store" -> new ResourceLocation(MOD_ID,"store_blueprint");
-            case "yuushya_signs" -> new ResourceLocation(MOD_ID,"sign_blueprint");
-            case "yuushya_living_being" -> new ResourceLocation(MOD_ID,"living_being_blueprint");
-            case "yuushya_extrashapes" -> new ResourceLocation(MOD_ID,"extra_shapes_blueprint");
-            case "yuushya_infrastructure" -> new ResourceLocation(MOD_ID,"facility_blueprint");
-            case "yuushya_traffic" -> new ResourceLocation(MOD_ID,"traffic_blueprint");
-            case "yuushya_template" -> new ResourceLocation(MOD_ID,"pictor");
-            //case "yuushya_structure" -> new ResourceLocation(MOD_ID,"extra_shapes_blueprint");
-            default -> new ResourceLocation(MOD_ID,"extra_shapes_blueprint");
-        };
+    public static YuushyaRegistryData.ItemGroup defaultItemGroup = new YuushyaRegistryData.ItemGroup(){{
+        this.blueprint = "minecraft:diamond";
+    }};
+    public static ResourceLocation getBlueprint(String creativeModeTab){
+        if(creativeModeTab.equals("yuushya_template")) return new ResourceLocation(MOD_ID,"pictor");
+        String blueprint = ConfigReader.YuushyaRawItemGroupMap.getOrDefault(creativeModeTab,defaultItemGroup).blueprint;
+        if(blueprint==null) return new ResourceLocation("minecraft","diamond");
+        if(blueprint.contains(":")) return ResourceLocation.parse(blueprint);
+        return new ResourceLocation(MOD_ID,blueprint);
+//        return switch (creativeModeTab) {
+//            case "yuushya_extrablocks" -> new ResourceLocation(MOD_ID,"block_blueprint");
+//            case "yuushya_wood" -> new ResourceLocation(MOD_ID,"wood_blueprint");
+//            case "yuushya_stone" -> new ResourceLocation(MOD_ID,"stone_blueprint");
+//            case "yuushya_fabric" -> new ResourceLocation(MOD_ID,"fabric_blueprint");
+//            case "yuushya_furniture" -> new ResourceLocation(MOD_ID,"furniture_blueprint");
+//            case "yuushya_lighting" -> new ResourceLocation(MOD_ID,"lighting_blueprint");
+//            case "yuushya_electrical_appliance" -> new ResourceLocation(MOD_ID,"lighting_blueprint");
+//            case "yuushya_catering" -> new ResourceLocation(MOD_ID,"catering_blueprint");
+//            case "yuushya_window" -> new ResourceLocation(MOD_ID,"window_blueprint");
+//            case "yuushya_store" -> new ResourceLocation(MOD_ID,"store_blueprint");
+//            case "yuushya_signs" -> new ResourceLocation(MOD_ID,"sign_blueprint");
+//            case "yuushya_living_being" -> new ResourceLocation(MOD_ID,"living_being_blueprint");
+//            case "yuushya_extrashapes" -> new ResourceLocation(MOD_ID,"extra_shapes_blueprint");
+//            case "yuushya_infrastructure" -> new ResourceLocation(MOD_ID,"facility_blueprint");
+//            case "yuushya_traffic" -> new ResourceLocation(MOD_ID,"traffic_blueprint");
+//            case "yuushya_template" -> new ResourceLocation(MOD_ID,"pictor");
+//            //case "yuushya_structure" -> new ResourceLocation(MOD_ID,"extra_shapes_blueprint");
+//            default -> new ResourceLocation(MOD_ID,"extra_shapes_blueprint");
+//        };
     }
 //    private static final List<JsonElement> tempJsons=new ArrayList<>();
 //    private static final Consumer<FinishedRecipe> getJsonElementToList=(finishedRecipe)->{

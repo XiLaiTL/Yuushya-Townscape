@@ -30,6 +30,8 @@ public class ConfigReader {
     public final Map<String,YuushyaRegistryData.Block> YuushyaRawBlockMap=new LinkedHashMap<>();
     public final Map<String,YuushyaRegistryData.Item> YuushyaRawItemMap=new LinkedHashMap<>();
     public final Map<String,YuushyaRegistryData.Particle> YuushyaRawParticleMap=new LinkedHashMap<>();
+    public static final Map<String,YuushyaRegistryData.ItemGroup> YuushyaRawItemGroupMap = new LinkedHashMap<>();
+
     private YuushyaRegistryData YuushyaData;
 
     public static final Path CONFIG_FILE_PATH = Path.of("../config/com.yuushya/register.json");
@@ -197,6 +199,7 @@ public class ConfigReader {
             if (from.block!=null) from.block.forEach((e)->YuushyaRawBlockMap.put(e.name,e));
             if (from.item!=null) from.item.forEach((e)->YuushyaRawItemMap.put(e.name,e));
             if (from.particle!=null) from.particle.forEach((e)->YuushyaRawParticleMap.put(e.name,e));
+            if (from.itemGroup!= null) from.itemGroup.forEach((e)->YuushyaRawItemGroupMap.put(e.name,e));
         }
     }
     private static final Map<String,JsonObject> BlockClass=new HashMap<>();

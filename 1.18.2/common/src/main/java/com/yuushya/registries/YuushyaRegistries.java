@@ -44,6 +44,9 @@ public class YuushyaRegistries {
     public static final List<Runnable> RegisterList = new ArrayList<>();
 
     public static void registerRegistries(){
+        for(YuushyaRegistryData.ItemGroup itemGroup: YuushyaRawItemGroupMap.values()){
+            YuushyaCreativeModeTab.register(itemGroup.name,itemGroup.icon);
+        }
         for (YuushyaRegistryData.Item item: YuushyaRawItemMap.values()){
             RegisterList.add(()->ITEMS.register(item.name,()-> YuushyaItemFactory.create(item))) ;
         }
