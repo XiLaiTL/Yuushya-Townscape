@@ -179,7 +179,7 @@ public class YuushyaBlockFactory{
         @Override
         public void playerWillDestroy(Level level, BlockPos pos, BlockState state, Player player) {
             if(finalKitType!=null) finalKitType.playerWillDestroy(level, pos, state, player);
-            else super.playerWillDestroy(level, pos, state, player);
+            super.playerWillDestroy(level, pos, state, player);
         }
 
         @Override

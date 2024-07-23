@@ -11,11 +11,13 @@ tasks.register('checkImageSize', CheckImageSizeTask){
     it.path = projectDir.toPath().resolve("./src/main/resources/")
 }
 
+def versions = ['1.16.5', '1.18.2', '1.19.2', '1.19.4', '1.20.1', '1.20.4']
+
 tasks.register('copyResources') {
-    dependsOn(['1.16.5', '1.18.2', '1.19.2', '1.19.4', '1.20.1'].collect {"copyResources-${it}"})
+    dependsOn(versions.collect {"copyResources-${it}"})
 }
 
-['1.16.5','1.18.2','1.19.2','1.19.4','1.20.1'].forEach {ver->
+versions.forEach {ver->
     tasks.register("copyResources-${ver}",Copy){
         dependsOn(processResources)
         from("./build/resources/main/")

@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[45,)"
+#issueTrackerURL = ""
+license = "GNU 3.0"
+
+[[mods]]
+modId = "yuushya"
+version = "${mod_version}"
+displayName = "${mod_name}"
+logoFile = "pack.png"
+displayURL = "${mod_homepage}"
+credits = "${mod_credits}"
+authors = "${mod_authors}"
+description = '''
+    ${mod_description}
+    '''
+#logoFile = ""
+
+[[dependencies.yuushya]]
+modId = "forge"
+mandatory = true
+versionRange = "[45,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.yuushya]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.19.4,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.yuushya]]
+modId = "architectury"
+mandatory = true
+versionRange = "[8.1.79,)"
+ordering = "AFTER"
+side = "BOTH"

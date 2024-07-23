@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "mixin": [
+    "yuushya.mixins.json",
+    "yuushya-common.mixins.json"
+  ],
+  "quilt_loader": {
+    "group": "${group}",
+    "id": "yuushya",
+    "version": "${mod_version}",
+    "name": "${mod_name}",
+    "description": "${mod_description}",
+    "authors": [
+      "${mod_authors}"
+    ],
+    "contact": {
+      "homepage": "${mod_homepage}",
+      "sources": "${mod_source}"
+    },
+    "license": "${mod_licence}",
+    "icon": "pack.png",
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "environment": "*",
+    "entrypoints": {
+      "init": [
+        "com.yuushya.quilt.YuushyaQuilt"
+      ],
+      "client": [
+        "com.yuushya.quilt.YuushyaClientQuilt"
+      ]
+    },
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "version": "*"
+      },
+      {
+        "id": "quilt_base",
+        "version": "*"
+      },
+      {
+        "id": "minecraft",
+        "version": ">=1.19.4"
+      },
+      {
+        "id": "architectury",
+        "version": ">=8.1.79"
+      }
+    ]
+  }
+}
