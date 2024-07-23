@@ -1,33 +1,62 @@
 plugins {
-    id "architectury-plugin" version "3.4-SNAPSHOT"
-    id "dev.architectury.loom" version "1.1-SNAPSHOT" apply false
+    id 'dev.architectury.loom' version '1.6-SNAPSHOT' apply false
+    id 'architectury-plugin' version '3.4-SNAPSHOT'
+    id 'com.github.johnrengelman.shadow' version '8.1.1' apply false
 }
 
 architectury {
     minecraft = project.minecraft_version
 }
 
+allprojects {
+    group = rootProject.maven_group
+    version = rootProject.mod_version
+    archivesBaseName = rootProject.archives_base_name
+}
+
 subprojects {
-    apply plugin: "dev.architectury.loom"
+    apply plugin: 'dev.architectury.loom'
+    apply plugin: 'architectury-plugin'
+    apply plugin: 'maven-publish'
+
+//    base {
+//        // Set up a suffixed format for the mod jar names, e.g. `example-fabric`.
+//        archivesName = "$rootProject.archives_base_name-$project.name"
+//    }
+
+    repositories {
+        // Add repositories to retrieve artifacts from in here.
+        // You should only use this when depending on other mods because
+        // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
+        // See https://docs.gradle.org/current/userguide/declaring_repositories.html
+        // for more information about repositories.
+        maven { url = 'https://maven.parchmentmc.org' }
+    }
 
     loom {
         silentMojangMappingsLicense()
     }
 
-    repositories {
-        maven { url = 'https://maven.parchmentmc.org' }
-    }
-
     dependencies {
-        minecraft "com.mojang:minecraft:${project.minecraft_version}"
-        // The following line declares the mojmap mappings, you may use other mappings as well
+        minecraft "net.minecraft:minecraft:$project.minecraft_version"
         mappings loom.layered() {
             officialMojangMappings()
             parchment("org.parchmentmc.data:parchment-1.16.5:2022.03.06@zip")
         }
-        //mappings loom.officialMojangMappings()
-        // The following line declares the yarn mappings you may select this one as well.
-        // mappings "net.fabricmc:yarn:1.16.5+build.10:v2"
+    }
+
+    java {
+        // Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
+        // if it is present.
+        // If you remove this line, sources will not be generated.
+        withSourcesJar()
+
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    tasks.withType(JavaCompile).configureEach {
+        it.options.release = 8
     }
     def resourceTargets=["fabric.mod.json",'META-INF/mods.toml'];
     def replaceProperties = [
@@ -45,46 +74,21 @@ subprojects {
             expand replaceProperties
         }
     }
-}
+    // Configure Maven publishing.
+    publishing {
+        publications {
+            mavenJava(MavenPublication) {
+                artifactId = base.archivesName.get()
+                from components.java
+            }
+        }
 
-allprojects {
-    apply plugin: "java"
-    apply plugin: "architectury-plugin"
-    apply plugin: "maven-publish"
-
-    archivesBaseName = rootProject.archives_base_name
-    version = rootProject.mod_version
-    group = rootProject.maven_group
-
-    repositories {
-        // Add repositories to retrieve artifacts from in here.
-        // You should only use this when depending on other mods because
-        // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
-        // See https://docs.gradle.org/current/userguide/declaring_repositories.html
-        // for more information about repositories.
-    }
-
-    tasks.withType(JavaCompile) {
-        options.encoding = "UTF-8"
-
-        // The Minecraft launcher currently installs Java 8 for users, so your mod probably wants to target Java 8 too
-        // JDK 9 introduced a new way of specifying this that will make sure no newer classes or methods are used.
-        // We'll use that if it's available, but otherwise we'll use the older option.
-        def targetVersion = 8
-        if (JavaVersion.current().isJava9Compatible()) {
-            options.release = targetVersion
+        // See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
+        repositories {
+            // Add repositories to publish to here.
+            // Notice: This block does NOT have the same function as the block in the top level.
+            // The repositories here will be used for publishing your artifact, not for
+            // retrieving dependencies.
         }
     }
-
-    java {
-        withSourcesJar()
-    }
 }
-
-tasks.register("runTest"){
-    doLast {
-        println("hello")
-    }
-
-}
-

@@ -1,7 +1,6 @@
 package com.yuushya.block;
 
 
-import com.yuushya.registries.YuushyaRegistryData;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -16,45 +15,50 @@ import static com.yuushya.block.blockstate.YuushyaBlockStates.DISTANCE;
 import static com.yuushya.block.blockstate.YuushyaBlockStates.ISEND;
 import static com.yuushya.utils.YuushyaUtils.getBlockState;
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.HORIZONTAL_FACING;
+import static net.minecraft.world.level.block.state.properties.BlockStateProperties.WATERLOGGED;
 
 public class CableBlock extends YuushyaBlockFactory.BlockWithClassType {
 
-    public CableBlock(Properties properties, Integer tipLines, String classType, String autoCollision, YuushyaRegistryData.Block.Usage usage) {
-        super(properties, tipLines, classType, autoCollision, usage);
+    public CableBlock(Properties properties, Integer tipLines, String classType) {
+        super(properties, tipLines, classType);
     }
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> stateBuilder) {
-        stateBuilder.add(HORIZONTAL_FACING,ISEND,DISTANCE);
+        stateBuilder.add(HORIZONTAL_FACING,ISEND,DISTANCE,WATERLOGGED);
     }
 
     public static BlockState updateDistanceFromPost(BlockState state, LevelAccessor world, BlockPos pos){
         Direction direction=Direction.NORTH;
         int fromNW=0; int fromSE=0;
         Direction facingDirection= state.getValue(HORIZONTAL_FACING);
-        switch (facingDirection.getAxis()){
-            case Z : {
-                BlockState nblockstate=getBlockState(world.getBlockState(pos.north()),world,pos.north());
-                BlockState sblockstate=getBlockState(world.getBlockState(pos.south()),world,pos.south());
-                Direction ndirection=nblockstate.getBlock() instanceof CableBlock ?nblockstate.getValue(HORIZONTAL_FACING) :state.getValue(HORIZONTAL_FACING);
-                Direction sdirection=sblockstate.getBlock() instanceof CableBlock ?sblockstate.getValue(HORIZONTAL_FACING):state.getValue(HORIZONTAL_FACING);
+        switch (facingDirection.getAxis()) {
+            case Z:
+                BlockState nblockstate = getBlockState(world.getBlockState(pos.north()), world, pos.north());
+                BlockState sblockstate = getBlockState(world.getBlockState(pos.south()), world, pos.south());
+                Direction ndirection = nblockstate.getBlock() instanceof CableBlock ? nblockstate.getValue(HORIZONTAL_FACING) : state.getValue(HORIZONTAL_FACING);
+                Direction sdirection = sblockstate.getBlock() instanceof CableBlock ? sblockstate.getValue(HORIZONTAL_FACING) : state.getValue(HORIZONTAL_FACING);
                 fromNW = getDistanceFromPost(nblockstate, state);
                 fromSE = getDistanceFromPost(sblockstate, state);
-                if(isCablePostBlock(nblockstate)) direction=Direction.NORTH;
-                else if(isCablePostBlock(sblockstate)) direction=Direction.SOUTH;
-                else {direction = fromNW < fromSE ? ndirection : sdirection;}
-            }break;
-            case X : {
-                BlockState wblockstate=getBlockState(world.getBlockState(pos.west()),world,pos.west());
-                BlockState eblockstate=getBlockState(world.getBlockState(pos.east()),world,pos.east());
-                Direction wdirection=wblockstate.getBlock() instanceof CableBlock ?wblockstate.getValue(HORIZONTAL_FACING):state.getValue(HORIZONTAL_FACING);
-                Direction edirection=eblockstate.getBlock() instanceof CableBlock ?eblockstate.getValue(HORIZONTAL_FACING):state.getValue(HORIZONTAL_FACING);
+                if (isCablePostBlock(nblockstate)) direction = Direction.NORTH;
+                else if (isCablePostBlock(sblockstate)) direction = Direction.SOUTH;
+                else {
+                    direction = fromNW < fromSE ? ndirection : sdirection;
+                }
+                break;
+            case X:
+                BlockState wblockstate = getBlockState(world.getBlockState(pos.west()), world, pos.west());
+                BlockState eblockstate = getBlockState(world.getBlockState(pos.east()), world, pos.east());
+                Direction wdirection = wblockstate.getBlock() instanceof CableBlock ? wblockstate.getValue(HORIZONTAL_FACING) : state.getValue(HORIZONTAL_FACING);
+                Direction edirection = eblockstate.getBlock() instanceof CableBlock ? eblockstate.getValue(HORIZONTAL_FACING) : state.getValue(HORIZONTAL_FACING);
                 fromNW = getDistanceFromPost(wblockstate, state);
                 fromSE = getDistanceFromPost(eblockstate, state);
-                if(isCablePostBlock(wblockstate)) direction=Direction.WEST;
-                else if(isCablePostBlock(eblockstate)) direction=Direction.EAST;
-                else {direction = fromNW < fromSE ? wdirection : edirection;}
-            }break;
+                if (isCablePostBlock(wblockstate)) direction = Direction.WEST;
+                else if (isCablePostBlock(eblockstate)) direction = Direction.EAST;
+                else {
+                    direction = fromNW < fromSE ? wdirection : edirection;
+                }
+                break;
         }
         int distance=Math.min(fromNW,fromSE);
         boolean isend=fromNW==fromSE||Math.abs(fromNW-fromSE)==1;

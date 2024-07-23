@@ -16,37 +16,72 @@ public class YuushyaBlockStates {
     public static final EnumProperty<PositionVerticalState> YPOS=EnumProperty.create("ypos",PositionVerticalState.class);
     public static final EnumProperty<PositionHorizonState> POS_HORIZON=EnumProperty.create("pos",PositionHorizonState.class);
     public static final EnumProperty<PositionVerticalState> POS_VERTICAL=EnumProperty.create("pos",PositionVerticalState.class);
+    public static final EnumProperty<ShapeState> SHAPE=EnumProperty.create("shape",ShapeState.class);
+
     public static final IntegerProperty X = IntegerProperty.create("x",0,11);
     public static final IntegerProperty Y = IntegerProperty.create("y",0,11);
     public static final IntegerProperty Z = IntegerProperty.create("z",0,11);
-    public static final IntegerProperty FORM = IntegerProperty.create("form",0,7);
+    public static final IntegerProperty FORM8 = IntegerProperty.create("form",0,7);
+    public static final IntegerProperty FORM7 = IntegerProperty.create("form",0,6);
+
+    public static final IntegerProperty FORM6 = IntegerProperty.create("form",0,5);
+
+    public static final IntegerProperty FORM5 = IntegerProperty.create("form",0,4);
+
+    public static final IntegerProperty FORM4 = IntegerProperty.create("form",0,3);
+
+    public static final IntegerProperty FORM3 = IntegerProperty.create("form",0,2);
+
+    public static final IntegerProperty FORM2 = IntegerProperty.create("form",0,1);
+
     public static final IntegerProperty LIT = IntegerProperty.create("lit",0,15);
     public static final IntegerProperty DISTANCE = IntegerProperty.create("distance",0,15);
     public static final BooleanProperty ISEND = BooleanProperty.create("isend");
     public static final BooleanProperty ISHUB = BooleanProperty.create("ishub");
 
+    public static Property<?> forms(int n){
+        switch (n) {
+            case 2:
+                return FORM2;
+            case 3:
+                return FORM3;
+            case 4:
+                return FORM4;
+            case 5:
+                return FORM5;
+            case 6:
+                return FORM6;
+            case 7:
+                return FORM7;
+            default:
+                return FORM8;
+        }
+    }
+
     public static Property<?> toBlockStateProperty(String name){
         switch (name) {
             case "xpos":
-                return (YuushyaBlockStates.XPOS);
+                return XPOS;
             case "zpos":
-                return (YuushyaBlockStates.ZPOS);
+                return ZPOS;
             case "pos_horizon":
-                return (YuushyaBlockStates.POS_HORIZON);
+                return POS_HORIZON;
             case "pos_vertical":
-                return (YuushyaBlockStates.POS_VERTICAL);
+                return POS_VERTICAL;
             case "form":
-                return (YuushyaBlockStates.FORM);
+                return FORM8;
             case "powered":
-                return (BlockStateProperties.POWERED);
+                return BlockStateProperties.POWERED;
             case "face":
-                return (BlockStateProperties.ATTACH_FACE);
+                return BlockStateProperties.ATTACH_FACE;
             case "horizontal_facing":
-                return (BlockStateProperties.HORIZONTAL_FACING);
+                return BlockStateProperties.HORIZONTAL_FACING;
             case "facing":
-                return (BlockStateProperties.FACING);
+                return BlockStateProperties.FACING;
             case "ishub":
-                return (YuushyaBlockStates.ISHUB);
+                return ISHUB;
+            case "shape":
+                return SHAPE;
             default:
                 throw new IllegalStateException("Unexpected value: " + name);
         }
@@ -58,6 +93,13 @@ public class YuushyaBlockStates {
         if (properties.contains(BlockStateProperties.FACING)) defaultState=defaultState.setValue(BlockStateProperties.FACING, Direction.NORTH);
         if (properties.contains(BlockStateProperties.ATTACH_FACE)) defaultState=defaultState.setValue(BlockStateProperties.ATTACH_FACE,AttachFace.FLOOR);
         if (properties.contains(BlockStateProperties.HORIZONTAL_FACING)) defaultState=defaultState.setValue(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH);
+        if (properties.contains(BlockStateProperties.WATERLOGGED)) defaultState=defaultState.setValue(BlockStateProperties.WATERLOGGED, false);
+        if (properties.contains(POS_VERTICAL)) defaultState = defaultState.setValue(POS_VERTICAL,PositionVerticalState.NONE);
+        if (properties.contains(YPOS)) defaultState = defaultState.setValue(YPOS,PositionVerticalState.NONE);
+        if (properties.contains(POS_HORIZON)) defaultState = defaultState.setValue(POS_HORIZON,PositionHorizonState.NONE);
+        if (properties.contains(XPOS)) defaultState = defaultState.setValue(XPOS,PositionDirectionXState.NONE);
+        if (properties.contains(ZPOS)) defaultState = defaultState.setValue(ZPOS,PositionDirectionZState.NONE);
+        if (properties.contains(SHAPE)) defaultState = defaultState.setValue(SHAPE,ShapeState.STRAIGHT);
         return defaultState;
     }
 

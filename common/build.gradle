@@ -17,6 +17,7 @@ tasks.register('copyResources') {
 
 ['1.16.5','1.18.2','1.19.2','1.19.4','1.20.1'].forEach {ver->
     tasks.register("copyResources-${ver}",Copy){
+        dependsOn(processResources)
         from("./build/resources/main/")
         into("../${ver}/common/build/resources/main/")
         duplicatesStrategy = DuplicatesStrategy.INHERIT

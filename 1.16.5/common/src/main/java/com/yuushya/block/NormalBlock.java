@@ -1,26 +1,28 @@
 package com.yuushya.block;
 
-import com.yuushya.registries.YuushyaRegistryData;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.Property;
 import org.jetbrains.annotations.Nullable;
 
-import static com.yuushya.block.blockstate.YuushyaBlockStates.FORM;
+import java.util.List;
+
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.HORIZONTAL_FACING;
 
-public class NormalBlock extends YuushyaBlockFactory.BlockWithClassType {
+public class NormalBlock extends AbstractYuushyaBlockType {
 
-    public NormalBlock(Properties properties, Integer tipLines, String classType, String autoCollision, YuushyaRegistryData.Block.Usage usage) {
-        super(properties, tipLines, classType,autoCollision, usage);
+    public NormalBlock() {
+        super();
     }
 
     @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> stateBuilder) {
-        stateBuilder.add(HORIZONTAL_FACING, FORM);
+    public List<Property<?>> getBlockStateProperty() {
+        List<Property<?>> properties = new java.util.ArrayList<>();
+        properties.add(HORIZONTAL_FACING);
+        return properties;
     }
+
     @Override
     @Nullable
     public BlockState getStateForPlacement(BlockPlaceContext blockPlaceContext) {

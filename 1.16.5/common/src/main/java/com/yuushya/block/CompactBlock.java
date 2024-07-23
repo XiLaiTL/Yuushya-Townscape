@@ -9,21 +9,28 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.Property;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 import static com.yuushya.block.FaceBlock.getPositionOfFaceX;
 import static com.yuushya.block.FaceBlock.getPositionOfFaceZ;
 import static com.yuushya.block.PoleBlock.getPositionOfPole;
 import static com.yuushya.block.blockstate.YuushyaBlockStates.*;
 
-public class CompactBlock extends YuushyaBlockFactory.BlockWithClassType {
-    public CompactBlock(BlockBehaviour.Properties properties, Integer tipLines, String classType, String autoCollision, YuushyaRegistryData.Block.Usage usage) {
-        super(properties, tipLines, classType,autoCollision, usage);
-    }
+public class CompactBlock extends AbstractYuushyaBlockType {
+    public CompactBlock() {}
+
     @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> stateBuilder) {
-        stateBuilder.add(XPOS,YPOS, ZPOS);
+    public List<Property<?>> getBlockStateProperty() {
+        List<Property<?>> properties = new java.util.ArrayList<>();
+        properties.add(XPOS);
+        properties.add(YPOS);
+        properties.add(ZPOS);
+        return properties;
     }
+
     @Override
     @Nullable
     public BlockState getStateForPlacement(BlockPlaceContext blockPlaceContext) {

@@ -11,19 +11,27 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.Property;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 import static com.yuushya.block.YuushyaBlockFactory.isTheSameBlock;
 import static com.yuushya.block.blockstate.YuushyaBlockStates.*;
 
-public class FaceBlock extends YuushyaBlockFactory.BlockWithClassType {
-    public FaceBlock(Properties properties, Integer tipLines, String classType, String autoCollision, YuushyaRegistryData.Block.Usage usage) {
-        super(properties, tipLines, classType,autoCollision, usage);
+public class FaceBlock extends AbstractYuushyaBlockType {
+    public FaceBlock() {
+        super();
     }
+
     @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> stateBuilder) {
-        stateBuilder.add(XPOS, ZPOS,FORM);
+    public List<Property<?>> getBlockStateProperty() {
+        List<Property<?>> properties = new java.util.ArrayList<>();
+        properties.add(XPOS);
+        properties.add(ZPOS);
+        return properties;
     }
+
     @Override
     @Nullable
     public BlockState getStateForPlacement(BlockPlaceContext blockPlaceContext) {

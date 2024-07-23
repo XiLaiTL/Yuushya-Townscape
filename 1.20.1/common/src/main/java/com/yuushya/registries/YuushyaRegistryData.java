@@ -6,8 +6,15 @@ import java.util.List;
 public class YuushyaRegistryData{
     public List<Block> block = new ArrayList<>();
     public List<Item> item = new ArrayList<>();
+    public List<ItemGroup> itemGroup = new ArrayList<>();
     public List<Particle> particle = new ArrayList<>();
     public String version;
+
+    public static class ItemGroup{
+        public String name;
+        public String icon;
+        public String blueprint;
+    }
 
     public static class Block implements Cloneable{
         public String classType;
@@ -79,8 +86,8 @@ public class YuushyaRegistryData{
 
         public static class Usage{
             public List<Float> sitPos;
-            public List<Integer> cycleForms;
             public String sound;
+            public List<Integer> cycleForms;
         }
     }
     public static class Item{
@@ -110,5 +117,5 @@ public class YuushyaRegistryData{
         public List<String> textures;
         public Block spawner;
     }
-    
+
 }

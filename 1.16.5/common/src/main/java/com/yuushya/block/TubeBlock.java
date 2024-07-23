@@ -12,24 +12,35 @@ import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.Property;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.List;
+
+import static com.yuushya.block.YuushyaBlockFactory.isTheSameBlock;
 import static com.yuushya.block.blockstate.YuushyaBlockStates.ISHUB;
+import static net.minecraft.world.level.block.state.properties.BlockStateProperties.HORIZONTAL_FACING;
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.*;
 
-public class TubeBlock extends YuushyaBlockFactory.BlockWithClassType {
+public class TubeBlock extends AbstractYuushyaBlockType {
 
-    public TubeBlock(Properties properties, Integer tipLines, String classType, String autoCollision, YuushyaRegistryData.Block.Usage usage) {
-        super(properties, tipLines, classType,autoCollision, usage);
-        this.registerDefaultState(this.defaultBlockState().setValue(EAST,false).setValue(WEST,false).setValue(NORTH,false).setValue(SOUTH,false).setValue(UP,false).setValue(DOWN,false).setValue(ISHUB,false));
-    }
+    public TubeBlock() {}
 
     @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> stateBuilder) {
-        stateBuilder.add(WEST).add(EAST).add(UP).add(DOWN).add(NORTH).add(SOUTH).add(AXIS).add(ISHUB);;
+    public List<Property<?>> getBlockStateProperty() {
+        List<Property<?>> properties = new java.util.ArrayList<>();
+        properties.add(WEST);
+        properties.add(EAST);
+        properties.add(UP);
+        properties.add(DOWN);
+        properties.add(NORTH);
+        properties.add(SOUTH);
+        properties.add(AXIS);
+        properties.add(ISHUB);
+        return properties;
     }
 
-    public BlockState transPlacement(BlockState stateIn, BlockPos currentPos, BlockGetter worldIn) {
+    public static BlockState transPlacement(BlockState stateIn, BlockPos currentPos, BlockGetter worldIn) {
         BlockState nblockstate = YuushyaUtils.getBlockState (worldIn.getBlockState(currentPos.north()),(LevelAccessor) worldIn,currentPos.north());
         BlockState sblockstate = YuushyaUtils.getBlockState (worldIn.getBlockState(currentPos.south()),(LevelAccessor) worldIn,currentPos.south());
         BlockState wblockstate = YuushyaUtils.getBlockState (worldIn.getBlockState(currentPos.west()),(LevelAccessor) worldIn,currentPos.west());
@@ -37,7 +48,12 @@ public class TubeBlock extends YuushyaBlockFactory.BlockWithClassType {
         BlockState ublockstate = YuushyaUtils.getBlockState (worldIn.getBlockState(currentPos.above()),(LevelAccessor) worldIn,currentPos.above());
         BlockState dblockstate = YuushyaUtils.getBlockState (worldIn.getBlockState(currentPos.below()),(LevelAccessor) worldIn,currentPos.below());
         if (stateIn.getValue(ISHUB)) {
-            return stateIn.setValue(NORTH, isTubeBlock(nblockstate)).setValue(SOUTH, isTubeBlock(sblockstate)).setValue(WEST, isTubeBlock(wblockstate)).setValue(EAST, isTubeBlock(eblockstate)).setValue(UP, isTubeBlock(ublockstate)).setValue(DOWN, isTubeBlock(dblockstate));
+            return stateIn.setValue(NORTH, isTheSameBlock(stateIn,nblockstate))
+                    .setValue(SOUTH, isTheSameBlock(stateIn,sblockstate))
+                    .setValue(WEST, isTheSameBlock(stateIn,wblockstate))
+                    .setValue(EAST, isTheSameBlock(stateIn,eblockstate))
+                    .setValue(UP, isTheSameBlock(stateIn,ublockstate))
+                    .setValue(DOWN, isTheSameBlock(stateIn,dblockstate));
         } else {
             switch (stateIn.getValue(AXIS)) {
                 case X:
@@ -51,11 +67,8 @@ public class TubeBlock extends YuushyaBlockFactory.BlockWithClassType {
             }
         }
     }
-    public static boolean isTubeBlock(BlockState state) {
-        return state.getBlock() instanceof TubeBlock;
-    }
     public static boolean isDifferentTubeBlock(BlockState state1, BlockState state2) {
-        return (isTubeBlock(state1) && state2.getValue(AXIS) != state1.getValue(AXIS)) || (isTubeBlock(state1) && (state1.getValue(ISHUB)));
+        return (isTheSameBlock (state1,state2) && state2.getValue(AXIS) != state1.getValue(AXIS)) || (isTheSameBlock (state1,state2) && (state1.getValue(ISHUB)));
     }
 
     @Override
@@ -71,8 +84,8 @@ public class TubeBlock extends YuushyaBlockFactory.BlockWithClassType {
 
     public BlockState rotate(BlockState state, Rotation rot) {
         switch (rot) {
-            case CLOCKWISE_90 :
             case COUNTERCLOCKWISE_90:
+            case CLOCKWISE_90:
                 switch (state.getValue(AXIS)) {
                     case X:
                         return state.setValue(AXIS, Direction.Axis.Z);
@@ -81,7 +94,8 @@ public class TubeBlock extends YuushyaBlockFactory.BlockWithClassType {
                     default:
                         return state;
                 }
-            default : return state;
+            default:
+                return state;
         }
     }
 

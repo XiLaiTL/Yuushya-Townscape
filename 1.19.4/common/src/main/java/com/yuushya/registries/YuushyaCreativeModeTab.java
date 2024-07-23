@@ -2,6 +2,8 @@ package com.yuushya.registries;
 
 import com.yuushya.Yuushya;
 import dev.architectury.registry.CreativeTabRegistry;
+import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -9,8 +11,37 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.ItemLike;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.function.Supplier;
 
+public class YuushyaCreativeModeTab {
+    private static final Map<String, CreativeTabRegistry.TabSupplier> TABS = new HashMap<>();
+    public static final CreativeTabRegistry.TabSupplier YUUSHYA_ITEM = com.yuushya.registries.YuushyaCreativeModeTab.create("item", () -> YuushyaRegistries.ITEMS.getInstanceOrDefault("form_trans_item", Items.APPLE));
+
+    private YuushyaCreativeModeTab() {
+    }
+
+    public static CreativeTabRegistry.TabSupplier create(String name, Supplier<Item> item) {
+        if (!TABS.containsKey(name)) {
+            TABS.put(name, CreativeTabRegistry.create(new ResourceLocation(Yuushya.MOD_ID, name), () -> new ItemStack(item.get())));
+        }
+        return TABS.get(name);
+    }
+
+    public static void register(String name, String icon) {
+        com.yuushya.registries.YuushyaCreativeModeTab.create(name, () -> {
+            if (icon.contains(":")) return BuiltInRegistries.ITEM.get(ResourceLocation.tryParse(icon));
+            else return YuushyaRegistries.ITEMS.getInstanceOrDefault(icon, Items.APPLE);
+        });
+    }
+
+    public static CreativeTabRegistry.TabSupplier toGroup(String creativeModeTab) {
+        return TABS.getOrDefault(creativeModeTab, YUUSHYA_ITEM);
+    }
+}
+
+/*
 public class YuushyaCreativeModeTab {
 
     public static final CreativeTabRegistry.TabSupplier YUUSHYA_EXTRA_BLOCKS = YuushyaCreativeModeTab.create("extra_blocks", ()->YuushyaRegistries.ITEMS.getInstanceOrDefault("yellow_acrylic", Items.APPLE));
@@ -60,3 +91,4 @@ public class YuushyaCreativeModeTab {
         };
     }
 }
+*/

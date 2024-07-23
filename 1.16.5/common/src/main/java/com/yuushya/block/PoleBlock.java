@@ -11,21 +11,29 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.Property;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 import static com.yuushya.block.YuushyaBlockFactory.isTheSameBlock;
 import static com.yuushya.block.YuushyaBlockFactory.isTheSameFacing;
 import static com.yuushya.block.blockstate.YuushyaBlockStates.*;
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.HORIZONTAL_FACING;
 
-public class PoleBlock extends YuushyaBlockFactory.BlockWithClassType {
-    public PoleBlock(Properties properties, Integer tipLines, String classType, String autoCollision, YuushyaRegistryData.Block.Usage usage) {
-        super(properties, tipLines, classType,autoCollision, usage);
+public class PoleBlock extends AbstractYuushyaBlockType {
+    public PoleBlock() {
+        super();
     }
+
     @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> stateBuilder) {
-        stateBuilder.add(HORIZONTAL_FACING, POS_VERTICAL,FORM);
+    public List<Property<?>> getBlockStateProperty() {
+        List<Property<?>> properties = new java.util.ArrayList<>();
+        properties.add(HORIZONTAL_FACING);
+        properties.add(POS_VERTICAL);
+        return properties;
     }
+
     @Override
     @Nullable
     public BlockState getStateForPlacement(BlockPlaceContext blockPlaceContext) {

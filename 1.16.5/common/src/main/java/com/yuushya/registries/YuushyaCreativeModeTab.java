@@ -2,17 +2,38 @@ package com.yuushya.registries;
 
 import com.yuushya.Yuushya;
 import me.shedaniel.architectury.registry.CreativeTabs;
+import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.level.ItemLike;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.function.Supplier;
 
 public class YuushyaCreativeModeTab {
+    private static final Map<String,CreativeModeTab> TABS = new HashMap<>();
+    public static final CreativeModeTab YUUSHYA_ITEM = YuushyaCreativeModeTab.create("item", ()->YuushyaRegistries.ITEMS.getInstanceOrDefault("form_trans_item", Items.APPLE));
+    private YuushyaCreativeModeTab() {}
+    public static CreativeModeTab create(String name, Supplier<Item> item){
+        if (!TABS.containsKey(name)){
+            TABS.put(name, CreativeTabs.create(new ResourceLocation(Yuushya.MOD_ID,name),()->new ItemStack(item.get())));
+        }
+        return TABS.get(name);
+    }
 
+    public static void register(String name, String icon){
+        YuushyaCreativeModeTab.create(name, () -> {
+            if (icon.contains(":")) return Registry.ITEM.get(ResourceLocation.tryParse(icon));
+            else return YuushyaRegistries.ITEMS.getInstanceOrDefault(icon, Items.APPLE);
+        });
+    }
+    public static CreativeModeTab toGroup(String creativeModeTab) {
+        return TABS.getOrDefault(creativeModeTab,YUUSHYA_ITEM);
+    }
+    /*
     public static final CreativeModeTab YUUSHYA_EXTRA_BLOCKS = YuushyaCreativeModeTab.create("extra_blocks", ()->YuushyaRegistries.ITEMS.getInstanceOrDefault("yellow_acrylic", Items.APPLE));
     public static final CreativeModeTab YUUSHYA_WOOD = YuushyaCreativeModeTab.create("wood", ()->YuushyaRegistries.ITEMS.getInstanceOrDefault("raw_oak_wood", Items.APPLE));
     public static final CreativeModeTab YUUSHYA_STONE = YuushyaCreativeModeTab.create("stone", ()->YuushyaRegistries.ITEMS.getInstanceOrDefault("park_tile", Items.APPLE));
@@ -77,4 +98,5 @@ public class YuushyaCreativeModeTab {
                 return YuushyaCreativeModeTab.YUUSHYA_ITEM;
         }
     }
+    */
 }

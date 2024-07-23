@@ -7,15 +7,15 @@ version '0.0.0'
 
 repositories {
     maven { url "https://jitpack.io/" }
-    maven { url "https://maven.syntaxerror.at"}
+    //maven { url "https://maven.syntaxerror.at"}
     mavenCentral()
 }
 
 dependencies {
     implementation 'org.realityforge.org.jetbrains.annotations:org.jetbrains.annotations:1.7.0'
-    implementation 'com.google.code.gson:gson:2.8.9'
+    implementation 'com.google.code.gson:gson:2.11.0'
     //implementation "com.github.Querz:NBT:6.1"
-    implementation "at.syntaxerror:syntaxnbt:1.0.0"
+    //implementation "at.syntaxerror:syntaxnbt:1.0.0"
 }
 
 

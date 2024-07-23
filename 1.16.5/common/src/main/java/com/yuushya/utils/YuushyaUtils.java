@@ -19,10 +19,13 @@ import net.minecraft.world.level.block.StemBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.material.Material;
 
 import java.awt.*;
 import java.util.Arrays;
+
+import static com.yuushya.block.blockstate.YuushyaBlockStates.*;
 
 public class YuushyaUtils {
 
@@ -160,6 +163,16 @@ public class YuushyaUtils {
 //            case "polished_deepslate": return SoundType.POLISHED_DEEPSLATE;
             default: return SoundType.METAL;
         }
+    }
+    public static IntegerProperty getFormFromState(BlockState blockState){
+        if(blockState.hasProperty(FORM2)) return FORM2;
+        else if(blockState.hasProperty(FORM3)) return FORM3;
+        else if(blockState.hasProperty(FORM4)) return FORM4;
+        else if(blockState.hasProperty(FORM5)) return FORM5;
+        else if(blockState.hasProperty(FORM6)) return FORM6;
+        else if(blockState.hasProperty(FORM7)) return FORM7;
+        else if(blockState.hasProperty(FORM8)) return FORM8;
+        return null;
     }
     public static Rarity toRarity(String rarity) {
         switch (rarity) {

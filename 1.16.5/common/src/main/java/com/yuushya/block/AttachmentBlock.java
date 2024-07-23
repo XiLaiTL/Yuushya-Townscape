@@ -1,29 +1,33 @@
 package com.yuushya.block;
 
-import com.yuushya.registries.YuushyaRegistryData;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.LevelReader;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.FaceAttachedHorizontalDirectionalBlock;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.AttachFace;
+import net.minecraft.world.level.block.state.properties.Property;
 import org.jetbrains.annotations.Nullable;
 
-import static com.yuushya.block.blockstate.YuushyaBlockStates.FORM;
+import java.util.List;
+
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.ATTACH_FACE;
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.HORIZONTAL_FACING;
 
-public class AttachmentBlock extends YuushyaBlockFactory.BlockWithClassType {
-    public AttachmentBlock(Properties properties, Integer tipLines, String classType, String autoCollision, YuushyaRegistryData.Block.Usage usage) {
-        super(properties, tipLines, classType,autoCollision, usage);
+public class AttachmentBlock extends AbstractYuushyaBlockType {
+    public AttachmentBlock() {
+        super();
     }
+
     @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> stateBuilder) {
-        stateBuilder.add(HORIZONTAL_FACING,ATTACH_FACE, FORM);
+    public List<Property<?>> getBlockStateProperty() {
+        List<Property<?>> properties = new java.util.ArrayList<>();
+        properties.add(HORIZONTAL_FACING);
+        properties.add(ATTACH_FACE);
+        return properties;
     }
+
     @Override
     @Nullable
     public BlockState getStateForPlacement(BlockPlaceContext blockPlaceContext) {

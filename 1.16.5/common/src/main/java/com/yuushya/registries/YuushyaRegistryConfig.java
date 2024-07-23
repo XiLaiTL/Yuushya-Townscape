@@ -24,6 +24,7 @@ public class YuushyaRegistryConfig {
     public static final Map<String,YuushyaRegistryData.Block> YuushyaRawBlockMap=new LinkedHashMap<>();
     public static final Map<String,YuushyaRegistryData.Item> YuushyaRawItemMap=new LinkedHashMap<>();
     public static final Map<String,YuushyaRegistryData.Particle> YuushyaRawParticleMap=new LinkedHashMap<>();
+    public static final Map<String,YuushyaRegistryData.ItemGroup> YuushyaRawItemGroupMap = new LinkedHashMap<>();
 
     public static final InputStream InnerFileInputStream=YuushyaRegistryConfig.class.getResourceAsStream("/data/yuushya/register/inner.json");
 
@@ -31,6 +32,7 @@ public class YuushyaRegistryConfig {
         if (from.block!=null) from.block.forEach((e)->YuushyaRawBlockMap.put(e.name,e));
         if (from.item!=null) from.item.forEach((e)->YuushyaRawItemMap.put(e.name,e));
         if (from.particle!=null) from.particle.forEach((e)->YuushyaRawParticleMap.put(e.name,e));
+        if (from.itemGroup!= null) from.itemGroup.forEach((e)->YuushyaRawItemGroupMap.put(e.name,e));
     }
     public static final File CONFIG_FILE= Platform.getConfigFolder().resolve("com.yuushya/register.json").toFile();
     public static final String VERSION= Platform.getMod(Yuushya.MOD_ID).getVersion();
