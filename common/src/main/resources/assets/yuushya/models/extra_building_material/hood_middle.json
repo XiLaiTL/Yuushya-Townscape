@@ -1,9 +1,10 @@
 {
+	"credit": "Yuushya",
 	"ambientocclusion": false,
 	"textures": {
-		"0": "yuushya:0extra_building_block/ventilator",
+		"0": "yuushya:block/machine_",
 		"1": "yuushya:0extra_building_block/ventilator_",
-		"particle": "yuushya:0extra_building_block/ventilator"
+		"particle": "yuushya:block/machine_"
 	},
 	"elements": [
 		{

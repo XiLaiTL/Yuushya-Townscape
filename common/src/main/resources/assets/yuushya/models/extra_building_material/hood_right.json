@@ -1,9 +1,10 @@
 {
+	"credit": "Yuushya",
 	"ambientocclusion": false,
 	"textures": {
-		"0": "yuushya:0extra_building_block/ventilator",
+		"0": "yuushya:block/machine_",
 		"1": "yuushya:0extra_building_block/ventilator_",
-		"particle": "yuushya:0extra_building_block/ventilator"
+		"particle": "yuushya:block/machine_"
 	},
 	"elements": [
 		{
@@ -12,7 +13,7 @@
 			"rotation": {"angle": -22.5, "axis": "x", "origin": [15.5, 6, -0.5]},
 			"faces": {
 				"north": {"uv": [0, 0, 16, 3.5], "texture": "#0"},
-				"east": {"uv": [2, 0, 3, 1], "texture": "#0"},
+				"east": {"uv": [2, 0, 5.625, 3.5], "texture": "#0"},
 				"south": {"uv": [0, 0, 16, 0.5], "rotation": 180, "texture": "#0"},
 				"west": {"uv": [2, 0, 3, 1], "texture": "#0"},
 				"up": {"uv": [16, 3.625, 0, 0], "texture": "#0"},
@@ -25,7 +26,7 @@
 			"rotation": {"angle": 0, "axis": "x", "origin": [15.5, 6, -0.5]},
 			"faces": {
 				"north": {"uv": [0, 0, 16, 0.5], "texture": "#0"},
-				"east": {"uv": [2, 0, 3, 1], "texture": "#0"},
+				"east": {"uv": [2, 0, 11.625, 3.5], "texture": "#0"},
 				"south": {"uv": [0, 0, 16, 3.5], "rotation": 180, "texture": "#0"},
 				"west": {"uv": [2, 0, 3, 1], "texture": "#0"},
 				"up": {"uv": [16, 14, 0, 6], "texture": "#0"},

@@ -2,12 +2,12 @@
 	"credit": "Yuushya",
 	"ambientocclusion": false,
 	"textures": {
-		"0": "yuushya:0extra_building_block/white_l",
+		"0": "yuushya:block/machine_grid",
 		"1": "yuushya:0extra_building_material/preview/machine",
 		"2": "yuushya:0extra_building_material/preview/rice_cooker",
 		"4": "yuushya:0extra_building_block/concrete/dark_concrete",
 		"5": "yuushya:0extra_building_block/white_b",
-		"particle": "yuushya:0extra_building_block/white_l"
+		"particle": "yuushya:block/machine_grid"
 	},
 	"elements": [
 		{
