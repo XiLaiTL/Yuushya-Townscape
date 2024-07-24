@@ -1,7 +1,7 @@
 modLoader = "javafml"
-loaderVersion = "[45,)"
+loaderVersion = "[2,)"
 #issueTrackerURL = ""
-license = "GNU 3.0"
+license = "${mod_licence}"
 
 [[mods]]
 modId = "yuushya"
@@ -17,22 +17,22 @@ description = '''
 #logoFile = ""
 
 [[dependencies.yuushya]]
-modId = "forge"
-mandatory = true
-versionRange = "[45,)"
+modId = "neoforge"
+type = "required"
+versionRange = "[20.4,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.yuushya]]
 modId = "minecraft"
-mandatory = true
+type = "required"
 versionRange = "[1.19.4,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.yuushya]]
 modId = "architectury"
-mandatory = true
-versionRange = "[8.1.79,)"
+type = "required"
+versionRange = "[11.1.17,)"
 ordering = "AFTER"
 side = "BOTH"

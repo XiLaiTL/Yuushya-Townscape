@@ -1,7 +1,7 @@
 modLoader = "javafml"
-loaderVersion = "[45,)"
+loaderVersion = "[49,)"
 #issueTrackerURL = ""
-license = "GNU 3.0"
+license = "${mod_licence}"
 
 [[mods]]
 modId = "yuushya"
@@ -26,13 +26,13 @@ side = "BOTH"
 [[dependencies.yuushya]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.19.4,)"
+versionRange = "[1.20.4,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.yuushya]]
 modId = "architectury"
 mandatory = true
-versionRange = "[8.1.79,)"
+versionRange = "[11.1.17,)"
 ordering = "AFTER"
 side = "BOTH"

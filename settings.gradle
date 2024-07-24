@@ -8,6 +8,13 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+
+include("1.20.6")
+include("1.20.6:common")
+include("1.20.6:neoforge")
+include("1.20.6:fabric")
+include("1.20.6:fabric-like")
+//include("1.20.6:quilt")
 include("1.20.4")
 include("1.20.4:common")
 include("1.20.4:forge")

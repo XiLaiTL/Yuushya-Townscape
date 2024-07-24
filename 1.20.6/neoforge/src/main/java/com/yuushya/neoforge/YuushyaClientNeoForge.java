@@ -1,4 +1,4 @@
-package com.yuushya.forge;
+package com.yuushya.neoforge;
 
 import com.yuushya.Yuushya;
 import com.yuushya.YuushyaClient;
@@ -11,15 +11,19 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.core.particles.ParticleType;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.world.entity.EntityType;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.event.EntityRenderersEvent;
-import net.minecraftforge.client.event.RegisterParticleProvidersEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.client.event.RegisterParticleProvidersEvent;
 
-@Mod.EventBusSubscriber(modid = Yuushya.MOD_ID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
-public class YuushyaClientForge {
+@Mod(value = Yuushya.MOD_ID, dist = Dist.CLIENT)
+public class YuushyaClientNeoForge {
+    public YuushyaClientNeoForge(IEventBus modBus){
+
+    }
     @SubscribeEvent
     public static void onInitializeClient(FMLClientSetupEvent event) {
         YuushyaClient.onInitializeClient();

@@ -1,7 +1,7 @@
 modLoader = "javafml"
 loaderVersion = "[36,)"
 #issueTrackerURL = ""
-license = "Insert License Here"
+license = "${mod_licence}"
 
 [[mods]]
 modId = "yuushya"
@@ -33,6 +33,6 @@ side = "BOTH"
 [[dependencies.yuushya]]
 modId = "architectury"
 mandatory = true
-versionRange = "[1.32.67,)"
+versionRange = "[1.32.68,)"
 ordering = "AFTER"
 side = "BOTH"

@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "${mod_licence}"
+
+[[mods]]
+modId = "yuushya"
+version = "${mod_version}"
+displayName = "${mod_name}"
+logoFile = "pack.png"
+displayURL = "${mod_homepage}"
+credits = "${mod_credits}"
+authors = "${mod_authors}"
+description = '''
+    ${mod_description}
+    '''
+#logoFile = ""
+
+[[dependencies.yuushya]]
+modId = "neoforge"
+type = "required"
+versionRange = "[20.6,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.yuushya]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.20.6,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.yuushya]]
+modId = "architectury"
+type = "required"
+versionRange = "[12.1.3,)"
+ordering = "AFTER"
+side = "BOTH"

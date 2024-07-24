@@ -28,8 +28,10 @@
     "yuushya-common.mixins.json"
   ],
   "depends": {
-    "fabric": "*",
-    "minecraft": ">=1.19.4",
-    "architectury": ">=8.1.79"
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.20.4",
+    "java": ">=17",
+    "architectury": ">=11.1.17",
+    "fabric-api": "*"
   }
 }
