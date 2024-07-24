@@ -37,7 +37,7 @@ public class JarCreator {
     private final Path _basePath;
 
     private void writeJson(YuushyaDataProvider.ResourceType resource, ResourceLocation resourceLocation, Supplier<JsonElement> getJson) {
-        Path path = this._resPath.resolve(resource.name().toLowerCase()+"/"+resourceLocation.getNamespace()+'/'+resourceLocation.getPath());
+        Path path = this._resPath.resolve(resource.name().toLowerCase() +"/"+resourceLocation.getNamespace()+'/'+resourceLocation.getPath());
         path.getParent().toFile().mkdirs();
         try(BufferedWriter writer=new BufferedWriter( new FileWriter(path.toFile()))){
             JsonElement element = null;
@@ -127,21 +127,21 @@ side = "BOTH"
         }catch (IOException e){e.printStackTrace(); YuushyaLog.error(e);}
     }
 
-    public void createJson(){
+    public void createJson(String version){
         this._resPath = this._basePath;
         ConfigReader configReader = new ConfigReader();
         configReader.readRegistryConfig(this._basePath.resolve("./data/"+this._nameSpace +"/register/"));
-        configReader.generateRegistries();
+        configReader.generateRegistries(version);
         YuushyaDataProvider yuushyaDataProvider = new YuushyaDataProvider();
         for(var dataType:YuushyaDataProvider.DataType.values() ){
             yuushyaDataProvider.type(dataType).forEach((key,value)->{writeJson(dataType.resource,key,value);});
         }
     }
 
-    public void create(){
+    public void create(String version){
         ConfigReader configReader = new ConfigReader();
         configReader.readRegistryConfig(this._basePath.resolve("./data/"+this._nameSpace +"/register/"));
-        configReader.generateRegistries();
+        configReader.generateRegistries(version);
         configReader.writeRegistryConfig();
         YuushyaDataProvider yuushyaDataProvider = new YuushyaDataProvider();
         for(var dataType:YuushyaDataProvider.DataType.values() ){

@@ -74,6 +74,6 @@ tasks.register("build-tools",Copy){
 
 def build_tasks = versions.collectMany {ver-> apis.collect {api-> "build-jar-${ver}-${api}"}}
 
-tasks.register("gen-chain",SequenceTask,["clean-all",":common:generateAssetsAndData",":common:copyResources"])
+tasks.register("gen-chain",SequenceTask,["clean-all",":common:generateAssetsAndData",":common:copyResources",":common:generateAndCopyResources-1.20.6",":common:generateAndCopyResources-1.21.0"])
 tasks.register("build-chain1",SequenceTask,["gen-chain"]+build_tasks.subList(0, build_tasks.size()/2 as int))
 tasks.register("build-chain2",SequenceTask,build_tasks.subList(build_tasks.size()/2 as int,build_tasks.size()))

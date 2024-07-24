@@ -11,7 +11,7 @@ tasks.register('checkImageSize', CheckImageSizeTask){
     it.path = projectDir.toPath().resolve("./src/main/resources/")
 }
 
-def versions = ['1.16.5', '1.18.2', '1.19.2', '1.19.4', '1.20.1', '1.20.4','1.20.6','1.21.0']
+def versions = ['1.16.5', '1.18.2', '1.19.2', '1.19.4', '1.20.1', '1.20.4']
 
 tasks.register('copyResources') {
     dependsOn(versions.collect {"copyResources-${it}"})
@@ -27,3 +27,50 @@ versions.forEach {ver->
 
 }
 
+//1.20.6
+
+tasks.register('clean-1.20.6'){
+    dependsOn(clean)
+    dependsOn(':1.20.6:common:clean')
+}
+
+tasks.register('generateAssetsAndData-1.20.6', CreateAssetsAndDataTask){
+    dependsOn('clean-1.20.6')
+    dependsOn(processResources)
+    it.path = projectDir.toPath().resolve("./build/resources/main/")
+    it.version = "1.20.6"
+    //onlyIf { !processResources.state.upToDate }
+    doLast {
+        println 'Assets and Data Build Success 1.20.6'
+    }
+}
+
+tasks.register("generateAndCopyResources-1.20.6",Copy){
+    dependsOn('generateAssetsAndData-1.20.6')
+    from("./build/resources/main/")
+    into("../1.20.6/common/build/resources/main/")
+    duplicatesStrategy = DuplicatesStrategy.INHERIT
+}
+//1.21.0
+tasks.register('clean-1.21.0'){
+    dependsOn(clean)
+    dependsOn(':1.21.0:common:clean')
+}
+
+tasks.register('generateAssetsAndData-1.21.0', CreateAssetsAndDataTask){
+    dependsOn('clean-1.21.0')
+    dependsOn(processResources)
+    it.path = projectDir.toPath().resolve("./build/resources/main/")
+    it.version = "1.21.0"
+    //onlyIf { !processResources.state.upToDate }
+    doLast {
+        println 'Assets and Data Build Success 1.21.0'
+    }
+}
+
+tasks.register("generateAndCopyResources-1.21.0",Copy){
+    dependsOn('generateAssetsAndData-1.21.0')
+    from("./build/resources/main/")
+    into("../1.21.0/common/build/resources/main/")
+    duplicatesStrategy = DuplicatesStrategy.INHERIT
+}

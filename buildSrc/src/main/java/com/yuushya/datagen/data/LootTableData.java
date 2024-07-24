@@ -20,7 +20,25 @@ public class LootTableData {
     public static JsonElement genSingleItemTable(ResourceLocation resourceLocation) {
 
         return JsonParser.parseString("""
-                {"pools":[{"rolls":1.0,"bonus_rolls":0.0,"entries":[{"type":"minecraft:item","name":"%s"}],"conditions":[{"condition":"minecraft:survives_explosion"}]}]}
+                {
+                  "pools": [
+                    {
+                      "rolls": 1.0,
+                      "bonus_rolls": 0.0,
+                      "entries": [
+                        {
+                          "type": "minecraft:item",
+                          "name": "%s"
+                        }
+                      ],
+                      "conditions": [
+                        {
+                          "condition": "minecraft:survives_explosion"
+                        }
+                      ]
+                    }
+                  ]
+                }
                 """.formatted(resourceLocation.toString()));
     }
 

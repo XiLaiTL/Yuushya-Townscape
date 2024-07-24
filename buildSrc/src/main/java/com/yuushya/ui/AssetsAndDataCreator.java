@@ -111,7 +111,7 @@ public class AssetsAndDataCreator {
                     catch (IOException e){packData = new PackData();YuushyaLog.error(e);}
                     packData.checkVaild(path.getFileName().toString().replace(".zip","").replace(".jar","").toLowerCase().replace("-","_".replace(" ","_").replace(".","_")));
                     JarCreator jarCreator = new JarCreator(packData,pathTemp,pathTemp);
-                    if (chkbox1.isSelected()) jarCreator.createJson();
+                    if (chkbox1.isSelected()) jarCreator.createJson("1.16.5");
                     CollisionFileCreator collisionFileCreator = new CollisionFileCreator(pathTemp,pathTemp);
                     if (chkbox2.isSelected()) collisionFileCreator.createJson();
                     jarCreator.writeModFile();
@@ -147,14 +147,14 @@ public class AssetsAndDataCreator {
             String namespace = "yuushya";//path.getFileName().toString()
             if(Files.isDirectory(path)){
                 JarCreator addon = new JarCreator(namespace, path);
-                addon.create();
+                addon.create("1.16.5");
             }
             else{
                 Path copyPath = Path.of("../config/com.yuushya/"+namespace+"/");
                 ZipReader zipReader = new ZipReader(namespace,path);
                 zipReader.filePath(Path.of("./data/"+namespace + "/register/"));
                 JarCreator addon = new JarCreator(namespace, copyPath);
-                addon.create();
+                addon.create("1.16.5");
             }
         }
     }
@@ -165,7 +165,7 @@ public class AssetsAndDataCreator {
             if(Files.isDirectory(path)){
                 ConfigReader configReader = new ConfigReader();
                 configReader.readRegistryConfig(path.resolve("./data/"+namespace+"/register/"));
-                configReader.generateRegistries();
+                configReader.generateRegistries("1.16.5");
                 CollisionFileCreator collisionFileCreator=new CollisionFileCreator(namespace,path);
                 collisionFileCreator.create();
             }
@@ -177,7 +177,7 @@ public class AssetsAndDataCreator {
                 zipReader.filePath(Path.of("./assets/"+namespace + "/models/"));
                 ConfigReader configReader = new ConfigReader();
                 configReader.readRegistryConfig(copyPath.resolve("./data/"+namespace+"/register/"));
-                configReader.generateRegistries();
+                configReader.generateRegistries("1.16.5");
                 CollisionFileCreator collisionFileCreator=new CollisionFileCreator(namespace,copyPath);
                 collisionFileCreator.create();
             }

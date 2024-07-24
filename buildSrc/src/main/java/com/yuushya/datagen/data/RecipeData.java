@@ -5,16 +5,37 @@ import com.google.gson.JsonParser;
 import com.yuushya.datagen.ConfigReader;
 import com.yuushya.datagen.utils.ResourceLocation;
 import com.yuushya.registries.YuushyaRegistryData;
+import com.yuushya.utils.Version;
 
 import static com.yuushya.datagen.utils.Utils.MOD_ID;
 
 public class RecipeData {
 
-    public static JsonElement genStoneCutterRecipe(ResourceLocation item, ResourceLocation father,int resultNum){
-        //
-        return JsonParser.parseString("""
-                {"type":"minecraft:stonecutting","ingredient":{"item":"%s"},"result":"%s","count":%s}
-                """.formatted(father.toString(),item.toString(),resultNum));
+    public static JsonElement genStoneCutterRecipe(ResourceLocation item, ResourceLocation father, int resultNum, Version version){
+        String before1206 = """
+                {
+                  "type": "minecraft:stonecutting",
+                  "ingredient": {
+                    "item": "%s"
+                  },
+                  "result": "%s",
+                  "count": %s
+                }
+                """;
+        String after1206 = """
+                {
+                  "type": "minecraft:stonecutting",
+                  "ingredient": {
+                    "item": "%s"
+                  },
+                  "result": {
+                    "id": "%s",
+                    "count": %s
+                  }
+                }
+                """;
+        return JsonParser.parseString( (version.compareTo(Version.V1_20_6)>=0  ? after1206: before1206)
+                .formatted(father.toString(),item.toString(),resultNum));
     }
 
     public static int getResultNumber(String CreativeModeTab){

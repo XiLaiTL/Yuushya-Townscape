@@ -13,6 +13,7 @@ import java.nio.file.Path;
 
 public class CreateAssetsAndDataTask extends DefaultTask {
     public String path = ".";
+    public String version = "1.16.5";
     public CreateAssetsAndDataTask(){
         this.setDescription("Create Yuushya Assets And Data");
     }
@@ -21,7 +22,7 @@ public class CreateAssetsAndDataTask extends DefaultTask {
         System.out.println("Begin Creating");
         System.out.println(Path.of(this.path).toAbsolutePath().toString());
         JarCreator jarCreator = new JarCreator("yuushya", Path.of(this.path));
-        jarCreator.createJson();
+        jarCreator.createJson(version);
         CollisionFileCreator collisionFileCreator=new CollisionFileCreator("yuushya",Path.of(this.path));
         collisionFileCreator.createJson();
         System.out.println("Create Success");

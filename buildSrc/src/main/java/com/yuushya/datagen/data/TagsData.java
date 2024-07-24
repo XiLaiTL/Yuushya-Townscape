@@ -5,6 +5,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonPrimitive;
 import com.yuushya.datagen.utils.ResourceLocation;
+import com.yuushya.utils.Version;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -14,8 +15,22 @@ import java.util.Map;
 public class TagsData {
     private static final Map<ResourceLocation, List<String>> tagsCache = new HashMap<>();
     public enum Type{
-        BLOCKS("blocks"),ENTITY_TYPES("entity_types"),FLUIDS("fluids"),FUNCTIONS("functions"),GAME_EVENTS("game_events"),ITEMS("items"),BIOME("worldgen/biome"),CONFIGURED_STRUCTURE_FEATURE("worldgen/configured_structure_feature");
+        BLOCKS("blocks"),
+        ENTITY_TYPES("entity_types"),
+        FLUIDS("fluids"),
+        FUNCTIONS("functions"),
+        GAME_EVENTS("game_events"),
+        ITEMS("items"),
+        BIOME("worldgen/biome"),
+        CONFIGURED_STRUCTURE_FEATURE("worldgen/configured_structure_feature");
         public final String type;
+        public String getType(Version version){
+            if(version.compareTo(Version.V1_21)>=0){
+                if(type.endsWith("s")) return type.substring(0,type.length()-1);
+                else return type;
+            }
+            return type;
+        }
         Type(String type){this.type = type;}
         public static Type toType(String type){
             if(type==null) return BLOCKS;
@@ -32,8 +47,8 @@ public class TagsData {
             };
         }
     }
-    public static ResourceLocation addTag(String type, ResourceLocation tagName, ResourceLocation id){
-        ResourceLocation key = new ResourceLocation(tagName.getNamespace(),  Type.toType(type).type+"/"+tagName.getPath() );
+    public static ResourceLocation addTag(String type, ResourceLocation tagName, ResourceLocation id, Version version){
+        ResourceLocation key = new ResourceLocation(tagName.getNamespace(),  Type.toType(type).getType(version)+"/"+tagName.getPath() );
         tagsCache.putIfAbsent(key,new ArrayList<>());
         tagsCache.get(key).add(id.toString());
         return key;
