@@ -2,7 +2,7 @@
 	"credit": "Coco",
 	"ambientocclusion": false,
 	"textures": {
-		"particle": "yuushya:block_/template",
+		"particle": "#couch",
 		"couch": "yuushya:block_/decorative_wool/decorative_blue_wool_couch"
 	},
 	"elements": [

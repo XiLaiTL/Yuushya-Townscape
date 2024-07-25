@@ -2,8 +2,8 @@
 	"credit": "Coco",
 	"ambientocclusion": false,
 	"textures": {
-		"particle": "yuushya:block_/template",
-		"couch": "yuushya:block_/template",
+		"particle": "#couch",
+		"couch": "#couch",
 		"sides": "yuushya:block_/top_reinforced_concrete"
 	},
 	"elements": [
