@@ -566,7 +566,7 @@
 				"set":  [
 					"all#yuushya:block_/decorative_wool/decorative_blue_wool",
 					"couch#yuushya:block_/decorative_wool/decorative_blue_wool_couch",
-                    "sides#yuushya:block_/decorative_wool/decorative_blue_wool",
+					"sides#yuushya:block_/decorative_wool/decorative_blue_wool",
 					"top#yuushya:block_/decorative_wool/decorative_blue_wool"]}
 		},
 
@@ -4354,6 +4354,14 @@
 			"blockstate": { "forms": [["yuushya:extra_building_material/fence/iron_fence_left","yuushya:extra_building_material/fence/iron_fence_middle","yuushya:extra_building_material/fence/iron_fence_right","yuushya:extra_building_material/fence/iron_fence_none"]]}
 		},
 
+		{
+			"class_type": "RoofBlock",
+			"name": "black_iron_fence",
+			"auto_generated": { "recipe": true }, "item_group": "extra_shapes",
+			"item_model": "yuushya:extra_building_material/black_iron_fence_none",
+			"blockstate": { "forms": [["yuushya:extra_building_material/black_iron_fence_left","yuushya:extra_building_material/black_iron_fence_middle","yuushya:extra_building_material/black_iron_fence_right","yuushya:extra_building_material/black_iron_fence_none"]]}
+		},
+
 
 
 
@@ -4413,6 +4421,48 @@
 			"name": "tall_iron_fence_stairs_sym",
 			"auto_generated": { "recipe": true }, "item_group": "extra_shapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/fence/tall_iron_fence_stairs_sym"]]}
+		},
+
+		{
+			"class_type": "FixedBlock",
+			"name": "black_tall_iron_fence_middle_support",
+			"auto_generated": { "recipe": true }, "item_group": "extra_shapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/black_tall_iron_fence"]]}
+		},
+
+		{
+			"class_type": "FixedBlock",
+			"name": "black_tall_iron_fence_middle",
+			"auto_generated": { "recipe": true }, "item_group": "extra_shapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/black_tall_iron_fence_"]]}
+		},
+
+		{
+			"class_type": "FixedBlock",
+			"name": "black_tall_iron_fence_left",
+			"auto_generated": { "recipe": true }, "item_group": "extra_shapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/black_tall_iron_fence__"]]}
+		},
+
+		{
+			"class_type": "FixedBlock",
+			"name": "black_tall_iron_fence_right",
+			"auto_generated": { "recipe": true }, "item_group": "extra_shapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/black_tall_iron_fence___"]]}
+		},
+
+		{
+			"class_type": "FixedBlock",
+			"name": "black_tall_iron_fence_stairs",
+			"auto_generated": { "recipe": true }, "item_group": "extra_shapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/black_tall_iron_fence_stairs"]]}
+		},
+
+		{
+			"class_type": "FixedBlock",
+			"name": "black_tall_iron_fence_stairs_sym",
+			"auto_generated": { "recipe": true }, "item_group": "extra_shapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/black_tall_iron_fence_stairs_sym"]]}
 		},
 
 		{
@@ -4556,14 +4606,29 @@
 			"blockstate": { "forms": [["yuushya:extra_building_material/retaining_wall/half_hollow_retaining_wall_top_1"]]}
 		},
 
+		{
+			"class_type": "FixedBlock",
+			"name": "pale_wall_frame",
+			"auto_generated": { "recipe": true }, "item_group": "extra_shapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/pale_wall_frame"]]}
+		},
+
+		{
+			"class_type": "FixedBlock",
+			"name": "stone_wall_frame",
+			"auto_generated": { "recipe": true }, "item_group": "extra_shapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/stone_wall_frame"]]}
+		},
+
 		{"name": "~Window_窗框", "class_type": "_comment" },
 
 		{
 			"class_type": "WindowsBlock",
 			"name": "white_windows_0",
 			"auto_generated": { "recipe": true }, "item_group": "window",
-			"properties": {"has_collision": false },
+			"properties": {"has_collision": true },
 			"render_type": "translucent",
+			"item_model": "yuushya:extra_building_material/windows_frame/white_window",
 			"blockstate": {
 				"kit": "pole_line",
 				"forms": [["yuushya:extra_building_material/windows_frame/white_window"]]
@@ -4571,12 +4636,16 @@
 		},
 
 		{
-			"class_type": "TranslucentBlock",
+			"class_type": "WindowsBlock",
 			"name": "white_windows_1",
 			"auto_generated": { "recipe": true }, "item_group": "window",
-			"properties": {"has_collision": false },
+			"properties": {"has_collision": true },
 			"render_type": "translucent",
-			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/white_windows"]]}
+			"item_model": "yuushya:extra_building_material/windows_frame/white_window",
+			"blockstate": {
+				"kit": "pole_line",
+				"forms": [["yuushya:extra_building_material/windows_frame/white_window"]]
+			}
 		},
 
 		{
@@ -7883,21 +7952,24 @@
 		{
 			"class_type": "FixedBlock",
 			"name": "crate",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_infrastructure",
+			"properties": {"sound": "wood"},
+			"auto_generated": { "recipe": true }, "item_group": "infrastructure",
 			"blockstate": { "forms": [["yuushya:extra_building_material/crate"]]}
 		},
 
 		{
 			"class_type": "FixedBlock",
 			"name": "crate_horizontal",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_infrastructure",
+			"properties": {"sound": "wood"},
+			"auto_generated": { "recipe": true }, "item_group": "infrastructure",
 			"blockstate": { "forms": [["yuushya:extra_building_material/crate_horizontal"]]}
 		},
 
 		{
 			"class_type": "FixedBlock",
 			"name": "crate_vertical",
-			"auto_generated": { "recipe": true }, "item_group": "yuushya_infrastructure",
+			"properties": {"sound": "wood"},
+			"auto_generated": { "recipe": true }, "item_group": "infrastructure",
 			"blockstate": { "forms": [["yuushya:extra_building_material/crate_vertical"]]}
 		},
 
@@ -9604,6 +9676,13 @@
 			"auto_generated": { "recipe": true }, "item_group": "furniture",
 			"item_model": "yuushya:extra_building_material/display_cabinet_none",
 			"blockstate": { "forms": [["yuushya:extra_building_material/display_cabinet_left","yuushya:extra_building_material/display_cabinet_middle","yuushya:extra_building_material/display_cabinet_right","yuushya:extra_building_material/display_cabinet_none"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "guitar",
+			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "furniture",
+			"blockstate": { "forms": [["yuushya:extra_building_material/guitar"]]}
 		},
 
 		{
