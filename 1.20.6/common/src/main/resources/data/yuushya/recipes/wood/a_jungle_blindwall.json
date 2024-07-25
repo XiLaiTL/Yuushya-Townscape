@@ -1,0 +1,12 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "yuushya:raw_jungle_wood"
+        }
+    ],
+    "result":{
+      "id": "yuushya:a_jungle_blindwall",
+        "count": 4
+    }
+  }

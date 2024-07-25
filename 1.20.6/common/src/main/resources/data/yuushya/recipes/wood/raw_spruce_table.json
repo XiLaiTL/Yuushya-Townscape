@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+     "AAA",
+     " A "
+    ],
+    "key": {
+      "A": {
+        "item": "yuushya:raw_spruce_wood"
+      }
+    },
+    "result":{
+      "id": "yuushya:raw_spruce_table",
+      "count":4
+    }
+  }

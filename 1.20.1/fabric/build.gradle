@@ -57,5 +57,5 @@ remapJar {
 }
 
 processResources{
-    finalizedBy(':common:copyResources-1.20.1')
+
 }

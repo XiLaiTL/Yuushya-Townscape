@@ -1,0 +1,8 @@
+{
+    "type": "stonecutting",
+    "ingredient": 
+        {
+            "item": "minecraft:mangrove_log"
+        },
+    "result":{"id":"yuushya:raw_mangrove_wood","count":1}
+}

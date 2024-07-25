@@ -1,0 +1,8 @@
+{
+    "type": "stonecutting",
+    "ingredient": 
+        {
+            "item": "minecraft:crimson_stem"
+        },
+    "result":{"id":"yuushya:raw_crimson_wood","count":1}
+}

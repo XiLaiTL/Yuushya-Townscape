@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B#B",
+    "BXB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:yellow_wool"
+    },    
+	"#": {
+      "item": "yuushya:plain_gift_box"
+    },
+	"X": {
+      "item": "yuushya:the_encyclopedia"
+    }
+  },
+  "result": {
+    "item": "yuushya:painter_gift_box",
+	"count": 1
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+     "AB",
+     "BA"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:basalt"
+      },
+      "B":{
+        "item":"yuushya:egg_cobblestone"
+      }
+    },
+    "result": {
+      "item": "yuushya:fossilized_cobblestone",
+      "count":4
+    }
+  }

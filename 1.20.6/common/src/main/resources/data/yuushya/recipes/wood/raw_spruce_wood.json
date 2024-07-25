@@ -1,0 +1,8 @@
+{
+    "type": "stonecutting",
+    "ingredient": 
+        {
+            "item": "minecraft:spruce_log"
+        },
+    "result":{"id":"yuushya:raw_spruce_wood","count":1}
+}

@@ -1,0 +1,8 @@
+{
+    "type": "stonecutting",
+    "ingredient": 
+        {
+            "item": "yuushya:raw_bamboo_vertical_drawer"
+        },
+    "result":{"id":"yuushya:raw_bamboo_drawer","count":1}
+}

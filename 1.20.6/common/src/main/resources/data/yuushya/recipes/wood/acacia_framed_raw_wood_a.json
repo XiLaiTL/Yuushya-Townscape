@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+     "AAA",
+     "ABA",
+     "AAA"
+    ],
+    "key": {
+      "A": 
+      {
+        "item":"yuushya:a_acacia_blindwall"
+      },
+      "B":
+        {
+        "item":"yuushya:raw_acacia_wood"
+      }
+    },
+    "result":{
+      "id": "yuushya:acacia_framed_raw_wood_a",
+      "count":8
+    }
+  }

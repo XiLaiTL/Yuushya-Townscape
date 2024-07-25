@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+     "AAA",
+     "ABA",
+     "AAA"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:clay_ball"
+      },
+      "B":[
+        {
+        "item":"yuushya:pale_bricks_0"
+      },
+      {
+        "item":"yuushya:pale_bricks_1"
+      },
+      {
+        "item":"yuushya:pale_bricks_2"
+      },  
+      {
+        "item":"yuushya:pale_bricks_3"
+      },
+      {
+        "item":"yuushya:lime__concrete"
+      }
+    ]
+    },
+    "result": {
+      "item": "yuushya:wore_lime_wall",
+      "count":4
+    }
+  }

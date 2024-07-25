@@ -11,31 +11,67 @@ tasks.register('checkImageSize', CheckImageSizeTask){
     it.path = projectDir.toPath().resolve("./src/main/resources/")
 }
 
-def versions = ['1.16.5', '1.18.2', '1.19.2', '1.19.4', '1.20.1', '1.20.4']
-
-tasks.register('copyResources') {
-    dependsOn(versions.collect {"copyResources-${it}"})
+['1.16.5', '1.20.6', '1.21.0'].forEach {ver->
+    tasks.register("clean-resource-${ver}"){
+        dependsOn(clean)
+        dependsOn(":${ver}:common:clean")
+    }
 }
 
-versions.forEach {ver->
-    tasks.register("copyResources-${ver}",Copy){
-        dependsOn(processResources)
+def partVersions = ['1.18.2', '1.19.2', '1.19.4', '1.20.1', '1.20.4']
+
+partVersions.forEach {ver->
+    tasks.register("clean-resource-${ver}"){
+        dependsOn(":${ver}:common:clean")
+    }
+}
+
+
+//1.16.5
+
+tasks.register('gen-1.16.5',Copy){
+    dependsOn('clean-resource-1.16.5')
+    dependsOn('generateAssetsAndData')
+    from("./build/resources/main/")
+    into("../1.16.5/common/build/resources/main/")
+    duplicatesStrategy = DuplicatesStrategy.INHERIT
+}
+
+//1.18.2-1.20.4
+
+partVersions.forEach {ver->
+    tasks.register("copyAssetsAndDataFromCommon-${ver}",Copy){
+        dependsOn("clean-resource-${ver}")
         from("./build/resources/main/")
         into("../${ver}/common/build/resources/main/")
-        duplicatesStrategy = DuplicatesStrategy.INHERIT
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     }
-
 }
+
+partVersions.forEach { ver ->
+    tasks.register("copyAssetsAndDataFrom1.16.5-${ver}", Copy) {
+        from("./1.16.5/common/src/main/resources/data/yuushya/")
+        into("../${ver}/common/build/resources/main/data/yuushya/")
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    }
+}
+
+partVersions.forEach { ver ->
+    tasks.register("gen-${ver}"){
+        dependsOn("copyAssetsAndDataFromCommon-${ver}")
+        dependsOn("copyAssetsAndDataFrom1.16.5-${ver}")
+    }
+}
+
+tasks.register("gen-part"){
+    dependsOn(partVersions.collect{"gen-${it}"})
+}
+
 
 //1.20.6
 
-tasks.register('clean-1.20.6'){
-    dependsOn(clean)
-    dependsOn(':1.20.6:common:clean')
-}
-
 tasks.register('generateAssetsAndData-1.20.6', CreateAssetsAndDataTask){
-    dependsOn('clean-1.20.6')
+    dependsOn('clean-resource-1.20.6')
     dependsOn(processResources)
     it.path = projectDir.toPath().resolve("./build/resources/main/")
     it.version = "1.20.6"
@@ -45,20 +81,27 @@ tasks.register('generateAssetsAndData-1.20.6', CreateAssetsAndDataTask){
     }
 }
 
-tasks.register("generateAndCopyResources-1.20.6",Copy){
+tasks.register("copyAssetsAndDataFromCommon-1.20.6",Copy){
     dependsOn('generateAssetsAndData-1.20.6')
     from("./build/resources/main/")
     into("../1.20.6/common/build/resources/main/")
-    duplicatesStrategy = DuplicatesStrategy.INHERIT
-}
-//1.21.0
-tasks.register('clean-1.21.0'){
-    dependsOn(clean)
-    dependsOn(':1.21.0:common:clean')
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
 
+tasks.register("copyAssetsAndDataFrom1.16.5-1.20.6", Copy) {
+    from("./1.16.5/common/src/main/resources/data/yuushya/")
+    into("../1.20.6/common/build/resources/main/data/yuushya/")
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+tasks.register("gen-1.20.6"){
+    dependsOn("copyAssetsAndDataFromCommon-1.20.6")
+    dependsOn("copyAssetsAndDataFrom1.16.5-1.20.6")
+}
+//1.21.0
+
 tasks.register('generateAssetsAndData-1.21.0', CreateAssetsAndDataTask){
-    dependsOn('clean-1.21.0')
+    dependsOn('clean-resource-1.21.0')
     dependsOn(processResources)
     it.path = projectDir.toPath().resolve("./build/resources/main/")
     it.version = "1.21.0"
@@ -68,9 +111,32 @@ tasks.register('generateAssetsAndData-1.21.0', CreateAssetsAndDataTask){
     }
 }
 
-tasks.register("generateAndCopyResources-1.21.0",Copy){
+tasks.register("copyAssetsAndDataFromCommon-1.21.0",Copy){
     dependsOn('generateAssetsAndData-1.21.0')
     from("./build/resources/main/")
     into("../1.21.0/common/build/resources/main/")
-    duplicatesStrategy = DuplicatesStrategy.INHERIT
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+tasks.register("copyAssetsAndDataFrom1.20.6-1.21.0", Copy) {
+    from("./1.20.6/common/src/main/resources/data/yuushya/")
+    into("../1.21.0/common/build/resources/main/data/yuushya/")
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+def mapping = ["advancement":"advancement","loot_tables":"loot_table","recipes":"recipe",
+    "structures":"structure","tags/items":"tags/item"]
+
+mapping.forEach { key,value ->
+    tasks.register("copyAssetsAndDataFrom1.16.5-1.21.0-${key.replace("/","_")}", Copy) {
+        from("./1.16.5/common/src/main/resources/data/yuushya/${key}/")
+        into("../1.21.0/common/build/resources/main/data/yuushya/${value}/")
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    }
+}
+
+tasks.register("gen-1.21.0"){
+    dependsOn(mapping.collect {"copyAssetsAndDataFrom1.16.5-1.21.0-${it.key.replace("/","_")}"})
+    dependsOn("copyAssetsAndDataFromCommon-1.21.0")
+    dependsOn("copyAssetsAndDataFrom1.20.6-1.21.0")
 }

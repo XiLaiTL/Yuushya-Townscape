@@ -1,0 +1,9 @@
+{
+    "type": "blasting",
+    "ingredient": {
+        "item": "minecraft:iron_ingot"
+    },
+    "result": "yuushya:steel_structure",
+    "experience": 0.5,
+    "cookingtime": 10
+}

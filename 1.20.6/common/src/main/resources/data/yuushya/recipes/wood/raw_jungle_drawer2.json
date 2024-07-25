@@ -1,0 +1,8 @@
+{
+    "type": "stonecutting",
+    "ingredient": 
+        {
+            "item": "yuushya:raw_jungle_vertical_drawer"
+        },
+    "result":{"id":"yuushya:raw_jungle_drawer","count":1}
+}

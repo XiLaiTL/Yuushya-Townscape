@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+     "AA",
+     "AA"
+    ],
+    "key": {
+      "A": {
+        "item": "yuushya:lime__concrete"
+      }
+    },
+    "result": {
+      "item": "yuushya:pale_bricks_0",
+      "count":4
+    }
+  }

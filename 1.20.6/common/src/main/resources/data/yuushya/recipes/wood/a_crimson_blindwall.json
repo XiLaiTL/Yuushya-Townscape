@@ -1,0 +1,12 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "yuushya:raw_crimson_wood"
+        }
+    ],
+    "result":{
+      "id": "yuushya:a_crimson_blindwall",
+        "count": 4
+    }
+  }

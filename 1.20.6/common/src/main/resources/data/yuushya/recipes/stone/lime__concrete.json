@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+     "AB",
+     "BA"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:diorite"
+      },
+      "B":{
+        "item":"minecraft:andesite"
+      }
+    },
+    "result": {
+      "item": "yuushya:lime__concrete",
+      "count":4
+    }
+  }

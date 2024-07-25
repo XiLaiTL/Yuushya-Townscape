@@ -1,0 +1,8 @@
+{
+    "type": "stonecutting",
+    "ingredient": 
+        {
+            "item": "yuushya:marble"
+        },
+    "result":{"id":"yuushya:marble_bricks_1","count":1}
+}

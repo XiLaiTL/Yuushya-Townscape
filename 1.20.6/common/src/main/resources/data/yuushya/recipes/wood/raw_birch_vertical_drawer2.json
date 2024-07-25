@@ -1,0 +1,8 @@
+{
+    "type": "stonecutting",
+    "ingredient": 
+        {
+            "item": "yuushya:raw_birch_drawer"
+        },
+    "result":{"id":"yuushya:raw_birch_vertical_drawer","count":1}
+}

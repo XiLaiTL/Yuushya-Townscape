@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+     "AAA",
+     "ABA",
+     "AAA"
+    ],
+    "key": {
+      "A": 
+      {
+        "item":"yuushya:a_dark_oak_blindwall"
+      },
+      "B":
+        {
+        "item":"minecraft:dark_oak_planks"
+      }
+    },
+    "result":{
+      "id": "yuushya:dark_oak_framed_planks",
+      "count":8
+    }
+  }

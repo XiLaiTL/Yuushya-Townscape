@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+     "ABA",
+     "AAA",
+     "ABA"
+    ],
+    "key": {
+      "A": {
+        "item": "yuushya:raw_bamboo"
+      },
+      "B":{
+        "item":"minecraft:chest"
+      }
+    },
+    "result":{
+      "id": "yuushya:raw_bamboo_drawer",
+      "count":8
+    }
+  }
