@@ -3,7 +3,7 @@
 	"ambientocclusion": false,
 	"textures": {
 		"particle": "#couch",
-		"couch": "#couch",
+		"couch": "yuushya:block_/template",
 		"sides": "yuushya:block_/top_reinforced_concrete"
 	},
 	"elements": [

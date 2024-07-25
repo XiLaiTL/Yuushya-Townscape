@@ -3,7 +3,7 @@
 	"ambientocclusion": false,
 	"textures": {
 		"particle": "#couch",
-		"couch": "yuushya:block_/decorative_wool/decorative_blue_wool_couch"
+		"couch": "yuushya:block_/template"
 	},
 	"elements": [
 		{

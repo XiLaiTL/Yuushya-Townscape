@@ -41,6 +41,7 @@ tasks.register('gen-1.16.5',Copy){
 
 partVersions.forEach {ver->
     tasks.register("copyAssetsAndDataFromCommon-${ver}",Copy){
+        dependsOn("generateAssetsAndData")
         dependsOn("clean-resource-${ver}")
         from("./build/resources/main/")
         into("../${ver}/common/build/resources/main/")
