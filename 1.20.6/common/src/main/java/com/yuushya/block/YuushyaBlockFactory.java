@@ -67,7 +67,7 @@ public class YuushyaBlockFactory{
 
     public static class BlockWithClassType extends AbstractYuushyaBlock {
         public String classType;
-        private final Map<BlockState,VoxelShape> voxelShapeCache = new HashMap<>();
+        private final Map<Integer,VoxelShape> voxelShapeCache = new HashMap<>();
         public BlockWithClassType(Properties properties, Integer tipLines, String classType) {
             super(properties, tipLines);
             this.classType=classType;
@@ -79,15 +79,16 @@ public class YuushyaBlockFactory{
 
         @Override
         public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
-            if(!voxelShapeCache.containsKey(blockState)){
-                if(!getYuushyaVoxelShapes().containsKey(Block.getId(blockState))){
+            Integer id = Block.getId(blockState);
+            if(!voxelShapeCache.containsKey(id)){
+                if(!getYuushyaVoxelShapes().containsKey(id)){
                     CollisionFileReader.readCollisionToVoxelShape(voxelShapeCache,blockState.getBlock(), BuiltInRegistries.BLOCK.getKey(blockState.getBlock()).toString());
                 }
-                VoxelShape shape = getYuushyaVoxelShapes().getOrDefault(Block.getId(blockState),Shapes.empty());
-                voxelShapeCache.put(blockState,shape);
+                VoxelShape shape = getYuushyaVoxelShapes().getOrDefault(id,Shapes.empty());
+                voxelShapeCache.put(id,shape);
                 return shape;
             }
-            return voxelShapeCache.get(blockState);
+            return voxelShapeCache.get(id);
         }
 
 //        @Override

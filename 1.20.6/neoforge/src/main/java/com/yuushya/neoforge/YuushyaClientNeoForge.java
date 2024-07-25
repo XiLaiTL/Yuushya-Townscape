@@ -10,35 +10,43 @@ import com.yuushya.registries.YuushyaRegistryConfig;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.particles.ParticleType;
 import net.minecraft.core.particles.SimpleParticleType;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.entity.EntityType;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.fml.loading.FMLEnvironment;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.event.RegisterParticleProvidersEvent;
+import net.neoforged.neoforge.registries.RegisterEvent;
 
+//@EventBusSubscriber(value = Dist.CLIENT, modid = Yuushya.MOD_ID)
 @Mod(value = Yuushya.MOD_ID, dist = Dist.CLIENT)
 public class YuushyaClientNeoForge {
     public YuushyaClientNeoForge(IEventBus modBus){
-
+        if (FMLEnvironment.dist.isClient()) {
+            modBus.addListener(this::onInitializeClient);
+            modBus.addListener(this::onEntityRendererRegister);
+            modBus.addListener(this::onParticleFactoryRegistration);
+        }
     }
-    @SubscribeEvent
-    public static void onInitializeClient(FMLClientSetupEvent event) {
+
+
+    public void onInitializeClient(FMLClientSetupEvent event) {
         YuushyaClient.onInitializeClient();
-
     }
 
 
-    @SubscribeEvent
-    public static void onEntityRendererRegister(EntityRenderersEvent.RegisterRenderers event){
+    public void onEntityRendererRegister(EntityRenderersEvent.RegisterRenderers event){
         event.registerEntityRenderer((EntityType<ChairEntity>) YuushyaRegistries.CHAIR_ENTITY.get(), ChairEntityRender::new);
     }
 
 
-    @SubscribeEvent
-    public static void onParticleFactoryRegistration(RegisterParticleProvidersEvent event) {
+    public void onParticleFactoryRegistration(RegisterParticleProvidersEvent event) {
         YuushyaRegistryConfig.YuushyaRawParticleMap.values().forEach((e)->{
             Minecraft.getInstance().particleEngine.register((ParticleType<SimpleParticleType>)YuushyaRegistries.PARTICLE_TYPES.get(e.name).get(), (spriteSet)-> YuushyaParticleFactory.create(e,spriteSet));
         });

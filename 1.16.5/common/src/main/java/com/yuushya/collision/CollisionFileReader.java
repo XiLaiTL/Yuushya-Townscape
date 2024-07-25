@@ -85,7 +85,7 @@ public class CollisionFileReader {
         getCollisionMap().forEach((key, value) -> readCollisionToVoxelShape(key));
     }
 
-    public static void readCollisionToVoxelShape(Map<BlockState,VoxelShape> cache,Block block,String namespaceid){
+    public static void readCollisionToVoxelShape(Map<Integer,VoxelShape> cache,Block block,String namespaceid){
         if(! (block instanceof AirBlock)) {
             CollisionItem collision = getCollisionMap().get(namespaceid);
             if (collision != null && collision.blockstates != null) {for (CollisionItem.Model variant : collision.blockstates) {
@@ -93,7 +93,7 @@ public class CollisionFileReader {
                     VoxelShape shape = getVoxelShape(variant);
                     for (BlockState blockstate : blockstates) {
                         getYuushyaVoxelShapes().put(Block.getId(blockstate), shape);
-                        cache.put(blockstate,shape);
+                        cache.put(Block.getId(blockstate),shape);
                     }
                 }
             }

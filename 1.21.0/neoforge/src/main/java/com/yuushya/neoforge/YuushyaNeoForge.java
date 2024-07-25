@@ -17,6 +17,10 @@ import static com.yuushya.registries.YuushyaRegistries.TRANS_DIRECTION;
 @Mod(Yuushya.MOD_ID)
 public class YuushyaNeoForge {
 
+    public YuushyaNeoForge(IEventBus modBus) {
+        Yuushya.init();
+    }
+
 //    public static final DeferredRegister.DataComponents REGISTRAR = DeferredRegister.createDataComponents(Yuushya.MOD_ID);
 //
 //    private static final DeferredHolder<DataComponentType<?>, DataComponentType<Structure>> _STRUCTURE = REGISTRAR.registerComponentType(
@@ -35,7 +39,4 @@ public class YuushyaNeoForge {
 //        STRUCTURE = (RegistrySupplier<DataComponentType<?>>) _STRUCTURE.getDelegate();
 //        TRANS_DIRECTION = (RegistrySupplier<DataComponentType<?>>) _TRANS_DIRECTION.getDelegate();
 //    }
-    public YuushyaNeoForge(IEventBus modBus) {
-        Yuushya.init();
-    }
 }
