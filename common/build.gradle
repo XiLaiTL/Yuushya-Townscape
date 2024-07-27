@@ -51,7 +51,7 @@ partVersions.forEach {ver->
 
 partVersions.forEach { ver ->
     tasks.register("copyAssetsAndDataFrom1.16.5-${ver}", Copy) {
-        from("./1.16.5/common/src/main/resources/data/yuushya/")
+        from("../1.16.5/common/src/main/resources/data/yuushya/")
         into("../${ver}/common/build/resources/main/data/yuushya/")
         duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     }
@@ -90,7 +90,7 @@ tasks.register("copyAssetsAndDataFromCommon-1.20.6",Copy){
 }
 
 tasks.register("copyAssetsAndDataFrom1.16.5-1.20.6", Copy) {
-    from("./1.16.5/common/src/main/resources/data/yuushya/")
+    from("../1.16.5/common/src/main/resources/data/yuushya/")
     into("../1.20.6/common/build/resources/main/data/yuushya/")
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
@@ -120,7 +120,7 @@ tasks.register("copyAssetsAndDataFromCommon-1.21.0",Copy){
 }
 
 tasks.register("copyAssetsAndDataFrom1.20.6-1.21.0", Copy) {
-    from("./1.20.6/common/src/main/resources/data/yuushya/")
+    from("../1.20.6/common/src/main/resources/data/yuushya/")
     into("../1.21.0/common/build/resources/main/data/yuushya/")
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
@@ -130,7 +130,7 @@ def mapping = ["advancement":"advancement","loot_tables":"loot_table","recipes":
 
 mapping.forEach { key,value ->
     tasks.register("copyAssetsAndDataFrom1.16.5-1.21.0-${key.replace("/","_")}", Copy) {
-        from("./1.16.5/common/src/main/resources/data/yuushya/${key}/")
+        from("../1.16.5/common/src/main/resources/data/yuushya/${key}/")
         into("../1.21.0/common/build/resources/main/data/yuushya/${value}/")
         duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     }

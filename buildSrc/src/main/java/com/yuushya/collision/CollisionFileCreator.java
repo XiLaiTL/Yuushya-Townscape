@@ -68,8 +68,8 @@ public class CollisionFileCreator {
     }
 
     record ModelTriple(ResourceLocation resourceLocation,Integer x,Integer y){}
-    static Map<ResourceLocation,Model> modelCache = new HashMap<>();
-    static Map<ModelTriple,List<CollisionItem.Model.Element>> collisionCache = new HashMap<>();
+    Map<ResourceLocation,Model> modelCache = new HashMap<>();
+    Map<ModelTriple,List<CollisionItem.Model.Element>> collisionCache = new HashMap<>();
     private void readBlockStateAndModel(){
         if(Mode.proposalCollision!=null) Mode.proposalCollision.add("COLLISION PROPOSE:\t{namespaceId}\t{TYPE}\t{model}\t{totalCube}\t{face}\t{bigCube}\t{smallCube}");
         Path path = _basePath.resolve("./assets/"+ _nameSpace +"/blockstates/");//read the all blockstates under the namespace
@@ -105,8 +105,13 @@ public class CollisionFileCreator {
                                     BlockState.Variant variant = NormalGSON.fromJson(value, BlockState.Variant.class);
                                     ResourceLocation modelLocation = ResourceLocation.parse(variant.model);
                                     Model model;
-                                    if(modelCache.containsKey(modelLocation)) model = modelCache.get(modelLocation);
-                                    else model = modelReader.read( modelLocation);
+                                    if(modelCache.containsKey(modelLocation)) {
+                                        model = modelCache.get(modelLocation);
+                                    }
+                                    else {
+                                        model = modelReader.read( modelLocation);
+                                        modelCache.put(modelLocation,model);
+                                    }
 
                                     ModelTriple key = new ModelTriple(modelLocation, variant.x, variant.y);
                                     if(collisionCache.containsKey(key)) {

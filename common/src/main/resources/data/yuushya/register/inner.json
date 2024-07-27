@@ -3167,7 +3167,19 @@
 				"for_class": ["raw_wood", "wool", "decorative_wool"]
 			}
 		},
-
+		{
+			"name": "couch_back",
+			"blockstate": { "forms": [["yuushya:template/couch_back/couch_back_left","yuushya:template/couch_back/couch_back_middle","yuushya:template/couch_back/couch_back_right","yuushya:template/couch_back/couch_back_none","yuushya:template/couch_back/couch_back_inner_left","yuushya:template/couch_back/couch_back_outer_left","yuushya:template/couch_back/couch_back_inner_right","yuushya:template/couch_back/couch_back_outer_right"]], "kit": "line_corner"},
+			"item_model": "yuushya:template/couch_back/couch_back_none", "item_group": "furniture",
+			"render_type": "cutout",
+			"usage": {"sit_pos": [0.5,0.5,0.5]},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"class_type": "template", "auto_generated": {"collision": "detail", "recipe": true,"item_model": true },
+			"texture": {
+				"slots": ["all", "sides", "top", "couch"],
+				"for_class": ["raw_wood", "wool", "decorative_wool"]
+			}
+		},
 		{
 			"name": "shelf",
 			"blockstate": { "forms": [["yuushya:template/shelf_left","yuushya:template/shelf_middle","yuushya:template/shelf_right","yuushya:template/shelf_none"]], "kit": "line"},

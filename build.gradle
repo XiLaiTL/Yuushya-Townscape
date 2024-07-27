@@ -84,6 +84,7 @@ tasks.register("build-chain1",SequenceTask,["gen-chain"]+build_tasks.subList(0, 
 tasks.register("build-chain2",SequenceTask,build_tasks.subList(build_tasks.size()/2 as int,build_tasks.size()))
 
 tasks.register("test-chain",SequenceTask,[
+        ":common:clean",
         ":common:gen-1.20.1",
         ":1.20.1:fabric:runClient"
 ])
