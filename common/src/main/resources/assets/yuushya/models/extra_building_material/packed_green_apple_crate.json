@@ -1,0 +1,6 @@
+{
+  "parent": "yuushya:extra_building_material/packed_apple_crate",
+  "textures": {
+    "5": "yuushya:block/apple/lime_apple"
+  }
+}
