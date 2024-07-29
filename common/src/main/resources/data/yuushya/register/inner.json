@@ -53,6 +53,9 @@
 		{"class_type": "HatItem", "name": "bismuth_crystal",   "item_group": "item","properties": {"max_count": 64,"lines": 1, "rarity": "epic"}},
 		{"class_type": "HatItem", "name": "tri_legged_chair",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
 		{"class_type": "HatItem", "name": "wriggle_nightbug",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
+		{"class_type": "HatItem", "name": "shameimaru_aya",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
+		{"class_type": "HatItem", "name": "hakurei_reimu",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
+		{"class_type": "HatItem", "name": "nanayama_moyoka",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
 		{"class_type": "HatItem", "name": "sleeping_orange_cat",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
 		{"class_type": "HatItem", "name": "sleeping_ragdoll",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
 		{"class_type": "HatItem", "name": "butterfly",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
@@ -325,6 +328,20 @@
 			"name": "top_reinforced_concrete",
 			"auto_generated": { "recipe": false },
 			"blockstate": { "forms": [["yuushya:block/top_reinforced_concrete"]]}
+		},
+
+		{
+			"class_type": "PlainBlock", "item_group": "infrastructure",
+			"name": "tactile_paving",
+			"auto_generated": { "recipe": false },
+			"blockstate": { "forms": [["yuushya:block/tactile_paving"]]}
+		},
+
+		{
+			"class_type": "PlainBlock", "item_group": "infrastructure",
+			"name": "tactile_paving_spot",
+			"auto_generated": { "recipe": false },
+			"blockstate": { "forms": [["yuushya:block/tactile_paving_dotted"]]}
 		},
 
 		{
@@ -3156,19 +3173,6 @@
 
 		{
 			"name": "couch",
-			"blockstate": { "forms": [["yuushya:template/couch_left","yuushya:template/couch_middle","yuushya:template/couch_right","yuushya:template/couch_none","yuushya:template/couch_inner_left","yuushya:template/couch_outer_left","yuushya:template/couch_inner_right","yuushya:template/couch_outer_right"]], "kit": "line_corner"},
-			"item_model": "yuushya:template/couch_none", "item_group": "furniture",
-			"render_type": "cutout",
-			"usage": {"sit_pos": [0.5,0.5,0.5]},
-			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
-			"class_type": "template", "auto_generated": {"collision": "detail", "recipe": true,"item_model": true },
-			"texture": {
-				"slots": ["all", "sides", "top", "couch"],
-				"for_class": ["raw_wood", "wool", "decorative_wool"]
-			}
-		},
-		{
-			"name": "couch_back",
 			"blockstate": { "forms": [["yuushya:template/couch_back/couch_back_left","yuushya:template/couch_back/couch_back_middle","yuushya:template/couch_back/couch_back_right","yuushya:template/couch_back/couch_back_none","yuushya:template/couch_back/couch_back_inner_left","yuushya:template/couch_back/couch_back_outer_left","yuushya:template/couch_back/couch_back_inner_right","yuushya:template/couch_back/couch_back_outer_right"]], "kit": "line_corner"},
 			"item_model": "yuushya:template/couch_back/couch_back_none", "item_group": "furniture",
 			"render_type": "cutout",
@@ -3180,6 +3184,7 @@
 				"for_class": ["raw_wood", "wool", "decorative_wool"]
 			}
 		},
+
 		{
 			"name": "shelf",
 			"blockstate": { "forms": [["yuushya:template/shelf_left","yuushya:template/shelf_middle","yuushya:template/shelf_right","yuushya:template/shelf_none"]], "kit": "line"},
@@ -4619,17 +4624,74 @@
 		},
 
 		{
-			"class_type": "FixedBlock",
+			"class_type": "IntactBlock",
+			"name": "white_wall_frame",
+			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "extra_shapes",
+			"properties": {"is_solid": false, "has_collision": false},
+			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/white_wall_frame"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
 			"name": "pale_wall_frame",
-			"auto_generated": { "recipe": true }, "item_group": "extra_shapes",
+			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "extra_shapes",
+			"properties": {"is_solid": false, "has_collision": false},
 			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/pale_wall_frame"]]}
 		},
 
 		{
-			"class_type": "FixedBlock",
+			"class_type": "IntactBlock",
 			"name": "stone_wall_frame",
-			"auto_generated": { "recipe": true }, "item_group": "extra_shapes",
+			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "extra_shapes",
+			"properties": {"is_solid": false, "has_collision": false},
 			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/stone_wall_frame"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "classical_white_window_sideway_frame",
+			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "extra_shapes",
+			"properties": {"has_collision": false},
+			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_white_window_sideway_frame"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "classical_white_window_bottom",
+			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "extra_shapes",
+			"properties": {"has_collision": false},
+			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_white_window_bottom"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "classical_white_window_top",
+			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "extra_shapes",
+			"properties": {"has_collision": false},
+			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_white_window_top"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "classical_white_window_top_round",
+			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "extra_shapes",
+			"properties": {"has_collision": false},
+			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_white_window_top_round"]]}
+		},
+
+		{
+			"class_type": "RoofBlock",
+			"name": "classical_white_ridge",
+			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "extra_shapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_white_ridge_left","yuushya:extra_building_material/euro_style/classical_white_ridge_middle","yuushya:extra_building_material/euro_style/classical_white_ridge_right","yuushya:extra_building_material/euro_style/classical_white_ridge_none"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "classical_white_door_top",
+			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "extra_shapes",
+			"properties": {"has_collision": false},
+			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_white_door_top"]]}
 		},
 
 		{"name": "~Window_窗框", "class_type": "_comment" },
@@ -7502,6 +7564,34 @@
 			"name": "packed_radish",
 			"auto_generated": { "recipe": true }, "item_group": "catering",
 			"blockstate": { "forms": [["yuushya:extra_building_material/packed_radish"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "packed_crate",
+			"auto_generated": { "recipe": true, "collision":"bound" }, "item_group": "catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/packed_crate"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "packed_apple_crate",
+			"auto_generated": { "recipe": true, "collision":"bound" }, "item_group": "catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/packed_apple_crate"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "packed_green_apple_crate",
+			"auto_generated": { "recipe": true, "collision":"bound" }, "item_group": "catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/packed_green_apple_crate"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "packed_golden_apple_crate",
+			"auto_generated": { "recipe": true, "collision":"bound" }, "item_group": "catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/packed_golden_apple_crate"]]}
 		},
 
 		{
