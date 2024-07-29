@@ -60,7 +60,7 @@ partVersions.forEach { ver ->
 partVersions.forEach { ver ->
     tasks.register("gen-${ver}"){
         dependsOn("copyAssetsAndDataFromCommon-${ver}")
-        dependsOn("copyAssetsAndDataFrom1.16.5-${ver}")
+        finalizedBy("copyAssetsAndDataFrom1.16.5-${ver}")
     }
 }
 
@@ -97,7 +97,7 @@ tasks.register("copyAssetsAndDataFrom1.16.5-1.20.6", Copy) {
 
 tasks.register("gen-1.20.6"){
     dependsOn("copyAssetsAndDataFromCommon-1.20.6")
-    dependsOn("copyAssetsAndDataFrom1.16.5-1.20.6")
+    finalizedBy("copyAssetsAndDataFrom1.16.5-1.20.6")
 }
 //1.21.0
 
@@ -139,5 +139,5 @@ mapping.forEach { key,value ->
 tasks.register("gen-1.21.0"){
     dependsOn(mapping.collect {"copyAssetsAndDataFrom1.16.5-1.21.0-${it.key.replace("/","_")}"})
     dependsOn("copyAssetsAndDataFromCommon-1.21.0")
-    dependsOn("copyAssetsAndDataFrom1.20.6-1.21.0")
+    finalizedBy("copyAssetsAndDataFrom1.20.6-1.21.0")
 }
