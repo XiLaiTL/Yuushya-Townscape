@@ -81,6 +81,24 @@
 		},
 
 		{
+			"name": "HorizontalBlock",
+			"blockstate": { "kit": "line" },
+			"render_type": "cutout",
+			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "bound" },
+			"class_type": "class",
+			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": true, "has_collision": true, "is_delicate": false }
+		},
+
+		{
+			"name": "VerticalBlock",
+			"blockstate": { "kit": "pole" },
+			"render_type": "cutout",
+			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "bound" },
+			"class_type": "class",
+			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": true, "has_collision": true, "is_delicate": false }
+		},
+
+		{
 			"name": "WoodBlock",
 			"blockstate": { "kit": "block" },
 			"render_type": "cutout",
@@ -1557,6 +1575,23 @@
 			"blockstate": { "forms": [["yuushya:block/orange_worn_concrete"]]}
 		},
 
+		{
+			"class_type": "HorizontalBlock",
+			"name": "horizontal_chiseled_black_acrylic",
+			"auto_generated": { "recipe": true }, "item_group": "extra_blocks",
+			"item_model": "yuushya:block/horizontal_chiseled_black_acrylic_none",
+			"blockstate": { "forms": [["yuushya:block/horizontal_chiseled_black_acrylic_left","yuushya:block/horizontal_chiseled_black_acrylic_middle","yuushya:block/horizontal_chiseled_black_acrylic_right","yuushya:block/horizontal_chiseled_black_acrylic_none"]]}
+		},
+
+		{
+			"class_type": "FlowBlock",
+			"name": "vertical_chiseled_black_acrylic",
+			"auto_generated": { "recipe": true }, "item_group": "extra_blocks",
+			"item_model": "yuushya:block/vertical_chiseled_black_acrylic_none",
+			"blockstate": { "forms": [["yuushya:block/vertical_chiseled_black_acrylic_top", "yuushya:block/vertical_chiseled_black_acrylic_middle", "yuushya:block/vertical_chiseled_black_acrylic_bottom", "yuushya:block/vertical_chiseled_black_acrylic_none"]]
+			}
+		},
+
 
 		{
 			"class_type": "block", "name": "black_framed_acrylic",
@@ -1610,6 +1645,100 @@
 				"set":  [
 					"all#yuushya:block_/acrylic/acrylic_yellow_block",
 					"sides#yuushya:block_/acrylic/acrylic_yellow_block",
+					"top#yuushya:block_/acrylic/acrylic_white"]}
+		},
+
+		{
+			"class_type": "block", "name": "blue_framed_acrylic",
+			"texture": {
+				"type": "acrylic",
+				"value":"yuushya:block_/acrylic/acrylic_blue_block",
+				"set":  [
+					"all#yuushya:block_/acrylic/acrylic_blue_block",
+					"sides#yuushya:block_/acrylic/acrylic_blue_block",
+					"top#yuushya:block_/acrylic/acrylic_white"]}
+		},
+
+		{
+			"class_type": "block", "name": "purple_framed_acrylic",
+			"texture": {
+				"type": "acrylic",
+				"value":"yuushya:block_/acrylic/acrylic_purple_block",
+				"set":  [
+					"all#yuushya:block_/acrylic/acrylic_purple_block",
+					"sides#yuushya:block_/acrylic/acrylic_purple_block",
+					"top#yuushya:block_/acrylic/acrylic_white"]}
+		},
+
+		{
+			"class_type": "block", "name": "black_framed_acrylic_alt",
+			"texture": {
+				"value":"yuushya:block_/acrylic/acrylic_black_block",
+				"set":  [
+					"all#yuushya:block_/acrylic/acrylic_black_block",
+					"sides#yuushya:block_/acrylic/acrylic_black_block",
+					"top#yuushya:block_/acrylic/acrylic_white"]}
+		},
+
+		{
+			"class_type": "block", "name": "light_blue_framed_acrylic_alt",
+			"texture": {
+				"value":"yuushya:block_/acrylic/acrylic_light_blue_block",
+				"set":  [
+					"all#yuushya:block_/acrylic/acrylic_light_blue_block",
+					"sides#yuushya:block_/acrylic/acrylic_light_blue_block",
+					"top#yuushya:block_/acrylic/acrylic_white"]}
+		},
+
+		{
+			"class_type": "block", "name": "lime_framed_acrylic_alt",
+			"texture": {
+				"value":"yuushya:block_/acrylic/acrylic_lime_block",
+				"set":  [
+					"all#yuushya:block_/acrylic/acrylic_lime_block",
+					"sides#yuushya:block_/acrylic/acrylic_lime_block",
+					"top#yuushya:block_/acrylic/acrylic_white"]}
+		},
+
+		{
+			"class_type": "block", "name": "red_framed_acrylic_alt",
+			"texture": {
+				"value":"yuushya:block_/acrylic/acrylic_red_block",
+				"set":  [
+					"all#yuushya:block_/acrylic/acrylic_red_block",
+					"sides#yuushya:block_/acrylic/acrylic_red_block",
+					"top#yuushya:block_/acrylic/acrylic_white"]}
+		},
+
+		{
+			"class_type": "block", "name": "yellow_framed_acrylic_alt",
+			"texture": {
+				"value":"yuushya:block_/acrylic/acrylic_yellow_block",
+				"set":  [
+					"all#yuushya:block_/acrylic/acrylic_yellow_block",
+					"sides#yuushya:block_/acrylic/acrylic_yellow_block",
+					"top#yuushya:block_/acrylic/acrylic_white"]}
+		},
+
+		{
+			"class_type": "block", "name": "blue_framed_acrylic_alt",
+			"texture": {
+				"type": "acrylic",
+				"value":"yuushya:block_/acrylic/acrylic_blue_block",
+				"set":  [
+					"all#yuushya:block_/acrylic/acrylic_blue_block",
+					"sides#yuushya:block_/acrylic/acrylic_blue_block",
+					"top#yuushya:block_/acrylic/acrylic_white"]}
+		},
+
+		{
+			"class_type": "block", "name": "purple_framed_acrylic_alt",
+			"texture": {
+				"type": "acrylic",
+				"value":"yuushya:block_/acrylic/acrylic_purple_block",
+				"set":  [
+					"all#yuushya:block_/acrylic/acrylic_purple_block",
+					"sides#yuushya:block_/acrylic/acrylic_purple_block",
 					"top#yuushya:block_/acrylic/acrylic_white"]}
 		},
 
@@ -1844,8 +1973,6 @@
 					"sides#yuushya:block_/acrylic/yellow_acrylic",
 					"top#yuushya:block_/concrete/yellow_concrete_top"]}
 		},
-
-
 
 		{
 			"class_type": "block", "name": "cut_tile", "item_group": "stone",
@@ -4683,6 +4810,7 @@
 			"class_type": "RoofBlock",
 			"name": "classical_white_ridge",
 			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "extra_shapes",
+			"item_model": "yuushya:extra_building_material/euro_style/classical_white_ridge_none",
 			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_white_ridge_left","yuushya:extra_building_material/euro_style/classical_white_ridge_middle","yuushya:extra_building_material/euro_style/classical_white_ridge_right","yuushya:extra_building_material/euro_style/classical_white_ridge_none"]]}
 		},
 
