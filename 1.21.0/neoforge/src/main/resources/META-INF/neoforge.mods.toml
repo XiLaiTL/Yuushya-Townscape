@@ -15,21 +15,21 @@ description = '''
     ${mod_description}
     '''
 
-[[dependencies.example_mod]]
+[[dependencies.yuushya]]
 modId = "neoforge"
 type = "required"
 versionRange = "[21.0,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.example_mod]]
+[[dependencies.yuushya]]
 modId = "minecraft"
 type = "required"
 versionRange = "[1.21,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.example_mod]]
+[[dependencies.yuushya]]
 modId = "architectury"
 type = "required"
 versionRange = "[13.0.2,)"
