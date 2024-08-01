@@ -323,6 +323,8 @@ public class YuushyaBlockFactory{
                     kitType = new PoleLineBlock();}
                 case "repeat"->{
                     kitType = new RepeatBlock();}
+                case "line_cross"->{
+                    kitType = new LineCrossBlock();}
                 case "block"->{}
                 case "VanillaSlabBlock"->{
                     return new SlabBlock(properties){
@@ -366,5 +368,9 @@ public class YuushyaBlockFactory{
     public static boolean isTheSameBlock(BlockState state1, BlockState state2) {return state2.getBlock()==state1.getBlock(); }
     public static boolean isTheSameFacing(BlockState blockState1,BlockState blockState2){return blockState1.getValue(HORIZONTAL_FACING)==blockState2.getValue(HORIZONTAL_FACING);}
     public static boolean isTheSameLine(BlockState blockState1,BlockState blockState2){return blockState1.getValue(HORIZONTAL_FACING)==blockState2.getValue(HORIZONTAL_FACING)||blockState1.getValue(HORIZONTAL_FACING)==blockState2.getValue(HORIZONTAL_FACING).getOpposite();}
-
+    public static boolean isPerpendicular(BlockState blockState1,BlockState blockState2){
+        Direction direction1 = blockState1.getValue(HORIZONTAL_FACING);
+        Direction direction2 = blockState2.getValue(HORIZONTAL_FACING);
+        return direction1 == direction2.getClockWise() || direction1 == direction2.getCounterClockWise();
+    }
 }
