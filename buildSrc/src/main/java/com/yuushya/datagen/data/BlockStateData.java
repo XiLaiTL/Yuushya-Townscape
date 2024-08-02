@@ -49,7 +49,7 @@ public class BlockStateData {
     public static final ChildProperty FRONT=ChildProperty.of("pos","left","middle","right","none");
     public static final ChildProperty BACK=ChildProperty.of("pos","left","middle","right","none");
     public static final ChildProperty POS_VERTICAL=ChildProperty.of("pos","top","middle","bottom","none");
-    public static final ChildProperty YPOS=ChildProperty.of("pos","top","middle","bottom","none");
+    public static final ChildProperty YPOS=ChildProperty.of("ypos","top","middle","bottom","none");
     public static final ChildProperty XPOS=ChildProperty.of("xpos","west","east","middle","none");
     public static final ChildProperty ZPOS=ChildProperty.of("zpos","north","south","middle","none");
     public static final ChildProperty X=ChildProperty.of("x","0","1","2","3","4","5","6","7","8","9","10","11");
@@ -81,7 +81,7 @@ public class BlockStateData {
                 case "normal"->ChildVariant.of(baseVariant)
                         .add(createHorizonFacingVariant())
                         .add(ChildPropertyVariant.of(FORM).generate((variantKeyList)->{
-
+                            //如果FROM为空根本进不来
                                 int i=FORM.indexOf(variantKeyList.get(0));
                                 return List.of(i < formsNum
                                         ? Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(i).get(0)))
@@ -101,121 +101,90 @@ public class BlockStateData {
                 case "line"->ChildVariant.of(baseVariant)
                         .add(createHorizonFacingVariant())
                         .add(ChildPropertyVariant.of(FORM,POS_HORIZON).generate((variantKeyList)->{
-                            if(FORM!=null){
-                                int i= FORM.indexOf(variantKeyList.get(0));
-                                int j=POS_HORIZON.indexOf(variantKeyList.get(1));
-                                return List.of(i < formsNum
-                                        ? Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(i).get(j)))
-                                        : Variant.variant());
-                            }
-                            else{
-                                int j=POS_HORIZON.indexOf(variantKeyList.get(0));
-                                return List.of(Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(0).get(j))));
-                            }
-
+                            int offset = (FORM!=null) ? 1 : 0;
+                            int i = (FORM!=null) ? FORM.indexOf(variantKeyList.get(0)) : 0;
+                            int j=POS_HORIZON.indexOf(variantKeyList.get(offset));
+                            return List.of(i < formsNum
+                                    ? Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(i).get(j)))
+                                    : Variant.variant());
                         }));
                 case "line_corner"->ChildVariant.of(baseVariant)
                         .add(createHorizonFacingVariant())
                         .add(ChildPropertyVariant.of(FORM,POS_HORIZON,SHAPE).generate((variantKeyList)->{
-                            if(FORM!=null){
-                                int i= FORM.indexOf(variantKeyList.get(0));
-                                int j=POS_HORIZON.indexOf(variantKeyList.get(1));
-                                int k=SHAPE.indexOf(variantKeyList.get(2));
-                                int l = "pos=left".equals(variantKeyList.get(1)) && !"shape=straight".equals(variantKeyList.get(2)) ? 3+k
-                                        :"pos=right".equals(variantKeyList.get(1)) && !"shape=straight".equals(variantKeyList.get(2)) ? 5+k
-                                        :j;
-                                // ResourceLocation left, ResourceLocation midlde, ResourceLocation right, ResourceLocation none, ResourceLocation inner_left,ResourceLocation outer_left, ResourceLocation inner_right,ResourceLocation outer_right
-                                return List.of(i < formsNum
-                                        ? Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(i).get(l)))
-                                        : Variant.variant());
-                            }
-                            else{
-                                int j=POS_HORIZON.indexOf(variantKeyList.get(0));
-                                int k=SHAPE.indexOf(variantKeyList.get(1));
-                                int l = "pos=left".equals(variantKeyList.get(0)) && !"shape=straight".equals(variantKeyList.get(1)) ? 3+k
-                                        :"pos=right".equals(variantKeyList.get(0)) && !"shape=straight".equals(variantKeyList.get(1)) ? 5+k
-                                        :j;
-                                return List.of(Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(0).get(l))));
-                            }
+                            int offset = (FORM!=null) ? 1 : 0;
+                            int i = (FORM!=null) ? FORM.indexOf(variantKeyList.get(0)) : 0;
+                            int j=POS_HORIZON.indexOf(variantKeyList.get(offset));
+                            int k=SHAPE.indexOf(variantKeyList.get(offset+1));
+                            int l = "pos=left".equals(variantKeyList.get(offset)) && !"shape=straight".equals(variantKeyList.get(offset+1)) ? 3+k
+                                    :"pos=right".equals(variantKeyList.get(offset)) && !"shape=straight".equals(variantKeyList.get(offset+1)) ? 5+k
+                                    :j;
+                            // ResourceLocation left, ResourceLocation midlde, ResourceLocation right, ResourceLocation none, ResourceLocation inner_left,ResourceLocation outer_left, ResourceLocation inner_right,ResourceLocation outer_right
+                            return List.of(i < formsNum
+                                    ? Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(i).get(l)))
+                                    : Variant.variant());
 
                         }));
-
-                case "line_cross"->ChildVariant.of(baseVariant)
+                case "pole_line"->ChildVariant.of(baseVariant)
                         .add(createHorizonFacingVariant())
-                        .add(ChildPropertyVariant.of(FORM,POS_HORIZON,SHAPE).generate((variantKeyList)->{
-                            if(FORM!=null){
-                                int i= FORM.indexOf(variantKeyList.get(0));
-                                int j=POS_HORIZON.indexOf(variantKeyList.get(1));
-                                int k=SHAPE.indexOf(variantKeyList.get(2));
-                                int l = "pos=left".equals(variantKeyList.get(1)) && !"shape=straight".equals(variantKeyList.get(2)) ? 3+k
-                                        :"pos=right".equals(variantKeyList.get(1)) && !"shape=straight".equals(variantKeyList.get(2)) ? 5+k
-                                        :j;
-                                // ResourceLocation left, ResourceLocation midlde, ResourceLocation right, ResourceLocation none, ResourceLocation inner_left,ResourceLocation outer_left, ResourceLocation inner_right,ResourceLocation outer_right
-                                return List.of(i < formsNum
-                                        ? Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(i).get(l)))
-                                        : Variant.variant());
+                        .add(ChildPropertyVariant.of(FORM,POS_HORIZON,YPOS).generate((variantKeyList)->{
+                            int offset = (FORM!=null) ? 1 : 0;
+                            int i = (FORM!=null) ? FORM.indexOf(variantKeyList.get(0)) : 0;
+                            if (i < formsNum){
+                                ResourceLocation left_none = ResourceLocation.parse(blockState.forms.get(i).get(0));
+                                ResourceLocation middle_none = ResourceLocation.parse(blockState.forms.get(i).get(1));
+                                ResourceLocation right_none = ResourceLocation.parse(blockState.forms.get(i).get(2));
+                                ResourceLocation none_none = ResourceLocation.parse(blockState.forms.get(i).get(3));
+                                ResourceLocation left_top = ResourceLocation.parse(blockState.forms.get(i).get(4));
+                                ResourceLocation middle_top = ResourceLocation.parse(blockState.forms.get(i).get(5));
+                                ResourceLocation right_top = ResourceLocation.parse(blockState.forms.get(i).get(6));
+                                ResourceLocation none_top = ResourceLocation.parse(blockState.forms.get(i).get(7));
+                                ResourceLocation left_middle = ResourceLocation.parse(blockState.forms.get(i).get(8));
+                                ResourceLocation middle_middle = ResourceLocation.parse(blockState.forms.get(i).get(9));
+                                ResourceLocation right_middle = ResourceLocation.parse(blockState.forms.get(i).get(10));
+                                ResourceLocation none_middle = ResourceLocation.parse(blockState.forms.get(i).get(11));
+                                ResourceLocation left_bottom = ResourceLocation.parse(blockState.forms.get(i).get(12));
+                                ResourceLocation middle_bottom = ResourceLocation.parse(blockState.forms.get(i).get(13));
+                                ResourceLocation right_bottom = ResourceLocation.parse(blockState.forms.get(i).get(14));
+                                ResourceLocation none_bottom = ResourceLocation.parse(blockState.forms.get(i).get(15));
+                                return List.of(createHorizonYPosVariant(variantKeyList.get(offset),variantKeyList.get(offset+1),
+                                        left_none, middle_none, right_none, none_none,
+                                        left_top, middle_top, right_top, none_top,
+                                        left_middle, middle_middle, right_middle, none_middle,
+                                        left_bottom, middle_bottom, right_bottom, none_bottom));
                             }
-                            else{
-                                int j=POS_HORIZON.indexOf(variantKeyList.get(0));
-                                int k=SHAPE.indexOf(variantKeyList.get(1));
-                                int l = "pos=left".equals(variantKeyList.get(0)) && !"shape=straight".equals(variantKeyList.get(1)) ? 3+k
-                                        :"pos=right".equals(variantKeyList.get(0)) && !"shape=straight".equals(variantKeyList.get(1)) ? 5+k
-                                        :j;
-                                return List.of(Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(0).get(l))));
-                            }
-
+                            else return List.of(Variant.variant());
                         }));
                 case "face"->ChildVariant.of(baseVariant)
                         .add(ChildPropertyVariant.of(FORM,XPOS,ZPOS).generate((variantKeyList)->{
-                            if(FORM!=null){
-                                int i=FORM.indexOf(variantKeyList.get(0));
+                                int offset = (FORM!=null) ? 1 : 0;
+                                int i = (FORM!=null) ? FORM.indexOf(variantKeyList.get(0)) : 0;
                                 if (i < formsNum){
                                     ResourceLocation none = ResourceLocation.parse(blockState.forms.get(i).get(0));
                                     ResourceLocation singleLine = ResourceLocation.parse(blockState.forms.get(i).get(1));
                                     ResourceLocation middle = ResourceLocation.parse(blockState.forms.get(i).get(2));
                                     ResourceLocation bothLine = ResourceLocation.parse(blockState.forms.get(i).get(3));
-                                    return List.of(createXYPosVariant(variantKeyList.get(1),variantKeyList.get(2),none,singleLine,middle,bothLine)) ;
+                                    return List.of(createXYPosVariant(variantKeyList.get(offset),variantKeyList.get(offset+1),none,singleLine,middle,bothLine)) ;
                                 }
                                 else return List.of(Variant.variant());
-                            }
-                            else{
-                                ResourceLocation none = ResourceLocation.parse(blockState.forms.get(0).get(0));
-                                ResourceLocation singleLine = ResourceLocation.parse(blockState.forms.get(0).get(1));
-                                ResourceLocation middle = ResourceLocation.parse(blockState.forms.get(0).get(2));
-                                ResourceLocation bothLine = ResourceLocation.parse(blockState.forms.get(0).get(3));
-                                return List.of(createXYPosVariant(variantKeyList.get(0),variantKeyList.get(1),none,singleLine,middle,bothLine)) ;
-                            }
-
                         }));
                 case "pole"->ChildVariant.of(baseVariant)
                         .add(createHorizonFacingVariant())
                         .add(ChildPropertyVariant.of(FORM,POS_VERTICAL).generate((variantKeyList)->{
-                            if(FORM!=null){
-                                int i=FORM.indexOf(variantKeyList.get(0));
-                                int j=POS_VERTICAL.indexOf(variantKeyList.get(1));
-                                return List.of(i < formsNum
-                                        ? Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(i).get(j)))
-                                        : Variant.variant());
-                            }
-                            else{
-                                int j=POS_VERTICAL.indexOf(variantKeyList.get(0));
-                                return List.of(Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(0).get(j))));
-                            }
-
+                            int offset = (FORM!=null) ? 1 : 0;
+                            int i = (FORM!=null) ? FORM.indexOf(variantKeyList.get(0)) : 0;
+                            int j=POS_VERTICAL.indexOf(variantKeyList.get(offset));
+                            return List.of(i < formsNum
+                                    ? Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(i).get(j)))
+                                    : Variant.variant());
                         }));
                 case "tri_part"->ChildVariant.of(baseVariant)
                         .add(createHorizonFacingVariant())
                         .add(ChildPropertyVariant.of(FORM,POS_VERTICAL).generate((variantKeyList)->{
-                            if(FORM!=null){
-                                int i=FORM.indexOf(variantKeyList.get(0));
-                                if (i>=formsNum) return List.of(Variant.variant());
-                                else if (variantKeyList.get(1).equals("pos=middle")) return List.of(Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(i).get(0))));
-                                else return List.of(Variant.variant().with(VariantProperty.MODEL,blankModel));
-                            }
-                            else {
-                                if (variantKeyList.get(0).equals("pos=middle")) return List.of(Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(0).get(0))));
-                                else return List.of(Variant.variant().with(VariantProperty.MODEL,blankModel));
-                            }
+                            int offset = (FORM!=null) ? 1 : 0;
+                            int i = (FORM!=null) ? FORM.indexOf(variantKeyList.get(0)) : 0;
+                            if (i>=formsNum) return List.of(Variant.variant());
+                            else if (variantKeyList.get(offset).equals("pos=middle")) return List.of(Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(i).get(0))));
+                            else return List.of(Variant.variant().with(VariantProperty.MODEL,blankModel));
                         }));
                 case "VanillaSlabBlock"->{
                     ResourceLocation bottom=ResourceLocation.parse(blockState.forms.get(0).get(0));
@@ -488,6 +457,47 @@ public class BlockStateData {
 
     }
 
+    private static Variant createHorizonYPosVariant(String pos,String ypos,
+                                                    ResourceLocation left_none,ResourceLocation middle_none,ResourceLocation right_none,ResourceLocation none_none,
+                                                    ResourceLocation left_top,ResourceLocation middle_top,ResourceLocation right_top,ResourceLocation none_top,
+                                                    ResourceLocation left_middle,ResourceLocation middle_middle,ResourceLocation right_middle,ResourceLocation none_middle,
+                                                    ResourceLocation left_bottom,ResourceLocation middle_bottom,ResourceLocation right_bottom,ResourceLocation none_bottom
+                                                    ){
+        if (pos.equals("pos=left") && ypos.equals("ypos=none")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, left_none);
+        if (pos.equals("pos=middle") && ypos.equals("ypos=none")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, middle_none);
+        if (pos.equals("pos=right") && ypos.equals("ypos=none")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, right_none);
+        if (pos.equals("pos=none") && ypos.equals("ypos=none")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, none_none);
+        if (pos.equals("pos=left") && ypos.equals("ypos=top")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, left_top);
+        if (pos.equals("pos=middle") && ypos.equals("ypos=top")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, middle_top);
+        if (pos.equals("pos=right") && ypos.equals("ypos=top")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, right_top);
+        if (pos.equals("pos=none") && ypos.equals("ypos=top")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, none_top);
+        if (pos.equals("pos=left") && ypos.equals("ypos=middle")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, left_middle);
+        if (pos.equals("pos=middle") && ypos.equals("ypos=middle")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, middle_middle);
+        if (pos.equals("pos=right") && ypos.equals("ypos=middle")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, right_middle);
+        if (pos.equals("pos=none") && ypos.equals("ypos=middle")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, none_middle);
+        if (pos.equals("pos=left") && ypos.equals("ypos=bottom")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, left_bottom);
+        if (pos.equals("pos=middle") && ypos.equals("ypos=bottom")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, middle_bottom);
+        if (pos.equals("pos=right") && ypos.equals("ypos=bottom")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, right_bottom);
+        if (pos.equals("pos=none") && ypos.equals("ypos=bottom")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, none_bottom);
+
+        return Variant.variant();
+    }
 
     private static Variant createXYPosVariant(String xpos,String zpos,ResourceLocation none, ResourceLocation singleLine, ResourceLocation middle, ResourceLocation bothLine){
 
