@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "facing=east,pos=left": {
+      "model": "yuushya:template/fence_left_blue_concrete",
+      "y": 90
+    },
+    "facing=east,pos=middle": {
+      "model": "yuushya:template/fence_middle_blue_concrete",
+      "y": 90
+    },
+    "facing=east,pos=none": {
+      "model": "yuushya:template/fence_none_blue_concrete",
+      "y": 90
+    },
+    "facing=east,pos=right": {
+      "model": "yuushya:template/fence_right_blue_concrete",
+      "y": 90
+    },
+    "facing=north,pos=left": {
+      "model": "yuushya:template/fence_left_blue_concrete"
+    },
+    "facing=north,pos=middle": {
+      "model": "yuushya:template/fence_middle_blue_concrete"
+    },
+    "facing=north,pos=none": {
+      "model": "yuushya:template/fence_none_blue_concrete"
+    },
+    "facing=north,pos=right": {
+      "model": "yuushya:template/fence_right_blue_concrete"
+    },
+    "facing=south,pos=left": {
+      "model": "yuushya:template/fence_left_blue_concrete",
+      "y": 180
+    },
+    "facing=south,pos=middle": {
+      "model": "yuushya:template/fence_middle_blue_concrete",
+      "y": 180
+    },
+    "facing=south,pos=none": {
+      "model": "yuushya:template/fence_none_blue_concrete",
+      "y": 180
+    },
+    "facing=south,pos=right": {
+      "model": "yuushya:template/fence_right_blue_concrete",
+      "y": 180
+    },
+    "facing=west,pos=left": {
+      "model": "yuushya:template/fence_left_blue_concrete",
+      "y": 270
+    },
+    "facing=west,pos=middle": {
+      "model": "yuushya:template/fence_middle_blue_concrete",
+      "y": 270
+    },
+    "facing=west,pos=none": {
+      "model": "yuushya:template/fence_none_blue_concrete",
+      "y": 270
+    },
+    "facing=west,pos=right": {
+      "model": "yuushya:template/fence_right_blue_concrete",
+      "y": 270
+    }
+  }
+}

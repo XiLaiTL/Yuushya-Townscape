@@ -323,7 +323,7 @@ public class YuushyaBlockFactory{
                     kitType = new PoleLineBlock();}
                 case "repeat"->{
                     kitType = new RepeatBlock();}
-                case "line_cross"->{
+                case "line_cross","line_cross_simple"->{
                     kitType = new LineCrossBlock();}
                 case "block"->{}
                 case "VanillaSlabBlock"->{

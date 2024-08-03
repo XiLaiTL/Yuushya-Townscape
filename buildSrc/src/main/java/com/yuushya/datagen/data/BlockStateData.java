@@ -46,8 +46,8 @@ public class BlockStateData {
     }
 
     public static final ChildProperty POS_HORIZON=ChildProperty.of("pos","left","middle","right","none");
-    public static final ChildProperty FRONT=ChildProperty.of("pos","left","middle","right","none");
-    public static final ChildProperty BACK=ChildProperty.of("pos","left","middle","right","none");
+    public static final ChildProperty FRONT=ChildProperty.of("front","left","middle","right","none");
+    public static final ChildProperty BACK=ChildProperty.of("back","left","middle","right","none");
     public static final ChildProperty POS_VERTICAL=ChildProperty.of("pos","top","middle","bottom","none");
     public static final ChildProperty YPOS=ChildProperty.of("ypos","top","middle","bottom","none");
     public static final ChildProperty XPOS=ChildProperty.of("xpos","west","east","middle","none");
@@ -123,6 +123,80 @@ public class BlockStateData {
                                     ? Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(i).get(l)))
                                     : Variant.variant());
 
+                        }));
+                case "line_cross_simple"->ChildVariant.of(baseVariant)
+                        .add(createHorizonFacingVariant())
+                        .add(ChildPropertyVariant.of(FORM,POS_HORIZON,FRONT,BACK).generate((variantKeyList)->{
+                            int offset = (FORM!=null) ? 1 : 0;
+                            int i = (FORM!=null) ? FORM.indexOf(variantKeyList.get(0)) : 0;
+                            if (i < formsNum){
+                                ResourceLocation none = ResourceLocation.parse(blockState.forms.get(i).get(0));
+                                ResourceLocation none_left = ResourceLocation.parse(blockState.forms.get(i).get(1));
+                                ResourceLocation none_right = ResourceLocation.parse(blockState.forms.get(i).get(2));
+                                ResourceLocation left = ResourceLocation.parse(blockState.forms.get(i).get(3));
+                                ResourceLocation middle = ResourceLocation.parse(blockState.forms.get(i).get(4));
+                                ResourceLocation middle_left = ResourceLocation.parse(blockState.forms.get(i).get(5));
+                                ResourceLocation middle_right = ResourceLocation.parse(blockState.forms.get(i).get(6));
+                                ResourceLocation right = ResourceLocation.parse(blockState.forms.get(i).get(7));
+                                return List.of(createHorizonFrontBackVariant(variantKeyList.get(offset),variantKeyList.get(offset+1),variantKeyList.get(offset+2),
+                                        none,none_left,none_right,right,none_left,middle_right,left,middle_left,none_right,
+                                        left,middle_left,none_right,middle,middle_left,middle_right,left,middle_left,none_right,
+                                        middle,middle_left,middle_right,middle,middle_left,middle_right,middle,middle_left,middle_right,
+                                        right,none_left,middle_right,right,none_left,middle_right,middle,middle_left,middle_right
+                                ));
+                            }
+                            else return List.of(Variant.variant());
+                        }));
+                case "line_cross"->ChildVariant.of(baseVariant)
+                        .add(createHorizonFacingVariant())
+                        .add(ChildPropertyVariant.of(FORM,POS_HORIZON,FRONT,BACK).generate((variantKeyList)->{
+                            int offset = (FORM!=null) ? 1 : 0;
+                            int i = (FORM!=null) ? FORM.indexOf(variantKeyList.get(0)) : 0;
+                            if (i < formsNum){
+                                ResourceLocation none_none_none = ResourceLocation.parse(blockState.forms.get(i).get(0));
+                                ResourceLocation none_none_left = ResourceLocation.parse(blockState.forms.get(i).get(1));
+                                ResourceLocation none_none_right = ResourceLocation.parse(blockState.forms.get(i).get(2));
+                                ResourceLocation none_left_none = ResourceLocation.parse(blockState.forms.get(i).get(3));
+                                ResourceLocation none_left_left = ResourceLocation.parse(blockState.forms.get(i).get(4));
+                                ResourceLocation none_left_right = ResourceLocation.parse(blockState.forms.get(i).get(5));
+                                ResourceLocation none_right_none = ResourceLocation.parse(blockState.forms.get(i).get(6));
+                                ResourceLocation none_right_left = ResourceLocation.parse(blockState.forms.get(i).get(7));
+                                ResourceLocation none_right_right = ResourceLocation.parse(blockState.forms.get(i).get(8));
+                                ResourceLocation left_none_none = ResourceLocation.parse(blockState.forms.get(i).get(9));
+                                ResourceLocation left_none_left = ResourceLocation.parse(blockState.forms.get(i).get(10));
+                                ResourceLocation left_none_right = ResourceLocation.parse(blockState.forms.get(i).get(11));
+                                ResourceLocation left_left_none = ResourceLocation.parse(blockState.forms.get(i).get(12));
+                                ResourceLocation left_left_left = ResourceLocation.parse(blockState.forms.get(i).get(13));
+                                ResourceLocation left_left_right = ResourceLocation.parse(blockState.forms.get(i).get(14));
+                                ResourceLocation left_right_none = ResourceLocation.parse(blockState.forms.get(i).get(15));
+                                ResourceLocation left_right_left = ResourceLocation.parse(blockState.forms.get(i).get(16));
+                                ResourceLocation left_right_right = ResourceLocation.parse(blockState.forms.get(i).get(17));
+                                ResourceLocation middle_none_none = ResourceLocation.parse(blockState.forms.get(i).get(18));
+                                ResourceLocation middle_none_left = ResourceLocation.parse(blockState.forms.get(i).get(19));
+                                ResourceLocation middle_none_right = ResourceLocation.parse(blockState.forms.get(i).get(20));
+                                ResourceLocation middle_left_none = ResourceLocation.parse(blockState.forms.get(i).get(21));
+                                ResourceLocation middle_left_left = ResourceLocation.parse(blockState.forms.get(i).get(22));
+                                ResourceLocation middle_left_right = ResourceLocation.parse(blockState.forms.get(i).get(23));
+                                ResourceLocation middle_right_none = ResourceLocation.parse(blockState.forms.get(i).get(24));
+                                ResourceLocation middle_right_left = ResourceLocation.parse(blockState.forms.get(i).get(25));
+                                ResourceLocation middle_right_right = ResourceLocation.parse(blockState.forms.get(i).get(26));
+                                ResourceLocation right_none_none = ResourceLocation.parse(blockState.forms.get(i).get(27));
+                                ResourceLocation right_none_left = ResourceLocation.parse(blockState.forms.get(i).get(28));
+                                ResourceLocation right_none_right = ResourceLocation.parse(blockState.forms.get(i).get(29));
+                                ResourceLocation right_left_none = ResourceLocation.parse(blockState.forms.get(i).get(30));
+                                ResourceLocation right_left_left = ResourceLocation.parse(blockState.forms.get(i).get(31));
+                                ResourceLocation right_left_right = ResourceLocation.parse(blockState.forms.get(i).get(32));
+                                ResourceLocation right_right_none = ResourceLocation.parse(blockState.forms.get(i).get(33));
+                                ResourceLocation right_right_left = ResourceLocation.parse(blockState.forms.get(i).get(34));
+                                ResourceLocation right_right_right = ResourceLocation.parse(blockState.forms.get(i).get(35));
+                                return List.of(createHorizonFrontBackVariant(variantKeyList.get(offset),variantKeyList.get(offset+1),variantKeyList.get(offset+2),
+                                        none_none_none, none_none_left, none_none_right, none_left_none, none_left_left, none_left_right, none_right_none, none_right_left, none_right_right,
+                                        left_none_none, left_none_left, left_none_right, left_left_none, left_left_left, left_left_right, left_right_none, left_right_left, left_right_right,
+                                        middle_none_none, middle_none_left, middle_none_right, middle_left_none, middle_left_left, middle_left_right, middle_right_none, middle_right_left, middle_right_right,
+                                        right_none_none, right_none_left, right_none_right, right_left_none, right_left_left, right_left_right, right_right_none, right_right_left, right_right_right
+                                ));
+                            }
+                            else return List.of(Variant.variant());
                         }));
                 case "pole_line"->ChildVariant.of(baseVariant)
                         .add(createHorizonFacingVariant())
@@ -455,6 +529,87 @@ public class BlockStateData {
                 .addVariant(List.of("facing=north", "half=top", "shape=inner_left"),
                         Variant.variant().with(VariantProperty.MODEL, inner).with(VariantProperty.X_ROT, VariantProperty.Rotation.R180).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270).with(VariantProperty.UV_LOCK, true));
 
+    }
+
+    private static Variant createHorizonFrontBackVariant( String pos, String front, String back,
+                                                        ResourceLocation none_none_none,ResourceLocation none_none_left,ResourceLocation none_none_right,ResourceLocation none_left_none,ResourceLocation none_left_left,ResourceLocation none_left_right,ResourceLocation none_right_none,ResourceLocation none_right_left,ResourceLocation none_right_right,
+                                                        ResourceLocation left_none_none,ResourceLocation left_none_left,ResourceLocation left_none_right,ResourceLocation left_left_none,ResourceLocation left_left_left,ResourceLocation left_left_right,ResourceLocation left_right_none,ResourceLocation left_right_left,ResourceLocation left_right_right,
+                                                        ResourceLocation middle_none_none,ResourceLocation middle_none_left,ResourceLocation middle_none_right,ResourceLocation middle_left_none,ResourceLocation middle_left_left,ResourceLocation middle_left_right,ResourceLocation middle_right_none,ResourceLocation middle_right_left,ResourceLocation middle_right_right,
+                                                        ResourceLocation right_none_none,ResourceLocation right_none_left,ResourceLocation right_none_right,ResourceLocation right_left_none,ResourceLocation right_left_left,ResourceLocation right_left_right,ResourceLocation right_right_none,ResourceLocation right_right_left,ResourceLocation right_right_right
+                                                        ){
+        if (pos.equals("pos=none") && front.equals("front=none") && back.equals("back=none")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, none_none_none);
+        if (pos.equals("pos=none") && front.equals("front=none") && back.equals("back=left")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, none_none_left);
+        if (pos.equals("pos=none") && front.equals("front=none") && back.equals("back=right")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, none_none_right);
+        if (pos.equals("pos=none") && front.equals("front=left") && back.equals("back=none")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, none_left_none);
+        if (pos.equals("pos=none") && front.equals("front=left") && back.equals("back=left")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, none_left_left);
+        if (pos.equals("pos=none") && front.equals("front=left") && back.equals("back=right")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, none_left_right);
+        if (pos.equals("pos=none") && front.equals("front=right") && back.equals("back=none")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, none_right_none);
+        if (pos.equals("pos=none") && front.equals("front=right") && back.equals("back=left")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, none_right_left);
+        if (pos.equals("pos=none") && front.equals("front=right") && back.equals("back=right")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, none_right_right);
+        if (pos.equals("pos=left") && front.equals("front=none") && back.equals("back=none")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, left_none_none);
+        if (pos.equals("pos=left") && front.equals("front=none") && back.equals("back=left")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, left_none_left);
+        if (pos.equals("pos=left") && front.equals("front=none") && back.equals("back=right")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, left_none_right);
+        if (pos.equals("pos=left") && front.equals("front=left") && back.equals("back=none")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, left_left_none);
+        if (pos.equals("pos=left") && front.equals("front=left") && back.equals("back=left")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, left_left_left);
+        if (pos.equals("pos=left") && front.equals("front=left") && back.equals("back=right")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, left_left_right);
+        if (pos.equals("pos=left") && front.equals("front=right") && back.equals("back=none")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, left_right_none);
+        if (pos.equals("pos=left") && front.equals("front=right") && back.equals("back=left")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, left_right_left);
+        if (pos.equals("pos=left") && front.equals("front=right") && back.equals("back=right")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, left_right_right);
+        if (pos.equals("pos=middle") && front.equals("front=none") && back.equals("back=none")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, middle_none_none);
+        if (pos.equals("pos=middle") && front.equals("front=none") && back.equals("back=left")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, middle_none_left);
+        if (pos.equals("pos=middle") && front.equals("front=none") && back.equals("back=right")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, middle_none_right);
+        if (pos.equals("pos=middle") && front.equals("front=left") && back.equals("back=none")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, middle_left_none);
+        if (pos.equals("pos=middle") && front.equals("front=left") && back.equals("back=left")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, middle_left_left);
+        if (pos.equals("pos=middle") && front.equals("front=left") && back.equals("back=right")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, middle_left_right);
+        if (pos.equals("pos=middle") && front.equals("front=right") && back.equals("back=none")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, middle_right_none);
+        if (pos.equals("pos=middle") && front.equals("front=right") && back.equals("back=left")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, middle_right_left);
+        if (pos.equals("pos=middle") && front.equals("front=right") && back.equals("back=right")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, middle_right_right);
+        if (pos.equals("pos=right") && front.equals("front=none") && back.equals("back=none")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, right_none_none);
+        if (pos.equals("pos=right") && front.equals("front=none") && back.equals("back=left")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, right_none_left);
+        if (pos.equals("pos=right") && front.equals("front=none") && back.equals("back=right")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, right_none_right);
+        if (pos.equals("pos=right") && front.equals("front=left") && back.equals("back=none")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, right_left_none);
+        if (pos.equals("pos=right") && front.equals("front=left") && back.equals("back=left")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, right_left_left);
+        if (pos.equals("pos=right") && front.equals("front=left") && back.equals("back=right")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, right_left_right);
+        if (pos.equals("pos=right") && front.equals("front=right") && back.equals("back=none")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, right_right_none);
+        if (pos.equals("pos=right") && front.equals("front=right") && back.equals("back=left")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, right_right_left);
+        if (pos.equals("pos=right") && front.equals("front=right") && back.equals("back=right")) return
+                Variant.variant().with(VariantProperty.UV_LOCK, false).with(VariantProperty.MODEL, right_right_right);
+        return Variant.variant();
     }
 
     private static Variant createHorizonYPosVariant(String pos,String ypos,
