@@ -1,0 +1,6 @@
+{
+    "parent": "yuushya:block/template_vertical_block_top",
+    "textures": {
+        "all": "yuushya:block_/acrylic/connected/acrylic_yellow_vertical"
+    }
+}
