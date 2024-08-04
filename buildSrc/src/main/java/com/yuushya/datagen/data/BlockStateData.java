@@ -134,15 +134,17 @@ public class BlockStateData {
                                 ResourceLocation none_left = ResourceLocation.parse(blockState.forms.get(i).get(1));
                                 ResourceLocation none_right = ResourceLocation.parse(blockState.forms.get(i).get(2));
                                 ResourceLocation left = ResourceLocation.parse(blockState.forms.get(i).get(3));
-                                ResourceLocation middle = ResourceLocation.parse(blockState.forms.get(i).get(4));
-                                ResourceLocation middle_left = ResourceLocation.parse(blockState.forms.get(i).get(5));
-                                ResourceLocation middle_right = ResourceLocation.parse(blockState.forms.get(i).get(6));
-                                ResourceLocation right = ResourceLocation.parse(blockState.forms.get(i).get(7));
+                                ResourceLocation left_right = ResourceLocation.parse(blockState.forms.get(i).get(4));
+                                ResourceLocation middle = ResourceLocation.parse(blockState.forms.get(i).get(5));
+                                ResourceLocation middle_left = ResourceLocation.parse(blockState.forms.get(i).get(6));
+                                ResourceLocation middle_right = ResourceLocation.parse(blockState.forms.get(i).get(7));
+                                ResourceLocation right = ResourceLocation.parse(blockState.forms.get(i).get(8));
+                                ResourceLocation right_left = ResourceLocation.parse(blockState.forms.get(i).get(9));
                                 return List.of(createHorizonFrontBackVariant(variantKeyList.get(offset),variantKeyList.get(offset+1),variantKeyList.get(offset+2),
                                         none,none_left,none_right,right,none_left,middle_right,left,middle_left,none_right,
-                                        left,middle_left,none_right,middle,middle_left,middle_right,left,middle_left,none_right,
+                                        left,middle_left,none_right,middle,middle_left,middle_right,left_right,middle_left,none_right,
                                         middle,middle_left,middle_right,middle,middle_left,middle_right,middle,middle_left,middle_right,
-                                        right,none_left,middle_right,right,none_left,middle_right,middle,middle_left,middle_right
+                                        right,none_left,middle_right,right_left,none_left,middle_right,middle,middle_left,middle_right
                                 ));
                             }
                             else return List.of(Variant.variant());
