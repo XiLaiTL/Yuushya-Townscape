@@ -3462,12 +3462,12 @@
 			"name": "fence_test",
 			"render_type": "cutout",
 			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 2},
-			"class_type": "FixedBlock", "auto_generated": { "collision": "detail30", "recipe": true,"item_model": true },
+			"class_type": "template", "auto_generated": { "collision": "detail30", "recipe": true,"item_model": true },
 			"blockstate": { "kit": "line_cross_simple",
 				"forms": [["yuushya:template/fence_cross/fence_none", "yuushya:template/fence_cross/fence_none_left", "yuushya:template/fence_cross/fence_none_right",
-					"yuushya:template/fence_cross/fence_left",
+					"yuushya:template/fence_cross/fence_left","yuushya:template/fence_cross/fence_left_right",
 					"yuushya:template/fence_cross/fence_middle", "yuushya:template/fence_cross/fence_middle_left", "yuushya:template/fence_cross/fence_middle_right",
-					"yuushya:template/fence_cross/fence_right"
+					"yuushya:template/fence_cross/fence_right","yuushya:template/fence_cross/fence_right_left"
 				]]},
 			"item_group": "extra_shapes",
 			"texture": {
