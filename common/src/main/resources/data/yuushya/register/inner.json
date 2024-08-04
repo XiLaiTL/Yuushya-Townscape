@@ -2398,29 +2398,6 @@
 				"set":  [
 					"all#yuushya:block_/stone/marble_cobblestone","sides#yuushya:block_/stone/marble_cobblestone","top#yuushya:block_/stone/marble_cobblestone"]}
 		},
-
-		{
-			"class_type": "VerticalBlock",
-			"name": "chiseled_vertical_marble",
-			"auto_generated": { "recipe": true }, "item_group": "extra_blocks",
-			"item_model": "yuushya:block/chiseled_vertical_marble_none",
-			"blockstate": { "forms": [["yuushya:block/chiseled_vertical_marble_top", "yuushya:block/chiseled_vertical_marble_middle", "yuushya:block/chiseled_vertical_marble_bottom", "yuushya:block/chiseled_vertical_marble_none"]]}
-		},
-
-		{
-			"class_type": "PlainBlock",
-			"name": "chiseled_marble",
-			"auto_generated": { "recipe": true }, "item_group": "extra_blocks",
-			"blockstate": { "forms": [["yuushya:block/chiseled_marble"]]}
-		},
-
-		{
-			"class_type": "PlainBlock",
-			"name": "chiseled_marble_alt",
-			"auto_generated": { "recipe": true }, "item_group": "extra_blocks",
-			"blockstate": { "forms": [["yuushya:block/chiseled_marble_alt"]]}
-		},
-
 		{
 			"class_type": "block", "name": "egg_cobblestone", "item_group": "stone",
 			"auto_generated": { "recipe": false },
@@ -3451,19 +3428,14 @@
 		{
 			"name": "fence_test",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 2},
+			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "FixedBlock", "auto_generated": { "collision": "detail30", "recipe": true,"item_model": true },
 			"blockstate": { "kit": "line_cross_simple",
 				"forms": [["yuushya:template/fence_cross/fence_none", "yuushya:template/fence_cross/fence_none_left", "yuushya:template/fence_cross/fence_none_right",
 					"yuushya:template/fence_cross/fence_left",
 					"yuushya:template/fence_cross/fence_middle", "yuushya:template/fence_cross/fence_middle_left", "yuushya:template/fence_cross/fence_middle_right",
 					"yuushya:template/fence_cross/fence_right"
-				]]},
-			"item_group": "extra_shapes",
-			"texture": {
-				"slots": ["all", "sides", "top"],
-				"for_class": ["raw_wood", "concrete"]
-			}
+				]]}, "item_group": "extra_shapes"
 		},
 
 		{
@@ -5023,27 +4995,27 @@
 		},
 
 		{
-			"class_type": "RoofBlock",
+			"class_type": "DecoBlock",
 			"name": "classical_white_window_sideway_frame",
 			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "extra_shapes",
-			"item_model": "yuushya:extra_building_material/euro_style/classical_white_window_sideway_frame_none",
-			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_white_window_sideway_frame_left","yuushya:extra_building_material/blank","yuushya:extra_building_material/euro_style/classical_white_window_sideway_frame_right","yuushya:extra_building_material/euro_style/classical_white_window_sideway_frame_none"]]}
+			"properties": {"has_collision": false},
+			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_white_window_sideway_frame"]]}
 		},
 
 		{
-			"class_type": "RoofBlock",
+			"class_type": "DecoBlock",
 			"name": "classical_white_window_bottom",
 			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "extra_shapes",
-			"item_model": "yuushya:extra_building_material/euro_style/classical_white_window_bottom_none",
-			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_white_window_bottom_left","yuushya:extra_building_material/euro_style/classical_white_window_bottom_middle","yuushya:extra_building_material/euro_style/classical_white_window_bottom_right","yuushya:extra_building_material/euro_style/classical_white_window_bottom_none"]]}
+			"properties": {"has_collision": false},
+			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_white_window_bottom"]]}
 		},
 
 		{
-			"class_type": "RoofBlock",
+			"class_type": "DecoBlock",
 			"name": "classical_white_window_top",
 			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "extra_shapes",
-			"item_model": "yuushya:extra_building_material/euro_style/classical_white_window_top_none",
-			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_white_window_top_left","yuushya:extra_building_material/euro_style/classical_white_window_top_middle","yuushya:extra_building_material/euro_style/classical_white_window_top_right","yuushya:extra_building_material/euro_style/classical_white_window_top_none"]]}
+			"properties": {"has_collision": false},
+			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_white_window_top"]]}
 		},
 
 		{
@@ -5052,14 +5024,6 @@
 			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "extra_shapes",
 			"properties": {"has_collision": false},
 			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_white_window_top_round"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "classical_white_window_top_round_alt",
-			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "extra_shapes",
-			"properties": {"has_collision": false},
-			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_white_window_top_round_alt"]]}
 		},
 
 		{
@@ -11031,14 +10995,6 @@
 			"properties": { "light_level": 15},
 			"auto_generated": { "recipe": true }, "item_group": "lighting",
 			"blockstate": { "forms": [["yuushya:extra_building_material/street_lamp_2"]]}
-		},
-
-		{
-			"class_type": "DecoBlock",
-			"name": "modern_lamp_ceiling",
-			"properties": { "light_level": 15},
-			"auto_generated": { "recipe": true }, "item_group": "lighting",
-			"blockstate": { "forms": [["yuushya:extra_building_material/round_ceiling_lamp"]]}
 		},
 
 		{

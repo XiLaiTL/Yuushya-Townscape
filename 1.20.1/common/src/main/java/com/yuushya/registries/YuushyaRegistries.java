@@ -159,6 +159,7 @@ public class YuushyaRegistries {
         RegisterList.clear();
 //        ITEMS.register("get_blockstate_item", () -> new GetBlockStateItem(new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_ITEM).stacksTo(1), 1));
         ITEMS.register("form_trans_item",()->new FormTransItem(new Item.Properties().arch$tab(YuushyaCreativeModeTab.YUUSHYA_ITEM).stacksTo(1),2));
+        ITEMS.register("blockstate_update_item",()->new BlockUpdateItem(new Item.Properties().arch$tab(YuushyaCreativeModeTab.YUUSHYA_ITEM).stacksTo(1),2));
         ITEMS.register("pilatory",()-> new SetHatItem(new Item.Properties().arch$tab(YuushyaCreativeModeTab.YUUSHYA_ITEM).stacksTo(64),2));
         //ITEMS.register("ghost_light",()->new BlockItem(Blocks.LIGHT,new Item.Properties().rarity(Rarity.EPIC).tab(YuushyaCreativeModeTab.YUUSHYA_ITEM)));
 
