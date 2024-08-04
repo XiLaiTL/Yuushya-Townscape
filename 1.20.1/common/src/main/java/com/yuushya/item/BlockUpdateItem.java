@@ -10,11 +10,14 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
+
+import static net.minecraft.world.level.block.Block.getId;
 
 public class BlockUpdateItem extends AbstractToolItem {
     public BlockUpdateItem(Properties properties, Integer tipLines) {
@@ -33,6 +36,8 @@ public class BlockUpdateItem extends AbstractToolItem {
             }
         }
         BlockState blockStateNew = blockState.getBlock().getStateForPlacement(new BlockPlaceContext(player, InteractionHand.MAIN_HAND,handItemStack,new BlockHitResult(new Vec3(player.getX(), player.getY(), player.getZ()),direction,blockPos,false)));
+        level.setBlock(blockPos, Blocks.AIR.defaultBlockState(), 35);
+        //level.levelEvent(player, 2001, blockPos, Block.getId(blockState));
         level.setBlockAndUpdate(blockPos,blockStateNew);
         level.gameEvent(player, GameEvent.BLOCK_CHANGE, blockPos);
     }
