@@ -1,0 +1,7 @@
+{
+    "parent": "yuushya:block/template_column",
+    "textures": {
+        "sides": "yuushya:block_/stone/chiseled_marble_side_alt",
+        "top": "yuushya:block_/stone/smooth_marble"
+    }
+}
