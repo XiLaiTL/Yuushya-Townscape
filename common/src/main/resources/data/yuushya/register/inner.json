@@ -5093,26 +5093,36 @@
 		{
 			"class_type": "WindowsBlock",
 			"name": "white_windows_0",
-			"auto_generated": { "recipe": true }, "item_group": "window",
+			"auto_generated": { "recipe": true ,"blockstate": false }, "item_group": "window",
 			"properties": {"has_collision": true },
 			"render_type": "translucent",
 			"item_model": "yuushya:extra_building_material/windows_frame/white_window",
 			"blockstate": {
 				"kit": "pole_line",
-				"forms": [["yuushya:extra_building_material/windows_frame/white_window"]]
+				"forms": [[
+					"yuushya:extra_building_material/windows_frame_model/white_windows_nsw", "yuushya:extra_building_material/windows_frame_model/white_windows_ns", "yuushya:extra_building_material/windows_frame_model/white_windows_nes", "yuushya:extra_building_material/windows_frame_model/white_windows_nesw",
+					"yuushya:extra_building_material/windows_frame_model/white_windows_nw", "yuushya:extra_building_material/windows_frame_model/white_windows_n", "yuushya:extra_building_material/windows_frame_model/white_windows_ne", "yuushya:extra_building_material/windows_frame_model/white_windows_new",
+					"yuushya:extra_building_material/windows_frame_model/white_windows_w", "yuushya:extra_building_material/windows_frame_model/white_windows_none", "yuushya:extra_building_material/windows_frame_model/white_windows_e", "yuushya:extra_building_material/windows_frame_model/white_windows_ew",
+					"yuushya:extra_building_material/windows_frame_model/white_windows_sw", "yuushya:extra_building_material/windows_frame_model/white_windows_s", "yuushya:extra_building_material/windows_frame_model/white_windows_es", "yuushya:extra_building_material/windows_frame_model/white_windows_esw"
+				]]
 			}
 		},
 
 		{
-			"class_type": "WindowsBlock",
+			"class_type": "FaceTranslucentBlock",
 			"name": "white_windows_1",
-			"auto_generated": { "recipe": true }, "item_group": "window",
+			"auto_generated": { "recipe": true ,"blockstate": true}, "item_group": "window",
 			"properties": {"has_collision": true },
 			"render_type": "translucent",
 			"item_model": "yuushya:extra_building_material/windows_frame/white_window",
 			"blockstate": {
 				"kit": "pole_line",
-				"forms": [["yuushya:extra_building_material/windows_frame/white_window"]]
+				"forms": [[
+					"yuushya:extra_building_material/windows_frame_model/white_windows_nsw", "yuushya:extra_building_material/windows_frame_model/white_windows_ns", "yuushya:extra_building_material/windows_frame_model/white_windows_nes", "yuushya:extra_building_material/windows_frame_model/white_windows_nesw",
+					"yuushya:extra_building_material/windows_frame_model/white_windows_nw", "yuushya:extra_building_material/windows_frame_model/white_windows_n", "yuushya:extra_building_material/windows_frame_model/white_windows_ne", "yuushya:extra_building_material/windows_frame_model/white_windows_new",
+					"yuushya:extra_building_material/windows_frame_model/white_windows_w", "yuushya:extra_building_material/windows_frame_model/white_windows_none", "yuushya:extra_building_material/windows_frame_model/white_windows_e", "yuushya:extra_building_material/windows_frame_model/white_windows_ew",
+					"yuushya:extra_building_material/windows_frame_model/white_windows_sw", "yuushya:extra_building_material/windows_frame_model/white_windows_s", "yuushya:extra_building_material/windows_frame_model/white_windows_es", "yuushya:extra_building_material/windows_frame_model/white_windows_esw"
+				]]
 			}
 		},
 
