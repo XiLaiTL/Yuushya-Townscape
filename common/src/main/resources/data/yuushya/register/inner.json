@@ -55,6 +55,8 @@
 		{"class_type": "HatItem", "name": "wriggle_nightbug",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
 		{"class_type": "HatItem", "name": "shameimaru_aya",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
 		{"class_type": "HatItem", "name": "hakurei_reimu",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
+		{"class_type": "HatItem", "name": "horaisan_kaguya",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
+		{"class_type": "HatItem", "name": "fujiwara_no_mokou",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
 		{"class_type": "HatItem", "name": "nanayama_moyoka",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
 		{"class_type": "HatItem", "name": "sleeping_orange_cat",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
 		{"class_type": "HatItem", "name": "sleeping_ragdoll",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
@@ -7885,6 +7887,20 @@
 
 		{
 			"class_type": "DecoBlock",
+			"name": "oden_cooker",
+			"auto_generated": { "recipe": true }, "item_group": "catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/oden_cooker"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "full_oden_cooker",
+			"auto_generated": { "recipe": true }, "item_group": "catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/oden_cooker_full"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
 			"name": "coconut",
 			"auto_generated": { "recipe": true }, "item_group": "catering",
 			"blockstate": { "forms": [["yuushya:extra_building_material/coconut"]]}
@@ -7930,6 +7946,13 @@
 			"name": "paste",
 			"auto_generated": { "recipe": true }, "item_group": "catering",
 			"blockstate": { "forms": [["yuushya:extra_building_material/jam2"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "chopsticks",
+			"auto_generated": { "recipe": true }, "item_group": "catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/chopsticks"]]}
 		},
 
 		{
@@ -10074,6 +10097,13 @@
 			"blockstate": { "forms": [["yuushya:extra_building_material/mirror_wall"]]}
 		},
 
+
+		{
+			"class_type": "DecoBlock",
+			"name": "patterned_slippers",
+			"auto_generated": { "recipe": true }, "item_group": "furniture",
+			"blockstate": { "forms": [["yuushya:extra_building_material/patterned_slipper"]]}
+		},
 
 		{
 			"class_type": "DecoBlock",
