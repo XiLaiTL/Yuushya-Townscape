@@ -120,8 +120,8 @@ tasks.register("copyAssetsAndDataFromCommon-1.21.0",Copy){
 }
 
 tasks.register("copyAssetsAndDataFrom1.20.6-1.21.0", Copy) {
-    from("../1.20.6/common/src/main/resources/data/yuushya/")
-    into("../1.21.0/common/build/resources/main/data/yuushya/")
+    from("../1.20.6/common/src/main/resources/data/yuushya/recipes")
+    into("../1.21.0/common/build/resources/main/data/yuushya/recipe")
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
 
