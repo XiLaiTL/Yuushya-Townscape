@@ -1,0 +1,6 @@
+{
+    "parent": "yuushya:block/template_horizontal_block_middle",
+    "textures": {
+        "all": "yuushya:block_/blindwall/compact/lime_blindwall_compact"
+    }
+}
