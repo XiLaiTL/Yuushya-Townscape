@@ -1025,10 +1025,9 @@
 					"top#yuushya:block_/decorative_wool/market_block_red"]}
 		},
 
-
 		{
 			"class_type": "HorizontalBlock",
-			"name": "a_black_blindwall", "item_group": "wood",
+			"name": "a_black_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/black_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/black_blindwall_left","yuushya:block/black_blindwall_middle","yuushya:block/black_blindwall_right","yuushya:block/black_blindwall_none"]]},
@@ -1043,7 +1042,7 @@
 
 		{
 			"class_type": "HorizontalBlock",
-			"name": "a_blue_blindwall", "item_group": "wood",
+			"name": "a_blue_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/blue_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/blue_blindwall_left","yuushya:block/blue_blindwall_middle","yuushya:block/blue_blindwall_right","yuushya:block/blue_blindwall_none"]]},
@@ -1058,7 +1057,7 @@
 
 		{
 			"class_type": "HorizontalBlock",
-			"name": "a_brown_blindwall", "item_group": "wood",
+			"name": "a_brown_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/brown_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/brown_blindwall_left","yuushya:block/brown_blindwall_middle","yuushya:block/brown_blindwall_right","yuushya:block/brown_blindwall_none"]]},
@@ -1073,7 +1072,7 @@
 
 		{
 			"class_type": "HorizontalBlock",
-			"name": "a_cyan_blindwall", "item_group": "wood",
+			"name": "a_cyan_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/cyan_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/cyan_blindwall_left","yuushya:block/cyan_blindwall_middle","yuushya:block/cyan_blindwall_right","yuushya:block/cyan_blindwall_none"]]},
@@ -1088,7 +1087,7 @@
 
 		{
 			"class_type": "HorizontalBlock",
-			"name": "a_gray_blindwall", "item_group": "wood",
+			"name": "a_gray_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/gray_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/gray_blindwall_left","yuushya:block/gray_blindwall_middle","yuushya:block/gray_blindwall_right","yuushya:block/gray_blindwall_none"]]},
@@ -1103,7 +1102,7 @@
 
 		{
 			"class_type": "HorizontalBlock",
-			"name": "a_green_blindwall", "item_group": "wood",
+			"name": "a_green_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/green_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/green_blindwall_left","yuushya:block/green_blindwall_middle","yuushya:block/green_blindwall_right","yuushya:block/green_blindwall_none"]]},
@@ -1118,7 +1117,7 @@
 
 		{
 			"class_type": "HorizontalBlock",
-			"name": "a_light_blue_blindwall", "item_group": "wood",
+			"name": "a_light_blue_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/light_blue_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/light_blue_blindwall_left","yuushya:block/light_blue_blindwall_middle","yuushya:block/light_blue_blindwall_right","yuushya:block/light_blue_blindwall_none"]]},
@@ -1133,7 +1132,7 @@
 
 		{
 			"class_type": "HorizontalBlock",
-			"name": "a_light_gray_blindwall", "item_group": "wood",
+			"name": "a_light_gray_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/light_gray_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/light_gray_blindwall_left","yuushya:block/light_gray_blindwall_middle","yuushya:block/light_gray_blindwall_right","yuushya:block/light_gray_blindwall_none"]]},
@@ -1148,7 +1147,7 @@
 
 		{
 			"class_type": "HorizontalBlock",
-			"name": "a_lime_blindwall", "item_group": "wood",
+			"name": "a_lime_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/lime_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/lime_blindwall_left","yuushya:block/lime_blindwall_middle","yuushya:block/lime_blindwall_right","yuushya:block/lime_blindwall_none"]]},
@@ -1163,7 +1162,7 @@
 
 		{
 			"class_type": "HorizontalBlock",
-			"name": "a_magenta_blindwall", "item_group": "wood",
+			"name": "a_magenta_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/magenta_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/magenta_blindwall_left","yuushya:block/magenta_blindwall_middle","yuushya:block/magenta_blindwall_right","yuushya:block/magenta_blindwall_none"]]},
@@ -1178,7 +1177,7 @@
 
 		{
 			"class_type": "HorizontalBlock",
-			"name": "a_orange_blindwall", "item_group": "wood",
+			"name": "a_orange_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/orange_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/orange_blindwall_left","yuushya:block/orange_blindwall_middle","yuushya:block/orange_blindwall_right","yuushya:block/orange_blindwall_none"]]},
@@ -1193,7 +1192,7 @@
 
 		{
 			"class_type": "HorizontalBlock",
-			"name": "a_pink_blindwall", "item_group": "wood",
+			"name": "a_pink_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/pink_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/pink_blindwall_left","yuushya:block/pink_blindwall_middle","yuushya:block/pink_blindwall_right","yuushya:block/pink_blindwall_none"]]},
@@ -1208,7 +1207,7 @@
 
 		{
 			"class_type": "HorizontalBlock",
-			"name": "a_purple_blindwall", "item_group": "wood",
+			"name": "a_purple_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/purple_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/purple_blindwall_left","yuushya:block/purple_blindwall_middle","yuushya:block/purple_blindwall_right","yuushya:block/purple_blindwall_none"]]},
@@ -1223,7 +1222,7 @@
 
 		{
 			"class_type": "HorizontalBlock",
-			"name": "a_red_blindwall", "item_group": "wood",
+			"name": "a_red_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/red_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/red_blindwall_left","yuushya:block/red_blindwall_middle","yuushya:block/red_blindwall_right","yuushya:block/red_blindwall_none"]]},
@@ -1238,7 +1237,7 @@
 
 		{
 			"class_type": "HorizontalBlock",
-			"name": "a_white_blindwall", "item_group": "wood",
+			"name": "a_white_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/white_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/white_blindwall_left","yuushya:block/white_blindwall_middle","yuushya:block/white_blindwall_right","yuushya:block/white_blindwall_none"]]},
@@ -1253,7 +1252,7 @@
 
 		{
 			"class_type": "HorizontalBlock",
-			"name": "a_yellow_blindwall", "item_group": "wood",
+			"name": "a_yellow_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/yellow_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/yellow_blindwall_left","yuushya:block/yellow_blindwall_middle","yuushya:block/yellow_blindwall_right","yuushya:block/yellow_blindwall_none"]]},
@@ -1268,7 +1267,7 @@
 
 		{
 			"class_type": "HorizontalBlock",
-			"name": "b_black_blindwall", "item_group": "wood",
+			"name": "b_black_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/black_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/black_blindwall_left","yuushya:block/black_blindwall_middle","yuushya:block/black_blindwall_right","yuushya:block/black_blindwall_none"]]},
@@ -1282,7 +1281,7 @@
 
 		{
 			"class_type": "HorizontalBlock",
-			"name": "b_blue_blindwall", "item_group": "wood",
+			"name": "b_blue_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/blue_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/blue_blindwall_left","yuushya:block/blue_blindwall_middle","yuushya:block/blue_blindwall_right","yuushya:block/blue_blindwall_none"]]},
@@ -1296,7 +1295,7 @@
 
 		{
 			"class_type": "HorizontalBlock",
-			"name": "b_brown_blindwall", "item_group": "wood",
+			"name": "b_brown_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/brown_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/brown_blindwall_left","yuushya:block/brown_blindwall_middle","yuushya:block/brown_blindwall_right","yuushya:block/brown_blindwall_none"]]},
@@ -1310,7 +1309,7 @@
 
 		{
 			"class_type": "HorizontalBlock",
-			"name": "b_cyan_blindwall", "item_group": "wood",
+			"name": "b_cyan_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/cyan_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/cyan_blindwall_left","yuushya:block/cyan_blindwall_middle","yuushya:block/cyan_blindwall_right","yuushya:block/cyan_blindwall_none"]]},
@@ -1324,7 +1323,7 @@
 
 		{
 			"class_type": "HorizontalBlock",
-			"name": "b_gray_blindwall", "item_group": "wood",
+			"name": "b_gray_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/gray_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/gray_blindwall_left","yuushya:block/gray_blindwall_middle","yuushya:block/gray_blindwall_right","yuushya:block/gray_blindwall_none"]]},
@@ -1338,7 +1337,7 @@
 
 		{
 			"class_type": "HorizontalBlock",
-			"name": "b_green_blindwall", "item_group": "wood",
+			"name": "b_green_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/green_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/green_blindwall_left","yuushya:block/green_blindwall_middle","yuushya:block/green_blindwall_right","yuushya:block/green_blindwall_none"]]},
@@ -1352,7 +1351,7 @@
 
 		{
 			"class_type": "HorizontalBlock",
-			"name": "b_light_blue_blindwall", "item_group": "wood",
+			"name": "b_light_blue_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/light_blue_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/light_blue_blindwall_left","yuushya:block/light_blue_blindwall_middle","yuushya:block/light_blue_blindwall_right","yuushya:block/light_blue_blindwall_none"]]},
@@ -1366,7 +1365,7 @@
 
 		{
 			"class_type": "HorizontalBlock",
-			"name": "b_light_gray_blindwall", "item_group": "wood",
+			"name": "b_light_gray_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/light_gray_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/light_gray_blindwall_left","yuushya:block/light_gray_blindwall_middle","yuushya:block/light_gray_blindwall_right","yuushya:block/light_gray_blindwall_none"]]},
@@ -1380,7 +1379,7 @@
 
 		{
 			"class_type": "HorizontalBlock",
-			"name": "b_lime_blindwall", "item_group": "wood",
+			"name": "b_lime_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/lime_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/lime_blindwall_left","yuushya:block/lime_blindwall_middle","yuushya:block/lime_blindwall_right","yuushya:block/lime_blindwall_none"]]},
@@ -1394,7 +1393,7 @@
 
 		{
 			"class_type": "HorizontalBlock",
-			"name": "b_magenta_blindwall", "item_group": "wood",
+			"name": "b_magenta_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/magenta_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/magenta_blindwall_left","yuushya:block/magenta_blindwall_middle","yuushya:block/magenta_blindwall_right","yuushya:block/magenta_blindwall_none"]]},
@@ -1408,7 +1407,7 @@
 
 		{
 			"class_type": "HorizontalBlock",
-			"name": "b_orange_blindwall", "item_group": "wood",
+			"name": "b_orange_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/orange_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/orange_blindwall_left","yuushya:block/orange_blindwall_middle","yuushya:block/orange_blindwall_right","yuushya:block/orange_blindwall_none"]]},
@@ -1422,7 +1421,7 @@
 
 		{
 			"class_type": "HorizontalBlock",
-			"name": "b_pink_blindwall", "item_group": "wood",
+			"name": "b_pink_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/pink_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/pink_blindwall_left","yuushya:block/pink_blindwall_middle","yuushya:block/pink_blindwall_right","yuushya:block/pink_blindwall_none"]]},
@@ -1436,7 +1435,7 @@
 
 		{
 			"class_type": "HorizontalBlock",
-			"name": "b_purple_blindwall", "item_group": "wood",
+			"name": "b_purple_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/purple_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/purple_blindwall_left","yuushya:block/purple_blindwall_middle","yuushya:block/purple_blindwall_right","yuushya:block/purple_blindwall_none"]]},
@@ -1450,7 +1449,7 @@
 
 		{
 			"class_type": "HorizontalBlock",
-			"name": "b_red_blindwall", "item_group": "wood",
+			"name": "b_red_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/red_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/red_blindwall_left","yuushya:block/red_blindwall_middle","yuushya:block/red_blindwall_right","yuushya:block/red_blindwall_none"]]},
@@ -1464,7 +1463,7 @@
 
 		{
 			"class_type": "HorizontalBlock",
-			"name": "b_white_blindwall", "item_group": "wood",
+			"name": "b_white_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/white_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/white_blindwall_left","yuushya:block/white_blindwall_middle","yuushya:block/white_blindwall_right","yuushya:block/white_blindwall_none"]]},
@@ -1478,7 +1477,7 @@
 
 		{
 			"class_type": "HorizontalBlock",
-			"name": "b_yellow_blindwall", "item_group": "wood",
+			"name": "b_yellow_blindwall", "item_group": "extra_blocks",
 			"auto_generated": { "recipe": true },
 			"item_model": "yuushya:block/yellow_blindwall_none",
 			"blockstate": { "forms": [["yuushya:block/yellow_blindwall_left","yuushya:block/yellow_blindwall_middle","yuushya:block/yellow_blindwall_right","yuushya:block/yellow_blindwall_none"]]},
@@ -1489,6 +1488,7 @@
 					"sides#yuushya:block_/blindwall/yellow_blindwall",
 					"top#yuushya:block_/blindwall/yellow_blindwall"]}
 		},
+
 		{
 			"class_type": "block", "name": "black_concrete_top",
 			"texture": {
@@ -5351,39 +5351,59 @@
 		},
 
 		{
-			"class_type": "TranslucentBlock",
+			"class_type": "FlowBlock",
 			"name": "white_windows_corner_0",
-			"auto_generated": { "recipe": true }, "item_group": "window",
-			"properties": {"has_collision": false },
 			"render_type": "translucent",
-			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/white_windows_corner"]]}
+			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "window",
+			"item_model": "yuushya:extra_building_material/windows_frame_model/white_windows_corner_none",
+			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame_model/white_windows_corner_top", "yuushya:extra_building_material/windows_frame_model/white_windows_corner_middle", "yuushya:extra_building_material/windows_frame_model/white_windows_corner_bottom", "yuushya:extra_building_material/windows_frame_model/white_windows_corner_none"]]
+			}
 		},
 
 		{
-			"class_type": "TranslucentBlock",
+			"class_type": "FlowBlock",
 			"name": "white_windows_corner_1",
-			"auto_generated": { "recipe": true }, "item_group": "window",
-			"properties": {"has_collision": false },
 			"render_type": "translucent",
-			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/white_windows_corner"]]}
+			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "window",
+			"item_model": "yuushya:extra_building_material/windows_frame_model/white_windows_corner_none",
+			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame_model/white_windows_corner_top", "yuushya:extra_building_material/windows_frame_model/white_windows_corner_middle", "yuushya:extra_building_material/windows_frame_model/white_windows_corner_bottom", "yuushya:extra_building_material/windows_frame_model/white_windows_corner_none"]]
+			}
 		},
 
 		{
-			"class_type": "TranslucentBlock",
+			"class_type": "WindowsBlock",
 			"name": "white_windows_deviated_0",
-			"auto_generated": { "recipe": true }, "item_group": "window",
-			"properties": {"has_collision": false },
+			"auto_generated": { "recipe": true ,"blockstate": true}, "item_group": "window",
+			"properties": {"has_collision": true },
 			"render_type": "translucent",
-			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/white_windows_deviated_0"]]}
+			"item_model": "yuushya:extra_building_material/windows_frame/white_windows_deviated_0",
+			"blockstate": {
+				"kit": "pole_line",
+				"forms": [[
+					"yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_nsw", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_ns", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_nes", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_nesw",
+					"yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_nw", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_n", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_ne", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_new",
+					"yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_w", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_none", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_e", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_ew",
+					"yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_sw", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_s", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_es", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_esw"
+				]]
+			}
 		},
 
 		{
-			"class_type": "TranslucentBlock",
+			"class_type": "WindowsBlock",
 			"name": "white_windows_deviated_1",
-			"auto_generated": { "recipe": true }, "item_group": "window",
-			"properties": {"has_collision": false },
+			"auto_generated": { "recipe": true ,"blockstate": true}, "item_group": "window",
+			"properties": {"has_collision": true },
 			"render_type": "translucent",
-			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/white_windows_deviated_1"]]}
+			"item_model": "yuushya:extra_building_material/windows_frame/white_windows_deviated_1",
+			"blockstate": {
+				"kit": "pole_line",
+				"forms": [[
+					"yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_nsw", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_ns", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_nes", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_nesw",
+					"yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_nw", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_n", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_ne", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_new",
+					"yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_w", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_none", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_e", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_ew",
+					"yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_sw", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_s", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_es", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_esw"
+				]]
+			}
 		},
 
 		{
@@ -5471,40 +5491,60 @@
 		},
 
 		{
-			"class_type": "TranslucentBlock",
+			"class_type": "FlowBlock",
 			"name": "red_windows_corner_0",
-			"auto_generated": { "recipe": true }, "item_group": "window",
-			"properties": {"has_collision": false },
 			"render_type": "translucent",
-			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/red_windows_corner"]]}
+			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "window",
+			"item_model": "yuushya:extra_building_material/windows_frame_model/red_windows_corner_none",
+			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame_model/red_windows_corner_top", "yuushya:extra_building_material/windows_frame_model/red_windows_corner_middle", "yuushya:extra_building_material/windows_frame_model/red_windows_corner_bottom", "yuushya:extra_building_material/windows_frame_model/red_windows_corner_none"]]
+			}
 		},
 
 		{
-			"class_type": "TranslucentBlock",
+			"class_type": "FlowBlock",
 			"name": "red_windows_corner_1",
-			"auto_generated": { "recipe": true }, "item_group": "window",
-			"properties": {"has_collision": false },
 			"render_type": "translucent",
-			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/red_windows_corner"]]}
+			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "window",
+			"item_model": "yuushya:extra_building_material/windows_frame_model/red_windows_corner_none",
+			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame_model/red_windows_corner_top", "yuushya:extra_building_material/windows_frame_model/red_windows_corner_middle", "yuushya:extra_building_material/windows_frame_model/red_windows_corner_bottom", "yuushya:extra_building_material/windows_frame_model/red_windows_corner_none"]]
+			}
 		},
 
 
 		{
-			"class_type": "TranslucentBlock",
+			"class_type": "WindowsBlock",
 			"name": "red_windows_deviated_0",
-			"auto_generated": { "recipe": true }, "item_group": "window",
-			"properties": {"has_collision": false },
+			"auto_generated": { "recipe": true ,"blockstate": true}, "item_group": "window",
+			"properties": {"has_collision": true },
 			"render_type": "translucent",
-			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/red_windows_deviated_0"]]}
+			"item_model": "yuushya:extra_building_material/windows_frame/red_windows_deviated_0",
+			"blockstate": {
+				"kit": "pole_line",
+				"forms": [[
+					"yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_nsw", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_ns", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_nes", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_nesw",
+					"yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_nw", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_n", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_ne", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_new",
+					"yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_w", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_none", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_e", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_ew",
+					"yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_sw", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_s", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_es", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_esw"
+				]]
+			}
 		},
 
 		{
-			"class_type": "TranslucentBlock",
+			"class_type": "WindowsBlock",
 			"name": "red_windows_deviated_1",
-			"auto_generated": { "recipe": true }, "item_group": "window",
-			"properties": {"has_collision": false },
+			"auto_generated": { "recipe": true ,"blockstate": true}, "item_group": "window",
+			"properties": {"has_collision": true },
 			"render_type": "translucent",
-			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/red_windows_deviated_1"]]}
+			"item_model": "yuushya:extra_building_material/windows_frame/red_windows_deviated_1",
+			"blockstate": {
+				"kit": "pole_line",
+				"forms": [[
+					"yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_nsw", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_ns", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_nes", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_nesw",
+					"yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_nw", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_n", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_ne", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_new",
+					"yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_w", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_none", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_e", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_ew",
+					"yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_sw", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_s", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_es", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_esw"
+				]]
+			}
 		},
 
 		{
@@ -5592,40 +5632,60 @@
 		},
 
 		{
-			"class_type": "TranslucentBlock",
+			"class_type": "FlowBlock",
 			"name": "gray_windows_corner_0",
-			"auto_generated": { "recipe": true }, "item_group": "window",
-			"properties": {"has_collision": false },
 			"render_type": "translucent",
-			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/gray_windows_corner"]]}
+			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "window",
+			"item_model": "yuushya:extra_building_material/windows_frame_model/gray_windows_corner_none",
+			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame_model/gray_windows_corner_top", "yuushya:extra_building_material/windows_frame_model/gray_windows_corner_middle", "yuushya:extra_building_material/windows_frame_model/gray_windows_corner_bottom", "yuushya:extra_building_material/windows_frame_model/gray_windows_corner_none"]]
+			}
 		},
 
 		{
-			"class_type": "TranslucentBlock",
+			"class_type": "FlowBlock",
 			"name": "gray_windows_corner_1",
-			"auto_generated": { "recipe": true }, "item_group": "window",
-			"properties": {"has_collision": false },
 			"render_type": "translucent",
-			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/gray_windows_corner"]]}
+			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "window",
+			"item_model": "yuushya:extra_building_material/windows_frame_model/gray_windows_corner_none",
+			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame_model/gray_windows_corner_top", "yuushya:extra_building_material/windows_frame_model/gray_windows_corner_middle", "yuushya:extra_building_material/windows_frame_model/gray_windows_corner_bottom", "yuushya:extra_building_material/windows_frame_model/gray_windows_corner_none"]]
+			}
 		},
 
 
 		{
-			"class_type": "TranslucentBlock",
+			"class_type": "WindowsBlock",
 			"name": "gray_windows_deviated_0",
-			"auto_generated": { "recipe": true }, "item_group": "window",
-			"properties": {"has_collision": false },
+			"auto_generated": { "recipe": true ,"blockstate": true}, "item_group": "window",
+			"properties": {"has_collision": true },
 			"render_type": "translucent",
-			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/gray_windows_deviated_0"]]}
+			"item_model": "yuushya:extra_building_material/windows_frame/gray_windows_deviated_0",
+			"blockstate": {
+				"kit": "pole_line",
+				"forms": [[
+					"yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_nsw", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_ns", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_nes", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_nesw",
+					"yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_nw", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_n", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_ne", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_new",
+					"yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_w", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_none", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_e", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_ew",
+					"yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_sw", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_s", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_es", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_esw"
+				]]
+			}
 		},
 
 		{
-			"class_type": "TranslucentBlock",
+			"class_type": "WindowsBlock",
 			"name": "gray_windows_deviated_1",
-			"auto_generated": { "recipe": true }, "item_group": "window",
-			"properties": {"has_collision": false },
+			"auto_generated": { "recipe": true ,"blockstate": true}, "item_group": "window",
+			"properties": {"has_collision": true },
 			"render_type": "translucent",
-			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/gray_windows_deviated_1"]]}
+			"item_model": "yuushya:extra_building_material/windows_frame/gray_windows_deviated_1",
+			"blockstate": {
+				"kit": "pole_line",
+				"forms": [[
+					"yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_nsw", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_ns", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_nes", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_nesw",
+					"yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_nw", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_n", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_ne", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_new",
+					"yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_w", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_none", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_e", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_ew",
+					"yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_sw", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_s", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_es", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_esw"
+				]]
+			}
 		},
 
 		{
@@ -5713,40 +5773,59 @@
 		},
 
 		{
-			"class_type": "TranslucentBlock",
+			"class_type": "FlowBlock",
 			"name": "cyan_windows_corner_0",
-			"auto_generated": { "recipe": true }, "item_group": "window",
-			"properties": {"has_collision": false },
 			"render_type": "translucent",
-			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/cyan_windows_corner"]]}
+			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "window",
+			"item_model": "yuushya:extra_building_material/windows_frame_model/cyan_windows_corner_none",
+			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame_model/cyan_windows_corner_top", "yuushya:extra_building_material/windows_frame_model/cyan_windows_corner_middle", "yuushya:extra_building_material/windows_frame_model/cyan_windows_corner_bottom", "yuushya:extra_building_material/windows_frame_model/cyan_windows_corner_none"]]
+			}
 		},
 
 		{
-			"class_type": "TranslucentBlock",
+			"class_type": "FlowBlock",
 			"name": "cyan_windows_corner_1",
-			"auto_generated": { "recipe": true }, "item_group": "window",
-			"properties": {"has_collision": false },
 			"render_type": "translucent",
-			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/cyan_windows_corner"]]}
+			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "window",
+			"item_model": "yuushya:extra_building_material/windows_frame_model/cyan_windows_corner_none",
+			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame_model/cyan_windows_corner_top", "yuushya:extra_building_material/windows_frame_model/cyan_windows_corner_middle", "yuushya:extra_building_material/windows_frame_model/cyan_windows_corner_bottom", "yuushya:extra_building_material/windows_frame_model/cyan_windows_corner_none"]]
+			}
 		},
 
-
 		{
-			"class_type": "TranslucentBlock",
+			"class_type": "WindowsBlock",
 			"name": "cyan_windows_deviated_0",
-			"auto_generated": { "recipe": true }, "item_group": "window",
-			"properties": {"has_collision": false },
+			"auto_generated": { "recipe": true ,"blockstate": true}, "item_group": "window",
+			"properties": {"has_collision": true },
 			"render_type": "translucent",
-			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/cyan_windows_deviated_0"]]}
+			"item_model": "yuushya:extra_building_material/windows_frame/cyan_windows_deviated_0",
+			"blockstate": {
+				"kit": "pole_line",
+				"forms": [[
+					"yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_nsw", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_ns", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_nes", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_nesw",
+					"yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_nw", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_n", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_ne", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_new",
+					"yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_w", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_none", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_e", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_ew",
+					"yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_sw", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_s", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_es", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_esw"
+				]]
+			}
 		},
 
 		{
-			"class_type": "TranslucentBlock",
+			"class_type": "WindowsBlock",
 			"name": "cyan_windows_deviated_1",
-			"auto_generated": { "recipe": true }, "item_group": "window",
-			"properties": {"has_collision": false },
+			"auto_generated": { "recipe": true ,"blockstate": true}, "item_group": "window",
+			"properties": {"has_collision": true },
 			"render_type": "translucent",
-			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/cyan_windows_deviated_1"]]}
+			"item_model": "yuushya:extra_building_material/windows_frame/cyan_windows_deviated_1",
+			"blockstate": {
+				"kit": "pole_line",
+				"forms": [[
+					"yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_nsw", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_ns", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_nes", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_nesw",
+					"yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_nw", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_n", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_ne", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_new",
+					"yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_w", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_none", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_e", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_ew",
+					"yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_sw", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_s", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_es", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_esw"
+				]]
+			}
 		},
 
 		{
@@ -5834,40 +5913,59 @@
 		},
 
 		{
-			"class_type": "TranslucentBlock",
+			"class_type": "FlowBlock",
 			"name": "oak_windows_corner_0",
-			"auto_generated": { "recipe": true }, "item_group": "window",
-			"properties": {"has_collision": false },
 			"render_type": "translucent",
-			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/oak_windows_corner"]]}
+			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "window",
+			"item_model": "yuushya:extra_building_material/windows_frame_model/oak_windows_corner_none",
+			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame_model/oak_windows_corner_top", "yuushya:extra_building_material/windows_frame_model/oak_windows_corner_middle", "yuushya:extra_building_material/windows_frame_model/oak_windows_corner_bottom", "yuushya:extra_building_material/windows_frame_model/oak_windows_corner_none"]]
+			}
 		},
 
 		{
-			"class_type": "TranslucentBlock",
+			"class_type": "FlowBlock",
 			"name": "oak_windows_corner_1",
-			"auto_generated": { "recipe": true }, "item_group": "window",
-			"properties": {"has_collision": false },
 			"render_type": "translucent",
-			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/oak_windows_corner"]]}
+			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "window",
+			"item_model": "yuushya:extra_building_material/windows_frame_model/oak_windows_corner_none",
+			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame_model/oak_windows_corner_top", "yuushya:extra_building_material/windows_frame_model/oak_windows_corner_middle", "yuushya:extra_building_material/windows_frame_model/oak_windows_corner_bottom", "yuushya:extra_building_material/windows_frame_model/oak_windows_corner_none"]]
+			}
 		},
 
-
 		{
-			"class_type": "TranslucentBlock",
+			"class_type": "WindowsBlock",
 			"name": "oak_windows_deviated_0",
-			"auto_generated": { "recipe": true }, "item_group": "window",
-			"properties": {"has_collision": false },
+			"auto_generated": { "recipe": true ,"blockstate": true}, "item_group": "window",
+			"properties": {"has_collision": true },
 			"render_type": "translucent",
-			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/oak_windows_deviated_0"]]}
+			"item_model": "yuushya:extra_building_material/windows_frame/oak_windows_deviated_0",
+			"blockstate": {
+				"kit": "pole_line",
+				"forms": [[
+					"yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_nsw", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_ns", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_nes", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_nesw",
+					"yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_nw", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_n", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_ne", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_new",
+					"yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_w", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_none", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_e", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_ew",
+					"yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_sw", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_s", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_es", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_esw"
+				]]
+			}
 		},
 
 		{
-			"class_type": "TranslucentBlock",
+			"class_type": "WindowsBlock",
 			"name": "oak_windows_deviated_1",
-			"auto_generated": { "recipe": true }, "item_group": "window",
-			"properties": {"has_collision": false },
+			"auto_generated": { "recipe": true ,"blockstate": true}, "item_group": "window",
+			"properties": {"has_collision": true },
 			"render_type": "translucent",
-			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/oak_windows_deviated_1"]]}
+			"item_model": "yuushya:extra_building_material/windows_frame/oak_windows_deviated_1",
+			"blockstate": {
+				"kit": "pole_line",
+				"forms": [[
+					"yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_nsw", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_ns", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_nes", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_nesw",
+					"yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_nw", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_n", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_ne", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_new",
+					"yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_w", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_none", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_e", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_ew",
+					"yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_sw", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_s", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_es", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_esw"
+				]]
+			}
 		},
 
 		{
@@ -5955,40 +6053,59 @@
 		},
 
 		{
-			"class_type": "TranslucentBlock",
+			"class_type": "FlowBlock",
 			"name": "black_windows_corner_0",
-			"auto_generated": { "recipe": true }, "item_group": "window",
-			"properties": {"has_collision": false },
 			"render_type": "translucent",
-			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/black_windows_corner"]]}
+			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "window",
+			"item_model": "yuushya:extra_building_material/windows_frame_model/black_windows_corner_none",
+			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame_model/black_windows_corner_top", "yuushya:extra_building_material/windows_frame_model/black_windows_corner_middle", "yuushya:extra_building_material/windows_frame_model/black_windows_corner_bottom", "yuushya:extra_building_material/windows_frame_model/black_windows_corner_none"]]
+			}
 		},
 
 		{
-			"class_type": "TranslucentBlock",
+			"class_type": "FlowBlock",
 			"name": "black_windows_corner_1",
-			"auto_generated": { "recipe": true }, "item_group": "window",
-			"properties": {"has_collision": false },
 			"render_type": "translucent",
-			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/black_windows_corner"]]}
+			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "window",
+			"item_model": "yuushya:extra_building_material/windows_frame_model/black_windows_corner_none",
+			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame_model/black_windows_corner_top", "yuushya:extra_building_material/windows_frame_model/black_windows_corner_middle", "yuushya:extra_building_material/windows_frame_model/black_windows_corner_bottom", "yuushya:extra_building_material/windows_frame_model/black_windows_corner_none"]]
+			}
 		},
 
-
 		{
-			"class_type": "TranslucentBlock",
+			"class_type": "WindowsBlock",
 			"name": "black_windows_deviated_0",
-			"auto_generated": { "recipe": true }, "item_group": "window",
-			"properties": {"has_collision": false },
+			"auto_generated": { "recipe": true ,"blockstate": true}, "item_group": "window",
+			"properties": {"has_collision": true },
 			"render_type": "translucent",
-			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/black_windows_deviated_0"]]}
+			"item_model": "yuushya:extra_building_material/windows_frame/black_windows_deviated_0",
+			"blockstate": {
+				"kit": "pole_line",
+				"forms": [[
+					"yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_nsw", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_ns", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_nes", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_nesw",
+					"yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_nw", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_n", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_ne", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_new",
+					"yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_w", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_none", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_e", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_ew",
+					"yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_sw", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_s", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_es", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_esw"
+				]]
+			}
 		},
 
 		{
-			"class_type": "TranslucentBlock",
+			"class_type": "WindowsBlock",
 			"name": "black_windows_deviated_1",
-			"auto_generated": { "recipe": true }, "item_group": "window",
-			"properties": {"has_collision": false },
+			"auto_generated": { "recipe": true ,"blockstate": true}, "item_group": "window",
+			"properties": {"has_collision": true },
 			"render_type": "translucent",
-			"blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/black_windows_deviated_1"]]}
+			"item_model": "yuushya:extra_building_material/windows_frame/black_windows_deviated_1",
+			"blockstate": {
+				"kit": "pole_line",
+				"forms": [[
+					"yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_nsw", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_ns", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_nes", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_nesw",
+					"yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_nw", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_n", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_ne", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_new",
+					"yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_w", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_none", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_e", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_ew",
+					"yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_sw", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_s", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_es", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_esw"
+				]]
+			}
 		},
 
 		{
@@ -11592,7 +11709,7 @@
 			"class_type": "NormalBlock",
 			"name": "mini_printer",
 			"auto_generated": { "recipe": true }, "item_group": "electrical_appliance",
-			"blockstate": { "forms": [["yuushya:extra_building_material/mini_printer"]]}
+			"blockstate": { "forms": [["yuushya:extra_building_material/desktop_printer"]]}
 		},
 
 		{
