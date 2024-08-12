@@ -8,13 +8,10 @@ Yuushya Townscape is a Mod combined with the Yuushya texture pack. With Yuushya,
 
 Yuushya Townscape Mod contains 800+ delicate building materials and decorations with well-designed textures. We also have elaborate but simple features like signs, connected models and block model relocating.
 
-## Authors
-
-几何 SQwatermark and Xiao2
 
 ## Website
 
-[Yuushya Minecraft](https://yuushya.gitee.io/page/)
+[Yuushya Minecraft](https://yuushya.com/t/)
 
 ## License
 
