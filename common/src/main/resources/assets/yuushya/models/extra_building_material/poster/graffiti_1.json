@@ -1,0 +1,7 @@
+{
+    "parent": "yuushya:extra_building_material/poster/graffiti",
+	"textures": { 
+		"0": "yuushya:0extra_building_material/preview/graffiti/graffiti_1",
+		"particle": "#0"
+	}
+}

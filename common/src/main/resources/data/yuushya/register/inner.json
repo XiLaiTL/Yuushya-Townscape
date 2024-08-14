@@ -453,6 +453,16 @@
 		},
 
 		{
+			"class_type": "block", "name": "red_bricks", "item_group": "stone",
+			"properties": {"lines": 0 },
+			"auto_generated": { "recipe": false },
+			"texture": {
+				"value":"yuushya:block_/red_bricks",
+				"set":  [
+					"all#yuushya:block_/red_bricks"]}
+		},
+
+		{
 			"class_type": "block", "name": "stone_with_dot", "item_group": "stone",
 			"properties": {"lines": 0 },
 			"auto_generated": { "recipe": false },
@@ -1487,6 +1497,902 @@
 					"all#yuushya:block_/blindwall/yellow_blindwall",
 					"sides#yuushya:block_/blindwall/yellow_blindwall",
 					"top#yuushya:block_/blindwall/yellow_blindwall"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "a_black_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/black_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/black_horizontal_compact_left","yuushya:block/black_horizontal_compact_middle","yuushya:block/black_horizontal_compact_right","yuushya:block/black_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/black_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/black_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/black_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/black_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "a_blue_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/blue_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/blue_horizontal_compact_left","yuushya:block/blue_horizontal_compact_middle","yuushya:block/blue_horizontal_compact_right","yuushya:block/blue_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/blue_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/blue_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/blue_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/blue_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "a_brown_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/brown_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/brown_horizontal_compact_left","yuushya:block/brown_horizontal_compact_middle","yuushya:block/brown_horizontal_compact_right","yuushya:block/brown_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/brown_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/brown_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/brown_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/brown_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "a_cyan_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/cyan_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/cyan_horizontal_compact_left","yuushya:block/cyan_horizontal_compact_middle","yuushya:block/cyan_horizontal_compact_right","yuushya:block/cyan_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/cyan_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/cyan_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/cyan_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/cyan_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "a_gray_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/gray_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/gray_horizontal_compact_left","yuushya:block/gray_horizontal_compact_middle","yuushya:block/gray_horizontal_compact_right","yuushya:block/gray_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/gray_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/gray_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/gray_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/gray_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "a_green_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/green_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/green_horizontal_compact_left","yuushya:block/green_horizontal_compact_middle","yuushya:block/green_horizontal_compact_right","yuushya:block/green_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/green_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/green_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/green_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/green_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "a_light_blue_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/light_blue_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/light_blue_horizontal_compact_left","yuushya:block/light_blue_horizontal_compact_middle","yuushya:block/light_blue_horizontal_compact_right","yuushya:block/light_blue_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/light_blue_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/light_blue_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/light_blue_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/light_blue_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "a_light_gray_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/light_gray_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/light_gray_horizontal_compact_left","yuushya:block/light_gray_horizontal_compact_middle","yuushya:block/light_gray_horizontal_compact_right","yuushya:block/light_gray_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/light_gray_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/light_gray_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/light_gray_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/light_gray_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "a_lime_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/lime_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/lime_horizontal_compact_left","yuushya:block/lime_horizontal_compact_middle","yuushya:block/lime_horizontal_compact_right","yuushya:block/lime_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/lime_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/lime_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/lime_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/lime_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "a_magenta_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/magenta_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/magenta_horizontal_compact_left","yuushya:block/magenta_horizontal_compact_middle","yuushya:block/magenta_horizontal_compact_right","yuushya:block/magenta_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/magenta_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/magenta_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/magenta_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/magenta_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "a_orange_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/orange_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/orange_horizontal_compact_left","yuushya:block/orange_horizontal_compact_middle","yuushya:block/orange_horizontal_compact_right","yuushya:block/orange_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/orange_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/orange_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/orange_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/orange_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "a_pink_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/pink_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/pink_horizontal_compact_left","yuushya:block/pink_horizontal_compact_middle","yuushya:block/pink_horizontal_compact_right","yuushya:block/pink_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/pink_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/pink_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/pink_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/pink_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "a_purple_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/purple_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/purple_horizontal_compact_left","yuushya:block/purple_horizontal_compact_middle","yuushya:block/purple_horizontal_compact_right","yuushya:block/purple_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/purple_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/purple_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/purple_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/purple_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "a_red_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/red_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/red_horizontal_compact_left","yuushya:block/red_horizontal_compact_middle","yuushya:block/red_horizontal_compact_right","yuushya:block/red_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/red_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/red_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/red_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/red_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "a_white_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/white_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/white_horizontal_compact_left","yuushya:block/white_horizontal_compact_middle","yuushya:block/white_horizontal_compact_right","yuushya:block/white_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/white_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/white_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/white_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/white_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "a_yellow_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/yellow_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/yellow_horizontal_compact_left","yuushya:block/yellow_horizontal_compact_middle","yuushya:block/yellow_horizontal_compact_right","yuushya:block/yellow_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/yellow_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/yellow_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/yellow_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/yellow_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "b_black_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/black_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/black_horizontal_compact_left","yuushya:block/black_horizontal_compact_middle","yuushya:block/black_horizontal_compact_right","yuushya:block/black_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/black_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/black_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/black_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/black_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "b_blue_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/blue_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/blue_horizontal_compact_left","yuushya:block/blue_horizontal_compact_middle","yuushya:block/blue_horizontal_compact_right","yuushya:block/blue_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/blue_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/blue_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/blue_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/blue_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "b_brown_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/brown_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/brown_horizontal_compact_left","yuushya:block/brown_horizontal_compact_middle","yuushya:block/brown_horizontal_compact_right","yuushya:block/brown_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/brown_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/brown_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/brown_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/brown_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "b_cyan_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/cyan_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/cyan_horizontal_compact_left","yuushya:block/cyan_horizontal_compact_middle","yuushya:block/cyan_horizontal_compact_right","yuushya:block/cyan_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/cyan_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/cyan_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/cyan_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/cyan_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "b_gray_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/gray_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/gray_horizontal_compact_left","yuushya:block/gray_horizontal_compact_middle","yuushya:block/gray_horizontal_compact_right","yuushya:block/gray_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/gray_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/gray_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/gray_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/gray_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "b_green_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/green_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/green_horizontal_compact_left","yuushya:block/green_horizontal_compact_middle","yuushya:block/green_horizontal_compact_right","yuushya:block/green_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/green_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/green_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/green_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/green_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "b_light_blue_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/light_blue_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/light_blue_horizontal_compact_left","yuushya:block/light_blue_horizontal_compact_middle","yuushya:block/light_blue_horizontal_compact_right","yuushya:block/light_blue_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/light_blue_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/light_blue_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/light_blue_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/light_blue_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "b_light_gray_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/light_gray_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/light_gray_horizontal_compact_left","yuushya:block/light_gray_horizontal_compact_middle","yuushya:block/light_gray_horizontal_compact_right","yuushya:block/light_gray_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/light_gray_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/light_gray_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/light_gray_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/light_gray_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "b_lime_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/lime_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/lime_horizontal_compact_left","yuushya:block/lime_horizontal_compact_middle","yuushya:block/lime_horizontal_compact_right","yuushya:block/lime_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/lime_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/lime_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/lime_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/lime_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "b_magenta_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/magenta_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/magenta_horizontal_compact_left","yuushya:block/magenta_horizontal_compact_middle","yuushya:block/magenta_horizontal_compact_right","yuushya:block/magenta_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/magenta_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/magenta_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/magenta_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/magenta_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "b_orange_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/orange_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/orange_horizontal_compact_left","yuushya:block/orange_horizontal_compact_middle","yuushya:block/orange_horizontal_compact_right","yuushya:block/orange_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/orange_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/orange_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/orange_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/orange_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "b_pink_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/pink_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/pink_horizontal_compact_left","yuushya:block/pink_horizontal_compact_middle","yuushya:block/pink_horizontal_compact_right","yuushya:block/pink_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/pink_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/pink_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/pink_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/pink_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "b_purple_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/purple_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/purple_horizontal_compact_left","yuushya:block/purple_horizontal_compact_middle","yuushya:block/purple_horizontal_compact_right","yuushya:block/purple_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/purple_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/purple_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/purple_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/purple_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "b_red_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/red_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/red_horizontal_compact_left","yuushya:block/red_horizontal_compact_middle","yuushya:block/red_horizontal_compact_right","yuushya:block/red_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/red_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/red_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/red_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/red_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "b_white_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/white_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/white_horizontal_compact_left","yuushya:block/white_horizontal_compact_middle","yuushya:block/white_horizontal_compact_right","yuushya:block/white_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/white_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/white_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/white_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/white_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "HorizontalBlock",
+			"name": "b_yellow_horizontal_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/yellow_horizontal_compact_none",
+			"blockstate": { "forms": [["yuushya:block/yellow_horizontal_compact_left","yuushya:block/yellow_horizontal_compact_middle","yuushya:block/yellow_horizontal_compact_right","yuushya:block/yellow_horizontal_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_horizontal/yellow_horizontal_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_horizontal/yellow_horizontal_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_horizontal/yellow_horizontal_compact",
+					"top#yuushya:block_/acrylic/framed_compact_horizontal/yellow_horizontal_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "a_black_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/black_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/black_vertical_compact_top","yuushya:block/black_vertical_compact_middle","yuushya:block/black_vertical_compact_bottom","yuushya:block/black_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/black_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/black_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/black_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/black_vertical_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "a_blue_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/blue_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/blue_vertical_compact_top","yuushya:block/blue_vertical_compact_middle","yuushya:block/blue_vertical_compact_bottom","yuushya:block/blue_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/blue_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/blue_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/blue_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/blue_vertical_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "a_brown_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/brown_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/brown_vertical_compact_top","yuushya:block/brown_vertical_compact_middle","yuushya:block/brown_vertical_compact_bottom","yuushya:block/brown_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/brown_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/brown_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/brown_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/brown_vertical_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "a_cyan_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/cyan_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/cyan_vertical_compact_top","yuushya:block/cyan_vertical_compact_middle","yuushya:block/cyan_vertical_compact_bottom","yuushya:block/cyan_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/cyan_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/cyan_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/cyan_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/cyan_vertical_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "a_gray_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/gray_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/gray_vertical_compact_top","yuushya:block/gray_vertical_compact_middle","yuushya:block/gray_vertical_compact_bottom","yuushya:block/gray_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/gray_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/gray_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/gray_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/gray_vertical_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "a_green_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/green_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/green_vertical_compact_top","yuushya:block/green_vertical_compact_middle","yuushya:block/green_vertical_compact_bottom","yuushya:block/green_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/green_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/green_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/green_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/green_vertical_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "a_light_blue_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/light_blue_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/light_blue_vertical_compact_top","yuushya:block/light_blue_vertical_compact_middle","yuushya:block/light_blue_vertical_compact_bottom","yuushya:block/light_blue_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/light_blue_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/light_blue_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/light_blue_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/light_blue_vertical_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "a_light_gray_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/light_gray_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/light_gray_vertical_compact_top","yuushya:block/light_gray_vertical_compact_middle","yuushya:block/light_gray_vertical_compact_bottom","yuushya:block/light_gray_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/light_gray_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/light_gray_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/light_gray_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/light_gray_vertical_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "a_lime_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/lime_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/lime_vertical_compact_top","yuushya:block/lime_vertical_compact_middle","yuushya:block/lime_vertical_compact_bottom","yuushya:block/lime_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/lime_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/lime_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/lime_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/lime_vertical_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "a_magenta_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/magenta_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/magenta_vertical_compact_top","yuushya:block/magenta_vertical_compact_middle","yuushya:block/magenta_vertical_compact_bottom","yuushya:block/magenta_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/magenta_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/magenta_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/magenta_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/magenta_vertical_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "a_orange_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/orange_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/orange_vertical_compact_top","yuushya:block/orange_vertical_compact_middle","yuushya:block/orange_vertical_compact_bottom","yuushya:block/orange_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/orange_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/orange_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/orange_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/orange_vertical_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "a_pink_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/pink_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/pink_vertical_compact_top","yuushya:block/pink_vertical_compact_middle","yuushya:block/pink_vertical_compact_bottom","yuushya:block/pink_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/pink_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/pink_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/pink_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/pink_vertical_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "a_purple_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/purple_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/purple_vertical_compact_top","yuushya:block/purple_vertical_compact_middle","yuushya:block/purple_vertical_compact_bottom","yuushya:block/purple_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/purple_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/purple_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/purple_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/purple_vertical_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "a_red_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/red_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/red_vertical_compact_top","yuushya:block/red_vertical_compact_middle","yuushya:block/red_vertical_compact_bottom","yuushya:block/red_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/red_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/red_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/red_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/red_vertical_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "a_white_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/white_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/white_vertical_compact_top","yuushya:block/white_vertical_compact_middle","yuushya:block/white_vertical_compact_bottom","yuushya:block/white_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/white_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/white_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/white_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/white_vertical_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "a_yellow_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/yellow_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/yellow_vertical_compact_top","yuushya:block/yellow_vertical_compact_middle","yuushya:block/yellow_vertical_compact_bottom","yuushya:block/yellow_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/yellow_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/yellow_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/yellow_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/yellow_vertical_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "b_black_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/black_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/black_vertical_compact_top","yuushya:block/black_vertical_compact_middle","yuushya:block/black_vertical_compact_bottom","yuushya:block/black_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/black_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/black_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/black_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/black_vertical_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "b_blue_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/blue_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/blue_vertical_compact_top","yuushya:block/blue_vertical_compact_middle","yuushya:block/blue_vertical_compact_bottom","yuushya:block/blue_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/blue_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/blue_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/blue_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/blue_vertical_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "b_brown_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/brown_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/brown_vertical_compact_top","yuushya:block/brown_vertical_compact_middle","yuushya:block/brown_vertical_compact_bottom","yuushya:block/brown_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/brown_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/brown_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/brown_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/brown_vertical_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "b_cyan_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/cyan_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/cyan_vertical_compact_top","yuushya:block/cyan_vertical_compact_middle","yuushya:block/cyan_vertical_compact_bottom","yuushya:block/cyan_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/cyan_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/cyan_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/cyan_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/cyan_vertical_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "b_gray_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/gray_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/gray_vertical_compact_top","yuushya:block/gray_vertical_compact_middle","yuushya:block/gray_vertical_compact_bottom","yuushya:block/gray_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/gray_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/gray_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/gray_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/gray_vertical_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "b_green_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/green_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/green_vertical_compact_top","yuushya:block/green_vertical_compact_middle","yuushya:block/green_vertical_compact_bottom","yuushya:block/green_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/green_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/green_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/green_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/green_vertical_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "b_light_blue_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/light_blue_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/light_blue_vertical_compact_top","yuushya:block/light_blue_vertical_compact_middle","yuushya:block/light_blue_vertical_compact_bottom","yuushya:block/light_blue_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/light_blue_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/light_blue_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/light_blue_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/light_blue_vertical_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "b_light_gray_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/light_gray_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/light_gray_vertical_compact_top","yuushya:block/light_gray_vertical_compact_middle","yuushya:block/light_gray_vertical_compact_bottom","yuushya:block/light_gray_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/light_gray_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/light_gray_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/light_gray_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/light_gray_vertical_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "b_lime_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/lime_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/lime_vertical_compact_top","yuushya:block/lime_vertical_compact_middle","yuushya:block/lime_vertical_compact_bottom","yuushya:block/lime_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/lime_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/lime_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/lime_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/lime_vertical_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "b_magenta_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/magenta_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/magenta_vertical_compact_top","yuushya:block/magenta_vertical_compact_middle","yuushya:block/magenta_vertical_compact_bottom","yuushya:block/magenta_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/magenta_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/magenta_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/magenta_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/magenta_vertical_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "b_orange_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/orange_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/orange_vertical_compact_top","yuushya:block/orange_vertical_compact_middle","yuushya:block/orange_vertical_compact_bottom","yuushya:block/orange_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/orange_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/orange_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/orange_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/orange_vertical_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "b_pink_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/pink_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/pink_vertical_compact_top","yuushya:block/pink_vertical_compact_middle","yuushya:block/pink_vertical_compact_bottom","yuushya:block/pink_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/pink_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/pink_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/pink_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/pink_vertical_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "b_purple_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/purple_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/purple_vertical_compact_top","yuushya:block/purple_vertical_compact_middle","yuushya:block/purple_vertical_compact_bottom","yuushya:block/purple_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/purple_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/purple_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/purple_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/purple_vertical_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "b_red_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/red_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/red_vertical_compact_top","yuushya:block/red_vertical_compact_middle","yuushya:block/red_vertical_compact_bottom","yuushya:block/red_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/red_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/red_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/red_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/red_vertical_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "b_white_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/white_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/white_vertical_compact_top","yuushya:block/white_vertical_compact_middle","yuushya:block/white_vertical_compact_bottom","yuushya:block/white_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/white_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/white_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/white_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/white_vertical_compact"]}
+		},
+
+		{
+			"class_type": "VerticalBlock",
+			"name": "b_yellow_vertical_compact", "item_group": "extra_blocks",
+			"auto_generated": { "recipe": true },
+			"item_model": "yuushya:block/yellow_vertical_compact_middle",
+			"blockstate": { "forms": [["yuushya:block/yellow_vertical_compact_top","yuushya:block/yellow_vertical_compact_middle","yuushya:block/yellow_vertical_compact_bottom","yuushya:block/yellow_vertical_compact_none"]]},
+			"texture": {
+				"value":"yuushya:block_/acrylic/framed_compact_vertical/yellow_vertical_compact",
+				"set":  [
+					"all#yuushya:block_/acrylic/framed_compact_vertical/yellow_vertical_compact",
+					"sides#yuushya:block_/acrylic/framed_compact_vertical/yellow_vertical_compact",
+					"top#yuushya:block_/acrylic/framed_compact_vertical/yellow_vertical_compact"]}
 		},
 
 		{
@@ -6750,6 +7656,14 @@
 		},
 
 		{
+			"class_type": "FixedBlock",
+			"name": "shop_sign",
+			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "signs",
+			"properties": {"lines": 0},
+			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/shop_sign"]]}
+		},
+
+		{
 			"class_type": "DecoBlock",
 			"name": "title_black",
 			"auto_generated": { "recipe": true }, "item_group": "signs",
@@ -7172,6 +8086,22 @@
 			"name": "long_poster",
 			"auto_generated": { "recipe": true }, "item_group": "signs",
 			"blockstate": { "forms": [["yuushya:extra_building_material/poster/long_poster"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "graffiti_0",
+			"auto_generated": { "recipe": true }, "item_group": "signs",
+			"render_type": "translucent",
+			"blockstate": { "forms": [["yuushya:extra_building_material/poster/graffiti_0"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "graffiti_1",
+			"auto_generated": { "recipe": true }, "item_group": "signs",
+			"render_type": "translucent",
+			"blockstate": { "forms": [["yuushya:extra_building_material/poster/graffiti_1"]]}
 		},
 
 

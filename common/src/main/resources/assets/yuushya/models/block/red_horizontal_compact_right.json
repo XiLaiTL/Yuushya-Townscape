@@ -1,0 +1,6 @@
+{
+    "parent": "yuushya:block/template_horizontal_block_right",
+    "textures": {
+        "all": "yuushya:block_/acrylic/framed_compact_horizontal/red_horizontal_framed"
+    }
+}

@@ -2,8 +2,8 @@
 	"credit": "Coco",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "yuushya:item/hakurei_reimu",
-		"particle": "yuushya:item/hakurei_reimu"
+		"0": "yuushya:item/mokou",
+		"particle": "yuushya:item/mokou"
 	},
 	"elements": [
 		{
