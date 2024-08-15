@@ -1,5 +1,6 @@
 package com.yuushya.block;
 
+import com.yuushya.block.blockstate.ConnectedHorizonState;
 import com.yuushya.block.blockstate.PositionHorizonState;
 import com.yuushya.block.blockstate.ShapeState;
 import com.yuushya.utils.YuushyaUtils;
@@ -52,27 +53,27 @@ public class LineCrossBlock  extends AbstractYuushyaBlockType {
     }
 
 
-    public static PositionHorizonState getFrontState(BlockState state, LevelAccessor level, BlockPos pos){
+    public static ConnectedHorizonState getFrontState(BlockState state, LevelAccessor level, BlockPos pos){
         Direction facingDirection = state.getValue(HORIZONTAL_FACING);
         BlockState facingBlock = level.getBlockState(pos.relative(facingDirection));
         if(isTheSameBlock(state,facingBlock)){
             Direction direction = facingBlock.getValue(HORIZONTAL_FACING);
-            if(facingDirection == direction.getClockWise()) return PositionHorizonState.LEFT;
-            else if(facingDirection== direction.getCounterClockWise()) return PositionHorizonState.RIGHT;
+            if(facingDirection == direction.getClockWise()) return ConnectedHorizonState.LEFT;
+            else if(facingDirection== direction.getCounterClockWise()) return ConnectedHorizonState.RIGHT;
         }
-        return PositionHorizonState.NONE;
+        return ConnectedHorizonState.NONE;
         //留一个MIDDLE给未来一个方块可以两个栅栏的场景
     }
 
-    public static PositionHorizonState getBackState(BlockState state, LevelAccessor level, BlockPos pos){
+    public static ConnectedHorizonState getBackState(BlockState state, LevelAccessor level, BlockPos pos){
         Direction facingDirection = state.getValue(HORIZONTAL_FACING);
         BlockState backBlock = YuushyaUtils.getBlockState(level.getBlockState(pos.relative(facingDirection.getOpposite())),level,pos.relative(facingDirection.getOpposite()));
         if(isTheSameBlock(state,backBlock)){
             Direction direction = backBlock.getValue(HORIZONTAL_FACING);
-            if(facingDirection == direction.getClockWise()) return PositionHorizonState.LEFT;
-            else if(facingDirection== direction.getCounterClockWise()) return PositionHorizonState.RIGHT;
+            if(facingDirection == direction.getClockWise()) return ConnectedHorizonState.LEFT;
+            else if(facingDirection== direction.getCounterClockWise()) return ConnectedHorizonState.RIGHT;
         }
-        return PositionHorizonState.NONE;
+        return ConnectedHorizonState.NONE;
         //留一个MIDDLE给未来一个方块可以两个栅栏的场景
     }
 

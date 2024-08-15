@@ -16,8 +16,8 @@ public class YuushyaBlockStates {
     public static final EnumProperty<PositionVerticalState> YPOS=EnumProperty.create("ypos",PositionVerticalState.class);
     public static final EnumProperty<PositionHorizonState> POS_HORIZON=EnumProperty.create("pos",PositionHorizonState.class);
     public static final EnumProperty<PositionVerticalState> POS_VERTICAL=EnumProperty.create("pos",PositionVerticalState.class);
-    public static final EnumProperty<PositionHorizonState> FRONT = EnumProperty.create("front",PositionHorizonState.class);
-    public static final EnumProperty<PositionHorizonState> BACK = EnumProperty.create("back",PositionHorizonState.class);
+    public static final EnumProperty<ConnectedHorizonState> FRONT = EnumProperty.create("front",ConnectedHorizonState.class);
+    public static final EnumProperty<ConnectedHorizonState> BACK = EnumProperty.create("back",ConnectedHorizonState.class);
 
     public static final EnumProperty<ShapeState> SHAPE=EnumProperty.create("shape",ShapeState.class);
 
@@ -83,8 +83,8 @@ public class YuushyaBlockStates {
         if (properties.contains(POS_VERTICAL)) defaultState = defaultState.setValue(POS_VERTICAL,PositionVerticalState.NONE);
         if (properties.contains(YPOS)) defaultState = defaultState.setValue(YPOS,PositionVerticalState.NONE);
         if (properties.contains(POS_HORIZON)) defaultState = defaultState.setValue(POS_HORIZON,PositionHorizonState.NONE);
-        if (properties.contains(FRONT)) defaultState = defaultState.setValue(FRONT,PositionHorizonState.NONE);
-        if (properties.contains(BACK)) defaultState = defaultState.setValue(BACK,PositionHorizonState.NONE);
+        if (properties.contains(FRONT)) defaultState = defaultState.setValue(FRONT,ConnectedHorizonState.NONE);
+        if (properties.contains(BACK)) defaultState = defaultState.setValue(BACK,ConnectedHorizonState.NONE);
         if (properties.contains(XPOS)) defaultState = defaultState.setValue(XPOS,PositionDirectionXState.NONE);
         if (properties.contains(ZPOS)) defaultState = defaultState.setValue(ZPOS,PositionDirectionZState.NONE);
         if (properties.contains(SHAPE)) defaultState = defaultState.setValue(SHAPE,ShapeState.STRAIGHT);

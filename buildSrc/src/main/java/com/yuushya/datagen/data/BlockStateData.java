@@ -46,8 +46,8 @@ public class BlockStateData {
     }
 
     public static final ChildProperty POS_HORIZON=ChildProperty.of("pos","left","middle","right","none");
-    public static final ChildProperty FRONT=ChildProperty.of("front","left","middle","right","none");
-    public static final ChildProperty BACK=ChildProperty.of("back","left","middle","right","none");
+    public static final ChildProperty FRONT=ChildProperty.of("front","left","right","none");
+    public static final ChildProperty BACK=ChildProperty.of("back","left","right","none");
     public static final ChildProperty POS_VERTICAL=ChildProperty.of("pos","top","middle","bottom","none");
     public static final ChildProperty YPOS=ChildProperty.of("ypos","top","middle","bottom","none");
     public static final ChildProperty XPOS=ChildProperty.of("xpos","west","east","middle","none");
