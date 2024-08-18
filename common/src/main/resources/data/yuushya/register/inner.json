@@ -6197,11 +6197,11 @@
 		},
 
 		{
-			"class_type": "DecoBlock",
+			"class_type": "RoofBlock",
 			"name": "classical_white_window_top_round",
 			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "extra_shapes",
-			"properties": {"has_collision": false},
-			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_white_window_top_round"]]}
+			"item_model": "yuushya:extra_building_material/euro_style/classical_white_window_top_round_none",
+			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_white_window_top_round_left","yuushya:extra_building_material/euro_style/classical_white_window_top_round_middle","yuushya:extra_building_material/euro_style/classical_white_window_top_round_right","yuushya:extra_building_material/euro_style/classical_white_window_top_round_none"]]}
 		},
 
 		{
@@ -12570,6 +12570,38 @@
 			"properties": { "light_level": 15, "lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "lighting",
 			"blockstate": { "forms": [["yuushya:extra_building_material/fluorescent_lamp"],["yuushya:extra_building_material/fluorescent_lamp_"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "gothic_ceiling_lamp",
+			"properties": { "light_level": 15},
+			"auto_generated": { "recipe": true }, "item_group": "lighting",
+			"blockstate": { "forms": [["yuushya:extra_building_material/lighting/ceiling_lamp_goth"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "incandescent_lamp",
+			"properties": { "light_level": 15},
+			"auto_generated": { "recipe": true }, "item_group": "lighting",
+			"blockstate": { "forms": [["yuushya:extra_building_material/lighting/incandescent_lamp"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "incandescent_blub",
+			"properties": { "light_level": 15},
+			"auto_generated": { "recipe": true }, "item_group": "lighting",
+			"blockstate": { "forms": [["yuushya:extra_building_material/lighting/incandescent_lamp_"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "luorescent_lamp",
+			"properties": { "light_level": 15},
+			"auto_generated": { "recipe": true }, "item_group": "lighting",
+			"blockstate": { "forms": [["yuushya:extra_building_material/lighting/luorescent_lamp"]]}
 		},
 
 		{
