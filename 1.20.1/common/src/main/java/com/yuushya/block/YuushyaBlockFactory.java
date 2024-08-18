@@ -275,6 +275,7 @@ public class YuushyaBlockFactory{
         if (!yuushyaBlockProperties.hasCollision) blockProperties=blockProperties.noCollission();
         if (yuushyaBlockProperties.isDelicate) blockProperties=blockProperties.instabreak();
         if (!yuushyaBlockProperties.isSolid) blockProperties=blockProperties.noOcclusion();
+        blockProperties = blockProperties.dynamicShape();
         return blockProperties;
     }
 

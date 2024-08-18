@@ -25,6 +25,9 @@ public class BlockUpdateItem extends AbstractToolItem {
     }
 
     public static void updateClickBlock(Player player, BlockState blockState, Level level, BlockPos blockPos, ItemStack handItemStack){
+        if(level.getBlockEntity(blockPos)!=null){
+            return;
+        }
         Direction direction = player.getDirection();
         if(blockState.hasProperty(BlockStateProperties.HORIZONTAL_FACING)){
             direction = blockState.getValue(BlockStateProperties.HORIZONTAL_FACING).getOpposite();
