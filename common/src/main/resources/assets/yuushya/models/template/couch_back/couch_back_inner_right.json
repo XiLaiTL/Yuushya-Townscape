@@ -3,9 +3,9 @@
 	"ambientocclusion": false,
 	"textures": {
 		"1": "yuushya:block_/framed_planks/dark_oak_framed_planks",
-		"particle": "yuushya:block_/template",
 		"couch": "yuushya:block_/template",
-		"sides": "yuushya:block_/top_reinforced_concrete"
+		"sides": "yuushya:block_/top_reinforced_concrete",
+		"particle": "#couch"
 	},
 	"elements": [
 		{
@@ -17,7 +17,7 @@
 				"east": {"uv": [0, 10, 4, 14], "texture": "#couch"},
 				"south": {"uv": [12, 0, 0, 4], "texture": "#couch"},
 				"west": {"uv": [0, 8, 4, 12], "texture": "#couch"},
-				"up": {"uv": [16, 4, 4, 8], "texture": "#couch"},
+				"up": {"uv": [0, 4, 12, 8], "texture": "#couch"},
 				"down": {"uv": [0, 12, 4, 0], "rotation": 270, "texture": "#couch"}
 			}
 		},
@@ -30,7 +30,7 @@
 				"east": {"uv": [0, 10, 4, 14], "texture": "#couch"},
 				"south": {"uv": [8, 0, 0, 4], "texture": "#couch"},
 				"west": {"uv": [0, 4, 4, 8], "texture": "#couch"},
-				"up": {"uv": [16, 8, 8, 12], "texture": "#couch"},
+				"up": {"uv": [0, 8, 8, 12], "texture": "#couch"},
 				"down": {"uv": [0, 8, 4, 0], "rotation": 270, "texture": "#couch"}
 			}
 		},
@@ -43,7 +43,7 @@
 				"east": {"uv": [0, 10, 4, 14], "texture": "#couch"},
 				"south": {"uv": [4, 0, 0, 4], "texture": "#couch"},
 				"west": {"uv": [0, 0, 4, 4], "texture": "#couch"},
-				"up": {"uv": [16, 12, 12, 16], "texture": "#couch"},
+				"up": {"uv": [0, 12, 4, 16], "texture": "#couch"},
 				"down": {"uv": [0, 4, 4, 0], "rotation": 270, "texture": "#couch"}
 			}
 		},
@@ -56,7 +56,7 @@
 				"east": {"uv": [0, 12, 2, 16], "texture": "#couch"},
 				"south": {"uv": [14, 0, 0, 4], "texture": "#couch"},
 				"west": {"uv": [0, 12, 2, 16], "texture": "#couch"},
-				"up": {"uv": [16, 2, 2, 4], "texture": "#couch"},
+				"up": {"uv": [0, 2, 14, 4], "texture": "#couch"},
 				"down": {"uv": [0, 14, 2, 0], "rotation": 270, "texture": "#couch"}
 			}
 		},

@@ -4,8 +4,8 @@
 	"textures": {
 		"1": "yuushya:block_/framed_planks/dark_oak_framed_planks",
 		"sides": "yuushya:block_/top_reinforced_concrete",
-		"particle": "yuushya:block_/template",
-		"couch": "yuushya:block_/template"
+		"couch": "yuushya:block_/template",
+		"particle": "#couch"
 	},
 	"elements": [
 		{

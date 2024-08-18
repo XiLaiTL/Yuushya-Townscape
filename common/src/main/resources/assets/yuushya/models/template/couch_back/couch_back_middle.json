@@ -3,8 +3,8 @@
 	"ambientocclusion": false,
 	"textures": {
 		"1": "yuushya:block_/framed_planks/dark_oak_framed_planks",
-		"particle": "yuushya:block_/template",
-		"couch": "yuushya:block_/template"
+		"couch": "yuushya:block_/template",
+		"particle": "#couch"
 	},
 	"elements": [
 		{
