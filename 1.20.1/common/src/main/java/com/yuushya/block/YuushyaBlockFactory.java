@@ -58,14 +58,14 @@ import static net.minecraft.world.level.block.state.properties.BlockStatePropert
 
 public class YuushyaBlockFactory{
 
-    private static final Map<Integer,VoxelShape> yuushyaVoxelShapes =new HashMap<>();
-    public static Map<Integer, VoxelShape> getYuushyaVoxelShapes() {
+    private static final Map<String,VoxelShape> yuushyaVoxelShapes =new HashMap<>();
+    public static Map<String, VoxelShape> getYuushyaVoxelShapes() {
         return yuushyaVoxelShapes;
     }
 
     public static class BlockWithClassType extends AbstractYuushyaBlock {
         public String classType;
-        private final Map<Integer,VoxelShape> voxelShapeCache = new HashMap<>();
+        private final Map<String,VoxelShape> voxelShapeCache = new HashMap<>();
         public BlockWithClassType(Properties properties, Integer tipLines, String classType) {
             super(properties, tipLines);
             this.classType=classType;
@@ -77,10 +77,10 @@ public class YuushyaBlockFactory{
 
         @Override
         public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
-            Integer id = Block.getId(blockState);
+            String id = blockState.toString();
             if(!voxelShapeCache.containsKey(id)){
                 if(!getYuushyaVoxelShapes().containsKey(id)){
-                    CollisionFileReader.readCollisionToVoxelShape(voxelShapeCache,blockState.getBlock(), BuiltInRegistries.BLOCK.getKey(blockState.getBlock()).toString());
+                    CollisionFileReader.readCollisionToVoxelShape(voxelShapeCache,blockState, BuiltInRegistries.BLOCK.getKey(blockState.getBlock()).toString());
                 }
                 VoxelShape shape = getYuushyaVoxelShapes().getOrDefault(id,Shapes.empty());
                 voxelShapeCache.put(id,shape);
@@ -183,6 +183,8 @@ public class YuushyaBlockFactory{
             super.playerWillDestroy(level, pos, state, player);
         }
 
+
+
         @Override
         @Nullable
         public BlockState getStateForPlacement(BlockPlaceContext blockPlaceContext) {
@@ -274,8 +276,11 @@ public class YuushyaBlockFactory{
         if (yuushyaBlockProperties.lightLevel!=0) blockProperties=blockProperties.lightLevel((state)->yuushyaBlockProperties.lightLevel);
         if (!yuushyaBlockProperties.hasCollision) blockProperties=blockProperties.noCollission();
         if (yuushyaBlockProperties.isDelicate) blockProperties=blockProperties.instabreak();
-        if (!yuushyaBlockProperties.isSolid) blockProperties=blockProperties.noOcclusion();
-        blockProperties = blockProperties.dynamicShape();
+        if (!yuushyaBlockProperties.isSolid) {
+            blockProperties=blockProperties.noOcclusion();
+            //blockProperties = blockProperties.dynamicShape();
+        }
+        else { blockProperties.forceSolidOn(); }
         return blockProperties;
     }
 
