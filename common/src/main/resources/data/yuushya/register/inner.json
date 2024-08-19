@@ -3,6 +3,7 @@
 		{"name": "extra_blocks","icon":"yellow_acrylic","blueprint": "block_blueprint"},
 		{"name": "wood","icon":"raw_oak_wood","blueprint": "wood_blueprint" } ,
 		{"name": "stone","icon":"park_tile","blueprint": "stone_blueprint"},
+		{"name": "legacy","icon":"wore_metal","blueprint": "block_blueprint"},
 		{"name": "extra_shapes","icon":"orange_tile_with_ridge_lower","blueprint": "extra_shapes_blueprint"},
 		{"name": "window","icon":"white_windows_diagonal","blueprint": "window_blueprint"},
 		{"name": "furniture","icon":"classroom_chair","blueprint": "furniture_blueprint"},
@@ -35,6 +36,7 @@
 		{"class_type": "", "name": "ctm_alert_2",  "item_group": "stone","properties": {"max_count": 64,"lines": 2, "rarity": "epic"}},
 		{"class_type": "", "name": "ctm_alert_5",  "item_group": "stone","properties": {"max_count": 64,"lines": 2, "rarity": "epic"}},
 		{"class_type": "", "name": "ctm_alert_3",  "item_group": "extra_blocks","properties": {"max_count": 64,"lines": 2, "rarity": "epic"}},
+		{"class_type": "", "name": "ctm_alert_6",  "item_group": "legacy","properties": {"max_count": 64,"lines": 2, "rarity": "epic"}},
 
 		{"class_type": "BlueprintItem", "name": "block_blueprint",  "item_group": "item","properties": {"max_count": 64,"lines": 1, "rarity": "common"}},
 		{"class_type": "BlueprintItem", "name": "wood_blueprint",  "item_group": "item","properties": {"max_count": 64,"lines": 1, "rarity": "common"}},
@@ -2576,6 +2578,7 @@
 					"top#yuushya:block_/concrete/red_concrete_top"]}
 		},
 
+
 		{
 			"class_type": "block", "name": "white_concrete_top",
 			"texture": {
@@ -2585,6 +2588,17 @@
 					"all#yuushya:block_/concrete/white_concrete_top",
 					"sides#yuushya:block_/concrete/white_concrete_top",
 					"top#yuushya:block_/concrete/white_concrete_top"]}
+		},
+
+		{
+			"class_type": "block", "name": "yellow_concrete_top",
+			"texture": {
+				"properties": {"lines": 0 },
+				"value":"yuushya:block_/concrete/yellow_concrete_top",
+				"set":  [
+					"all#yuushya:block_/concrete/yellow_concrete_top",
+					"sides#yuushya:block_/concrete/yellow_concrete_top",
+					"top#yuushya:block_/concrete/yellow_concrete_top"]}
 		},
 
 		{
@@ -6173,11 +6187,29 @@
 
 		{
 			"class_type": "RoofBlock",
+			"name": "marble_fence",
+			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "extra_shapes",
+			"properties": { "has_collision": true },
+			"item_model": "yuushya:extra_building_material/euro_style/marble_fence",
+			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/marble_fence_left","yuushya:extra_building_material/euro_style/marble_fence_middle","yuushya:extra_building_material/euro_style/marble_fence_right","yuushya:extra_building_material/euro_style/marble_fence_none"]]}
+		},
+
+		{
+			"class_type": "RoofBlock",
 			"name": "classical_white_window_sideway_frame",
 			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "extra_shapes",
 			"properties": { "has_collision": false },
 			"item_model": "yuushya:extra_building_material/euro_style/classical_white_window_sideway_frame_none",
 			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_white_window_sideway_frame_left","yuushya:extra_building_material/blank","yuushya:extra_building_material/euro_style/classical_white_window_sideway_frame_right","yuushya:extra_building_material/euro_style/classical_white_window_sideway_frame_none"]]}
+		},
+
+		{
+			"class_type": "RoofBlock",
+			"name": "elaborate_white_window_sideway_frame",
+			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "extra_shapes",
+			"properties": { "has_collision": false },
+			"item_model": "yuushya:extra_building_material/euro_style/elaborate_white_window_sideway_frame_none",
+			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/elaborate_white_window_sideway_frame_left","yuushya:extra_building_material/blank","yuushya:extra_building_material/euro_style/elaborate_white_window_sideway_frame_right","yuushya:extra_building_material/euro_style/elaborate_white_window_sideway_frame_none"]]}
 		},
 
 		{
@@ -6205,11 +6237,11 @@
 		},
 
 		{
-			"class_type": "DecoBlock",
+			"class_type": "RoofBlock",
 			"name": "classical_white_window_top_round_alt",
 			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "extra_shapes",
-			"properties": {"has_collision": false},
-			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_white_window_top_round_alt"]]}
+			"item_model": "yuushya:extra_building_material/euro_style/classical_white_window_top_round_alt_none",
+			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_white_window_top_round_alt_left","yuushya:extra_building_material/euro_style/classical_white_window_top_round_alt_middle","yuushya:extra_building_material/euro_style/classical_white_window_top_round_alt_right","yuushya:extra_building_material/euro_style/classical_white_window_top_round_alt_none"]]}
 		},
 
 		{
@@ -12521,7 +12553,7 @@
 			"name": "medieval_street_light_post",
 			"properties": { "light_level": 0},
 			"auto_generated": { "recipe": true }, "item_group": "lighting",
-			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/medieval_street_light_post"]]}
+			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/medieval_lamp_post"]]}
 		},
 
 		{
@@ -12529,7 +12561,7 @@
 			"name": "medieval_street_light_pole",
 			"properties": { "light_level": 0},
 			"auto_generated": { "recipe": true }, "item_group": "lighting",
-			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/medieval_street_light_pole"]]}
+			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/medieval_lamp_pole"]]}
 		},
 
 		{
