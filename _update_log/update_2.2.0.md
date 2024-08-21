@@ -60,9 +60,14 @@
 *****
 
 ## 头戴装饰
+
 新增5种头戴装饰
 
 *****
+
+## 碰撞箱读取优化
+
+大幅度提高forge版本游戏加载速度
 
 ## 优化和其他调整
 
@@ -92,9 +97,11 @@
 
 所有陪伴Yuushya成长的你们！
 
-特别感谢——为方块小镇的建材、功能提供创意、想象力的你们！
+特别感谢——为方块小镇的建材、功能提供创意、想象力的你们！感谢seone提供的一键生成树！
 
-特别感谢——在Yuushya Townscape讨论群中为Yuushya模组的测试工作做出贡献的你们！以方块小镇为蓝图、描摹出精彩绝伦的建筑畅想的你们！
+特别感谢——在Yuushya Townscape讨论群中为Yuushya模组的测试工作做出贡献的你们（三音、世隐OuO、泽莫在做梦_zZ、Charon、软糖我爱吃、Faith_A23、Bleuet、ClouDSevenC、Burned Flazer以及其他没有列出来的玩家）！以方块小镇为蓝图、描摹出精彩绝伦的建筑畅想的你们！
+
+感谢Charon（方块相册）、Ph-苯的技术支持。
 
 感谢mojang，fabric、forge团队，architectury、parchment的开发者们。
 

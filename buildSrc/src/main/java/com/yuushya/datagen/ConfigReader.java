@@ -128,6 +128,7 @@ public class ConfigReader {
     }
     private void generateTemplateProduct(String name, YuushyaRegistryData.Block templateBlock, List<String> templateModels, YuushyaRegistryData.Block block,String templateBrother,String version){
         if(templateBlock.itemModel!=null) block.itemModel = templateBlock.itemModel +"_"+name;
+        else block.itemModel = null;
         if(templateBlock.blockstate.models!=null)  block.blockstate.models=templateBlock.blockstate.models.stream().map((s)->s+"_"+name).toList();
         if(templateBlock.blockstate.forms!=null) block.blockstate.forms=templateBlock.blockstate.forms.stream().map((list)->list.stream().map((s)->s+"_"+name).toList()).toList();
         block.name=templateBlock.name+"_"+name;
