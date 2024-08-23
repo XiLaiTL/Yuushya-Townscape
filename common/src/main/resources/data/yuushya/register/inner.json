@@ -12617,15 +12617,15 @@
 			"name": "incandescent_lamp",
 			"properties": { "light_level": 15},
 			"auto_generated": { "recipe": true }, "item_group": "lighting",
-			"blockstate": { "forms": [["yuushya:extra_building_material/lighting/incandescent_lamp"]]}
+			"blockstate": { "kit": "attachment","forms": [["yuushya:extra_building_material/lighting/incandescent_lamp"]]}
 		},
 
 		{
 			"class_type": "DecoBlock",
-			"name": "incandescent_blub",
+			"name": "incandescent_bulb",
 			"properties": { "light_level": 15},
 			"auto_generated": { "recipe": true }, "item_group": "lighting",
-			"blockstate": { "forms": [["yuushya:extra_building_material/lighting/incandescent_lamp_"]]}
+			"blockstate": { "kit": "attachment","forms": [["yuushya:extra_building_material/lighting/incandescent_lamp_"]]}
 		},
 
 		{
@@ -12633,7 +12633,7 @@
 			"name": "luorescent_lamp",
 			"properties": { "light_level": 15},
 			"auto_generated": { "recipe": true }, "item_group": "lighting",
-			"blockstate": { "forms": [["yuushya:extra_building_material/lighting/luorescent_lamp"]]}
+			"blockstate": { "kit": "attachment","forms": [["yuushya:extra_building_material/lighting/luorescent_lamp"]]}
 		},
 
 		{

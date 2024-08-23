@@ -21,10 +21,10 @@ class Element{
     public Element rotate(Integer x, Integer y){
         if(x!=null){
             switch (x){
-                case 270: set(this.from.x,this.from.z,-this.from.y,this.to.x,this.to.z,-this.to.y); break;
-                case 180: set(this.from.x,-this.from.y,-this.from.z,this.to.x,-this.to.y,-this.to.z);break;
-                case 90:  set(this.from.x,-this.from.z,this.from.y,this.to.x,-this.to.z,this.to.y);break;
                 case 0:   set(this.from.x,this.from.y,this.from.z,this.to.x,this.to.y,this.to.z);break;
+                case 90:  set(this.from.x,this.from.z,-this.from.y,this.to.x,this.to.z,-this.to.y); break;
+                case 180: set(this.from.x,-this.from.y,-this.from.z,this.to.x,-this.to.y,-this.to.z);break;
+                case 270: set(this.from.x,-this.from.z,this.from.y,this.to.x,-this.to.z,this.to.y);break;
             }
         }
         if(y!=null){
