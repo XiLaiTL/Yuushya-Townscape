@@ -356,13 +356,13 @@ public class BlockStateData {
                 .addVariant(List.of("face=floor", "facing=north"),
                         Variant.variant())
                 .addVariant(List.of("face=wall", "facing=east"),
-                        Variant.variant().with(VariantProperty.Y_ROT, VariantProperty.Rotation.R90).with(VariantProperty.X_ROT, VariantProperty.Rotation.R90).with(VariantProperty.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.Y_ROT, VariantProperty.Rotation.R90).with(VariantProperty.X_ROT, VariantProperty.Rotation.R90).with(VariantProperty.UV_LOCK, false))
                 .addVariant(List.of("face=wall", "facing=west"),
-                        Variant.variant().with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270).with(VariantProperty.X_ROT, VariantProperty.Rotation.R90).with(VariantProperty.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270).with(VariantProperty.X_ROT, VariantProperty.Rotation.R90).with(VariantProperty.UV_LOCK, false))
                 .addVariant(List.of("face=wall", "facing=south"),
-                        Variant.variant().with(VariantProperty.Y_ROT, VariantProperty.Rotation.R180).with(VariantProperty.X_ROT, VariantProperty.Rotation.R90).with(VariantProperty.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.Y_ROT, VariantProperty.Rotation.R180).with(VariantProperty.X_ROT, VariantProperty.Rotation.R90).with(VariantProperty.UV_LOCK, false))
                 .addVariant(List.of("face=wall", "facing=north"),
-                        Variant.variant().with(VariantProperty.X_ROT, VariantProperty.Rotation.R90).with(VariantProperty.UV_LOCK, true))
+                        Variant.variant().with(VariantProperty.X_ROT, VariantProperty.Rotation.R90).with(VariantProperty.UV_LOCK, false))
                 .addVariant(List.of("face=ceiling", "facing=east"),
                         Variant.variant().with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270).with(VariantProperty.X_ROT, VariantProperty.Rotation.R180))
                 .addVariant(List.of("face=ceiling", "facing=west"),
