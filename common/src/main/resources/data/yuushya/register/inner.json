@@ -3,7 +3,6 @@
 		{"name": "extra_blocks","icon":"yellow_acrylic","blueprint": "block_blueprint"},
 		{"name": "wood","icon":"raw_oak_wood","blueprint": "wood_blueprint" } ,
 		{"name": "stone","icon":"park_tile","blueprint": "stone_blueprint"},
-		{"name": "legacy","icon":"wore_metal","blueprint": "block_blueprint"},
 		{"name": "extra_shapes","icon":"orange_tile_with_ridge_lower","blueprint": "extra_shapes_blueprint"},
 		{"name": "window","icon":"white_windows_diagonal","blueprint": "window_blueprint"},
 		{"name": "furniture","icon":"classroom_chair","blueprint": "furniture_blueprint"},
@@ -36,7 +35,6 @@
 		{"class_type": "", "name": "ctm_alert_2",  "item_group": "stone","properties": {"max_count": 64,"lines": 2, "rarity": "epic"}},
 		{"class_type": "", "name": "ctm_alert_5",  "item_group": "stone","properties": {"max_count": 64,"lines": 2, "rarity": "epic"}},
 		{"class_type": "", "name": "ctm_alert_3",  "item_group": "extra_blocks","properties": {"max_count": 64,"lines": 2, "rarity": "epic"}},
-		{"class_type": "", "name": "ctm_alert_6",  "item_group": "legacy","properties": {"max_count": 64,"lines": 2, "rarity": "epic"}},
 
 		{"class_type": "BlueprintItem", "name": "block_blueprint",  "item_group": "item","properties": {"max_count": 64,"lines": 1, "rarity": "common"}},
 		{"class_type": "BlueprintItem", "name": "wood_blueprint",  "item_group": "item","properties": {"max_count": 64,"lines": 1, "rarity": "common"}},
@@ -5907,7 +5905,12 @@
 			"blockstate": { "forms": [["yuushya:extra_building_material/black_iron_fence_left","yuushya:extra_building_material/black_iron_fence_middle","yuushya:extra_building_material/black_iron_fence_right","yuushya:extra_building_material/black_iron_fence_none"]]}
 		},
 
-
+		{
+			"class_type": "FixedBlock",
+			"name": "tall_classical_fence",
+			"auto_generated": { "recipe": true }, "item_group": "extra_shapes",
+			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/tall_classical_fence"]]}
+		},
 
 
 		{
@@ -6237,12 +6240,31 @@
 		},
 
 		{
+			"class_type": "IntactBlock",
+			"name": "classical_half_round_windows_frame_top_left",
+			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "extra_shapes",
+			"properties": {"is_solid": false, "has_collision": false},
+			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_half_round_windows_frame_top"]]}
+		},
+
+		{
+			"class_type": "IntactBlock",
+			"name": "classical_half_round_windows_frame_top_right",
+			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "extra_shapes",
+			"properties": {"is_solid": false, "has_collision": false},
+			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_half_round_windows_frame_top_"]]}
+		},
+
+
+		{
 			"class_type": "RoofBlock",
 			"name": "classical_white_window_top_round_alt",
 			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "extra_shapes",
 			"item_model": "yuushya:extra_building_material/euro_style/classical_white_window_top_round_alt_none",
 			"blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_white_window_top_round_alt_left","yuushya:extra_building_material/euro_style/classical_white_window_top_round_alt_middle","yuushya:extra_building_material/euro_style/classical_white_window_top_round_alt_right","yuushya:extra_building_material/euro_style/classical_white_window_top_round_alt_none"]]}
 		},
+
+
 
 		{
 			"class_type": "RoofBlock",
@@ -6340,7 +6362,7 @@
 			"class_type": "WindowsBlock",
 			"name": "white_windows_deviated_0",
 			"auto_generated": { "recipe": true ,"blockstate": true}, "item_group": "window",
-			"properties": {"has_collision": true },
+			"properties": {"has_collision": false },
 			"render_type": "translucent",
 			"item_model": "yuushya:extra_building_material/windows_frame/white_windows_deviated_0",
 			"blockstate": {
@@ -6358,7 +6380,7 @@
 			"class_type": "WindowsBlock",
 			"name": "white_windows_deviated_1",
 			"auto_generated": { "recipe": true ,"blockstate": true}, "item_group": "window",
-			"properties": {"has_collision": true },
+			"properties": {"has_collision": false },
 			"render_type": "translucent",
 			"item_model": "yuushya:extra_building_material/windows_frame/white_windows_deviated_1",
 			"blockstate": {
@@ -6481,7 +6503,7 @@
 			"class_type": "WindowsBlock",
 			"name": "red_windows_deviated_0",
 			"auto_generated": { "recipe": true ,"blockstate": true}, "item_group": "window",
-			"properties": {"has_collision": true },
+			"properties": {"has_collision": false },
 			"render_type": "translucent",
 			"item_model": "yuushya:extra_building_material/windows_frame/red_windows_deviated_0",
 			"blockstate": {
@@ -6499,7 +6521,7 @@
 			"class_type": "WindowsBlock",
 			"name": "red_windows_deviated_1",
 			"auto_generated": { "recipe": true ,"blockstate": true}, "item_group": "window",
-			"properties": {"has_collision": true },
+			"properties": {"has_collision": false },
 			"render_type": "translucent",
 			"item_model": "yuushya:extra_building_material/windows_frame/red_windows_deviated_1",
 			"blockstate": {
@@ -6622,7 +6644,7 @@
 			"class_type": "WindowsBlock",
 			"name": "gray_windows_deviated_0",
 			"auto_generated": { "recipe": true ,"blockstate": true}, "item_group": "window",
-			"properties": {"has_collision": true },
+			"properties": {"has_collision": false },
 			"render_type": "translucent",
 			"item_model": "yuushya:extra_building_material/windows_frame/gray_windows_deviated_0",
 			"blockstate": {
@@ -6640,7 +6662,7 @@
 			"class_type": "WindowsBlock",
 			"name": "gray_windows_deviated_1",
 			"auto_generated": { "recipe": true ,"blockstate": true}, "item_group": "window",
-			"properties": {"has_collision": true },
+			"properties": {"has_collision": false },
 			"render_type": "translucent",
 			"item_model": "yuushya:extra_building_material/windows_frame/gray_windows_deviated_1",
 			"blockstate": {
@@ -6762,7 +6784,7 @@
 			"class_type": "WindowsBlock",
 			"name": "cyan_windows_deviated_0",
 			"auto_generated": { "recipe": true ,"blockstate": true}, "item_group": "window",
-			"properties": {"has_collision": true },
+			"properties": {"has_collision": false },
 			"render_type": "translucent",
 			"item_model": "yuushya:extra_building_material/windows_frame/cyan_windows_deviated_0",
 			"blockstate": {
@@ -6780,7 +6802,7 @@
 			"class_type": "WindowsBlock",
 			"name": "cyan_windows_deviated_1",
 			"auto_generated": { "recipe": true ,"blockstate": true}, "item_group": "window",
-			"properties": {"has_collision": true },
+			"properties": {"has_collision": false },
 			"render_type": "translucent",
 			"item_model": "yuushya:extra_building_material/windows_frame/cyan_windows_deviated_1",
 			"blockstate": {
@@ -6902,7 +6924,7 @@
 			"class_type": "WindowsBlock",
 			"name": "oak_windows_deviated_0",
 			"auto_generated": { "recipe": true ,"blockstate": true}, "item_group": "window",
-			"properties": {"has_collision": true },
+			"properties": {"has_collision": false },
 			"render_type": "translucent",
 			"item_model": "yuushya:extra_building_material/windows_frame/oak_windows_deviated_0",
 			"blockstate": {
@@ -6920,7 +6942,7 @@
 			"class_type": "WindowsBlock",
 			"name": "oak_windows_deviated_1",
 			"auto_generated": { "recipe": true ,"blockstate": true}, "item_group": "window",
-			"properties": {"has_collision": true },
+			"properties": {"has_collision": false },
 			"render_type": "translucent",
 			"item_model": "yuushya:extra_building_material/windows_frame/oak_windows_deviated_1",
 			"blockstate": {
@@ -7042,7 +7064,7 @@
 			"class_type": "WindowsBlock",
 			"name": "black_windows_deviated_0",
 			"auto_generated": { "recipe": true ,"blockstate": true}, "item_group": "window",
-			"properties": {"has_collision": true },
+			"properties": {"has_collision": false },
 			"render_type": "translucent",
 			"item_model": "yuushya:extra_building_material/windows_frame/black_windows_deviated_0",
 			"blockstate": {
@@ -7060,7 +7082,7 @@
 			"class_type": "WindowsBlock",
 			"name": "black_windows_deviated_1",
 			"auto_generated": { "recipe": true ,"blockstate": true}, "item_group": "window",
-			"properties": {"has_collision": true },
+			"properties": {"has_collision": false },
 			"render_type": "translucent",
 			"item_model": "yuushya:extra_building_material/windows_frame/black_windows_deviated_1",
 			"blockstate": {
@@ -9060,6 +9082,13 @@
 			"name": "blender",
 			"auto_generated": { "recipe": true }, "item_group": "catering",
 			"blockstate": { "forms": [["yuushya:extra_building_material/blender"]]}
+		},
+
+		{
+			"class_type": "FixedBlock",
+			"name": "cold_juice_dispenser",
+			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "catering",
+			"blockstate": { "forms": [["yuushya:extra_building_material/juicer"]]}
 		},
 
 		{
@@ -12594,6 +12623,14 @@
 			"properties": { "light_level": 15},
 			"auto_generated": { "recipe": true }, "item_group": "lighting",
 			"blockstate": { "forms": [["yuushya:extra_building_material/round_ceiling_lamp"]]}
+		},
+
+		{
+			"class_type": "DecoBlock",
+			"name": "round_ceiling_lamp",
+			"properties": { "light_level": 15},
+			"auto_generated": { "recipe": true }, "item_group": "lighting",
+			"blockstate": { "forms": [["yuushya:extra_building_material/lighting/round_ceiling_lamp_1"]]}
 		},
 
 		{

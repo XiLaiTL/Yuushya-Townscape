@@ -3,7 +3,7 @@
 	"texture_size": [32, 32],
 	"textures": {
 		"particle": "yuushya:block_/acrylic/connected/acrylic_black_horizontal",
-		"all": "yuushya:block_/acrylic/connected/acrylic_black_horizontal"
+		"all": "#all"
 	},
 	"elements": [
 		{
