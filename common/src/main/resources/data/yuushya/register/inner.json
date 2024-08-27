@@ -22,6 +22,12 @@
 		{"class_type": "StructureCreatorItem", "name": "white_blooming_oak_tree",   "item_group": "structure","usage": {"create_nbt": "yuushya:white_blooming_oak_tree"},"properties": { "max_count": 64,"lines": 2, "rarity": "rare"}},
 		{"class_type": "StructureCreatorItem", "name": "yellow_blooming_oak_tree",   "item_group": "structure","usage": {"create_nbt": "yuushya:yellow_blooming_oak_tree"},"properties": { "max_count": 64,"lines": 2, "rarity": "rare"}},
 		{"class_type": "StructureCreatorItem", "name": "pink_blooming_oak_tree",   "item_group": "structure","usage": {"create_nbt": "yuushya:pink_blooming_oak_tree"},"properties": { "max_count": 64,"lines": 2, "rarity": "rare"}},
+		{"class_type": "StructureCreatorItem", "name": "maple_tree",   "item_group": "structure","usage": {"create_nbt": "yuushya:maple_tree"},"properties": { "max_count": 64,"lines": 2, "rarity": "rare"}},
+		{"class_type": "StructureCreatorItem", "name": "sakura_tree",   "item_group": "structure","usage": {"create_nbt": "yuushya:sakura_tree"},"properties": { "max_count": 64,"lines": 2, "rarity": "rare"}},
+		{"class_type": "StructureCreatorItem", "name": "normal_truck",   "item_group": "structure","usage": {"create_nbt": "yuushya:normal_truck"},"properties": { "max_count": 64,"lines": 2, "rarity": "rare"}},
+		{"class_type": "StructureCreatorItem", "name": "dining_truck",   "item_group": "structure","usage": {"create_nbt": "yuushya:dining_truck"},"properties": { "max_count": 64,"lines": 2, "rarity": "rare"}},
+		{"class_type": "StructureCreatorItem", "name": "villa_0",   "item_group": "structure","usage": {"create_nbt": "yuushya:villa_0"},"properties": { "max_count": 64,"lines": 3, "rarity": "rare"}},
+
 		{"class_type": "StructureCreatorItem", "name": "oak_tree_tiny",   "item_group": "structure","usage": {"create_nbt": "yuushya:oak_tree_tiny"},"properties": { "max_count": 64,"lines": 2, "rarity": "rare"}},
 		{"class_type": "StructureCreatorItem", "name": "oak_tree_mini",   "item_group": "structure","usage": {"create_nbt": "yuushya:oak_tree_mini"},"properties": { "max_count": 64,"lines": 2, "rarity": "rare"}},
 		{"class_type": "StructureCreatorItem", "name": "oak_tree_small",   "item_group": "structure","usage": {"create_nbt": "yuushya:oak_tree_small"},"properties": { "max_count": 64,"lines": 2, "rarity": "rare"}},
@@ -51,11 +57,7 @@
 		{"class_type": "StructureCreatorItem", "name": "sakura_tree_winding",   "item_group": "structure","usage": {"create_nbt": "yuushya:sakura_tree_winding"},"properties": { "max_count": 64,"lines": 2, "rarity": "rare"}},
 		{"class_type": "StructureCreatorItem", "name": "sakura_tree_lush",   "item_group": "structure","usage": {"create_nbt": "yuushya:sakura_tree_lush"},"properties": { "max_count": 64,"lines": 2, "rarity": "rare"}},
 
-		{"class_type": "StructureCreatorItem", "name": "normal_truck",   "item_group": "structure","usage": {"create_nbt": "yuushya:normal_truck"},"properties": { "max_count": 64,"lines": 2, "rarity": "rare"}},
-		{"class_type": "StructureCreatorItem", "name": "dining_truck",   "item_group": "structure","usage": {"create_nbt": "yuushya:dining_truck"},"properties": { "max_count": 64,"lines": 2, "rarity": "rare"}},
-		{"class_type": "StructureCreatorItem", "name": "villa_0",   "item_group": "structure","usage": {"create_nbt": "yuushya:villa_0"},"properties": { "max_count": 64,"lines": 3, "rarity": "rare"}},
 
-		{"class_type": "", "name": "window_alert",  "item_group": "window","properties": {"max_count": 64,"lines": 3, "rarity": "epic"}},
 		{"class_type": "", "name": "ctm_alert_0",  "item_group": "extra_blocks","properties": {"max_count": 64,"lines": 2, "rarity": "epic"}},
 		{"class_type": "", "name": "ctm_alert_1",  "item_group": "wood","properties": {"max_count": 64,"lines": 2, "rarity": "epic"}},
 		{"class_type": "", "name": "ctm_alert_4",  "item_group": "wood","properties": {"max_count": 64,"lines": 2, "rarity": "epic"}},
@@ -84,9 +86,8 @@
 		{"class_type": "HatItem", "name": "wriggle_nightbug",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
 		{"class_type": "HatItem", "name": "shameimaru_aya",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
 		{"class_type": "HatItem", "name": "hakurei_reimu",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
-		{"class_type": "HatItem", "name": "horaisan_kaguya",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
-		{"class_type": "HatItem", "name": "fujiwara_no_mokou",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
-		{"class_type": "HatItem", "name": "nanayama_moyoka",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
+		{"class_type": "HatItem", "name": "horaisan_kaguya",   "item_group": "item","properties": {"max_count": 1,"lines": 0, "rarity": "epic"}},
+		{"class_type": "HatItem", "name": "fujiwara_no_mokou",   "item_group": "item","properties": {"max_count": 1,"lines": 0, "rarity": "epic"}},
 		{"class_type": "HatItem", "name": "sleeping_orange_cat",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
 		{"class_type": "HatItem", "name": "sleeping_ragdoll",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
 		{"class_type": "HatItem", "name": "butterfly",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
@@ -4250,7 +4251,7 @@
 			"item_group": "extra_shapes",
 			"blockstate": { "forms": [["yuushya:template/column"]], "kit": "normal"},
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -4552,10 +4553,10 @@
 		},
 
 		{
-			"name": "fence_test",
+			"name": "new_fence",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 2},
-			"class_type": "template", "auto_generated": { "collision": "detail30", "recipe": true,"item_model": true },
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 2},
+			"class_type": "template", "auto_generated": { "collision": "bound", "recipe": true,"item_model": true },
 			"blockstate": { "kit": "line_cross_simple",
 				"forms": [["yuushya:template/fence_cross/fence_none", "yuushya:template/fence_cross/fence_none_left", "yuushya:template/fence_cross/fence_none_right",
 					"yuushya:template/fence_cross/fence_left","yuushya:template/fence_cross/fence_left_right",
@@ -11584,7 +11585,7 @@
 			"class_type": "FixedBlock",
 			"name": "painter_gift_box",
 			"properties": {"lines": 2, "sound": "wool" },
-			"auto_generated": { "recipe": false, "loot_table": false }, "item_group": "item",
+			"auto_generated": { "recipe": true, "loot_table": false }, "item_group": "item",
 			"blockstate": { "forms": [["yuushya:extra_building_material/painter_gift_box"]]}
 		},
 
@@ -11738,6 +11739,7 @@
 		{
 			"class_type": "DecoBlock",
 			"name": "guitar",
+			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true, "collision": "bound" }, "item_group": "furniture",
 			"blockstate": { "forms": [["yuushya:extra_building_material/guitar"]]}
 		},
@@ -12934,13 +12936,12 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "refrigerator",
-			"properties": {"lines": 1},
+			"properties": {"lines": 0},
 			"auto_generated": { "recipe": true }, "item_group": "electrical_appliance",
 			"blockstate": {
 				"kit": "tri_part" ,
 				"forms": [
-					["yuushya:extra_building_material/refrigerator_"],
-					["yuushya:extra_building_material/refrigerator_open"]
+					["yuushya:extra_building_material/refrigerator_"]
 				]
 			}
 		},
