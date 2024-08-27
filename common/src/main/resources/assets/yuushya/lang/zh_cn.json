@@ -269,8 +269,10 @@
   "item.yuushya.structure_creator.1": "清除放置",
   "item.yuushya.structure_creator.2": "镜像放置",
   "item.yuushya.structure_creator.3": "旋转放置",
-  "item.yuushya.structure_creator.show": "镜像调整:%s 旋转调整:%s",  
-  
+  "item.yuushya.structure_creator.show": "镜像调整:%s 旋转调整:%s",
+
+  "item.yuushya.structure_creator.line1": "\u00A79请预留足够空间,此操作不可撤销!",
+
   "item.yuushya.sakura_tree": "一键生成 - 樱花",
   "item.yuushya.maple_tree": "一键生成 - 枫树",
   "item.yuushya.normal_tree": "一键生成 - 树",
@@ -284,20 +286,7 @@
   "item.yuushya.grand_building": "一键生成 - 大楼(有点大)",
   "item.yuushya.shop_sign_examples": "一键生成 - 示例:商店门牌",
   "item.yuushya.department": "一键生成 - 大楼(有点大)",
-  
-  "item.yuushya.sakura_tree.line1": "\u00A79请预留足够空间,此操作不可撤销!",
-  "item.yuushya.maple_tree.line1": "\u00A79请预留足够空间,此操作不可撤销!",
-  "item.yuushya.normal_tree.line1": "\u00A79请预留足够空间,此操作不可撤销!",
-  "item.yuushya.pink_flower_tree.line1": "\u00A79请预留足够空间,此操作不可撤销!",
-  "item.yuushya.white_flower_tree.line1": "\u00A79请预留足够空间,此操作不可撤销!",
-  "item.yuushya.yellow_flower_tree.line1": "\u00A79请预留足够空间,此操作不可撤销!",
-  "item.yuushya.cozy_interior_0.line1": "\u00A79请预留足够空间,此操作不可撤销!",
-  "item.yuushya.cozy_interior_1.line1": "\u00A79请预留足够空间,此操作不可撤销!",
-  "item.yuushya.model_building_0.line1": "\u00A79请预留足够空间,此操作不可撤销!",
-  "item.yuushya.model_building_1.line1": "\u00A79请预留足够空间,此操作不可撤销!",
-  "item.yuushya.grand_building.line1": "\u00A79请预留足够空间,此操作不可撤销!",
-  "item.yuushya.shop_sign_examples.line1": "\u00A79请预留足够空间,此操作不可撤销!",
-  "item.yuushya.department.line1": "\u00A79请预留足够空间,此操作不可撤销!",
+
 
   "block.yuushya.modelframe": "实体方块",
   "block.yuushya.showblock": "实体方块",
@@ -1757,16 +1746,12 @@
 "block.yuushya.embbed_magenta_pale_bricks.line1": "\u00A79[模板材料]",
 
 "item.yuushya.oak_tree": "一键生成 - 橡树",
-"item.yuushya.oak_tree.line1": "\u00A79请预留足够空间,此操作不可撤销!",
 "item.yuushya.oak_tree.line2": "\u00A79大小: 5x13x5 水平中心",
 "item.yuushya.white_blooming_oak_tree": "一键生成 - 白花橡树",
-"item.yuushya.white_blooming_oak_tree.line1": "\u00A79请预留足够空间,此操作不可撤销!",
 "item.yuushya.white_blooming_oak_tree.line2": "\u00A79大小: 5x13x5 水平中心",
 "item.yuushya.yellow_blooming_oak_tree": "一键生成 - 黄花橡树",
-"item.yuushya.yellow_blooming_oak_tree.line1": "\u00A79请预留足够空间,此操作不可撤销!",
 "item.yuushya.yellow_blooming_oak_tree.line2": "\u00A79大小: 5x13x5 水平中心",
 "item.yuushya.pink_blooming_oak_tree": "一键生成 - 粉花橡树",
-"item.yuushya.pink_blooming_oak_tree.line1": "\u00A79请预留足够空间,此操作不可撤销!",
 "item.yuushya.pink_blooming_oak_tree.line2": "\u00A79大小: 5x13x5 水平中心",
 "item.yuushya.maple_tree.line2": "\u00A79大小: 5x13x5 水平中心",
 "item.yuushya.sakura_tree.line2": "\u00A79大小: 5x13x5 水平中心",
@@ -1826,15 +1811,12 @@
 
 
 "item.yuushya.dining_truck": "一键生成 - 餐车",
-"item.yuushya.dining_truck.line1": "\u00A79请预留足够空间,此操作不可撤销!",
 "item.yuushya.dining_truck.line2": "\u00A79大小: 9x7x5 水平中心",
 
 "item.yuushya.normal_truck": "一键生成 - 货车",
-"item.yuushya.normal_truck.line1": "\u00A79请预留足够空间,此操作不可撤销!",
 "item.yuushya.normal_truck.line2": "\u00A79大小: 10x5x3 水平中心",
 
 "item.yuushya.villa_0": "一键生成 - 三层民居",
-"item.yuushya.villa_0.line1": "\u00A79请预留足够空间,此操作不可撤销!",
 "item.yuushya.villa_0.line2": "\u00A79大小: 20x25x23 水平中心",
 
 "block.yuushya.printer": "打印机",
