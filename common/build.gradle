@@ -137,7 +137,7 @@ mapping.forEach { key,value ->
 }
 
 tasks.register("gen-1.21.0"){
-    dependsOn(mapping.collect {"copyAssetsAndDataFrom1.16.5-1.21.0-${it.key.replace("/","_")}"})
     dependsOn("copyAssetsAndDataFromCommon-1.21.0")
+    finalizedBy(mapping.collect {"copyAssetsAndDataFrom1.16.5-1.21.0-${it.key.replace("/","_")}"})
     finalizedBy("copyAssetsAndDataFrom1.20.6-1.21.0")
 }
