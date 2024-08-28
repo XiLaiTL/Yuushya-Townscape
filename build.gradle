@@ -72,7 +72,7 @@ tasks.register("build-tools",Copy){
     into("./build/tools")
 }
 
-def build_tasks = versions.collectMany {ver-> apis.collect {api-> "build-jar-${ver}-${api}"}}
+def build_tasks = versions.collectMany {ver-> apis(ver).collect {api-> "build-jar-${ver}-${api}"}}
 
 tasks.register("gen-chain",SequenceTask, [
         "clean-all",":common:generateAssetsAndData",

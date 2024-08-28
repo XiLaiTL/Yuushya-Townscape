@@ -9,8 +9,5 @@
         "item": "yuushya:lime__concrete"
       }
     },
-    "result": {
-      "item": "yuushya:pale_bricks_0",
-      "count":4
-    }
+    "result":{ "id": "yuushya:pale_bricks_0","count":4}
   }

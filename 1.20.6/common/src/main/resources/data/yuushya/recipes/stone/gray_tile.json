@@ -13,8 +13,5 @@
         "item":"minecraft:gray_dye"
       }
     },
-    "result": {
-      "item": "yuushya:gray_tile",
-      "count":4
-    }
+    "result":{ "id": "yuushya:gray_tile","count":4}
   }

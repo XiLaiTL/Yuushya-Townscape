@@ -9,8 +9,5 @@
         "item": "minecraft:smooth_stone"
       }
     },
-    "result": {
-      "item": "yuushya:smooth_stonetile",
-      "count":4
-    }
+    "result":{ "id": "yuushya:smooth_stonetile","count":4}
   }

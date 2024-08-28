@@ -15,8 +15,5 @@
         "item":"minecraft:black_dye"
       }
     },
-    "result": {
-      "item": "yuushya:embbed_dark_bricks",
-      "count":8
-    }
+    "result":{ "id": "yuushya:embbed_dark_bricks","count":8}
   }

@@ -12,8 +12,5 @@
         "item":"yuushya:egg_cobblestone"
       }
     },
-    "result": {
-      "item": "yuushya:marble_cobblestone",
-      "count":4
-    }
+    "result":{ "id": "yuushya:marble_cobblestone","count":4}
   }

@@ -20,7 +20,7 @@
         "item": "yuushya:lime__concrete"
     }
 ],
-    "result": "yuushya:marble",
+    "result": {"id": "yuushya:marble","count": 1},
     "experience": 0.2,
     "cookingtime": 60
 }

@@ -12,8 +12,5 @@
         "item":"minecraft:cobblestone"
       }
     },
-    "result": {
-      "item": "yuushya:park_tile",
-      "count":4
-    }
+    "result":{ "id": "yuushya:park_tile","count":4}
   }

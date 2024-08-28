@@ -9,8 +9,5 @@
         "item": "minecraft:polished_blackstone"
       }
     },
-    "result": {
-      "item": "yuushya:smooth_dark_stonetile",
-      "count":4
-    }
+    "result":{ "id": "yuushya:smooth_dark_stonetile","count":4}
   }

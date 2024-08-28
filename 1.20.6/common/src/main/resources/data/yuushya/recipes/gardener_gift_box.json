@@ -13,8 +13,5 @@
       "item": "yuushya:plain_gift_box"
     }
   },
-  "result": {
-    "item": "yuushya:gardener_gift_box",
-	"count": 1
-  }
+  "result":{ "id": "yuushya:gardener_gift_box","count":1}
 }

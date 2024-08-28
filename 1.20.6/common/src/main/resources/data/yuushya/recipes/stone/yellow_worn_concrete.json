@@ -15,8 +15,5 @@
         "item":"minecraft:water_bucket"
       }
     },
-    "result": {
-      "item": "yuushya:yellow_worn_concrete",
-      "count":8
-    }
+    "result":{ "id": "yuushya:yellow_worn_concrete","count":8}
   }

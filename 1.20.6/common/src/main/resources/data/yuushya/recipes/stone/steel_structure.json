@@ -3,7 +3,7 @@
     "ingredient": {
         "item": "minecraft:iron_ingot"
     },
-    "result": "yuushya:steel_structure",
+    "result": {"id": "yuushya:steel_structure","count": 1},
     "experience": 0.5,
     "cookingtime": 10
 }

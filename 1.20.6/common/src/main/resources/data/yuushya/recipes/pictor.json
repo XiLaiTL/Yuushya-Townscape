@@ -13,8 +13,5 @@
       "item": "minecraft:wheat_seeds"
     }
   },
-  "result": {
-    "item": "yuushya:pictor",
-	"count": 8
-  }
+  "result":{ "id": "yuushya:pictor","count":8}
 }

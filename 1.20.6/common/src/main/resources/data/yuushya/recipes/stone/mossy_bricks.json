@@ -13,8 +13,5 @@
         "item":"minecraft:water_bucket"
       }
     },
-    "result": {
-      "item": "yuushya:mossy_bricks",
-      "count":8
-    }
+    "result":{ "id": "yuushya:mossy_bricks","count":8}
   }

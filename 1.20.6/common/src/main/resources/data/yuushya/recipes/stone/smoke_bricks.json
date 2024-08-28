@@ -8,7 +8,7 @@
         "item": "yuushya:embbed_dark_bricks"
     }
 ],
-    "result": "yuushya:smoke_bricks",
+    "result":{"id": "yuushya:smoke_bricks","count": 1},
     "experience": 0.2,
     "cookingtime": 100
 }

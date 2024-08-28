@@ -23,8 +23,5 @@
         "item":"minecraft:yellow_concrete_powder"
       }
     },
-    "result": {
-      "item": "yuushya:cream_worn_concrete",
-      "count":8
-    }
+    "result":{ "id": "yuushya:cream_worn_concrete","count":8}
   }

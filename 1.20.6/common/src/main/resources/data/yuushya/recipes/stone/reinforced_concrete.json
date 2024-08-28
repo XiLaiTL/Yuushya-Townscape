@@ -12,8 +12,5 @@
         "item":"yuushya:steel_structure"
       }
     },
-    "result": {
-      "item": "yuushya:reinforced_concrete",
-      "count":4
-    }
+    "result":{ "id": "yuushya:reinforced_concrete","count":4}
   }

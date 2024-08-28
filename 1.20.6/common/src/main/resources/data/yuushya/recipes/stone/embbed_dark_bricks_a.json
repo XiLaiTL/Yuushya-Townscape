@@ -15,8 +15,5 @@
         "item":"minecraft:blackstone"
       }
     },
-    "result": {
-      "item": "yuushya:embbed_dark_bricks",
-      "count":9
-    }
+    "result":{ "id": "yuushya:embbed_dark_bricks","count":9}
   }

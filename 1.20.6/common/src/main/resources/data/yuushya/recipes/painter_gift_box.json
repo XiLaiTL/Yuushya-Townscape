@@ -16,8 +16,5 @@
       "item": "yuushya:the_encyclopedia"
     }
   },
-  "result": {
-    "item": "yuushya:painter_gift_box",
-	"count": 1
-  }
+  "result":{ "id": "yuushya:painter_gift_box","count":1}
 }

@@ -13,8 +13,5 @@
       "item": "minecraft:wheat_seeds"
     }
   },
-  "result": {
-    "item": "yuushya:bismuth_crystal",
-	"count": 8
-  }
+  "result":{ "id": "yuushya:bismuth_crystal","count":8}
 }

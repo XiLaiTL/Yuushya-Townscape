@@ -27,8 +27,5 @@
       }
     ]
     },
-    "result": {
-      "item": "yuushya:wore_lime_wall",
-      "count":4
-    }
+    "result":{ "id": "yuushya:wore_lime_wall","count":4}
   }

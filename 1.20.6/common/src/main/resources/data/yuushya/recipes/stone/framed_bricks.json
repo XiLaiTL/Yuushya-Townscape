@@ -15,8 +15,5 @@
         "item":"minecraft:bricks"
       }
     },
-    "result": {
-      "item": "yuushya:framed_bricks",
-      "count":2
-    }
+    "result":{ "id": "yuushya:framed_bricks","count":2}
   }

@@ -15,8 +15,5 @@
         "item":"minecraft:water_bucket"
       }
     },
-    "result": {
-      "item": "yuushya:top_reinforced_concrete",
-      "count":8
-    }
+    "result":{ "id": "yuushya:top_reinforced_concrete","count":8}
   }

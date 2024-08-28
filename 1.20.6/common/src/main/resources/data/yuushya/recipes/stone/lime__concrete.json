@@ -12,8 +12,5 @@
         "item":"minecraft:andesite"
       }
     },
-    "result": {
-      "item": "yuushya:lime__concrete",
-      "count":4
-    }
+    "result":{ "id": "yuushya:lime__concrete","count":4}
   }

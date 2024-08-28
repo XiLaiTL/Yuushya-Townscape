@@ -22,8 +22,5 @@
         "item":"minecraft:water_bucket"
       }
     },
-    "result": {
-      "item": "yuushya:wore_stone",
-      "count":8
-    }
+    "result":{ "id": "yuushya:wore_stone","count":8}
   }

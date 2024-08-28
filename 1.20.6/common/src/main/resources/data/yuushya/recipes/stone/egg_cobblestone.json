@@ -12,8 +12,5 @@
         "item":"minecraft:gravel"
       }
     },
-    "result": {
-      "item": "yuushya:egg_cobblestone",
-      "count":4
-    }
+    "result":{ "id": "yuushya:egg_cobblestone","count":4}
   }
