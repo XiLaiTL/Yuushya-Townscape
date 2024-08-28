@@ -22,11 +22,6 @@
 		{"class_type": "StructureCreatorItem", "name": "white_blooming_oak_tree",   "item_group": "structure","usage": {"create_nbt": "yuushya:white_blooming_oak_tree"},"properties": { "max_count": 64,"lines": 2, "rarity": "rare"}},
 		{"class_type": "StructureCreatorItem", "name": "yellow_blooming_oak_tree",   "item_group": "structure","usage": {"create_nbt": "yuushya:yellow_blooming_oak_tree"},"properties": { "max_count": 64,"lines": 2, "rarity": "rare"}},
 		{"class_type": "StructureCreatorItem", "name": "pink_blooming_oak_tree",   "item_group": "structure","usage": {"create_nbt": "yuushya:pink_blooming_oak_tree"},"properties": { "max_count": 64,"lines": 2, "rarity": "rare"}},
-		{"class_type": "StructureCreatorItem", "name": "maple_tree",   "item_group": "structure","usage": {"create_nbt": "yuushya:maple_tree"},"properties": { "max_count": 64,"lines": 2, "rarity": "rare"}},
-		{"class_type": "StructureCreatorItem", "name": "sakura_tree",   "item_group": "structure","usage": {"create_nbt": "yuushya:sakura_tree"},"properties": { "max_count": 64,"lines": 2, "rarity": "rare"}},
-		{"class_type": "StructureCreatorItem", "name": "normal_truck",   "item_group": "structure","usage": {"create_nbt": "yuushya:normal_truck"},"properties": { "max_count": 64,"lines": 2, "rarity": "rare"}},
-		{"class_type": "StructureCreatorItem", "name": "dining_truck",   "item_group": "structure","usage": {"create_nbt": "yuushya:dining_truck"},"properties": { "max_count": 64,"lines": 2, "rarity": "rare"}},
-		{"class_type": "StructureCreatorItem", "name": "villa_0",   "item_group": "structure","usage": {"create_nbt": "yuushya:villa_0"},"properties": { "max_count": 64,"lines": 3, "rarity": "rare"}},
 
 		{"class_type": "StructureCreatorItem", "name": "oak_tree_tiny",   "item_group": "structure","usage": {"create_nbt": "yuushya:oak_tree_tiny"},"properties": { "max_count": 64,"lines": 2, "rarity": "rare"}},
 		{"class_type": "StructureCreatorItem", "name": "oak_tree_mini",   "item_group": "structure","usage": {"create_nbt": "yuushya:oak_tree_mini"},"properties": { "max_count": 64,"lines": 2, "rarity": "rare"}},
@@ -57,6 +52,9 @@
 		{"class_type": "StructureCreatorItem", "name": "sakura_tree_winding",   "item_group": "structure","usage": {"create_nbt": "yuushya:sakura_tree_winding"},"properties": { "max_count": 64,"lines": 2, "rarity": "rare"}},
 		{"class_type": "StructureCreatorItem", "name": "sakura_tree_lush",   "item_group": "structure","usage": {"create_nbt": "yuushya:sakura_tree_lush"},"properties": { "max_count": 64,"lines": 2, "rarity": "rare"}},
 
+		{"class_type": "StructureCreatorItem", "name": "normal_truck",   "item_group": "structure","usage": {"create_nbt": "yuushya:normal_truck"},"properties": { "max_count": 64,"lines": 2, "rarity": "rare"}},
+		{"class_type": "StructureCreatorItem", "name": "dining_truck",   "item_group": "structure","usage": {"create_nbt": "yuushya:dining_truck"},"properties": { "max_count": 64,"lines": 2, "rarity": "rare"}},
+		{"class_type": "StructureCreatorItem", "name": "villa_0",   "item_group": "structure","usage": {"create_nbt": "yuushya:villa_0"},"properties": { "max_count": 64,"lines": 3, "rarity": "rare"}},
 
 		{"class_type": "", "name": "ctm_alert_0",  "item_group": "extra_blocks","properties": {"max_count": 64,"lines": 2, "rarity": "epic"}},
 		{"class_type": "", "name": "ctm_alert_1",  "item_group": "wood","properties": {"max_count": 64,"lines": 2, "rarity": "epic"}},
