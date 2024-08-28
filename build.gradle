@@ -89,3 +89,8 @@ tasks.register("test-chain",SequenceTask,[
         ":1.20.1:fabric:runClient"
 ])
 
+tasks.register("build-chain-1.21.0",SequenceTask,[
+        ":common:clean",
+        ":common:gen-1.21.0",
+        "build-jar-1.21.0-neoforge"
+])

@@ -125,7 +125,7 @@ tasks.register("copyAssetsAndDataFrom1.20.6-1.21.0", Copy) {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
 
-def mapping = ["advancement":"advancement","loot_tables":"loot_table","recipes":"recipe",
+def mapping = ["advancement":"advancement","loot_tables":"loot_table",
     "structures":"structure","tags/items":"tags/item"]
 
 mapping.forEach { key,value ->
