@@ -29,10 +29,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.function.UnaryOperator;
 
 import static com.yuushya.registries.YuushyaCreativeModeTab.REGISTER_TABS;
@@ -50,34 +47,38 @@ public class YuushyaRegistries {
     public static final YuushyaDeferredRegister<DataComponentType<?>> DATA_COMPONENTS = new YuushyaDeferredRegister<>(Registries.DATA_COMPONENT_TYPE);
 
     public static final Map<String,YuushyaRegistryData.Block> BlockALL=new HashMap<>();
-    public static final Map<String,YuushyaRegistryData.Block> BlockTemplate=new HashMap<>();
-    public static final Map<String,YuushyaRegistryData.Block> BlockOnly=new HashMap<>();
+    public static final Map<String,YuushyaRegistryData.Block> BlockTemplate=new LinkedHashMap<>();
+    //public static final Map<String,YuushyaRegistryData.Block> BlockOnly=new HashMap<>();
+    public static final Map<String,YuushyaRegistryData.Block> BlockDefault=new LinkedHashMap<>();
     public static final Map<String,YuushyaRegistryData.Block> BlockRemain=new HashMap<>();
-    public static final Map<String,YuushyaRegistryData.Block> TextureTypeMap=new HashMap<>();
-    public static final List<Runnable> RegisterList = new ArrayList<>();
+    public static final Map<String,YuushyaRegistryData.Block> TextureTypeMap=new LinkedHashMap<>();
+    //public static final List<Runnable> RegisterList = new ArrayList<>();
 
     public static void registerRegistries(){
         for(YuushyaRegistryData.ItemGroup itemGroup: YuushyaRawItemGroupMap.values()){
             YuushyaCreativeModeTab.register(itemGroup.name,itemGroup.icon);
         }
         for (YuushyaRegistryData.Item item: YuushyaRawItemMap.values()){
-            RegisterList.add(()->ITEMS.register(item.name,()-> YuushyaItemFactory.create(item))) ;
+            ITEMS.register(item.name,()-> YuushyaItemFactory.create(item)) ;
         }
         for (YuushyaRegistryData.Block block:YuushyaRawBlockMap.values()){
             switch (block.classType){
                 case "_comment","class"->{}
                 case "remain"->{BlockRemain.put(block.name, block);}
                 case "template"->{
-                    RegisterList.add(()->ITEMS.register(block.name,()->new TemplateBlockItem(new Item.Properties().arch$tab(YuushyaCreativeModeTab.toGroup(block.itemGroup)),1,block.name)));
                     BlockTemplate.put(block.name, block);
                 }
                 //case "block"->{BlockOnly.put(block.name,block);}
                 default -> {
-                    BlockALL.put(block.name, block);
-                    RegisterList.add(()->BLOCKS.register(block.name, ()->YuushyaBlockFactory.create(block)));
-                    RegisterList.add(()->ITEMS.register(block.name, ()->new BlockItem(BLOCKS.get(block.name).get(),new Item.Properties().arch$tab(YuushyaCreativeModeTab.toGroup(block.itemGroup)))));
+                    BlockDefault.put(block.name,block);
+                    if (block.classType.equals("block")){
+                        if (block.renderType==null||block.renderType.isEmpty()) block.renderType="cutout";
+                        if (block.itemGroup == null) block.itemGroup="extra_blocks";
+                        if (block.texture==null){ block.texture=new YuushyaRegistryData.Block.Texture();block.texture.type="all";}
+                    }
                     if (block.texture!=null&&block.texture.type!=null&&!block.texture.type.isEmpty()){
-                        TextureTypeMap.put(block.name, block);}
+                        TextureTypeMap.put(block.name, block);
+                    }
                 }
             }
         }
@@ -89,16 +90,15 @@ public class YuushyaRegistries {
             if (blockRemain.texture.type!=null&&!blockRemain.texture.type.isEmpty()){
                 TextureTypeMap.put(blockRemain.name, blockRemain);}
         }
-        for (YuushyaRegistryData.Block block:BlockOnly.values()){
-            if (block.renderType==null||block.renderType.isEmpty()) block.renderType="cutout";
-            if (block.itemGroup == null) block.itemGroup="yuushya_extrablocks";
-            RegisterList.add(()->BLOCKS.register(block.name,()->new YuushyaBlockFactory.BlockWithClassType(BlockBehaviour.Properties.of(),1,"block")));
-            RegisterList.add(()->ITEMS.register(block.name,()->new BlockItem(BLOCKS.get(block.name).get(),new Item.Properties().arch$tab(YuushyaCreativeModeTab.toGroup(block.itemGroup)))));
-            if (block.texture==null){ block.texture=new YuushyaRegistryData.Block.Texture();block.texture.type="all";}
-            if (block.texture.type!=null&&!block.texture.type.isEmpty()){
-                TextureTypeMap.put(block.name, block);}
-            BlockALL.put(block.name, block);
+        for (YuushyaRegistryData.Block templateBlock:BlockTemplate.values()) {
+            ITEMS.register(templateBlock.name,()->new TemplateBlockItem(new Item.Properties().arch$tab(YuushyaCreativeModeTab.toGroup(templateBlock.itemGroup)),1,templateBlock.name));
         }
+        for(YuushyaRegistryData.Block block:BlockDefault.values()){
+            BlockALL.put(block.name, block);
+            BLOCKS.register(block.name, ()->YuushyaBlockFactory.create(block));
+            ITEMS.register(block.name, ()->new BlockItem(BLOCKS.get(block.name).get(),new Item.Properties().arch$tab(YuushyaCreativeModeTab.toGroup(block.itemGroup))));
+        }
+
         for (YuushyaRegistryData.Block templateBlock:BlockTemplate.values()){
             JsonObject templateBlockJson=NormalGSON.toJsonTree(templateBlock,YuushyaRegistryData.Block.class).getAsJsonObject();
             List<YuushyaRegistryData.Block> list=getTemplateUsageList(templateBlock);
@@ -123,19 +123,20 @@ public class YuushyaRegistries {
                 }
                 blockNew.name=templateBlock.name+"_"+name;
                 blockNew.classType = "template:"+templateBlock.name;
-                RegisterList.add(()->BLOCKS.register(blockNew.name, ()->YuushyaBlockFactory.create(properties,blockNew)));
-                RegisterList.add(()->ITEMS.register(blockNew.name,()->new TemplateChildBlockItem(BLOCKS.get(blockNew.name).get(),new Item.Properties(),block.classType,templateBlock.name,block.name)));
+                BLOCKS.register(blockNew.name, ()->YuushyaBlockFactory.create(properties,blockNew));
+                ITEMS.register(blockNew.name,()->new TemplateChildBlockItem(BLOCKS.get(blockNew.name).get(),new Item.Properties(),block.classType,templateBlock.name,block.name));
                 BlockALL.put(blockNew.name,blockNew);
             }
         }
+
         //TODP: add particle to normal block
         for(YuushyaRegistryData.Particle particle: YuushyaRawParticleMap.values()){
             if (particle.spawner==null) particle.spawner=new YuushyaRegistryData.Block();
             if (particle.spawner.properties==null) {particle.spawner.properties=new YuushyaRegistryData.Block.Properties();}
             if (particle.spawner.name==null||particle.spawner.name.isEmpty()) particle.spawner.name=particle.name+"_spawner";
-            RegisterList.add(()->BLOCKS.register(particle.spawner.name, () -> new YuushyaParticleBlock(YuushyaBlockFactory.getBlockProperties(particle.spawner.properties), particle.spawner.properties.lines,"ParticleBlock",particle.spawner.usage,()-> (SimpleParticleType) PARTICLE_TYPES.get(particle.name).get())));
-            RegisterList.add(()->ITEMS.register(particle.spawner.name, () -> new BlockItem(BLOCKS.get(particle.spawner.name).get(), new Item.Properties().arch$tab(YuushyaCreativeModeTab.toGroup(particle.spawner.itemGroup)))));
-            RegisterList.add(()->PARTICLE_TYPES.register(particle.name, YuushyaParticleBlock.YuushyaParticleType::create));
+            BLOCKS.register(particle.spawner.name, () -> new YuushyaParticleBlock(YuushyaBlockFactory.getBlockProperties(particle.spawner.properties), particle.spawner.properties.lines,"ParticleBlock",particle.spawner.usage,()-> (SimpleParticleType) PARTICLE_TYPES.get(particle.name).get()));
+            ITEMS.register(particle.spawner.name, () -> new BlockItem(BLOCKS.get(particle.spawner.name).get(), new Item.Properties().arch$tab(YuushyaCreativeModeTab.toGroup(particle.spawner.itemGroup))));
+            PARTICLE_TYPES.register(particle.name, YuushyaParticleBlock.YuushyaParticleType::create);
         }
     }
     public static List<YuushyaRegistryData.Block> getTemplateUsageList(YuushyaRegistryData.Block templateBlock){
@@ -161,10 +162,11 @@ public class YuushyaRegistries {
 
 
     public static void registerAll(){
-        RegisterList.forEach(Runnable::run);
-        RegisterList.clear();
+//        RegisterList.forEach(Runnable::run);
+//        RegisterList.clear();
 //        ITEMS.register("get_blockstate_item", () -> new GetBlockStateItem(new Item.Properties().tab(YuushyaCreativeModeTab.YUUSHYA_ITEM).stacksTo(1), 1));
         ITEMS.register("form_trans_item",()->new FormTransItem(new Item.Properties().arch$tab(YuushyaCreativeModeTab.YUUSHYA_ITEM).stacksTo(1),2));
+        ITEMS.register("blockstate_update_item",()->new BlockUpdateItem(new Item.Properties().arch$tab(YuushyaCreativeModeTab.YUUSHYA_ITEM).stacksTo(1),2));
         ITEMS.register("pilatory",()-> new SetHatItem(new Item.Properties().arch$tab(YuushyaCreativeModeTab.YUUSHYA_ITEM).stacksTo(64),2));
         //ITEMS.register("ghost_light",()->new BlockItem(Blocks.LIGHT,new Item.Properties().rarity(Rarity.EPIC).tab(YuushyaCreativeModeTab.YUUSHYA_ITEM)));
 

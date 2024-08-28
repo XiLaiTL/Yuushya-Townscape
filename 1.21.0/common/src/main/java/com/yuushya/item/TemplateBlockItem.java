@@ -117,7 +117,7 @@ public class TemplateBlockItem extends AbstractYuushyaItem {
             ResourceLocation resourceLocation = block.classType.equals("remain")
                     ? ResourceLocation.parse(block.name)
                     : ResourceLocation.fromNamespaceAndPath(Yuushya.MOD_ID,block.name);
-            nonNullList.add(BuiltInRegistries.BLOCK.get(resourceLocation).asItem().getDefaultInstance());
+            nonNullList.add(BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Yuushya.MOD_ID,this.block.name+"_"+resourceLocation.getPath())).asItem().getDefaultInstance());
         }
         return Optional.of(new BundleTooltip(new BundleContents(nonNullList) ));
     }
