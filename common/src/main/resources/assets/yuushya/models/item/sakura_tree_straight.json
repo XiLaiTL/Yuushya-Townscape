@@ -1,0 +1,6 @@
+{
+    "parent": "yuushya:item/sakura_tree_lush",
+	"textures": {
+		"2_0": "yuushya:block/sakura"
+	}
+}

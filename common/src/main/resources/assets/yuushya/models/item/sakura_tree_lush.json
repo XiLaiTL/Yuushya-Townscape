@@ -4,8 +4,8 @@
 	"texture_size": [32, 32],
 	"textures": {
 		"0": "yuushya:block/oak_log",
-		"particle": "yuushya:block/oak_leaves_branch_medium",
-		"2_0": "yuushya:block/oak_leaves_branch_medium"
+		"particle": "yuushya:block/sakura",
+		"2_0": "yuushya:block/sakura"
 	},
 	"elements": [
 		{
@@ -44,19 +44,6 @@
 				"west": {"uv": [2.5, 5, 13, 15], "rotation": 180, "texture": "#2_0"},
 				"up": {"uv": [0, 0, 10.5, 0], "rotation": 270, "texture": "#2_0"},
 				"down": {"uv": [0, 0, 10.5, 0], "rotation": 90, "texture": "#2_0"}
-			}
-		},
-		{
-			"from": [8, 12, -3],
-			"to": [8, 32, 18],
-			"rotation": {"angle": 0, "axis": "x", "origin": [11, 9, 6]},
-			"faces": {
-				"north": {"uv": [0, 0, 0, 10], "rotation": 180, "texture": "#2_0"},
-				"east": {"uv": [2.5, 5, 13, 15], "rotation": 180, "texture": "#2_0"},
-				"south": {"uv": [0, 0, 0, 10], "rotation": 180, "texture": "#2_0"},
-				"west": {"uv": [2.5, 5, 13, 15], "rotation": 180, "texture": "#2_0"},
-				"up": {"uv": [0, 0, 10.5, 0], "rotation": 90, "texture": "#2_0"},
-				"down": {"uv": [0, 0, 10.5, 0], "rotation": 270, "texture": "#2_0"}
 			}
 		},
 		{
@@ -285,19 +272,19 @@
 			"name": "leaves_maple",
 			"origin": [8, 8, 8],
 			"color": 0,
-			"children": [2, 3, 4, 5, 6]
+			"children": [2, 3, 4, 5]
 		},
 		{
 			"name": "leaves_maple_medium",
 			"origin": [8, 8, 8],
 			"color": 0,
-			"children": [7, 8, 9, 10]
+			"children": [6, 7, 8, 9]
 		},
 		{
 			"name": "leaves_maple_small",
 			"origin": [8, 8, 8],
 			"color": 0,
-			"children": [11, 12, 13, 14, 15, 16, 17]
+			"children": [10, 11, 12, 13, 14, 15, 16]
 		}
 	]
 }

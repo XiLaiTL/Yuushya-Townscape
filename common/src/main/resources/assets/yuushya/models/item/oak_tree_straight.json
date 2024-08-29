@@ -1,0 +1,6 @@
+{
+    "parent": "yuushya:item/oak_tree_lush",
+	"textures": {
+		"2_0": "yuushya:block/oak_leaves_branch_medium"
+	}
+}
