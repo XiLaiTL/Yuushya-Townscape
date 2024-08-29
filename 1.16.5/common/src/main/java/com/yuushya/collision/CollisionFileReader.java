@@ -30,8 +30,7 @@ import static com.yuushya.block.YuushyaBlockFactory.getYuushyaVoxelShapes;
 import static com.yuushya.utils.GsonTools.NormalGSON;
 
 public class CollisionFileReader {
-
-    private static Map<String, CollisionItem> collisionMap = new HashMap<>();
+    private static Map<String, Map<String,VoxelShape>> collisionMap = new HashMap<>();
     public static Path COLLISION_FILES = Platform.getConfigFolder().resolve("./com.yuushya/");
 
     public static void readAllFileSelf(){
@@ -42,10 +41,16 @@ public class CollisionFileReader {
                 if(inputStream!=null){
                     JsonElement jsonElement =new JsonParser().parse( new BufferedReader(new InputStreamReader(inputStream)));
                     CollisionItem collision = NormalGSON.fromJson(jsonElement ,CollisionItem.class);
-                    getCollisionMap().put(new ResourceLocation(Yuushya.MOD_ID,name).toString(),collision);
-                    if(collision.children!=null){
-                        for(String namespaceId:collision.children){
-                            getCollisionMap().put(namespaceId,collision);
+                    if (collision != null && collision.blockstates != null){
+                        Map<String,VoxelShape> map = new HashMap<>();
+                        for(CollisionItem.Model variant:collision.blockstates){
+                            map.put(variant.variant,getVoxelShape(variant));
+                        }
+                        getCollisionMap().put(new ResourceLocation(Yuushya.MOD_ID,name).toString(),map);
+                        if(collision.children!=null){
+                            for(String namespaceId:collision.children){
+                                getCollisionMap().put(namespaceId,map);
+                            }
                         }
                     }
                 }
@@ -66,10 +71,16 @@ public class CollisionFileReader {
                                 try(JsonReader reader= new JsonReader(new BufferedReader(new FileReader(collisionFile.toFile()))) ){
                                     //reader.setLenient(true);
                                     CollisionItem collision = NormalGSON.fromJson(new JsonParser().parse(reader),CollisionItem.class);
-                                    getCollisionMap().put(new ResourceLocation(namespace,id).toString(),collision);
-                                    if(collision.children!=null){
-                                        for(String namespaceId:collision.children){
-                                            getCollisionMap().put(namespaceId,collision);
+                                    if (collision != null && collision.blockstates != null){
+                                        Map<String,VoxelShape> map = new HashMap<>();
+                                        for(CollisionItem.Model variant:collision.blockstates){
+                                            map.put(variant.variant,getVoxelShape(variant));
+                                        }
+                                        getCollisionMap().put(new ResourceLocation(namespace,id).toString(),map);
+                                        if(collision.children!=null){
+                                            for(String namespaceId:collision.children){
+                                                getCollisionMap().put(namespaceId,map);
+                                            }
                                         }
                                     }
                                 }
@@ -82,34 +93,38 @@ public class CollisionFileReader {
     }
 
     public static void readAllCollision(){
-        getCollisionMap().forEach((key, value) -> readCollisionToVoxelShape(key));
+        if(getYuushyaVoxelShapes().isEmpty()){
+            getCollisionMap().forEach((key, value) -> readCollisionToVoxelShape(key));
+        }
     }
 
-    public static void readCollisionToVoxelShape(Map<Integer,VoxelShape> cache,Block block,String namespaceid){
-        if(! (block instanceof AirBlock)) {
-            CollisionItem collision = getCollisionMap().get(namespaceid);
-            if (collision != null && collision.blockstates != null) {for (CollisionItem.Model variant : collision.blockstates) {
-                    List<BlockState> blockstates = YuushyaModelUtils.getBlockStateFromVariantString(block, variant.variant);
-                    VoxelShape shape = getVoxelShape(variant);
-                    for (BlockState blockstate : blockstates) {
-                        getYuushyaVoxelShapes().put(Block.getId(blockstate), shape);
-                        cache.put(Block.getId(blockstate),shape);
+    public static void readCollisionToVoxelShape(Map<String,VoxelShape> cache,BlockState blockState,String namespaceid){
+        if(! (blockState.getBlock() instanceof AirBlock)) {
+            Map<String,VoxelShape> collision = getCollisionMap().get(namespaceid);
+            if (collision!=null) {
+                for(String variant:collision.keySet()){
+                    if(YuushyaModelUtils.isBlockStateInVariantString(blockState,variant)){
+                        VoxelShape shape = collision.get(variant);
+                        String id = blockState.toString();
+                        getYuushyaVoxelShapes().put(id, shape);
+                        cache.put(id,shape);
                     }
                 }
             }
         }
     }
+
     public static void readCollisionToVoxelShape(String namespaceid){
-        CollisionItem collision = getCollisionMap().get(namespaceid);
-        if(collision!=null&&collision.blockstates!=null) {
+        Map<String,VoxelShape> collision = getCollisionMap().get(namespaceid);
+        if(collision!=null) {
             Block block = Registry.BLOCK.get(new ResourceLocation(namespaceid));
             if (!(block instanceof AirBlock)) {
-                for (CollisionItem.Model variant : collision.blockstates) {
-                    //RegistrySupplier<Block> block =YuushyaRegistries.BLOCKS.get(new ResourceLocation(namespaceid).getPath());
-                    List<BlockState> blockstates = YuushyaModelUtils.getBlockStateFromVariantString(block, variant.variant);
-                    VoxelShape shape = getVoxelShape(variant);
+                for (Map.Entry<String, VoxelShape> entry : collision.entrySet()) {
+                    String variant = entry.getKey();
+                    VoxelShape shape = entry.getValue();
+                    List<BlockState> blockstates = YuushyaModelUtils.getBlockStateFromVariantString(block, variant);
                     for (BlockState blockstate : blockstates) {
-                        getYuushyaVoxelShapes().put(Block.getId(blockstate), shape);
+                        getYuushyaVoxelShapes().put(blockstate.toString(), shape);
                     }
                 }
             }
@@ -127,11 +142,11 @@ public class CollisionFileReader {
         else{ return shape;}
     }
 
-    public static Map<String, CollisionItem> getCollisionMap() {
+    public static Map<String, Map<String, VoxelShape>> getCollisionMap() {
         return collisionMap;
     }
 
-    public static void setCollisionMap(Map<String, CollisionItem> collisionMap) {
+    public static void setCollisionMap(Map<String, Map<String, VoxelShape>> collisionMap) {
         CollisionFileReader.collisionMap=collisionMap;
     }
 }
