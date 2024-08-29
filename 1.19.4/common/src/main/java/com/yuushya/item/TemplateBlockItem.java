@@ -20,10 +20,7 @@ import net.minecraft.world.inventory.ContainerLevelAccess;
 import net.minecraft.world.inventory.StonecutterMenu;
 import net.minecraft.world.inventory.tooltip.BundleTooltip;
 import net.minecraft.world.inventory.tooltip.TooltipComponent;
-import net.minecraft.world.item.AirItem;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
@@ -123,11 +120,10 @@ public class TemplateBlockItem extends AbstractYuushyaItem {
             ResourceLocation resourceLocation = block.classType.equals("remain")
                     ? new ResourceLocation(block.name)
                     : new ResourceLocation(Yuushya.MOD_ID,block.name);
-            nonNullList.add(BuiltInRegistries.BLOCK.get(resourceLocation).asItem().getDefaultInstance());
+            nonNullList.add(BuiltInRegistries.BLOCK.get(new ResourceLocation(Yuushya.MOD_ID,this.block.name+"_"+resourceLocation.getPath())).asItem().getDefaultInstance());
         }
         return Optional.of(new BundleTooltip(nonNullList,nonNullList.size() ));
     }
-
     @Override
     public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> tooltips, TooltipFlag tooltipFlag) {
         super.appendHoverText(itemStack,level,tooltips,tooltipFlag);

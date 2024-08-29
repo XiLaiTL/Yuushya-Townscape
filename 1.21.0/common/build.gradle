@@ -11,3 +11,14 @@ dependencies {
     // Architectury API. This is optional, and you can comment it out if you don't need it.
     modImplementation "dev.architectury:architectury:$parent.architectury_api_version"
 }
+
+jar{
+    mustRunAfter(
+            ":common:copyAssetsAndDataFromCommon-1.21.0",
+            ":common:copyAssetsAndDataFrom1.16.5-1.21.0-advancement",
+            ":common:copyAssetsAndDataFrom1.16.5-1.21.0-loot_tables",
+            ":common:copyAssetsAndDataFrom1.16.5-1.21.0-structures",
+            ":common:copyAssetsAndDataFrom1.16.5-1.21.0-tags_items",
+            ":common:copyAssetsAndDataFrom1.20.6-1.21.0"
+    )
+}

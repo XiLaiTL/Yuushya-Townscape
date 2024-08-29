@@ -7,12 +7,14 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.Vec3i;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
+import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Mirror;
@@ -21,7 +23,9 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureManager;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
+import org.jetbrains.annotations.Nullable;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.Random;
 
@@ -30,6 +34,7 @@ import static com.yuushya.utils.YuushyaUtils.toListTag;
 public class StructureCreatorItem extends AbstractMultiPurposeToolItem{
     private final ResourceLocation createNbt;
     private final ResourceLocation cancelNbt;
+    private final int tipLines;
     private Vec3i size;
     private BlockPos pos;
     private int _rot=0,_mirror=0;
@@ -39,6 +44,7 @@ public class StructureCreatorItem extends AbstractMultiPurposeToolItem{
 
     public StructureCreatorItem(Properties properties, Integer tipLines, String createNbt,String cancelNbt) {
         super(properties, tipLines);
+        this.tipLines = tipLines;
         MAX_FORMS=4;
         this.createNbt=createNbt!=null?ResourceLocation.tryParse(createNbt):null;
         this.cancelNbt=cancelNbt!=null?ResourceLocation.tryParse(cancelNbt):null;
@@ -91,11 +97,16 @@ public class StructureCreatorItem extends AbstractMultiPurposeToolItem{
             Optional<StructureTemplate> structure2;
             try {
                 structure2 = structureManager.get(structureName);
-                Vec3i size=(structure2.get()).getSize();
-                this.size=new Vec3i(size.getX(),size.getY(),size.getZ());
-                setTag(itemStack);
-                blockPos1=getOffset(pos);
-                return this.place(serverLevel, structure2.get(),blockPos1);
+                if(structure2.isPresent()){
+                    Vec3i size=(structure2.get()).getSize();
+                    this.size=new Vec3i(size.getX(),size.getY(),size.getZ());
+                    setTag(itemStack);
+                    blockPos1=getOffset(pos);
+                    return this.place(serverLevel, structure2.get(),blockPos1);
+                }
+                else{
+                    return false;
+                }
             } catch (ResourceLocationException var6) {
                 return false;
             }
@@ -146,7 +157,12 @@ public class StructureCreatorItem extends AbstractMultiPurposeToolItem{
         itemStack.setTag(compoundTag);
     }
 
-
+    @Override
+    public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> tooltips, TooltipFlag tooltipFlag) {
+        tooltips.add(new TranslatableComponent("item.yuushya.structure_creator.line1"));
+        for(int i=2;i<=tipLines;i++)
+            tooltips.add(new TranslatableComponent(this.getDescriptionId()+".line"+i));
+    }
 
     private BlockPos getOffset(BlockPos blockPos){
         switch (_mirror){

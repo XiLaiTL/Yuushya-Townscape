@@ -24,6 +24,7 @@ import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
+import java.util.function.BiPredicate;
 
 import static com.yuushya.block.YuushyaBlockFactory.isTheSameFacing;
 import static com.yuushya.block.YuushyaBlockFactory.isTheSameBlock;
@@ -50,21 +51,21 @@ public class LineBlock extends AbstractYuushyaBlockType {
                 ? this.defaultBlockState().setValue(HORIZONTAL_FACING, blockPlaceContext.getHorizontalDirection())
                 : this.defaultBlockState().setValue(HORIZONTAL_FACING, blockPlaceContext.getClickedFace().getOpposite());
 
-        return res.setValue(POS_HORIZON,getPositionOfFace(res,blockPlaceContext.getLevel(),blockPlaceContext.getClickedPos()));
+        return res.setValue(POS_HORIZON,getPositionOfFace(res,blockPlaceContext.getLevel(),blockPlaceContext.getClickedPos(),YuushyaBlockFactory::isTheSameFacing));
     }
     @Override
     public BlockState updateShape(BlockState blockState, Direction direction, BlockState blockState2, LevelAccessor levelAccessor, BlockPos blockPos, BlockPos blockPos2) {
-        return blockState.setValue(POS_HORIZON,getPositionOfFace(blockState,levelAccessor,blockPos));
+        return blockState.setValue(POS_HORIZON,getPositionOfFace(blockState,levelAccessor,blockPos,YuushyaBlockFactory::isTheSameFacing));
     }
 
-    public static PositionHorizonState getPositionOfFace(BlockState state, LevelAccessor worldIn, BlockPos pos) {
+    public static PositionHorizonState getPositionOfFace(BlockState state, LevelAccessor worldIn, BlockPos pos, BiPredicate<BlockState,BlockState> connected) {
         Direction facingDirection= state.getValue(HORIZONTAL_FACING);
         switch (facingDirection.getAxis()) {
             case X:
                 BlockState nblockstate = YuushyaUtils.getBlockState(worldIn.getBlockState(pos.north()), worldIn, pos.north());
                 BlockState sblockstate = YuushyaUtils.getBlockState(worldIn.getBlockState(pos.south()), worldIn, pos.south());
-                boolean nConnected = isTheSameBlock(nblockstate, state) && isTheSameFacing(nblockstate, state);
-                boolean sConnected = isTheSameBlock(sblockstate, state) && isTheSameFacing(sblockstate, state);
+                boolean nConnected = isTheSameBlock(nblockstate, state) && connected.test(nblockstate, state);
+                boolean sConnected = isTheSameBlock(sblockstate, state) && connected.test(sblockstate, state);
                 if (nConnected && sConnected) return PositionHorizonState.MIDDLE;
                 switch (facingDirection) {
                     case WEST:
@@ -80,8 +81,8 @@ public class LineBlock extends AbstractYuushyaBlockType {
             case Z:
                 BlockState wblockstate = YuushyaUtils.getBlockState(worldIn.getBlockState(pos.west()), worldIn, pos.west());
                 BlockState eblockstate = YuushyaUtils.getBlockState(worldIn.getBlockState(pos.east()), worldIn, pos.east());
-                boolean wConnected = isTheSameBlock(wblockstate, state) && isTheSameFacing(wblockstate, state);
-                boolean eConnected = isTheSameBlock(eblockstate, state) && isTheSameFacing(eblockstate, state);
+                boolean wConnected = isTheSameBlock(wblockstate, state) && connected.test(wblockstate, state);
+                boolean eConnected = isTheSameBlock(eblockstate, state) && connected.test(eblockstate, state);
                 if (wConnected && eConnected) return PositionHorizonState.MIDDLE;
                 switch (facingDirection) {
                     case NORTH:

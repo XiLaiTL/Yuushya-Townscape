@@ -21,6 +21,7 @@ public class CableBlock extends YuushyaBlockFactory.BlockWithClassType {
 
     public CableBlock(Properties properties, Integer tipLines, String classType) {
         super(properties, tipLines, classType);
+        this.registerDefaultState(this.defaultBlockState().setValue(WATERLOGGED,false));
     }
 
     @Override

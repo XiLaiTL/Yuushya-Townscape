@@ -13,6 +13,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Mirror;
@@ -21,7 +22,9 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplateManager;
+import org.jetbrains.annotations.Nullable;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.Random;
 
@@ -30,6 +33,7 @@ import static com.yuushya.utils.YuushyaUtils.toListTag;
 public class StructureCreatorItem extends AbstractMultiPurposeToolItem{
     private final ResourceLocation createNbt;
     private final ResourceLocation cancelNbt;
+    private final int tipLines;
     private Vec3i size;
     private BlockPos pos;
     private int _rot=0,_mirror=0;
@@ -39,6 +43,7 @@ public class StructureCreatorItem extends AbstractMultiPurposeToolItem{
 
     public StructureCreatorItem(Properties properties, Integer tipLines, String createNbt,String cancelNbt) {
         super(properties, tipLines);
+        this.tipLines = tipLines;
         MAX_FORMS=4;
         this.createNbt=createNbt!=null?ResourceLocation.tryParse(createNbt):null;
         this.cancelNbt=cancelNbt!=null?ResourceLocation.tryParse(cancelNbt):null;
@@ -91,11 +96,16 @@ public class StructureCreatorItem extends AbstractMultiPurposeToolItem{
             Optional<StructureTemplate> structure2;
             try {
                 structure2 = structureManager.get(structureName);
-                Vec3i size=(structure2.get()).getSize();
-                this.size=new Vec3i(size.getX(),size.getY(),size.getZ());
-                setTag(itemStack);
-                blockPos1=getOffset(pos);
-                return this.place(serverLevel, structure2.get(),blockPos1);
+                if(structure2.isPresent()){
+                    Vec3i size=(structure2.get()).getSize();
+                    this.size=new Vec3i(size.getX(),size.getY(),size.getZ());
+                    setTag(itemStack);
+                    blockPos1=getOffset(pos);
+                    return this.place(serverLevel, structure2.get(),blockPos1);
+                }
+                else{
+                    return false;
+                }
             } catch (ResourceLocationException var6) {
                 return false;
             }
@@ -130,8 +140,8 @@ public class StructureCreatorItem extends AbstractMultiPurposeToolItem{
         CompoundTag compoundTag = itemStack.getOrCreateTag();
         ListTag listTag = compoundTag.getList("Pos", 6);
         ListTag listTag1=compoundTag.getList("Size",6);
-        pos=new BlockPos(listTag.getDouble(0),listTag.getDouble(1),listTag.getDouble(2));
-        size=new Vec3i(listTag1.getDouble(0),listTag1.getDouble(1),listTag1.getDouble(2));
+        pos=new BlockPos((int) listTag.getDouble(0), (int) listTag.getDouble(1), (int) listTag.getDouble(2));
+        size=new Vec3i((int) listTag1.getDouble(0), (int) listTag1.getDouble(1), (int) listTag1.getDouble(2));
         _rot=compoundTag.getInt("rotation");
         _mirror=compoundTag.getInt("mirror");
     }
@@ -146,7 +156,12 @@ public class StructureCreatorItem extends AbstractMultiPurposeToolItem{
         itemStack.setTag(compoundTag);
     }
 
-
+    @Override
+    public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> tooltips, TooltipFlag tooltipFlag) {
+        tooltips.add(Component.translatable("item.yuushya.structure_creator.line1"));
+        for(int i=2;i<=tipLines;i++)
+            tooltips.add(Component.translatable(this.getDescriptionId()+".line"+i));
+    }
 
     private BlockPos getOffset(BlockPos blockPos){
         switch (_mirror){
