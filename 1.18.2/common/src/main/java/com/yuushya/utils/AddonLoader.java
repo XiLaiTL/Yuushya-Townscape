@@ -11,18 +11,24 @@ import net.minecraft.server.packs.PackResources;
 import net.minecraft.server.packs.PackType;
 import net.minecraft.server.packs.resources.FallbackResourceManager;
 import net.minecraft.server.packs.resources.Resource;
+import net.minecraft.world.phys.shapes.VoxelShape;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 
 import static com.yuushya.Yuushya.MOD_ID;
 import static com.yuushya.collision.CollisionFileReader.getCollisionMap;
+import static com.yuushya.collision.CollisionFileReader.getVoxelShape;
 import static com.yuushya.registries.YuushyaRegistryConfig.addResultToRawMap;
 import static com.yuushya.registries.YuushyaRegistryConfig.mergeYuushyaRegistryBlockJson;
 import static com.yuushya.utils.GsonTools.NormalGSON;
@@ -66,14 +72,19 @@ public class AddonLoader {
                 try (BufferedReader reader = new BufferedReader(new InputStreamReader(resource.getInputStream(), StandardCharsets.UTF_8));) {
                     JsonElement jsonElement =JsonParser.parseReader(reader);
                     CollisionItem collision = NormalGSON.fromJson(jsonElement ,CollisionItem.class);
-                    getCollisionMap().put(namespaceId1.toString(),collision);
+                    Map<String, VoxelShape> map = new HashMap<>();
+                    for(CollisionItem.Model variant:collision.blockstates){
+                        map.put(variant.variant,getVoxelShape(variant));
+                    }
+                    getCollisionMap().put(namespaceId1.toString(),map);
                     if(collision.children!=null){
                         for(String namespaceId:collision.children){
-                            getCollisionMap().put(namespaceId,collision);
+                            getCollisionMap().put(namespaceId,map);
                         }
                     }
                 }
             }
+
         } catch (IOException e){ e.printStackTrace(); }}
     }
 
