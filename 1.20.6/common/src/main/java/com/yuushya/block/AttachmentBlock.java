@@ -45,7 +45,8 @@ public class AttachmentBlock extends AbstractYuushyaBlockType {
 
     @Override
     public boolean canSurvive(BlockState blockState, LevelReader levelReader, BlockPos blockPos) {
-        return FaceAttachedHorizontalDirectionalBlock.canAttach(levelReader, blockPos, getConnectedDirection(blockState).getOpposite());
+        return true;
+        //return FaceAttachedHorizontalDirectionalBlock.canAttach(levelReader, blockPos, getConnectedDirection(blockState).getOpposite());
     }
 
     public static Direction getConnectedDirection(BlockState blockState) {
