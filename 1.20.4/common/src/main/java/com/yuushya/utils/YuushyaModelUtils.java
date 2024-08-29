@@ -3,6 +3,7 @@ package com.yuushya.utils;
 import com.google.common.base.Splitter;
 import com.google.common.collect.Maps;
 import net.minecraft.client.resources.model.ModelBakery;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -19,11 +20,19 @@ public class YuushyaModelUtils {
     public static final Splitter EQUAL_SPLITTER = Splitter.on('=').limit(2);
 
     public static List<BlockState> getBlockStateFromVariantString(Block block,String variantKey){
-        StateDefinition<Block,BlockState> stateDefinition= block.getStateDefinition();
-        return stateDefinition.getPossibleStates().stream().filter(predicate(stateDefinition,variantKey)).toList();
+        return block.getStateDefinition().getPossibleStates().stream().filter(predicate(block,variantKey)).toList();
     }
 
-    public static Predicate<BlockState> predicate(StateDefinition<Block, BlockState> stateDefinition, String string) {
+    public static boolean isBlockStateInVariantString(BlockState blockState,String variantKey){
+        return predicate(blockState.getBlock(),variantKey).test(blockState);
+    }
+
+    public static final Map<String,Predicate<BlockState>> PREDICATE_MAP = new HashMap<>();
+    public static Predicate<BlockState> predicate(Block block,String variantKey){
+        String s = BuiltInRegistries.BLOCK.getKey(block)+"#"+variantKey;
+        return PREDICATE_MAP.computeIfAbsent(s,(s1)->predicateBuilder(block.getStateDefinition(),variantKey));
+    }
+    public static Predicate<BlockState> predicateBuilder(StateDefinition<Block, BlockState> stateDefinition, String string) {
         if(string.equals("empty")){
             return blockState -> (blockState != null && blockState.is(stateDefinition.getOwner())) ;
         }
