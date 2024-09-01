@@ -7,8 +7,6 @@ pluginManagement {
     }
 }
 
-rootProject.name = 'example_mod'
-
 include 'common'
 include 'fabric'
 include 'fabric-like'
