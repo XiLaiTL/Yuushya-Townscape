@@ -246,6 +246,16 @@ public class YuushyaBlockFactory{
         @Override
         public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
             YuushyaRegistryData.Block.Usage usage = yuushyaBlock.usage;
+            if(yuushyaBlock.properties!=null && yuushyaBlock.properties.food!=null) {
+                YuushyaRegistryData.Item.Properties.Food food = yuushyaBlock.properties.food;
+                ResourceLocation finishedItem=null;
+                if (yuushyaBlock.properties.food.finishedItem != null) {
+
+                     finishedItem = new  ResourceLocation( yuushyaBlock.properties.food.finishedItem);
+
+                }
+                return FoodBlock.use(finishedItem, food.nutrition, food.saturation, state, level, pos, player, hand, hit);
+            }
             if(usage!=null){
                 if(!level.isClientSide&&usage.sound!=null&&!usage.sound.isBlank()&&player.getItemInHand(hand).isEmpty()){
                     SoundEvent soundEvent = BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation(usage.sound));
