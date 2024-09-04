@@ -1,6 +1,7 @@
 package com.yuushya.registries;
 
 import com.google.gson.JsonObject;
+import com.yuushya.block.FoodBlock;
 import com.yuushya.block.YuushyaBlockFactory;
 import com.yuushya.entity.ChairEntity;
 import com.yuushya.item.*;
@@ -28,6 +29,7 @@ import net.minecraft.world.level.material.MapColor;
 import java.util.*;
 
 import static com.yuushya.registries.YuushyaCreativeModeTab.REGISTER_TABS;
+import static com.yuushya.registries.YuushyaCreativeModeTab.YUUSHYA_ITEM;
 import static com.yuushya.registries.YuushyaRegistryConfig.*;
 import static com.yuushya.utils.GsonTools.NormalGSON;
 import static com.yuushya.utils.GsonTools.combineYuushyaDataBlockJson;
@@ -90,7 +92,13 @@ public class YuushyaRegistries {
         for(YuushyaRegistryData.Block block:BlockDefault.values()){
             BlockALL.put(block.name, block);
             BLOCKS.register(block.name, ()->YuushyaBlockFactory.create(block));
-            ITEMS.register(block.name, ()->new BlockItem(BLOCKS.get(block.name).get(),new Item.Properties().arch$tab(YuushyaCreativeModeTab.toGroup(block.itemGroup))));
+            if (block.properties != null && block.properties.food != null) {
+                ITEMS.register(block.name, ()->new FoodItem(BLOCKS.get(block.name).get(),block,new Item.Properties().arch$tab(YuushyaCreativeModeTab.toGroup(block.itemGroup))));
+
+            } else {
+                ITEMS.register(block.name, ()->new BlockItem(BLOCKS.get(block.name).get(),new Item.Properties().arch$tab(YuushyaCreativeModeTab.toGroup(block.itemGroup))));
+
+            }
         }
 
         for (YuushyaRegistryData.Block templateBlock:BlockTemplate.values()){
