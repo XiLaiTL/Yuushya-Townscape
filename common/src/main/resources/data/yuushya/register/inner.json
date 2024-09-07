@@ -110,7 +110,10 @@
 			"name": "block",
 			"blockstate": { "kit": "block" },
 			"render_type": "cutout",
-			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "block" },
+			"auto_generated": {
+				"recipe": true, "blockstate": true, "loot_table": true,
+				"tags": [{"value": "mineable/pickaxe"}], "item_model": true, "collision": "block"
+			},
 			"class_type": "class",
 			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": true, "has_collision": true, "is_delicate": false, "lines": 1 },
 			"item_group": "extra_blocks"
@@ -5872,7 +5875,7 @@
 		{
 			"class_type": "FixedBlock",
 			"name": "iron_ladder_top",
-			"auto_generated": { "recipe": true,"tags": [{"value": "climbable"}] }, "item_group": "extra_shapes",
+			"auto_generated": { "recipe": true,"tags": [{"value": "climbable"}],"collision": "none" }, "item_group": "extra_shapes",
 			"blockstate": { "forms": [["yuushya:extra_building_material/iron_ladder_"]]}
 		},
 
