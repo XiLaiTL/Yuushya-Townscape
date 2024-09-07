@@ -1892,6 +1892,7 @@
 "block.yuushya.clothes_showcase.line1": "\u00A7a( use [Form Wrench] to switch)\u00A79[Available Form:2(Empty)]",
 "block.yuushya.recycle_bin_0.line1": "\u00A7a(Right click empty-handed or use [Form Wrench] to switch)\u00A79[Available Form:2(On/Off)]",
 "block.yuushya.monitor.line1": "\u00A7a(Right click empty-handed or use [Form Wrench] to switch)\u00A79[Available Form:2(On/Off)]",
+"block.yuushya.monitor_with_tablet.line1": "§a(Right click empty-handed or use [Form Wrench] to switch)§9[Available Form:2(On/Off)]",
 "block.yuushya.book.line1": "\u00A7a(Right click empty-handed or use [Form Wrench] to switch)\u00A79[Available Form:2]",
 "block.yuushya.fan.line1": "\u00A7a(Right click empty-handed or use [Form Wrench] to switch)\u00A79[Available Form:2(On/Off)]",
 "block.yuushya.fan_.line1": "\u00A7a(Right click empty-handed or use [Form Wrench] to switch)\u00A79[Available Form:2(On/Off)]",

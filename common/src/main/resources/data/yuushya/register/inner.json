@@ -12840,22 +12840,24 @@
 			"usage": {"cycle_forms": [0,1],"sound": "block.stone_button.click_off"},
 			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "electrical_appliance",
-			"blockstate": { "forms": [["yuushya:extra_building_material/monitor_single"],["yuushya:extra_building_material/monitor_activated"]]}
+			"blockstate": { "forms": [["yuushya:extra_building_material/monitor_single"],["yuushya:extra_building_material/monitor_single_activated"]]}
 		},
 
 		{
 			"class_type": "DecoBlock",
 			"name": "monitor_with_tablet",
+			"usage": {"cycle_forms": [0,1],"sound": "block.stone_button.click_off"},
+			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "electrical_appliance",
-			"blockstate": { "forms": [["yuushya:extra_building_material/monitor"]]}
+			"blockstate": { "forms": [["yuushya:extra_building_material/monitor"],["yuushya:extra_building_material/monitor_activated"]]}
 		},
 
 		{
 			"class_type": "DecoBlock",
 			"name": "laptop",
-			"usage": {"cycle_forms": [0,1],"sound": "block.book.put"},
 			"properties": {"lines": 1},
 			"auto_generated": { "recipe": true }, "item_group": "electrical_appliance",
+			"usage": {"cycle_forms": [0,1],"sound": "block.stone_button.click_off"},
 			"blockstate": { "forms": [["yuushya:extra_building_material/lap_top"],["yuushya:extra_building_material/lap_top_off"]]}
 		},
 
