@@ -30,6 +30,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import static com.yuushya.block.YuushyaBlockFactory.getYuushyaCollisionShapes;
 import static com.yuushya.block.YuushyaBlockFactory.getYuushyaVoxelShapes;
 import static com.yuushya.utils.GsonTools.NormalGSON;
 
@@ -102,7 +103,7 @@ public class CollisionFileReader {
         }
     }
 
-    public static void readCollisionToVoxelShape(Map<String,VoxelShape> cache,BlockState blockState,String namespaceid){
+    public static void readCollisionToVoxelShape(BlockState blockState,String namespaceid){
         if(! (blockState.getBlock() instanceof AirBlock)) {
             Map<String,VoxelShape> collision = getCollisionMap().get(namespaceid);
             if (collision!=null) {
@@ -111,7 +112,7 @@ public class CollisionFileReader {
                         VoxelShape shape = collision.get(variant);
                         String id = blockState.toString();
                         getYuushyaVoxelShapes().put(id, shape);
-                        cache.put(id,shape);
+                        getYuushyaCollisionShapes().put(id, restrictShape(shape));
                     }
                 }
             }
@@ -129,6 +130,7 @@ public class CollisionFileReader {
                     List<BlockState> blockstates = YuushyaModelUtils.getBlockStateFromVariantString(block, variant);
                     for (var blockstate : blockstates) {
                         getYuushyaVoxelShapes().put(blockstate.toString(), shape);
+                        getYuushyaCollisionShapes().put(blockstate.toString(), restrictShape(shape));
                     }
                 }
             }
@@ -144,6 +146,22 @@ public class CollisionFileReader {
         shape = shape.optimize();
         if(shape.isEmpty()){ return Shapes.block();}
         else{ return shape;}
+    }
+
+    private static final Map<VoxelShape,VoxelShape> RESTRICT_SHAPE_MAP = new HashMap<>();
+    public static VoxelShape restrictShape(VoxelShape shape){
+        if(RESTRICT_SHAPE_MAP.containsKey(shape)) return RESTRICT_SHAPE_MAP.get(shape);
+        VoxelShape res = Shapes.empty();
+        for(var aabb: shape.toAabbs()){
+            VoxelShape one = Shapes.create(
+                    Math.max(0,aabb.minX),Math.max(0,aabb.minY),Math.max(0,aabb.minZ),
+                    Math.min(1,aabb.maxX),Math.min(1.5,aabb.maxY),Math.min(1,aabb.maxZ)
+            );
+            res = Shapes.or(res,one);
+        }
+        res = res.optimize();
+        RESTRICT_SHAPE_MAP.put(shape,res);
+        return res;
     }
 
     public static Map<String, Map<String, VoxelShape>> getCollisionMap() {

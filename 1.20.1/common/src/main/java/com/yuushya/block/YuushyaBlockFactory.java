@@ -36,6 +36,7 @@ import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
+import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -53,6 +54,7 @@ import static com.yuushya.block.FaceBlock.getPositionOfFaceX;
 import static com.yuushya.block.FaceBlock.getPositionOfFaceZ;
 import static com.yuushya.block.PoleBlock.getPositionOfPole;
 import static com.yuushya.block.blockstate.YuushyaBlockStates.*;
+import static com.yuushya.collision.CollisionFileReader.restrictShape;
 import static com.yuushya.utils.YuushyaUtils.toSound;
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.*;
 
@@ -62,10 +64,15 @@ public class YuushyaBlockFactory{
     public static Map<String, VoxelShape> getYuushyaVoxelShapes() {
         return yuushyaVoxelShapes;
     }
+    private static final Map<String,VoxelShape> yuushyaCollisionShapes = new HashMap<>();
+    public static Map<String, VoxelShape> getYuushyaCollisionShapes() {
+        return yuushyaCollisionShapes;
+    }
 
     public static class BlockWithClassType extends AbstractYuushyaBlock {
         public String classType;
         private final Map<String,VoxelShape> voxelShapeCache = new HashMap<>();
+        private final Map<String,VoxelShape> collisionShapeCache = new HashMap<>();
         public BlockWithClassType(Properties properties, Integer tipLines, String classType) {
             super(properties, tipLines);
             this.classType=classType;
@@ -75,29 +82,39 @@ public class YuushyaBlockFactory{
             return classType.equals(block.classType);
         }
 
+        //轮廓箱
         @Override
         public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
             String id = blockState.toString();
             if(!voxelShapeCache.containsKey(id)){
                 if(!getYuushyaVoxelShapes().containsKey(id)){
-                    CollisionFileReader.readCollisionToVoxelShape(voxelShapeCache,blockState, BuiltInRegistries.BLOCK.getKey(blockState.getBlock()).toString());
+                    CollisionFileReader.readCollisionToVoxelShape(blockState, BuiltInRegistries.BLOCK.getKey(blockState.getBlock()).toString());
                 }
-                VoxelShape shape = getYuushyaVoxelShapes().getOrDefault(id,Shapes.empty());
+                VoxelShape shape = getYuushyaVoxelShapes().getOrDefault(id,Shapes.block());
                 voxelShapeCache.put(id,shape);
                 return shape;
             }
             return voxelShapeCache.get(id);
         }
 
-//        @Override
-//        public VoxelShape getVisualShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-//            return Shapes.create(this.getCollisionShape(state,level,pos,context).bounds());
-//        }
+        //碰撞箱
+        @Override
+        public VoxelShape getCollisionShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
+            if(!this.hasCollision) return  Shapes.empty();
+            String id = blockState.toString();
+            if(!collisionShapeCache.containsKey(id)){
+                if(!getYuushyaCollisionShapes().containsKey(id)){
+                    VoxelShape collisionShape = this.getShape(blockState,blockGetter,blockPos,collisionContext);
+                    if(!getYuushyaCollisionShapes().containsKey(id)){ //上面调用的方法有副作用
+                        getYuushyaCollisionShapes().put(id,restrictShape(collisionShape));
+                    }
+                }
+                VoxelShape shape = getYuushyaCollisionShapes().getOrDefault(id,Shapes.empty());
+                collisionShapeCache.put(id,shape);
+            }
+            return collisionShapeCache.get(id);
+        }
 
-//        @Override
-//        public VoxelShape getCollisionShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
-//            return this.hasCollision ? Shapes.block() : Shapes.empty();
-//        }
         @Override
         public BlockState rotate(BlockState state, Rotation rotation) {
             if(state.hasProperty(FACING))
