@@ -17,11 +17,16 @@ import net.minecraft.server.packs.resources.Resource;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.URLDecoder;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.security.CodeSource;
 import java.util.*;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
@@ -29,8 +34,7 @@ import java.util.stream.Stream;
 import static com.yuushya.Yuushya.MOD_ID;
 import static com.yuushya.collision.CollisionFileReader.getCollisionMap;
 import static com.yuushya.collision.CollisionFileReader.getVoxelShape;
-import static com.yuushya.registries.YuushyaRegistryConfig.addResultToRawMap;
-import static com.yuushya.registries.YuushyaRegistryConfig.mergeYuushyaRegistryBlockJson;
+import static com.yuushya.registries.YuushyaRegistryConfig.*;
 import static com.yuushya.utils.GsonTools.NormalGSON;
 
 //最主要的是读取两种文件：data/register/xxx.json, data/collision/xxx.json
@@ -39,6 +43,25 @@ public class AddonLoader {
     private static final Predicate<ResourceLocation> JSON_FILTER = resourceLocation -> resourceLocation.getPath().endsWith(".json");
     //只读取yuushya文件夹了现在
     private static final FallbackResourceManager YUUSHYA_MANAGER = new FallbackResourceManager(PackType.SERVER_DATA,MOD_ID);
+
+    private static Path classJarPath(Class<?> clazz){
+        CodeSource codeSource = clazz.getProtectionDomain().getCodeSource();
+        if(codeSource!=null){
+            URL jarPath = codeSource.getLocation();
+            String decoded = URLDecoder.decode(jarPath.getPath(),StandardCharsets.UTF_8);
+            String dir = new File(decoded).getPath() .replaceAll("\\.jar.+",".jar");
+            return Paths.get(dir);
+        }
+        return null;
+    }
+    public static void loadResource(Class<?> clazz){
+        Path path = classJarPath(clazz);
+        if(path!=null){
+            try (PackResources packResource = new FilePackResources.FileResourcesSupplier(path).openPrimary(new PackLocationInfo(clazz.getName(), Component.empty(), PackSource.DEFAULT, Optional.empty()))){
+                YUUSHYA_MANAGER.push(packResource);
+            }
+        }
+    }
 
     public static void loadPackResource(Path folder){
         try(Stream<Path> files = Files.list(folder).filter(ADDON_FILTER).sorted(Comparator.comparing(Path::toString)) ){
@@ -52,12 +75,17 @@ public class AddonLoader {
         } catch (IOException e) {e.printStackTrace();}
     }
 
+    private static <V> List<Map.Entry<ResourceLocation,V>> sortMapEntry(Set<Map.Entry<ResourceLocation,V>> entrySet){
+        return entrySet.stream().sorted(
+                Comparator.comparing((Map.Entry<ResourceLocation, V> a) -> a.getKey().getPath())
+                .thenComparing(a -> a.getKey().getNamespace())).toList();
+    }
     public static void getRegister() {
-        for (Map.Entry<ResourceLocation, Resource> entry : YUUSHYA_MANAGER.listResources("register", JSON_FILTER).entrySet()) { try {
+        for (Map.Entry<ResourceLocation, Resource> entry : sortMapEntry(YUUSHYA_MANAGER.listResources("register", JSON_FILTER).entrySet())) { try {
             Resource resource = entry.getValue();
             try (BufferedReader reader = new BufferedReader(resource.openAsReader());) {
                 JsonElement innerJson= JsonParser.parseReader(reader);
-                mergeYuushyaRegistryBlockJson(innerJson.getAsJsonObject().getAsJsonArray("block"));
+                mergeYuushyaRegistryBlockClass(innerJson);
                 YuushyaRegistryData YuushyaData=NormalGSON.fromJson(innerJson, YuushyaRegistryData.class);
                 addResultToRawMap(YuushyaData);
             }
@@ -65,7 +93,7 @@ public class AddonLoader {
     }
 
     public static void getCollision(){
-        for (Map.Entry<ResourceLocation, Resource> entry : YUUSHYA_MANAGER.listResources("collision", JSON_FILTER).entrySet()) { try {
+        for (Map.Entry<ResourceLocation, Resource> entry : sortMapEntry(YUUSHYA_MANAGER.listResources("collision", JSON_FILTER).entrySet())) { try {
             ResourceLocation file = entry.getKey();
             ResourceLocation namespaceId1 = ResourceLocation.fromNamespaceAndPath(Yuushya.MOD_ID, file.getPath().substring("collision/".length(), file.getPath().length() - ".json".length()));
             Resource resource = entry.getValue();

@@ -171,24 +171,25 @@ public class ConfigReader {
         if (InnerFileInputStream!=null){
             try (BufferedReader reader=new BufferedReader(new InputStreamReader(InnerFileInputStream))){
                 JsonElement innerJson=JsonParser.parseReader(reader);
-                mergeYuushyaRegistryBlockJson(innerJson.getAsJsonObject().getAsJsonArray("block"));
+                mergeYuushyaRegistryBlockClass(innerJson);
                 YuushyaData=NormalGSON.fromJson(innerJson,YuushyaRegistryData.class);
             }catch (IOException e){e.printStackTrace();YuushyaLog.error(e);}
         }
     }
 
     public void readRegistryConfig(Path registerPath){
-        readRegistryInner();
+        //readRegistryInner();
         var files = registerPath.toFile().listFiles(
                 x->x.isFile()&&x.toPath().toString().endsWith(".json")
         );
         List<File> list = files==null?new ArrayList<>() :  new ArrayList<>(List.of(files));
         list.add(CONFIG_FILE_PATH.toFile());
+        list.sort(Comparator.comparing(File::getPath));
         for(var file:list){
             if(file.exists()) {
                 try(BufferedReader reader=new BufferedReader( new FileReader(file))){
                     JsonElement configJson= JsonParser.parseReader(reader);
-                    mergeYuushyaRegistryBlockJson(configJson.getAsJsonObject().getAsJsonArray("block"));
+                    mergeYuushyaRegistryBlockClass(configJson);
                     YuushyaRegistryData yuushyaRegistryData=NormalGSON.fromJson(configJson,YuushyaRegistryData.class);
                     addResultToRawMap(yuushyaRegistryData);
                 }catch (IOException e){e.printStackTrace();YuushyaLog.error(e);}
@@ -205,6 +206,13 @@ public class ConfigReader {
         }
     }
     private static final Map<String,JsonObject> BlockClass=new HashMap<>();
+    public static void mergeYuushyaRegistryBlockClass(JsonElement innerJson){
+        if(innerJson instanceof JsonObject jsonObject
+                && jsonObject.has("block")
+                && jsonObject.get("block") instanceof JsonArray blockArray){
+            mergeYuushyaRegistryBlockJson(blockArray);
+        }
+    }
     public static void mergeYuushyaRegistryBlockJson(JsonArray blockList){
         if(blockList!=null)
             blockList.forEach((block)->{
