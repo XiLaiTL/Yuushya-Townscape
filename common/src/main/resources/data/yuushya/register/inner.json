@@ -4992,8 +4992,8 @@
 		{
 			"class_type": "PlainBlock", "item_group": "stone",
 			"name": "road_marking_1",
-			"auto_generated": { "recipe": true },
-			"blockstate": { "forms": [["yuushya:block/road_marking_1"]]}
+			"auto_generated": { "recipe": true },"properties": {"lines": 1},
+			"blockstate": { "forms": [["yuushya:block/road_marking_1"],["yuushya:block/road_marking_1_1"]]}
 		},
 
 		{
@@ -5034,8 +5034,8 @@
 		{
 			"class_type": "PlainBlock", "item_group": "stone",
 			"name": "road_marking_7",
-			"auto_generated": { "recipe": true },
-			"blockstate": { "forms": [["yuushya:block/road_marking_7"]]}
+			"auto_generated": { "recipe": true },"properties": {"lines": 1},
+			"blockstate": { "forms": [["yuushya:block/road_marking_7"],["yuushya:block/road_marking_7_1"]]}
 		},
 
 
@@ -10872,81 +10872,81 @@
 		{
 			"class_type": "IntactBlock",
 			"name": "ramp_marking_white_1",
-			"properties": {"has_collision": false},
+			"properties": {"has_collision": false,"lines": 1},
 			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "traffic",
-			"blockstate": { "forms": [["yuushya:extra_building_material/road/slope_line/0"]]}
+			"blockstate": { "forms": [["yuushya:extra_building_material/road/slope_line/0"],["yuushya:extra_building_material/road/slope_line/w0_1"],["yuushya:extra_building_material/road/slope_line/w0_2"]]}
 		},
 
 		{
 			"class_type": "IntactBlock",
 			"name": "ramp_marking_white_2",
-			"properties": {"has_collision": false},
+			"properties": {"has_collision": false,"lines": 1},
 			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "traffic",
-			"blockstate": { "forms": [["yuushya:extra_building_material/road/slope_line/1"]]}
+			"blockstate": { "forms": [["yuushya:extra_building_material/road/slope_line/1"],["yuushya:extra_building_material/road/slope_line/w1_1"],["yuushya:extra_building_material/road/slope_line/w1_2"]]}
 		},
 
 		{
 			"class_type": "IntactBlock",
 			"name": "ramp_marking_white_3",
-			"properties": {"has_collision": false},
+			"properties": {"has_collision": false,"lines": 1},
 			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "traffic",
-			"blockstate": { "forms": [["yuushya:extra_building_material/road/slope_line/2"]]}
+			"blockstate": { "forms": [["yuushya:extra_building_material/road/slope_line/2"],["yuushya:extra_building_material/road/slope_line/w2_1"],["yuushya:extra_building_material/road/slope_line/w2_2"]]}
 		},
 
 		{
 			"class_type": "IntactBlock",
 			"name": "ramp_marking_white_4",
-			"properties": {"has_collision": false},
+			"properties": {"has_collision": false,"lines": 1},
 			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "traffic",
-			"blockstate": { "forms": [["yuushya:extra_building_material/road/slope_line/3"]]}
+			"blockstate": { "forms": [["yuushya:extra_building_material/road/slope_line/3"],["yuushya:extra_building_material/road/slope_line/w3_1"],["yuushya:extra_building_material/road/slope_line/w3_2"]]}
 		},
 
 		{
 			"class_type": "IntactBlock",
 			"name": "ramp_marking_white_5",
-			"properties": {"has_collision": false},
+			"properties": {"has_collision": false,"lines": 1},
 			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "traffic",
-			"blockstate": { "forms": [["yuushya:extra_building_material/road/slope_line/4"]]}
+			"blockstate": { "forms": [["yuushya:extra_building_material/road/slope_line/4"],["yuushya:extra_building_material/road/slope_line/w4_1"],["yuushya:extra_building_material/road/slope_line/w4_2"]]}
 		},
 
 		{
 			"class_type": "IntactBlock",
 			"name": "ramp_marking_yellow_1",
-			"properties": {"has_collision": false},
+			"properties": {"has_collision": false,"lines": 1},
 			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "traffic",
-			"blockstate": { "forms": [["yuushya:extra_building_material/road/slope_line/0_"]]}
+			"blockstate": { "forms": [["yuushya:extra_building_material/road/slope_line/0_"],["yuushya:extra_building_material/road/slope_line/y0_1"]]}
 		},
 
 		{
 			"class_type": "IntactBlock",
 			"name": "ramp_marking_yellow_2",
-			"properties": {"has_collision": false},
+			"properties": {"has_collision": false,"lines": 1},
 			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "traffic",
-			"blockstate": { "forms": [["yuushya:extra_building_material/road/slope_line/1_"]]}
+			"blockstate": { "forms": [["yuushya:extra_building_material/road/slope_line/1_"],["yuushya:extra_building_material/road/slope_line/y1_1"]]}
 		},
 
 		{
 			"class_type": "IntactBlock",
 			"name": "ramp_marking_yellow_3",
-			"properties": {"has_collision": false},
+			"properties": {"has_collision": false,"lines": 1},
 			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "traffic",
-			"blockstate": { "forms": [["yuushya:extra_building_material/road/slope_line/2_"]]}
+			"blockstate": { "forms": [["yuushya:extra_building_material/road/slope_line/2_"],["yuushya:extra_building_material/road/slope_line/y2_1"]]}
 		},
 
 		{
 			"class_type": "IntactBlock",
 			"name": "ramp_marking_yellow_4",
-			"properties": {"has_collision": false},
+			"properties": {"has_collision": false,"lines": 1},
 			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "traffic",
-			"blockstate": { "forms": [["yuushya:extra_building_material/road/slope_line/3_"]]}
+			"blockstate": { "forms": [["yuushya:extra_building_material/road/slope_line/3_"],["yuushya:extra_building_material/road/slope_line/y3_1"]]}
 		},
 
 		{
 			"class_type": "IntactBlock",
 			"name": "ramp_marking_yellow_5",
+			"properties": {"has_collision": false,"lines": 1},
 			"auto_generated": { "recipe": true, "collision": "block" }, "item_group": "traffic",
-			"properties": {"has_collision": false},
-			"blockstate": { "forms": [["yuushya:extra_building_material/road/slope_line/4_"]]}
+			"blockstate": { "forms": [["yuushya:extra_building_material/road/slope_line/4_"],["yuushya:extra_building_material/road/slope_line/y4_1"]]}
 		},
 
 
