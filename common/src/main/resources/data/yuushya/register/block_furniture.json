@@ -1,0 +1,1613 @@
+{
+  "block": [
+    {"name": "~Furniture_家具", "class_type": "_comment" },
+
+    {
+      "class_type": "FaceBlock",
+      "name": "acacia_table",
+      "item_group": "furniture",
+      "blockstate": {
+        "kit": "face" ,
+        "forms": [
+          [
+            "yuushya:extra_building_material/table/table/acacia_none",
+            "yuushya:extra_building_material/table/table/acacia_south_none",
+            "yuushya:extra_building_material/table/table/acacia_middle",
+            "yuushya:extra_building_material/table/table/acacia_single_es"
+          ]
+        ]
+      }
+    },
+
+    {
+      "class_type": "FaceBlock",
+      "name": "birch_table",
+      "item_group": "furniture",
+      "blockstate": {
+        "kit": "face" ,
+        "forms": [
+          [
+            "yuushya:extra_building_material/table/table/birch_none",
+            "yuushya:extra_building_material/table/table/birch_south_none",
+            "yuushya:extra_building_material/table/table/birch_middle",
+            "yuushya:extra_building_material/table/table/birch_single_es"
+          ]
+        ]
+      }
+    },
+
+    {
+      "class_type": "FaceBlock",
+      "name": "dark_oak_table",
+      "item_group": "furniture",
+      "blockstate": {
+        "kit": "face" ,
+        "forms": [
+          [
+            "yuushya:extra_building_material/table/table/dark_oak_none",
+            "yuushya:extra_building_material/table/table/dark_oak_south_none",
+            "yuushya:extra_building_material/table/table/dark_oak_middle",
+            "yuushya:extra_building_material/table/table/dark_oak_single_es"
+          ]
+        ]
+      }
+    },
+
+    {
+      "class_type": "FaceBlock",
+      "name": "jungle_table",
+      "item_group": "furniture",
+      "blockstate": {
+        "kit": "face" ,
+        "forms": [
+          [
+            "yuushya:extra_building_material/table/table/jungle_none",
+            "yuushya:extra_building_material/table/table/jungle_south_none",
+            "yuushya:extra_building_material/table/table/jungle_middle",
+            "yuushya:extra_building_material/table/table/jungle_single_es"
+          ]
+        ]
+      }
+    },
+
+    {
+      "class_type": "FaceBlock",
+      "name": "oak_table",
+      "item_group": "furniture",
+      "blockstate": {
+        "kit": "face" ,
+        "forms": [
+          [
+            "yuushya:extra_building_material/table/table/oak_none",
+            "yuushya:extra_building_material/table/table/oak_south_none",
+            "yuushya:extra_building_material/table/table/oak_middle",
+            "yuushya:extra_building_material/table/table/oak_single_es"
+          ]
+        ]
+      }
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "hay_table",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/table/hay_table"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "oak_foldable_table",
+      "usage": {"cycle_forms": [0,1],"sound": "block.wood.hit"},
+      "properties": {"lines": 1},
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/table/big_oak"],["yuushya:extra_building_material/table/big_oak_"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "acacia_foldable_table",
+      "usage": {"cycle_forms": [0,1],"sound": "block.wood.hit"},
+      "properties": {"lines": 1},
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/table/big_acacia"],["yuushya:extra_building_material/table/big_acacia_"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "stone_table",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/table/stone"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "marble_table",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/table/marble"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "classroom_chair",
+      "item_group": "furniture",
+      "usage": {"sit_pos": [0.5,0.5,0.5]},
+      "blockstate": { "forms": [["yuushya:extra_building_material/chair/class_chair"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "classroom_desk",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/class_desk"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "gaming_chair",
+      "item_group": "furniture",
+      "usage": {"sit_pos": [0.5,0.6,0.5]},
+      "blockstate": { "forms": [["yuushya:extra_building_material/chair/chair6"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "sticky_note",
+      "auto_generated": { "collision": "face" }, "item_group": "furniture",
+      "properties": {"lines": 1},
+      "usage": {"cycle_forms": [0,1,2,3,4],"sound": "item.book.page_turn"},
+      "blockstate": { "forms": [["yuushya:extra_building_material/sticky_note_1"],["yuushya:extra_building_material/sticky_note_2"],["yuushya:extra_building_material/sticky_note_3"],["yuushya:extra_building_material/sticky_note_4"],["yuushya:extra_building_material/sticky_note_5"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "list",
+      "auto_generated": { "collision": "face" }, "item_group": "furniture",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/to_do_list_1"],["yuushya:extra_building_material/to_do_list_2"],["yuushya:extra_building_material/to_do_list_3"],["yuushya:extra_building_material/to_do_list_4"],["yuushya:extra_building_material/to_do_list_5"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "order_list",
+      "item_group": "furniture",
+      "properties": {"lines": 0 },
+      "blockstate": { "forms": [["yuushya:extra_building_material/order_list"]]}
+    },
+
+
+    {
+      "class_type": "NormalBlock",
+      "name": "mounted_album",
+      "item_group": "furniture",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/ad/album1"],["yuushya:extra_building_material/ad/album2"],["yuushya:extra_building_material/ad/album3"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "album",
+      "item_group": "furniture",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/ad/album4"],["yuushya:extra_building_material/ad/album5"]]}
+    },
+
+    {
+      "class_type": "TranslucentBlock",
+      "name": "broken_list",
+      "auto_generated": { "collision": "face" }, "item_group": "furniture",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/broken_to_do_list_1"],["yuushya:extra_building_material/broken_to_do_list_2"],["yuushya:extra_building_material/broken_to_do_list_3"],["yuushya:extra_building_material/broken_to_do_list_4"],["yuushya:extra_building_material/broken_to_do_list_5"]]}
+    },
+
+    {
+      "class_type": "TranslucentBlock",
+      "name": "completely_broken_list",
+      "auto_generated": { "collision": "face" }, "item_group": "furniture",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/completely_broken_list"]]}
+    },
+
+    {
+      "class_type": "TranslucentBlock",
+      "name": "water_stain_top",
+      "auto_generated": { "collision": "face" }, "item_group": "furniture",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/water_stain_top"]]}
+    },
+
+    {
+      "class_type": "TranslucentBlock",
+      "name": "water_stain_bottom",
+      "auto_generated": { "collision": "face" }, "item_group": "furniture",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/water_stain_bottom"]]}
+    },
+
+    {
+      "class_type": "FaceBlock",
+      "name": "oak_tall_door",
+      "item_model": "yuushya:extra_building_material/door/door_0",
+      "auto_generated": { "loot_table": false }, "item_group": "furniture",
+      "properties": { "material": "wood"},
+      "blockstate": {
+        "kit": "VanillaDoorBlock" ,
+        "forms": [
+          [
+            "yuushya:extra_building_material/blank",
+            "yuushya:extra_building_material/blank",
+            "yuushya:extra_building_material/door/door_0",
+            "yuushya:extra_building_material/door/door_0_hinge"
+          ]
+        ]
+      }
+    },
+
+    {
+      "class_type": "FaceBlock",
+      "name": "acacia_tall_door",
+      "item_model": "yuushya:extra_building_material/door/door_1",
+      "auto_generated": { "loot_table": false }, "item_group": "furniture",
+      "properties": { "material": "wood"},
+      "blockstate": {
+        "kit": "VanillaDoorBlock" ,
+        "forms": [
+          [
+            "yuushya:extra_building_material/blank",
+            "yuushya:extra_building_material/blank",
+            "yuushya:extra_building_material/door/door_1",
+            "yuushya:extra_building_material/door/door_1_hinge"
+          ]
+        ]
+      }
+    },
+
+    {
+      "class_type": "FaceBlock",
+      "name": "jungle_tall_door",
+      "item_model": "yuushya:extra_building_material/door/door_2",
+      "auto_generated": { "loot_table": false }, "item_group": "furniture",
+      "properties": { "material": "wood"},
+      "blockstate": {
+        "kit": "VanillaDoorBlock" ,
+        "forms": [
+          [
+            "yuushya:extra_building_material/blank",
+            "yuushya:extra_building_material/blank",
+            "yuushya:extra_building_material/door/door_2",
+            "yuushya:extra_building_material/door/door_2_hinge"
+          ]
+        ]
+      }
+    },
+
+    {
+      "class_type": "FaceBlock",
+      "name": "birch_tall_door",
+      "item_model": "yuushya:extra_building_material/door/door_3",
+      "auto_generated": { "loot_table": false }, "item_group": "furniture",
+      "properties": { "material": "wood"},
+      "blockstate": {
+        "kit": "VanillaDoorBlock" ,
+        "forms": [
+          [
+            "yuushya:extra_building_material/blank",
+            "yuushya:extra_building_material/blank",
+            "yuushya:extra_building_material/door/door_3",
+            "yuushya:extra_building_material/door/door_3_hinge"
+          ]
+        ]
+      }
+    },
+
+    {
+      "class_type": "FaceBlock",
+      "name": "dark_oak_tall_door",
+      "item_model": "yuushya:extra_building_material/door/door_4",
+      "auto_generated": { "loot_table": false }, "item_group": "furniture",
+      "properties": { "material": "wood"},
+      "blockstate": {
+        "kit": "VanillaDoorBlock" ,
+        "forms": [
+          [
+            "yuushya:extra_building_material/blank",
+            "yuushya:extra_building_material/blank",
+            "yuushya:extra_building_material/door/door_4",
+            "yuushya:extra_building_material/door/door_4_hinge"
+          ]
+        ]
+      }
+    },
+
+    {
+      "class_type": "FaceBlock",
+      "name": "iron_tall_door",
+      "item_model": "yuushya:extra_building_material/door/door_5",
+      "auto_generated": { "loot_table": false }, "item_group": "furniture",
+      "properties": { "material": "wood"},
+      "blockstate": {
+        "kit": "VanillaDoorBlock" ,
+        "forms": [
+          [
+            "yuushya:extra_building_material/blank",
+            "yuushya:extra_building_material/blank",
+            "yuushya:extra_building_material/door/door_5",
+            "yuushya:extra_building_material/door/door_5_hinge"
+          ]
+        ]
+      }
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "ps4",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/ps4"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "switch",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/switch"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "switch_",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/switch_s"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "tissue",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/tissue"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "tissue_",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/tissue_"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "ashtray",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/ashtray"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "closet_handle_left",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/closet_handle_left"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "closet_handle_right",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/closet_handle_right"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "menu",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/menu"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "blackboard",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/blackboard"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "blackboard_eraser",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/blackboard_eraser_floor"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_blackboard_eraser",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/blackboard_eraser"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "centre_speaker",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/classroom_speaker"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "centre_speaker_sym",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/classroom_speaker_"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "chalk_box",
+      "properties": {"lines": 1},
+      "usage": {"cycle_forms": [0,1],"sound": "item.book.put"},
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/chalk"],["yuushya:extra_building_material/chalk_"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "porcelain_vase",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/vase1"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "gold_vase",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/vase"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "globe",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/sphere"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "books",
+      "usage": {"cycle_forms": [0,1],"sound": "item.book.put"},
+      "item_group": "furniture",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/books"],["yuushya:extra_building_material/books_"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "sorted_magazine",
+      "usage": {"cycle_forms": [0,1,2,3],"sound": "item.book.put"},
+      "item_group": "furniture",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/magazine_h2"],["yuushya:extra_building_material/magazine_h1"],["yuushya:extra_building_material/magazine_m1"],["yuushya:extra_building_material/magazine_m2"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "piled_magazine",
+      "item_group": "furniture",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/magazine"],["yuushya:extra_building_material/magazine_pile"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "dumbbell",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/dumbbell"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "pingpong_paddles",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/pingpong_bat_"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "pingpong_paddle_with_ball",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/pingpong_bat"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "binoculars",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/binoculars"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "flower_painting",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/flower_painting"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "rusty_bucket",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/bucket"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mirror",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/mirror_table"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_mirror",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/mirror_wall"]]}
+    },
+
+
+    {
+      "class_type": "DecoBlock",
+      "name": "patterned_slippers",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/patterned_slipper"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mop",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/mop"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mop_bucket",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/mop_container"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "calendar",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/calendar"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "mailbox",
+      "usage": {"cycle_forms": [0,1],"sound": "block.iron_door.open"},
+      "item_group": "furniture",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/mailbox2"],["yuushya:extra_building_material/mailbox3"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "wastepaper_basket",
+      "usage": {"cycle_forms": [0,1],"sound": "block.iron_trapdoor.open"},
+      "item_group": "furniture",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/wastepaper_basket"],["yuushya:extra_building_material/wastepaper_basket_"]]}
+    },
+
+    {
+      "class_type": "ChairBlock",
+      "name": "glass_showcase",
+      "item_group": "furniture",
+      "item_model": "yuushya:extra_building_material/glass_showcase_none",
+      "blockstate": { "forms": [["yuushya:extra_building_material/glass_showcase_left","yuushya:extra_building_material/glass_showcase_middle","yuushya:extra_building_material/glass_showcase_right","yuushya:extra_building_material/glass_showcase_none"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "pigment_bucket",
+      "item_group": "furniture",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/pigment_bucket"],["yuushya:extra_building_material/pigment_bucket_single"],["yuushya:extra_building_material/pigment_bucket_single_"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "easel",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/easel"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "easel_with_canvas",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/easel_"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "toilet",
+      "item_group": "furniture",
+      "usage": {"sit_pos": [0.5,0.7,0.5]},
+      "blockstate": { "forms": [["yuushya:extra_building_material/toilet"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "toilet_water_tank",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/toilet_water_tank"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "sink",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/sink_1"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "sink_",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/sink_2"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "painter_gift_box",
+      "properties": {"lines": 2, "sound": "wool" },
+      "auto_generated": { "loot_table": false }, "item_group": "item",
+      "blockstate": { "forms": [["yuushya:extra_building_material/painter_gift_box"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "idol_gift_box",
+      "properties": {"lines": 1, "sound": "wool" },
+      "auto_generated": { "recipe": false, "loot_table": false }, "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/idol_gift_box"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "plain_gift_box",
+      "properties": {"lines": 0, "sound": "wool" },
+      "auto_generated": { "recipe": false, "loot_table": true }, "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/plain_gift_box"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "food_gift_box",
+      "properties": {"lines": 1, "sound": "wool" },
+      "auto_generated": { "recipe": false, "loot_table": false }, "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/food_gift_box"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "electrician_gift_box",
+      "properties": {"lines": 1, "sound": "wool" },
+      "auto_generated": { "recipe": false, "loot_table": false }, "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/electrician_gift_box"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "businessman_gift_box",
+      "properties": {"lines": 1, "sound": "wool" },
+      "auto_generated": { "recipe": false, "loot_table": false }, "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/businessman_gift_box"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "gardener_gift_box",
+      "properties": {"lines": 1, "sound": "wool" },
+      "auto_generated": { "recipe": false, "loot_table": false }, "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/gardener_gift_box"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "carver_gift_box",
+      "properties": {"lines": 1, "sound": "wool" },
+      "auto_generated": { "recipe": false, "loot_table": false }, "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/carver_gift_box"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "carpenter_gift_box",
+      "properties": {"lines": 1, "sound": "wool" },
+      "auto_generated": { "recipe": false, "loot_table": false }, "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/carpenter_gift_box"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "cook_gift_box",
+      "properties": {"lines": 1, "sound": "wool" },
+      "auto_generated": { "recipe": false, "loot_table": false }, "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/cook_gift_box"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "cat_lover_gift_box",
+      "properties": {"lines": 1, "sound": "wool" },
+      "auto_generated": { "recipe": false, "loot_table": false }, "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/cat_lover_gift_box"]]}
+    },
+
+
+    {
+      "class_type": "FixedBlock",
+      "name": "package_0",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/package1"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "package_1",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/package_a1"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "big_package",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/package2"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "unboxed_package",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/package_open"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "uncovered_package",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/package_uncovered"]]}
+    },
+
+
+    {
+      "class_type": "TranslucentBlock",
+      "name": "glass_rainshed",
+      "render_type": "translucent",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/air_rainshed"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "big_oak_plank",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/big_plank"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "big_acacia_plank",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/big_plank_"]]}
+    },
+
+    {
+      "class_type": "ChairBlock",
+      "name": "display_cabinet",
+      "item_group": "furniture",
+      "item_model": "yuushya:extra_building_material/display_cabinet_none",
+      "blockstate": { "forms": [["yuushya:extra_building_material/display_cabinet_left","yuushya:extra_building_material/display_cabinet_middle","yuushya:extra_building_material/display_cabinet_right","yuushya:extra_building_material/display_cabinet_none"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "guitar",
+      "properties": {"lines": 1},
+      "auto_generated": { "collision": "bound" }, "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/guitar"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "vinyl_record_red",
+      "auto_generated": { "collision": "bound" }, "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/vinyl_record_red"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "vinyl_record_yellow",
+      "auto_generated": { "collision": "bound" }, "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/vinyl_record_yellow"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "vinyl_record_cyan",
+      "auto_generated": { "collision": "bound" }, "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/vinyl_record_cyan"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "vinyl_record_white",
+      "auto_generated": { "collision": "bound" }, "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/vinyl_record_white"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "painting_0",
+      "item_group": "furniture",
+      "properties": {"lines": 1, "has_collision": false},
+      "blockstate": { "forms": [["yuushya:extra_building_material/painting/p0"],["yuushya:extra_building_material/painting/m0"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "painting_1",
+      "item_group": "furniture",
+      "properties": {"lines": 1, "has_collision": false},
+      "blockstate": { "forms": [["yuushya:extra_building_material/painting/p1"],["yuushya:extra_building_material/painting/m1"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "painting_2",
+      "item_group": "furniture",
+      "properties": {"lines": 1, "has_collision": false},
+      "blockstate": { "forms": [["yuushya:extra_building_material/painting/p2"],["yuushya:extra_building_material/painting/m2"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "painting_3",
+      "item_group": "furniture",
+      "properties": {"lines": 1, "has_collision": false},
+      "blockstate": { "forms": [["yuushya:extra_building_material/painting/p3"],["yuushya:extra_building_material/painting/m3"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "painting_4",
+      "item_group": "furniture",
+      "properties": {"lines": 1, "has_collision": false},
+      "blockstate": { "forms": [["yuushya:extra_building_material/painting/p4"],["yuushya:extra_building_material/painting/m4"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "painting_5",
+      "item_group": "furniture",
+      "properties": {"lines": 1, "has_collision": false},
+      "blockstate": { "forms": [["yuushya:extra_building_material/painting/p5"],["yuushya:extra_building_material/painting/m5"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "painting_6",
+      "item_group": "furniture",
+      "properties": {"lines": 1, "has_collision": false},
+      "blockstate": { "forms": [["yuushya:extra_building_material/painting/p6"],["yuushya:extra_building_material/painting/m6"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "painting_7",
+      "item_group": "furniture",
+      "properties": {"lines": 1, "has_collision": false},
+      "blockstate": { "forms": [["yuushya:extra_building_material/painting/p7"],["yuushya:extra_building_material/painting/m7"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "painting_8",
+      "item_group": "furniture",
+      "properties": {"lines": 1, "has_collision": false},
+      "blockstate": { "forms": [["yuushya:extra_building_material/painting/p8"],["yuushya:extra_building_material/painting/m8"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "painting_9",
+      "item_group": "furniture",
+      "properties": {"lines": 1, "has_collision": false},
+      "blockstate": { "forms": [["yuushya:extra_building_material/painting/p9"],["yuushya:extra_building_material/painting/m9"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "painting_10",
+      "item_group": "furniture",
+      "properties": {"lines": 1, "has_collision": false},
+      "blockstate": { "forms": [["yuushya:extra_building_material/painting/p10"],["yuushya:extra_building_material/painting/m10"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "painting_11",
+      "item_group": "furniture",
+      "properties": {"has_collision": false},
+      "blockstate": { "forms": [["yuushya:extra_building_material/painting/p11"]]}
+    },
+
+    {"name": "~Fabric_纺织物", "class_type": "_comment" },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "hanger_rod",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/hangerm"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "hanger_rod_rail",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/clothes_rail"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "hanged_cloth",
+      "auto_generated": { "blockstate": false }, "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/hangerm_cloth"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "hanged_clothes",
+      "auto_generated": { "blockstate": false }, "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/hangerm_clothes"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "clothes_showcase",
+      "auto_generated": { "blockstate": false }, "item_group": "fabric",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/hanging_clothes_1"],["yuushya:extra_building_material/hanging_clothes_1_"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "hanging_clothes_staff",
+      "auto_generated": { "blockstate": false }, "item_group": "fabric",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/hanging_clothes_staff"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "hanged_things",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/hangerm_both"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "hanged_things_",
+      "auto_generated": { "blockstate": true }, "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/hangerm_both_"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "hanger_rod_anchor",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/hanger_pin"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "ceiling_hanger_rod_anchor",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/hanger_pin_vertical"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_clothes_0",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_0"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_clothes_1",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_1"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_clothes_2",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_2"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_clothes_3",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_3"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_clothes_4",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_4"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_clothes_5",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_5"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_clothes_6",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_6"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_clothes_7",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_7"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_clothes_8",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_8"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_clothes_9",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_9"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_clothes_10",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_10"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_clothes_11",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_11"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_clothes_12",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_12"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_clothes_13",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_13"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_clothes_14",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_14"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_clothes_15",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_15"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_clothes_16",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/clothes_16"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_cloth_0",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/cloth_0"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_cloth_1",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/cloth_1"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_cloth_2",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/cloth_2"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_cloth_3",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/mounted_clothes/cloth_3"]]}
+    },
+
+
+    {
+      "class_type": "DecoBlock",
+      "name": "umbrella_red",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/umbrella_red"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "umbrella_blue",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/umbrella_blue"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "umbrella_orange",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/umbrella_orange"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "rain_shed_0",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/rain_shed/rain_shed_0"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "rain_shed_1",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/rain_shed/rain_shed_1"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "rain_shed_2",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/rain_shed/rain_shed_2"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "rain_shed_3",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/rain_shed/rain_shed_3"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "rain_shed_4",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/rain_shed/rain_shed_4"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "rain_shed_5",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/rain_shed/rain_shed_5"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "rain_shed_6",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/rain_shed/rain_shed_6"]]}
+    },
+
+    {
+      "class_type": "ChairBlock",
+      "name": "lengthened_rain_shed_0",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/wide_rainshed_alt/ori_left","yuushya:extra_building_material/wide_rainshed_alt/ori_middle","yuushya:extra_building_material/wide_rainshed_alt/ori_right","yuushya:extra_building_material/wide_rainshed_alt/ori_none"]]}
+    },
+
+    {
+      "class_type": "ChairBlock",
+      "name": "lengthened_rain_shed_1",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/wide_rainshed_alt/1_left","yuushya:extra_building_material/wide_rainshed_alt/1_middle","yuushya:extra_building_material/wide_rainshed_alt/1_right","yuushya:extra_building_material/wide_rainshed_alt/1_none"]]}
+    },
+
+    {
+      "class_type": "ChairBlock",
+      "name": "lengthened_rain_shed_2",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/wide_rainshed_alt/2_left","yuushya:extra_building_material/wide_rainshed_alt/2_middle","yuushya:extra_building_material/wide_rainshed_alt/2_right","yuushya:extra_building_material/wide_rainshed_alt/2_none"]]}
+    },
+
+    {
+      "class_type": "ChairBlock",
+      "name": "lengthened_rain_shed_3",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/wide_rainshed_alt/3_left","yuushya:extra_building_material/wide_rainshed_alt/3_middle","yuushya:extra_building_material/wide_rainshed_alt/3_right","yuushya:extra_building_material/wide_rainshed_alt/3_none"]]}
+    },
+
+    {
+      "class_type": "ChairBlock",
+      "name": "lengthened_rain_shed_6",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/wide_rainshed_alt/6_left","yuushya:extra_building_material/wide_rainshed_alt/6_middle","yuushya:extra_building_material/wide_rainshed_alt/6_right","yuushya:extra_building_material/wide_rainshed_alt/6_none"]]}
+    },
+
+    {
+      "class_type": "ChairBlock",
+      "name": "lengthened_rain_shed_7",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/wide_rainshed_alt/7_left","yuushya:extra_building_material/wide_rainshed_alt/7_middle","yuushya:extra_building_material/wide_rainshed_alt/7_right","yuushya:extra_building_material/wide_rainshed_alt/7_none"]]}
+    },
+
+    {
+      "class_type": "ChairBlock",
+      "name": "lengthened_rain_shed_8",
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/wide_rainshed_alt/8_left","yuushya:extra_building_material/wide_rainshed_alt/8_middle","yuushya:extra_building_material/wide_rainshed_alt/8_right","yuushya:extra_building_material/wide_rainshed_alt/8_none"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "carpet_0",
+      "item_group": "fabric",
+      "properties": {"lines": 0, "sound": "wool" },
+      "blockstate": { "forms": [["yuushya:extra_building_material/carpet_block/round_carpet_0"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "carpet_1",
+      "item_group": "fabric",
+      "properties": {"lines": 0, "sound": "wool" },
+      "blockstate": { "forms": [["yuushya:extra_building_material/carpet_block/round_carpet_1"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "carpet_2",
+      "item_group": "fabric",
+      "properties": {"lines": 0, "sound": "wool" },
+      "blockstate": { "forms": [["yuushya:extra_building_material/carpet_block/round_carpet_2"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "carpet_3",
+      "item_group": "fabric",
+      "properties": {"lines": 0, "sound": "wool" },
+      "blockstate": { "forms": [["yuushya:extra_building_material/carpet_block/round_carpet_3"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "carpet_4",
+      "item_group": "fabric",
+      "properties": {"lines": 0, "sound": "wool" },
+      "blockstate": { "forms": [["yuushya:extra_building_material/carpet_block/round_carpet_4"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "carpet_5",
+      "item_group": "fabric",
+      "properties": {"lines": 0, "sound": "wool" },
+      "blockstate": { "forms": [["yuushya:extra_building_material/carpet_block/round_carpet_5"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "carpet_6",
+      "item_group": "fabric",
+      "properties": {"lines": 0, "sound": "wool" },
+      "blockstate": { "forms": [["yuushya:extra_building_material/carpet_block/round_carpet_6"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "carpet_7",
+      "item_group": "fabric",
+      "properties": {"lines": 0, "sound": "wool" },
+      "blockstate": { "forms": [["yuushya:extra_building_material/carpet_block/round_carpet_7"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "carpet_8",
+      "item_group": "fabric",
+      "properties": {"lines": 0, "sound": "wool" },
+      "blockstate": { "forms": [["yuushya:extra_building_material/carpet_block/round_carpet_8"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "carpet_9",
+      "item_group": "fabric",
+      "properties": {"lines": 0, "sound": "wool" },
+      "blockstate": { "forms": [["yuushya:extra_building_material/carpet_block/round_carpet_9"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "carpet_10",
+      "item_group": "fabric",
+      "properties": {"lines": 0, "sound": "wool" },
+      "blockstate": { "forms": [["yuushya:extra_building_material/carpet_block/round_carpet_10"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "carpet_11",
+      "item_group": "fabric",
+      "properties": {"lines": 0, "sound": "wool" },
+      "blockstate": { "forms": [["yuushya:extra_building_material/carpet_block/round_carpet_11"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "carpet_12",
+      "item_group": "fabric",
+      "properties": {"lines": 0, "sound": "wool" },
+      "blockstate": { "forms": [["yuushya:extra_building_material/carpet_block/round_carpet_12"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "carpet_13",
+      "item_group": "fabric",
+      "properties": {"lines": 0, "sound": "wool" },
+      "blockstate": { "forms": [["yuushya:extra_building_material/carpet_block/round_carpet_13"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "carpet_14",
+      "item_group": "fabric",
+      "properties": {"lines": 0, "sound": "wool" },
+      "blockstate": { "forms": [["yuushya:extra_building_material/carpet_block/round_carpet_14"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "carpet_15",
+      "item_group": "fabric",
+      "properties": {"lines": 0, "sound": "wool" },
+      "blockstate": { "forms": [["yuushya:extra_building_material/carpet_block/round_carpet_15"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "bed_frame_0",
+      "properties": {"lines": 1},
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/bed_frame0"],["yuushya:extra_building_material/bed_frame0_"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "bed_frame_1",
+      "properties": {"lines": 1},
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/bed_frame1"],["yuushya:extra_building_material/bed_frame1_"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "bed_frame_2",
+      "properties": {"lines": 1},
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/bed_frame2"],["yuushya:extra_building_material/bed_frame2_"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "bed_frame_3",
+      "properties": {"lines": 1},
+      "item_group": "fabric",
+      "blockstate": { "forms": [["yuushya:extra_building_material/bed_frame3"],["yuushya:extra_building_material/bed_frame3_"]]}
+    },
+
+
+    {
+      "class_type": "IntactBlock",
+      "name": "inner_bed_0",
+      "item_group": "fabric",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/bed/bed0"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "inner_bed_1",
+      "item_group": "fabric",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/bed/bed1"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "inner_bed_2",
+      "item_group": "fabric",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/bed/bed2"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "inner_bed_3",
+      "item_group": "fabric",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/bed/bed3"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "inner_bed_4",
+      "item_group": "fabric",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/bed/bed4"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "inner_bed_5",
+      "item_group": "fabric",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/bed/bed5"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "inner_bed_6",
+      "item_group": "fabric",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/bed/bed6"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "inner_bed_7",
+      "item_group": "fabric",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/bed/bed7"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "inner_bed_8",
+      "item_group": "fabric",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/bed/bed8"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "inner_bed_9",
+      "item_group": "fabric",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/bed/bed9"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "inner_bed_10",
+      "item_group": "fabric",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/bed/bed10"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "inner_bed_11",
+      "item_group": "fabric",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/bed/bed11"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "inner_bed_12",
+      "item_group": "fabric",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/bed/bed12"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "inner_bed_13",
+      "item_group": "fabric",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/bed/bed13"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "inner_bed_14",
+      "item_group": "fabric",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/bed/bed14"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "inner_bed_15",
+      "item_group": "fabric",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/bed/bed15"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "inner_bed_16",
+      "item_group": "fabric",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/bed/bed16"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "inner_bed_17",
+      "item_group": "fabric",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/bed/bed17"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "inner_bed_18",
+      "item_group": "fabric",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/bed/bed18"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "inner_bed_19",
+      "item_group": "fabric",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/bed/bed19"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "inner_bed_20",
+      "item_group": "fabric",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/bed/bed20"]]}
+    }
+  ]
+}

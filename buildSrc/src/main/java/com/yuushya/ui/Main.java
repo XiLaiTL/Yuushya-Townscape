@@ -1,5 +1,7 @@
 package com.yuushya.ui;
 
+import com.yuushya.collision.CollisionFileCreator;
+import com.yuushya.datagen.JarCreator;
 import com.yuushya.utils.ImageSizeReader;
 
 import javax.swing.*;
@@ -15,12 +17,40 @@ import java.util.List;
 
 public class Main {
 
-
     public static void main(String[] args){
+        String version = "1.16.5";
+        String path = ".";
+        boolean create = false;
         for (int i = 0; i < args.length; i++){
             if ("-proposal_collision".equals(args[i])){
                 Mode.proposalCollision=Mode.registerTableType("collision");
+                continue;
             }
+            if ("-o".equals(args[i])||"--out".equals(args[i])){
+                if (args.length>=i+2){
+                    path = args[i+1];
+                }
+                i++;
+                create = true;
+                continue;
+            }
+            if ("-4".equals(args[i])||"--for".equals(args[i])){
+                if (args.length>=i+2){
+                    version = args[i+1];
+                }
+                i++;
+                create = true;
+            }
+        }
+        if(create){
+            System.out.println("Begin Creating");
+            Path basePath = Path.of(path);
+            System.out.println(basePath.toAbsolutePath().toString());
+            JarCreator jarCreator = new JarCreator("yuushya", basePath);
+            jarCreator.createJson(version);
+            CollisionFileCreator collisionFileCreator=new CollisionFileCreator("yuushya", basePath);
+            collisionFileCreator.createJson();
+            System.out.println("Create Success");
         }
 
         JFrame.setDefaultLookAndFeelDecorated(true);

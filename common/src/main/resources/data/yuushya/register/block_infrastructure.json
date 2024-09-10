@@ -1,0 +1,497 @@
+{
+  "block": [
+    {"name": "~Infrastructure_基础设施", "class_type": "_comment" },
+
+
+
+
+    {
+      "class_type": "FlowBlock",
+      "name": "burglar_mesh",
+      "auto_generated": {"collision": "detail" }, "item_group": "infrastructure",
+      "item_model": "yuushya:extra_building_material/burglar_mesh_none",
+      "blockstate": { "forms": [["yuushya:extra_building_material/burglar_mesh_top", "yuushya:extra_building_material/burglar_mesh_middle", "yuushya:extra_building_material/burglar_mesh_bottom", "yuushya:extra_building_material/burglar_mesh_none"]]
+      }
+    },
+
+    {
+      "class_type": "FlowBlock",
+      "name": "iron_burglar_mesh",
+      "auto_generated": {"collision": "detail" }, "item_group": "infrastructure",
+      "item_model": "yuushya:extra_building_material/iron_burglar_mesh_none",
+      "blockstate": { "forms": [["yuushya:extra_building_material/iron_burglar_mesh_top", "yuushya:extra_building_material/iron_burglar_mesh_middle", "yuushya:extra_building_material/iron_burglar_mesh_bottom", "yuushya:extra_building_material/iron_burglar_mesh_middle"]]
+      }
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "steel_structure",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/steel_structure"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "steel_structure_horizontal",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/steel_structure_vertical"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "steel_structure_vertical",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/steel_structure_horizontal"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "steel_structure_big_vertical",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/steel_structure_big_vertical"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "steel_structure_big_horizontal",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/steel_structure_big_horizontal"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "crate",
+      "properties": {"sound": "wood"},
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/crate"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "crate_horizontal",
+      "properties": {"sound": "wood"},
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/crate_horizontal"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "crate_vertical",
+      "properties": {"sound": "wood"},
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/crate_vertical"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "exit_sign",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/exit_sign"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "exit_sign_sym",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/exit_sign_sym"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "stone_pier",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/stone_pier"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "safe",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/safe"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "unlocked_safe",
+      "properties": {"lines": 1},
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/safe_0"],["yuushya:extra_building_material/safe_1"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "tall_safe",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/tall_safe"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "drain",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/well"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "drainage_channel",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/well_s"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "drainage_channel_",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/road/fix1"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "scroll_door_0",
+      "properties": {"lines": 0},
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/scrolldoor"],["yuushya:extra_building_material/scrolldoor_lock"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "scroll_door_1",
+      "properties": {"lines": 0},
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/scrolldoor2"],["yuushya:extra_building_material/scrolldoor2_lock"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "recycle_bin_0",
+      "usage": {"cycle_forms": [0,1],"sound": "block.metal.hit"},
+      "properties": {"lines": 1},
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/dustbin1"],["yuushya:extra_building_material/dustbin1_open"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "recycle_bin_1",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/dustbin_5"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "recycle_bin_2",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/recycle_bin_0"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "recycle_bin_3",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/recycle_bin_1"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "recycle_bin_4",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/recycle_bin_2"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "recycle_bin_5",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/recycle_bin_3"]]}
+    },
+
+
+
+    {
+      "class_type": "FixedBlock",
+      "name": "fire_hydrant",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/fire_hydrant"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "fire_extinguisher",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/fire_extinguisher"]]}
+    },
+
+
+
+    {
+      "class_type": "DecoBlock",
+      "name": "cctv_camera",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/cctv_camera"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "ceiling_cctv_camera",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/cctv_camera_ceiling"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "spiral_razor_wire",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/spiral_razor_wire"]]}
+    },
+
+
+
+    {
+      "class_type": "IntactBlock",
+      "name": "power_house",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/power_house"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "rusty_power_house",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/watt_meter"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "power_distributor",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/distributor"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "utility_pole",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/utility_pole"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "horizontal_utility_pole",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/utility_pole_horizontal"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "utility_pole_cross",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/utility_pole_horizontal_"]]}
+    },
+
+    {
+      "class_type": "CableBlock",
+      "name": "wire",
+      "properties": {"lines": 1},
+      "auto_generated": { "collision": "block","item_model": true}, "item_group": "infrastructure",
+      "item_model": "yuushya:extra_building_material/wire/0",
+      "blockstate": { "models": ["yuushya:extra_building_material/wire/0"]}
+    },
+
+    {
+      "class_type": "CablePostBlock",
+      "name": "deployed_utility_service_drop",
+      "properties": {"lines": 1},
+      "item_group": "infrastructure",
+      "blockstate": {
+        "forms": [["yuushya:extra_building_material/utility_service_drop_d"]]}
+    },
+
+    {
+      "class_type": "CablePostBlock",
+      "name": "mounted_utility_service_drop",
+      "properties": {"lines": 1},
+      "item_group": "infrastructure",
+      "blockstate": {
+        "forms": [["yuushya:extra_building_material/utility_service_drop_s"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "voltage_transformer",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/vol_transformer"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "basketball_net",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/basketball_net"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "basketball_hoop_head",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/basketball_hoop_head"]]}
+    },
+
+
+    {
+      "class_type": "IntactBlock",
+      "name": "generator",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/generator"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "ventilator",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/ventilator"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "ventilator_outer_part",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/ventilator_"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "rusty_ventilator",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/ventilator_w"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "rusty_ventilator_outer_part",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/ventilator_w_"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "platform_metal",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/platform_metal"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "satellite_dish",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/satellite_dish"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "soot_pipe",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/soot_pipe"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "soot_pipe_horizontal",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/soot_pipe_horizontal"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "soot_pipe_bottom",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/soot_pipe_bottom"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "soot_pipe_top",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/soot_pipe_top"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "soot_pipe_top_corner",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/soot_pipe_top_sym"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "soot_pipe_exhaust",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/soot_pipe_top_sym_"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "pipe_vertical",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/pipe/pipe_vertical"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "pipe_horizontal",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/pipe/pipe_horizontal"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_pipe_vertical",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/pipe/mounted_pipe_vertical"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_pipe_horizontal",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/pipe/mounted_pipe_horizontal"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "pipe_corner_bottom_left",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/pipe/pipe_corner_bottom_left"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "pipe_corner_bottom_right",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/pipe/pipe_corner_bottom_right"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "pipe_corner_top_left",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/pipe/pipe_corner_top_left"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "pipe_corner_top_right",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/pipe/pipe_corner_top_right"]]}
+    },
+
+
+    {
+      "class_type": "DecoBlock",
+      "name": "pipe_hub",
+      "properties": {"lines": 1},
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/pipe/pipe_hub_0"],["yuushya:extra_building_material/pipe/pipe_hub_1"],["yuushya:extra_building_material/pipe/pipe_hub_2"],["yuushya:extra_building_material/pipe/pipe_hub_3"]]}
+    }
+  ]
+}

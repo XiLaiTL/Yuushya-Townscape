@@ -1,0 +1,1221 @@
+{
+  "block": [
+    {"name": "~Window_窗框", "class_type": "_comment" },
+
+    {
+      "class_type": "WindowsBlock",
+      "name": "white_windows_0",
+      "auto_generated": {"blockstate": false }, "item_group": "window",
+      "properties": {"has_collision": true },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/white_windows",
+      "blockstate": {
+        "kit": "pole_line",
+        "forms": [[
+          "yuushya:extra_building_material/windows_frame_model/white_windows_nsw", "yuushya:extra_building_material/windows_frame_model/white_windows_ns", "yuushya:extra_building_material/windows_frame_model/white_windows_nes", "yuushya:extra_building_material/windows_frame_model/white_windows_nesw",
+          "yuushya:extra_building_material/windows_frame_model/white_windows_nw", "yuushya:extra_building_material/windows_frame_model/white_windows_n", "yuushya:extra_building_material/windows_frame_model/white_windows_ne", "yuushya:extra_building_material/windows_frame_model/white_windows_new",
+          "yuushya:extra_building_material/windows_frame_model/white_windows_w", "yuushya:extra_building_material/windows_frame_model/white_windows_none", "yuushya:extra_building_material/windows_frame_model/white_windows_e", "yuushya:extra_building_material/windows_frame_model/white_windows_ew",
+          "yuushya:extra_building_material/windows_frame_model/white_windows_sw", "yuushya:extra_building_material/windows_frame_model/white_windows_s", "yuushya:extra_building_material/windows_frame_model/white_windows_es", "yuushya:extra_building_material/windows_frame_model/white_windows_esw"
+        ]]
+      }
+    },
+
+    {
+      "class_type": "WindowsBlock",
+      "name": "white_windows_1",
+      "auto_generated": {"blockstate": true}, "item_group": "window",
+      "properties": {"has_collision": true },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/white_windows",
+      "blockstate": {
+        "kit": "pole_line",
+        "forms": [[
+          "yuushya:extra_building_material/windows_frame_model/white_windows_nsw", "yuushya:extra_building_material/windows_frame_model/white_windows_ns", "yuushya:extra_building_material/windows_frame_model/white_windows_nes", "yuushya:extra_building_material/windows_frame_model/white_windows_nesw",
+          "yuushya:extra_building_material/windows_frame_model/white_windows_nw", "yuushya:extra_building_material/windows_frame_model/white_windows_n", "yuushya:extra_building_material/windows_frame_model/white_windows_ne", "yuushya:extra_building_material/windows_frame_model/white_windows_new",
+          "yuushya:extra_building_material/windows_frame_model/white_windows_w", "yuushya:extra_building_material/windows_frame_model/white_windows_none", "yuushya:extra_building_material/windows_frame_model/white_windows_e", "yuushya:extra_building_material/windows_frame_model/white_windows_ew",
+          "yuushya:extra_building_material/windows_frame_model/white_windows_sw", "yuushya:extra_building_material/windows_frame_model/white_windows_s", "yuushya:extra_building_material/windows_frame_model/white_windows_es", "yuushya:extra_building_material/windows_frame_model/white_windows_esw"
+        ]]
+      }
+    },
+
+    {
+      "class_type": "WindowsBlock",
+      "name": "white_windows_2",
+      "auto_generated": {"blockstate": true}, "item_group": "window",
+      "properties": {"has_collision": true },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/white_windows",
+      "blockstate": {
+        "kit": "pole_line",
+        "forms": [[
+          "yuushya:extra_building_material/windows_frame_model/white_windows_nsw", "yuushya:extra_building_material/windows_frame_model/white_windows_ns", "yuushya:extra_building_material/windows_frame_model/white_windows_nes", "yuushya:extra_building_material/windows_frame_model/white_windows_nesw",
+          "yuushya:extra_building_material/windows_frame_model/white_windows_nw", "yuushya:extra_building_material/windows_frame_model/white_windows_n", "yuushya:extra_building_material/windows_frame_model/white_windows_ne", "yuushya:extra_building_material/windows_frame_model/white_windows_new",
+          "yuushya:extra_building_material/windows_frame_model/white_windows_w", "yuushya:extra_building_material/windows_frame_model/white_windows_none", "yuushya:extra_building_material/windows_frame_model/white_windows_e", "yuushya:extra_building_material/windows_frame_model/white_windows_ew",
+          "yuushya:extra_building_material/windows_frame_model/white_windows_sw", "yuushya:extra_building_material/windows_frame_model/white_windows_s", "yuushya:extra_building_material/windows_frame_model/white_windows_es", "yuushya:extra_building_material/windows_frame_model/white_windows_esw"
+        ]]
+      }
+    },
+
+    {
+      "class_type": "FlowBlock",
+      "name": "white_windows_corner_0",
+      "render_type": "translucent",
+      "auto_generated": { "collision": "bound" }, "item_group": "window",
+      "item_model": "yuushya:extra_building_material/windows_frame_model/white_windows_corner_none",
+      "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame_model/white_windows_corner_top", "yuushya:extra_building_material/windows_frame_model/white_windows_corner_middle", "yuushya:extra_building_material/windows_frame_model/white_windows_corner_bottom", "yuushya:extra_building_material/windows_frame_model/white_windows_corner_none"]]
+      }
+    },
+
+    {
+      "class_type": "FlowBlock",
+      "name": "white_windows_corner_1",
+      "render_type": "translucent",
+      "auto_generated": { "collision": "bound" }, "item_group": "window",
+      "item_model": "yuushya:extra_building_material/windows_frame_model/white_windows_corner_none",
+      "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame_model/white_windows_corner_top", "yuushya:extra_building_material/windows_frame_model/white_windows_corner_middle", "yuushya:extra_building_material/windows_frame_model/white_windows_corner_bottom", "yuushya:extra_building_material/windows_frame_model/white_windows_corner_none"]]
+      }
+    },
+
+    {
+      "class_type": "WindowsBlock",
+      "name": "white_windows_deviated_0",
+      "auto_generated": {"blockstate": true}, "item_group": "window",
+      "properties": {"has_collision": false },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/white_windows_deviated_0",
+      "blockstate": {
+        "kit": "pole_line",
+        "forms": [[
+          "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_nsw", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_ns", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_nes", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_nesw",
+          "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_nw", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_n", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_ne", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_new",
+          "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_w", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_none", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_e", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_ew",
+          "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_sw", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_s", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_es", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_0_esw"
+        ]]
+      }
+    },
+
+    {
+      "class_type": "WindowsBlock",
+      "name": "white_windows_deviated_1",
+      "auto_generated": {"blockstate": true}, "item_group": "window",
+      "properties": {"has_collision": false },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/white_windows_deviated_1",
+      "blockstate": {
+        "kit": "pole_line",
+        "forms": [[
+          "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_nsw", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_ns", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_nes", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_nesw",
+          "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_nw", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_n", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_ne", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_new",
+          "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_w", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_none", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_e", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_ew",
+          "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_sw", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_s", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_es", "yuushya:extra_building_material/windows_frame_model/white_windows_deviated_1_esw"
+        ]]
+      }
+    },
+
+    {
+      "class_type": "ChairBlock",
+      "name": "white_windows_open_0",
+      "item_group": "window",
+      "properties": {"has_collision": false },
+      "item_model": "yuushya:extra_building_material/windows_frame/white_windows_open_none",
+      "render_type": "translucent",
+      "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/white_windows_open_left","yuushya:extra_building_material/windows_frame/white_windows_open_middle","yuushya:extra_building_material/windows_frame/white_windows_open_right","yuushya:extra_building_material/windows_frame/white_windows_open_none"]]}
+    },
+
+    {
+      "class_type": "ChairBlock",
+      "name": "white_windows_open_1",
+      "item_group": "window",
+      "properties": {"has_collision": false },
+      "item_model": "yuushya:extra_building_material/windows_frame/white_windows_open_none",
+      "render_type": "translucent",
+      "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/white_windows_open_left","yuushya:extra_building_material/windows_frame/white_windows_open_middle","yuushya:extra_building_material/windows_frame/white_windows_open_right","yuushya:extra_building_material/windows_frame/white_windows_open_none"]]}
+    },
+
+    {
+      "class_type": "FlowBlock",
+      "name": "white_windows_diagonal",
+      "item_group": "window",
+      "item_model": "yuushya:extra_building_material/windows_frame/white_windows_diagonal_none",
+      "render_type": "translucent",
+      "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/white_windows_diagonal_top", "yuushya:extra_building_material/windows_frame/white_windows_diagonal_middle", "yuushya:extra_building_material/windows_frame/white_windows_diagonal_bottom", "yuushya:extra_building_material/windows_frame/white_windows_diagonal_none"]]
+      }
+    },
+
+    {
+      "class_type": "WindowsBlock",
+      "name": "red_windows_0",
+      "auto_generated": {"blockstate": true}, "item_group": "window",
+      "properties": {"has_collision": true },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/red_windows",
+      "blockstate": {
+        "kit": "pole_line",
+        "forms": [[
+          "yuushya:extra_building_material/windows_frame_model/red_windows_nsw", "yuushya:extra_building_material/windows_frame_model/red_windows_ns", "yuushya:extra_building_material/windows_frame_model/red_windows_nes", "yuushya:extra_building_material/windows_frame_model/red_windows_nesw",
+          "yuushya:extra_building_material/windows_frame_model/red_windows_nw", "yuushya:extra_building_material/windows_frame_model/red_windows_n", "yuushya:extra_building_material/windows_frame_model/red_windows_ne", "yuushya:extra_building_material/windows_frame_model/red_windows_new",
+          "yuushya:extra_building_material/windows_frame_model/red_windows_w", "yuushya:extra_building_material/windows_frame_model/red_windows_none", "yuushya:extra_building_material/windows_frame_model/red_windows_e", "yuushya:extra_building_material/windows_frame_model/red_windows_ew",
+          "yuushya:extra_building_material/windows_frame_model/red_windows_sw", "yuushya:extra_building_material/windows_frame_model/red_windows_s", "yuushya:extra_building_material/windows_frame_model/red_windows_es", "yuushya:extra_building_material/windows_frame_model/red_windows_esw"
+        ]]
+      }
+    },
+
+    {
+      "class_type": "WindowsBlock",
+      "name": "red_windows_1",
+      "auto_generated": {"blockstate": true}, "item_group": "window",
+      "properties": {"has_collision": true },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/red_windows",
+      "blockstate": {
+        "kit": "pole_line",
+        "forms": [[
+          "yuushya:extra_building_material/windows_frame_model/red_windows_nsw", "yuushya:extra_building_material/windows_frame_model/red_windows_ns", "yuushya:extra_building_material/windows_frame_model/red_windows_nes", "yuushya:extra_building_material/windows_frame_model/red_windows_nesw",
+          "yuushya:extra_building_material/windows_frame_model/red_windows_nw", "yuushya:extra_building_material/windows_frame_model/red_windows_n", "yuushya:extra_building_material/windows_frame_model/red_windows_ne", "yuushya:extra_building_material/windows_frame_model/red_windows_new",
+          "yuushya:extra_building_material/windows_frame_model/red_windows_w", "yuushya:extra_building_material/windows_frame_model/red_windows_none", "yuushya:extra_building_material/windows_frame_model/red_windows_e", "yuushya:extra_building_material/windows_frame_model/red_windows_ew",
+          "yuushya:extra_building_material/windows_frame_model/red_windows_sw", "yuushya:extra_building_material/windows_frame_model/red_windows_s", "yuushya:extra_building_material/windows_frame_model/red_windows_es", "yuushya:extra_building_material/windows_frame_model/red_windows_esw"
+        ]]
+      }
+    },
+
+    {
+      "class_type": "WindowsBlock",
+      "name": "red_windows_2",
+      "auto_generated": {"blockstate": true}, "item_group": "window",
+      "properties": {"has_collision": true },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/red_windows",
+      "blockstate": {
+        "kit": "pole_line",
+        "forms": [[
+          "yuushya:extra_building_material/windows_frame_model/red_windows_nsw", "yuushya:extra_building_material/windows_frame_model/red_windows_ns", "yuushya:extra_building_material/windows_frame_model/red_windows_nes", "yuushya:extra_building_material/windows_frame_model/red_windows_nesw",
+          "yuushya:extra_building_material/windows_frame_model/red_windows_nw", "yuushya:extra_building_material/windows_frame_model/red_windows_n", "yuushya:extra_building_material/windows_frame_model/red_windows_ne", "yuushya:extra_building_material/windows_frame_model/red_windows_new",
+          "yuushya:extra_building_material/windows_frame_model/red_windows_w", "yuushya:extra_building_material/windows_frame_model/red_windows_none", "yuushya:extra_building_material/windows_frame_model/red_windows_e", "yuushya:extra_building_material/windows_frame_model/red_windows_ew",
+          "yuushya:extra_building_material/windows_frame_model/red_windows_sw", "yuushya:extra_building_material/windows_frame_model/red_windows_s", "yuushya:extra_building_material/windows_frame_model/red_windows_es", "yuushya:extra_building_material/windows_frame_model/red_windows_esw"
+        ]]
+      }
+    },
+
+    {
+      "class_type": "FlowBlock",
+      "name": "red_windows_corner_0",
+      "render_type": "translucent",
+      "auto_generated": { "collision": "bound" }, "item_group": "window",
+      "item_model": "yuushya:extra_building_material/windows_frame_model/red_windows_corner_none",
+      "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame_model/red_windows_corner_top", "yuushya:extra_building_material/windows_frame_model/red_windows_corner_middle", "yuushya:extra_building_material/windows_frame_model/red_windows_corner_bottom", "yuushya:extra_building_material/windows_frame_model/red_windows_corner_none"]]
+      }
+    },
+
+    {
+      "class_type": "FlowBlock",
+      "name": "red_windows_corner_1",
+      "render_type": "translucent",
+      "auto_generated": { "collision": "bound" }, "item_group": "window",
+      "item_model": "yuushya:extra_building_material/windows_frame_model/red_windows_corner_none",
+      "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame_model/red_windows_corner_top", "yuushya:extra_building_material/windows_frame_model/red_windows_corner_middle", "yuushya:extra_building_material/windows_frame_model/red_windows_corner_bottom", "yuushya:extra_building_material/windows_frame_model/red_windows_corner_none"]]
+      }
+    },
+
+
+    {
+      "class_type": "WindowsBlock",
+      "name": "red_windows_deviated_0",
+      "auto_generated": {"blockstate": true}, "item_group": "window",
+      "properties": {"has_collision": false },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/red_windows_deviated_0",
+      "blockstate": {
+        "kit": "pole_line",
+        "forms": [[
+          "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_nsw", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_ns", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_nes", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_nesw",
+          "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_nw", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_n", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_ne", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_new",
+          "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_w", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_none", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_e", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_ew",
+          "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_sw", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_s", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_es", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_0_esw"
+        ]]
+      }
+    },
+
+    {
+      "class_type": "WindowsBlock",
+      "name": "red_windows_deviated_1",
+      "auto_generated": { "blockstate": true}, "item_group": "window",
+      "properties": {"has_collision": false },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/red_windows_deviated_1",
+      "blockstate": {
+        "kit": "pole_line",
+        "forms": [[
+          "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_nsw", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_ns", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_nes", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_nesw",
+          "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_nw", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_n", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_ne", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_new",
+          "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_w", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_none", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_e", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_ew",
+          "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_sw", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_s", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_es", "yuushya:extra_building_material/windows_frame_model/red_windows_deviated_1_esw"
+        ]]
+      }
+    },
+
+    {
+      "class_type": "ChairBlock",
+      "name": "red_windows_open_0",
+      "item_group": "window",
+      "properties": {"has_collision": false },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/red_windows_open_none",
+      "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/red_windows_open_left","yuushya:extra_building_material/windows_frame/red_windows_open_middle","yuushya:extra_building_material/windows_frame/red_windows_open_right","yuushya:extra_building_material/windows_frame/red_windows_open_none"]]}
+    },
+
+    {
+      "class_type": "ChairBlock",
+      "name": "red_windows_open_1",
+      "item_group": "window",
+      "properties": {"has_collision": false },
+      "item_model": "yuushya:extra_building_material/windows_frame/red_windows_open_none",
+      "render_type": "translucent",
+      "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/red_windows_open_left","yuushya:extra_building_material/windows_frame/red_windows_open_middle","yuushya:extra_building_material/windows_frame/red_windows_open_right","yuushya:extra_building_material/windows_frame/red_windows_open_none"]]}
+    },
+
+    {
+      "class_type": "FlowBlock",
+      "name": "red_windows_diagonal",
+      "item_group": "window",
+      "item_model": "yuushya:extra_building_material/windows_frame/red_windows_diagonal_none",
+      "render_type": "translucent",
+      "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/red_windows_diagonal_top", "yuushya:extra_building_material/windows_frame/red_windows_diagonal_middle", "yuushya:extra_building_material/windows_frame/red_windows_diagonal_bottom", "yuushya:extra_building_material/windows_frame/red_windows_diagonal_none"]]
+      }
+    },
+
+    {
+      "class_type": "WindowsBlock",
+      "name": "gray_windows_0",
+      "auto_generated": {"blockstate": true}, "item_group": "window",
+      "properties": {"has_collision": true },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/gray_windows",
+      "blockstate": {
+        "kit": "pole_line",
+        "forms": [[
+          "yuushya:extra_building_material/windows_frame_model/gray_windows_nsw", "yuushya:extra_building_material/windows_frame_model/gray_windows_ns", "yuushya:extra_building_material/windows_frame_model/gray_windows_nes", "yuushya:extra_building_material/windows_frame_model/gray_windows_nesw",
+          "yuushya:extra_building_material/windows_frame_model/gray_windows_nw", "yuushya:extra_building_material/windows_frame_model/gray_windows_n", "yuushya:extra_building_material/windows_frame_model/gray_windows_ne", "yuushya:extra_building_material/windows_frame_model/gray_windows_new",
+          "yuushya:extra_building_material/windows_frame_model/gray_windows_w", "yuushya:extra_building_material/windows_frame_model/gray_windows_none", "yuushya:extra_building_material/windows_frame_model/gray_windows_e", "yuushya:extra_building_material/windows_frame_model/gray_windows_ew",
+          "yuushya:extra_building_material/windows_frame_model/gray_windows_sw", "yuushya:extra_building_material/windows_frame_model/gray_windows_s", "yuushya:extra_building_material/windows_frame_model/gray_windows_es", "yuushya:extra_building_material/windows_frame_model/gray_windows_esw"
+        ]]
+      }
+    },
+
+    {
+      "class_type": "WindowsBlock",
+      "name": "gray_windows_1",
+      "auto_generated": {"blockstate": true}, "item_group": "window",
+      "properties": {"has_collision": true },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/gray_windows",
+      "blockstate": {
+        "kit": "pole_line",
+        "forms": [[
+          "yuushya:extra_building_material/windows_frame_model/gray_windows_nsw", "yuushya:extra_building_material/windows_frame_model/gray_windows_ns", "yuushya:extra_building_material/windows_frame_model/gray_windows_nes", "yuushya:extra_building_material/windows_frame_model/gray_windows_nesw",
+          "yuushya:extra_building_material/windows_frame_model/gray_windows_nw", "yuushya:extra_building_material/windows_frame_model/gray_windows_n", "yuushya:extra_building_material/windows_frame_model/gray_windows_ne", "yuushya:extra_building_material/windows_frame_model/gray_windows_new",
+          "yuushya:extra_building_material/windows_frame_model/gray_windows_w", "yuushya:extra_building_material/windows_frame_model/gray_windows_none", "yuushya:extra_building_material/windows_frame_model/gray_windows_e", "yuushya:extra_building_material/windows_frame_model/gray_windows_ew",
+          "yuushya:extra_building_material/windows_frame_model/gray_windows_sw", "yuushya:extra_building_material/windows_frame_model/gray_windows_s", "yuushya:extra_building_material/windows_frame_model/gray_windows_es", "yuushya:extra_building_material/windows_frame_model/gray_windows_esw"
+        ]]
+      }
+    },
+
+    {
+      "class_type": "WindowsBlock",
+      "name": "gray_windows_2",
+      "auto_generated": {"blockstate": true}, "item_group": "window",
+      "properties": {"has_collision": true },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/gray_windows",
+      "blockstate": {
+        "kit": "pole_line",
+        "forms": [[
+          "yuushya:extra_building_material/windows_frame_model/gray_windows_nsw", "yuushya:extra_building_material/windows_frame_model/gray_windows_ns", "yuushya:extra_building_material/windows_frame_model/gray_windows_nes", "yuushya:extra_building_material/windows_frame_model/gray_windows_nesw",
+          "yuushya:extra_building_material/windows_frame_model/gray_windows_nw", "yuushya:extra_building_material/windows_frame_model/gray_windows_n", "yuushya:extra_building_material/windows_frame_model/gray_windows_ne", "yuushya:extra_building_material/windows_frame_model/gray_windows_new",
+          "yuushya:extra_building_material/windows_frame_model/gray_windows_w", "yuushya:extra_building_material/windows_frame_model/gray_windows_none", "yuushya:extra_building_material/windows_frame_model/gray_windows_e", "yuushya:extra_building_material/windows_frame_model/gray_windows_ew",
+          "yuushya:extra_building_material/windows_frame_model/gray_windows_sw", "yuushya:extra_building_material/windows_frame_model/gray_windows_s", "yuushya:extra_building_material/windows_frame_model/gray_windows_es", "yuushya:extra_building_material/windows_frame_model/gray_windows_esw"
+        ]]
+      }
+    },
+
+    {
+      "class_type": "FlowBlock",
+      "name": "gray_windows_corner_0",
+      "render_type": "translucent",
+      "auto_generated": { "collision": "bound" }, "item_group": "window",
+      "item_model": "yuushya:extra_building_material/windows_frame_model/gray_windows_corner_none",
+      "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame_model/gray_windows_corner_top", "yuushya:extra_building_material/windows_frame_model/gray_windows_corner_middle", "yuushya:extra_building_material/windows_frame_model/gray_windows_corner_bottom", "yuushya:extra_building_material/windows_frame_model/gray_windows_corner_none"]]
+      }
+    },
+
+    {
+      "class_type": "FlowBlock",
+      "name": "gray_windows_corner_1",
+      "render_type": "translucent",
+      "auto_generated": { "collision": "bound" }, "item_group": "window",
+      "item_model": "yuushya:extra_building_material/windows_frame_model/gray_windows_corner_none",
+      "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame_model/gray_windows_corner_top", "yuushya:extra_building_material/windows_frame_model/gray_windows_corner_middle", "yuushya:extra_building_material/windows_frame_model/gray_windows_corner_bottom", "yuushya:extra_building_material/windows_frame_model/gray_windows_corner_none"]]
+      }
+    },
+
+
+    {
+      "class_type": "WindowsBlock",
+      "name": "gray_windows_deviated_0",
+      "auto_generated": {"blockstate": true}, "item_group": "window",
+      "properties": {"has_collision": false },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/gray_windows_deviated_0",
+      "blockstate": {
+        "kit": "pole_line",
+        "forms": [[
+          "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_nsw", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_ns", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_nes", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_nesw",
+          "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_nw", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_n", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_ne", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_new",
+          "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_w", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_none", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_e", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_ew",
+          "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_sw", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_s", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_es", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_0_esw"
+        ]]
+      }
+    },
+
+    {
+      "class_type": "WindowsBlock",
+      "name": "gray_windows_deviated_1",
+      "auto_generated": {"blockstate": true}, "item_group": "window",
+      "properties": {"has_collision": false },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/gray_windows_deviated_1",
+      "blockstate": {
+        "kit": "pole_line",
+        "forms": [[
+          "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_nsw", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_ns", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_nes", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_nesw",
+          "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_nw", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_n", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_ne", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_new",
+          "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_w", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_none", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_e", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_ew",
+          "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_sw", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_s", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_es", "yuushya:extra_building_material/windows_frame_model/gray_windows_deviated_1_esw"
+        ]]
+      }
+    },
+
+    {
+      "class_type": "ChairBlock",
+      "name": "gray_windows_open_0",
+      "item_group": "window",
+      "properties": {"has_collision": false },
+      "item_model": "yuushya:extra_building_material/windows_frame/gray_windows_open_none",
+      "render_type": "translucent",
+      "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/gray_windows_open_left","yuushya:extra_building_material/windows_frame/gray_windows_open_middle","yuushya:extra_building_material/windows_frame/gray_windows_open_right","yuushya:extra_building_material/windows_frame/gray_windows_open_none"]]}
+    },
+
+    {
+      "class_type": "ChairBlock",
+      "name": "gray_windows_open_1",
+      "item_group": "window",
+      "properties": {"has_collision": false },
+      "item_model": "yuushya:extra_building_material/windows_frame/gray_windows_open_none",
+      "render_type": "translucent",
+      "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/gray_windows_open_left","yuushya:extra_building_material/windows_frame/gray_windows_open_middle","yuushya:extra_building_material/windows_frame/gray_windows_open_right","yuushya:extra_building_material/windows_frame/gray_windows_open_none"]]}
+    },
+
+    {
+      "class_type": "FlowBlock",
+      "name": "gray_windows_diagonal",
+      "item_group": "window",
+      "item_model": "yuushya:extra_building_material/windows_frame/gray_windows_diagonal_none",
+      "render_type": "translucent",
+      "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/gray_windows_diagonal_top", "yuushya:extra_building_material/windows_frame/gray_windows_diagonal_middle", "yuushya:extra_building_material/windows_frame/gray_windows_diagonal_bottom", "yuushya:extra_building_material/windows_frame/gray_windows_diagonal_none"]]
+      }
+    },
+
+    {
+      "class_type": "WindowsBlock",
+      "name": "cyan_windows_0",
+      "auto_generated": {"blockstate": true}, "item_group": "window",
+      "properties": {"has_collision": true },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/cyan_windows",
+      "blockstate": {
+        "kit": "pole_line",
+        "forms": [[
+          "yuushya:extra_building_material/windows_frame_model/cyan_windows_nsw", "yuushya:extra_building_material/windows_frame_model/cyan_windows_ns", "yuushya:extra_building_material/windows_frame_model/cyan_windows_nes", "yuushya:extra_building_material/windows_frame_model/cyan_windows_nesw",
+          "yuushya:extra_building_material/windows_frame_model/cyan_windows_nw", "yuushya:extra_building_material/windows_frame_model/cyan_windows_n", "yuushya:extra_building_material/windows_frame_model/cyan_windows_ne", "yuushya:extra_building_material/windows_frame_model/cyan_windows_new",
+          "yuushya:extra_building_material/windows_frame_model/cyan_windows_w", "yuushya:extra_building_material/windows_frame_model/cyan_windows_none", "yuushya:extra_building_material/windows_frame_model/cyan_windows_e", "yuushya:extra_building_material/windows_frame_model/cyan_windows_ew",
+          "yuushya:extra_building_material/windows_frame_model/cyan_windows_sw", "yuushya:extra_building_material/windows_frame_model/cyan_windows_s", "yuushya:extra_building_material/windows_frame_model/cyan_windows_es", "yuushya:extra_building_material/windows_frame_model/cyan_windows_esw"
+        ]]
+      }
+    },
+
+    {
+      "class_type": "WindowsBlock",
+      "name": "cyan_windows_1",
+      "auto_generated": {"blockstate": true}, "item_group": "window",
+      "properties": {"has_collision": true },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/cyan_windows",
+      "blockstate": {
+        "kit": "pole_line",
+        "forms": [[
+          "yuushya:extra_building_material/windows_frame_model/cyan_windows_nsw", "yuushya:extra_building_material/windows_frame_model/cyan_windows_ns", "yuushya:extra_building_material/windows_frame_model/cyan_windows_nes", "yuushya:extra_building_material/windows_frame_model/cyan_windows_nesw",
+          "yuushya:extra_building_material/windows_frame_model/cyan_windows_nw", "yuushya:extra_building_material/windows_frame_model/cyan_windows_n", "yuushya:extra_building_material/windows_frame_model/cyan_windows_ne", "yuushya:extra_building_material/windows_frame_model/cyan_windows_new",
+          "yuushya:extra_building_material/windows_frame_model/cyan_windows_w", "yuushya:extra_building_material/windows_frame_model/cyan_windows_none", "yuushya:extra_building_material/windows_frame_model/cyan_windows_e", "yuushya:extra_building_material/windows_frame_model/cyan_windows_ew",
+          "yuushya:extra_building_material/windows_frame_model/cyan_windows_sw", "yuushya:extra_building_material/windows_frame_model/cyan_windows_s", "yuushya:extra_building_material/windows_frame_model/cyan_windows_es", "yuushya:extra_building_material/windows_frame_model/cyan_windows_esw"
+        ]]
+      }
+    },
+
+    {
+      "class_type": "WindowsBlock",
+      "name": "cyan_windows_2",
+      "auto_generated": {"blockstate": true}, "item_group": "window",
+      "properties": {"has_collision": true },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/cyan_windows",
+      "blockstate": {
+        "kit": "pole_line",
+        "forms": [[
+          "yuushya:extra_building_material/windows_frame_model/cyan_windows_nsw", "yuushya:extra_building_material/windows_frame_model/cyan_windows_ns", "yuushya:extra_building_material/windows_frame_model/cyan_windows_nes", "yuushya:extra_building_material/windows_frame_model/cyan_windows_nesw",
+          "yuushya:extra_building_material/windows_frame_model/cyan_windows_nw", "yuushya:extra_building_material/windows_frame_model/cyan_windows_n", "yuushya:extra_building_material/windows_frame_model/cyan_windows_ne", "yuushya:extra_building_material/windows_frame_model/cyan_windows_new",
+          "yuushya:extra_building_material/windows_frame_model/cyan_windows_w", "yuushya:extra_building_material/windows_frame_model/cyan_windows_none", "yuushya:extra_building_material/windows_frame_model/cyan_windows_e", "yuushya:extra_building_material/windows_frame_model/cyan_windows_ew",
+          "yuushya:extra_building_material/windows_frame_model/cyan_windows_sw", "yuushya:extra_building_material/windows_frame_model/cyan_windows_s", "yuushya:extra_building_material/windows_frame_model/cyan_windows_es", "yuushya:extra_building_material/windows_frame_model/cyan_windows_esw"
+        ]]
+      }
+    },
+
+    {
+      "class_type": "FlowBlock",
+      "name": "cyan_windows_corner_0",
+      "render_type": "translucent",
+      "auto_generated": { "collision": "bound" }, "item_group": "window",
+      "item_model": "yuushya:extra_building_material/windows_frame_model/cyan_windows_corner_none",
+      "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame_model/cyan_windows_corner_top", "yuushya:extra_building_material/windows_frame_model/cyan_windows_corner_middle", "yuushya:extra_building_material/windows_frame_model/cyan_windows_corner_bottom", "yuushya:extra_building_material/windows_frame_model/cyan_windows_corner_none"]]
+      }
+    },
+
+    {
+      "class_type": "FlowBlock",
+      "name": "cyan_windows_corner_1",
+      "render_type": "translucent",
+      "auto_generated": { "collision": "bound" }, "item_group": "window",
+      "item_model": "yuushya:extra_building_material/windows_frame_model/cyan_windows_corner_none",
+      "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame_model/cyan_windows_corner_top", "yuushya:extra_building_material/windows_frame_model/cyan_windows_corner_middle", "yuushya:extra_building_material/windows_frame_model/cyan_windows_corner_bottom", "yuushya:extra_building_material/windows_frame_model/cyan_windows_corner_none"]]
+      }
+    },
+
+    {
+      "class_type": "WindowsBlock",
+      "name": "cyan_windows_deviated_0",
+      "auto_generated": {"blockstate": true}, "item_group": "window",
+      "properties": {"has_collision": false },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/cyan_windows_deviated_0",
+      "blockstate": {
+        "kit": "pole_line",
+        "forms": [[
+          "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_nsw", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_ns", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_nes", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_nesw",
+          "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_nw", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_n", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_ne", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_new",
+          "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_w", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_none", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_e", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_ew",
+          "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_sw", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_s", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_es", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_0_esw"
+        ]]
+      }
+    },
+
+    {
+      "class_type": "WindowsBlock",
+      "name": "cyan_windows_deviated_1",
+      "auto_generated": {"blockstate": true}, "item_group": "window",
+      "properties": {"has_collision": false },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/cyan_windows_deviated_1",
+      "blockstate": {
+        "kit": "pole_line",
+        "forms": [[
+          "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_nsw", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_ns", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_nes", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_nesw",
+          "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_nw", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_n", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_ne", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_new",
+          "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_w", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_none", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_e", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_ew",
+          "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_sw", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_s", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_es", "yuushya:extra_building_material/windows_frame_model/cyan_windows_deviated_1_esw"
+        ]]
+      }
+    },
+
+    {
+      "class_type": "ChairBlock",
+      "name": "cyan_windows_open_0",
+      "item_group": "window",
+      "properties": {"has_collision": false },
+      "item_model": "yuushya:extra_building_material/windows_frame/cyan_windows_open_none",
+      "render_type": "translucent",
+      "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/cyan_windows_open_left","yuushya:extra_building_material/windows_frame/cyan_windows_open_middle","yuushya:extra_building_material/windows_frame/cyan_windows_open_right","yuushya:extra_building_material/windows_frame/cyan_windows_open_none"]]}
+    },
+
+    {
+      "class_type": "ChairBlock",
+      "name": "cyan_windows_open_1",
+      "item_group": "window",
+      "item_model": "yuushya:extra_building_material/windows_frame/cyan_windows_open_none",
+      "properties": {"has_collision": false },
+      "render_type": "translucent",
+      "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/cyan_windows_open_left","yuushya:extra_building_material/windows_frame/cyan_windows_open_middle","yuushya:extra_building_material/windows_frame/cyan_windows_open_right","yuushya:extra_building_material/windows_frame/cyan_windows_open_none"]]}
+    },
+
+    {
+      "class_type": "FlowBlock",
+      "name": "cyan_windows_diagonal",
+      "item_group": "window",
+      "item_model": "yuushya:extra_building_material/windows_frame/cyan_windows_diagonal_none",
+      "render_type": "translucent",
+      "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/cyan_windows_diagonal_top", "yuushya:extra_building_material/windows_frame/cyan_windows_diagonal_middle", "yuushya:extra_building_material/windows_frame/cyan_windows_diagonal_bottom", "yuushya:extra_building_material/windows_frame/cyan_windows_diagonal_none"]]
+      }
+    },
+
+    {
+      "class_type": "WindowsBlock",
+      "name": "oak_windows_0",
+      "auto_generated": {"blockstate": true}, "item_group": "window",
+      "properties": {"has_collision": true },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/oak_windows",
+      "blockstate": {
+        "kit": "pole_line",
+        "forms": [[
+          "yuushya:extra_building_material/windows_frame_model/oak_windows_nsw", "yuushya:extra_building_material/windows_frame_model/oak_windows_ns", "yuushya:extra_building_material/windows_frame_model/oak_windows_nes", "yuushya:extra_building_material/windows_frame_model/oak_windows_nesw",
+          "yuushya:extra_building_material/windows_frame_model/oak_windows_nw", "yuushya:extra_building_material/windows_frame_model/oak_windows_n", "yuushya:extra_building_material/windows_frame_model/oak_windows_ne", "yuushya:extra_building_material/windows_frame_model/oak_windows_new",
+          "yuushya:extra_building_material/windows_frame_model/oak_windows_w", "yuushya:extra_building_material/windows_frame_model/oak_windows_none", "yuushya:extra_building_material/windows_frame_model/oak_windows_e", "yuushya:extra_building_material/windows_frame_model/oak_windows_ew",
+          "yuushya:extra_building_material/windows_frame_model/oak_windows_sw", "yuushya:extra_building_material/windows_frame_model/oak_windows_s", "yuushya:extra_building_material/windows_frame_model/oak_windows_es", "yuushya:extra_building_material/windows_frame_model/oak_windows_esw"
+        ]]
+      }
+    },
+
+    {
+      "class_type": "WindowsBlock",
+      "name": "oak_windows_1",
+      "auto_generated": {"blockstate": true}, "item_group": "window",
+      "properties": {"has_collision": true },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/oak_windows",
+      "blockstate": {
+        "kit": "pole_line",
+        "forms": [[
+          "yuushya:extra_building_material/windows_frame_model/oak_windows_nsw", "yuushya:extra_building_material/windows_frame_model/oak_windows_ns", "yuushya:extra_building_material/windows_frame_model/oak_windows_nes", "yuushya:extra_building_material/windows_frame_model/oak_windows_nesw",
+          "yuushya:extra_building_material/windows_frame_model/oak_windows_nw", "yuushya:extra_building_material/windows_frame_model/oak_windows_n", "yuushya:extra_building_material/windows_frame_model/oak_windows_ne", "yuushya:extra_building_material/windows_frame_model/oak_windows_new",
+          "yuushya:extra_building_material/windows_frame_model/oak_windows_w", "yuushya:extra_building_material/windows_frame_model/oak_windows_none", "yuushya:extra_building_material/windows_frame_model/oak_windows_e", "yuushya:extra_building_material/windows_frame_model/oak_windows_ew",
+          "yuushya:extra_building_material/windows_frame_model/oak_windows_sw", "yuushya:extra_building_material/windows_frame_model/oak_windows_s", "yuushya:extra_building_material/windows_frame_model/oak_windows_es", "yuushya:extra_building_material/windows_frame_model/oak_windows_esw"
+        ]]
+      }
+    },
+
+    {
+      "class_type": "WindowsBlock",
+      "name": "oak_windows_2",
+      "auto_generated": {"blockstate": true}, "item_group": "window",
+      "properties": {"has_collision": true },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/oak_windows",
+      "blockstate": {
+        "kit": "pole_line",
+        "forms": [[
+          "yuushya:extra_building_material/windows_frame_model/oak_windows_nsw", "yuushya:extra_building_material/windows_frame_model/oak_windows_ns", "yuushya:extra_building_material/windows_frame_model/oak_windows_nes", "yuushya:extra_building_material/windows_frame_model/oak_windows_nesw",
+          "yuushya:extra_building_material/windows_frame_model/oak_windows_nw", "yuushya:extra_building_material/windows_frame_model/oak_windows_n", "yuushya:extra_building_material/windows_frame_model/oak_windows_ne", "yuushya:extra_building_material/windows_frame_model/oak_windows_new",
+          "yuushya:extra_building_material/windows_frame_model/oak_windows_w", "yuushya:extra_building_material/windows_frame_model/oak_windows_none", "yuushya:extra_building_material/windows_frame_model/oak_windows_e", "yuushya:extra_building_material/windows_frame_model/oak_windows_ew",
+          "yuushya:extra_building_material/windows_frame_model/oak_windows_sw", "yuushya:extra_building_material/windows_frame_model/oak_windows_s", "yuushya:extra_building_material/windows_frame_model/oak_windows_es", "yuushya:extra_building_material/windows_frame_model/oak_windows_esw"
+        ]]
+      }
+    },
+
+    {
+      "class_type": "FlowBlock",
+      "name": "oak_windows_corner_0",
+      "render_type": "translucent",
+      "auto_generated": { "collision": "bound" }, "item_group": "window",
+      "item_model": "yuushya:extra_building_material/windows_frame_model/oak_windows_corner_none",
+      "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame_model/oak_windows_corner_top", "yuushya:extra_building_material/windows_frame_model/oak_windows_corner_middle", "yuushya:extra_building_material/windows_frame_model/oak_windows_corner_bottom", "yuushya:extra_building_material/windows_frame_model/oak_windows_corner_none"]]
+      }
+    },
+
+    {
+      "class_type": "FlowBlock",
+      "name": "oak_windows_corner_1",
+      "render_type": "translucent",
+      "auto_generated": { "collision": "bound" }, "item_group": "window",
+      "item_model": "yuushya:extra_building_material/windows_frame_model/oak_windows_corner_none",
+      "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame_model/oak_windows_corner_top", "yuushya:extra_building_material/windows_frame_model/oak_windows_corner_middle", "yuushya:extra_building_material/windows_frame_model/oak_windows_corner_bottom", "yuushya:extra_building_material/windows_frame_model/oak_windows_corner_none"]]
+      }
+    },
+
+    {
+      "class_type": "WindowsBlock",
+      "name": "oak_windows_deviated_0",
+      "auto_generated": {"blockstate": true}, "item_group": "window",
+      "properties": {"has_collision": false },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/oak_windows_deviated_0",
+      "blockstate": {
+        "kit": "pole_line",
+        "forms": [[
+          "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_nsw", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_ns", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_nes", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_nesw",
+          "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_nw", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_n", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_ne", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_new",
+          "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_w", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_none", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_e", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_ew",
+          "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_sw", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_s", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_es", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_0_esw"
+        ]]
+      }
+    },
+
+    {
+      "class_type": "WindowsBlock",
+      "name": "oak_windows_deviated_1",
+      "auto_generated": {"blockstate": true}, "item_group": "window",
+      "properties": {"has_collision": false },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/oak_windows_deviated_1",
+      "blockstate": {
+        "kit": "pole_line",
+        "forms": [[
+          "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_nsw", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_ns", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_nes", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_nesw",
+          "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_nw", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_n", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_ne", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_new",
+          "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_w", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_none", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_e", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_ew",
+          "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_sw", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_s", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_es", "yuushya:extra_building_material/windows_frame_model/oak_windows_deviated_1_esw"
+        ]]
+      }
+    },
+
+    {
+      "class_type": "ChairBlock",
+      "name": "oak_windows_open_0",
+      "item_group": "window",
+      "properties": {"has_collision": false },
+      "item_model": "yuushya:extra_building_material/windows_frame/oak_windows_open_none",
+      "render_type": "translucent",
+      "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/oak_windows_open_left","yuushya:extra_building_material/windows_frame/oak_windows_open_middle","yuushya:extra_building_material/windows_frame/oak_windows_open_right","yuushya:extra_building_material/windows_frame/oak_windows_open_none"]]}
+    },
+
+    {
+      "class_type": "ChairBlock",
+      "name": "oak_windows_open_1",
+      "item_group": "window",
+      "properties": {"has_collision": false },
+      "item_model": "yuushya:extra_building_material/windows_frame/oak_windows_open_none",
+      "render_type": "translucent",
+      "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/oak_windows_open_left","yuushya:extra_building_material/windows_frame/oak_windows_open_middle","yuushya:extra_building_material/windows_frame/oak_windows_open_right","yuushya:extra_building_material/windows_frame/oak_windows_open_none"]]}
+    },
+
+    {
+      "class_type": "FlowBlock",
+      "name": "oak_windows_diagonal",
+      "item_group": "window",
+      "item_model": "yuushya:extra_building_material/windows_frame/oak_windows_diagonal_none",
+      "render_type": "translucent",
+      "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/oak_windows_diagonal_top", "yuushya:extra_building_material/windows_frame/oak_windows_diagonal_middle", "yuushya:extra_building_material/windows_frame/oak_windows_diagonal_bottom", "yuushya:extra_building_material/windows_frame/oak_windows_diagonal_none"]]
+      }
+    },
+
+    {
+      "class_type": "WindowsBlock",
+      "name": "black_windows_0",
+      "auto_generated": {"blockstate": true}, "item_group": "window",
+      "properties": {"has_collision": true },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/black_windows",
+      "blockstate": {
+        "kit": "pole_line",
+        "forms": [[
+          "yuushya:extra_building_material/windows_frame_model/black_windows_nsw", "yuushya:extra_building_material/windows_frame_model/black_windows_ns", "yuushya:extra_building_material/windows_frame_model/black_windows_nes", "yuushya:extra_building_material/windows_frame_model/black_windows_nesw",
+          "yuushya:extra_building_material/windows_frame_model/black_windows_nw", "yuushya:extra_building_material/windows_frame_model/black_windows_n", "yuushya:extra_building_material/windows_frame_model/black_windows_ne", "yuushya:extra_building_material/windows_frame_model/black_windows_new",
+          "yuushya:extra_building_material/windows_frame_model/black_windows_w", "yuushya:extra_building_material/windows_frame_model/black_windows_none", "yuushya:extra_building_material/windows_frame_model/black_windows_e", "yuushya:extra_building_material/windows_frame_model/black_windows_ew",
+          "yuushya:extra_building_material/windows_frame_model/black_windows_sw", "yuushya:extra_building_material/windows_frame_model/black_windows_s", "yuushya:extra_building_material/windows_frame_model/black_windows_es", "yuushya:extra_building_material/windows_frame_model/black_windows_esw"
+        ]]
+      }
+    },
+
+    {
+      "class_type": "WindowsBlock",
+      "name": "black_windows_1",
+      "auto_generated": {"blockstate": true}, "item_group": "window",
+      "properties": {"has_collision": true },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/black_windows",
+      "blockstate": {
+        "kit": "pole_line",
+        "forms": [[
+          "yuushya:extra_building_material/windows_frame_model/black_windows_nsw", "yuushya:extra_building_material/windows_frame_model/black_windows_ns", "yuushya:extra_building_material/windows_frame_model/black_windows_nes", "yuushya:extra_building_material/windows_frame_model/black_windows_nesw",
+          "yuushya:extra_building_material/windows_frame_model/black_windows_nw", "yuushya:extra_building_material/windows_frame_model/black_windows_n", "yuushya:extra_building_material/windows_frame_model/black_windows_ne", "yuushya:extra_building_material/windows_frame_model/black_windows_new",
+          "yuushya:extra_building_material/windows_frame_model/black_windows_w", "yuushya:extra_building_material/windows_frame_model/black_windows_none", "yuushya:extra_building_material/windows_frame_model/black_windows_e", "yuushya:extra_building_material/windows_frame_model/black_windows_ew",
+          "yuushya:extra_building_material/windows_frame_model/black_windows_sw", "yuushya:extra_building_material/windows_frame_model/black_windows_s", "yuushya:extra_building_material/windows_frame_model/black_windows_es", "yuushya:extra_building_material/windows_frame_model/black_windows_esw"
+        ]]
+      }
+    },
+
+    {
+      "class_type": "WindowsBlock",
+      "name": "black_windows_2",
+      "auto_generated": {"blockstate": true}, "item_group": "window",
+      "properties": {"has_collision": true },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/black_windows",
+      "blockstate": {
+        "kit": "pole_line",
+        "forms": [[
+          "yuushya:extra_building_material/windows_frame_model/black_windows_nsw", "yuushya:extra_building_material/windows_frame_model/black_windows_ns", "yuushya:extra_building_material/windows_frame_model/black_windows_nes", "yuushya:extra_building_material/windows_frame_model/black_windows_nesw",
+          "yuushya:extra_building_material/windows_frame_model/black_windows_nw", "yuushya:extra_building_material/windows_frame_model/black_windows_n", "yuushya:extra_building_material/windows_frame_model/black_windows_ne", "yuushya:extra_building_material/windows_frame_model/black_windows_new",
+          "yuushya:extra_building_material/windows_frame_model/black_windows_w", "yuushya:extra_building_material/windows_frame_model/black_windows_none", "yuushya:extra_building_material/windows_frame_model/black_windows_e", "yuushya:extra_building_material/windows_frame_model/black_windows_ew",
+          "yuushya:extra_building_material/windows_frame_model/black_windows_sw", "yuushya:extra_building_material/windows_frame_model/black_windows_s", "yuushya:extra_building_material/windows_frame_model/black_windows_es", "yuushya:extra_building_material/windows_frame_model/black_windows_esw"
+        ]]
+      }
+    },
+
+    {
+      "class_type": "FlowBlock",
+      "name": "black_windows_corner_0",
+      "render_type": "translucent",
+      "auto_generated": { "collision": "bound" }, "item_group": "window",
+      "item_model": "yuushya:extra_building_material/windows_frame_model/black_windows_corner_none",
+      "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame_model/black_windows_corner_top", "yuushya:extra_building_material/windows_frame_model/black_windows_corner_middle", "yuushya:extra_building_material/windows_frame_model/black_windows_corner_bottom", "yuushya:extra_building_material/windows_frame_model/black_windows_corner_none"]]
+      }
+    },
+
+    {
+      "class_type": "FlowBlock",
+      "name": "black_windows_corner_1",
+      "render_type": "translucent",
+      "auto_generated": { "collision": "bound" }, "item_group": "window",
+      "item_model": "yuushya:extra_building_material/windows_frame_model/black_windows_corner_none",
+      "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame_model/black_windows_corner_top", "yuushya:extra_building_material/windows_frame_model/black_windows_corner_middle", "yuushya:extra_building_material/windows_frame_model/black_windows_corner_bottom", "yuushya:extra_building_material/windows_frame_model/black_windows_corner_none"]]
+      }
+    },
+
+    {
+      "class_type": "WindowsBlock",
+      "name": "black_windows_deviated_0",
+      "auto_generated": {"blockstate": true}, "item_group": "window",
+      "properties": {"has_collision": false },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/black_windows_deviated_0",
+      "blockstate": {
+        "kit": "pole_line",
+        "forms": [[
+          "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_nsw", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_ns", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_nes", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_nesw",
+          "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_nw", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_n", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_ne", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_new",
+          "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_w", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_none", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_e", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_ew",
+          "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_sw", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_s", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_es", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_0_esw"
+        ]]
+      }
+    },
+
+    {
+      "class_type": "WindowsBlock",
+      "name": "black_windows_deviated_1",
+      "auto_generated": {"blockstate": true}, "item_group": "window",
+      "properties": {"has_collision": false },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/black_windows_deviated_1",
+      "blockstate": {
+        "kit": "pole_line",
+        "forms": [[
+          "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_nsw", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_ns", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_nes", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_nesw",
+          "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_nw", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_n", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_ne", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_new",
+          "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_w", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_none", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_e", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_ew",
+          "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_sw", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_s", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_es", "yuushya:extra_building_material/windows_frame_model/black_windows_deviated_1_esw"
+        ]]
+      }
+    },
+
+    {
+      "class_type": "ChairBlock",
+      "name": "black_windows_open_0",
+      "item_group": "window",
+      "properties": {"has_collision": false },
+      "item_model": "yuushya:extra_building_material/windows_frame/black_windows_open_none",
+      "render_type": "translucent",
+      "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/black_windows_open_left","yuushya:extra_building_material/windows_frame/black_windows_open_middle","yuushya:extra_building_material/windows_frame/black_windows_open_right","yuushya:extra_building_material/windows_frame/black_windows_open_none"]]}
+    },
+
+    {
+      "class_type": "ChairBlock",
+      "name": "black_windows_open_1",
+      "item_group": "window",
+      "properties": {"has_collision": false },
+      "render_type": "translucent",
+      "item_model": "yuushya:extra_building_material/windows_frame/black_windows_open_none",
+      "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/black_windows_open_left","yuushya:extra_building_material/windows_frame/black_windows_open_middle","yuushya:extra_building_material/windows_frame/black_windows_open_right","yuushya:extra_building_material/windows_frame/black_windows_open_none"]]}
+    },
+
+    {
+      "class_type": "FlowBlock",
+      "name": "black_windows_diagonal",
+      "item_group": "window",
+      "item_model": "yuushya:extra_building_material/windows_frame/black_windows_diagonal_none",
+      "render_type": "translucent",
+      "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/black_windows_diagonal_top", "yuushya:extra_building_material/windows_frame/black_windows_diagonal_middle", "yuushya:extra_building_material/windows_frame/black_windows_diagonal_bottom", "yuushya:extra_building_material/windows_frame/black_windows_diagonal_none"]]
+      }
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "tiles_fix_lower",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/lp_tiles_fx"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "tiles_fix_upper",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/up_tiles_fx"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "orange_tile_lower",
+      "properties": {"lines": 1},
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/htile1_lp_left","yuushya:extra_building_material/roof/roof/htile1_lp_middle","yuushya:extra_building_material/roof/roof/htile1_lp_right","yuushya:extra_building_material/roof/roof/htile1_lp_none"],["yuushya:extra_building_material/roof/roof/tile1_lp_left","yuushya:extra_building_material/roof/roof/tile1_lp_middle","yuushya:extra_building_material/roof/roof/tile1_lp_right","yuushya:extra_building_material/roof/roof/tile1_lp_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "orange_tile_upper",
+      "properties": {"lines": 1},
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/htile1_up_left","yuushya:extra_building_material/roof/roof/htile1_up_middle","yuushya:extra_building_material/roof/roof/htile1_up_right","yuushya:extra_building_material/roof/roof/htile1_up_none"],["yuushya:extra_building_material/roof/roof/tile1_up_left","yuushya:extra_building_material/roof/roof/tile1_up_middle","yuushya:extra_building_material/roof/roof/tile1_up_right","yuushya:extra_building_material/roof/roof/tile1_up_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "orange_tile_ridge_upper",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/ridge1_up_left","yuushya:extra_building_material/roof/roof_ridge/ridge1_up_middle","yuushya:extra_building_material/roof/roof_ridge/ridge1_up_right","yuushya:extra_building_material/roof/roof_ridge/ridge1_up_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "orange_tile_ridge_lower",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/ridge1_lp_left","yuushya:extra_building_material/roof/roof_ridge/ridge1_lp_middle","yuushya:extra_building_material/roof/roof_ridge/ridge1_lp_right","yuushya:extra_building_material/roof/roof_ridge/ridge1_lp_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "orange_tile_with_ridge_upper",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/htile1_up_left","yuushya:extra_building_material/roof/roof_ridge/htile1_up_middle","yuushya:extra_building_material/roof/roof_ridge/htile1_up_right","yuushya:extra_building_material/roof/roof_ridge/htile1_up_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "orange_tile_with_ridge_lower",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/htile1_lp_left","yuushya:extra_building_material/roof/roof_ridge/htile1_lp_middle","yuushya:extra_building_material/roof/roof_ridge/htile1_lp_right","yuushya:extra_building_material/roof/roof_ridge/htile1_lp_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "dark_tile_lower",
+      "properties": {"lines": 1},
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/htile2_lp_left","yuushya:extra_building_material/roof/roof/htile2_lp_middle","yuushya:extra_building_material/roof/roof/htile2_lp_right","yuushya:extra_building_material/roof/roof/htile2_lp_none"],["yuushya:extra_building_material/roof/roof/tile2_lp_left","yuushya:extra_building_material/roof/roof/tile2_lp_middle","yuushya:extra_building_material/roof/roof/tile2_lp_right","yuushya:extra_building_material/roof/roof/tile2_lp_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "dark_tile_upper",
+      "properties": {"lines": 1},
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/htile2_up_left","yuushya:extra_building_material/roof/roof/htile2_up_middle","yuushya:extra_building_material/roof/roof/htile2_up_right","yuushya:extra_building_material/roof/roof/htile2_up_none"],["yuushya:extra_building_material/roof/roof/tile2_up_left","yuushya:extra_building_material/roof/roof/tile2_up_middle","yuushya:extra_building_material/roof/roof/tile2_up_right","yuushya:extra_building_material/roof/roof/tile2_up_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "dark_tile_ridge_upper",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/ridge2_up_left","yuushya:extra_building_material/roof/roof_ridge/ridge2_up_middle","yuushya:extra_building_material/roof/roof_ridge/ridge2_up_right","yuushya:extra_building_material/roof/roof_ridge/ridge2_up_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "dark_tile_ridge_lower",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/ridge2_lp_left","yuushya:extra_building_material/roof/roof_ridge/ridge2_lp_middle","yuushya:extra_building_material/roof/roof_ridge/ridge2_lp_right","yuushya:extra_building_material/roof/roof_ridge/ridge2_lp_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "dark_tile_with_ridge_upper",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/htile2_up_left","yuushya:extra_building_material/roof/roof_ridge/htile2_up_middle","yuushya:extra_building_material/roof/roof_ridge/htile2_up_right","yuushya:extra_building_material/roof/roof_ridge/htile2_up_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "dark_tile_with_ridge_lower",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/htile2_lp_left","yuushya:extra_building_material/roof/roof_ridge/htile2_lp_middle","yuushya:extra_building_material/roof/roof_ridge/htile2_lp_right","yuushya:extra_building_material/roof/roof_ridge/htile2_lp_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "gray_tile_lower",
+      "properties": {"lines": 1},
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/htile3_lp_left","yuushya:extra_building_material/roof/roof/htile3_lp_middle","yuushya:extra_building_material/roof/roof/htile3_lp_right","yuushya:extra_building_material/roof/roof/htile3_lp_none"],["yuushya:extra_building_material/roof/roof/tile3_lp_left","yuushya:extra_building_material/roof/roof/tile3_lp_middle","yuushya:extra_building_material/roof/roof/tile3_lp_right","yuushya:extra_building_material/roof/roof/tile3_lp_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "gray_tile_upper",
+      "properties": {"lines": 1},
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/htile3_up_left","yuushya:extra_building_material/roof/roof/htile3_up_middle","yuushya:extra_building_material/roof/roof/htile3_up_right","yuushya:extra_building_material/roof/roof/htile3_up_none"],["yuushya:extra_building_material/roof/roof/tile3_up_left","yuushya:extra_building_material/roof/roof/tile3_up_middle","yuushya:extra_building_material/roof/roof/tile3_up_right","yuushya:extra_building_material/roof/roof/tile3_up_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "gray_tile_ridge_upper",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/ridge3_up_left","yuushya:extra_building_material/roof/roof_ridge/ridge3_up_middle","yuushya:extra_building_material/roof/roof_ridge/ridge3_up_right","yuushya:extra_building_material/roof/roof_ridge/ridge3_up_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "gray_tile_ridge_lower",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/ridge3_lp_left","yuushya:extra_building_material/roof/roof_ridge/ridge3_lp_middle","yuushya:extra_building_material/roof/roof_ridge/ridge3_lp_right","yuushya:extra_building_material/roof/roof_ridge/ridge3_lp_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "gray_tile_with_ridge_upper",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/htile3_up_left","yuushya:extra_building_material/roof/roof_ridge/htile3_up_middle","yuushya:extra_building_material/roof/roof_ridge/htile3_up_right","yuushya:extra_building_material/roof/roof_ridge/htile3_up_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "gray_tile_with_ridge_lower",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/htile3_lp_left","yuushya:extra_building_material/roof/roof_ridge/htile3_lp_middle","yuushya:extra_building_material/roof/roof_ridge/htile3_lp_right","yuushya:extra_building_material/roof/roof_ridge/htile3_lp_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "blue_tile_lower",
+      "properties": {"lines": 1},
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/htile4_lp_left","yuushya:extra_building_material/roof/roof/htile4_lp_middle","yuushya:extra_building_material/roof/roof/htile4_lp_right","yuushya:extra_building_material/roof/roof/htile4_lp_none"],["yuushya:extra_building_material/roof/roof/tile4_lp_left","yuushya:extra_building_material/roof/roof/tile4_lp_middle","yuushya:extra_building_material/roof/roof/tile4_lp_right","yuushya:extra_building_material/roof/roof/tile4_lp_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "blue_tile_upper",
+      "properties": {"lines": 1},
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/htile4_up_left","yuushya:extra_building_material/roof/roof/htile4_up_middle","yuushya:extra_building_material/roof/roof/htile4_up_right","yuushya:extra_building_material/roof/roof/htile4_up_none"],["yuushya:extra_building_material/roof/roof/tile4_up_left","yuushya:extra_building_material/roof/roof/tile4_up_middle","yuushya:extra_building_material/roof/roof/tile4_up_right","yuushya:extra_building_material/roof/roof/tile4_up_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "blue_tile_ridge_upper",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/ridge4_up_left","yuushya:extra_building_material/roof/roof_ridge/ridge4_up_middle","yuushya:extra_building_material/roof/roof_ridge/ridge4_up_right","yuushya:extra_building_material/roof/roof_ridge/ridge4_up_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "blue_tile_ridge_lower",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/ridge4_lp_left","yuushya:extra_building_material/roof/roof_ridge/ridge4_lp_middle","yuushya:extra_building_material/roof/roof_ridge/ridge4_lp_right","yuushya:extra_building_material/roof/roof_ridge/ridge4_lp_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "blue_tile_with_ridge_upper",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/htile4_up_left","yuushya:extra_building_material/roof/roof_ridge/htile4_up_middle","yuushya:extra_building_material/roof/roof_ridge/htile4_up_right","yuushya:extra_building_material/roof/roof_ridge/htile4_up_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "blue_tile_with_ridge_lower",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/htile4_lp_left","yuushya:extra_building_material/roof/roof_ridge/htile4_lp_middle","yuushya:extra_building_material/roof/roof_ridge/htile4_lp_right","yuushya:extra_building_material/roof/roof_ridge/htile4_lp_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "pale_tile_lower",
+      "properties": {"lines": 1},
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/htile5_lp_left","yuushya:extra_building_material/roof/roof/htile5_lp_middle","yuushya:extra_building_material/roof/roof/htile5_lp_right","yuushya:extra_building_material/roof/roof/htile5_lp_none"],["yuushya:extra_building_material/roof/roof/tile5_lp_left","yuushya:extra_building_material/roof/roof/tile5_lp_middle","yuushya:extra_building_material/roof/roof/tile5_lp_right","yuushya:extra_building_material/roof/roof/tile5_lp_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "pale_tile_upper",
+      "properties": {"lines": 1},
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/htile5_up_left","yuushya:extra_building_material/roof/roof/htile5_up_middle","yuushya:extra_building_material/roof/roof/htile5_up_right","yuushya:extra_building_material/roof/roof/htile5_up_none"],["yuushya:extra_building_material/roof/roof/tile5_up_left","yuushya:extra_building_material/roof/roof/tile5_up_middle","yuushya:extra_building_material/roof/roof/tile5_up_right","yuushya:extra_building_material/roof/roof/tile5_up_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "pale_tile_ridge_upper",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/ridge5_up_left","yuushya:extra_building_material/roof/roof_ridge/ridge5_up_middle","yuushya:extra_building_material/roof/roof_ridge/ridge5_up_right","yuushya:extra_building_material/roof/roof_ridge/ridge5_up_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "pale_tile_ridge_lower",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/ridge5_lp_left","yuushya:extra_building_material/roof/roof_ridge/ridge5_lp_middle","yuushya:extra_building_material/roof/roof_ridge/ridge5_lp_right","yuushya:extra_building_material/roof/roof_ridge/ridge5_lp_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "pale_tile_with_ridge_upper",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/htile5_up_left","yuushya:extra_building_material/roof/roof_ridge/htile5_up_middle","yuushya:extra_building_material/roof/roof_ridge/htile5_up_right","yuushya:extra_building_material/roof/roof_ridge/htile5_up_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "pale_tile_with_ridge_lower",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/htile5_lp_left","yuushya:extra_building_material/roof/roof_ridge/htile5_lp_middle","yuushya:extra_building_material/roof/roof_ridge/htile5_lp_right","yuushya:extra_building_material/roof/roof_ridge/htile5_lp_none"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "orange_tile_outer_corner_upper",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile1_up_corner"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "orange_tile_inner_corner_upper",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile1_up_corner_inner"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "orange_tile_outer_corner_lower",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile1_lp_corner"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "orange_tile_inner_corner_lower",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile1_lp_corner_inner"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "dark_tile_outer_corner_upper",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile2_up_corner"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "dark_tile_inner_corner_upper",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile2_up_corner_inner"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "dark_tile_outer_corner_lower",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile2_lp_corner"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "dark_tile_inner_corner_lower",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile2_lp_corner_inner"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "gray_tile_outer_corner_upper",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile3_up_corner"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "gray_tile_inner_corner_upper",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile3_up_corner_inner"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "gray_tile_outer_corner_lower",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile3_lp_corner"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "gray_tile_inner_corner_lower",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile3_lp_corner_inner"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "blue_tile_outer_corner_upper",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile4_up_corner"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "blue_tile_inner_corner_upper",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile4_up_corner_inner"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "blue_tile_outer_corner_lower",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile4_lp_corner"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "blue_tile_inner_corner_lower",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile4_lp_corner_inner"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "pale_tile_outer_corner_upper",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile5_up_corner"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "pale_tile_inner_corner_upper",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile5_up_corner_inner"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "pale_tile_outer_corner_lower",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile5_lp_corner"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "pale_tile_inner_corner_lower",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/htile5_lp_corner_inner"]]}
+    }
+  ]
+}
