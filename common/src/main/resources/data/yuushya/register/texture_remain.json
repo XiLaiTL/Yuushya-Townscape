@@ -1,0 +1,551 @@
+{
+  "block": [
+
+    {"name": "~Vanilla-Imported_Texture_Library_原版引用纹理库", "class_type": "_comment" },
+
+    {
+      "class_type": "remain", "name": "minecraft:stone",
+      "texture": {
+        "type": "misc",
+        "set": ["all#minecraft:block/stone","sides#minecraft:block/stone","top#minecraft:block/stone"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:cobblestone",
+      "texture": {
+        "type": "misc",
+        "set": ["all#minecraft:block/cobblestone","sides#minecraft:block/cobblestone","top#minecraft:block/cobblestone"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:bricks",
+      "texture": {
+        "type": "misc",
+        "set": ["all#minecraft:block/bricks","sides#minecraft:block/bricks","top#minecraft:block/bricks"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:stripped_acacia_wood",
+      "texture": {
+        "type": "misc",
+        "value":"yuushya:block_/stripped_wood/stripped_acacia_wood",
+        "set":  [
+          "all#yuushya:block_/stripped_wood/stripped_acacia_wood",
+          "sides#yuushya:block_/stripped_wood/stripped_acacia_wood",
+          "top#yuushya:block_/stripped_wood/stripped_acacia_wood"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:stripped_birch_wood",
+      "texture": {
+        "type": "misc",
+        "value":"yuushya:block_/stripped_wood/stripped_birch_wood",
+        "set":  [
+          "all#yuushya:block_/stripped_wood/stripped_birch_wood",
+          "sides#yuushya:block_/stripped_wood/stripped_birch_wood",
+          "top#yuushya:block_/stripped_wood/stripped_birch_wood"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:stripped_dark_oak_wood",
+      "texture": {
+        "type": "misc",
+        "value":"yuushya:block_/stripped_wood/stripped_dark_oak_wood",
+        "set":  [
+          "all#yuushya:block_/stripped_wood/stripped_dark_oak_wood",
+          "sides#yuushya:block_/stripped_wood/stripped_dark_oak_wood",
+          "top#yuushya:block_/stripped_wood/stripped_dark_oak_wood"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:stripped_jungle_wood",
+      "texture": {
+        "type": "misc",
+        "value":"yuushya:block_/stripped_wood/stripped_jungle_wood",
+        "set":  [
+          "all#yuushya:block_/stripped_wood/stripped_jungle_wood",
+          "sides#yuushya:block_/stripped_wood/stripped_jungle_wood",
+          "top#yuushya:block_/stripped_wood/stripped_jungle_wood"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:stripped_oak_wood",
+      "texture": {
+        "type": "misc",
+        "value":"yuushya:block_/stripped_wood/stripped_oak_wood",
+        "set":  [
+          "all#yuushya:block_/stripped_wood/stripped_oak_wood",
+          "sides#yuushya:block_/stripped_wood/stripped_oak_wood",
+          "top#yuushya:block_/stripped_wood/stripped_oak_wood"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:stripped_spruce_wood",
+      "texture": {
+        "type": "misc",
+        "value":"yuushya:block_/stripped_wood/stripped_spruce_wood",
+        "set":  [
+          "all#yuushya:block_/stripped_wood/stripped_spruce_wood",
+          "sides#yuushya:block_/stripped_wood/stripped_spruce_wood",
+          "top#yuushya:block_/stripped_wood/stripped_spruce_wood"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:stripped_crimson_stem",
+      "texture": {
+        "type": "misc",
+        "value":"yuushya:block_/stripped_wood/stripped_crimson_stem",
+        "set":  [
+          "all#yuushya:block_/stripped_wood/stripped_crimson_stem",
+          "sides#yuushya:block_/stripped_wood/stripped_crimson_stem",
+          "top#yuushya:block_/stripped_wood/stripped_crimson_stem"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:stripped_warped_stem",
+      "texture": {
+        "type": "misc",
+        "value":"yuushya:block_/stripped_wood/stripped_warped_stem",
+        "set":  [
+          "all#yuushya:block_/stripped_wood/stripped_warped_stem",
+          "sides#yuushya:block_/stripped_wood/stripped_warped_stem",
+          "top#yuushya:block_/stripped_wood/stripped_warped_stem"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:stripped_mangrove_wood",
+      "texture": {
+        "type": "misc",
+        "value":"yuushya:block_/stripped_wood/stripped_mangrove_wood",
+        "set":  [
+          "all#yuushya:block_/stripped_wood/stripped_mangrove_wood",
+          "sides#yuushya:block_/stripped_wood/stripped_mangrove_wood",
+          "top#yuushya:block_/stripped_wood/stripped_mangrove_wood"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:stripped_cherry_wood",
+      "texture": {
+        "type": "misc",
+        "value":"yuushya:block_/stripped_wood/stripped_cherry_wood",
+        "set":  [
+          "all#yuushya:block_/stripped_wood/stripped_cherry_wood",
+          "sides#yuushya:block_/stripped_wood/stripped_cherry_wood",
+          "top#yuushya:block_/stripped_wood/stripped_cherry_wood"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:acacia_planks",
+      "texture": {
+        "type": "misc",
+        "value":"minecraft:block/acacia_planks",
+        "set":  [
+          "all#minecraft:block/acacia_planks",
+          "sides#minecraft:block/acacia_planks",
+          "top#minecraft:block/acacia_planks"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:birch_planks",
+      "texture": {
+        "type": "misc",
+        "value":"minecraft:block/birch_planks",
+        "set":  [
+          "all#minecraft:block/birch_planks",
+          "sides#minecraft:block/birch_planks",
+          "top#minecraft:block/birch_planks"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:dark_oak_planks",
+      "texture": {
+        "type": "misc",
+        "value":"minecraft:block/dark_oak_planks",
+        "set":  [
+          "all#minecraft:block/dark_oak_planks",
+          "sides#minecraft:block/dark_oak_planks",
+          "top#minecraft:block/dark_oak_planks"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:jungle_planks",
+      "texture": {
+        "type": "misc",
+        "value":"minecraft:block/jungle_planks",
+        "set":  [
+          "all#minecraft:block/jungle_planks",
+          "sides#minecraft:block/jungle_planks",
+          "top#minecraft:block/jungle_planks"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:oak_planks",
+      "texture": {
+        "type": "misc",
+        "value":"minecraft:block/oak_planks",
+        "set":  [
+          "all#minecraft:block/oak_planks",
+          "sides#minecraft:block/oak_planks",
+          "top#minecraft:block/oak_planks"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:spruce_planks",
+      "texture": {
+        "type": "misc",
+        "set": ["all#yuushya:block_/template/spruce_planks_all","sides#yuushya:block_/template/spruce_planks_sides","top#yuushya:block_/template/spruce_planks_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:black_wool",
+      "texture": {
+        "type": "wool",
+        "value":"yuushya:block_/template/black_wool_sides",
+        "set":  [
+          "all#yuushya:block_/template/black_wool_sides",
+          "couch#yuushya:0extra_building_block/wool/black_couch", "sides#yuushya:block_/template/black_wool_sides",
+          "top#yuushya:block_/template/black_wool_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:blue_wool",
+      "texture": {
+        "type": "wool",
+        "value":"yuushya:block_/template/blue_wool_sides",
+        "set":  [
+          "all#yuushya:block_/template/blue_wool_sides",
+          "couch#yuushya:0extra_building_block/wool/blue_couch", "sides#yuushya:block_/template/blue_wool_sides",
+          "top#yuushya:block_/template/blue_wool_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:brown_wool",
+      "texture": {
+        "type": "wool",
+        "value":"yuushya:block_/template/brown_wool_sides",
+        "set":  [
+          "all#yuushya:block_/template/brown_wool_sides",
+          "couch#yuushya:0extra_building_block/wool/brown_couch", "sides#yuushya:block_/template/brown_wool_sides",
+          "top#yuushya:block_/template/brown_wool_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:cyan_wool",
+      "texture": {
+        "type": "wool",
+        "value":"yuushya:block_/template/cyan_wool_sides",
+        "set":  [
+          "all#yuushya:block_/template/cyan_wool_sides",
+          "couch#yuushya:0extra_building_block/wool/cyan_couch", "sides#yuushya:block_/template/cyan_wool_sides",
+          "top#yuushya:block_/template/cyan_wool_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:gray_wool",
+      "texture": {
+        "type": "wool",
+        "value":"yuushya:block_/template/gray_wool_sides",
+        "set":  [
+          "all#yuushya:block_/template/gray_wool_sides",
+          "couch#yuushya:0extra_building_block/wool/gray_couch", "sides#yuushya:block_/template/gray_wool_sides",
+          "top#yuushya:block_/template/gray_wool_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:green_wool",
+      "texture": {
+        "type": "wool",
+        "value":"yuushya:block_/template/green_wool_sides",
+        "set":  [
+          "all#yuushya:block_/template/green_wool_sides",
+          "couch#yuushya:0extra_building_block/wool/green_couch", "sides#yuushya:block_/template/green_wool_sides",
+          "top#yuushya:block_/template/green_wool_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:light_blue_wool",
+      "texture": {
+        "type": "wool",
+        "value":"yuushya:block_/template/light_blue_wool_sides",
+        "set":  [
+          "all#yuushya:block_/template/light_blue_wool_sides",
+          "couch#yuushya:0extra_building_block/wool/light_blue_couch", "sides#yuushya:block_/template/light_blue_wool_sides",
+          "top#yuushya:block_/template/light_blue_wool_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:light_gray_wool",
+      "texture": {
+        "type": "wool",
+        "value":"yuushya:block_/template/light_gray_wool_sides",
+        "set":  [
+          "all#yuushya:block_/template/light_gray_wool_sides",
+          "couch#yuushya:0extra_building_block/wool/light_gray_couch", "sides#yuushya:block_/template/light_gray_wool_sides",
+          "top#yuushya:block_/template/light_gray_wool_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:lime_wool",
+      "texture": {
+        "type": "wool",
+        "value":"yuushya:block_/template/lime_wool_sides",
+        "set":  [
+          "all#yuushya:block_/template/lime_wool_sides",
+          "couch#yuushya:0extra_building_block/wool/lime_couch", "sides#yuushya:block_/template/lime_wool_sides",
+          "top#yuushya:block_/template/lime_wool_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:magenta_wool",
+      "texture": {
+        "type": "wool",
+        "value":"yuushya:block_/template/magenta_wool_sides",
+        "set":  [
+          "all#yuushya:block_/template/magenta_wool_sides",
+          "couch#yuushya:0extra_building_block/wool/magenta_couch", "sides#yuushya:block_/template/magenta_wool_sides",
+          "top#yuushya:block_/template/magenta_wool_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:orange_wool",
+      "texture": {
+        "type": "wool",
+        "value":"yuushya:block_/template/orange_wool_sides",
+        "set":  [
+          "all#yuushya:block_/template/orange_wool_sides",
+          "couch#yuushya:0extra_building_block/wool/orange_couch", "sides#yuushya:block_/template/orange_wool_sides",
+          "top#yuushya:block_/template/orange_wool_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:pink_wool",
+      "texture": {
+        "type": "wool",
+        "value":"yuushya:block_/template/pink_wool_sides",
+        "set":  [
+          "all#yuushya:block_/template/pink_wool_sides",
+          "couch#yuushya:0extra_building_block/wool/pink_couch", "sides#yuushya:block_/template/pink_wool_sides",
+          "top#yuushya:block_/template/pink_wool_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:purple_wool",
+      "texture": {
+        "type": "wool",
+        "value":"yuushya:block_/template/purple_wool_sides",
+        "set":  [
+          "all#yuushya:block_/template/purple_wool_sides",
+          "couch#yuushya:0extra_building_block/wool/purple_couch", "sides#yuushya:block_/template/purple_wool_sides",
+          "top#yuushya:block_/template/purple_wool_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:red_wool",
+      "texture": {
+        "type": "wool",
+        "value":"yuushya:block_/template/red_wool_sides",
+        "set":  [
+          "all#yuushya:block_/template/red_wool_sides",
+          "couch#yuushya:0extra_building_block/wool/red_couch", "sides#yuushya:block_/template/red_wool_sides",
+          "top#yuushya:block_/template/red_wool_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:white_wool",
+      "texture": {
+        "type": "wool",
+        "value":"yuushya:block_/template/white_wool_sides",
+        "set":  [
+          "all#yuushya:block_/template/white_wool_sides",
+          "couch#yuushya:0extra_building_block/wool/white_couch", "sides#yuushya:block_/template/white_wool_sides",
+          "top#yuushya:block_/template/white_wool_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:yellow_wool",
+      "texture": {
+        "type": "wool",
+        "value":"yuushya:block_/template/yellow_wool_sides",
+        "set":  [
+          "all#yuushya:block_/template/yellow_wool_sides",
+          "couch#yuushya:0extra_building_block/wool/yellow_couch", "sides#yuushya:block_/template/yellow_wool_sides",
+          "top#yuushya:block_/template/yellow_wool_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:black_concrete",
+      "texture": {
+        "type": "concrete",
+        "value":"yuushya:block_/concrete/black_concrete_sides",
+        "set":  [
+          "all#yuushya:block_/concrete/black_concrete_top",
+          "sides#yuushya:block_/concrete/black_concrete_sides",
+          "top#yuushya:block_/concrete/black_concrete_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:blue_concrete",
+      "texture": {
+        "type": "concrete",
+        "value":"yuushya:block_/concrete/blue_concrete_sides",
+        "set":  [
+          "all#yuushya:block_/concrete/blue_concrete_top",
+          "sides#yuushya:block_/concrete/blue_concrete_sides",
+          "top#yuushya:block_/concrete/blue_concrete_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:brown_concrete",
+      "texture": {
+        "type": "concrete",
+        "value":"yuushya:block_/concrete/brown_concrete_sides",
+        "set":  [
+          "all#yuushya:block_/concrete/brown_concrete_top",
+          "sides#yuushya:block_/concrete/brown_concrete_sides",
+          "top#yuushya:block_/concrete/brown_concrete_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:cyan_concrete",
+      "texture": {
+        "type": "concrete",
+        "value":"yuushya:block_/concrete/cyan_concrete_sides",
+        "set":  [
+          "all#yuushya:block_/concrete/cyan_concrete_top",
+          "sides#yuushya:block_/concrete/cyan_concrete_sides",
+          "top#yuushya:block_/concrete/cyan_concrete_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:gray_concrete",
+      "texture": {
+        "type": "concrete",
+        "value":"yuushya:block_/concrete/gray_concrete_sides",
+        "set":  [
+          "all#yuushya:block_/concrete/gray_concrete_top",
+          "sides#yuushya:block_/concrete/gray_concrete_sides",
+          "top#yuushya:block_/concrete/gray_concrete_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:green_concrete",
+      "texture": {
+        "type": "concrete",
+        "value":"yuushya:block_/concrete/green_concrete_sides",
+        "set":  [
+          "all#yuushya:block_/concrete/green_concrete_top",
+          "sides#yuushya:block_/concrete/green_concrete_sides",
+          "top#yuushya:block_/concrete/green_concrete_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:light_blue_concrete",
+      "texture": {
+        "type": "concrete",
+        "value":"yuushya:block_/concrete/light_blue_concrete_sides",
+        "set":  [
+          "all#yuushya:block_/concrete/light_blue_concrete_top",
+          "sides#yuushya:block_/concrete/light_blue_concrete_sides",
+          "top#yuushya:block_/concrete/light_blue_concrete_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:light_gray_concrete",
+      "texture": {
+        "type": "concrete",
+        "value":"yuushya:block_/concrete/light_gray_concrete_sides",
+        "set":  [
+          "all#yuushya:block_/concrete/light_gray_concrete_top",
+          "sides#yuushya:block_/concrete/light_gray_concrete_sides",
+          "top#yuushya:block_/concrete/light_gray_concrete_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:lime_concrete",
+      "texture": {
+        "type": "concrete",
+        "value":"yuushya:block_/concrete/lime_concrete_sides",
+        "set":  [
+          "all#yuushya:block_/concrete/lime_concrete_top",
+          "sides#yuushya:block_/concrete/lime_concrete_sides",
+          "top#yuushya:block_/concrete/lime_concrete_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:magenta_concrete",
+      "texture": {
+        "type": "concrete",
+        "value":"yuushya:block_/concrete/magenta_concrete_sides",
+        "set":  [
+          "all#yuushya:block_/concrete/magenta_concrete_top",
+          "sides#yuushya:block_/concrete/magenta_concrete_sides",
+          "top#yuushya:block_/concrete/magenta_concrete_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:orange_concrete",
+      "texture": {
+        "type": "concrete",
+        "value":"yuushya:block_/concrete/orange_concrete_sides",
+        "set":  [
+          "all#yuushya:block_/concrete/orange_concrete_top",
+          "sides#yuushya:block_/concrete/orange_concrete_sides",
+          "top#yuushya:block_/concrete/orange_concrete_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:pink_concrete",
+      "texture": {
+        "type": "concrete",
+        "value":"yuushya:block_/concrete/pink_concrete_sides",
+        "set":  [
+          "all#yuushya:block_/concrete/pink_concrete_top",
+          "sides#yuushya:block_/concrete/pink_concrete_sides",
+          "top#yuushya:block_/concrete/pink_concrete_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:purple_concrete",
+      "texture": {
+        "type": "concrete",
+        "value":"yuushya:block_/concrete/purple_concrete_sides",
+        "set":  [
+          "all#yuushya:block_/concrete/purple_concrete_top",
+          "sides#yuushya:block_/concrete/purple_concrete_sides",
+          "top#yuushya:block_/concrete/purple_concrete_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:red_concrete",
+      "texture": {
+        "type": "concrete",
+        "value":"yuushya:block_/concrete/red_concrete_sides",
+        "set":  [
+          "all#yuushya:block_/concrete/red_concrete_top",
+          "sides#yuushya:block_/concrete/red_concrete_sides",
+          "top#yuushya:block_/concrete/red_concrete_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:white_concrete",
+      "texture": {
+        "type": "concrete",
+        "value":"yuushya:block_/concrete/white_concrete_sides",
+        "set":  [
+          "all#yuushya:block_/concrete/white_concrete_top",
+          "sides#yuushya:block_/concrete/white_concrete_sides",
+          "top#yuushya:block_/concrete/white_concrete_top"]}
+    },
+
+    {
+      "class_type": "remain", "name": "minecraft:yellow_concrete",
+      "texture": {
+        "type": "concrete",
+        "value":"yuushya:block_/concrete/yellow_concrete_sides",
+        "set":  [
+          "all#yuushya:block_/concrete/yellow_concrete_top",
+          "sides#yuushya:block_/concrete/yellow_concrete_sides",
+          "top#yuushya:block_/concrete/yellow_concrete_top"]}
+    }
+  ]
+}

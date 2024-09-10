@@ -1,0 +1,43 @@
+{
+  "item": [
+    {"class_type": "", "name": "ctm_alert_0",  "item_group": "extra_blocks","properties": {"max_count": 64,"lines": 2, "rarity": "epic"}},
+    {"class_type": "", "name": "ctm_alert_1",  "item_group": "wood","properties": {"max_count": 64,"lines": 2, "rarity": "epic"}},
+    {"class_type": "", "name": "ctm_alert_4",  "item_group": "wood","properties": {"max_count": 64,"lines": 2, "rarity": "epic"}},
+    {"class_type": "", "name": "ctm_alert_2",  "item_group": "stone","properties": {"max_count": 64,"lines": 2, "rarity": "epic"}},
+    {"class_type": "", "name": "ctm_alert_5",  "item_group": "stone","properties": {"max_count": 64,"lines": 2, "rarity": "epic"}},
+    {"class_type": "", "name": "ctm_alert_3",  "item_group": "extra_blocks","properties": {"max_count": 64,"lines": 2, "rarity": "epic"}},
+
+    {"class_type": "BlueprintItem", "name": "block_blueprint",  "item_group": "item","properties": {"max_count": 64,"lines": 1, "rarity": "common"}},
+    {"class_type": "BlueprintItem", "name": "wood_blueprint",  "item_group": "item","properties": {"max_count": 64,"lines": 1, "rarity": "common"}},
+    {"class_type": "BlueprintItem", "name": "stone_blueprint",  "item_group": "item","properties": {"max_count": 64,"lines": 1, "rarity": "common"}},
+    {"class_type": "BlueprintItem", "name": "fabric_blueprint",   "item_group": "item","properties": {"max_count": 64,"lines": 1, "rarity": "common"}},
+    {"class_type": "BlueprintItem", "name": "catering_blueprint",   "item_group": "item","properties": {"max_count": 64,"lines": 1, "rarity": "common"}},
+    {"class_type": "BlueprintItem", "name": "living_being_blueprint",   "item_group": "item","properties": {"max_count": 64,"lines": 1, "rarity": "common"}},
+    {"class_type": "BlueprintItem", "name": "store_blueprint",   "item_group": "item","properties": {"max_count": 64,"lines": 1, "rarity": "common"}},
+    {"class_type": "BlueprintItem", "name": "sign_blueprint",   "item_group": "item","properties": {"max_count": 64,"lines": 1, "rarity": "common"}},
+    {"class_type": "BlueprintItem", "name": "furniture_blueprint",   "item_group": "item","properties": {"max_count": 64,"lines": 1, "rarity": "common"}},
+    {"class_type": "BlueprintItem", "name": "lighting_blueprint",   "item_group": "item","properties": {"max_count": 64,"lines": 1, "rarity": "common"}},
+    {"class_type": "BlueprintItem", "name": "facility_blueprint",   "item_group": "item","properties": {"max_count": 64,"lines": 1, "rarity": "common"}},
+    {"class_type": "BlueprintItem", "name": "traffic_blueprint",  "item_group": "item","properties": {"max_count": 64,"lines": 1, "rarity": "common"}},
+    {"class_type": "BlueprintItem", "name": "extra_shapes_blueprint",   "item_group": "item","properties": {"max_count": 64,"lines": 1, "rarity": "common"}},
+    {"class_type": "BlueprintItem", "name": "window_blueprint",  "item_group": "item","properties": {"max_count": 64,"lines": 1, "rarity": "common"}},
+
+    {"class_type": "HatItem", "name": "pictor",   "item_group": "item","properties": {"max_count": 64,"lines": 1, "rarity": "epic"}},
+    {"class_type": "HatItem", "name": "bismuth_crystal",   "item_group": "item","properties": {"max_count": 64,"lines": 1, "rarity": "epic"}},
+    {"class_type": "HatItem", "name": "tri_legged_chair",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
+    {"class_type": "HatItem", "name": "wriggle_nightbug",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
+    {"class_type": "HatItem", "name": "shameimaru_aya",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
+    {"class_type": "HatItem", "name": "hakurei_reimu",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
+    {"class_type": "HatItem", "name": "horaisan_kaguya",   "item_group": "item","properties": {"max_count": 1,"lines": 0, "rarity": "epic"}},
+    {"class_type": "HatItem", "name": "fujiwara_no_mokou",   "item_group": "item","properties": {"max_count": 1,"lines": 0, "rarity": "epic"}},
+    {"class_type": "HatItem", "name": "sleeping_orange_cat",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
+    {"class_type": "HatItem", "name": "sleeping_ragdoll",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
+    {"class_type": "HatItem", "name": "butterfly",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
+    {"class_type": "HatItem", "name": "head_bucket",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
+    {"class_type": "HatItem", "name": "symbol_of_love",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
+    {"class_type": "HatItem", "name": "christmas_hat",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
+    {"class_type": "HatItem", "name": "toilet_head",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
+    {"class_type": "HatItem", "name": "conehead",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}},
+    {"class_type": "HatItem", "name": "fan_head",   "item_group": "item","properties": {"max_count": 1,"lines": 1, "rarity": "epic"}}
+  ]
+}

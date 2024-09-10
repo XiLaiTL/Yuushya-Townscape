@@ -1,0 +1,613 @@
+{
+  "block": [
+    {"name": "~Catering_餐饮", "class_type": "_comment" },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "bottle",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/wine_single"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "bottles",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/wine"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "sorted_bottle",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/wine_s"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "microwaver",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/microwaver"]]}
+    },
+
+    {
+      "class_type": "TranslucentBlock",
+      "name": "blender",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/blender"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "cold_juice_dispenser",
+      "auto_generated": { "collision": "block" }, "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/juicer"]]}
+    },
+
+    {
+      "class_type": "TranslucentBlock",
+      "name": "coffee_machine",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/coffee_machine"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "knife_rest",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/knife_rest"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mortar_and_pestle",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/mortar_and_pestle"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "wooden_mortar_and_pestle",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/wooden_mortar_and_pestle"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "pressure_cooker",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/pressure_cooker"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "casserole_0",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/casserole_0"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "casserole_1",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/casserole_1"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "steel_pot",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/steel_pot"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "frying_pan",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/frying_pan"]]}
+    },
+
+
+    {
+      "class_type": "DecoBlock",
+      "name": "gas_stove",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/gas_stove"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "gas_stove_block",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/gas_stove_block"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "peking_roast_duck",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/food/peking_roast_duck"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "hanging_peking_roast_duck",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/hanging_roast_duck"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "tanghulu",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/tanghulu"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "tanghulu_bunch",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/tanghulu_bunch"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "tanghulu_tree",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/tanghulu_tree"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "beef",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/food/beef"]]}
+    },
+    {
+      "class_type": "DecoBlock",
+      "name": "beef_plate",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/food/beef_3"]]}
+    },
+    {
+      "class_type": "DecoBlock",
+      "name": "test_food",
+      "item_group": "catering",
+      "properties": { "food": {"nutrition": 2, "saturation": 0.1, "finished_item": "yuushya:beef_plate"} },
+      "blockstate": { "forms": [
+        ["yuushya:extra_building_material/food/beef"],
+        ["yuushya:extra_building_material/food/beef_1"],
+        ["yuushya:extra_building_material/food/beef_2"]
+      ]}
+    },
+    {
+      "class_type": "DecoBlock",
+      "name": "pizza",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/pizza"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "sushi_set",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/sushi_set"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "oden_cooker",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/oden_cooker"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "full_oden_cooker",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/oden_cooker_full"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "coconut",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/coconut"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "melon",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/food/melon"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "apple",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/food/apple"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "green_apple",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/food/green_apple"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "radish",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/food/radish"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "jam",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/jam1"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "paste",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/jam2"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "chopsticks",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/chopsticks"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mug",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/mug"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "sorted_mug",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/mug_"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "shampoo",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/shampoo"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "detergent",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/detergent"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "seasoning_box",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/seasoning_box"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "potato_chips",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/potato_chips"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "soda",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/cola"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "soda_",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/cola_s"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "different_soda",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/small_cola_mix"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "small_soda",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/small_cola"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "croissant",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/bread_plate"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "milk_tea",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/milktea"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "chocolate_milk",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/chocolate_milk"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "strawberry_milk",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/strawberry_milk"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "sea_salt_tea",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/seasalt_tea"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "hot_pot",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/hot_pot"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "hot_pot_",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/hot_pot_0"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "chocolate_cake",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/chocolate_cake"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "pudding",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/pudding"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "bread_with_egg",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/bread_with_egg"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "ice_cream_cup",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/ice_cream_cup"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "macchiato",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/macchiato"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "small_coffee",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/small_coffee"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "packed_apple",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/packed_apple"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "packed_green_apple",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/packed_green_apple"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "packed_radish",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/packed_radish"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "packed_crate",
+      "auto_generated": { "collision":"bound" }, "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/packed_crate"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "packed_apple_crate",
+      "auto_generated": { "collision":"bound" }, "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/packed_apple_crate"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "packed_green_apple_crate",
+      "auto_generated": { "collision":"bound" }, "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/packed_green_apple_crate"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "packed_golden_apple_crate",
+      "auto_generated": { "collision":"bound" }, "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/packed_golden_apple_crate"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "plate",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/plate"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "piled_plate",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/plate_"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "plate_shelf",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/plate_shelf"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "small_chopping_board",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/choping_board"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "chopping_board",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/choping_board_"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "milk",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/milk"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "sorted_milk",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/milk_"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "snack",
+      "item_group": "catering",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/snack"],["yuushya:extra_building_material/snack_"]]}
+    },
+
+
+
+    {
+      "class_type": "DecoBlock",
+      "name": "cereal_0",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/cereal_0"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "cereal_1",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/cereal_1"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "cereal_2",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/cereal_2"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "cereal_box",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/cereal_box"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "kitchen_stuff_0",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/kitchen_stuff_0"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "gas_tank",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/gas_tank"]]}
+    },
+
+    {
+      "class_type": "ChairBlock",
+      "name": "hood",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/hood_left","yuushya:extra_building_material/hood_middle","yuushya:extra_building_material/hood_right","yuushya:extra_building_material/hood_none"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "glasses",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/glass"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "paper_cup",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/paper_cup"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "piled_paper_cups",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/piled_paper_cups"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "call_bell",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/bell"]]}
+    }
+  ]
+}

@@ -1,0 +1,687 @@
+{
+  "block": [
+    {"name": "~Signs_标牌", "class_type": "_comment" },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "sign_0",
+      "item_group": "signs",
+      "properties": {"lines": 0, "light_level": 13},
+      "blockstate": { "forms": [["yuushya:extra_building_material/sign/sign_0"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "sign_1",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/sign/sign_1"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "sign_2",
+      "item_group": "signs",
+      "properties": {"lines": 0, "light_level": 13},
+      "blockstate": { "forms": [["yuushya:extra_building_material/sign/sign_2"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "sign_3",
+      "item_group": "signs",
+      "properties": {"lines": 0, "light_level": 13},
+      "blockstate": { "forms": [["yuushya:extra_building_material/sign/sign_3"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "sign_4",
+      "item_group": "signs",
+      "properties": {"lines": 0, "light_level": 13},
+      "blockstate": { "forms": [["yuushya:extra_building_material/sign/sign_4"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "sign_5",
+      "item_group": "signs",
+      "properties": {"lines": 0, "light_level": 15},
+      "blockstate": { "forms": [["yuushya:extra_building_material/sign/sign_5"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "sign_6",
+      "item_group": "signs",
+      "properties": {"lines": 0, "light_level": 13},
+      "blockstate": { "forms": [["yuushya:extra_building_material/sign/sign_6"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "sign_7",
+      "item_group": "signs",
+      "properties": {"lines": 0, "light_level": 13},
+      "blockstate": { "forms": [["yuushya:extra_building_material/sign/sign_7"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "sign_8",
+      "item_group": "signs",
+      "properties": {"lines": 0, "light_level": 13},
+      "blockstate": { "forms": [["yuushya:extra_building_material/sign/sign_8"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "sign_9",
+      "item_group": "signs",
+      "properties": {"lines": 0, "light_level": 13},
+      "blockstate": { "forms": [["yuushya:extra_building_material/sign/sign_9"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "sign_10",
+      "item_group": "signs",
+      "properties": {"lines": 0, "light_level": 13},
+      "blockstate": { "forms": [["yuushya:extra_building_material/sign/sign_10"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "sign_11",
+      "auto_generated": { "blockstate": false }, "item_group": "signs",
+      "properties": {"lines": 0, "light_level": 13},
+      "blockstate": { "forms": [["yuushya:extra_building_material/sign/sign_11"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "sign_12",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/sign/sign_12"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "sign_13",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/sign/sign_13"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "sign_14",
+      "auto_generated": { "blockstate": false }, "item_group": "signs",
+      "properties": {"lines": 0, "light_level": 13},
+      "blockstate": { "forms": [["yuushya:extra_building_material/sign/sign_14"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "sign_15",
+      "item_group": "signs",
+      "properties": {"lines": 0, "light_level": 13},
+      "blockstate": { "forms": [["yuushya:extra_building_material/sign/sign_15"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "sign_16",
+      "item_group": "signs",
+      "properties": {"lines": 0, "light_level": 13},
+      "blockstate": { "forms": [["yuushya:extra_building_material/sign/sign_16"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "sign_17",
+      "item_group": "signs",
+      "properties": {"lines": 0, "light_level": 13},
+      "blockstate": { "forms": [["yuushya:extra_building_material/sign/sign_17"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "sign_18",
+      "item_group": "signs",
+      "properties": {"lines": 0, "light_level": 13},
+      "blockstate": { "forms": [["yuushya:extra_building_material/sign/sign_18"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "sign_19",
+      "item_group": "signs",
+      "properties": {"lines": 0, "light_level": 13},
+      "blockstate": { "forms": [["yuushya:extra_building_material/sign/sign_19"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "sign_20",
+      "item_group": "signs",
+      "properties": {"lines": 0 ,"light_level": 13},
+      "blockstate": { "forms": [["yuushya:extra_building_material/sign/sign_20"]]}
+    },
+
+
+    {
+      "class_type": "FixedBlock",
+      "name": "sign_21",
+      "item_group": "signs",
+      "properties": {"lines": 0, "light_level": 15},
+      "blockstate": { "forms": [["yuushya:extra_building_material/sign/sign_21"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "sign_22",
+      "item_group": "signs",
+      "properties": {"lines": 0, "light_level": 15},
+      "blockstate": { "forms": [["yuushya:extra_building_material/sign/sign_22"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "sign_23",
+      "item_group": "signs",
+      "properties": {"lines": 0, "light_level": 15},
+      "blockstate": { "forms": [["yuushya:extra_building_material/sign/sign_23"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "sign_24",
+      "item_group": "signs",
+      "properties": {"lines": 0, "light_level": 15},
+      "blockstate": { "forms": [["yuushya:extra_building_material/sign/sign_24"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "sign_25",
+      "item_group": "signs",
+      "properties": {"lines": 0, "light_level": 13},
+      "blockstate": { "forms": [["yuushya:extra_building_material/sign/sign_25"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "sign_26",
+      "item_group": "signs",
+      "properties": {"lines": 0, "light_level": 13},
+      "blockstate": { "forms": [["yuushya:extra_building_material/sign/sign_26"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "sign_27",
+      "item_group": "signs",
+      "properties": {"lines": 0, "light_level": 10},
+      "blockstate": { "forms": [["yuushya:extra_building_material/sign/sign_27"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "sign_28",
+      "auto_generated": { "blockstate": false }, "item_group": "signs",
+      "properties": {"lines": 0, "light_level": 15},
+      "blockstate": { "forms": [["yuushya:extra_building_material/advertisement_wall"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "shop_sign",
+      "auto_generated": { "collision": "bound" }, "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/euro_style/shop_sign"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "title_black",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/title/title_black"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "title_blue",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/title/title_blue"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "title_brown",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/title/title_brown"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "title_gray",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/title/title_gray"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "title_lime",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/title/title_lime"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "title_orange",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/title/title_orange"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "title_pink",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/title/title_pink"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "title_red",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/title/title_red"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "title_white",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/title/title_white"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "title_yellow",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/title/title_yellow"]]}
+    },
+
+
+    {
+      "class_type": "DecoBlock",
+      "name": "dual_small_title_black",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/title/dual_small_title_black"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "dual_small_title_blue",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/title/dual_small_title_blue"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "dual_small_title_brown",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/title/dual_small_title_brown"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "dual_small_title_gray",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/title/dual_small_title_gray"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "dual_small_title_lime",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/title/dual_small_title_lime"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "dual_small_title_orange",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/title/dual_small_title_orange"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "dual_small_title_pink",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/title/dual_small_title_pink"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "dual_small_title_red",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/title/dual_small_title_red"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "dual_small_title_white",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/title/dual_small_title_white"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "dual_small_title_yellow",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/title/dual_small_title_yellow"]]}
+    },
+
+
+    {
+      "class_type": "DecoBlock",
+      "name": "small_title_black",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/title/small_title_black"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "small_title_blue",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/title/small_title_blue"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "small_title_brown",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/title/small_title_brown"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "small_title_gray",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/title/small_title_gray"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "small_title_lime",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/title/small_title_lime"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "small_title_orange",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/title/small_title_orange"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "small_title_pink",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/title/small_title_pink"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "small_title_red",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/title/small_title_red"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "small_title_white",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/title/small_title_white"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "small_title_yellow",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/title/small_title_yellow"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "small_poster_0",
+      "item_group": "signs",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/poster/small_poster_0"],["yuushya:extra_building_material/poster/small_poster_0_"],["yuushya:extra_building_material/poster/small_poster_0__"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "small_poster_1",
+      "item_group": "signs",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/poster/small_poster_1"],["yuushya:extra_building_material/poster/small_poster_1_"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mini_banner_0",
+      "item_group": "signs",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/poster/mini_banner_0"],["yuushya:extra_building_material/poster/mini_banner_0_"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mini_banner_1",
+      "item_group": "signs",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/poster/mini_banner_1"],["yuushya:extra_building_material/poster/mini_banner_1_"]]}
+    },
+
+    {
+      "class_type": "TranslucentBlock",
+      "name": "hanzi_banner_0",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/poster/hanzi_banner_0"]]}
+    },
+
+    {
+      "class_type": "TranslucentBlock",
+      "name": "hanzi_banner_1",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/poster/hanzi_banner_1"]]}
+    },
+
+    {
+      "class_type": "TranslucentBlock",
+      "name": "hanzi_banner_2",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/poster/hanzi_banner_2"]]}
+    },
+
+    {
+      "class_type": "TranslucentBlock",
+      "name": "hanzi_banner_3",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/poster/hanzi_banner_3"]]}
+    },
+
+    {
+      "class_type": "TranslucentBlock",
+      "name": "hanzi_banner_4",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/poster/hanzi_banner_4"]]}
+    },
+
+    {
+      "class_type": "TranslucentBlock",
+      "name": "hanzi_banner_5",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/poster/hanzi_banner_5"]]}
+    },
+
+    {
+      "class_type": "TranslucentBlock",
+      "name": "hanzi_banner_6",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/poster/hanzi_banner_6"]]}
+    },
+
+    {
+      "class_type": "TranslucentBlock",
+      "name": "hanzi_banner_7",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/poster/hanzi_banner_7"]]}
+    },
+
+    {
+      "class_type": "TranslucentBlock",
+      "name": "hanzi_banner_8",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/poster/hanzi_banner_8"]]}
+    },
+
+    {
+      "class_type": "TranslucentBlock",
+      "name": "hanzi_banner_9",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/poster/hanzi_banner_9"]]}
+    },
+
+    {
+      "class_type": "TranslucentBlock",
+      "name": "hanzi_banner_10",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/poster/hanzi_banner_10"]]}
+    },
+
+    {
+      "class_type": "TranslucentBlock",
+      "name": "hanzi_banner_11",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/poster/hanzi_banner_11"]]}
+    },
+
+    {
+      "class_type": "TranslucentBlock",
+      "name": "hanzi_banner_12",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/poster/hanzi_banner_12"]]}
+    },
+
+    {
+      "class_type": "TranslucentBlock",
+      "name": "hanzi_banner_13",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/poster/hanzi_banner_13"]]}
+    },
+
+    {
+      "class_type": "TranslucentBlock",
+      "name": "hanzi_banner_14",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/poster/hanzi_banner_14"]]}
+    },
+
+    {
+      "class_type": "TranslucentBlock",
+      "name": "hanzi_banner_15",
+      "item_group": "signs",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/poster/hanzi_banner_15"]]}
+    },
+
+
+    {
+      "class_type": "DecoBlock",
+      "name": "big_poster",
+      "item_group": "signs",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/poster/big_poster"],["yuushya:extra_building_material/poster/big_poster_"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "high_poster",
+      "item_group": "signs",
+      "blockstate": { "forms": [["yuushya:extra_building_material/poster/high_poster"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "long_poster",
+      "item_group": "signs",
+      "blockstate": { "forms": [["yuushya:extra_building_material/poster/long_poster"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "graffiti_0",
+      "item_group": "signs",
+      "render_type": "translucent",
+      "blockstate": { "forms": [["yuushya:extra_building_material/poster/graffiti_0"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "graffiti_1",
+      "item_group": "signs",
+      "render_type": "translucent",
+      "blockstate": { "forms": [["yuushya:extra_building_material/poster/graffiti_1"]]}
+    }
+  ]
+}

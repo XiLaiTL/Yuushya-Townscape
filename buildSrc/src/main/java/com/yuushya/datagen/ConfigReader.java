@@ -178,7 +178,7 @@ public class ConfigReader {
     }
 
     public void readRegistryConfig(Path registerPath){
-        //readRegistryInner();
+        readRegistryInner();
         var files = registerPath.toFile().listFiles(
                 x->x.isFile()&&x.toPath().toString().endsWith(".json")
         );

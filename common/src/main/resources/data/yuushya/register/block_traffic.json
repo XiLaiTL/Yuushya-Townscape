@@ -1,0 +1,503 @@
+{
+  "block": [
+    {"name": "~Traffic_交通", "class_type": "_comment" },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "crash_barrel",
+      "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/crash_barrel"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "cone",
+      "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/st"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "bicycle_stop",
+      "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/bicycle_stop"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "electric_motorcycle",
+      "item_group": "traffic",
+      "blockstate": { "kit": "tri_part", "forms": [["yuushya:extra_building_material/ebike"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "pedestrian_crossing_forward_line",
+      "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/road/fix2"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "wheel",
+      "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/wheel"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "wheel_",
+      "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/wheel_"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "truck_wheel",
+      "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/truck_wheel"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "truck_wheel_",
+      "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/truck_wheel_"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "truck_wheels",
+      "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/truck_wheel_piled"]]}
+    },
+
+
+    {
+      "class_type": "DecoBlock",
+      "name": "traffic_sign_0",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_00"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "traffic_sign_1",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_01"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "traffic_sign_2",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_02"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "traffic_sign_3",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_03"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "traffic_sign_4",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_04"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "traffic_sign_5",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_05"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "traffic_sign_6",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_06"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "traffic_sign_7",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_07"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "traffic_sign_8",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_08"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "traffic_sign_9",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_09"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "traffic_sign_10",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_10"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "traffic_sign_11",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_11"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "traffic_sign_12",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_12"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "traffic_sign_13",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_13"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "traffic_sign_14",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_14"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "traffic_sign_15",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_15"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "traffic_sign_16",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_19"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "traffic_sign_17",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_17"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "traffic_sign_18",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_18"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "traffic_lights_0",
+      "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_light_1"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "traffic_lights_1",
+      "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_lights"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "traffic_lights_2",
+      "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_lights_"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "traffic_lights_3",
+      "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_lights__0"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "traffic_lights_4",
+      "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_lights__"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "car_yellow_part_a",
+      "item_group": "traffic",
+      "blockstate": { "kit": "tri_part", "forms": [["yuushya:extra_building_material/car_yellow_part_a"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "car_red_part_a",
+      "item_group": "traffic",
+      "blockstate": { "kit": "tri_part", "forms": [["yuushya:extra_building_material/car_red_part_a"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "car_white_part_a",
+      "item_group": "traffic",
+      "blockstate": { "kit": "tri_part", "forms": [["yuushya:extra_building_material/car_white_part_a"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "car_dark_part_a",
+      "item_group": "traffic",
+      "blockstate": { "kit": "tri_part", "forms": [["yuushya:extra_building_material/car_dark_part_a"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "car_blue_part_a",
+      "item_group": "traffic",
+      "blockstate": { "kit": "tri_part", "forms": [["yuushya:extra_building_material/car_blue_part_a"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "car_yellow_part_b",
+      "item_group": "traffic",
+      "blockstate": { "kit": "tri_part", "forms": [["yuushya:extra_building_material/car_yellow_part_b"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "car_red_part_b",
+      "item_group": "traffic",
+      "blockstate": { "kit": "tri_part", "forms": [["yuushya:extra_building_material/car_red_part_b"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "car_white_part_b",
+      "item_group": "traffic",
+      "blockstate": { "kit": "tri_part", "forms": [["yuushya:extra_building_material/car_white_part_b"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "car_dark_part_b",
+      "item_group": "traffic",
+      "blockstate": { "kit": "tri_part", "forms": [["yuushya:extra_building_material/car_dark_part_b"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "car_blue_part_b",
+      "item_group": "traffic",
+      "blockstate": { "kit": "tri_part", "forms": [["yuushya:extra_building_material/car_blue_part_b"]]}
+    },
+
+
+
+    {
+      "class_type": "FixedBlock",
+      "name": "truck_chassis_basic",
+      "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/truck_chassis_basic"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "truck_chassis_outer",
+      "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/truck_chassis_outer"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "truck_chassis_wheel",
+      "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/truck_chassis_wheel"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "truck_chassis_front",
+      "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/truck_chassis_front"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "truck_chassis_end",
+      "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/truck_chassis_end"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "truck_head_yellow",
+      "item_group": "traffic",
+      "blockstate": { "kit": "tri_part", "forms": [["yuushya:extra_building_material/truck_head_yellow"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "truck_head_red",
+      "item_group": "traffic",
+      "blockstate": { "kit": "tri_part", "forms": [["yuushya:extra_building_material/truck_head_red"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "truck_head_white",
+      "item_group": "traffic",
+      "blockstate": { "kit": "tri_part", "forms": [["yuushya:extra_building_material/truck_head_white"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "truck_head_dark",
+      "item_group": "traffic",
+      "blockstate": { "kit": "tri_part", "forms": [["yuushya:extra_building_material/truck_head_dark"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "truck_head_blue",
+      "item_group": "traffic",
+      "blockstate": { "kit": "tri_part", "forms": [["yuushya:extra_building_material/truck_head_blue"]]}
+    },
+
+
+
+    {
+      "class_type": "RoofBlock",
+      "name": "ramp_1",
+      "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/road/slope/slope_1_left","yuushya:extra_building_material/road/slope/slope_1_middle","yuushya:extra_building_material/road/slope/slope_1_right","yuushya:extra_building_material/road/slope/slope_1_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "ramp_2",
+      "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/road/slope/slope_2_left","yuushya:extra_building_material/road/slope/slope_2_middle","yuushya:extra_building_material/road/slope/slope_2_right","yuushya:extra_building_material/road/slope/slope_2_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "ramp_3",
+      "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/road/slope/slope_3_left","yuushya:extra_building_material/road/slope/slope_3_middle","yuushya:extra_building_material/road/slope/slope_3_right","yuushya:extra_building_material/road/slope/slope_3_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "ramp_4",
+      "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/road/slope/slope_4_left","yuushya:extra_building_material/road/slope/slope_4_middle","yuushya:extra_building_material/road/slope/slope_4_right","yuushya:extra_building_material/road/slope/slope_4_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "ramp_5",
+      "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/road/slope/slope_5_left","yuushya:extra_building_material/road/slope/slope_5_middle","yuushya:extra_building_material/road/slope/slope_5_right","yuushya:extra_building_material/road/slope/slope_5_none"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "ramp_marking_white_1",
+      "properties": {"has_collision": false,"lines": 1},
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/road/slope_line/0"],["yuushya:extra_building_material/road/slope_line/w0_1"],["yuushya:extra_building_material/road/slope_line/w0_2"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "ramp_marking_white_2",
+      "properties": {"has_collision": false,"lines": 1},
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/road/slope_line/1"],["yuushya:extra_building_material/road/slope_line/w1_1"],["yuushya:extra_building_material/road/slope_line/w1_2"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "ramp_marking_white_3",
+      "properties": {"has_collision": false,"lines": 1},
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/road/slope_line/2"],["yuushya:extra_building_material/road/slope_line/w2_1"],["yuushya:extra_building_material/road/slope_line/w2_2"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "ramp_marking_white_4",
+      "properties": {"has_collision": false,"lines": 1},
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/road/slope_line/3"],["yuushya:extra_building_material/road/slope_line/w3_1"],["yuushya:extra_building_material/road/slope_line/w3_2"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "ramp_marking_white_5",
+      "properties": {"has_collision": false,"lines": 1},
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/road/slope_line/4"],["yuushya:extra_building_material/road/slope_line/w4_1"],["yuushya:extra_building_material/road/slope_line/w4_2"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "ramp_marking_yellow_1",
+      "properties": {"has_collision": false,"lines": 1},
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/road/slope_line/0_"],["yuushya:extra_building_material/road/slope_line/y0_1"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "ramp_marking_yellow_2",
+      "properties": {"has_collision": false,"lines": 1},
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/road/slope_line/1_"],["yuushya:extra_building_material/road/slope_line/y1_1"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "ramp_marking_yellow_3",
+      "properties": {"has_collision": false,"lines": 1},
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/road/slope_line/2_"],["yuushya:extra_building_material/road/slope_line/y2_1"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "ramp_marking_yellow_4",
+      "properties": {"has_collision": false,"lines": 1},
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/road/slope_line/3_"],["yuushya:extra_building_material/road/slope_line/y3_1"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "ramp_marking_yellow_5",
+      "properties": {"has_collision": false,"lines": 1},
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/road/slope_line/4_"],["yuushya:extra_building_material/road/slope_line/y4_1"]]}
+    }
+  ]
+}
