@@ -15,7 +15,6 @@ public class YuushyaClient {
     private static boolean openOnce =true;
     public static void onInitializeClient(){
 //        ReloadListenerRegistry.register(PackType.CLIENT_RESOURCES,new YuushyaResourceReloadListener());
-
         YuushyaRegistries.registerClient();
 
         ClientLifecycleEvent.CLIENT_STARTED.register((client)->{ //client render thread
