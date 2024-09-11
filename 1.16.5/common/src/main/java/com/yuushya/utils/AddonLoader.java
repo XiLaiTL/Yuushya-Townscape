@@ -5,6 +5,7 @@ import com.google.gson.JsonParser;
 import com.yuushya.Yuushya;
 import com.yuushya.collision.data.CollisionItem;
 import com.yuushya.registries.YuushyaRegistryData;
+import me.shedaniel.architectury.platform.Platform;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.FilePackResources;
 import net.minecraft.server.packs.FolderPackResources;
@@ -40,23 +41,33 @@ public class AddonLoader {
     //只读取yuushya文件夹了现在
     private static final FallbackResourceManager YUUSHYA_MANAGER = new FallbackResourceManager(PackType.SERVER_DATA,MOD_ID);
 
-    private static Path classJarPath(Class<?> clazz){
-        CodeSource codeSource = clazz.getProtectionDomain().getCodeSource();
-        if(codeSource!=null){
-            URL jarPath = codeSource.getLocation();
-            String decoded = null;
-            try {
-                decoded = URLDecoder.decode(jarPath.getPath(),"UTF-8");
-            } catch (UnsupportedEncodingException e) {
-                decoded = jarPath.getPath().replaceAll("%20","");
+    private static Path classJarPath(String modId, Class<?> ...clazz){
+        if(modId!=null && Platform.getModIds().contains(modId)){
+            List<Path> paths = Platform.getMod(modId).getFilePaths();
+            if(paths!=null&&!paths.isEmpty()){
+                for(Path res:paths) if(!res.toString().isEmpty()){
+                    return res;
+                }
             }
-            String dir = new File(decoded).getPath().replaceAll("#.+!","").replaceAll("\\.jar.+",".jar");
-            return Paths.get(dir);
+        }
+        for(Class<?> cls:clazz){
+            CodeSource codeSource = cls.getProtectionDomain().getCodeSource();
+            if(codeSource!=null){
+                URL jarPath = codeSource.getLocation();
+                String decoded = null;
+                try {
+                    decoded = URLDecoder.decode(jarPath.getPath(),"UTF-8");
+                } catch (UnsupportedEncodingException e) {
+                    decoded = jarPath.getPath().replaceAll("%20","");
+                }
+                String dir = new File(decoded).getPath().replaceAll("#.+!","").replaceAll("\\.jar.+",".jar");
+                return Paths.get(dir);
+            }
         }
         return null;
     }
-    public static void loadResource(Class<?> clazz){
-        Path path = classJarPath(clazz);
+    public static void loadResource(String modId, Class<?> ...clazz){
+        Path path = classJarPath(modId,clazz);
         if(path!=null && Files.exists(path)){
             try (PackResources packResource = Files.isDirectory(path)
                     ? new FolderPackResources(path.toFile())
