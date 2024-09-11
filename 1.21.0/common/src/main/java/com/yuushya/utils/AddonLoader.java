@@ -5,6 +5,7 @@ import com.google.gson.JsonParser;
 import com.yuushya.Yuushya;
 import com.yuushya.collision.data.CollisionItem;
 import com.yuushya.registries.YuushyaRegistryData;
+import dev.architectury.platform.Platform;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.*;
@@ -41,18 +42,30 @@ public class AddonLoader {
     //只读取yuushya文件夹了现在
     private static final FallbackResourceManager YUUSHYA_MANAGER = new FallbackResourceManager(PackType.SERVER_DATA,MOD_ID);
 
-    private static Path classJarPath(Class<?> clazz){
-        CodeSource codeSource = clazz.getProtectionDomain().getCodeSource();
-        if(codeSource!=null){
-            URL jarPath = codeSource.getLocation();
-            String decoded = URLDecoder.decode(jarPath.getPath(),StandardCharsets.UTF_8);
-            String dir = new File(decoded).getPath().replaceAll("#.+!","").replaceAll("\\.jar.+",".jar");
-            return Paths.get(dir);
+    private static Path classJarPath(String modId, Class<?> ...clazz){
+        if(modId!=null && Platform.getModIds().contains(modId)){
+            List<Path> paths = Platform.getMod(modId).getFilePaths();
+            if(paths!=null&&!paths.isEmpty()){
+                for(Path res:paths) if(!res.toString().isEmpty()){
+                    return res;
+                }
+            }
+        }
+        for(Class<?> cls:clazz) {
+            CodeSource codeSource = cls.getProtectionDomain().getCodeSource();
+            if (codeSource != null) {
+                URL jarPath = codeSource.getLocation();
+                String decoded = URLDecoder.decode(jarPath.getPath(), StandardCharsets.UTF_8);
+                String dir = new File(decoded).getPath().replaceAll("#.+!", "").replaceAll("\\.jar.+", ".jar");
+                return Paths.get(dir);
+            }
         }
         return null;
     }
-    public static void loadResource(Class<?> clazz){
-        Path path = classJarPath(clazz);
+    public static void loadResource(String modId, Class<?> ...clazz){
+        Path path = classJarPath(modId, clazz);
+        System.out.println("idddd");
+        System.out.println(path);
         if(path!=null && Files.exists(path)){
             try (PackResources packResource = Files.isDirectory(path)
                     ? new PathPackResources(new PackLocationInfo(path.getFileName().toString(), Component.empty(), PackSource.DEFAULT, Optional.empty()), path)

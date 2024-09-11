@@ -13,7 +13,7 @@ public class Yuushya {
     public static final String MOD_ID = "yuushya";
 
     public static void init() {
-        AddonLoader.loadResource(Yuushya.class);
+        AddonLoader.loadResource(MOD_ID,Yuushya.class);
         AddonLoader.loadPackResource(Platform.getModsFolder());
 //        ReloadListenerRegistry.register(PackType.SERVER_DATA,new CollisionFileReadReloadListener());
         //YuushyaRegistryConfig.readRegistryConfig();
