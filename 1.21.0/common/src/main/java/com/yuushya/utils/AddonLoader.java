@@ -49,7 +49,7 @@ public class AddonLoader {
         if(codeSource!=null){
             URL jarPath = codeSource.getLocation();
             String decoded = URLDecoder.decode(jarPath.getPath(),StandardCharsets.UTF_8);
-            String dir = new File(decoded).getPath() .replaceAll("\\.jar.+",".jar");
+            String dir = new File(decoded).getPath().replaceAll("#.+!","").replaceAll("\\.jar.+",".jar");
             return Paths.get(dir);
         }
         return null;
