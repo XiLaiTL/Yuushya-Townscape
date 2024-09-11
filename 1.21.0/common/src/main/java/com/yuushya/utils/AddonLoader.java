@@ -7,10 +7,7 @@ import com.yuushya.collision.data.CollisionItem;
 import com.yuushya.registries.YuushyaRegistryData;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.server.packs.FilePackResources;
-import net.minecraft.server.packs.PackLocationInfo;
-import net.minecraft.server.packs.PackResources;
-import net.minecraft.server.packs.PackType;
+import net.minecraft.server.packs.*;
 import net.minecraft.server.packs.repository.PackSource;
 import net.minecraft.server.packs.resources.FallbackResourceManager;
 import net.minecraft.server.packs.resources.Resource;
@@ -56,8 +53,10 @@ public class AddonLoader {
     }
     public static void loadResource(Class<?> clazz){
         Path path = classJarPath(clazz);
-        if(path!=null){
-            try (PackResources packResource = new FilePackResources.FileResourcesSupplier(path).openPrimary(new PackLocationInfo(clazz.getName(), Component.empty(), PackSource.DEFAULT, Optional.empty()))){
+        if(path!=null && Files.exists(path)){
+            try (PackResources packResource = Files.isDirectory(path)
+                    ? new PathPackResources(new PackLocationInfo(path.getFileName().toString(), Component.empty(), PackSource.DEFAULT, Optional.empty()), path)
+                    : new FilePackResources.FileResourcesSupplier(path).openPrimary(new PackLocationInfo(path.getFileName().toString(), Component.empty(), PackSource.DEFAULT, Optional.empty()))){
                 YUUSHYA_MANAGER.push(packResource);
             }
         }
