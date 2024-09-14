@@ -2332,6 +2332,12 @@
   "block.yuushya.ramp_marking_yellow_4.line1": "\u00A7a(可用形态扳手变换)\u00A79[可变形态:2(双线)]",
   "block.yuushya.ramp_marking_yellow_5.line1": "\u00A7a(可用形态扳手变换)\u00A79[可变形态:2(双线)]",
 
+  "gui.yuushya.checkscreen.header": "方块小镇——mod和资源包安装检查",
+  "gui.yuushya.checkscreen.message": "方块小镇提示您需要安装以下的mod和资源包",
+  "gui.yuushya.checkscreen.description.yuushya": "Yuushya资源包将每一个像素，以绝佳的色彩，放置在每一个最合适的位置",
+  "gui.yuushya.checkscreen.name.yuushya": "Yuushya资源包",
+  "gui.yuushya.checkscreen.description.yuushya_modelling": "方块建模模组包含建筑辅助功能，如模型移动、模型旋转等",
+  "gui.yuushya.checkscreen.name.yuushya_modelling": "方块建模",
 
 
   "block.yuushya.end": "end"
