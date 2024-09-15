@@ -692,7 +692,7 @@
       "class_type": "template", "auto_generated": {"collision": "detail","item_model": true },
       "texture": {
         "slots": ["all", "sides", "top"],
-        "for_class": ["raw_wood", "concrete"]
+        "for_class": ["raw_wood", "concrete","wool"]
       }
     },
 
