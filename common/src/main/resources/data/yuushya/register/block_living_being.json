@@ -662,6 +662,7 @@
       "item_group": "living_being",
       "blockstate": { "forms": [["yuushya:extra_building_material/plants/vine_u_"]]}
     },
+
     {
       "class_type": "PlantBlock",
       "name": "wisteria",
