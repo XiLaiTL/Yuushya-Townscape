@@ -4842,7 +4842,7 @@
 			"class_type": "template", "auto_generated": {"collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
-				"for_class": ["raw_wood", "concrete"]
+				"for_class": ["raw_wood", "concrete", "wool"]
 			}
 		},
 
@@ -8886,6 +8886,15 @@
 			"properties": {"sound": "plant" },
 			"auto_generated": { "recipe": true }, "item_group": "living_being",
 			"blockstate": { "forms": [["yuushya:extra_building_material/plants/vine_u_"]]}
+		},
+
+		{
+			"class_type": "PlantBlock",
+			"name": "wisteria",
+			"properties": {"sound": "plant" },
+			"auto_generated": { "recipe": true, "blockstate": false }, "item_group": "living_being",
+			"item_model": "yuushya:extra_building_material/wisteria_0",
+			"blockstate": { "forms": [["yuushya:extra_building_material/wisteria_0"]]}
 		},
 
 		{
