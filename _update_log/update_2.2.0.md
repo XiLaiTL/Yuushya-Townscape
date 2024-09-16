@@ -156,6 +156,8 @@
 
 特别感谢——在Yuushya Townscape讨论群中为Yuushya模组的测试工作做出贡献的你们（三音、世隐OuO、泽莫在做梦_zZ、Charon、软糖我爱吃、Faith_A23、Bleuet、ClouDSevenC、Burned Flazer以及其他没有列出来的玩家）！以方块小镇为蓝图、描摹出精彩绝伦的建筑畅想的你们！
 
+特别感谢——低耐久铁砧，进行了英文的本地化工作
+
 感谢Charon（方块相册）、Ph-苯的技术支持。
 
 感谢MOJANG，Fabric、Forge团队，Architectury、Parchment的开发者们。
