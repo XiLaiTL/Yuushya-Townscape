@@ -18,7 +18,7 @@ Yuushya Townscape Mod contains 800+ delicate building materials and decorations 
 代码（Code）：MIT
 美术资源（Assets）：CC BY-NC-SA 4.0
 
-[Terms ]: Terms_yuushya_user.md	"Terms"
+[使用协议（Terms）](Terms_yuushya_user.md)
 
 =======
 
