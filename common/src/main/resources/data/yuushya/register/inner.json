@@ -4539,7 +4539,7 @@
 			"blockstate": { "forms": [["yuushya:template/fence_left","yuushya:template/fence_middle","yuushya:template/fence_right","yuushya:template/fence_none"]], "kit": "line"},
 			"item_model": "yuushya:template/fence_middle", "item_group": "extra_shapes",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -4551,7 +4551,7 @@
 			"name": "fence_corner",
 			"blockstate": { "forms": [["yuushya:template/fence_corner"],["yuushya:template/fence_corner_"],["yuushya:template/fence_corner_2"]], "kit": "normal"}, "item_group": "extra_shapes",
 			"render_type": "cutout",
-			"properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
 			"class_type": "template", "auto_generated": { "collision": "detail30", "recipe": true,"item_model": true },
 			"texture": {
 				"slots": ["all", "sides", "top"],
@@ -4564,6 +4564,7 @@
 			"render_type": "cutout",
 			"properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 2},
 			"class_type": "template", "auto_generated": { "collision": "bound", "recipe": true,"item_model": true },
+			"item_model": "yuushya:template/fence_cross/fence_item",
 			"blockstate": { "kit": "line_cross_simple",
 				"forms": [["yuushya:template/fence_cross/fence_none", "yuushya:template/fence_cross/fence_none_left", "yuushya:template/fence_cross/fence_none_right",
 					"yuushya:template/fence_cross/fence_left","yuushya:template/fence_cross/fence_left_right",
