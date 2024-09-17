@@ -163,9 +163,9 @@
 
 特别感谢——为方块小镇的建材、功能提供创意、想象力的你们！感谢seone提供的一键生成树！感谢不专业小熊猫为模组制作了餐饮和椅子系列的模型和贴图
 
-特别感谢——在Yuushya Townscape讨论群中为Yuushya模组的测试工作做出贡献的你们（三音、世隐OuO、泽莫在做梦_zZ、Charon、软糖我爱吃、Faith_A23、Bleuet、ClouDSevenC、Burned Flazer以及其他没有列出来的玩家）！以方块小镇为蓝图、描摹出精彩绝伦的建筑畅想的你们！
+特别感谢——在Yuushya Townscape讨论群中为Yuushya模组的测试工作做出贡献的你们（三音、世隐OuO、泽莫在做梦_zZ、Charon、软糖我爱吃、Faith_A23、Bleuet、ClouDSevenC、Burned Flazer、幻以及其他没有列出来的玩家）！以方块小镇为蓝图、描摹出精彩绝伦的建筑畅想的你们！
 
-感谢Charon（方块相册）、Ph-苯的技术支持。
+感谢Charon（方块相册）、Ph-苯的技术支持。特别感谢低耐久铁砧为模组提供英文翻译、更精细的模型、修复了漏洞等贡献！
 
 感谢MOJANG，Fabric、Forge团队，Architectury、Parchment的开发者们。
 
