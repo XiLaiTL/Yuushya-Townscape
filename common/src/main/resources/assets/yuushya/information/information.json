@@ -5,7 +5,7 @@
     "api": ["fabric","forge","neoforge"],
     "minecraft": ["1.16.5","1.18.2","1.19.2","1.19.4","1.20.1","1.20.2","1.20.3","1.20.4","1.20.5","1.20.6","1.21","1.21.1"],
     "link": {
-      "official": "https://yuushya.com/t"
+      "official": "https://yuushya.com/townscape"
     }
   },
   "yuushya_modelling": {
@@ -14,16 +14,34 @@
     "api": ["fabric","forge","neoforge"],
     "minecraft": ["1.16.5","1.18.2","1.19.2","1.19.4","1.20.1","1.20.2","1.20.3","1.20.4","1.20.5","1.20.6","1.21","1.21.1"],
     "link": {
-      "official": "https://yuushya.com/t"
+      "official": "https://yuushya.com/townscape"
     }
   },
   "optifine": {
     "id": "optifine",
     "type": "ctm",
     "api": ["forge"],
-    "minecraft": ["1.16.5","1.18.2","1.19.2","1.19.4","1.20.1","1.20.2","1.20.3","1.20.4","1.20.5","1.20.6","1.21","1.21.1"],
+    "minecraft": ["1.16.5"],
     "link": {
       "official": "https://optifine.net/"
+    }
+  },
+  "continuity": {
+    "id": "continuity",
+    "type": "ctm",
+    "api": ["fabric"],
+    "minecraft": ["1.16.5","1.18.2","1.19.2","1.19.4","1.20.1","1.20.2","1.20.3","1.20.4","1.20.5","1.20.6","1.21","1.21.1"],
+    "link": {
+      "official": "https://www.curseforge.com/minecraft/mc-mods/continuity"
+    }
+  },
+  "ctm": {
+    "id": "ctm",
+    "type": "ctm",
+    "api": ["forge"],
+    "minecraft": ["1.18.2","1.19.2","1.19.4","1.20.4","1.20.5","1.20.6","1.21","1.21.1"],
+    "link": {
+      "official": "https://www.curseforge.com/minecraft/mc-mods/ctm"
     }
   },
   "indium": {
