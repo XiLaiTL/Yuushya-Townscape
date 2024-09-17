@@ -63,8 +63,6 @@ public class CheckFileUtils {
     }
 
     public static void printInformation(){
-        System.out.println("iddd");
-        System.out.println(information);
         for(Info info:information.values()){
             System.out.println(info);
         }

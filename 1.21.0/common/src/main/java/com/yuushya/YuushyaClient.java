@@ -5,14 +5,10 @@ import com.yuushya.gui.CheckScreen;
 import com.yuushya.registries.YuushyaConfig;
 import com.yuushya.registries.YuushyaRegistries;
 import com.yuushya.utils.CheckFileUtils;
-import com.yuushya.utils.YuushyaLogger;
 import dev.architectury.event.CompoundEventResult;
 import dev.architectury.event.events.client.ClientGuiEvent;
 import dev.architectury.event.events.client.ClientLifecycleEvent;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.screens.ConfirmScreen;
-import net.minecraft.client.gui.screens.worldselection.SelectWorldScreen;
-import net.minecraft.network.chat.Component;
+import net.minecraft.client.gui.screens.TitleScreen;
 
 public class YuushyaClient {
     private static boolean openOnce =true;
@@ -28,7 +24,7 @@ public class YuushyaClient {
         if(YuushyaConfig.CLIENT_CONFIG.check){
             CheckFileUtils.loadInformation();
             ClientGuiEvent.SET_SCREEN.register(screen -> {
-                if(openOnce && screen instanceof SelectWorldScreen) {
+                if(openOnce && screen instanceof TitleScreen) {
                     openOnce = false;
                     return CompoundEventResult.interruptTrue(
                             new CheckScreen(screen)

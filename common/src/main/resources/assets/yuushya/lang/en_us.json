@@ -2328,5 +2328,29 @@
   "block.yuushya.ramp_marking_yellow_5.line1": "\u00A7a(Use [Form Wrench] to switch)\u00A79[Available Form:2(Double Line)]",
   "block.yuushya.colornote1.line1": "\u00A79#Blue",
   "block.yuushya.colornote2.line1": "\u00A76#Yellow",
+
+  "gui.yuushya.checkScreen.header": "Yuushya - Mod and Reource Pack Checking",
+  "gui.yuushya.checkScreen.message": "Tips: add the mods and resource packs below to enable the whole experience",
+  "gui.yuushya.checkScreen.resourcepack": "Resource Packs:",
+  "gui.yuushya.checkScreen.recommend": "Recommend Mods:",
+  "gui.yuushya.checkScreen.ctm": "Connected Texture Mods[Choose One]:",
+
+  "gui.yuushya.checkScreen.description.yuushya": "With fully elaborated texture to both environment and building blocks",
+  "gui.yuushya.checkScreen.name.yuushya": "Yuushya 16x",
+  "gui.yuushya.checkScreen.description.yuushya_foliage_addon": "Change the way the foliage looks and make it more smooth",
+  "gui.yuushya.checkScreen.name.yuushya_foliage_addon": "Yuushya Foliage Addon",
+  "gui.yuushya.checkScreen.description.yuushya_modelling": "Adding a series of tools executing move, rotate, resize for block building",
+  "gui.yuushya.checkScreen.name.yuushya_modelling": "Yuushya Modelling",
+  "gui.yuushya.checkScreen.description.optifine": "Provide with connected textures and shader packs supports",
+  "gui.yuushya.checkScreen.name.optifine": "OptiFine",
+  "gui.yuushya.checkScreen.description.continuity": "Provide with connected textures in OptiFine format",
+  "gui.yuushya.checkScreen.name.continuity": "Continuity",
+  "gui.yuushya.checkScreen.description.ctm": "Provide with connected textures",
+  "gui.yuushya.checkScreen.name.ctm": "Connected Texture Mod",
+  "gui.yuushya.checkScreen.description.indium": "With Sodium, when using Continuity or Yuushya Modelling",
+  "gui.yuushya.checkScreen.name.indium": "Indium",
+
+  "gui.yuushya.checkScreen.link": "Download",
+
   "block.yuushya.end": "end"
 }

@@ -2332,12 +2332,29 @@
   "block.yuushya.ramp_marking_yellow_4.line1": "\u00A7a(可用形态扳手变换)\u00A79[可变形态:2(双线)]",
   "block.yuushya.ramp_marking_yellow_5.line1": "\u00A7a(可用形态扳手变换)\u00A79[可变形态:2(双线)]",
 
-  "gui.yuushya.checkscreen.header": "方块小镇——mod和资源包安装检查",
-  "gui.yuushya.checkscreen.message": "方块小镇提示您需要安装以下的mod和资源包",
-  "gui.yuushya.checkscreen.description.yuushya": "Yuushya资源包将每一个像素，以绝佳的色彩，放置在每一个最合适的位置",
-  "gui.yuushya.checkscreen.name.yuushya": "Yuushya资源包",
-  "gui.yuushya.checkscreen.description.yuushya_modelling": "方块建模模组包含建筑辅助功能，如模型移动、模型旋转等",
-  "gui.yuushya.checkscreen.name.yuushya_modelling": "方块建模",
+  "gui.yuushya.checkScreen.header": "方块小镇——模组和资源包安装检查",
+  "gui.yuushya.checkScreen.message": "方块小镇提示您需要安装以下的模组和资源包，以获得更好的游玩体验",
+  "gui.yuushya.checkScreen.resourcepack": "资源包：",
+  "gui.yuushya.checkScreen.recommend": "推荐安装的模组：",
+  "gui.yuushya.checkScreen.ctm": "连接纹理模组[选一个安装]：",
+
+  "gui.yuushya.checkScreen.description.yuushya": "将每一个像素，以绝佳的色彩，放置在每一个最合适的位置",
+  "gui.yuushya.checkScreen.name.yuushya": "Yuushya资源包",
+  "gui.yuushya.checkScreen.description.yuushya_foliage_addon": "替换了原版的各种树叶方块，让原版的树林更加生动。",
+  "gui.yuushya.checkScreen.name.yuushya_foliage_addon": "Yuushya树叶扩展",
+  "gui.yuushya.checkScreen.description.yuushya_modelling": "包含建筑辅助功能，如模型移动、模型旋转等",
+  "gui.yuushya.checkScreen.name.yuushya_modelling": "方块建模",
+  "gui.yuushya.checkScreen.description.optifine": "支持自定义纹理连接、自定义物品模型、光影等",
+  "gui.yuushya.checkScreen.name.optifine": "高清修复",
+  "gui.yuushya.checkScreen.description.continuity": "支持OptiFine格式的自定义纹理连接",
+  "gui.yuushya.checkScreen.name.continuity": "连接纹理",
+  "gui.yuushya.checkScreen.description.ctm": "支持自定义纹理连接，但有一些漏洞",
+  "gui.yuushya.checkScreen.name.ctm": "连接纹理模组",
+  "gui.yuushya.checkScreen.description.indium": "安装了模组钠Sodium的情况下，Continuity或方块建模的前置",
+  "gui.yuushya.checkScreen.name.indium": "铟",
+
+  "gui.yuushya.checkScreen.link": "下载链接",
+  
 
 
   "block.yuushya.end": "end"

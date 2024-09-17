@@ -64,8 +64,6 @@ public class AddonLoader {
     }
     public static void loadResource(String modId, Class<?> ...clazz){
         Path path = classJarPath(modId, clazz);
-        System.out.println("idddd");
-        System.out.println(path);
         if(path!=null && Files.exists(path)){
             try (PackResources packResource = Files.isDirectory(path)
                     ? new PathPackResources(new PackLocationInfo(path.getFileName().toString(), Component.empty(), PackSource.DEFAULT, Optional.empty()), path)

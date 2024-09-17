@@ -7,9 +7,6 @@ import net.minecraft.Util;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.*;
-import net.minecraft.client.gui.layouts.FrameLayout;
-import net.minecraft.client.gui.layouts.LinearLayout;
-import net.minecraft.client.gui.screens.NoticeWithLinkScreen;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.CommonComponents;
 import net.minecraft.network.chat.Component;
@@ -23,53 +20,71 @@ import java.util.Map;
 import static com.yuushya.utils.CheckFileUtils.*;
 
 public class CheckScreen extends Screen {
-    private static final Component TITLE = Component.translatable("gui.yuushya.checkscreen.header").withStyle(ChatFormatting.BOLD);
-    private static final Component NARRATION = TITLE.copy().append("\n");
+    private static final Component TITLE = Component.translatable("gui.yuushya.checkScreen.header").withStyle(ChatFormatting.BOLD);
+    private static final Component RESOURCEPACK = Component.translatable("gui.yuushya.checkScreen.resourcepack").withStyle(ChatFormatting.RED);
+    private static final Component RECOMMEND = Component.translatable("gui.yuushya.checkScreen.recommend").withStyle(ChatFormatting.RED);
+    private static final Component CTM = Component.translatable("gui.yuushya.checkScreen.ctm").withStyle(ChatFormatting.RED);
+    private static final Component CHECK = Component.translatable("multiplayerWarning.check");
+    private static final Component MESSAGE = Component.translatable("gui.yuushya.checkScreen.message");
+    private static final Component NARRATION = TITLE.copy().append("\n").append(MESSAGE);
     private final Screen previous;
     private static final int MESSAGE_PADDING = 100;
-    private final Component check;
-    private final Component message = Component.translatable("gui.yuushya.checkscreen.message");
+
+
     protected Checkbox stopShowing;
-    private final FrameLayout layout;
+    protected FocusableTextWidget messageWidget;
+    protected Button finishButton;
+
     private final List<InfoPanel> resourcepackPanel = new ArrayList<>();
     private final List<InfoPanel> recommendPanel = new ArrayList<>();
     private final List<InfoPanel> ctmPanel = new ArrayList<>();
 
     public CheckScreen(Screen previous) {
         super(TITLE);
-        this.check = Component.translatable("multiplayerWarning.check");
-        this.layout = new FrameLayout(0, 0, this.width, this.height);
         this.previous = previous;
     }
 
+    public int center(int width){
+        return (this.width - width)/2;
+    }
+
+    private int resourcepackY;
+    private int recommendY;
+    private int ctmY;
+
     @Override
     protected void init() {
-        LinearLayout linearLayout = this.layout.addChild(LinearLayout.vertical().spacing(8));
-        linearLayout.setY(this.font.lineHeight);
-        linearLayout.defaultCellSetting().alignHorizontallyCenter();
-        linearLayout.addChild(new FocusableTextWidget(this.width - 100, this.message, this.font, 12), layoutSettings -> layoutSettings.padding(12));
 
-        int yCurrent = linearLayout.getY()+linearLayout.getHeight();
+        this.messageWidget = new FocusableTextWidget(this.width - 100, this.MESSAGE, this.font, 3);
+        this.messageWidget.setX(center(this.messageWidget.getWidth()));
+        this.messageWidget.setCentered(true);
+        this.messageWidget.setY(23);
 
+
+        int yCurrent = 45;
+        resourcepackY = yCurrent-this.font.lineHeight;
         //Resource Pack
         for (CheckFileUtils.Info info : checkResourcePacks()) {
-            InfoPanel infoPanel = new InfoPanel(info, this.font, 0, yCurrent);
+            InfoPanel infoPanel = new InfoPanel(info, this.font, 20, yCurrent);
             infoPanel.init(this);
             resourcepackPanel.add(infoPanel);
             yCurrent += 2*this.font.lineHeight;
         }
         //Recommend Mod
+        recommendY = yCurrent+this.font.lineHeight;
         yCurrent += 2*this.font.lineHeight;
         for (CheckFileUtils.Info info : checkRecommend()) {
-            InfoPanel infoPanel = new InfoPanel(info, this.font, 0, yCurrent);
+            InfoPanel infoPanel = new InfoPanel(info, this.font, 20, yCurrent);
             infoPanel.init(this);
             recommendPanel.add(infoPanel);
             yCurrent += 2*this.font.lineHeight;
         }
-        yCurrent += 2*this.font.lineHeight;
+
         //Connect Texture Mod
+        ctmY = yCurrent+this.font.lineHeight;
+        yCurrent += 2*this.font.lineHeight;
         for (CheckFileUtils.Info info : checkCTM()) {
-            InfoPanel infoPanel = new InfoPanel(info, this.font, 0, yCurrent);
+            InfoPanel infoPanel = new InfoPanel(info, this.font, 20, yCurrent);
             infoPanel.init(this);
             ctmPanel.add(infoPanel);
             yCurrent += 2*this.font.lineHeight;
@@ -77,32 +92,19 @@ public class CheckScreen extends Screen {
 
 
 
-        LinearLayout linearLayout2 = linearLayout.addChild(LinearLayout.vertical().spacing(8));
-        linearLayout2.defaultCellSetting().alignHorizontallyCenter();
-        this.stopShowing = linearLayout2.addChild(Checkbox.builder(this.check, this.font).build());
+        this.stopShowing = Checkbox.builder(CHECK, this.font).pos(this.width/4-30,this.height-35).build();
 
-        LinearLayout linearLayout3 = linearLayout2.addChild(LinearLayout.horizontal().spacing(8));
-        linearLayout3.addChild(Button.builder(CommonComponents.GUI_PROCEED, button -> {
+        this.finishButton = Button.builder(CommonComponents.GUI_PROCEED, button -> {
             if (this.stopShowing.selected()) {
                 YuushyaConfig.CLIENT_CONFIG.check = false;
                 YuushyaConfig.CLIENT_CONFIG.update();
             }
             this.minecraft.setScreen(this.previous);
-        }).build());
+        }).bounds(this.width/4*3 - 60 ,this.height-35,120,20).build();
 
-        this.layout.visitWidgets(guiEventListener -> {
-            AbstractWidget cfr_ignored_0 = (AbstractWidget)this.addRenderableWidget(guiEventListener);
-        });
-        this.repositionElements();
-    }
-
-    @Override
-    protected void repositionElements() {
-//        if (this.messageWidget != null) {
-//            this.messageWidget.setMaxWidth(this.width - 100);
-//        }
-        this.layout.arrangeElements();
-        FrameLayout.centerInRectangle(this.layout, this.getRectangle());
+        this.addRenderableWidget(this.stopShowing);
+        this.addRenderableWidget(this.messageWidget);
+        this.addRenderableWidget(this.finishButton);
     }
 
     @Override
@@ -118,7 +120,10 @@ public class CheckScreen extends Screen {
     @Override
     public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTick) {
         super.render(guiGraphics,mouseX,mouseY,partialTick);
-        guiGraphics.drawString(this.font,TITLE,0,0,0xFFFFFF);
+        guiGraphics.drawString(this.font,TITLE,center(font.width(TITLE)),10,0xFFFFFF);
+        guiGraphics.drawString(this.font,RESOURCEPACK,0,resourcepackY,0xFFFFFF);
+        guiGraphics.drawString(this.font,RECOMMEND,0,recommendY,0xFFFFFF);
+        guiGraphics.drawString(this.font,CTM,0,ctmY,0xFFFFFF);
         resourcepackPanel.forEach(panel->panel.render(guiGraphics,mouseX,mouseY,partialTick));
         recommendPanel.forEach(panel->panel.render(guiGraphics,mouseX,mouseY,partialTick));
         ctmPanel.forEach(panel->panel.render(guiGraphics,mouseX,mouseY,partialTick));
@@ -131,17 +136,18 @@ public class CheckScreen extends Screen {
         public final int x;
         public final int y;
         private final MutableComponent descriptionLine;
+        private static final MutableComponent link = Component.translatable("gui.yuushya.checkScreen.link").append(Component.literal(" : "));
         public InfoPanel(CheckFileUtils.Info info, Font font, int x, int y){
             this.info = info;
             this.font = font;
             this.x = x;
             this.y = y;
-            this.descriptionLine = Component.translatable("gui.yuushya.checkscreen.description."+info.id())
+            this.descriptionLine = Component.empty().append(Component.translatable("gui.yuushya.checkScreen.name."+info.id()).withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.GOLD))
                     .append(Component.literal(" : "))
-                    .append(Component.translatable("gui.yuushya.checkscreen.name."+info.id()));
+                    .append(Component.translatable("gui.yuushya.checkScreen.description."+info.id()));
         }
         public void init(CheckScreen screen){
-            int widthCurrent = 0;
+            int widthCurrent = this.font.width(link);
             int yCurrent = y+font.lineHeight;
             for (Map.Entry<String, String> entry : info.link().entrySet()) {
                 String text = entry.getKey();
@@ -165,6 +171,7 @@ public class CheckScreen extends Screen {
          */
         public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTick) {
             guiGraphics.drawString(this.font,this.descriptionLine,x,y,0xFFFFFF);
+            guiGraphics.drawString(this.font,link,x,y+this.font.lineHeight,0xFFFFFF);
         }
     }
 
