@@ -161,24 +161,18 @@
       "class_type": "DecoBlock",
       "name": "beef",
       "item_group": "catering",
-      "blockstate": { "forms": [["yuushya:extra_building_material/food/beef"]]}
-    },
-    {
-      "class_type": "DecoBlock",
-      "name": "beef_plate",
-      "item_group": "catering",
-      "blockstate": { "forms": [["yuushya:extra_building_material/food/beef_3"]]}
-    },
-    {
-      "class_type": "DecoBlock",
-      "name": "test_food",
-      "item_group": "catering",
       "properties": { "food": {"nutrition": 2, "saturation": 0.1, "finished_item": "yuushya:beef_plate"} },
       "blockstate": { "forms": [
         ["yuushya:extra_building_material/food/beef"],
         ["yuushya:extra_building_material/food/beef_1"],
         ["yuushya:extra_building_material/food/beef_2"]
       ]}
+    },
+    {
+      "class_type": "DecoBlock",
+      "name": "beef_plate",
+      "item_group": "catering",
+      "blockstate": { "forms": [["yuushya:extra_building_material/food/beef_3"]]}
     },
     {
       "class_type": "DecoBlock",
