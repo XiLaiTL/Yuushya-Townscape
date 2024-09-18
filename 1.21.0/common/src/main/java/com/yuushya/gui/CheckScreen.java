@@ -121,9 +121,9 @@ public class CheckScreen extends Screen {
     public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTick) {
         super.render(guiGraphics,mouseX,mouseY,partialTick);
         guiGraphics.drawString(this.font,TITLE,center(font.width(TITLE)),10,0xFFFFFF);
-        guiGraphics.drawString(this.font,RESOURCEPACK,0,resourcepackY,0xFFFFFF);
-        guiGraphics.drawString(this.font,RECOMMEND,0,recommendY,0xFFFFFF);
-        guiGraphics.drawString(this.font,CTM,0,ctmY,0xFFFFFF);
+        if(!resourcepackPanel.isEmpty()) guiGraphics.drawString(this.font,RESOURCEPACK,0,resourcepackY,0xFFFFFF);
+        if(!recommendPanel.isEmpty()) guiGraphics.drawString(this.font,RECOMMEND,0,recommendY,0xFFFFFF);
+        if(!ctmPanel.isEmpty()) guiGraphics.drawString(this.font,CTM,0,ctmY,0xFFFFFF);
         resourcepackPanel.forEach(panel->panel.render(guiGraphics,mouseX,mouseY,partialTick));
         recommendPanel.forEach(panel->panel.render(guiGraphics,mouseX,mouseY,partialTick));
         ctmPanel.forEach(panel->panel.render(guiGraphics,mouseX,mouseY,partialTick));
