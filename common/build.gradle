@@ -14,7 +14,7 @@ tasks.register('copyLicense',Copy){
 }
 
 tasks.register('copyTerms',Copy){
-    from "../Terms_yuushya_user"
+    from "../Terms_yuushya_user.md"
     into "./build/resources/main/"
 }
 
@@ -43,6 +43,7 @@ partVersions.forEach {ver->
 tasks.register('gen-1.16.5',Copy){
     dependsOn('clean-resource-1.16.5')
     dependsOn('generateAssetsAndData')
+    mustRunAfter('copyLicense','copyTerms')
     from("./build/resources/main/")
     into("../1.16.5/common/build/resources/main/")
     duplicatesStrategy = DuplicatesStrategy.INHERIT
@@ -54,6 +55,7 @@ partVersions.forEach {ver->
     tasks.register("copyAssetsAndDataFromCommon-${ver}",Copy){
         dependsOn("generateAssetsAndData")
         dependsOn("clean-resource-${ver}")
+        mustRunAfter('copyLicense','copyTerms')
         from("./build/resources/main/")
         into("../${ver}/common/build/resources/main/")
         duplicatesStrategy = DuplicatesStrategy.EXCLUDE
@@ -96,6 +98,7 @@ tasks.register('generateAssetsAndData-1.20.6', CreateAssetsAndDataTask){
 
 tasks.register("copyAssetsAndDataFromCommon-1.20.6",Copy){
     dependsOn('generateAssetsAndData-1.20.6')
+    mustRunAfter('copyLicense','copyTerms')
     from("./build/resources/main/")
     into("../1.20.6/common/build/resources/main/")
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
@@ -127,6 +130,7 @@ tasks.register('generateAssetsAndData-1.21.0', CreateAssetsAndDataTask){
 
 tasks.register("copyAssetsAndDataFromCommon-1.21.0",Copy){
     dependsOn('generateAssetsAndData-1.21.0')
+    mustRunAfter('copyLicense','copyTerms')
     from("./build/resources/main/")
     into("../1.21.0/common/build/resources/main/")
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
