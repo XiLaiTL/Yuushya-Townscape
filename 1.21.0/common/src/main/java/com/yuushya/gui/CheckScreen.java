@@ -26,6 +26,7 @@ public class CheckScreen extends Screen {
     private static final Component CTM = Component.translatable("gui.yuushya.checkScreen.ctm").withStyle(ChatFormatting.RED);
     private static final Component CHECK = Component.translatable("multiplayerWarning.check");
     private static final Component MESSAGE = Component.translatable("gui.yuushya.checkScreen.message");
+    private static final Component CONGRATULATIONS = Component.translatable("gui.yuushya.checkScreen.congratulations");
     private static final Component NARRATION = TITLE.copy().append("\n").append(MESSAGE);
     private final Screen previous;
     private static final int MESSAGE_PADDING = 100;
@@ -54,17 +55,21 @@ public class CheckScreen extends Screen {
 
     @Override
     protected void init() {
+        List<Info> resourcepackCheck = checkResourcePacks();
+        List<Info> recommendCheck = checkRecommend();
+        List<Info> ctmCheck = checkCTM();
+        Component message = resourcepackCheck.isEmpty() && recommendCheck.isEmpty() && ctmCheck.isEmpty()
+                ? CONGRATULATIONS : MESSAGE;
 
-        this.messageWidget = new FocusableTextWidget(this.width - 100, this.MESSAGE, this.font, 3);
+        this.messageWidget = new FocusableTextWidget(this.width - 100, message, this.font, 3);
         this.messageWidget.setX(center(this.messageWidget.getWidth()));
         this.messageWidget.setCentered(true);
         this.messageWidget.setY(23);
 
-
         int yCurrent = 45;
         resourcepackY = yCurrent-this.font.lineHeight;
         //Resource Pack
-        for (CheckFileUtils.Info info : checkResourcePacks()) {
+        for (CheckFileUtils.Info info : resourcepackCheck) {
             InfoPanel infoPanel = new InfoPanel(info, this.font, 20, yCurrent);
             infoPanel.init(this);
             resourcepackPanel.add(infoPanel);
@@ -73,7 +78,7 @@ public class CheckScreen extends Screen {
         //Recommend Mod
         recommendY = yCurrent+this.font.lineHeight;
         yCurrent += 2*this.font.lineHeight;
-        for (CheckFileUtils.Info info : checkRecommend()) {
+        for (CheckFileUtils.Info info : recommendCheck) {
             InfoPanel infoPanel = new InfoPanel(info, this.font, 20, yCurrent);
             infoPanel.init(this);
             recommendPanel.add(infoPanel);
@@ -83,7 +88,7 @@ public class CheckScreen extends Screen {
         //Connect Texture Mod
         ctmY = yCurrent+this.font.lineHeight;
         yCurrent += 2*this.font.lineHeight;
-        for (CheckFileUtils.Info info : checkCTM()) {
+        for (CheckFileUtils.Info info : ctmCheck) {
             InfoPanel infoPanel = new InfoPanel(info, this.font, 20, yCurrent);
             infoPanel.init(this);
             ctmPanel.add(infoPanel);

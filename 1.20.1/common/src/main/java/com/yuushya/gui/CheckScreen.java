@@ -9,7 +9,6 @@ import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.components.Checkbox;
 import net.minecraft.client.gui.components.PlainTextButton;
-import net.minecraft.client.gui.components.StringWidget;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.CommonComponents;
 import net.minecraft.network.chat.Component;
@@ -29,6 +28,8 @@ public class CheckScreen extends Screen {
     private static final Component CTM = Component.translatable("gui.yuushya.checkScreen.ctm").withStyle(ChatFormatting.RED);
     private static final Component CHECK = Component.translatable("multiplayerWarning.check");
     private static final Component MESSAGE = Component.translatable("gui.yuushya.checkScreen.message");
+    private static final Component CONGRATULATIONS = Component.translatable("gui.yuushya.checkScreen.congratulations");
+    private Component message;
     private static final Component NARRATION = TITLE.copy().append("\n").append(MESSAGE);
     private final Screen previous;
     private static final int MESSAGE_PADDING = 100;
@@ -85,7 +86,8 @@ public class CheckScreen extends Screen {
             yCurrent += 2*this.font.lineHeight;
         }
 
-
+        this.message = resourcepackPanel.isEmpty() && recommendPanel.isEmpty() && ctmPanel.isEmpty()
+                ? CONGRATULATIONS : MESSAGE;
 
         this.stopShowing = new Checkbox(this.width/4-30,this.height-3,this.font.width(CHECK),20,CHECK,false);
 
@@ -115,10 +117,10 @@ public class CheckScreen extends Screen {
     public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTick) {
         super.render(guiGraphics,mouseX,mouseY,partialTick);
         guiGraphics.drawString(this.font,TITLE,center(font.width(TITLE)),10,0xFFFFFF);
-        guiGraphics.drawString(this.font,MESSAGE,center(font.width(MESSAGE)),23,0xFFFFFF);
-        guiGraphics.drawString(this.font,RESOURCEPACK,0,resourcepackY,0xFFFFFF);
-        guiGraphics.drawString(this.font,RECOMMEND,0,recommendY,0xFFFFFF);
-        guiGraphics.drawString(this.font,CTM,0,ctmY,0xFFFFFF);
+        guiGraphics.drawString(this.font,this.message,center(font.width(this.message)),23,0xFFFFFF);
+        if(!resourcepackPanel.isEmpty()) guiGraphics.drawString(this.font,RESOURCEPACK,0,resourcepackY,0xFFFFFF);
+        if(!recommendPanel.isEmpty()) guiGraphics.drawString(this.font,RECOMMEND,0,recommendY,0xFFFFFF);
+        if(!ctmPanel.isEmpty()) guiGraphics.drawString(this.font,CTM,0,ctmY,0xFFFFFF);
         resourcepackPanel.forEach(panel->panel.render(guiGraphics,mouseX,mouseY,partialTick));
         recommendPanel.forEach(panel->panel.render(guiGraphics,mouseX,mouseY,partialTick));
         ctmPanel.forEach(panel->panel.render(guiGraphics,mouseX,mouseY,partialTick));

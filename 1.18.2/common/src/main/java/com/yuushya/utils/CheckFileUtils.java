@@ -84,7 +84,7 @@ public class CheckFileUtils {
     private static final String MOD_ID_YUUSHYA_MODELLING = "yuushya_modelling";
     private static final String MOD_ID_CONTINUITY = "continuity";
     public static List<Info> checkRecommend(){
-        List<Info> list = new ArrayList<>(recommend.values().stream().filter(info->!MOD_ID_INDIUM.equals(info.id)||!checkResourceFile(info.id)).toList());
+        List<Info> list = new ArrayList<>(recommend.values().stream().filter(info->!MOD_ID_INDIUM.equals(info.id)||!checkMod(info.id)).toList());
         if( Platform.isFabric() && checkMod(MOD_ID_SODIUM) && (checkMod(MOD_ID_YUUSHYA_MODELLING)||checkMod(MOD_ID_CONTINUITY)) && !checkMod(MOD_ID_INDIUM)){
             list.add(recommend.get(MOD_ID_INDIUM));
         }

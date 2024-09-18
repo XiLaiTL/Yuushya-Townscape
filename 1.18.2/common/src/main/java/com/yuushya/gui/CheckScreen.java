@@ -26,6 +26,8 @@ public class CheckScreen extends Screen {
     private static final Component CTM = new TranslatableComponent("gui.yuushya.checkScreen.ctm").withStyle(ChatFormatting.RED);
     private static final Component CHECK = new TranslatableComponent("multiplayerWarning.check");
     private static final Component MESSAGE = new TranslatableComponent("gui.yuushya.checkScreen.message");
+    private static final Component CONGRATULATIONS = new TranslatableComponent("gui.yuushya.checkScreen.congratulations");
+    private Component message;
     private static final Component NARRATION = TITLE.copy().append("\n").append(MESSAGE);
     private final Screen previous;
     private static final int MESSAGE_PADDING = 100;
@@ -85,7 +87,8 @@ public class CheckScreen extends Screen {
             yCurrent += 2*this.font.lineHeight;
         }
 
-
+        this.message = resourcepackPanel.isEmpty() && recommendPanel.isEmpty() && ctmPanel.isEmpty()
+                ? CONGRATULATIONS : MESSAGE;
 
         this.stopShowing = new Checkbox(this.width/4-30,this.height-3,this.font.width(CHECK),20,CHECK,false);
 
@@ -115,10 +118,10 @@ public class CheckScreen extends Screen {
     public void render(PoseStack poseStack, int mouseX, int mouseY, float partialTick) {
         super.render(poseStack,mouseX,mouseY,partialTick);
         drawString(poseStack,this.font,TITLE,center(font.width(TITLE)),10,0xFFFFFF);
-        drawString(poseStack,this.font,MESSAGE,center(font.width(MESSAGE)),23,0xFFFFFF);
-        drawString(poseStack,this.font,RESOURCEPACK,0,resourcepackY,0xFFFFFF);
-        drawString(poseStack,this.font,RECOMMEND,0,recommendY,0xFFFFFF);
-        drawString(poseStack,this.font,CTM,0,ctmY,0xFFFFFF);
+        drawString(poseStack,this.font,this.message,center(font.width(this.message)),23,0xFFFFFF);
+        if(!resourcepackPanel.isEmpty()) drawString(poseStack,this.font,RESOURCEPACK,0,resourcepackY,0xFFFFFF);
+        if(!recommendPanel.isEmpty()) drawString(poseStack,this.font,RECOMMEND,0,recommendY,0xFFFFFF);
+        if(!ctmPanel.isEmpty()) drawString(poseStack,this.font,CTM,0,ctmY,0xFFFFFF);
         resourcepackPanel.forEach(panel->panel.render(poseStack,mouseX,mouseY,partialTick));
         recommendPanel.forEach(panel->panel.render(poseStack,mouseX,mouseY,partialTick));
         ctmPanel.forEach(panel->panel.render(poseStack,mouseX,mouseY,partialTick));

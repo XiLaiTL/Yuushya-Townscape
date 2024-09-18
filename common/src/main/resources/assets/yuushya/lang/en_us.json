@@ -2331,6 +2331,7 @@
 
   "gui.yuushya.checkScreen.header": "Yuushya - Mod and Reource Pack Checking",
   "gui.yuushya.checkScreen.message": "Tips: add the mods and resource packs below to enable the whole experience",
+  "gui.yuushya.checkScreen.congratulations": "Have fun!",
   "gui.yuushya.checkScreen.resourcepack": "Resource Packs:",
   "gui.yuushya.checkScreen.recommend": "Recommend Mods:",
   "gui.yuushya.checkScreen.ctm": "Connected Texture Mods[Choose One]:",

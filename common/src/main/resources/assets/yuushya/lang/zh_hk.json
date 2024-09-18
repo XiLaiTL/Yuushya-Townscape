@@ -1952,6 +1952,7 @@
 
   "gui.yuushya.checkScreen.header": "方塊小鎮——模組和資源包安裝檢查",
   "gui.yuushya.checkScreen.message": "方塊小鎮提示您需要安裝以下的模組和資源包，以獲得更好的遊玩體驗",
+  "gui.yuushya.checkScreen.congratulations": "沒有其他推薦的內容了，祝您遊玩愉快！",
   "gui.yuushya.checkScreen.resourcepack": "資源包：",
   "gui.yuushya.checkScreen.recommend": "推薦安裝的模組：",
   "gui.yuushya.checkScreen.ctm": "連接紋理模組[選一個安裝]：",

@@ -2334,6 +2334,7 @@
 
   "gui.yuushya.checkScreen.header": "方块小镇——模组和资源包安装检查",
   "gui.yuushya.checkScreen.message": "方块小镇提示您需要安装以下的模组和资源包，以获得更好的游玩体验",
+  "gui.yuushya.checkScreen.congratulations": "没有其他推荐的内容了，祝您游玩愉快！",
   "gui.yuushya.checkScreen.resourcepack": "资源包：",
   "gui.yuushya.checkScreen.recommend": "推荐安装的模组：",
   "gui.yuushya.checkScreen.ctm": "连接纹理模组[选一个安装]：",
