@@ -46,7 +46,7 @@ public class AddonLoader {
         if(modId!=null && Platform.getModIds().contains(modId)){
             List<Path> paths = Platform.getMod(modId).getFilePaths();
             if(paths!=null&&!paths.isEmpty()){
-                for(Path res:paths) if(!res.toString().isEmpty()){
+                for(Path res:paths) if(!res.toString().isEmpty()&&Files.isRegularFile(res)){
                     return res;
                 }
             }
