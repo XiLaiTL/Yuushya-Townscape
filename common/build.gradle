@@ -5,6 +5,17 @@ tasks.register('generateAssetsAndData', CreateAssetsAndDataTask){
     doLast {
         println 'Assets and Data Build Success'
     }
+    finalizedBy('copyLicense','copyTerms')
+}
+
+tasks.register('copyLicense',Copy){
+    from "../LICENSE"
+    into "./build/resources/main/"
+}
+
+tasks.register('copyTerms',Copy){
+    from "../Terms_yuushya_user"
+    into "./build/resources/main/"
 }
 
 tasks.register('checkImageSize', CheckImageSizeTask){
@@ -80,6 +91,7 @@ tasks.register('generateAssetsAndData-1.20.6', CreateAssetsAndDataTask){
     doLast {
         println 'Assets and Data Build Success 1.20.6'
     }
+    finalizedBy('copyLicense','copyTerms')
 }
 
 tasks.register("copyAssetsAndDataFromCommon-1.20.6",Copy){
@@ -110,6 +122,7 @@ tasks.register('generateAssetsAndData-1.21.0', CreateAssetsAndDataTask){
     doLast {
         println 'Assets and Data Build Success 1.21.0'
     }
+    finalizedBy('copyLicense','copyTerms')
 }
 
 tasks.register("copyAssetsAndDataFromCommon-1.21.0",Copy){
