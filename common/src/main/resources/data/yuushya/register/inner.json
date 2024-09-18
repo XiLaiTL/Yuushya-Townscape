@@ -123,7 +123,7 @@
 			"name": "HorizontalBlock",
 			"blockstate": { "kit": "line" },
 			"render_type": "cutout",
-			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "bound" },
+			"auto_generated": { "recipe": true, "tags": [{"value": "mineable/pickaxe"}], "blockstate": true, "loot_table": true, "item_model": true, "collision": "bound" },
 			"class_type": "class",
 			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": true, "has_collision": true, "is_delicate": false }
 		},
@@ -132,7 +132,7 @@
 			"name": "VerticalBlock",
 			"blockstate": { "kit": "pole" },
 			"render_type": "cutout",
-			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "bound" },
+			"auto_generated": { "recipe": true, "tags": [{"value": "mineable/pickaxe"}], "blockstate": true, "loot_table": true, "item_model": true, "collision": "bound" },
 			"class_type": "class",
 			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": true, "has_collision": true, "is_delicate": false }
 		},
@@ -141,7 +141,7 @@
 			"name": "WoodBlock",
 			"blockstate": { "kit": "block" },
 			"render_type": "cutout",
-			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "block" },
+			"auto_generated": { "recipe": true, "tags": [{"value": "mineable/axe"}], "blockstate": true, "loot_table": true, "item_model": true, "collision": "block" },
 			"class_type": "class",
 			"properties": { "hardness": 0.7, "resistance": 1, "material": "wood", "is_solid": true, "has_collision": true, "is_delicate": false, "lines": 1 }
 		},
@@ -150,7 +150,7 @@
 			"name": "IntactBlock",
 			"blockstate": { "kit": "normal" },
 			"render_type": "cutout",
-			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "bound" },
+			"auto_generated": { "recipe": true, "tags": [{"value": "mineable/pickaxe"}], "blockstate": true, "loot_table": true, "item_model": true, "collision": "bound" },
 			"class_type": "class",
 			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": true, "is_delicate": false }
 		},
@@ -159,7 +159,7 @@
 			"name": "LeftBlock",
 			"blockstate": { "kit": "normal" },
 			"render_type": "cutout",
-			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "block" },
+			"auto_generated": { "recipe": true, "tags": [{"value": "mineable/pickaxe"}], "blockstate": true, "loot_table": true, "item_model": true, "collision": "block" },
 			"class_type": "class",
 			"properties": { "hardness": 0.7, "resistance": 1, "material": "leaves", "is_solid": false, "has_collision": true, "is_delicate": false }
 		},
@@ -169,7 +169,7 @@
 			"item_group": "extra_blocks",
 			"blockstate": { "kit": "normal" },
 			"render_type": "cutout",
-			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "block" },
+			"auto_generated": { "recipe": true, "tags": [{"value": "mineable/pickaxe"}], "blockstate": true, "loot_table": true, "item_model": true, "collision": "block" },
 			"class_type": "class",
 			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": true, "has_collision": true, "is_delicate": false }
 		},
@@ -178,7 +178,7 @@
 			"name": "TranslucentBlock",
 			"blockstate": { "kit": "normal" },
 			"render_type": "translucent",
-			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "face" },
+			"auto_generated": { "recipe": true, "tags": [{"value": "mineable/pickaxe"}], "blockstate": true, "loot_table": true, "item_model": true, "collision": "face" },
 			"class_type": "class",
 			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": false, "is_delicate": false }
 		},
@@ -187,7 +187,7 @@
 			"name": "FaceTranslucentBlock",
 			"blockstate": { "kit": "normal" },
 			"render_type": "translucent",
-			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "face" },
+			"auto_generated": { "recipe": true, "tags": [{"value": "mineable/pickaxe"}], "blockstate": true, "loot_table": true, "item_model": true, "collision": "face" },
 			"class_type": "class",
 			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": false, "is_delicate": false }
 		},
@@ -196,7 +196,7 @@
 			"name": "WindowsBlock",
 			"blockstate": { "kit": "normal" },
 			"render_type": "translucent",
-			"auto_generated": { "recipe": true, "blockstate": false, "loot_table": true, "item_model": true, "collision": "face" },
+			"auto_generated": { "recipe": true, "tags": [{"value": "mineable/pickaxe"}], "blockstate": false, "loot_table": true, "item_model": true, "collision": "face" },
 			"class_type": "class",
 			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": false, "is_delicate": false }
 		},
@@ -205,7 +205,7 @@
 			"name": "DecoBlock",
 			"blockstate": { "kit": "normal" },
 			"render_type": "cutout",
-			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "detail" },
+			"auto_generated": { "recipe": true, "tags": [{"value": "mineable/pickaxe"}], "blockstate": true, "loot_table": true, "item_model": true, "collision": "detail" },
 			"class_type": "class",
 			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": false, "is_delicate": false }
 		},
@@ -214,7 +214,7 @@
 			"name": "NormalBlock",
 			"blockstate": { "kit": "normal" },
 			"render_type": "cutout",
-			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "bound" },
+			"auto_generated": { "recipe": true, "tags": [{"value": "mineable/pickaxe"}], "blockstate": true, "loot_table": true, "item_model": true, "collision": "bound" },
 			"class_type": "class",
 			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": false, "is_delicate": false }
 		},
@@ -223,7 +223,7 @@
 			"name": "FixedBlock",
 			"blockstate": { "kit": "normal" },
 			"render_type": "cutout",
-			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "bound" },
+			"auto_generated": { "recipe": true, "tags": [{"value": "mineable/pickaxe"}], "blockstate": true, "loot_table": true, "item_model": true, "collision": "bound" },
 			"class_type": "class",
 			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": true, "is_delicate": false }
 		},
@@ -231,7 +231,7 @@
 		{
 			"name": "FaceBlock",
 			"render_type": "cutout",
-			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "bound" },
+			"auto_generated": { "recipe": true, "tags": [{"value": "mineable/pickaxe"}], "blockstate": true, "loot_table": true, "item_model": true, "collision": "bound" },
 			"class_type": "class",
 			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": true, "is_delicate": false }
 		},
@@ -239,7 +239,7 @@
 		{
 			"name": "FaceTranslucentBlock",
 			"render_type": "translucent",
-			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "block" },
+			"auto_generated": { "recipe": true, "tags": [{"value": "mineable/pickaxe"}], "blockstate": true, "loot_table": true, "item_model": true, "collision": "block" },
 			"class_type": "class",
 			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": true, "is_delicate": false }
 		},
@@ -257,7 +257,7 @@
 			"name": "ChairBlock",
 			"blockstate": { "kit": "line" },
 			"render_type": "cutout",
-			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "detail" },
+			"auto_generated": { "recipe": true, "tags": [{"value": "mineable/pickaxe"}], "blockstate": true, "loot_table": true, "item_model": true, "collision": "detail" },
 			"class_type": "class",
 			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": false, "is_delicate": false }
 		},
@@ -266,7 +266,7 @@
 			"name": "RoofBlock",
 			"blockstate": { "kit": "line" },
 			"render_type": "cutout",
-			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "bound" },
+			"auto_generated": { "recipe": true, "tags": [{"value": "mineable/pickaxe"}], "blockstate": true, "loot_table": true, "item_model": true, "collision": "bound" },
 			"class_type": "class",
 			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": true, "is_delicate": false }
 		},
@@ -275,7 +275,7 @@
 			"name": "StairBlock",
 			"blockstate": { "kit": "VanillaStairBlock" },
 			"render_type": "cutout",
-			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true },
+			"auto_generated": { "recipe": true, "tags": [{"value": "mineable/pickaxe"}], "blockstate": true, "loot_table": true, "item_model": true },
 			"class_type": "class",
 			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": true, "is_delicate": false }
 		},
@@ -284,7 +284,7 @@
 			"name": "FlowBlock",
 			"blockstate": { "kit": "pole" },
 			"render_type": "cutout",
-			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true, "collision": "block" },
+			"auto_generated": { "recipe": true, "tags": [{"value": "mineable/pickaxe"}], "blockstate": true, "loot_table": true, "item_model": true, "collision": "block" },
 			"class_type": "class",
 			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": true, "is_delicate": false }
 		},
@@ -293,7 +293,7 @@
 			"name": "CableBlock",
 			"render_type": "cutout",
 			"class_type": "class",
-			"auto_generated": {"collision": "face"},
+			"auto_generated": {"collision": "face", "tags": [{"value": "mineable/pickaxe"}]},
 			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": false, "is_delicate": false }
 		},
 
@@ -301,7 +301,7 @@
 			"name": "CablePostBlock",
 			"blockstate": { "kit": "normal" },
 			"render_type": "cutout",
-			"auto_generated": { "recipe": true, "blockstate": true, "loot_table": true, "item_model": true,  "collision": "detail" },
+			"auto_generated": { "recipe": true, "tags": [{"value": "mineable/pickaxe"}], "blockstate": true, "loot_table": true, "item_model": true,  "collision": "detail" },
 			"class_type": "class",
 			"properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": true, "is_delicate": false }
 		},
