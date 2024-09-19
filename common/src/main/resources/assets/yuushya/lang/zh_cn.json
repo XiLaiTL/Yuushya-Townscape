@@ -299,10 +299,6 @@
   "block.yuushya.showblock.scale_text": "缩放: [%s]",
   "block.yuushya.showblock.slot_text": "[%s]: ",
 
-  "block.yuushya.modelframe.line1": "\u00A78不可用",
-  "block.yuushya.showblock.line1": "\u00A78空",
-  "block.yuushya.mixedblock.line1": "\u00A78不可用",
-
   "block.yuushya.falling_maple_spawner": "落枫",
   "block.yuushya.falling_maple_spawner.line1": "\u00A79[粒子生成器]",
   "block.yuushya.falling_oak_spawner": "落叶",
@@ -1865,6 +1861,7 @@
   "block.yuushya.full_oden_cooker": "满的关东煮锅",
   "block.yuushya.mini_printer": "小型打印机",
   "block.yuushya.chopsticks": "筷子",
+  "block.yuushya.wisteria": "紫藤",
   "block.yuushya.decorative_black_wool_plain": "黑色竖纹装饰羊毛",
   "block.yuushya.decorative_blue_wool_plain": "蓝色竖纹装饰羊毛",
   "block.yuushya.decorative_brown_wool_plain": "棕色竖纹装饰羊毛",
