@@ -174,8 +174,10 @@ public class CheckFileUtils {
 
     public static boolean checkResourceFile(String id){
         Minecraft minecraft = Minecraft.getInstance();
+        String id1 = id.replace("_","").toLowerCase();
         for(String selectedId : minecraft.getResourcePackRepository().getSelectedIds()){
-            if(selectedId.toLowerCase().contains(id)) return true;
+            if(selectedId.replaceAll("\\s","").replaceAll("_","").toLowerCase().contains(id1))
+                return true;
         }
         return false;
     }
