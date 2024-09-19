@@ -299,10 +299,6 @@
   "block.yuushya.showblock.scale_text": "缩放: [%s]",
   "block.yuushya.showblock.slot_text": "[%s]: ",
 
-  "block.yuushya.modelframe.line1": "\u00A78不可用",
-  "block.yuushya.showblock.line1": "\u00A78空",
-  "block.yuushya.mixedblock.line1": "\u00A78不可用",
-
   "block.yuushya.falling_maple_spawner": "落枫",
   "block.yuushya.falling_maple_spawner.line1": "\u00A79[粒子生成器]",
   "block.yuushya.falling_oak_spawner": "落叶",
