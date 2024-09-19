@@ -115,6 +115,7 @@ public class CheckScreen extends Screen {
 
     @Override
     public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTick) {
+        this.renderBackground(guiGraphics);
         super.render(guiGraphics,mouseX,mouseY,partialTick);
         guiGraphics.drawString(this.font,TITLE,center(font.width(TITLE)),10,0xFFFFFF);
         guiGraphics.drawString(this.font,this.message,center(font.width(this.message)),23,0xFFFFFF);
