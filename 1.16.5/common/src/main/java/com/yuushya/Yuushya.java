@@ -2,7 +2,6 @@ package com.yuushya;
 
 import com.yuushya.collision.CollisionFileReader;
 import com.yuushya.registries.YuushyaRegistries;
-import com.yuushya.registries.YuushyaRegistryConfig;
 import com.yuushya.utils.AddonLoader;
 import com.yuushya.utils.YuushyaLogger;
 import me.shedaniel.architectury.event.events.LifecycleEvent;

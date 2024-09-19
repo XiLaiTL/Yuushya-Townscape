@@ -2,7 +2,6 @@ package com.yuushya.gui;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 
-import com.yuushya.utils.CheckFileUtils;
 import com.yuushya.utils.CheckFileUtils.Info;
 import net.minecraft.ChatFormatting;
 import net.minecraft.Util;

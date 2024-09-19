@@ -2,17 +2,11 @@ package com.yuushya;
 
 import com.yuushya.collision.CollisionFileReader;
 import com.yuushya.gui.CheckScreen;
-import com.yuushya.particle.YuushyaParticleFactory;
 import com.yuushya.registries.YuushyaConfig;
 import com.yuushya.registries.YuushyaRegistries;
-import com.yuushya.registries.YuushyaRegistryConfig;
 import com.yuushya.utils.CheckFileUtils;
-import com.yuushya.utils.YuushyaLogger;
 import me.shedaniel.architectury.event.events.GuiEvent;
 import me.shedaniel.architectury.event.events.client.ClientLifecycleEvent;
-import me.shedaniel.architectury.registry.ParticleProviderRegistry;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.screens.ConfirmScreen;
 import net.minecraft.client.gui.screens.TitleScreen;
 import net.minecraft.world.InteractionResultHolder;
 
