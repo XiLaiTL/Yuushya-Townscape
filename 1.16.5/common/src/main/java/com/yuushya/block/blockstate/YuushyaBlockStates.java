@@ -61,6 +61,16 @@ public class YuushyaBlockStates {
         }
     }
 
+    public static int getFormMax(IntegerProperty form) {
+        if (form == YuushyaBlockStates.FORM2) return 2;
+        if (form == YuushyaBlockStates.FORM3) return 3;
+        if (form == YuushyaBlockStates.FORM4) return 4;
+        if (form == YuushyaBlockStates.FORM5) return 5;
+        if (form == YuushyaBlockStates.FORM6) return 6;
+        if (form == YuushyaBlockStates.FORM7) return 7;
+        if (form == YuushyaBlockStates.FORM8) return 8;
+        return 1;
+    }
     public static Property<?> toBlockStateProperty(String name){
         switch (name) {
             case "xpos":

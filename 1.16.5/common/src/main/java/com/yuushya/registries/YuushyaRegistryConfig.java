@@ -1,14 +1,12 @@
 package com.yuushya.registries;
 
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
+import com.google.gson.*;
 import com.yuushya.Yuushya;
 import com.yuushya.utils.GsonTools;
 import me.shedaniel.architectury.platform.Platform;
 
 import java.io.*;
+import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -20,7 +18,6 @@ import static com.yuushya.utils.GsonTools.NormalGSON;
 //游戏开始时开始读，数据都读取到YuushyaData中，让YuushyaRegistries准备注册
 public class YuushyaRegistryConfig {
 
-    private static YuushyaRegistryData YuushyaData;
     public static final Map<String,YuushyaRegistryData.Block> YuushyaRawBlockMap=new LinkedHashMap<>();
     public static final Map<String,YuushyaRegistryData.Item> YuushyaRawItemMap=new LinkedHashMap<>();
     public static final Map<String,YuushyaRegistryData.Particle> YuushyaRawParticleMap=new LinkedHashMap<>();
@@ -59,7 +56,7 @@ public class YuushyaRegistryConfig {
                 YuushyaRegistryData yuushyaData = readRegistryInner(InnerFileInputStream);//如果不是同一个版本的话，优先读取Jar包内部内容
                 //使用map来合并两者的数据
                 addResultToRawMap(yuushyaRegistryData);
-                addResultToRawMap(YuushyaData);
+                addResultToRawMap(yuushyaData);
             }
         } catch (IOException e) {
             e.printStackTrace();
