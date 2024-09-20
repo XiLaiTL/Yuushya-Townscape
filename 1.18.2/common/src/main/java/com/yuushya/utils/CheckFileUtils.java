@@ -10,22 +10,88 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class CheckFileUtils {
     public static final Gson NormalGSON = new GsonBuilder().disableHtmlEscaping().setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES).setPrettyPrinting().create();
 
-    public record Info(
-            String id,
-            String type,
-            List<String> api,
-            String version,
-            List<String> minecraft,
-            Map<String,String> link
-    ){ }
+    public static final class Info {
+        private final String id;
+        private final String type;
+        private final List<String> api;
+        private final String version;
+        private final List<String> minecraft;
+        private final Map<String, String> link;
+
+        public Info(
+                String id,
+                String type,
+                List<String> api,
+                String version,
+                List<String> minecraft,
+                Map<String, String> link
+        ) {
+            this.id = id;
+            this.type = type;
+            this.api = api;
+            this.version = version;
+            this.minecraft = minecraft;
+            this.link = link;
+        }
+
+        public String id() {
+            return id;
+        }
+
+        public String type() {
+            return type;
+        }
+
+        public List<String> api() {
+            return api;
+        }
+
+        public String version() {
+            return version;
+        }
+
+        public List<String> minecraft() {
+            return minecraft;
+        }
+
+        public Map<String, String> link() {
+            return link;
+        }
+
+        @Override
+        public boolean equals(Object obj) {
+            if (obj == this) return true;
+            if (obj == null || obj.getClass() != this.getClass()) return false;
+            var that = (Info) obj;
+            return Objects.equals(this.id, that.id) &&
+                    Objects.equals(this.type, that.type) &&
+                    Objects.equals(this.api, that.api) &&
+                    Objects.equals(this.version, that.version) &&
+                    Objects.equals(this.minecraft, that.minecraft) &&
+                    Objects.equals(this.link, that.link);
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(id, type, api, version, minecraft, link);
+        }
+
+        @Override
+        public String toString() {
+            return "Info[" +
+                    "id=" + id + ", " +
+                    "type=" + type + ", " +
+                    "api=" + api + ", " +
+                    "version=" + version + ", " +
+                    "minecraft=" + minecraft + ", " +
+                    "link=" + link + ']';
+        }
+    }
 
     private static Map<String,Info> information = new HashMap<>();
     public static Info info(String id){ return information.get(id); }

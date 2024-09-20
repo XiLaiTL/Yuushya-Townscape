@@ -92,7 +92,7 @@ public class CheckScreen extends Screen {
         this.message = resourcepackPanel.isEmpty() && recommendPanel.isEmpty() && ctmPanel.isEmpty()
                 ? CONGRATULATIONS : MESSAGE;
 
-        this.stopShowing = new Checkbox(this.width/4-30,this.height-3,this.font.width(CHECK),20,CHECK,false);
+        this.stopShowing = new Checkbox(this.width/4-30,this.height-35,this.font.width(CHECK),20,CHECK,false);
 
         this.finishButton = new Button(this.width/4*3 - 60 ,this.height-35,120,20,CommonComponents.GUI_PROCEED, button -> {
             if (this.stopShowing.selected()) {
