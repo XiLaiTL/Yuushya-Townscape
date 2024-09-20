@@ -54,12 +54,7 @@ public class AddonLoader {
             CodeSource codeSource = cls.getProtectionDomain().getCodeSource();
             if(codeSource!=null){
                 URL jarPath = codeSource.getLocation();
-                String decoded = null;
-                try {
-                    decoded = URLDecoder.decode(jarPath.getPath(),"UTF-8");
-                } catch (UnsupportedEncodingException e) {
-                    decoded = jarPath.getPath().replaceAll("%20","");
-                }
+                String decoded = URLDecoder.decode(jarPath.getPath(), StandardCharsets.UTF_8);
                 String dir = new File(decoded).getPath().replaceAll("#.+!","").replaceAll("\\.jar.+",".jar");
                 return Paths.get(dir);
             }

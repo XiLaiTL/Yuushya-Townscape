@@ -78,6 +78,7 @@ public class YuushyaRegistryData{
             public String offset;
             public int lines;
             public String parent;
+            public Item.Properties.Food food;
         }
         public static class ColorTint{
             public String colorType;
@@ -88,6 +89,7 @@ public class YuushyaRegistryData{
             public List<Float> sitPos;
             public String sound;
             public List<Integer> cycleForms;
+
         }
     }
     public static class Item{
@@ -103,6 +105,12 @@ public class YuushyaRegistryData{
             public String equipment;
             public boolean fireProof;
             public int lines;
+            //也可以注册一个物品作为食物
+            public static class Food {
+                public int nutrition;
+                public float saturation;
+                public String finishedItem;
+            }
 
         }
 
