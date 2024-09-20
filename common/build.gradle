@@ -77,11 +77,6 @@ partVersions.forEach { ver ->
     }
 }
 
-tasks.register("gen-part"){
-    dependsOn(partVersions.collect{"gen-${it}"})
-}
-
-
 //1.20.6
 
 tasks.register('generateAssetsAndData-1.20.6', CreateAssetsAndDataTask){

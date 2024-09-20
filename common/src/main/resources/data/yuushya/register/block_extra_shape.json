@@ -1,0 +1,569 @@
+{
+  "block": [
+    {"name": "~Extra_Shape_拓展形状", "class_type": "_comment" },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "roof_0",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/0l","yuushya:extra_building_material/roof/roof/0_","yuushya:extra_building_material/roof/roof/0r","yuushya:extra_building_material/roof/roof/0"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "roof_1",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/4l","yuushya:extra_building_material/roof/roof/4_","yuushya:extra_building_material/roof/roof/4r","yuushya:extra_building_material/roof/roof/4"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "roof_2",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/2l","yuushya:extra_building_material/roof/roof/2_","yuushya:extra_building_material/roof/roof/2r","yuushya:extra_building_material/roof/roof/2"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "roof_3",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof/3l","yuushya:extra_building_material/roof/roof/3_","yuushya:extra_building_material/roof/roof/3r","yuushya:extra_building_material/roof/roof/3"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "roof_ridge_0",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/0l","yuushya:extra_building_material/roof/roof_ridge/0_","yuushya:extra_building_material/roof/roof_ridge/0r","yuushya:extra_building_material/roof/roof_ridge/0"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "roof_ridge_1",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/4l","yuushya:extra_building_material/roof/roof_ridge/4_","yuushya:extra_building_material/roof/roof_ridge/4r","yuushya:extra_building_material/roof/roof_ridge/4"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "roof_ridge_2",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/2l","yuushya:extra_building_material/roof/roof_ridge/2_","yuushya:extra_building_material/roof/roof_ridge/2r","yuushya:extra_building_material/roof/roof_ridge/2"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "roof_ridge_3",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/roof_ridge/3l","yuushya:extra_building_material/roof/roof_ridge/3_","yuushya:extra_building_material/roof/roof_ridge/3r","yuushya:extra_building_material/roof/roof_ridge/3"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "roof_corner_0_outer",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/roof_corner_0_outer"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "roof_corner_0_inner",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/roof_corner_0_inner"]]}
+    },
+    {
+      "class_type": "IntactBlock",
+      "name": "roof_corner_1_outer",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/roof_corner_1_outer"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "roof_corner_1_inner",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/roof_corner_1_inner"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "roof_corner_2_outer",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/roof_corner_2_outer"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "roof_corner_2_inner",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/roof_corner_2_inner"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "roof_corner_3_outer",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/roof_corner_3_outer"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "roof_corner_3_inner",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/roof/corner/roof_corner_3_inner"]]}
+    },
+
+
+    {
+      "class_type": "FixedBlock",
+      "name": "iron_ladder",
+      "auto_generated": {"tags": [{"value": "climbable"}] }, "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/iron_ladder"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "iron_ladder_top",
+      "auto_generated": {"tags": [{"value": "climbable"}],"collision": "none" }, "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/iron_ladder_"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "road_fence",
+      "item_group": "extra_shapes",
+      "item_model": "yuushya:extra_building_material/road_fence_none",
+      "blockstate": { "forms": [["yuushya:extra_building_material/road_fence_left","yuushya:extra_building_material/road_fence_middle","yuushya:extra_building_material/road_fence_right","yuushya:extra_building_material/road_fence_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "sideway_road_fence",
+      "item_group": "extra_shapes",
+      "item_model": "yuushya:extra_building_material/side_road_fence_none",
+      "blockstate": { "forms": [["yuushya:extra_building_material/side_road_fence_left","yuushya:extra_building_material/side_road_fence_middle","yuushya:extra_building_material/side_road_fence_right","yuushya:extra_building_material/side_road_fence_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "stone_fence",
+      "item_group": "extra_shapes",
+      "item_model": "yuushya:extra_building_material/fence/horizontal_fence/stone_fence_none",
+      "blockstate": { "forms": [["yuushya:extra_building_material/fence/horizontal_fence/stone_fence_left","yuushya:extra_building_material/fence/horizontal_fence/stone_fence_middle","yuushya:extra_building_material/fence/horizontal_fence/stone_fence_right","yuushya:extra_building_material/fence/horizontal_fence/stone_fence_none"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "stone_handrail_left",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/stairsnfence/stone_stairs_fence"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "stone_handrail_right",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/stairsnfence/stone_stairs_fence_sym"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "stone_handrail_middle",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/stairsnfence/stone_stairs_fence_middle"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "iron_fence",
+      "item_group": "extra_shapes",
+      "item_model": "yuushya:extra_building_material/fence/iron_fence_none",
+      "blockstate": { "forms": [["yuushya:extra_building_material/fence/iron_fence_left","yuushya:extra_building_material/fence/iron_fence_middle","yuushya:extra_building_material/fence/iron_fence_right","yuushya:extra_building_material/fence/iron_fence_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "black_iron_fence",
+      "item_group": "extra_shapes",
+      "item_model": "yuushya:extra_building_material/black_iron_fence_none",
+      "blockstate": { "forms": [["yuushya:extra_building_material/black_iron_fence_left","yuushya:extra_building_material/black_iron_fence_middle","yuushya:extra_building_material/black_iron_fence_right","yuushya:extra_building_material/black_iron_fence_none"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "tall_classical_fence",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/euro_style/tall_classical_fence"]]}
+    },
+
+
+    {
+      "class_type": "StairBlock",
+      "name": "iron_hollow_stairs_0",
+      "item_model": "yuushya:block/iron_hollow_stairs_0",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:block/iron_hollow_stairs_0_inner","yuushya:block/iron_hollow_stairs_0","yuushya:block/iron_hollow_stairs_0_outer"]]}
+    },
+
+    {
+      "class_type": "StairBlock",
+      "name": "iron_hollow_stairs_1",
+      "item_model": "yuushya:block/iron_hollow_stairs_1",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:block/iron_hollow_stairs_1_inner","yuushya:block/iron_hollow_stairs_1","yuushya:block/iron_hollow_stairs_1_outer"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "tall_iron_fence_middle_support",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/fence/tall_iron_fence"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "tall_iron_fence_middle",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/fence/tall_iron_fence_"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "tall_iron_fence_left",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/fence/tall_iron_fence__"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "tall_iron_fence_right",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/fence/tall_iron_fence___"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "tall_iron_fence_stairs",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/fence/tall_iron_fence_stairs"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "tall_iron_fence_stairs_sym",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/fence/tall_iron_fence_stairs_sym"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "black_tall_iron_fence_middle_support",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/black_tall_iron_fence"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "black_tall_iron_fence_middle",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/black_tall_iron_fence_"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "black_tall_iron_fence_left",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/black_tall_iron_fence__"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "black_tall_iron_fence_right",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/black_tall_iron_fence___"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "black_tall_iron_fence_stairs",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/black_tall_iron_fence_stairs"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "black_tall_iron_fence_stairs_sym",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/black_tall_iron_fence_stairs_sym"]]}
+    },
+
+    {
+      "class_type": "TranslucentBlock",
+      "name": "white_curtain",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/curtain_white"]]}
+    },
+
+    {
+      "class_type": "TranslucentBlock",
+      "name": "red_curtain",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/curtain_red"]]}
+    },
+
+    {
+      "class_type": "TranslucentBlock",
+      "name": "blue_curtain",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/curtain_blue"]]}
+    },
+
+    {
+      "class_type": "TranslucentBlock",
+      "name": "yellow_curtain",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/curtain_yellow"]]}
+    },
+
+    {
+      "class_type": "TranslucentBlock",
+      "name": "cyan_curtain",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/curtain_cyan"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "grille_0",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/kal_0"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "grille_1",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/kal_1"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "grille_2",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/kal_2"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "retaining_wall",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/retaining_wall/retaining_wall"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "retaining_wall_top",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/retaining_wall/retaining_wall_top"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "retaining_wall_corner",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/retaining_wall/retaining_wall_corner"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "retaining_wall_top_corner",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/retaining_wall/retaining_wall_top_corner"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "half_carved_retaining_wall_0",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/retaining_wall/half_carved_retaining_wall_0"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "half_carved_retaining_wall_1",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/retaining_wall/half_carved_retaining_wall_1"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "half_hollow_retaining_wall_0",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/retaining_wall/half_hollow_retaining_wall_0"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "half_hollow_retaining_wall_1",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/retaining_wall/half_hollow_retaining_wall_1"]]}
+    },
+
+
+    {
+      "class_type": "FixedBlock",
+      "name": "half_carved_retaining_wall_top_0",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/retaining_wall/half_carved_retaining_wall_top_0"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "half_carved_retaining_wall_top_1",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/retaining_wall/half_carved_retaining_wall_top_1"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "half_hollow_retaining_wall_top_0",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/retaining_wall/half_hollow_retaining_wall_top_0"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "half_hollow_retaining_wall_top_1",
+      "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:extra_building_material/retaining_wall/half_hollow_retaining_wall_top_1"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "white_wall_frame",
+      "auto_generated": { "collision": "block" }, "item_group": "extra_shapes",
+      "properties": {"is_solid": false, "has_collision": false},
+      "blockstate": { "forms": [["yuushya:extra_building_material/euro_style/white_wall_frame"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "pale_wall_frame",
+      "auto_generated": { "collision": "block" }, "item_group": "extra_shapes",
+      "properties": {"is_solid": false, "has_collision": false},
+      "blockstate": { "forms": [["yuushya:extra_building_material/euro_style/pale_wall_frame"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "stone_wall_frame",
+      "auto_generated": { "collision": "block" }, "item_group": "extra_shapes",
+      "properties": {"is_solid": false, "has_collision": false},
+      "blockstate": { "forms": [["yuushya:extra_building_material/euro_style/stone_wall_frame"]]}
+    },
+
+    {
+      "class_type": "FlowBlock",
+      "name": "marble_column",
+      "auto_generated": { "collision": "block" }, "item_group": "extra_shapes",
+      "item_model": "yuushya:extra_building_material/euro_style/marble_column_item",
+      "render_type": "cutout",
+      "blockstate": { "forms": [["yuushya:extra_building_material/euro_style/marble_column_top", "yuushya:extra_building_material/euro_style/marble_column_middle", "yuushya:extra_building_material/euro_style/marble_column_bottom", "yuushya:extra_building_material/euro_style/marble_column_none"]]
+      }
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "marble_fence",
+      "auto_generated": { "collision": "bound" }, "item_group": "extra_shapes",
+      "properties": { "has_collision": true },
+      "item_model": "yuushya:extra_building_material/euro_style/marble_fence",
+      "blockstate": { "forms": [["yuushya:extra_building_material/euro_style/marble_fence_left","yuushya:extra_building_material/euro_style/marble_fence_middle","yuushya:extra_building_material/euro_style/marble_fence_right","yuushya:extra_building_material/euro_style/marble_fence_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "classical_white_window_sideway_frame",
+      "auto_generated": { "collision": "bound" }, "item_group": "extra_shapes",
+      "properties": { "has_collision": false },
+      "item_model": "yuushya:extra_building_material/euro_style/classical_white_window_sideway_frame_none",
+      "blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_white_window_sideway_frame_left","yuushya:extra_building_material/blank","yuushya:extra_building_material/euro_style/classical_white_window_sideway_frame_right","yuushya:extra_building_material/euro_style/classical_white_window_sideway_frame_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "elaborate_white_window_sideway_frame",
+      "auto_generated": { "collision": "bound" }, "item_group": "extra_shapes",
+      "properties": { "has_collision": false },
+      "item_model": "yuushya:extra_building_material/euro_style/elaborate_white_window_sideway_frame_none",
+      "blockstate": { "forms": [["yuushya:extra_building_material/euro_style/elaborate_white_window_sideway_frame_left","yuushya:extra_building_material/blank","yuushya:extra_building_material/euro_style/elaborate_white_window_sideway_frame_right","yuushya:extra_building_material/euro_style/elaborate_white_window_sideway_frame_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "classical_white_window_bottom",
+      "auto_generated": { "collision": "bound" }, "item_group": "extra_shapes",
+      "item_model": "yuushya:extra_building_material/euro_style/classical_white_window_bottom_none",
+      "blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_white_window_bottom_left","yuushya:extra_building_material/euro_style/classical_white_window_bottom_middle","yuushya:extra_building_material/euro_style/classical_white_window_bottom_right","yuushya:extra_building_material/euro_style/classical_white_window_bottom_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "classical_white_window_top",
+      "auto_generated": { "collision": "bound" }, "item_group": "extra_shapes",
+      "item_model": "yuushya:extra_building_material/euro_style/classical_white_window_top_none",
+      "blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_white_window_top_left","yuushya:extra_building_material/euro_style/classical_white_window_top_middle","yuushya:extra_building_material/euro_style/classical_white_window_top_right","yuushya:extra_building_material/euro_style/classical_white_window_top_none"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "classical_white_window_top_round",
+      "auto_generated": { "collision": "bound" }, "item_group": "extra_shapes",
+      "item_model": "yuushya:extra_building_material/euro_style/classical_white_window_top_round_none",
+      "blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_white_window_top_round_left","yuushya:extra_building_material/euro_style/classical_white_window_top_round_middle","yuushya:extra_building_material/euro_style/classical_white_window_top_round_right","yuushya:extra_building_material/euro_style/classical_white_window_top_round_none"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "classical_half_round_windows_frame_top_left",
+      "auto_generated": { "collision": "block" }, "item_group": "extra_shapes",
+      "properties": {"is_solid": false, "has_collision": false},
+      "blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_half_round_windows_frame_top"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "classical_half_round_windows_frame_top_right",
+      "auto_generated": { "collision": "block" }, "item_group": "extra_shapes",
+      "properties": {"is_solid": false, "has_collision": false},
+      "blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_half_round_windows_frame_top_"]]}
+    },
+
+
+    {
+      "class_type": "RoofBlock",
+      "name": "classical_white_window_top_round_alt",
+      "auto_generated": { "collision": "bound" }, "item_group": "extra_shapes",
+      "item_model": "yuushya:extra_building_material/euro_style/classical_white_window_top_round_alt_none",
+      "blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_white_window_top_round_alt_left","yuushya:extra_building_material/euro_style/classical_white_window_top_round_alt_middle","yuushya:extra_building_material/euro_style/classical_white_window_top_round_alt_right","yuushya:extra_building_material/euro_style/classical_white_window_top_round_alt_none"]]}
+    },
+
+
+
+    {
+      "class_type": "RoofBlock",
+      "name": "classical_white_trim",
+      "auto_generated": { "collision": "bound" }, "item_group": "extra_shapes",
+      "item_model": "yuushya:extra_building_material/euro_style/classical_white_ridge_none",
+      "blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_white_ridge_left","yuushya:extra_building_material/euro_style/classical_white_ridge_middle","yuushya:extra_building_material/euro_style/classical_white_ridge_right","yuushya:extra_building_material/euro_style/classical_white_ridge_none"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "classical_white_door_top",
+      "auto_generated": { "collision": "bound" }, "item_group": "extra_shapes",
+      "properties": {"has_collision": false},
+      "blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_white_door_top"]]}
+    }
+  ]
+}

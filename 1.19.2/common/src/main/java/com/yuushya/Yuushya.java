@@ -1,8 +1,10 @@
 package com.yuushya;
 
 import com.yuushya.collision.CollisionFileReader;
+import com.yuushya.registries.YuushyaConfig;
 import com.yuushya.registries.YuushyaRegistries;
 import com.yuushya.registries.YuushyaRegistryConfig;
+import com.yuushya.registries.YuushyaRegistryData;
 import com.yuushya.utils.AddonLoader;
 import com.yuushya.utils.YuushyaLogger;
 import dev.architectury.event.events.common.LifecycleEvent;
@@ -13,7 +15,7 @@ public class Yuushya {
     public static final String MOD_ID = "yuushya";
 
     public static void init() {
-
+        AddonLoader.loadResource(MOD_ID,Yuushya.class);
         AddonLoader.loadPackResource(Platform.getModsFolder());
 //        ReloadListenerRegistry.register(PackType.SERVER_DATA,new CollisionFileReadReloadListener());
         //YuushyaRegistryConfig.readRegistryConfig();
@@ -22,15 +24,12 @@ public class Yuushya {
         YuushyaRegistries.registerRegistries();
         YuushyaRegistries.registerAll();
 
-        //CollisionFileReader.readAllFileFromConfig();
         AddonLoader.getCollision();
-        CollisionFileReader.readAllFileSelf();
-//        CollisionNetWorkChannel.register();
+//        CollisionFileReader.readAllFileSelf();
 
         LifecycleEvent.SERVER_STARTED.register((server)->{ //server thread
-            //CollisionFileReader.readAllFileFromConfig();
             AddonLoader.getCollision();
-            CollisionFileReader.readAllFileSelf();
+//            CollisionFileReader.readAllFileSelf();
             CollisionFileReader.readAllCollision();
         });
 //        LifecycleEvent.SERVER_STOPPED.register((server)->{

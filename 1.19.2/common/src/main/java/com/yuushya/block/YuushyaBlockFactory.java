@@ -53,6 +53,7 @@ import static com.yuushya.block.FaceBlock.getPositionOfFaceX;
 import static com.yuushya.block.FaceBlock.getPositionOfFaceZ;
 import static com.yuushya.block.PoleBlock.getPositionOfPole;
 import static com.yuushya.block.blockstate.YuushyaBlockStates.*;
+import static com.yuushya.collision.CollisionFileReader.restrictShape;
 import static com.yuushya.utils.YuushyaUtils.toBlockMaterial;
 import static com.yuushya.utils.YuushyaUtils.toSound;
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.*;
@@ -63,10 +64,15 @@ public class YuushyaBlockFactory{
     public static Map<String, VoxelShape> getYuushyaVoxelShapes() {
         return yuushyaVoxelShapes;
     }
+    private static final Map<String,VoxelShape> yuushyaCollisionShapes = new HashMap<>();
+    public static Map<String, VoxelShape> getYuushyaCollisionShapes() {
+        return yuushyaCollisionShapes;
+    }
 
     public static class BlockWithClassType extends AbstractYuushyaBlock {
         public String classType;
         private final Map<String,VoxelShape> voxelShapeCache = new HashMap<>();
+        private final Map<String,VoxelShape> collisionShapeCache = new HashMap<>();
         public BlockWithClassType(Properties properties, Integer tipLines, String classType) {
             super(properties, tipLines);
             this.classType=classType;
@@ -76,29 +82,39 @@ public class YuushyaBlockFactory{
             return classType.equals(block.classType);
         }
 
+        //轮廓箱
         @Override
         public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
             String id = blockState.toString();
             if(!voxelShapeCache.containsKey(id)){
                 if(!getYuushyaVoxelShapes().containsKey(id)){
-                    CollisionFileReader.readCollisionToVoxelShape(voxelShapeCache,blockState, Registry.BLOCK.getKey(blockState.getBlock()).toString());
+                    CollisionFileReader.readCollisionToVoxelShape(blockState, Registry.BLOCK.getKey(blockState.getBlock()).toString());
                 }
-                VoxelShape shape = getYuushyaVoxelShapes().getOrDefault(id,Shapes.empty());
+                VoxelShape shape = getYuushyaVoxelShapes().getOrDefault(id,Shapes.block());
                 voxelShapeCache.put(id,shape);
                 return shape;
             }
             return voxelShapeCache.get(id);
         }
 
-//        @Override
-//        public VoxelShape getVisualShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-//            return Shapes.create(this.getCollisionShape(state,level,pos,context).bounds());
-//        }
+        //碰撞箱
+        @Override
+        public VoxelShape getCollisionShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
+            if(!this.hasCollision) return  Shapes.empty();
+            String id = blockState.toString();
+            if(!collisionShapeCache.containsKey(id)){
+                if(!getYuushyaCollisionShapes().containsKey(id)){
+                    VoxelShape collisionShape = this.getShape(blockState,blockGetter,blockPos,collisionContext);
+                    if(!getYuushyaCollisionShapes().containsKey(id)){ //上面调用的方法有副作用
+                        getYuushyaCollisionShapes().put(id,restrictShape(collisionShape));
+                    }
+                }
+                VoxelShape shape = getYuushyaCollisionShapes().getOrDefault(id,Shapes.empty());
+                collisionShapeCache.put(id,shape);
+            }
+            return collisionShapeCache.get(id);
+        }
 
-//        @Override
-//        public VoxelShape getCollisionShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
-//            return this.hasCollision ? Shapes.block() : Shapes.empty();
-//        }
         @Override
         public BlockState rotate(BlockState state, Rotation rotation) {
             if(state.hasProperty(FACING))
@@ -247,6 +263,16 @@ public class YuushyaBlockFactory{
         @Override
         public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
             YuushyaRegistryData.Block.Usage usage = yuushyaBlock.usage;
+            if(yuushyaBlock.properties!=null && yuushyaBlock.properties.food!=null) {
+                YuushyaRegistryData.Item.Properties.Food food = yuushyaBlock.properties.food;
+                ResourceLocation finishedItem=null;
+                if (yuushyaBlock.properties.food.finishedItem != null) {
+
+                     finishedItem = new  ResourceLocation( yuushyaBlock.properties.food.finishedItem);
+
+                }
+                return FoodBlock.use(finishedItem, food.nutrition, food.saturation, state, level, pos, player, hand, hit);
+            }
             if(usage!=null){
                 if(!level.isClientSide&&usage.sound!=null&&!usage.sound.isBlank()&&player.getItemInHand(hand).isEmpty()){
                     SoundEvent soundEvent = Registry.SOUND_EVENT.get(new ResourceLocation(usage.sound));

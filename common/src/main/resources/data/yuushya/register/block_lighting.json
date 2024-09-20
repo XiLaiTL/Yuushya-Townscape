@@ -1,0 +1,181 @@
+{
+  "block": [
+    {"name": "~Lighting_灯具", "class_type": "_comment" },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "road_light",
+      "properties": { "light_level": 15},
+      "item_group": "lighting",
+      "blockstate": { "forms": [["yuushya:extra_building_material/road_light"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "street_light",
+      "properties": { "light_level": 15},
+      "item_group": "lighting",
+      "blockstate": { "forms": [["yuushya:extra_building_material/street_light"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "properties": { "light_level": 15},
+      "name": "oriental_lantern",
+      "item_group": "lighting",
+      "blockstate": { "forms": [["yuushya:extra_building_material/oriental_lantern"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "goth_lantern",
+      "properties": { "light_level": 15},
+      "item_group": "lighting",
+      "blockstate": { "forms": [["yuushya:extra_building_material/oriental_lantern_"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "medieval_lamp",
+      "properties": { "light_level": 15},
+      "item_group": "lighting",
+      "blockstate": { "forms": [["yuushya:extra_building_material/euro_style/medieval_lamp"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "medieval_street_light",
+      "properties": { "light_level": 0},
+      "item_group": "lighting",
+      "blockstate": { "forms": [["yuushya:extra_building_material/euro_style/medieval_street_light"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "medieval_street_light_base",
+      "properties": { "light_level": 0},
+      "item_group": "lighting",
+      "blockstate": { "forms": [["yuushya:extra_building_material/euro_style/medieval_street_light_base"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "medieval_street_light_post",
+      "properties": { "light_level": 0},
+      "item_group": "lighting",
+      "blockstate": { "forms": [["yuushya:extra_building_material/euro_style/medieval_lamp_post"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "medieval_street_light_pole",
+      "properties": { "light_level": 0},
+      "item_group": "lighting",
+      "blockstate": { "forms": [["yuushya:extra_building_material/euro_style/medieval_lamp_pole"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "modern_lamp_0",
+      "properties": { "light_level": 15},
+      "item_group": "lighting",
+      "blockstate": { "forms": [["yuushya:extra_building_material/street_lamp_0"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "modern_lamp_1",
+      "properties": { "light_level": 15},
+      "item_group": "lighting",
+      "blockstate": { "forms": [["yuushya:extra_building_material/street_lamp_1"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "modern_lamp_2",
+      "properties": { "light_level": 15},
+      "item_group": "lighting",
+      "blockstate": { "forms": [["yuushya:extra_building_material/street_lamp_2"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "modern_lamp_ceiling",
+      "properties": { "light_level": 15},
+      "item_group": "lighting",
+      "blockstate": { "forms": [["yuushya:extra_building_material/round_ceiling_lamp"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "round_ceiling_lamp",
+      "properties": { "light_level": 15},
+      "item_group": "lighting",
+      "blockstate": { "forms": [["yuushya:extra_building_material/lighting/round_ceiling_lamp_1"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "fluorescent_lamp",
+      "properties": { "light_level": 15, "lines": 1},
+      "item_group": "lighting",
+      "blockstate": { "forms": [["yuushya:extra_building_material/fluorescent_lamp"],["yuushya:extra_building_material/fluorescent_lamp_"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "gothic_ceiling_lamp",
+      "properties": { "light_level": 15},
+      "item_group": "lighting",
+      "blockstate": { "forms": [["yuushya:extra_building_material/lighting/ceiling_lamp_goth"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "incandescent_lamp",
+      "properties": { "light_level": 15},
+      "item_group": "lighting",
+      "blockstate": { "kit": "attachment","forms": [["yuushya:extra_building_material/lighting/incandescent_lamp"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "incandescent_bulb",
+      "properties": { "light_level": 15},
+      "item_group": "lighting",
+      "blockstate": { "kit": "attachment","forms": [["yuushya:extra_building_material/lighting/incandescent_lamp_"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "luorescent_lamp",
+      "properties": { "light_level": 15},
+      "item_group": "lighting",
+      "blockstate": { "kit": "attachment","forms": [["yuushya:extra_building_material/lighting/luorescent_lamp"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "desk_lamp_0",
+      "properties": { "light_level": 15},
+      "item_group": "lighting",
+      "blockstate": { "forms": [["yuushya:extra_building_material/desk_lamp"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "desk_lamp_1",
+      "properties": { "light_level": 15},
+      "item_group": "lighting",
+      "blockstate": { "forms": [["yuushya:extra_building_material/table_lamp"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "desk_lamp_2",
+      "properties": { "light_level": 15},
+      "item_group": "lighting",
+      "blockstate": { "forms": [["yuushya:extra_building_material/table_lamp_"]]}
+    }
+  ]
+}

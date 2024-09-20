@@ -2326,5 +2326,29 @@
   "block.yuushya.mounted_tv_online.line1": "\u00A7a(可用形態扳手調節)\u00A7a(可空手右鍵或用形態扳手變換)\u00A79[可變形態:8(換台)]",
   "block.yuushya.tv_online.line1": "\u00A7a(可用形態扳手調節)\u00A7a(可空手右鍵或用形態扳手變換)\u00A79[可變形態:8(換台)]",
 
+  "gui.yuushya.checkScreen.header": "方塊小鎮——模組和資源包安裝檢查",
+  "gui.yuushya.checkScreen.message": "方塊小鎮提示您需要安裝以下的模組和資源包，以獲得更好的遊玩體驗",
+  "gui.yuushya.checkScreen.congratulations": "沒有其他推薦的內容了，祝您遊玩愉快！",
+  "gui.yuushya.checkScreen.resourcepack": "資源包：",
+  "gui.yuushya.checkScreen.recommend": "推薦安裝的模組：",
+  "gui.yuushya.checkScreen.ctm": "連線紋理模組[選一個安裝]：",
+
+  "gui.yuushya.checkScreen.description.yuushya": "將每一個畫素，以絕佳的色彩，放置在每一個最合適的位置",
+  "gui.yuushya.checkScreen.name.yuushya": "Yuushya資源包",
+  "gui.yuushya.checkScreen.description.yuushya_foliage_addon": "替換了原版的各種樹葉方塊，讓原版的樹林更加生動。",
+  "gui.yuushya.checkScreen.name.yuushya_foliage_addon": "Yuushya樹葉擴充套件",
+  "gui.yuushya.checkScreen.description.yuushya_modelling": "包含建築輔助功能，如模型移動、模型旋轉等",
+  "gui.yuushya.checkScreen.name.yuushya_modelling": "方塊建模",
+  "gui.yuushya.checkScreen.description.optifine": "支援自定義紋理連線、自定義物品模型、光影等",
+  "gui.yuushya.checkScreen.name.optifine": "高畫質修復",
+  "gui.yuushya.checkScreen.description.continuity": "支援OptiFine格式的自定義紋理連線",
+  "gui.yuushya.checkScreen.name.continuity": "連線紋理",
+  "gui.yuushya.checkScreen.description.ctm": "支援自定義紋理連線，但有一些漏洞",
+  "gui.yuushya.checkScreen.name.ctm": "連線紋理模組",
+  "gui.yuushya.checkScreen.description.indium": "安裝了模組鈉Sodium的情況下，Continuity或方塊建模的前置",
+  "gui.yuushya.checkScreen.name.indium": "銦",
+
+  "gui.yuushya.checkScreen.link": "下載連結",
+
   "block.yuushya.end": "end"
 }

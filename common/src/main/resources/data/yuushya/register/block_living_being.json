@@ -1,0 +1,912 @@
+{
+  "block": [
+    {"name": "~Living_Being_动植物", "class_type": "_comment" },
+
+    {
+      "class_type": "FaceTranslucentBlock",
+      "name": "fish_tank_a_bottom",
+      "auto_generated": { "blockstate": false, "item_model": true }, "item_group": "living_being",
+      "properties": { "lines": 1 },
+      "blockstate": {
+        "kit": "face",
+        "forms": [["yuushya:extra_building_material/fishtank/fishtank_buttom_none"]]
+      }
+    },
+
+    {
+      "class_type": "FaceTranslucentBlock",
+      "name": "fish_tank_a_middle",
+      "auto_generated": { "blockstate": false, "item_model": true }, "item_group": "living_being",
+      "properties": { "lines": 1 },
+      "blockstate": {
+        "kit": "face",
+        "forms": [["yuushya:extra_building_material/fishtank/fishtank_centre_none"]]
+      }
+    },
+
+    {
+      "class_type": "FaceTranslucentBlock",
+      "name": "fish_tank_a_top",
+      "auto_generated": { "blockstate": false, "item_model": true }, "item_group": "living_being",
+      "properties": { "lines": 1 },
+      "blockstate": {
+        "kit": "face",
+        "forms": [["yuushya:extra_building_material/fishtank/fishtank_top_none"]]
+      }
+    },
+
+
+    {
+      "class_type": "FaceTranslucentBlock",
+      "name": "fish_tank_b_bottom",
+      "auto_generated": { "blockstate": false, "item_model": true }, "item_group": "living_being",
+      "properties": { "lines": 1 },
+      "blockstate": {
+        "kit": "face",
+        "forms": [["yuushya:extra_building_material/fishtank/fishtank_buttom_none"]]
+      }
+    },
+
+    {
+      "class_type": "FaceTranslucentBlock",
+      "name": "fish_tank_b_middle",
+      "auto_generated": { "blockstate": false, "item_model": true }, "item_group": "living_being",
+      "properties": { "lines": 1 },
+      "blockstate": {
+        "kit": "face",
+        "forms": [["yuushya:extra_building_material/fishtank/fishtank_centre_none"]]
+      }
+    },
+
+    {
+      "class_type": "FaceTranslucentBlock",
+      "name": "fish_tank_b_top",
+      "auto_generated": { "blockstate": false, "item_model": true }, "item_group": "living_being",
+      "properties": { "lines": 1 },
+      "blockstate": {
+        "kit": "face",
+        "forms": [["yuushya:extra_building_material/fishtank/fishtank_top_none"]]
+      }
+    },
+
+    {
+      "class_type": "LeftBlock",
+      "name": "big_oak_leaves",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/tree/leaves_oak"]]}
+    },
+
+    {
+      "class_type": "LeftBlock",
+      "name": "big_maple_leaves",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/tree/leaves_maple"]]}
+    },
+
+    {
+      "class_type": "LeftBlock",
+      "name": "big_sakura",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/tree/sakura"]]}
+    },
+
+    {
+      "class_type": "LeftBlock",
+      "name": "average_oak_leaves",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/tree/leaves_oak_medium"]]}
+    },
+
+    {
+      "class_type": "LeftBlock",
+      "name": "average_white_blooming_leaves",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/tree/leaves_oak_blooming_0"]]}
+    },
+
+    {
+      "class_type": "LeftBlock",
+      "name": "average_gold_blooming_leaves",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/tree/leaves_oak_blooming_1"]]}
+    },
+
+    {
+      "class_type": "LeftBlock",
+      "name": "average_pink_blooming_leaves",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/tree/leaves_oak_blooming_2"]]}
+    },
+
+    {
+      "class_type": "LeftBlock",
+      "name": "average_maple_leaves",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/tree/leaves_maple_medium"]]}
+    },
+
+    {
+      "class_type": "LeftBlock",
+      "name": "average_sakura",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/tree/sakura_medium"]]}
+    },
+
+    {
+      "class_type": "LeftBlock",
+      "name": "cluster_oak_leaves",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/tree/leaves_oak_small"]]}
+    },
+
+    {
+      "class_type": "LeftBlock",
+      "name": "cluster_maple_leaves",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/tree/leaves_maple_small"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "cluster_sakura",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/tree/sakura_small"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "trunk_0",
+      "properties": {"sound": "wood" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/tree/trunk_0"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "trunk_1",
+      "properties": {"sound": "wood" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/tree/trunk_1"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "trunk_2",
+      "properties": {"sound": "wood" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/tree/trunk_2"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "branch_0",
+      "properties": {"sound": "wood" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/tree/trunk_3"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "branch_1",
+      "properties": {"sound": "wood" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/tree/trunk_4"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "branch_2",
+      "properties": {"sound": "wood" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/tree/trunk_5"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "lesser_fallen_leaves",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/fallen_leaves_d"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "average_fallen_leaves",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/fallen_leaves"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "thick_fallen_leaves",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/fallen_leaves_b"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "stairs_lesser_fallen_leaves",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/stairs_fallen_leaves_d"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "stairs_average_fallen_leaves",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/stairs_fallen_leaves"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "stairs_thick_fallen_leaves",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/stairs_fallen_leaves_b"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "butterfly_red",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/butterfly_red"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "butterfly_blue",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/butterfly_blue"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "butterfly_magenta",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/butterfly_magenta"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "fireflies",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/fireflies"]]}
+    },
+
+
+    {
+      "class_type": "NormalBlock",
+      "name": "potted_bamboo",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/flower_pot/potted_bamboo"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "potted_flower_basket",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/flower_pot/potted_spruce_sapling"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "potted_sapling",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/potted_sapling"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "potted_jungle_sprout",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/flower_pot/potted_jungle_sapling"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "potted_tall_oak",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/flower_pot/potted_tall_orchid"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "potted_tall_maple",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/flower_pot/potted_tall_maple"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "potted_tall_sakura",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/flower_pot/potted_tall_sakura"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "potted_cornflower",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/flower_pot/potted_cornflower"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "potted_cactus",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/flower_pot/potted_cactus"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "potted_oak_sprout",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/flower_pot/potted_oak_sapling"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "potted_sakura_sprout",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/flower_pot/potted_acacia_sapling"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "potted_maple_sprout",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/flower_pot/potted_oxeye_daisy"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "potted_azure_bluet",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/flower_pot/potted_azure_bluet"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "potted_evergreen",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/evergreen"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "potted_sprout",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/flower_pot/potted_lily_of_the_valley"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "potted_sunflower",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/flower_pot/potted_dandelion"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "potted_allium",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/flower_pot/potted_allium"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "potted_bush",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/flower_pot/potted_dead_bush"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "potted_fern",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/flower_pot/potted_fern"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "potted_white_tulip",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/flower_pot/potted_white_tulip"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "potted_red_tulip",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/flower_pot/potted_red_tulip"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "potted_pink_tulip",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/flower_pot/potted_pink_tulip"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "potted_blue_orchid",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/flower_pot/potted_blue_orchid"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "potted_orange_tulip",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/flower_pot/potted_orange_tulip"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "potted_yuuca",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/flower_pot/potted_red_mushroom"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "potted_lycoris",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/flower_pot/potted_brown_mushroom"]]}
+    },
+
+    {
+      "class_type": "PlantBlock",
+      "name": "allium",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/plants/vanilla_plant/plant00_"]]}
+    },
+
+    {
+      "class_type": "PlantBlock",
+      "name": "poppy",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/plants/vanilla_plant/plant01_"]]}
+    },
+
+    {
+      "class_type": "PlantBlock",
+      "name": "orchid",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/plants/vanilla_plant/plant02_"]]}
+    },
+
+    {
+      "class_type": "PlantBlock",
+      "name": "dandelion",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/plants/vanilla_plant/plant03_"]]}
+    },
+
+    {
+      "class_type": "PlantBlock",
+      "name": "oxeye_daisy",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/plants/vanilla_plant/plant04_"]]}
+    },
+
+    {
+      "class_type": "PlantBlock",
+      "name": "lily_of_the_valley",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/plants/vanilla_plant/plant05_"]]}
+    },
+
+    {
+      "class_type": "PlantBlock",
+      "name": "azure_bluet",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/plants/azure_bluet"]]}
+    },
+
+    {
+      "class_type": "PlantBlock",
+      "name": "blooming_evergreen",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/plants/blooming_evergreen"]]}
+    },
+
+    {
+      "class_type": "PlantBlock",
+      "name": "evergreen",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/plants/evergreen"]]}
+    },
+
+    {
+      "class_type": "PlantBlock",
+      "name": "fern",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/plants/fern"]]}
+    },
+
+    {
+      "class_type": "PlantBlock",
+      "name": "lower_grass",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/plants/vanilla_plant/plant13_"]]}
+    },
+
+    {
+      "class_type": "PlantBlock",
+      "name": "gold_tulip",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/plants/orange_tulip"]]}
+    },
+
+    {
+      "class_type": "PlantBlock",
+      "name": "pink_tulip",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/plants/pink_tulip"]]}
+    },
+
+    {
+      "class_type": "PlantBlock",
+      "name": "red_tulip",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/plants/red_tulip"]]}
+    },
+
+    {
+      "class_type": "PlantBlock",
+      "name": "white_tulip",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/plants/white_tulip"]]}
+    },
+
+    {
+      "class_type": "PlantBlock",
+      "name": "tall_orchid",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/plants/vanilla_plant/plant11_"]]}
+    },
+
+    {
+      "class_type": "PlantBlock",
+      "name": "tall_lilac",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/plants/vanilla_plant/plant12_"]]}
+    },
+
+    {
+      "class_type": "PlantBlock",
+      "name": "tall_grass",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/plants/vanilla_plant/plant14_"]]}
+    },
+
+    {
+      "class_type": "PlantBlock",
+      "name": "small_vine",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/plants/small_vine"]]}
+    },
+
+    {
+      "class_type": "PlantBlock",
+      "name": "vine",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/plants/vine"]]}
+    },
+
+    {
+      "class_type": "PlantBlock",
+      "name": "top_vine",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/plants/top_vine"]]}
+    },
+
+    {
+      "class_type": "PlantBlock",
+      "name": "large_vine",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/plants/large_vine"]]}
+    },
+
+    {
+      "class_type": "PlantBlock",
+      "name": "ceiling_vine_flowering",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/plants/vine_u"]]}
+    },
+
+    {
+      "class_type": "PlantBlock",
+      "name": "ceiling_vine",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/plants/vine_u_"]]}
+    },
+
+    {
+      "class_type": "PlantBlock",
+      "name": "wisteria",
+      "properties": {"sound": "plant" },
+      "auto_generated": { "recipe": true, "blockstate": false }, "item_group": "living_being",
+      "item_model": "yuushya:extra_building_material/wisteria_0",
+      "blockstate": { "forms": [["yuushya:extra_building_material/wisteria_0"]]}
+    },
+    {
+      "class_type": "PlantBlock",
+      "name": "grown_wheat",
+      "properties": {"sound": "plant" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/plants/grown_wheat"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "hanging_azure_bluet",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/hanging_pot/azure"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "hanging_oak_sprout",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/hanging_pot/sapling"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "hanging_sakura_sprout",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/hanging_pot/cherry"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "hanging_maple_sprout",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/hanging_pot/grass"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "hanging_gold_tulip",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/hanging_pot/tulip"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "hanging_white_tulip",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/hanging_pot/tulip_"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "hanging_blue_tulip",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/hanging_pot/tulip__"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "hanging_red_tulip",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/hanging_pot/tulip___"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "hanging_pink_tulip",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/hanging_pot/tulip____"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "hanging_plant_pot_hook",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/hanging_pot/hanger1"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "hanging_plant_pot_rope",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/hanging_pot/hanger0"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_fern",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/flower_pot/wall_flowerpot_0"],["yuushya:extra_building_material/flower_pot/wall_flowerpot_4"]]},
+      "properties": {"lines": 1}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_oak_sprout",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/flower_pot/wall_flowerpot_1"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_sakura_sprout",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/flower_pot/wall_flowerpot_3"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_maple_sprout",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/flower_pot/wall_flowerpot_2"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_bush",
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/flower_pot/wall_flowerpot_6"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "british_shorthair",
+      "properties": { "sound": "wool" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/british_shorthair"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "orange_cat",
+      "properties": { "sound": "wool" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/orange_cat"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "white_cat",
+      "properties": { "sound": "wool" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/white_cat"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "black_cat",
+      "properties": { "sound": "wool" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/black_cat"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "ragdoll",
+      "properties": { "sound": "wool" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/ragdoll"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "calico",
+      "properties": { "sound": "wool" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/calico"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "jellie",
+      "properties": { "sound": "wool" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/jellie"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "siamese",
+      "properties": { "sound": "wool" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/siamese"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "tabby",
+      "properties": { "sound": "wool" },
+      "item_group": "living_being",
+      "blockstate": { "forms": [["yuushya:extra_building_material/tabby"]]}
+    }
+  ],
+  "particle": [
+
+    {
+      "class_type":"LeafParticle",
+      "name":"falling_maple",
+      "textures":["yuushya:maple"],
+      "spawner":{
+        "item_group":"item",
+        "item_model": "yuushya:item/falling_maple",
+        "properties":{
+          "material":"leaves",
+          "lines": 1
+        }
+      }
+    },
+
+    {
+      "class_type":"LeafParticle",
+      "name":"falling_oak",
+      "textures":["yuushya:oak"],
+      "spawner":{
+        "item_group":"item",
+        "item_model": "yuushya:item/falling_oak",
+        "properties":{
+          "material":"leaves",
+          "lines": 1
+        }
+      }
+    },
+
+    {
+      "class_type":"LeafParticle",
+      "name":"falling_sakura",
+      "textures":["yuushya:sakura"],
+      "spawner":{
+        "item_group": "item",
+        "item_model": "yuushya:item/falling_sakura",
+        "properties":{
+          "material":"leaves",
+          "lines": 1
+        }
+      }
+    }
+
+  ]
+}

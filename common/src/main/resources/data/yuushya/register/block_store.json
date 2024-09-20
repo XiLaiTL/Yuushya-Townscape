@@ -1,0 +1,261 @@
+{
+  "block": [
+    {"name": "~Store_经营", "class_type": "_comment" },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "hanging_goods",
+      "usage": {"cycle_forms": [0,1],"sound": "ui.button.click"},
+      "item_group": "store",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/hanging_goods_mixed"],["yuushya:extra_building_material/hanging_goods_mixed_"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "hanging_goods_snack",
+      "usage": {"cycle_forms": [0,1],"sound": "ui.button.click"},
+      "item_group": "store",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/hanging_goods_snack"],["yuushya:extra_building_material/hanging_goods_snack_"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "hanging_goods_candy",
+      "usage": {"cycle_forms": [0,1],"sound": "ui.button.click"},
+      "item_group": "store",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/hanging_goods_candy"],["yuushya:extra_building_material/hanging_goods_candy_"]]}
+    },
+
+    {
+      "class_type": "RoofBlock",
+      "name": "shopping_cart",
+      "item_group": "store",
+      "blockstate": { "forms": [["yuushya:extra_building_material/shopping_cart_left","yuushya:extra_building_material/shopping_cart_middle","yuushya:extra_building_material/shopping_cart_right","yuushya:extra_building_material/shopping_cart_none"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "electric_steamer",
+      "item_group": "store",
+      "blockstate": { "forms": [["yuushya:extra_building_material/electric_steamer"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "digital_payment",
+      "item_group": "store",
+      "blockstate": { "forms": [["yuushya:extra_building_material/digital_payment"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "checkout_computer",
+      "item_group": "store",
+      "blockstate": { "forms": [["yuushya:extra_building_material/checkout_computer"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "empty_goods_shelf_double",
+      "item_group": "store",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_2x/0"],["yuushya:extra_building_material/grocery/shelf_2x/0_"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "empty_goods_shelf",
+      "item_group": "store",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_1x"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "empty_goods_shelf_hook",
+      "item_group": "store",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_1n"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "empty_goods_shelf_hook_base",
+      "item_group": "store",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_1n_"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "goods_shelf_books",
+      "item_group": "store",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_books"],["yuushya:extra_building_material/grocery/shelf_books_"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "goods_shelf_candy",
+      "item_group": "store",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_candy"],["yuushya:extra_building_material/grocery/shelf_candy_"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "goods_shelf_chopping_board",
+      "item_group": "store",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_chopping_board"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "goods_shelf_frying_pan",
+      "item_group": "store",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_frying_pan"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "goods_shelf_glass",
+      "item_group": "store",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_glass"],["yuushya:extra_building_material/grocery/shelf_glass_"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "goods_shelf_boxes",
+      "item_group": "store",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_lboxes"],["yuushya:extra_building_material/grocery/shelf_lboxes_"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "goods_shelf_mini_boxes",
+      "item_group": "store",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_mboxes"],["yuushya:extra_building_material/grocery/shelf_mboxes_"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "goods_shelf_magazine",
+      "item_group": "store",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_magazine"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "goods_shelf_milk",
+      "item_group": "store",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_milk"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "goods_shelf_soft_drink",
+      "item_group": "store",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_soft_drink"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "goods_shelf_small_soft_drink",
+      "item_group": "store",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_small_soft_drink"],["yuushya:extra_building_material/grocery/shelf_small_soft_drink_"]]}
+    },
+
+
+    {
+      "class_type": "IntactBlock",
+      "name": "goods_shelf_wine",
+      "item_group": "store",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_wine"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "goods_shelf_shampoo",
+      "item_group": "store",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_shampoo"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "goods_shelf_paste",
+      "item_group": "store",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_jam"],["yuushya:extra_building_material/grocery/shelf_jam_"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "goods_shelf_jam",
+      "item_group": "store",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_jam2"],["yuushya:extra_building_material/grocery/shelf_jam2_"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "goods_shelf_mug",
+      "item_group": "store",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_mug"],["yuushya:extra_building_material/grocery/shelf_mug_"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "goods_shelf_plate",
+      "item_group": "store",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_plate"],["yuushya:extra_building_material/grocery/shelf_plate_"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "goods_shelf_potatochip",
+      "item_group": "store",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_potatochip"],["yuushya:extra_building_material/grocery/shelf_potatochip_"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "goods_shelf_snack",
+      "item_group": "store",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/grocery/shelf_snack"],["yuushya:extra_building_material/grocery/shelf_snack_"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "magazine_shelf",
+      "item_group": "store",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/grocery/magazine_shelf"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "large_magazine_shelf",
+      "item_group": "store",
+      "properties": {"lines": 0},
+      "blockstate": { "forms": [["yuushya:extra_building_material/grocery/large_magazine_shelf"]]}
+    }
+  ]
+}

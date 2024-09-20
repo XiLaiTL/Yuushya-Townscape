@@ -1,0 +1,753 @@
+{
+  "block": [
+    {"name": "~Extra_Building_Block_拓展方块", "class_type": "_comment" },
+
+    {
+      "class_type": "block", "name": "asphalt", "item_group": "stone",
+      "properties": {"lines": 0 },
+      "texture": {
+        "value":"yuushya:block/asphalt",
+        "set":  [
+          "all#yuushya:block/asphalt","sides#yuushya:block/asphalt","top#yuushya:block/asphalt"]}
+    },
+
+    {
+      "class_type": "block", "name": "asphalt_pbr", "item_group": "stone",
+      "properties": {"lines": 0 },
+      "texture": {
+        "value":"yuushya:block/asphalt_",
+        "set":  [
+          "all#yuushya:block/asphalt_","sides#yuushya:block/asphalt_","top#yuushya:block/asphalt_"]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "stone",
+      "name": "road_marking_0",
+      "blockstate": { "forms": [["yuushya:block/road_marking_0"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "stone",
+      "name": "road_marking_1",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:block/road_marking_1"],["yuushya:block/road_marking_1_1"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "stone",
+      "name": "road_marking_2",
+      "blockstate": { "forms": [["yuushya:block/road_marking_2"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "stone",
+      "name": "road_marking_3",
+      "blockstate": { "forms": [["yuushya:block/road_marking_3"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "stone",
+      "name": "road_marking_4",
+      "blockstate": { "forms": [["yuushya:block/road_marking_4"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "stone",
+      "name": "road_marking_5",
+      "blockstate": { "forms": [["yuushya:block/road_marking_5"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "stone",
+      "name": "road_marking_6",
+      "blockstate": { "forms": [["yuushya:block/road_marking_6"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "stone",
+      "name": "road_marking_7",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:block/road_marking_7"],["yuushya:block/road_marking_7_1"]]}
+    },
+
+
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_acacia_table",
+      "auto_generated": { "recipe": false },
+      "blockstate": { "forms": [["yuushya:block/raw_acacia_table"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_birch_table",
+      "auto_generated": { "recipe": false },
+      "blockstate": { "forms": [["yuushya:block/raw_birch_table"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_dark_oak_table",
+      "auto_generated": { "recipe": false },
+      "blockstate": { "forms": [["yuushya:block/raw_dark_oak_table"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_jungle_table",
+      "auto_generated": { "recipe": false },
+      "blockstate": { "forms": [["yuushya:block/raw_jungle_table"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_oak_table",
+      "auto_generated": { "recipe": false },
+      "blockstate": { "forms": [["yuushya:block/raw_oak_table"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_spruce_table",
+      "auto_generated": { "recipe": false },
+      "blockstate": { "forms": [["yuushya:block/raw_spruce_table"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_crimson_table",
+      "auto_generated": { "recipe": false },
+      "blockstate": { "forms": [["yuushya:block/raw_crimson_table"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_warped_table",
+      "auto_generated": { "recipe": false },
+      "blockstate": { "forms": [["yuushya:block/raw_warped_table"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_mangrove_table",
+      "blockstate": { "forms": [["yuushya:block/raw_mangrove_table"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_bamboo_table",
+      "blockstate": { "forms": [["yuushya:block/raw_bamboo_table"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_cherry_table",
+      "blockstate": { "forms": [["yuushya:block/raw_cherry_table"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_acacia_drawer",
+      "auto_generated": { "recipe": false },
+      "blockstate": { "forms": [["yuushya:block/raw_acacia_drawer"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_birch_drawer",
+      "auto_generated": { "recipe": false },
+      "blockstate": { "forms": [["yuushya:block/raw_birch_drawer"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_dark_oak_drawer",
+      "auto_generated": { "recipe": false },
+      "blockstate": { "forms": [["yuushya:block/raw_dark_oak_drawer"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_jungle_drawer",
+      "auto_generated": { "recipe": false },
+      "blockstate": { "forms": [["yuushya:block/raw_jungle_drawer"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_oak_drawer",
+      "auto_generated": { "recipe": false },
+      "blockstate": { "forms": [["yuushya:block/raw_oak_drawer"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_spruce_drawer",
+      "auto_generated": { "recipe": false },
+      "blockstate": { "forms": [["yuushya:block/raw_spruce_drawer"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_crimson_drawer",
+      "auto_generated": { "recipe": false },
+      "blockstate": { "forms": [["yuushya:block/raw_crimson_drawer"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_warped_drawer",
+      "auto_generated": { "recipe": false },
+      "blockstate": { "forms": [["yuushya:block/raw_warped_drawer"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_mangrove_drawer",
+      "blockstate": { "forms": [["yuushya:block/raw_mangrove_drawer"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_bamboo_drawer",
+      "blockstate": { "forms": [["yuushya:block/raw_bamboo_drawer"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_cherry_drawer",
+      "blockstate": { "forms": [["yuushya:block/raw_cherry_drawer"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_acacia_vertical_drawer",
+      "auto_generated": { "recipe": false },
+      "blockstate": { "forms": [["yuushya:block/raw_acacia_vertical_drawer"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_birch_vertical_drawer",
+      "auto_generated": { "recipe": false },
+      "blockstate": { "forms": [["yuushya:block/raw_birch_vertical_drawer"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_dark_oak_vertical_drawer",
+      "auto_generated": { "recipe": false },
+      "blockstate": { "forms": [["yuushya:block/raw_dark_oak_vertical_drawer"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_jungle_vertical_drawer",
+      "auto_generated": { "recipe": false },
+      "blockstate": { "forms": [["yuushya:block/raw_jungle_vertical_drawer"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_oak_vertical_drawer",
+      "auto_generated": { "recipe": false },
+      "blockstate": { "forms": [["yuushya:block/raw_oak_vertical_drawer"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_spruce_vertical_drawer",
+      "auto_generated": { "recipe": false },
+      "blockstate": { "forms": [["yuushya:block/raw_spruce_vertical_drawer"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_crimson_vertical_drawer",
+      "auto_generated": { "recipe": false },
+      "blockstate": { "forms": [["yuushya:block/raw_crimson_vertical_drawer"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_warped_vertical_drawer",
+      "auto_generated": { "recipe": false },
+      "blockstate": { "forms": [["yuushya:block/raw_warped_vertical_drawer"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_mangrove_vertical_drawer",
+      "blockstate": { "forms": [["yuushya:block/raw_mangrove_vertical_drawer"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_bamboo_vertical_drawer",
+      "blockstate": { "forms": [["yuushya:block/raw_bamboo_vertical_drawer"]]}
+    },
+
+    {
+      "class_type": "PlainBlock", "item_group": "wood",
+      "name": "raw_cherry_vertical_drawer",
+      "blockstate": { "forms": [["yuushya:block/raw_cherry_vertical_drawer"]]}
+    },
+
+
+    {
+      "class_type": "HorizontalBlock",
+      "name": "a_acacia_blindwall", "item_group": "wood",
+      "item_model": "yuushya:block/acacia_blindwall_none",
+      "blockstate": { "forms": [["yuushya:block/acacia_blindwall_left","yuushya:block/acacia_blindwall_middle","yuushya:block/acacia_blindwall_right","yuushya:block/acacia_blindwall_none"]]},
+      "texture": {
+        "type": "misc",
+        "value":"yuushya:block_/blindwall/acacia_blindwall",
+        "set":  [
+          "all#yuushya:block_/blindwall/acacia_blindwall",
+          "sides#yuushya:block_/blindwall/acacia_blindwall",
+          "top#yuushya:block_/blindwall/acacia_blindwall"]}
+    },
+
+    {
+      "class_type": "HorizontalBlock",
+      "name": "a_birch_blindwall", "item_group": "wood",
+      "item_model": "yuushya:block/birch_blindwall_none",
+      "blockstate": { "forms": [["yuushya:block/birch_blindwall_left","yuushya:block/birch_blindwall_middle","yuushya:block/birch_blindwall_right","yuushya:block/birch_blindwall_none"]]},
+      "texture": {
+        "type": "misc",
+        "value":"yuushya:block_/blindwall/birch_blindwall",
+        "set":  [
+          "all#yuushya:block_/blindwall/birch_blindwall",
+          "sides#yuushya:block_/blindwall/birch_blindwall",
+          "top#yuushya:block_/blindwall/birch_blindwall"]}
+    },
+
+    {
+      "class_type": "HorizontalBlock",
+      "name": "a_dark_oak_blindwall", "item_group": "wood",
+      "item_model": "yuushya:block/dark_oak_blindwall_none",
+      "blockstate": { "forms": [["yuushya:block/dark_oak_blindwall_left","yuushya:block/dark_oak_blindwall_middle","yuushya:block/dark_oak_blindwall_right","yuushya:block/dark_oak_blindwall_none"]]},
+      "texture": {
+        "type": "misc",
+        "value":"yuushya:block_/blindwall/dark_oak_blindwall",
+        "set":  [
+          "all#yuushya:block_/blindwall/dark_oak_blindwall",
+          "sides#yuushya:block_/blindwall/dark_oak_blindwall",
+          "top#yuushya:block_/blindwall/dark_oak_blindwall"]}
+    },
+
+    {
+      "class_type": "HorizontalBlock",
+      "name": "a_jungle_blindwall", "item_group": "wood",
+      "item_model": "yuushya:block/jungle_blindwall_none",
+      "blockstate": { "forms": [["yuushya:block/jungle_blindwall_left","yuushya:block/jungle_blindwall_middle","yuushya:block/jungle_blindwall_right","yuushya:block/jungle_blindwall_none"]]},
+      "texture": {
+        "type": "misc",
+        "value":"yuushya:block_/blindwall/jungle_blindwall",
+        "set":  [
+          "all#yuushya:block_/blindwall/jungle_blindwall",
+          "sides#yuushya:block_/blindwall/jungle_blindwall",
+          "top#yuushya:block_/blindwall/jungle_blindwall"]}
+    },
+
+    {
+      "class_type": "HorizontalBlock",
+      "name": "a_oak_blindwall", "item_group": "wood",
+      "item_model": "yuushya:block/oak_blindwall_none",
+      "blockstate": { "forms": [["yuushya:block/oak_blindwall_left","yuushya:block/oak_blindwall_middle","yuushya:block/oak_blindwall_right","yuushya:block/oak_blindwall_none"]]},
+      "texture": {
+        "type": "misc",
+        "value":"yuushya:block_/blindwall/oak_blindwall",
+        "set":  [
+          "all#yuushya:block_/blindwall/oak_blindwall",
+          "sides#yuushya:block_/blindwall/oak_blindwall",
+          "top#yuushya:block_/blindwall/oak_blindwall"]}
+    },
+
+    {
+      "class_type": "HorizontalBlock",
+      "name": "a_spruce_blindwall", "item_group": "wood",
+      "item_model": "yuushya:block/spruce_blindwall_none",
+      "blockstate": { "forms": [["yuushya:block/spruce_blindwall_left","yuushya:block/spruce_blindwall_middle","yuushya:block/spruce_blindwall_right","yuushya:block/spruce_blindwall_none"]]},
+      "texture": {
+        "type": "misc",
+        "value":"yuushya:block_/blindwall/spruce_blindwall",
+        "set":  [
+          "all#yuushya:block_/blindwall/spruce_blindwall",
+          "sides#yuushya:block_/blindwall/spruce_blindwall",
+          "top#yuushya:block_/blindwall/spruce_blindwall"]}
+    },
+
+    {
+      "class_type": "HorizontalBlock",
+      "name": "a_crimson_blindwall", "item_group": "wood",
+      "item_model": "yuushya:block/crimson_blindwall_none",
+      "blockstate": { "forms": [["yuushya:block/crimson_blindwall_left","yuushya:block/crimson_blindwall_middle","yuushya:block/crimson_blindwall_right","yuushya:block/crimson_blindwall_none"]]},
+      "texture": {
+        "type": "misc",
+        "value":"yuushya:block_/blindwall/crimson_blindwall",
+        "set":  [
+          "all#yuushya:block_/blindwall/crimson_blindwall",
+          "sides#yuushya:block_/blindwall/crimson_blindwall",
+          "top#yuushya:block_/blindwall/crimson_blindwall"]}
+    },
+
+    {
+      "class_type": "HorizontalBlock",
+      "name": "a_warped_blindwall", "item_group": "wood",
+      "item_model": "yuushya:block/warped_blindwall_none",
+      "blockstate": { "forms": [["yuushya:block/warped_blindwall_left","yuushya:block/warped_blindwall_middle","yuushya:block/warped_blindwall_right","yuushya:block/warped_blindwall_none"]]},
+      "texture": {
+        "type": "misc",
+        "value":"yuushya:block_/blindwall/warped_blindwall",
+        "set":  [
+          "all#yuushya:block_/blindwall/warped_blindwall",
+          "sides#yuushya:block_/blindwall/warped_blindwall",
+          "top#yuushya:block_/blindwall/warped_blindwall"]}
+    },
+
+    {
+      "class_type": "HorizontalBlock",
+      "name": "a_mangrove_blindwall", "item_group": "wood",
+      "item_model": "yuushya:block/mangrove_blindwall_none",
+      "blockstate": { "forms": [["yuushya:block/mangrove_blindwall_left","yuushya:block/mangrove_blindwall_middle","yuushya:block/mangrove_blindwall_right","yuushya:block/mangrove_blindwall_none"]]},
+      "texture": {
+        "type": "misc",
+        "value":"yuushya:block_/blindwall/mangrove_blindwall",
+        "set":  [
+          "all#yuushya:block_/blindwall/mangrove_blindwall",
+          "sides#yuushya:block_/blindwall/mangrove_blindwall",
+          "top#yuushya:block_/blindwall/mangrove_blindwall"]}
+    },
+
+    {
+      "class_type": "HorizontalBlock",
+      "name": "a_bamboo_blindwall", "item_group": "wood",
+      "item_model": "yuushya:block/bamboo_blindwall_none",
+      "blockstate": { "forms": [["yuushya:block/bamboo_blindwall_left","yuushya:block/bamboo_blindwall_middle","yuushya:block/bamboo_blindwall_right","yuushya:block/bamboo_blindwall_none"]]},
+      "texture": {
+        "type": "misc",
+        "value":"yuushya:block_/blindwall/bamboo_blindwall",
+        "set":  [
+          "all#yuushya:block_/blindwall/bamboo_blindwall",
+          "sides#yuushya:block_/blindwall/bamboo_blindwall",
+          "top#yuushya:block_/blindwall/bamboo_blindwall"]}
+    },
+
+    {
+      "class_type": "HorizontalBlock",
+      "name": "a_cherry_blindwall", "item_group": "wood",
+      "item_model": "yuushya:block/cherry_blindwall_none",
+      "blockstate": { "forms": [["yuushya:block/cherry_blindwall_left","yuushya:block/cherry_blindwall_middle","yuushya:block/cherry_blindwall_right","yuushya:block/cherry_blindwall_none"]]},
+      "texture": {
+        "type": "misc",
+        "value":"yuushya:block_/blindwall/cherry_blindwall",
+        "set":  [
+          "all#yuushya:block_/blindwall/cherry_blindwall",
+          "sides#yuushya:block_/blindwall/cherry_blindwall",
+          "top#yuushya:block_/blindwall/cherry_blindwall"]}
+    },
+
+    {
+      "class_type": "HorizontalBlock",
+      "name": "b_acacia_blindwall", "item_group": "wood",
+      "item_model": "yuushya:block/acacia_blindwall_none",
+      "blockstate": { "forms": [["yuushya:block/acacia_blindwall_left","yuushya:block/acacia_blindwall_middle","yuushya:block/acacia_blindwall_right","yuushya:block/acacia_blindwall_none"]]},
+      "texture": {
+        "value":"yuushya:block_/blindwall/acacia_blindwall",
+        "set":  [
+          "all#yuushya:block_/blindwall/acacia_blindwall",
+          "sides#yuushya:block_/blindwall/acacia_blindwall",
+          "top#yuushya:block_/blindwall/acacia_blindwall"]}
+    },
+
+    {
+      "class_type": "HorizontalBlock",
+      "name": "b_birch_blindwall", "item_group": "wood",
+      "item_model": "yuushya:block/birch_blindwall_none",
+      "blockstate": { "forms": [["yuushya:block/birch_blindwall_left","yuushya:block/birch_blindwall_middle","yuushya:block/birch_blindwall_right","yuushya:block/birch_blindwall_none"]]},
+      "texture": {
+        "value":"yuushya:block_/blindwall/birch_blindwall",
+        "set":  [
+          "all#yuushya:block_/blindwall/birch_blindwall",
+          "sides#yuushya:block_/blindwall/birch_blindwall",
+          "top#yuushya:block_/blindwall/birch_blindwall"]}
+    },
+
+    {
+      "class_type": "HorizontalBlock",
+      "name": "b_dark_oak_blindwall", "item_group": "wood",
+      "item_model": "yuushya:block/dark_oak_blindwall_none",
+      "blockstate": { "forms": [["yuushya:block/dark_oak_blindwall_left","yuushya:block/dark_oak_blindwall_middle","yuushya:block/dark_oak_blindwall_right","yuushya:block/dark_oak_blindwall_none"]]},
+      "texture": {
+        "value":"yuushya:block_/blindwall/dark_oak_blindwall",
+        "set":  [
+          "all#yuushya:block_/blindwall/dark_oak_blindwall",
+          "sides#yuushya:block_/blindwall/dark_oak_blindwall",
+          "top#yuushya:block_/blindwall/dark_oak_blindwall"]}
+    },
+
+    {
+      "class_type": "HorizontalBlock",
+      "name": "b_jungle_blindwall", "item_group": "wood",
+      "item_model": "yuushya:block/jungle_blindwall_none",
+      "blockstate": { "forms": [["yuushya:block/jungle_blindwall_left","yuushya:block/jungle_blindwall_middle","yuushya:block/jungle_blindwall_right","yuushya:block/jungle_blindwall_none"]]},
+      "texture": {
+        "value":"yuushya:block_/blindwall/jungle_blindwall",
+        "set":  [
+          "all#yuushya:block_/blindwall/jungle_blindwall",
+          "sides#yuushya:block_/blindwall/jungle_blindwall",
+          "top#yuushya:block_/blindwall/jungle_blindwall"]}
+    },
+
+    {
+      "class_type": "HorizontalBlock",
+      "name": "b_oak_blindwall", "item_group": "wood",
+      "item_model": "yuushya:block/oak_blindwall_none",
+      "blockstate": { "forms": [["yuushya:block/oak_blindwall_left","yuushya:block/oak_blindwall_middle","yuushya:block/oak_blindwall_right","yuushya:block/oak_blindwall_none"]]},
+      "texture": {
+        "value":"yuushya:block_/blindwall/oak_blindwall",
+        "set":  [
+          "all#yuushya:block_/blindwall/oak_blindwall",
+          "sides#yuushya:block_/blindwall/oak_blindwall",
+          "top#yuushya:block_/blindwall/oak_blindwall"]}
+    },
+
+    {
+      "class_type": "HorizontalBlock",
+      "name": "b_spruce_blindwall", "item_group": "wood",
+      "item_model": "yuushya:block/spruce_blindwall_none",
+      "blockstate": { "forms": [["yuushya:block/spruce_blindwall_left","yuushya:block/spruce_blindwall_middle","yuushya:block/spruce_blindwall_right","yuushya:block/spruce_blindwall_none"]]},
+      "texture": {
+        "value":"yuushya:block_/blindwall/spruce_blindwall",
+        "set":  [
+          "all#yuushya:block_/blindwall/spruce_blindwall",
+          "sides#yuushya:block_/blindwall/spruce_blindwall",
+          "top#yuushya:block_/blindwall/spruce_blindwall"]}
+    },
+
+    {
+      "class_type": "HorizontalBlock",
+      "name": "b_crimson_blindwall", "item_group": "wood",
+      "item_model": "yuushya:block/crimson_blindwall_none",
+      "blockstate": { "forms": [["yuushya:block/crimson_blindwall_left","yuushya:block/crimson_blindwall_middle","yuushya:block/crimson_blindwall_right","yuushya:block/crimson_blindwall_none"]]},
+      "texture": {
+        "value":"yuushya:block_/blindwall/crimson_blindwall",
+        "set":  [
+          "all#yuushya:block_/blindwall/crimson_blindwall",
+          "sides#yuushya:block_/blindwall/crimson_blindwall",
+          "top#yuushya:block_/blindwall/crimson_blindwall"]}
+    },
+
+    {
+      "class_type": "HorizontalBlock",
+      "name": "b_warped_blindwall", "item_group": "wood",
+      "item_model": "yuushya:block/warped_blindwall_none",
+      "blockstate": { "forms": [["yuushya:block/warped_blindwall_left","yuushya:block/warped_blindwall_middle","yuushya:block/warped_blindwall_right","yuushya:block/warped_blindwall_none"]]},
+      "texture": {
+        "value":"yuushya:block_/blindwall/warped_blindwall",
+        "set":  [
+          "all#yuushya:block_/blindwall/warped_blindwall",
+          "sides#yuushya:block_/blindwall/warped_blindwall",
+          "top#yuushya:block_/blindwall/warped_blindwall"]}
+    },
+
+    {
+      "class_type": "HorizontalBlock",
+      "name": "b_mangrove_blindwall", "item_group": "wood",
+      "item_model": "yuushya:block/mangrove_blindwall_none",
+      "blockstate": { "forms": [["yuushya:block/mangrove_blindwall_left","yuushya:block/mangrove_blindwall_middle","yuushya:block/mangrove_blindwall_right","yuushya:block/mangrove_blindwall_none"]]},
+      "texture": {
+        "value":"yuushya:block_/blindwall/mangrove_blindwall",
+        "set":  [
+          "all#yuushya:block_/blindwall/mangrove_blindwall",
+          "sides#yuushya:block_/blindwall/mangrove_blindwall",
+          "top#yuushya:block_/blindwall/mangrove_blindwall"]}
+    },
+
+    {
+      "class_type": "HorizontalBlock",
+      "name": "b_bamboo_blindwall", "item_group": "wood",
+      "item_model": "yuushya:block/bamboo_blindwall_none",
+      "blockstate": { "forms": [["yuushya:block/bamboo_blindwall_left","yuushya:block/bamboo_blindwall_middle","yuushya:block/bamboo_blindwall_right","yuushya:block/bamboo_blindwall_none"]]},
+      "texture": {
+        "value":"yuushya:block_/blindwall/bamboo_blindwall",
+        "set":  [
+          "all#yuushya:block_/blindwall/bamboo_blindwall",
+          "sides#yuushya:block_/blindwall/bamboo_blindwall",
+          "top#yuushya:block_/blindwall/bamboo_blindwall"]}
+    },
+
+    {
+      "class_type": "HorizontalBlock",
+      "name": "b_cherry_blindwall", "item_group": "wood",
+      "item_model": "yuushya:block/cherry_blindwall_none",
+      "blockstate": { "forms": [["yuushya:block/cherry_blindwall_left","yuushya:block/cherry_blindwall_middle","yuushya:block/cherry_blindwall_right","yuushya:block/cherry_blindwall_none"]]},
+      "texture": {
+        "value":"yuushya:block_/blindwall/cherry_blindwall",
+        "set":  [
+          "all#yuushya:block_/blindwall/cherry_blindwall",
+          "sides#yuushya:block_/blindwall/cherry_blindwall",
+          "top#yuushya:block_/blindwall/cherry_blindwall"]}
+    },
+
+    {
+      "class_type": "block", "name": "acacia_framed_planks", "item_group": "wood",
+      "auto_generated": { "recipe": false },
+      "properties": {"lines": 0 },
+      "texture": {
+        "properties": {"sound": "wood" },
+        "value":"yuushya:block_/framed_planks/acacia_framed_planks",
+        "set":  [
+          "all#yuushya:block_/framed_planks/acacia_framed_planks","sides#yuushya:block_/framed_planks/acacia_framed_planks","top#yuushya:block_/framed_planks/acacia_framed_planks"]}
+    },
+
+
+    {
+      "class_type": "block", "name": "birch_framed_planks", "item_group": "wood",
+      "auto_generated": { "recipe": false },
+      "properties": {"lines": 0 },
+      "texture": {
+        "properties": {"sound": "wood" },
+        "value":"yuushya:block_/framed_planks/birch_framed_planks",
+        "set":  [
+          "all#yuushya:block_/framed_planks/birch_framed_planks","sides#yuushya:block_/framed_planks/birch_framed_planks","top#yuushya:block_/framed_planks/birch_framed_planks"]}
+    },
+
+    {
+      "class_type": "block", "name": "dark_oak_framed_planks", "item_group": "wood",
+      "auto_generated": { "recipe": false },
+      "properties": {"lines": 0 },
+      "texture": {
+        "properties": {"sound": "wood" },
+        "value":"yuushya:block_/framed_planks/dark_oak_framed_planks",
+        "set":  [
+          "all#yuushya:block_/framed_planks/dark_oak_framed_planks","sides#yuushya:block_/framed_planks/dark_oak_framed_planks","top#yuushya:block_/framed_planks/dark_oak_framed_planks"]}
+    },
+
+    {
+      "class_type": "block", "name": "jungle_framed_planks", "item_group": "wood",
+      "auto_generated": { "recipe": false },
+      "properties": {"lines": 0 },
+      "texture": {
+        "properties": {"sound": "wood" },
+        "value":"yuushya:block_/framed_planks/jungle_framed_planks",
+        "set":  [
+          "all#yuushya:block_/framed_planks/jungle_framed_planks","sides#yuushya:block_/framed_planks/jungle_framed_planks","top#yuushya:block_/framed_planks/jungle_framed_planks"]}
+    },
+
+    {
+      "class_type": "block", "name": "oak_framed_planks", "item_group": "wood",
+      "auto_generated": { "recipe": false },
+      "properties": {"lines": 0 },
+      "texture": {
+        "properties": {"sound": "wood" },
+        "value":"yuushya:block_/framed_planks/oak_framed_planks",
+        "set":  [
+          "all#yuushya:block_/framed_planks/oak_framed_planks","sides#yuushya:block_/framed_planks/oak_framed_planks","top#yuushya:block_/framed_planks/oak_framed_planks"]}
+    },
+
+    {
+      "class_type": "block", "name": "acacia_framed_raw_wood_a", "item_group": "wood",
+      "properties": {"lines": 0 },
+      "texture": {
+        "properties": {"sound": "wood" },
+        "value":"yuushya:block_/framed_raw_wood/acacia",
+        "set":  [
+          "all#yuushya:block_/framed_raw_wood/acacia","sides#yuushya:block_/framed_raw_wood/acacia","top#yuushya:block_/framed_raw_wood/acacia"]}
+    },
+
+
+    {
+      "class_type": "block", "name": "birch_framed_raw_wood_a", "item_group": "wood",
+      "properties": {"lines": 0 },
+      "texture": {
+        "properties": {"sound": "wood" },
+        "value":"yuushya:block_/framed_raw_wood/birch",
+        "set":  [
+          "all#yuushya:block_/framed_raw_wood/birch","sides#yuushya:block_/framed_raw_wood/birch","top#yuushya:block_/framed_raw_wood/birch"]}
+    },
+
+    {
+      "class_type": "block", "name": "dark_oak_framed_raw_wood_a", "item_group": "wood",
+      "properties": {"lines": 0 },
+      "texture": {
+        "properties": {"sound": "wood" },
+        "value":"yuushya:block_/framed_raw_wood/dark_oak",
+        "set":  [
+          "all#yuushya:block_/framed_raw_wood/dark_oak","sides#yuushya:block_/framed_raw_wood/dark_oak","top#yuushya:block_/framed_raw_wood/dark_oak"]}
+    },
+
+    {
+      "class_type": "block", "name": "jungle_framed_raw_wood_a", "item_group": "wood",
+      "properties": {"lines": 0 },
+      "texture": {
+        "properties": {"sound": "wood" },
+        "value":"yuushya:block_/framed_raw_wood/jungle",
+        "set":  [
+          "all#yuushya:block_/framed_raw_wood/jungle","sides#yuushya:block_/framed_raw_wood/jungle","top#yuushya:block_/framed_raw_wood/jungle"]}
+    },
+
+    {
+      "class_type": "block", "name": "oak_framed_raw_wood_a", "item_group": "wood",
+      "properties": {"lines": 0 },
+      "texture": {
+        "properties": {"sound": "wood" },
+        "value":"yuushya:block_/framed_raw_wood/oak",
+        "set":  [
+          "all#yuushya:block_/framed_raw_wood/oak","sides#yuushya:block_/framed_raw_wood/oak","top#yuushya:block_/framed_raw_wood/oak"]}
+    },
+
+    {
+      "class_type": "block", "name": "acacia_framed_raw_wood_b", "item_group": "wood",
+      "properties": {"lines": 0 },
+      "texture": {
+        "properties": {"sound": "wood" },
+        "value":"yuushya:block_/framed_raw_wood/acacia",
+        "set":  [
+          "all#yuushya:block_/framed_raw_wood/acacia","sides#yuushya:block_/framed_raw_wood/acacia","top#yuushya:block_/framed_raw_wood/acacia"]}
+    },
+
+
+    {
+      "class_type": "block", "name": "birch_framed_raw_wood_b", "item_group": "wood",
+      "properties": {"lines": 0 },
+      "texture": {
+        "properties": {"sound": "wood" },
+        "value":"yuushya:block_/framed_raw_wood/birch",
+        "set":  [
+          "all#yuushya:block_/framed_raw_wood/birch","sides#yuushya:block_/framed_raw_wood/birch","top#yuushya:block_/framed_raw_wood/birch"]}
+    },
+
+    {
+      "class_type": "block", "name": "dark_oak_framed_raw_wood_b", "item_group": "wood",
+      "properties": {"lines": 0 },
+      "texture": {
+        "properties": {"sound": "wood" },
+        "value":"yuushya:block_/framed_raw_wood/dark_oak",
+        "set":  [
+          "all#yuushya:block_/framed_raw_wood/dark_oak","sides#yuushya:block_/framed_raw_wood/dark_oak","top#yuushya:block_/framed_raw_wood/dark_oak"]}
+    },
+
+    {
+      "class_type": "block", "name": "jungle_framed_raw_wood_b", "item_group": "wood",
+      "properties": {"lines": 0 },
+      "texture": {
+        "properties": {"sound": "wood" },
+        "value":"yuushya:block_/framed_raw_wood/jungle",
+        "set":  [
+          "all#yuushya:block_/framed_raw_wood/jungle","sides#yuushya:block_/framed_raw_wood/jungle","top#yuushya:block_/framed_raw_wood/jungle"]}
+    },
+
+    {
+      "class_type": "block", "name": "oak_framed_raw_wood_b", "item_group": "wood",
+      "properties": {"lines": 0 },
+      "texture": {
+        "properties": {"sound": "wood" },
+        "value":"yuushya:block_/framed_raw_wood/oak",
+        "set":  [
+          "all#yuushya:block_/framed_raw_wood/oak","sides#yuushya:block_/framed_raw_wood/oak","top#yuushya:block_/framed_raw_wood/oak"]}
+    }
+  ]
+}

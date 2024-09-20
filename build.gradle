@@ -28,7 +28,7 @@ allprojects {
 def versions = ['1.16.5','1.18.2','1.19.2','1.19.4','1.20.1','1.20.4','1.20.6','1.21.0'];
 def apis = { ver->
     if(ver in ['1.20.6','1.21.0']) ['neoforge','fabric']
-    else if(ver == '1.20.4') ['forge','fabric','neoforge']
+    else if(ver == '1.20.4') ['fabric','neoforge']
     else ['forge','fabric']
 }
 
@@ -74,13 +74,20 @@ tasks.register("build-tools",Copy){
 
 def build_tasks = versions.collectMany {ver-> apis(ver).collect {api-> "build-jar-${ver}-${api}"}}
 
-tasks.register("gen-chain",SequenceTask, [
-        "clean-all",":common:generateAssetsAndData",
-        ":common:gen-1.16.5",":common:gen-part",
-        ":common:clean-resource-1.20.6",":common:generateAssetsAndData-1.20.6",":common:gen-1.20.6",
-        ":common:clean-resource-1.21.0",":common:generateAssetsAndData-1.21.0",":common:gen-1.21.0",
-])
-tasks.register("build-chain1",SequenceTask,["gen-chain"]+build_tasks.subList(0, build_tasks.size()/2 as int))
+tasks.register("gen-chain-1"){
+    dependsOn("clean-all")
+    finalizedBy(['1.16.5','1.18.2','1.19.2','1.19.4','1.20.1','1.20.4'].collect{":common:gen-${it}"})
+}
+tasks.register("gen-chain-2"){
+    dependsOn(":common:clean")
+    finalizedBy([":common:gen-1.20.6"])
+}
+tasks.register("gen-chain-3"){
+    dependsOn(":common:clean")
+    finalizedBy([":common:gen-1.21.0"])
+}
+
+tasks.register("build-chain1",SequenceTask,build_tasks.subList(0, build_tasks.size()/2 as int))
 tasks.register("build-chain2",SequenceTask,build_tasks.subList(build_tasks.size()/2 as int,build_tasks.size()))
 
 tasks.register("test-chain",SequenceTask,[

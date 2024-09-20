@@ -1,0 +1,309 @@
+{
+  "block": [
+    {"name": "~Electrical_Appliance_电器", "class_type": "_comment" },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "air_conditioning_condenser",
+      "properties": {"lines": 1},
+      "item_group": "electrical_appliance",
+      "blockstate": { "forms": [["yuushya:extra_building_material/airc3"],["yuushya:extra_building_material/airc4"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "meshed_air_conditioning_condenser",
+      "item_group": "electrical_appliance",
+      "blockstate": { "forms": [["yuushya:extra_building_material/airc2"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "rusty_air_conditioning_condenser",
+      "item_group": "electrical_appliance",
+      "blockstate": { "forms": [["yuushya:extra_building_material/airc"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "jack",
+      "item_group": "electrical_appliance",
+      "blockstate": { "forms": [["yuushya:extra_building_material/jack"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "old_tv",
+      "item_group": "electrical_appliance",
+      "blockstate": { "forms": [["yuushya:extra_building_material/old_tv"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "tv_online",
+      "usage": {"cycle_forms": [0,1,2,3,4,5,6,7],"sound": "block.stone_button.click_off"},
+      "properties": {"lines": 1},
+      "item_group": "electrical_appliance",
+      "blockstate": { "forms": [["yuushya:extra_building_material/tv_program_0"],["yuushya:extra_building_material/tv_program_1"],["yuushya:extra_building_material/tv_program_2"],["yuushya:extra_building_material/tv_program_3"],["yuushya:extra_building_material/tv_program_4"],["yuushya:extra_building_material/tv_program_5"],["yuushya:extra_building_material/tv_program_6"],["yuushya:extra_building_material/tv_program_7"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_tv_online",
+      "usage": {"cycle_forms": [0,1,2,3,4,5,6,7],"sound": "block.stone_button.click_off"},
+      "properties": {"lines": 1},
+      "item_group": "electrical_appliance",
+      "blockstate": { "forms": [["yuushya:extra_building_material/mounted_tv_program_0"],["yuushya:extra_building_material/mounted_tv_program_1"],["yuushya:extra_building_material/mounted_tv_program_2"],["yuushya:extra_building_material/mounted_tv_program_3"],["yuushya:extra_building_material/mounted_tv_program_4"],["yuushya:extra_building_material/mounted_tv_program_5"],["yuushya:extra_building_material/mounted_tv_program_6"],["yuushya:extra_building_material/mounted_tv_program_7"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "tv",
+      "item_group": "electrical_appliance",
+      "blockstate": { "forms": [["yuushya:extra_building_material/tv"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "mounted_tv",
+      "item_group": "electrical_appliance",
+      "blockstate": { "forms": [["yuushya:extra_building_material/tv_wall"]]}
+    },
+
+
+    {
+      "class_type": "FixedBlock",
+      "name": "vinyl_record_player",
+      "auto_generated": { "collision": "block" }, "item_group": "electrical_appliance",
+      "blockstate": { "forms": [["yuushya:extra_building_material/vinyl"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "pc_case",
+      "item_group": "electrical_appliance",
+      "blockstate": { "forms": [["yuushya:extra_building_material/pc_case"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "monitor",
+      "usage": {"cycle_forms": [0,1],"sound": "block.stone_button.click_off"},
+      "properties": {"lines": 1},
+      "item_group": "electrical_appliance",
+      "blockstate": { "forms": [["yuushya:extra_building_material/monitor_single"],["yuushya:extra_building_material/monitor_single_activated"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "monitor_with_tablet",
+      "usage": {"cycle_forms": [0,1],"sound": "block.stone_button.click_off"},
+      "properties": {"lines": 1},
+      "item_group": "electrical_appliance",
+      "blockstate": { "forms": [["yuushya:extra_building_material/monitor"],["yuushya:extra_building_material/monitor_activated"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "laptop",
+      "properties": {"lines": 1},
+      "item_group": "electrical_appliance",
+      "usage": {"cycle_forms": [0,1],"sound": "block.stone_button.click_off"},
+      "blockstate": { "forms": [["yuushya:extra_building_material/lap_top"],["yuushya:extra_building_material/lap_top_off"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "printer",
+      "item_group": "electrical_appliance",
+      "blockstate": { "forms": [["yuushya:extra_building_material/printer"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "mini_printer",
+      "item_group": "electrical_appliance",
+      "blockstate": { "forms": [["yuushya:extra_building_material/desktop_printer"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "fan",
+      "properties": {"lines": 1},
+      "item_group": "electrical_appliance",
+      "usage": {"cycle_forms": [0,1],"sound": "block.stone_button.click_off"},
+      "blockstate": { "forms": [["yuushya:extra_building_material/fan"],["yuushya:extra_building_material/fan_off"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "fan_",
+      "properties": {"lines": 1},
+      "item_group": "electrical_appliance",
+      "usage": {"cycle_forms": [0,1],"sound": "block.stone_button.click_off"},
+      "blockstate": { "forms": [["yuushya:extra_building_material/fan_"],["yuushya:extra_building_material/fan_off_"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "floor_fan",
+      "properties": {"lines": 1},
+      "item_group": "electrical_appliance",
+      "usage": {"cycle_forms": [0,1],"sound": "block.stone_button.click_off"},
+      "blockstate": { "forms": [["yuushya:extra_building_material/fan_floor_on"],["yuushya:extra_building_material/fan_floor"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "floor_fan_",
+      "properties": {"lines": 1},
+      "item_group": "electrical_appliance",
+      "usage": {"cycle_forms": [0,1],"sound": "block.stone_button.click_off"},
+      "blockstate": { "forms": [["yuushya:extra_building_material/fan_floor_on_"],["yuushya:extra_building_material/fan_floor_"]]}
+    },
+
+    {
+      "class_type": "NormalBlock",
+      "name": "ceiling_fan",
+      "item_group": "electrical_appliance",
+      "blockstate": { "forms": [["yuushya:extra_building_material/ceiling_fan"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "air_conditioner",
+      "item_group": "electrical_appliance",
+      "blockstate": { "forms": [["yuushya:extra_building_material/airc_wall_"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "air_conditioner_sym",
+      "item_group": "electrical_appliance",
+      "blockstate": { "forms": [["yuushya:extra_building_material/airc_wall_2"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "air_conditioner_floor",
+      "item_group": "electrical_appliance",
+      "blockstate": {
+        "kit": "tri_part" ,
+        "forms": [
+          ["yuushya:extra_building_material/airc_floor"]
+        ]
+      }
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "washing_machine",
+      "item_group": "electrical_appliance",
+      "blockstate": { "forms": [["yuushya:extra_building_material/washing_machine"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "washing_machine_sym",
+      "item_group": "electrical_appliance",
+      "blockstate": { "forms": [["yuushya:extra_building_material/washing_machine_"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "refrigerator",
+      "properties": {"lines": 0},
+      "item_group": "electrical_appliance",
+      "blockstate": {
+        "kit": "tri_part" ,
+        "forms": [
+          ["yuushya:extra_building_material/refrigerator_"]
+        ]
+      }
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "decorated_refrigerator",
+      "properties": {"lines": 1},
+      "item_group": "electrical_appliance",
+      "blockstate": {
+        "kit": "tri_part" ,
+        "forms": [
+          ["yuushya:extra_building_material/refrigerator_decorated_"],
+          ["yuushya:extra_building_material/refrigerator_decorated_open"]
+        ]
+      }
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "freezer",
+      "item_group": "electrical_appliance",
+      "blockstate": { "forms": [["yuushya:extra_building_material/freezer"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
+      "name": "freezer_",
+      "item_group": "electrical_appliance",
+      "blockstate": { "forms": [["yuushya:extra_building_material/freezer_"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "beverage_drawer",
+      "item_group": "electrical_appliance",
+      "blockstate": { "kit": "tri_part", "forms": [["yuushya:extra_building_material/beverage_drawer"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "beverage_drawer_sym",
+      "item_group": "electrical_appliance",
+      "blockstate": { "kit": "tri_part", "forms": [["yuushya:extra_building_material/beverage_drawer_sym"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "vending_machine_blue_v",
+      "item_group": "electrical_appliance",
+      "blockstate": { "kit": "tri_part", "forms": [["yuushya:extra_building_material/vending_machine_blue_v"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "vending_machine_blue_h",
+      "item_group": "electrical_appliance",
+      "blockstate": { "kit": "tri_part", "forms": [["yuushya:extra_building_material/vending_machine_blue_h"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "vending_machine_red_v",
+      "item_group": "electrical_appliance",
+      "blockstate": { "kit": "tri_part", "forms": [["yuushya:extra_building_material/vending_machine_red_v"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "vending_machine_red_h",
+      "item_group": "electrical_appliance",
+      "blockstate": { "kit": "tri_part", "forms": [["yuushya:extra_building_material/vending_machine_red_h"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "vending_machine_gray_v",
+      "item_group": "electrical_appliance",
+      "blockstate": { "kit": "tri_part", "forms": [["yuushya:extra_building_material/vending_machine_gray_v"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "vending_machine_gray_h",
+      "item_group": "electrical_appliance",
+      "blockstate": { "kit": "tri_part", "forms": [["yuushya:extra_building_material/vending_machine_gray_h"]]}
+    }
+  ]
+}

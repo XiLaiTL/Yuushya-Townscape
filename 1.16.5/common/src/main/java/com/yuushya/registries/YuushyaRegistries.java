@@ -94,7 +94,13 @@ public class YuushyaRegistries {
         for(YuushyaRegistryData.Block block:BlockDefault.values()){
             BlockALL.put(block.name, block);
             BLOCKS.register(block.name, ()->YuushyaBlockFactory.create(block));
-            ITEMS.register(block.name, ()->new BlockItem(BLOCKS.get(block.name).get(),new Item.Properties().tab(YuushyaCreativeModeTab.toGroup(block.itemGroup))));
+            if (block.properties != null && block.properties.food != null) {
+                ITEMS.register(block.name, ()->new FoodItem(BLOCKS.get(block.name).get(),block,new Item.Properties().tab(YuushyaCreativeModeTab.toGroup(block.itemGroup))));
+
+            } else {
+                ITEMS.register(block.name, ()->new BlockItem(BLOCKS.get(block.name).get(),new Item.Properties().tab(YuushyaCreativeModeTab.toGroup(block.itemGroup))));
+
+            }
         }
 
         for (YuushyaRegistryData.Block templateBlock:BlockTemplate.values()){

@@ -15,19 +15,19 @@ public class Yuushya {
     public static final String MOD_ID = "yuushya";
 
     public static void init() {
-        YuushyaConfig.readConfig();
+        AddonLoader.loadResource(MOD_ID,Yuushya.class);
         AddonLoader.loadPackResource(Platform.getModsFolder());
-        YuushyaRegistryConfig.readRegistrySelf();
+//        YuushyaRegistryConfig.readRegistrySelf();
         AddonLoader.getRegister();
         YuushyaRegistries.registerRegistries();
         YuushyaRegistries.registerAll();
 
         AddonLoader.getCollision();
-        CollisionFileReader.readAllFileSelf();
+//        CollisionFileReader.readAllFileSelf();
 
         LifecycleEvent.SERVER_STARTED.register((server)->{ //server thread
             AddonLoader.getCollision();
-            CollisionFileReader.readAllFileSelf();
+//            CollisionFileReader.readAllFileSelf();
             CollisionFileReader.readAllCollision();
         });
 

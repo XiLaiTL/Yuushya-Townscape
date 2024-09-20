@@ -38,6 +38,7 @@ public class CollisionFileReader {
     private static Map<String, Map<String,VoxelShape>> collisionMap = new HashMap<>();
     public static Path COLLISION_FILES = Platform.getConfigFolder().resolve("./com.yuushya/");
 
+    @Deprecated
     public static void readAllFileSelf(){
         Set<String> set=  YuushyaRegistries.BlockALL.keySet();
         for(String name : set){
@@ -63,6 +64,7 @@ public class CollisionFileReader {
         }
     }
 
+    @Deprecated
     public static void readAllFileFromConfig(){
         if(Files.exists(COLLISION_FILES)){
             try(DirectoryStream<Path> paths = Files.newDirectoryStream(COLLISION_FILES)){

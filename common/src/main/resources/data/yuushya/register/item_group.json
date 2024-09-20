@@ -1,0 +1,20 @@
+{
+  "item_group": [
+    {"name": "extra_blocks","icon":"yellow_acrylic","blueprint": "block_blueprint"},
+    {"name": "wood","icon":"raw_oak_wood","blueprint": "wood_blueprint" } ,
+    {"name": "stone","icon":"park_tile","blueprint": "stone_blueprint"},
+    {"name": "extra_shapes","icon":"orange_tile_with_ridge_lower","blueprint": "extra_shapes_blueprint"},
+    {"name": "window","icon":"white_windows_diagonal","blueprint": "window_blueprint"},
+    {"name": "furniture","icon":"classroom_chair","blueprint": "furniture_blueprint"},
+    {"name": "fabric","icon":"hanged_cloth","blueprint": "fabric_blueprint"},
+    {"name": "lighting","icon":"desk_lamp_0","blueprint": "lighting_blueprint"},
+    {"name": "electrical_appliance","icon":"air_conditioning_condenser","blueprint": "lighting_blueprint"},
+    {"name": "living_being","icon":"potted_jungle_sprout","blueprint": "living_being_blueprint"},
+    {"name": "signs","icon":"sign_12","blueprint": "sign_blueprint"},
+    {"name": "catering","icon":"bottles","blueprint": "catering_blueprint"},
+    {"name": "store","icon":"goods_shelf_jam","blueprint": "store_blueprint"},
+    {"name": "infrastructure","icon":"crash_barrel","blueprint": "facility_blueprint"},
+    {"name": "traffic","icon":"electric_motorcycle","blueprint": "traffic_blueprint"},
+    {"name": "structure","icon":"maple_tree","blueprint": "extra_shapes_blueprint"}
+  ]
+}
