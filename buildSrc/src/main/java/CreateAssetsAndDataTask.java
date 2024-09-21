@@ -1,6 +1,7 @@
 import com.yuushya.collision.CollisionFileCreator;
 import com.yuushya.datagen.ConfigReader;
 import com.yuushya.datagen.JarCreator;
+import com.yuushya.datagen.YuushyaDataProvider;
 import com.yuushya.datagen.ZipReader;
 import com.yuushya.ui.Mode;
 import com.yuushya.ui.YuushyaLog;
@@ -21,6 +22,7 @@ public class CreateAssetsAndDataTask extends DefaultTask {
     public void start() {
         System.out.println("Begin Creating");
         System.out.println(Path.of(this.path).toAbsolutePath().toString());
+        YuushyaDataProvider.clearAll();
         JarCreator jarCreator = new JarCreator("yuushya", Path.of(this.path));
         jarCreator.createJson(version);
         CollisionFileCreator collisionFileCreator=new CollisionFileCreator("yuushya",Path.of(this.path));

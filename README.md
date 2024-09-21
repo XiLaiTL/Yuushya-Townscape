@@ -1,4 +1,5 @@
-![输入图片说明](YuushyaI.png)
+![poster](common/src/main/resources/assets/yuushya/textures/0extra_building_material/preview/poster/poster_2xv.png)
+![pack](common/src/main/resources/pack.png)
 
 # Yuushya Townscape
 
@@ -16,9 +17,53 @@ Yuushya Townscape Mod contains 800+ delicate building materials and decorations 
 ## License
 
 代码（Code）：MIT
+
 美术资源（Assets）：CC BY-NC-SA 4.0
 
 [使用协议（Terms）](Terms_yuushya_user.md)
+
+## Code Build
+
+使用IDEA打开项目，运行构建任务。
+
+Using Intellij IDEA to open the project and run the **build** task.
+
+### Generate Assets and Data
+
+运行任务，生成资源包和数据包
+
+**单个版本（Single Version）:**
+
+`gradle :common:gen-1.20.1`
+
+**所有版本（All Version）：**
+
++ `gradle gen-chain-1` ：1.16.5~1.20.1
++ `gradle gen-chain-2` ：1.20.6
++ `gradle gen-chain-3` ：1.21.0
+
+### Build Jar Package
+
+构建模组的jar包
+
+**单个版本（Single Version）:**
+
+`gradle build-jar-1.20.1-forge`
+
+**所有版本（All Version）：**
+
++ `gralde build-chain-1`
++ `gradle build-chain-2`
+
+### Run Game in Dev Environment
+
+在开发环境运行游戏，需要使用`:`定位到子项目
+
+In dev environment, you need to use `:` to locate the subprojects.
+
++ `gradle :1.20.1:forge:runClient`
++ `gradle :1.20.1:forge:runServer`
+
 
 =======
 

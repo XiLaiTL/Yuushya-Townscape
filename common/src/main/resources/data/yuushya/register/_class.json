@@ -189,7 +189,7 @@
       "name": "CableBlock",
       "render_type": "cutout",
       "class_type": "class",
-      "auto_generated": {"collision": "face", "tags": [{"value": "mineable/pickaxe"}]},
+      "auto_generated": { "recipe": true, "collision": "face", "loot_table": true, "tags": [{"value": "mineable/pickaxe"}]},
       "properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": false, "has_collision": false, "is_delicate": false }
     },
 

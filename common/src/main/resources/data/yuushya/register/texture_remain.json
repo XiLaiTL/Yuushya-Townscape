@@ -5,6 +5,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:stone",
+      "auto_generated": { "tags": [{"value": "mineable/pickaxe"}]},
       "texture": {
         "type": "misc",
         "set": ["all#minecraft:block/stone","sides#minecraft:block/stone","top#minecraft:block/stone"]}
@@ -12,6 +13,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:cobblestone",
+      "auto_generated": { "tags": [{"value": "mineable/pickaxe"}]},
       "texture": {
         "type": "misc",
         "set": ["all#minecraft:block/cobblestone","sides#minecraft:block/cobblestone","top#minecraft:block/cobblestone"]}
@@ -19,6 +21,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:bricks",
+      "auto_generated": { "tags": [{"value": "mineable/pickaxe"}]},
       "texture": {
         "type": "misc",
         "set": ["all#minecraft:block/bricks","sides#minecraft:block/bricks","top#minecraft:block/bricks"]}
@@ -26,6 +29,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:stripped_acacia_wood",
+      "auto_generated": { "tags": [{"value": "mineable/axe"}]},
       "texture": {
         "type": "misc",
         "value":"yuushya:block_/stripped_wood/stripped_acacia_wood",
@@ -37,6 +41,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:stripped_birch_wood",
+      "auto_generated": { "tags": [{"value": "mineable/axe"}]},
       "texture": {
         "type": "misc",
         "value":"yuushya:block_/stripped_wood/stripped_birch_wood",
@@ -48,6 +53,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:stripped_dark_oak_wood",
+      "auto_generated": { "tags": [{"value": "mineable/axe"}]},
       "texture": {
         "type": "misc",
         "value":"yuushya:block_/stripped_wood/stripped_dark_oak_wood",
@@ -59,6 +65,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:stripped_jungle_wood",
+      "auto_generated": { "tags": [{"value": "mineable/axe"}]},
       "texture": {
         "type": "misc",
         "value":"yuushya:block_/stripped_wood/stripped_jungle_wood",
@@ -70,6 +77,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:stripped_oak_wood",
+      "auto_generated": { "tags": [{"value": "mineable/axe"}]},
       "texture": {
         "type": "misc",
         "value":"yuushya:block_/stripped_wood/stripped_oak_wood",
@@ -81,6 +89,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:stripped_spruce_wood",
+      "auto_generated": { "tags": [{"value": "mineable/axe"}]},
       "texture": {
         "type": "misc",
         "value":"yuushya:block_/stripped_wood/stripped_spruce_wood",
@@ -92,6 +101,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:stripped_crimson_stem",
+      "auto_generated": { "tags": [{"value": "mineable/axe"}]},
       "texture": {
         "type": "misc",
         "value":"yuushya:block_/stripped_wood/stripped_crimson_stem",
@@ -103,6 +113,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:stripped_warped_stem",
+      "auto_generated": { "tags": [{"value": "mineable/axe"}]},
       "texture": {
         "type": "misc",
         "value":"yuushya:block_/stripped_wood/stripped_warped_stem",
@@ -114,6 +125,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:stripped_mangrove_wood",
+      "auto_generated": { "tags": [{"value": "mineable/axe"}]},
       "texture": {
         "type": "misc",
         "value":"yuushya:block_/stripped_wood/stripped_mangrove_wood",
@@ -125,6 +137,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:stripped_cherry_wood",
+      "auto_generated": { "tags": [{"value": "mineable/axe"}]},
       "texture": {
         "type": "misc",
         "value":"yuushya:block_/stripped_wood/stripped_cherry_wood",
@@ -136,6 +149,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:acacia_planks",
+      "auto_generated": { "tags": [{"value": "mineable/axe"}]},
       "texture": {
         "type": "misc",
         "value":"minecraft:block/acacia_planks",
@@ -147,6 +161,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:birch_planks",
+      "auto_generated": { "tags": [{"value": "mineable/axe"}]},
       "texture": {
         "type": "misc",
         "value":"minecraft:block/birch_planks",
@@ -158,6 +173,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:dark_oak_planks",
+      "auto_generated": { "tags": [{"value": "mineable/axe"}]},
       "texture": {
         "type": "misc",
         "value":"minecraft:block/dark_oak_planks",
@@ -169,6 +185,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:jungle_planks",
+      "auto_generated": { "tags": [{"value": "mineable/axe"}]},
       "texture": {
         "type": "misc",
         "value":"minecraft:block/jungle_planks",
@@ -180,6 +197,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:oak_planks",
+      "auto_generated": { "tags": [{"value": "mineable/axe"}]},
       "texture": {
         "type": "misc",
         "value":"minecraft:block/oak_planks",
@@ -191,6 +209,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:spruce_planks",
+      "auto_generated": { "tags": [{"value": "mineable/axe"}]},
       "texture": {
         "type": "misc",
         "set": ["all#yuushya:block_/template/spruce_planks_all","sides#yuushya:block_/template/spruce_planks_sides","top#yuushya:block_/template/spruce_planks_top"]}
@@ -374,6 +393,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:black_concrete",
+      "auto_generated": { "tags": [{"value": "mineable/pickaxe"}]},
       "texture": {
         "type": "concrete",
         "value":"yuushya:block_/concrete/black_concrete_sides",
@@ -385,6 +405,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:blue_concrete",
+      "auto_generated": { "tags": [{"value": "mineable/pickaxe"}]},
       "texture": {
         "type": "concrete",
         "value":"yuushya:block_/concrete/blue_concrete_sides",
@@ -396,6 +417,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:brown_concrete",
+      "auto_generated": { "tags": [{"value": "mineable/pickaxe"}]},
       "texture": {
         "type": "concrete",
         "value":"yuushya:block_/concrete/brown_concrete_sides",
@@ -407,6 +429,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:cyan_concrete",
+      "auto_generated": { "tags": [{"value": "mineable/pickaxe"}]},
       "texture": {
         "type": "concrete",
         "value":"yuushya:block_/concrete/cyan_concrete_sides",
@@ -418,6 +441,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:gray_concrete",
+      "auto_generated": { "tags": [{"value": "mineable/pickaxe"}]},
       "texture": {
         "type": "concrete",
         "value":"yuushya:block_/concrete/gray_concrete_sides",
@@ -429,6 +453,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:green_concrete",
+      "auto_generated": { "tags": [{"value": "mineable/pickaxe"}]},
       "texture": {
         "type": "concrete",
         "value":"yuushya:block_/concrete/green_concrete_sides",
@@ -440,6 +465,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:light_blue_concrete",
+      "auto_generated": { "tags": [{"value": "mineable/pickaxe"}]},
       "texture": {
         "type": "concrete",
         "value":"yuushya:block_/concrete/light_blue_concrete_sides",
@@ -451,6 +477,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:light_gray_concrete",
+      "auto_generated": { "tags": [{"value": "mineable/pickaxe"}]},
       "texture": {
         "type": "concrete",
         "value":"yuushya:block_/concrete/light_gray_concrete_sides",
@@ -462,6 +489,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:lime_concrete",
+      "auto_generated": { "tags": [{"value": "mineable/pickaxe"}]},
       "texture": {
         "type": "concrete",
         "value":"yuushya:block_/concrete/lime_concrete_sides",
@@ -473,6 +501,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:magenta_concrete",
+      "auto_generated": { "tags": [{"value": "mineable/pickaxe"}]},
       "texture": {
         "type": "concrete",
         "value":"yuushya:block_/concrete/magenta_concrete_sides",
@@ -484,6 +513,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:orange_concrete",
+      "auto_generated": { "tags": [{"value": "mineable/pickaxe"}]},
       "texture": {
         "type": "concrete",
         "value":"yuushya:block_/concrete/orange_concrete_sides",
@@ -495,6 +525,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:pink_concrete",
+      "auto_generated": { "tags": [{"value": "mineable/pickaxe"}]},
       "texture": {
         "type": "concrete",
         "value":"yuushya:block_/concrete/pink_concrete_sides",
@@ -506,6 +537,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:purple_concrete",
+      "auto_generated": { "tags": [{"value": "mineable/pickaxe"}]},
       "texture": {
         "type": "concrete",
         "value":"yuushya:block_/concrete/purple_concrete_sides",
@@ -517,6 +549,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:red_concrete",
+      "auto_generated": { "tags": [{"value": "mineable/pickaxe"}]},
       "texture": {
         "type": "concrete",
         "value":"yuushya:block_/concrete/red_concrete_sides",
@@ -528,6 +561,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:white_concrete",
+      "auto_generated": { "tags": [{"value": "mineable/pickaxe"}]},
       "texture": {
         "type": "concrete",
         "value":"yuushya:block_/concrete/white_concrete_sides",
@@ -539,6 +573,7 @@
 
     {
       "class_type": "remain", "name": "minecraft:yellow_concrete",
+      "auto_generated": { "tags": [{"value": "mineable/pickaxe"}]},
       "texture": {
         "type": "concrete",
         "value":"yuushya:block_/concrete/yellow_concrete_sides",
